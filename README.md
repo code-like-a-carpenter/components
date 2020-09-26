@@ -18,6 +18,13 @@ unify the typescript design of my UI components across many projects.
 ## Table of Contents
 
 <!-- toc -->
+
+-   [Install](#install)
+-   [Usage](#usage)
+-   [Maintainer](#maintainer)
+-   [Contribute](#contribute)
+-   [License](#license)
+
 <!-- tocstop -->
 
 ## Install
