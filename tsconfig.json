@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "lib": [
+      "dom",
+      "es2020"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "target": "es2019", // node 12.9.0
+    "types": [
+      "jest"
+    ]
+  },
+  "include": [
+    "./*.ts",
+    "./src/**/*.js",
+    "./test/**/*.js",
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+    "./test/**/*.ts",
+    "./types/**/*.d.ts"
+  ]
+}
