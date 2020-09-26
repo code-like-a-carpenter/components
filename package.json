@@ -11,10 +11,10 @@
   },
   "scripts": {
     "build": "npm-run-all build:*",
-    "prebuild:cjs": "rimraf dist",
+    "prebuild:cjs": "rimraf dist/cjs",
     "build:cjs": "BUILD_TARGET=cjs babel --source-maps --extensions '.js,.ts,.tsx' -d dist/cjs src",
     "postbuild:cjs": "rimraf 'dist/**/*.stories.*' 'dist/**/*.spec.*'",
-    "prebuild:esm": "rimraf dist",
+    "prebuild:esm": "rimraf dist/esm",
     "build:esm": "BUILD_TARGET=esm babel --source-maps --extensions '.js,.ts,.tsx' -d dist/esm src",
     "postbuild:esm": "rimraf 'dist/**/*.stories.*' 'dist/**/*.spec.*'",
     "build:readme": "markdown-toc -i --bullets='-' --maxdepth=3  README.md  && prettier --write README.md",
