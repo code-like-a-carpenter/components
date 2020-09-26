@@ -3,7 +3,8 @@
   "version": "0.0.0-development",
   "description": "A collection of components I can use accross projects",
   "bin": {},
-  "main": "./src/index.js",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/code-like-a-carpenter/components.git"
@@ -34,6 +35,13 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-optional-chaining": "^7.11.0",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@ianwremmel/eslint-plugin-ianwremmel": "^4.1.1",
@@ -56,6 +64,7 @@
     "mkdirp": "^1.0.4",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.1.2",
+    "rimraf": "^3.0.2",
     "semantic-release": "^17.1.2",
     "typescript": "^3.9.7"
   },
