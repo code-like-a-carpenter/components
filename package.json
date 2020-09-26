@@ -18,7 +18,7 @@
     "build:esm": "BUILD_TARGET=esm babel --source-maps --extensions '.js,.ts,.tsx' -d dist/esm src",
     "postbuild:esm": "rimraf 'dist/**/*.stories.*' 'dist/**/*.spec.*'",
     "build:readme": "markdown-toc -i --bullets='-' --maxdepth=3  README.md  && prettier --write README.md",
-    "build:storybook": "build-storybook",
+    "build-storybook": "build-storybook",
     "eslint": "eslint ${ESLINT_FORMAT_OPTIONS:-} --ignore --ignore-path .gitignore",
     "lint": "npm-run-all lint:*",
     "lint:changelog": "commitlint --from origin/master --to HEAD",

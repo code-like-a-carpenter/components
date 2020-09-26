@@ -24,7 +24,7 @@ jobs:
         with:
           fetch-depth: 0
       - run: npm install
-      - run: npx --no-install chromatic --exit-zero-on-changes --project-token=${{ secrets.CHROMATIC_TOKEN }}  --build-script-name build:storybook
+      - run: npx --no-install chromatic --exit-zero-on-changes --project-token=${{ secrets.CHROMATIC_TOKEN }}
 
   lint:
     runs-on: ubuntu-latest
