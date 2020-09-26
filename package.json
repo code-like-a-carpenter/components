@@ -1,0 +1,69 @@
+{
+  "name": "@code-like-a-carpenter/components",
+  "version": "0.0.0-development",
+  "description": "A collection of components I can use accross projects",
+  "bin": {},
+  "main": "./src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code-like-a-carpenter/components.git"
+  },
+  "scripts": {
+    "build": "npm-run-all build:*",
+    "build:readme": "markdown-toc -i --bullets='-' --maxdepth=3  README.md  && prettier --write README.md",
+    "prebuild:es": "rimraf dist",
+    "build:cjs": "BUILD_TARGET=cjs babel --source-maps --extensions '.js,.ts,.tsx' -d dist/cjs src",
+    "build:esm": "BUILD_TARGET=esm babel --source-maps --extensions '.js,.ts,.tsx' -d dist/esm src",
+    "postbuild": "rimraf 'dist/**/*.stories.*' 'dist/**/*.spec.*'",
+    "eslint": "eslint ${ESLINT_FORMAT_OPTIONS:-} --ignore --ignore-path .gitignore",
+    "lint": "npm-run-all lint:*",
+    "lint:changelog": "commitlint --from origin/master --to HEAD",
+    "lint:es": "npm run --silent eslint -- .",
+    "semantic-release": "semantic-release"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "keywords": [],
+  "author": "Ian Remmel <1182361+ianwremmel@users.noreply.github.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/code-like-a-carpenter/components/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@ianwremmel/eslint-plugin-ianwremmel": "^4.1.1",
+    "@typescript-eslint/eslint-plugin": "^3.10.1",
+    "@typescript-eslint/parser": "^3.10.1",
+    "eslint": "^7.9.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-compat": "^3.8.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-markdown": "^1.0.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.2",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
+    "markdown-toc": "^1.2.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.1.2",
+    "semantic-release": "^17.1.2",
+    "typescript": "^3.9.7"
+  },
+  "lint-staged": {
+    "*.js": "npm run eslint -- ",
+    "bin/**": "npm run eslint -- "
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e",
+      "pre-commit": "lint-staged"
+    }
+  }
+}
