@@ -5,6 +5,7 @@
   "bin": {},
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/code-like-a-carpenter/components.git"
@@ -18,13 +19,14 @@
     "build:esm": "BUILD_TARGET=esm babel --source-maps --extensions '.js,.ts,.tsx' -d dist/esm src",
     "postbuild:esm": "rimraf 'dist/**/*.stories.*' 'dist/**/*.spec.*'",
     "build:readme": "markdown-toc -i --bullets='-' --maxdepth=3  README.md  && prettier --write README.md",
+    "build:types": "tsc --emitDeclarationOnly ",
     "build-storybook": "build-storybook",
     "eslint": "eslint ${ESLINT_FORMAT_OPTIONS:-} --ignore --ignore-path .gitignore",
     "lint": "npm-run-all lint:*",
     "lint:changelog": "commitlint --from origin/master --to HEAD",
     "lint:es": "npm run --silent eslint -- .",
     "prelint:types": "mkdirp reports/style",
-    "lint:types": "bash -c \"tsc $TSC_OPTIONS\"",
+    "lint:types": "bash -c \"tsc --noEmit $TSC_OPTIONS\" ",
     "prepublishOnly": "npm run build",
     "semantic-release": "semantic-release",
     "storybook": "start-storybook -p 6006",
