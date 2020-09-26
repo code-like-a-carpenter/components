@@ -8,6 +8,7 @@ jobs:
         with:
           fetch-depth: 0
       - uses: ianwremmel/prevent-fixup-commits@v1.0.2
+
   nopush:
     runs-on: ubuntu-latest
     steps:
@@ -15,3 +16,42 @@ jobs:
         with:
           fetch-depth: 0
       - uses: ianwremmel/prevent-nopush-commits@v1.0.3
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - run: npm install
+      - run: npm run lint
+        env:
+          ESLINT_FORMAT_OPTIONS: '--format json-with-metadata --output-file reports/style/eslint.json'
+          TSC_OPTIONS: '| tee reports/style/tsc.log'
+
+      - uses: check-run-reporter/action@v2.0.0
+        if: ${{ always() }}
+        with:
+          token: '62f20048-075b-4fef-b858-e16790015077'
+          label: ESLint
+          report: 'reports/style/eslint.json'
+      - uses: check-run-reporter/action@v2.0.0
+        if: ${{ always() }}
+        with:
+          token: '62f20048-075b-4fef-b858-e16790015077'
+          label: TSC
+          report: 'reports/style/tsc.log'
+
+  release:
+    needs:
+      - fixup
+      - lint
+      - nopush
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install
+      - run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
