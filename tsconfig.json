@@ -13,7 +13,10 @@
     "noEmit": true,
     "resolveJsonModule": true,
     "strict": true,
-    "target": "es2019" // node 12.9.0
+    "target": "es2019", // node 12.9.0
+    "types": [
+      "jest"
+    ]
   },
   "include": [
     "./*.ts",

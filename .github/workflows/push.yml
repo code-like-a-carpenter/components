@@ -17,6 +17,13 @@ jobs:
           fetch-depth: 0
       - uses: ianwremmel/prevent-nopush-commits@v1.0.3
 
+  chromatic:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install
+      - run: npx --no-install chromatic --exit-zero-on-changes --project-token=${{ secrets.CHROMATIC_TOKEN }}  --build-script-name build:storybook
+
   lint:
     runs-on: ubuntu-latest
     steps:
@@ -46,8 +53,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
       - run: npm install
       - run: npm test
       - uses: check-run-reporter/action@v2.0.0
@@ -59,6 +64,7 @@ jobs:
 
   release:
     needs:
+      - chromatic
       - fixup
       - lint
       - nopush
