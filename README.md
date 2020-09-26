@@ -28,9 +28,14 @@ npm install @code-like-a-carpenter/components
 
 ## Usage
 
-```bash
+Import the components into your project.
+
+```ts
 import {Card} from '@code-like-a-carpenter/components
 ```
+
+Note that you'll separately need to import bootstrap styles using whatever
+technique makes the most sense for your build process.
 
 ## Maintainer
 
