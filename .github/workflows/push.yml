@@ -42,11 +42,27 @@ jobs:
           label: TSC
           report: 'reports/style/tsc.log'
 
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - run: npm install
+      - run: npm test
+      - uses: check-run-reporter/action@v2.0.0
+        if: ${{ always() }}
+        with:
+          token: '62f20048-075b-4fef-b858-e16790015077'
+          label: Unit Tests
+          report: 'reports/junit/**/*.xml'
+
   release:
     needs:
       - fixup
       - lint
       - nopush
+      - test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

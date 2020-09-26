@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Primitives/Code Code 1`] = `
+<pre>
+  <code>
+    {
+  "proof": true
+}
+  </code>
+</pre>
+`;
+
+exports[`Storyshots Primitives/Code Indented 1`] = `
+<pre>
+  <code>
+    {
+  "proof": true
+}
+  </code>
+</pre>
+`;
+
+exports[`Storyshots Primitives/Code Inline 1`] = `
+<p>
+  There is 
+  <code>
+    inline code
+  </code>
+   in this paragraph
+</p>
+`;
+
+exports[`Storyshots Primitives/Code Nested 1`] = `
+<pre>
+  <code>
+    foo
+  </code>
+</pre>
+`;
