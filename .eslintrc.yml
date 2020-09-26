@@ -8,10 +8,23 @@ extends:
   - 'prettier'
 
 overrides:
+  # make sure eslint lints all files
+  - files:
+      - '**/*.js'
+      - '**/*.jsx'
+      - '**/*.ts'
+      - '**/*.tsx'
+
   - files:
       - src/**
     env:
       browser: true
+
+  - files:
+      - '**/*.ts'
+      - '**/*.tsx'
+    extends:
+      - 'plugin:@ianwremmel/ianwremmel/typescript'
 
 parserOptions:
   sourceType: 'script'
