@@ -25,6 +25,9 @@ overrides:
       - '**/*.tsx'
     extends:
       - 'plugin:@ianwremmel/ianwremmel/typescript'
+    rules:
+      no-use-before-define: off
+      '@typescript-eslint/no-use-before-define': error
 
 parserOptions:
   sourceType: 'script'
@@ -38,3 +41,7 @@ rules:
     - error
     - devDependencies: ['!src/**/*']
   no-restricted-syntax: off
+  import/no-unresolved:
+    - error
+    - ignore:
+        - \.(scss|less|css)$
