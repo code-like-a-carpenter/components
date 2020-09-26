@@ -25,6 +25,7 @@
     "lint:es": "npm run --silent eslint -- .",
     "prelint:types": "mkdirp reports/style",
     "lint:types": "bash -c \"tsc $TSC_OPTIONS\"",
+    "prepublishOnly": "npm run build",
     "semantic-release": "semantic-release",
     "storybook": "start-storybook -p 6006",
     "test": "TZ=UTC jest"
