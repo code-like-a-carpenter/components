@@ -17,7 +17,7 @@ export const AnyRendererContext = React.createContext<AnyRendererContextType>(
   {}
 );
 
-export type AnyRendererProps = RendererProps<AnyRendererContextType>;
+export type AnyRendererProps = RendererProps<unknown, AnyRendererContextType>;
 
 // eslint-disable-next-line complexity
 export const AnyRenderer = ({value, ...rest}: AnyRendererProps) => {

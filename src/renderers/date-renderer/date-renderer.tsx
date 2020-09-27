@@ -33,8 +33,8 @@ export const DateRendererContext = React.createContext<
 });
 
 export type DateRendererProps = RendererProps<
-  DateRendererContextProps,
-  Date | string | number
+  Date | string | number,
+  DateRendererContextProps
 >;
 
 export const DateRenderer = ({value, ...rest}: DateRendererProps) => {

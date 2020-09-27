@@ -16,7 +16,7 @@ export const NullRendererContext = React.createContext<NullRendererContextType>(
   }
 );
 
-export type NullRendererProps = RendererProps<NullRendererContextType, null>;
+export type NullRendererProps = RendererProps<null, NullRendererContextType>;
 
 export const NullRenderer: React.FC<NullRendererProps> = (props) => {
   const {null: content} = useContextWithDefaults(NullRendererContext, props);

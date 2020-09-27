@@ -19,8 +19,8 @@ export const BooleanRendererContext = React.createContext<
 });
 
 export type BooleanRendererProps = RendererProps<
-  BooleanRendererContextType,
-  boolean
+  boolean,
+  BooleanRendererContextType
 >;
 
 export const BooleanRenderer = ({value, ...rest}: BooleanRendererProps) => {
