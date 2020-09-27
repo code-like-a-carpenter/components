@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Renderers/MaybeRenderer Falsy 1`] = `
+<span
+  className="magic-boolean"
+>
+  No
+</span>
+`;
+
+exports[`Storyshots Renderers/MaybeRenderer Maybe Renderer 1`] = `
+<span>
+   - 
+</span>
+`;
+
+exports[`Storyshots Renderers/MaybeRenderer Truthy 1`] = `
+<span
+  className="magic-boolean"
+>
+  Yes
+</span>
+`;

@@ -1,0 +1,78 @@
+import {
+  Meta,
+  Story,
+  Canvas,
+  Source,
+  SourceState,
+  SourceContext,
+} from '@storybook/addon-docs/blocks';
+import {BooleanRenderer, BooleanRendererContext} from '.';
+import {AnyRenderer, AnyRendererContext} from '.';
+
+<Meta title="Renderers/Renderers" />
+
+# Renderers
+
+There are a lot of scenarios where we don't know exactly _what_ we plan on
+rendering. For example, let's say we wanted to render an arbitrary CSV into a
+table. Our CSV parser could recognize column headings, numbers, dates, and
+possibly even booleans, but if we don't know a field's type a priori, then we
+can't apply appropriate formatting.
+
+Renders are type-specific components that do close to the right thing when we
+can't know exactly what the data looks in advance.
+
+All renderers must accept a `value` prop. Renderers may accept additional
+formatting props. Since the whole point is to instantiate renderers
+programmatically, all formatting props must also be acceptia via a context.
+
+> Click the "Show Code" buttons below to see the interesting part of these
+> examples. I can't get them to open by default.
+
+<Canvas withSource={SourceState.OPEN}>
+  <BooleanRenderer value={true} />
+</Canvas>
+
+<Canvas withSource={SourceState.OPEN}>
+  <BooleanRendererContext.Provider value={{yes: 'it is the way'}}>
+    <BooleanRenderer value={true} />
+  </BooleanRendererContext.Provider>
+</Canvas>
+
+Of course, these examples are just for booleans. What do we do when we truly
+have no idea what data we might get? Enter the `AnyRenderer`
+
+<Canvas withSource={SourceState.OPEN}>
+  <React.Fragment>
+    <AnyRenderer value={true} />
+    <br />
+    <AnyRenderer value={'2020-01-01'} />
+    <br />
+    <AnyRenderer value={5} />
+    <br />
+    <AnyRenderer value={null} />
+    <br />
+  </React.Fragment>
+</Canvas>
+
+<Canvas withSource={SourceState.OPEN}>
+  <React.Fragment>
+    <AnyRendererContext.Provider value={{boolean: {yes: 'it is the way'}}}>
+      <AnyRenderer value={true} />
+      <br />
+      <AnyRenderer value={'2020-01-01'} />
+      <br />
+      <AnyRenderer value={5} />
+      <br />
+      <AnyRenderer value={null} />
+      <br />
+    </AnyRendererContext.Provider>
+  </React.Fragment>
+</Canvas>
+
+Now, with the `AnyRenderer`, we put put any arbitrary data on a page and get
+something fairly reasonable. Most of it its per-type renderers support
+customization, so if we have a partial understanding of our data, we can
+customize appropriately via the Context and programmatically drive our output.
+
+This opens a lot of interesting possibilities for data-driven tables.

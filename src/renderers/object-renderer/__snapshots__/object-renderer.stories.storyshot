@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Renderers/ObjectRenderer Object Renderer 1`] = `
+<pre>
+  <code>
+    {
+  "bar": "baz",
+  "bat": true,
+  "foo": "bar",
+  "qux": 1
+}
+  </code>
+</pre>
+`;
+
+exports[`Storyshots Renderers/ObjectRenderer With Array 1`] = `
+<pre>
+  <code>
+    [
+  {
+    "bar": "baz",
+    "bat": true,
+    "foo": "bar",
+    "qux": 1
+  }
+]
+  </code>
+</pre>
+`;
