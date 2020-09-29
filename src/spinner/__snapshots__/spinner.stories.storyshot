@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Primitives/Spinner Spinner 1`] = `
+exports[`Storyshots Components/Spinner Spinner 1`] = `
 <div
   className="spinner-border"
   role="status"

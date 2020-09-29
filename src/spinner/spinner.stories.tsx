@@ -4,7 +4,7 @@ import {Spinner} from './spinner';
 
 export default {
   component: Spinner,
-  title: 'Primitives/Spinner',
+  title: 'Components/Spinner',
 };
 
 export const spinner = () => <Spinner />;

@@ -4,7 +4,7 @@ import {Code} from './code';
 
 export default {
   component: Code,
-  title: 'Primitives/Code',
+  title: 'Components/Code',
 };
 
 export const code = () => (
