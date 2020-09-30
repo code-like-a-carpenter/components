@@ -4,7 +4,7 @@ import {
   RendererDefault,
   RendererProps,
   useContextWithDefaults,
-} from '../support';
+} from '../../support';
 
 export type NullRendererContextType = {
   null: RendererDefault;

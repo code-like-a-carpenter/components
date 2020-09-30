@@ -4,7 +4,7 @@ import React from 'react';
 import Moment from 'react-moment';
 import moment from 'moment';
 
-import {RendererProps, useContextWithDefaults} from '../support';
+import {RendererProps, useContextWithDefaults} from '../../support';
 import {NullRenderer} from '../null-renderer';
 
 export type DateRendererContextProps = {

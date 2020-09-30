@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {NullRenderer} from '../null-renderer';
-import {Renderer} from '../support';
+import {Renderer} from '../../support';
 
 export type MaybeRendererProps<T> = {
   value: null | undefined | T;

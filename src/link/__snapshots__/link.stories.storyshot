@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Link In An Alert 1`] = `
+<div
+  className="fade alert alert-primary show"
+  role="alert"
+>
+  A 
+  <a
+    className="alert-link"
+    href="#"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+  >
+    Link
+  </a>
+   in an Alert
+</div>
+`;
+
+exports[`Storyshots Components/Link Link 1`] = `
+Array [
+  "A ",
+  <a
+    href="#"
+  >
+    Link
+  </a>,
+]
+`;

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Primitives/Code Code 1`] = `
+exports[`Storyshots Components/Code Code 1`] = `
 <pre>
   <code>
     {
@@ -10,7 +10,7 @@ exports[`Storyshots Primitives/Code Code 1`] = `
 </pre>
 `;
 
-exports[`Storyshots Primitives/Code Indented 1`] = `
+exports[`Storyshots Components/Code Indented 1`] = `
 <pre>
   <code>
     {
@@ -20,7 +20,7 @@ exports[`Storyshots Primitives/Code Indented 1`] = `
 </pre>
 `;
 
-exports[`Storyshots Primitives/Code Inline 1`] = `
+exports[`Storyshots Components/Code Inline 1`] = `
 <p>
   There is 
   <code>
@@ -30,7 +30,7 @@ exports[`Storyshots Primitives/Code Inline 1`] = `
 </p>
 `;
 
-exports[`Storyshots Primitives/Code Nested 1`] = `
+exports[`Storyshots Components/Code Nested 1`] = `
 <pre>
   <code>
     foo
