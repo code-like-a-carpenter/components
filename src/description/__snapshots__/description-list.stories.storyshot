@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Description/DescriptionList Description List 1`] = `
+<dl
+  className="description-list"
+>
+  <dt
+    className="description-single-item"
+  >
+    Term
+  </dt>
+  <dd
+    className="description-single-item"
+  >
+    Its Description
+  </dd>
+</dl>
+`;
+
+exports[`Storyshots Description/DescriptionList List 1`] = `
+<dl
+  className="description-list"
+>
+  <dt
+    className="description-single-item"
+  >
+    Term 1
+  </dt>
+  <dd
+    className="description-single-item"
+  >
+    Its Description
+  </dd>
+  <dt
+    className="description-single-item"
+  >
+    Term 2
+  </dt>
+  <dd
+    className="description-single-item"
+  >
+    Its Description
+  </dd>
+  <dt
+    className="description-single-item"
+  >
+    Term 3
+  </dt>
+  <dd
+    className="description-single-item"
+  >
+    Its Description
+  </dd>
+  <dt
+    className="description-single-item"
+  >
+    Term 4
+  </dt>
+  <dd
+    className="description-single-item"
+  >
+    Its Description
+  </dd>
+</dl>
+`;
+
+exports[`Storyshots Description/DescriptionList List With Multiple Descriptions 1`] = `
+<dl
+  className="description-list"
+>
+  <dt
+    className="description-single-item"
+  >
+    Term 1
+  </dt>
+  <dd
+    className="description-single-item"
+  >
+    Its First Description
+  </dd>
+  <dt
+    className="description-single-item"
+  >
+    Term 2
+  </dt>
+  <dd
+    className="description-single-item"
+  >
+    Its First Description
+  </dd>
+  <dt
+    className="description-multi-item"
+  >
+    Term 3
+  </dt>
+  <dd
+    className="description-multi-item"
+  >
+    <div>
+      Its First Description
+    </div>
+  </dd>
+  <dd
+    className="description-multi-item"
+  >
+    <div>
+      Its Second Description
+    </div>
+  </dd>
+  <dt
+    className="description-single-item"
+  >
+    Term 4
+  </dt>
+  <dd
+    className="description-single-item"
+  >
+    Its First Description
+  </dd>
+</dl>
+`;

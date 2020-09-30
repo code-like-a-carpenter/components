@@ -32,4 +32,6 @@ export type RendererProps<T extends unknown = unknown, C = unknown> = Partial<
   value: T;
 };
 
-export type Renderer<C, T = unknown> = React.ComponentType<RendererProps<C, T>>;
+export type Renderer<T = unknown, C = unknown> = React.ComponentType<
+  RendererProps<T, C>
+>;
