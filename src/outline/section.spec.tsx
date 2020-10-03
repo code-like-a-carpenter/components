@@ -66,6 +66,21 @@ describe('primitives', () => {
       expect(container.querySelectorAll('.h3')).toHaveLength(0);
     });
 
+    // .toThrow() doesn't prevent the error from being logged, so we temporarily
+    // prevent console.error from working
+    // see https://github.com/facebook/jest/pull/5267#issuecomment-356605468
+    // and https://github.com/facebook/jest/issues/5785
+    beforeEach(() => {
+      jest.spyOn(console, 'error');
+      // @ts-expect-error
+      console.error.mockImplementation(() => {});
+    });
+
+    afterEach(() => {
+      // @ts-expect-error
+      console.error.mockRestore();
+    });
+
     it("doesn't allow setting the style level higher than the current level", () => {
       expect(() => {
         render(
