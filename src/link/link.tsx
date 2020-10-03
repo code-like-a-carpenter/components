@@ -1,15 +1,23 @@
 import React, {HTMLProps, useContext} from 'react';
 
 import {Alert, AlertContext} from '../alert';
+import {Card, CardContext} from '../card';
 
 export type LinkProps = React.PropsWithChildren<
   Omit<HTMLProps<HTMLAnchorElement>, 'as'>
 >;
 
-export const Link = (props: LinkProps) => {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const Link = ({ref, ...props}: LinkProps) => {
   const isAlert = useContext(AlertContext);
+  const isCard = useContext(CardContext);
+
   if (isAlert) {
     return <Alert.Link {...props} />;
+  }
+
+  if (isCard) {
+    return <Card.Link {...props} />;
   }
 
   // eslint-disable-next-line jsx-a11y/anchor-has-content

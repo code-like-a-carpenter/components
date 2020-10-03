@@ -1,5 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Components/Link In A Card 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="card-body"
+  >
+    A 
+    <a
+      className="card-link"
+      href="#"
+    >
+      Link
+    </a>
+     in an Alert
+  </div>
+</div>
+`;
+
 exports[`Storyshots Components/Link In An Alert 1`] = `
 <div
   className="fade alert alert-primary show"
