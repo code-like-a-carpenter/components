@@ -35,6 +35,9 @@ npm install @code-like-a-carpenter/components
 
 ## Usage
 
+> See [storybook](https://<branch>--5f6f88dd0d66390022e01139.chromatic.com) for
+> full documentation
+
 Import the components into your project.
 
 ```ts
