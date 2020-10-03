@@ -27,7 +27,11 @@ overrides:
       - 'plugin:@ianwremmel/ianwremmel/typescript'
     rules:
       no-use-before-define: off
-      '@typescript-eslint/no-use-before-define': error
+      '@typescript-eslint/no-use-before-define':
+        - error
+        - classes: true
+          functions: false
+          variables: true
 
 parserOptions:
   sourceType: 'script'
