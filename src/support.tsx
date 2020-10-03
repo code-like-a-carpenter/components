@@ -35,3 +35,27 @@ export type RendererProps<T extends unknown = unknown, C = unknown> = Partial<
 export type Renderer<T = unknown, C = unknown> = React.ComponentType<
   RendererProps<T, C>
 >;
+
+/**
+ * helper type for all known valid JSX element constructors (class and function
+ * based)
+ *
+ * @see https://github.com/typescript-cheatsheets/react-typescript-cheatsheet/issues/63
+ */
+export type ElementConstructor<P> =
+  | ((props: P) => React.ReactElement<unknown> | null)
+  | (new (props: P) => React.Component<P, unknown, unknown>);
+
+/**
+ * gets the internal props of a component
+ * @example `PropsOf<typeof MyComponent>`
+ * @example `PropsOf<'button'>`
+ *
+ *
+ * @see https://github.com/typescript-cheatsheets/react-typescript-cheatsheet/issues/63
+ */
+export type PropsOf<C> = C extends ElementConstructor<infer P>
+  ? P
+  : C extends keyof JSX.IntrinsicElements
+  ? JSX.IntrinsicElements[C]
+  : unknown;

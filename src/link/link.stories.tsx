@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Alert} from '..';
+import {Alert, Card} from '..';
 
 import {Link} from './link';
 
@@ -19,4 +19,12 @@ export const inAnAlert = () => (
   <Alert variant="primary">
     A <Link href="#">Link</Link> in an Alert
   </Alert>
+);
+
+export const inACard = () => (
+  <Card>
+    <Card.Body>
+      A <Link href="#">Link</Link> in an Alert
+    </Card.Body>
+  </Card>
 );

@@ -1,4 +1,5 @@
 export * from './alert';
+export * from './card';
 export * from './code';
 export * from './description';
 export * from './link';
