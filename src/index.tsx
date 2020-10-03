@@ -6,4 +6,5 @@ export * from './link';
 export * from './markdown';
 export * from './outline';
 export * from './renderers';
+export * from './routing';
 export * from './spinner';
