@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Pager/Relay Relay Pager 1`] = `
+<ul
+  className="pagination"
+>
+  <li
+    className="page-item"
+  >
+    <a
+      className="page-link"
+      href="/?before=bbb&last="
+      onClick={[Function]}
+      onKeyDown={[Function]}
+    >
+      <span
+        aria-hidden="true"
+      >
+        ‹
+      </span>
+      <span
+        className="sr-only"
+      >
+        Previous
+      </span>
+    </a>
+  </li>
+  <li
+    className="page-item"
+  >
+    <a
+      className="page-link"
+      href="/?after=ccc&first="
+      onClick={[Function]}
+      onKeyDown={[Function]}
+    >
+      <span
+        aria-hidden="true"
+      >
+        ›
+      </span>
+      <span
+        className="sr-only"
+      >
+        Next
+      </span>
+    </a>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots Components/Pager/Relay Relay Pager No Next 1`] = `
+<ul
+  className="pagination"
+>
+  <li
+    className="page-item"
+  >
+    <a
+      className="page-link"
+      href="/?before=bbb&last="
+      onClick={[Function]}
+      onKeyDown={[Function]}
+    >
+      <span
+        aria-hidden="true"
+      >
+        ‹
+      </span>
+      <span
+        className="sr-only"
+      >
+        Previous
+      </span>
+    </a>
+  </li>
+  <li
+    className="page-item disabled"
+  >
+    <span
+      className="page-link"
+      disabled={true}
+      href="/"
+    >
+      <span
+        aria-hidden="true"
+      >
+        ›
+      </span>
+      <span
+        className="sr-only"
+      >
+        Next
+      </span>
+    </span>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots Components/Pager/Relay Relay Pager No Previous 1`] = `
+<ul
+  className="pagination"
+>
+  <li
+    className="page-item disabled"
+  >
+    <span
+      className="page-link"
+      disabled={true}
+      href="/"
+    >
+      <span
+        aria-hidden="true"
+      >
+        ‹
+      </span>
+      <span
+        className="sr-only"
+      >
+        Previous
+      </span>
+    </span>
+  </li>
+  <li
+    className="page-item"
+  >
+    <a
+      className="page-link"
+      href="/?after=ccc&first="
+      onClick={[Function]}
+      onKeyDown={[Function]}
+    >
+      <span
+        aria-hidden="true"
+      >
+        ›
+      </span>
+      <span
+        className="sr-only"
+      >
+        Next
+      </span>
+    </a>
+  </li>
+</ul>
+`;
