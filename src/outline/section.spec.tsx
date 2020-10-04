@@ -73,7 +73,7 @@ describe('primitives', () => {
     beforeEach(() => {
       jest.spyOn(console, 'error');
       // @ts-expect-error
-      console.error.mockImplementation(() => {});
+      console.error.mockImplementation(() => null);
     });
 
     afterEach(() => {
