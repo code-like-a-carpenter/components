@@ -9,10 +9,10 @@ type MostlyFalsy = false | '' | null | undefined;
 type DescriptionType<T> = T | MostlyFalsy;
 
 export interface ConditionalDescriptionProps<T> {
-  condition?: boolean;
-  term: React.ReactNode;
-  description?: DescriptionType<T>;
-  Render?: Renderer<T>;
+  readonly condition?: boolean;
+  readonly term: React.ReactNode;
+  readonly description?: DescriptionType<T>;
+  readonly Render?: Renderer<T>;
 }
 
 export const ConditionalDescription = <T extends React.ReactNode>({

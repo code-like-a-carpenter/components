@@ -8,18 +8,18 @@ import {RendererProps, useContextWithDefaults} from '../../support';
 import {NullRenderer} from '../null-renderer';
 
 export type DateRendererContextProps = {
-  format?: string;
+  readonly format?: string;
   /** When rendering relative dates, treat negative numbers as nulls */
-  negativeIsNull?: boolean;
+  readonly negativeIsNull?: boolean;
   /**
    * Mostly just here for testing so that we can ensure relative values don't
    * break tests.
    */
-  reference?: Date;
+  readonly reference?: Date;
   /** renders as the number of time units between date and reference */
-  relative?: boolean;
+  readonly relative?: boolean;
   /** renders the date range between date and reference */
-  range?: boolean;
+  readonly range?: boolean;
 };
 
 export const DateRendererContext = React.createContext<DateRendererContextProps>(

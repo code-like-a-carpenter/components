@@ -5,8 +5,8 @@ const CodeContext = React.createContext(false);
 
 export interface CodeProps {
   /* set to false to disable dedent */
-  dedent?: boolean;
-  inline?: boolean;
+  readonly dedent?: boolean;
+  readonly inline?: boolean;
 }
 
 export const Code = ({

@@ -7,7 +7,7 @@ import {makeRelayHref} from './hrefs';
 import {RelayPageInfo} from './types';
 
 export type RelayPagerProps = {
-  pageInfo: RelayPageInfo;
+  readonly pageInfo: RelayPageInfo;
 };
 
 export const RelayPager = ({pageInfo}: RelayPagerProps) => {

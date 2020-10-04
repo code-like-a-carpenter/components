@@ -6,8 +6,8 @@ import {
 
 export type SpinnerProps = Omit<BootstrapSpinnerProps, 'animation'> &
   Partial<Pick<BootstrapSpinnerProps, 'animation'>> & {
-    as?: 'div' | 'span';
-    accessibilityLabel?: string;
+    readonly as?: 'div' | 'span';
+    readonly accessibilityLabel?: string;
   };
 
 export const Spinner = ({

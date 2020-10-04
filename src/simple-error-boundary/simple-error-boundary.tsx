@@ -4,12 +4,12 @@ import {Alert, AlertProps} from '../alert';
 import {Code} from '../code';
 
 interface SimpleErrorBoundaryProps {
-  variant?: AlertProps['variant'];
-  printStack?: boolean;
+  readonly variant?: AlertProps['variant'];
+  readonly printStack?: boolean;
 }
 
 interface SimpleErrorBoundaryState {
-  error?: Error;
+  readonly error?: Error;
 }
 
 /**

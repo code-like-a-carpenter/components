@@ -7,16 +7,16 @@ import {Renderer as RendererType} from '../support';
 import {DescriptionListContext, DescriptionList} from './description-list';
 
 export type CommonProps = {
-  term: React.ReactNode;
-  Renderer?: RendererType;
+  readonly term: React.ReactNode;
+  readonly Renderer?: RendererType;
 };
 
 export type ChildrenProps = {
-  children: React.ReactNode;
+  readonly children: React.ReactNode;
 };
 
 export interface DescriptionProps {
-  description: React.ReactNode | React.ReactNodeArray;
+  readonly description: React.ReactNode | React.ReactNodeArray;
 }
 
 export type Props = CommonProps & (ChildrenProps | DescriptionProps);

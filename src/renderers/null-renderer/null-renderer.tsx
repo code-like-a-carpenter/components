@@ -7,7 +7,7 @@ import {
 } from '../../support';
 
 export type NullRendererContextType = {
-  null: RendererDefault;
+  readonly null: RendererDefault;
 };
 
 export const NullRendererContext = React.createContext<NullRendererContextType>(
