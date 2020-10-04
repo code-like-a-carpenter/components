@@ -40,7 +40,7 @@ export function useColummnConfiguration(name: string): ColumnConfiguration {
 export type ConfigureFunction = (
   name: string,
   config: ColumnConfigurationWithDefaults
-) => null;
+) => void;
 
 /**
  * Gets the function for configuring a column
@@ -59,24 +59,40 @@ export function useConfiguredColumnNames<T extends object>(): IdType<T>[] {
   return Array.from(configuration.keys()) as IdType<T>[];
 }
 
-export const ColumnConfigurationProvider: React.FC = ({children}) => {
-  const configuration = new Map<string, ColumnConfiguration>();
-  const configure = (
-    name: string,
-    {
-      label = name,
-      renderer = AnyRenderer,
-      ...config
-    }: ColumnConfigurationWithDefaults
-  ) => {
-    // const had = configuration.get(name);
-    configuration.set(name, {
-      label,
-      renderer,
-      ...config,
-    });
-    return null;
-  };
+export const ColumnConfigurationProvider: React.FC<{name?: string}> = ({
+  children,
+  name: parentName,
+}) => {
+  const parentContext = useContext(ColumnConfigurationContext);
+
+  let configuration: Map<string, ColumnConfiguration>,
+    configure: ConfigureFunction;
+  if (parentContext) {
+    const {
+      configuration: parentConfiguration,
+      configure: configureParent,
+    } = parentContext;
+    configuration = parentConfiguration;
+    configure = (name: string, config: ColumnConfigurationWithDefaults) => {
+      configureParent(`${parentName}.${name}`, config);
+    };
+  } else {
+    configuration = new Map<string, ColumnConfiguration>();
+    configure = (
+      name: string,
+      {
+        label = name,
+        renderer = AnyRenderer,
+        ...config
+      }: ColumnConfigurationWithDefaults
+    ) => {
+      configuration.set(name, {
+        label,
+        renderer,
+        ...config,
+      });
+    };
+  }
 
   return (
     <ColumnConfigurationContext.Provider value={{configuration, configure}}>

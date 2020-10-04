@@ -9,6 +9,7 @@ import {
 import {ColumnRenderer} from './column-renderer';
 import {DataTableBodyCell} from './data-table-body-cell';
 import {DataTableHeaderCell} from './data-table-header-cell';
+import {getColumnData} from './support';
 import {RenderProps} from './types';
 
 export type DataTableInnerProps<T extends object> = {
@@ -34,7 +35,7 @@ export const DataTableInner = <T extends object>({
                 <DataTableBodyCell
                   key={name}
                   name={name}
-                  value={rowData[name]}
+                  value={getColumnData(rowData, name)}
                 />
               ))}
             </TableRow>

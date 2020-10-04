@@ -20,7 +20,7 @@ export const dataTable = () => (
         <ColumnRenderer name="lastName" />
         <ColumnRenderer name="age" />
         <ColumnRenderer name="signUpDate" />
-        {/* @ts-expect-error */}
+        {/* @ts-expect-error - this is here to prove we get an error if we use an invalid column*/}
         <ColumnRenderer name="foo" />
       </React.Fragment>
     )}
@@ -40,15 +40,21 @@ export const nestedDataTable = () => (
             <React.Fragment>
               <NameFieldRenderer name="first" />
               <NameFieldRenderer name="last" />
-              {/* @ts-expect-error */}
-              <NameFieldRenderer name="foo" />
+              <NameFieldRenderer
+                // @ts-expect-error - this is here to prove we get an error if we use an invalid column
+                name="foo"
+                label="This column is supposed to empty. It's here to prove typescript detects invalid column access."
+              />
             </React.Fragment>
           )}
         />
         <FieldRenderer name="age" />
         <FieldRenderer name="signUpDate" />
-        {/* @ts-expect-error */}
-        <FieldRenderer name="foo" />
+        <FieldRenderer
+          // @ts-expect-error - this is here to prove we get an error if we use an invalid column
+          name="foo"
+          label="This column is supposed to empty. It's here to prove typescript detects invalid column access."
+        />
       </React.Fragment>
     )}
   />

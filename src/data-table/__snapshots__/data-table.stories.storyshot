@@ -1232,7 +1232,13 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
 >
   <thead>
     <th>
-      name
+      name.first
+    </th>
+    <th>
+      name.last
+    </th>
+    <th>
+      This column is supposed to empty. It's here to prove typescript detects invalid column access.
     </th>
     <th>
       age
@@ -1241,20 +1247,21 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
       signUpDate
     </th>
     <th>
-      foo
+      This column is supposed to empty. It's here to prove typescript detects invalid column access.
     </th>
   </thead>
   <tbody>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Destiney",
-  "last": "Schaden"
-}
-          </code>
-        </pre>
+        Destiney
+      </td>
+      <td>
+        Schaden
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         90
@@ -1275,14 +1282,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Garrick",
-  "last": "Bashirian"
-}
-          </code>
-        </pre>
+        Garrick
+      </td>
+      <td>
+        Bashirian
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         19
@@ -1303,14 +1311,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Osbaldo",
-  "last": "Bartoletti"
-}
-          </code>
-        </pre>
+        Osbaldo
+      </td>
+      <td>
+        Bartoletti
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         67
@@ -1331,14 +1340,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Izabella",
-  "last": "Beier"
-}
-          </code>
-        </pre>
+        Izabella
+      </td>
+      <td>
+        Beier
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         14
@@ -1359,14 +1369,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Abe",
-  "last": "Ferry"
-}
-          </code>
-        </pre>
+        Abe
+      </td>
+      <td>
+        Ferry
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         58
@@ -1387,14 +1398,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Carlos",
-  "last": "Schultz"
-}
-          </code>
-        </pre>
+        Carlos
+      </td>
+      <td>
+        Schultz
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         10
@@ -1415,14 +1427,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Santiago",
-  "last": "Pollich"
-}
-          </code>
-        </pre>
+        Santiago
+      </td>
+      <td>
+        Pollich
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         34
@@ -1443,14 +1456,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Kiana",
-  "last": "Hoppe"
-}
-          </code>
-        </pre>
+        Kiana
+      </td>
+      <td>
+        Hoppe
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         94
@@ -1471,14 +1485,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Anita",
-  "last": "Russel"
-}
-          </code>
-        </pre>
+        Anita
+      </td>
+      <td>
+        Russel
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         35
@@ -1499,14 +1514,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Isabell",
-  "last": "Wilkinson"
-}
-          </code>
-        </pre>
+        Isabell
+      </td>
+      <td>
+        Wilkinson
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         10
@@ -1527,14 +1543,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Elva",
-  "last": "Kunze"
-}
-          </code>
-        </pre>
+        Elva
+      </td>
+      <td>
+        Kunze
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         99
@@ -1555,14 +1572,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Benjamin",
-  "last": "Kunze"
-}
-          </code>
-        </pre>
+        Benjamin
+      </td>
+      <td>
+        Kunze
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         54
@@ -1583,14 +1601,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Tianna",
-  "last": "Rippin"
-}
-          </code>
-        </pre>
+        Tianna
+      </td>
+      <td>
+        Rippin
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         35
@@ -1611,14 +1630,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Audie",
-  "last": "Pollich"
-}
-          </code>
-        </pre>
+        Audie
+      </td>
+      <td>
+        Pollich
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         89
@@ -1639,14 +1659,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Garnett",
-  "last": "Daugherty"
-}
-          </code>
-        </pre>
+        Garnett
+      </td>
+      <td>
+        Daugherty
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         13
@@ -1667,14 +1688,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Janie",
-  "last": "Miller"
-}
-          </code>
-        </pre>
+        Janie
+      </td>
+      <td>
+        Miller
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         32
@@ -1695,14 +1717,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Macy",
-  "last": "Haley"
-}
-          </code>
-        </pre>
+        Macy
+      </td>
+      <td>
+        Haley
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         69
@@ -1723,14 +1746,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Alice",
-  "last": "McClure"
-}
-          </code>
-        </pre>
+        Alice
+      </td>
+      <td>
+        McClure
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         60
@@ -1751,14 +1775,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Ara",
-  "last": "Fritsch"
-}
-          </code>
-        </pre>
+        Ara
+      </td>
+      <td>
+        Fritsch
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         65
@@ -1779,14 +1804,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Leonora",
-  "last": "Bayer"
-}
-          </code>
-        </pre>
+        Leonora
+      </td>
+      <td>
+        Bayer
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         68
@@ -1807,14 +1833,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Corrine",
-  "last": "Beier"
-}
-          </code>
-        </pre>
+        Corrine
+      </td>
+      <td>
+        Beier
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         35
@@ -1835,14 +1862,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Tyshawn",
-  "last": "Schneider"
-}
-          </code>
-        </pre>
+        Tyshawn
+      </td>
+      <td>
+        Schneider
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         26
@@ -1863,14 +1891,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Daron",
-  "last": "Greenholt"
-}
-          </code>
-        </pre>
+        Daron
+      </td>
+      <td>
+        Greenholt
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         77
@@ -1891,14 +1920,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Jaycee",
-  "last": "Zemlak"
-}
-          </code>
-        </pre>
+        Jaycee
+      </td>
+      <td>
+        Zemlak
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         31
@@ -1919,14 +1949,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Aryanna",
-  "last": "Zieme"
-}
-          </code>
-        </pre>
+        Aryanna
+      </td>
+      <td>
+        Zieme
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         88
@@ -1947,14 +1978,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Lori",
-  "last": "Donnelly"
-}
-          </code>
-        </pre>
+        Lori
+      </td>
+      <td>
+        Donnelly
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         20
@@ -1975,14 +2007,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Kaley",
-  "last": "Wehner"
-}
-          </code>
-        </pre>
+        Kaley
+      </td>
+      <td>
+        Wehner
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         63
@@ -2003,14 +2036,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Jadyn",
-  "last": "Goodwin"
-}
-          </code>
-        </pre>
+        Jadyn
+      </td>
+      <td>
+        Goodwin
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         75
@@ -2031,14 +2065,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Lavinia",
-  "last": "Hayes"
-}
-          </code>
-        </pre>
+        Lavinia
+      </td>
+      <td>
+        Hayes
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         100
@@ -2059,14 +2094,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Elfrieda",
-  "last": "Heller"
-}
-          </code>
-        </pre>
+        Elfrieda
+      </td>
+      <td>
+        Heller
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         13
@@ -2087,14 +2123,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Harry",
-  "last": "Nienow"
-}
-          </code>
-        </pre>
+        Harry
+      </td>
+      <td>
+        Nienow
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         90
@@ -2115,14 +2152,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Heaven",
-  "last": "Roberts"
-}
-          </code>
-        </pre>
+        Heaven
+      </td>
+      <td>
+        Roberts
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         65
@@ -2143,14 +2181,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Monserrat",
-  "last": "Quigley"
-}
-          </code>
-        </pre>
+        Monserrat
+      </td>
+      <td>
+        Quigley
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         11
@@ -2171,14 +2210,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Ardella",
-  "last": "Green"
-}
-          </code>
-        </pre>
+        Ardella
+      </td>
+      <td>
+        Green
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         95
@@ -2199,14 +2239,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Brenna",
-  "last": "Zboncak"
-}
-          </code>
-        </pre>
+        Brenna
+      </td>
+      <td>
+        Zboncak
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         54
@@ -2227,14 +2268,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Mike",
-  "last": "O'Keefe"
-}
-          </code>
-        </pre>
+        Mike
+      </td>
+      <td>
+        O'Keefe
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         5
@@ -2255,14 +2297,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Alvena",
-  "last": "Mohr"
-}
-          </code>
-        </pre>
+        Alvena
+      </td>
+      <td>
+        Mohr
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         83
@@ -2283,14 +2326,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Dariana",
-  "last": "Heaney"
-}
-          </code>
-        </pre>
+        Dariana
+      </td>
+      <td>
+        Heaney
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         82
@@ -2311,14 +2355,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Kailey",
-  "last": "White"
-}
-          </code>
-        </pre>
+        Kailey
+      </td>
+      <td>
+        White
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         50
@@ -2339,14 +2384,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Savanah",
-  "last": "Dibbert"
-}
-          </code>
-        </pre>
+        Savanah
+      </td>
+      <td>
+        Dibbert
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         81
@@ -2367,14 +2413,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Estevan",
-  "last": "Pfannerstill"
-}
-          </code>
-        </pre>
+        Estevan
+      </td>
+      <td>
+        Pfannerstill
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         58
@@ -2395,14 +2442,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Celestino",
-  "last": "Spinka"
-}
-          </code>
-        </pre>
+        Celestino
+      </td>
+      <td>
+        Spinka
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         68
@@ -2423,14 +2471,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Arjun",
-  "last": "Treutel"
-}
-          </code>
-        </pre>
+        Arjun
+      </td>
+      <td>
+        Treutel
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         34
@@ -2451,14 +2500,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Travon",
-  "last": "Yundt"
-}
-          </code>
-        </pre>
+        Travon
+      </td>
+      <td>
+        Yundt
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         79
@@ -2479,14 +2529,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Matt",
-  "last": "Wunsch"
-}
-          </code>
-        </pre>
+        Matt
+      </td>
+      <td>
+        Wunsch
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         4
@@ -2507,14 +2558,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Haylie",
-  "last": "Johnson"
-}
-          </code>
-        </pre>
+        Haylie
+      </td>
+      <td>
+        Johnson
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         1
@@ -2535,14 +2587,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Prince",
-  "last": "Reinger"
-}
-          </code>
-        </pre>
+        Prince
+      </td>
+      <td>
+        Reinger
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         37
@@ -2563,14 +2616,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Rollin",
-  "last": "Olson"
-}
-          </code>
-        </pre>
+        Rollin
+      </td>
+      <td>
+        Olson
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         90
@@ -2591,14 +2645,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Nicole",
-  "last": "Grant"
-}
-          </code>
-        </pre>
+        Nicole
+      </td>
+      <td>
+        Grant
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         18
@@ -2619,14 +2674,15 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
     </tr>
     <tr>
       <td>
-        <pre>
-          <code>
-            {
-  "first": "Eileen",
-  "last": "Hauck"
-}
-          </code>
-        </pre>
+        Eileen
+      </td>
+      <td>
+        Hauck
+      </td>
+      <td>
+        <span>
+           - 
+        </span>
       </td>
       <td>
         34
