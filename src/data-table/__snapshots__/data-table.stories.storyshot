@@ -1,0 +1,719 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Primitives/DataTable Data Table 1`] = `
+<pre>
+  {
+  "data": [
+    {
+      "age": 9,
+      "firstName": "Joshua",
+      "lastName": "Buckridge",
+      "signUpDate": "2020-09-29T06:39:15.478Z"
+    },
+    {
+      "age": 52,
+      "firstName": "Justyn",
+      "lastName": "Kshlerin",
+      "signUpDate": "2020-08-27T01:47:43.013Z"
+    },
+    {
+      "age": 88,
+      "firstName": "Jarred",
+      "lastName": "Simonis",
+      "signUpDate": "2021-01-20T09:45:23.686Z"
+    },
+    {
+      "age": 21,
+      "firstName": "Darlene",
+      "lastName": "Bogisich",
+      "signUpDate": "2020-04-15T07:09:51.147Z"
+    },
+    {
+      "age": 98,
+      "firstName": "Mose",
+      "lastName": "Parker",
+      "signUpDate": "2019-11-19T16:05:25.388Z"
+    },
+    {
+      "age": 33,
+      "firstName": "Renee",
+      "lastName": "Dach",
+      "signUpDate": "2019-09-13T15:40:38.366Z"
+    },
+    {
+      "age": 33,
+      "firstName": "Kaylee",
+      "lastName": "Hodkiewicz",
+      "signUpDate": "2020-01-07T17:33:28.797Z"
+    },
+    {
+      "age": 94,
+      "firstName": "Celestine",
+      "lastName": "Ankunding",
+      "signUpDate": "2020-10-11T15:19:06.363Z"
+    },
+    {
+      "age": 72,
+      "firstName": "Hannah",
+      "lastName": "Connelly",
+      "signUpDate": "2020-06-29T11:23:24.282Z"
+    },
+    {
+      "age": 61,
+      "firstName": "Elwin",
+      "lastName": "Wilkinson",
+      "signUpDate": "2019-11-03T06:29:20.579Z"
+    },
+    {
+      "age": 83,
+      "firstName": "Karley",
+      "lastName": "Olson",
+      "signUpDate": "2020-07-13T18:26:51.751Z"
+    },
+    {
+      "age": 60,
+      "firstName": "Roger",
+      "lastName": "Emmerich",
+      "signUpDate": "2019-04-02T00:20:20.223Z"
+    },
+    {
+      "age": 12,
+      "firstName": "Jude",
+      "lastName": "Rosenbaum",
+      "signUpDate": "2020-04-27T22:57:02.343Z"
+    },
+    {
+      "age": 56,
+      "firstName": "Cody",
+      "lastName": "Kiehn",
+      "signUpDate": "2020-06-17T07:20:03.530Z"
+    },
+    {
+      "age": 94,
+      "firstName": "Vivianne",
+      "lastName": "Kub",
+      "signUpDate": "2021-02-25T10:34:34.502Z"
+    },
+    {
+      "age": 90,
+      "firstName": "Celestino",
+      "lastName": "Beahan",
+      "signUpDate": "2019-05-07T22:40:56.293Z"
+    },
+    {
+      "age": 37,
+      "firstName": "Albert",
+      "lastName": "Hane",
+      "signUpDate": "2020-07-14T21:39:56.615Z"
+    },
+    {
+      "age": 48,
+      "firstName": "Lucious",
+      "lastName": "VonRueden",
+      "signUpDate": "2020-09-04T12:53:16.276Z"
+    },
+    {
+      "age": 2,
+      "firstName": "Ike",
+      "lastName": "Hills",
+      "signUpDate": "2020-04-11T05:40:51.435Z"
+    },
+    {
+      "age": 98,
+      "firstName": "Donnie",
+      "lastName": "Mosciski",
+      "signUpDate": "2020-07-01T04:49:26.057Z"
+    },
+    {
+      "age": 66,
+      "firstName": "Herbert",
+      "lastName": "Strosin",
+      "signUpDate": "2019-03-27T04:37:10.953Z"
+    },
+    {
+      "age": 22,
+      "firstName": "Gabrielle",
+      "lastName": "Robel",
+      "signUpDate": "2019-12-16T14:12:21.778Z"
+    },
+    {
+      "age": 4,
+      "firstName": "Roselyn",
+      "lastName": "Rohan",
+      "signUpDate": "2019-09-05T19:43:39.114Z"
+    },
+    {
+      "age": 20,
+      "firstName": "Solon",
+      "lastName": "Nienow",
+      "signUpDate": "2020-10-16T02:28:43.106Z"
+    },
+    {
+      "age": 42,
+      "firstName": "Lambert",
+      "lastName": "Dickens",
+      "signUpDate": "2019-05-30T10:28:57.098Z"
+    },
+    {
+      "age": 4,
+      "firstName": "Nickolas",
+      "lastName": "Erdman",
+      "signUpDate": "2020-06-06T01:29:38.998Z"
+    },
+    {
+      "age": 8,
+      "firstName": "Emelia",
+      "lastName": "Bergstrom",
+      "signUpDate": "2020-07-19T05:45:55.342Z"
+    },
+    {
+      "age": 8,
+      "firstName": "Kevon",
+      "lastName": "Stark",
+      "signUpDate": "2019-04-30T07:31:57.161Z"
+    },
+    {
+      "age": 89,
+      "firstName": "Corine",
+      "lastName": "Yost",
+      "signUpDate": "2019-10-18T13:27:06.175Z"
+    },
+    {
+      "age": 68,
+      "firstName": "Estel",
+      "lastName": "Welch",
+      "signUpDate": "2020-12-19T08:32:21.789Z"
+    },
+    {
+      "age": 87,
+      "firstName": "Curtis",
+      "lastName": "O'Keefe",
+      "signUpDate": "2019-12-03T00:57:58.831Z"
+    },
+    {
+      "age": 9,
+      "firstName": "Myra",
+      "lastName": "Labadie",
+      "signUpDate": "2019-11-27T14:43:41.936Z"
+    },
+    {
+      "age": 16,
+      "firstName": "Orin",
+      "lastName": "Zemlak",
+      "signUpDate": "2019-11-14T18:17:14.250Z"
+    },
+    {
+      "age": 4,
+      "firstName": "Serenity",
+      "lastName": "Labadie",
+      "signUpDate": "2020-08-25T06:54:25.876Z"
+    },
+    {
+      "age": 100,
+      "firstName": "Coty",
+      "lastName": "Hamill",
+      "signUpDate": "2020-10-04T14:50:38.937Z"
+    },
+    {
+      "age": 83,
+      "firstName": "Foster",
+      "lastName": "Bauch",
+      "signUpDate": "2020-02-01T14:58:39.799Z"
+    },
+    {
+      "age": 87,
+      "firstName": "Mozelle",
+      "lastName": "Lowe",
+      "signUpDate": "2019-12-31T15:45:14.245Z"
+    },
+    {
+      "age": 24,
+      "firstName": "Tia",
+      "lastName": "McDermott",
+      "signUpDate": "2020-12-30T14:40:16.915Z"
+    },
+    {
+      "age": 15,
+      "firstName": "Lynn",
+      "lastName": "Strosin",
+      "signUpDate": "2019-04-03T05:44:40.460Z"
+    },
+    {
+      "age": 81,
+      "firstName": "Garrett",
+      "lastName": "Moore",
+      "signUpDate": "2019-07-26T09:11:10.666Z"
+    },
+    {
+      "age": 53,
+      "firstName": "Effie",
+      "lastName": "Ruecker",
+      "signUpDate": "2019-04-02T17:38:02.820Z"
+    },
+    {
+      "age": 99,
+      "firstName": "Vernice",
+      "lastName": "Dickinson",
+      "signUpDate": "2021-01-08T06:51:48.544Z"
+    },
+    {
+      "age": 25,
+      "firstName": "Bertram",
+      "lastName": "Kuphal",
+      "signUpDate": "2019-02-04T23:37:08.588Z"
+    },
+    {
+      "age": 57,
+      "firstName": "Oceane",
+      "lastName": "Schowalter",
+      "signUpDate": "2020-12-11T03:04:06.672Z"
+    },
+    {
+      "age": 24,
+      "firstName": "Cedrick",
+      "lastName": "Hagenes",
+      "signUpDate": "2019-03-28T15:24:55.254Z"
+    },
+    {
+      "age": 39,
+      "firstName": "Kayley",
+      "lastName": "O'Reilly",
+      "signUpDate": "2019-05-09T19:43:13.704Z"
+    },
+    {
+      "age": 38,
+      "firstName": "Keshawn",
+      "lastName": "Roberts",
+      "signUpDate": "2019-01-26T13:27:33.379Z"
+    },
+    {
+      "age": 27,
+      "firstName": "Frieda",
+      "lastName": "Satterfield",
+      "signUpDate": "2020-04-13T12:48:58.216Z"
+    },
+    {
+      "age": 83,
+      "firstName": "Wilbert",
+      "lastName": "Kunze",
+      "signUpDate": "2020-10-02T00:08:42.715Z"
+    },
+    {
+      "age": 77,
+      "firstName": "Idell",
+      "lastName": "Lemke",
+      "signUpDate": "2020-11-23T09:26:13.764Z"
+    }
+  ]
+}
+</pre>
+`;
+
+exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
+<pre>
+  {
+  "data": [
+    {
+      "age": 90,
+      "name": {
+        "first": "Destiney",
+        "last": "Schaden"
+      },
+      "signUpDate": "2020-11-16T06:01:56.359Z"
+    },
+    {
+      "age": 19,
+      "name": {
+        "first": "Garrick",
+        "last": "Bashirian"
+      },
+      "signUpDate": "2020-11-27T19:39:51.841Z"
+    },
+    {
+      "age": 67,
+      "name": {
+        "first": "Osbaldo",
+        "last": "Bartoletti"
+      },
+      "signUpDate": "2020-02-14T19:35:04.750Z"
+    },
+    {
+      "age": 14,
+      "name": {
+        "first": "Izabella",
+        "last": "Beier"
+      },
+      "signUpDate": "2019-05-29T10:58:26.801Z"
+    },
+    {
+      "age": 58,
+      "name": {
+        "first": "Abe",
+        "last": "Ferry"
+      },
+      "signUpDate": "2019-12-27T18:44:50.032Z"
+    },
+    {
+      "age": 10,
+      "name": {
+        "first": "Carlos",
+        "last": "Schultz"
+      },
+      "signUpDate": "2019-03-28T07:47:31.604Z"
+    },
+    {
+      "age": 34,
+      "name": {
+        "first": "Santiago",
+        "last": "Pollich"
+      },
+      "signUpDate": "2019-06-11T05:42:03.447Z"
+    },
+    {
+      "age": 94,
+      "name": {
+        "first": "Kiana",
+        "last": "Hoppe"
+      },
+      "signUpDate": "2019-02-04T13:39:16.378Z"
+    },
+    {
+      "age": 35,
+      "name": {
+        "first": "Anita",
+        "last": "Russel"
+      },
+      "signUpDate": "2019-02-06T02:08:11.807Z"
+    },
+    {
+      "age": 10,
+      "name": {
+        "first": "Isabell",
+        "last": "Wilkinson"
+      },
+      "signUpDate": "2019-05-25T20:03:23.610Z"
+    },
+    {
+      "age": 99,
+      "name": {
+        "first": "Elva",
+        "last": "Kunze"
+      },
+      "signUpDate": "2019-05-08T05:15:53.193Z"
+    },
+    {
+      "age": 54,
+      "name": {
+        "first": "Benjamin",
+        "last": "Kunze"
+      },
+      "signUpDate": "2020-10-12T18:58:37.702Z"
+    },
+    {
+      "age": 35,
+      "name": {
+        "first": "Tianna",
+        "last": "Rippin"
+      },
+      "signUpDate": "2019-05-02T14:35:59.935Z"
+    },
+    {
+      "age": 89,
+      "name": {
+        "first": "Audie",
+        "last": "Pollich"
+      },
+      "signUpDate": "2019-10-10T00:47:20.986Z"
+    },
+    {
+      "age": 13,
+      "name": {
+        "first": "Garnett",
+        "last": "Daugherty"
+      },
+      "signUpDate": "2020-05-13T10:09:28.956Z"
+    },
+    {
+      "age": 32,
+      "name": {
+        "first": "Janie",
+        "last": "Miller"
+      },
+      "signUpDate": "2020-04-16T20:15:45.128Z"
+    },
+    {
+      "age": 69,
+      "name": {
+        "first": "Macy",
+        "last": "Haley"
+      },
+      "signUpDate": "2019-03-12T17:56:35.849Z"
+    },
+    {
+      "age": 60,
+      "name": {
+        "first": "Alice",
+        "last": "McClure"
+      },
+      "signUpDate": "2019-07-07T07:09:53.803Z"
+    },
+    {
+      "age": 65,
+      "name": {
+        "first": "Ara",
+        "last": "Fritsch"
+      },
+      "signUpDate": "2019-05-20T00:08:06.085Z"
+    },
+    {
+      "age": 68,
+      "name": {
+        "first": "Leonora",
+        "last": "Bayer"
+      },
+      "signUpDate": "2019-03-26T10:22:53.934Z"
+    },
+    {
+      "age": 35,
+      "name": {
+        "first": "Corrine",
+        "last": "Beier"
+      },
+      "signUpDate": "2020-11-17T11:35:28.797Z"
+    },
+    {
+      "age": 26,
+      "name": {
+        "first": "Tyshawn",
+        "last": "Schneider"
+      },
+      "signUpDate": "2020-11-18T22:44:05.602Z"
+    },
+    {
+      "age": 77,
+      "name": {
+        "first": "Daron",
+        "last": "Greenholt"
+      },
+      "signUpDate": "2020-09-24T08:40:48.045Z"
+    },
+    {
+      "age": 31,
+      "name": {
+        "first": "Jaycee",
+        "last": "Zemlak"
+      },
+      "signUpDate": "2019-06-25T18:23:27.901Z"
+    },
+    {
+      "age": 88,
+      "name": {
+        "first": "Aryanna",
+        "last": "Zieme"
+      },
+      "signUpDate": "2020-03-26T07:05:01.026Z"
+    },
+    {
+      "age": 20,
+      "name": {
+        "first": "Lori",
+        "last": "Donnelly"
+      },
+      "signUpDate": "2019-04-25T20:08:53.608Z"
+    },
+    {
+      "age": 63,
+      "name": {
+        "first": "Kaley",
+        "last": "Wehner"
+      },
+      "signUpDate": "2020-08-01T08:22:39.739Z"
+    },
+    {
+      "age": 75,
+      "name": {
+        "first": "Jadyn",
+        "last": "Goodwin"
+      },
+      "signUpDate": "2020-06-24T16:56:30.607Z"
+    },
+    {
+      "age": 100,
+      "name": {
+        "first": "Lavinia",
+        "last": "Hayes"
+      },
+      "signUpDate": "2020-07-08T18:11:42.919Z"
+    },
+    {
+      "age": 13,
+      "name": {
+        "first": "Elfrieda",
+        "last": "Heller"
+      },
+      "signUpDate": "2020-11-12T08:41:45.341Z"
+    },
+    {
+      "age": 90,
+      "name": {
+        "first": "Harry",
+        "last": "Nienow"
+      },
+      "signUpDate": "2020-06-14T14:52:48.582Z"
+    },
+    {
+      "age": 65,
+      "name": {
+        "first": "Heaven",
+        "last": "Roberts"
+      },
+      "signUpDate": "2019-01-14T03:41:47.716Z"
+    },
+    {
+      "age": 11,
+      "name": {
+        "first": "Monserrat",
+        "last": "Quigley"
+      },
+      "signUpDate": "2020-06-27T14:56:15.878Z"
+    },
+    {
+      "age": 95,
+      "name": {
+        "first": "Ardella",
+        "last": "Green"
+      },
+      "signUpDate": "2020-11-18T03:07:37.125Z"
+    },
+    {
+      "age": 54,
+      "name": {
+        "first": "Brenna",
+        "last": "Zboncak"
+      },
+      "signUpDate": "2019-05-14T03:12:23.351Z"
+    },
+    {
+      "age": 5,
+      "name": {
+        "first": "Mike",
+        "last": "O'Keefe"
+      },
+      "signUpDate": "2019-08-11T20:54:29.510Z"
+    },
+    {
+      "age": 83,
+      "name": {
+        "first": "Alvena",
+        "last": "Mohr"
+      },
+      "signUpDate": "2020-03-21T09:26:22.702Z"
+    },
+    {
+      "age": 82,
+      "name": {
+        "first": "Dariana",
+        "last": "Heaney"
+      },
+      "signUpDate": "2019-05-22T22:51:41.863Z"
+    },
+    {
+      "age": 50,
+      "name": {
+        "first": "Kailey",
+        "last": "White"
+      },
+      "signUpDate": "2020-05-30T19:04:58.819Z"
+    },
+    {
+      "age": 81,
+      "name": {
+        "first": "Savanah",
+        "last": "Dibbert"
+      },
+      "signUpDate": "2020-10-01T02:08:27.583Z"
+    },
+    {
+      "age": 58,
+      "name": {
+        "first": "Estevan",
+        "last": "Pfannerstill"
+      },
+      "signUpDate": "2019-09-01T01:52:28.661Z"
+    },
+    {
+      "age": 68,
+      "name": {
+        "first": "Celestino",
+        "last": "Spinka"
+      },
+      "signUpDate": "2019-04-08T02:34:10.976Z"
+    },
+    {
+      "age": 34,
+      "name": {
+        "first": "Arjun",
+        "last": "Treutel"
+      },
+      "signUpDate": "2019-08-05T18:49:24.213Z"
+    },
+    {
+      "age": 79,
+      "name": {
+        "first": "Travon",
+        "last": "Yundt"
+      },
+      "signUpDate": "2019-11-01T14:31:14.834Z"
+    },
+    {
+      "age": 4,
+      "name": {
+        "first": "Matt",
+        "last": "Wunsch"
+      },
+      "signUpDate": "2020-03-31T04:12:04.011Z"
+    },
+    {
+      "age": 1,
+      "name": {
+        "first": "Haylie",
+        "last": "Johnson"
+      },
+      "signUpDate": "2020-01-18T01:44:02.063Z"
+    },
+    {
+      "age": 37,
+      "name": {
+        "first": "Prince",
+        "last": "Reinger"
+      },
+      "signUpDate": "2021-01-05T14:54:22.171Z"
+    },
+    {
+      "age": 90,
+      "name": {
+        "first": "Rollin",
+        "last": "Olson"
+      },
+      "signUpDate": "2019-12-15T03:32:21.192Z"
+    },
+    {
+      "age": 18,
+      "name": {
+        "first": "Nicole",
+        "last": "Grant"
+      },
+      "signUpDate": "2019-03-22T11:29:37.737Z"
+    },
+    {
+      "age": 34,
+      "name": {
+        "first": "Eileen",
+        "last": "Hauck"
+      },
+      "signUpDate": "2020-07-31T21:33:20.697Z"
+    }
+  ]
+}
+</pre>
+`;
