@@ -38,8 +38,8 @@ export const nestedDataTable = () => (
           name="name"
           render={({FieldRenderer: NameFieldRenderer}) => (
             <React.Fragment>
-              <NameFieldRenderer name="first" />
-              <NameFieldRenderer name="last" />
+              <NameFieldRenderer label="First Name" name="first" />
+              <NameFieldRenderer label="Last Name" name="last" />
               <NameFieldRenderer
                 // @ts-expect-error - this is here to prove we get an error if we use an invalid column
                 name="foo"

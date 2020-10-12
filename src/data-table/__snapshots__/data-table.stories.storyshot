@@ -6,19 +6,19 @@ exports[`Storyshots Primitives/DataTable Data Table 1`] = `
 >
   <thead>
     <th>
-      firstName
+      First Name
     </th>
     <th>
-      lastName
+      Last Name
     </th>
     <th>
-      age
+      Age
     </th>
     <th>
-      signUpDate
+      Sign Up Date
     </th>
     <th>
-      foo
+      Foo
     </th>
   </thead>
   <tbody>
@@ -1232,19 +1232,19 @@ exports[`Storyshots Primitives/DataTable Nested Data Table 1`] = `
 >
   <thead>
     <th>
-      name.first
+      First Name
     </th>
     <th>
-      name.last
+      Last Name
     </th>
     <th>
       This column is supposed to empty. It's here to prove typescript detects invalid column access.
     </th>
     <th>
-      age
+      Age
     </th>
     <th>
-      signUpDate
+      Sign Up Date
     </th>
     <th>
       This column is supposed to empty. It's here to prove typescript detects invalid column access.

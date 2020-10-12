@@ -1,3 +1,4 @@
+import {startCase} from 'lodash';
 import React, {useContext} from 'react';
 
 import {AnyRenderer} from '../renderers';
@@ -81,7 +82,7 @@ export const ColumnConfigurationProvider: React.FC<{name?: string}> = ({
     configure = (
       name: string,
       {
-        label = name,
+        label = startCase(name),
         renderer = AnyRenderer,
         ...config
       }: ColumnConfigurationWithDefaults
