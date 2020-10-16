@@ -1,20 +1,28 @@
 import React from 'react';
 
 import {NullRenderer} from '../null-renderer';
-import {Renderer} from '../../support';
 
-export type MaybeRendererProps<T> = {
-  value: null | undefined | T;
-  Component: Renderer<T>;
+type ComponentProps<T extends unknown, P extends object> = Partial<P> & {
+  value: T;
 };
 
-export const MaybeRenderer = <T extends unknown>({
+export type MaybeRendererProps<T extends unknown, P extends object> = Partial<
+  Omit<P, 'value'>
+> & {
+  value: undefined | null | T;
+  Component: React.ComponentType<ComponentProps<T, P>>;
+};
+
+export const MaybeRenderer = <T extends unknown, P extends object>({
   Component,
   value,
-}: MaybeRendererProps<T>) => {
+  ...rest
+}: MaybeRendererProps<T, P>) => {
   if (typeof value === 'undefined' || value === null) {
     return <NullRenderer value={null} />;
   }
 
-  return <Component value={value} />;
+  // As far as I can tell, I need the "as" here because tsc can't tell that
+  // `rest` has already had everything that's not ComponentProps removed.
+  return <Component {...(rest as ComponentProps<T, P>)} value={value} />;
 };
