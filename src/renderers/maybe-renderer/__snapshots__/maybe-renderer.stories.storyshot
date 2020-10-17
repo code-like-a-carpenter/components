@@ -14,6 +14,12 @@ exports[`Storyshots Renderers/MaybeRenderer Maybe Renderer 1`] = `
 </span>
 `;
 
+exports[`Storyshots Renderers/MaybeRenderer Pass Through Props 1`] = `
+<span>
+   - 
+</span>
+`;
+
 exports[`Storyshots Renderers/MaybeRenderer Truthy 1`] = `
 <span
   className="magic-boolean"
