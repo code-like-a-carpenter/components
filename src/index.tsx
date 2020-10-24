@@ -8,4 +8,5 @@ export * from './pager';
 export * from './outline';
 export * from './renderers';
 export * from './routing';
+export * from './simple-error-boundary';
 export * from './spinner';
