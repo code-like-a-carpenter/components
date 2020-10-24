@@ -14,20 +14,29 @@ export default {
   title: 'ErrorBoundaries/SimpleErrorBoundary',
 };
 
+/*
+ * The following examples attempt to hide their stacks when running as part of
+ * the test suite because stack traces will include the full path to the file,
+ * which will vary between CI and developer machines.
+ */
+
 export const simpleErrorBoundary = () => (
-  <SimpleErrorBoundary>
+  <SimpleErrorBoundary printStack={typeof jest === 'undefined'}>
     <ThrowOnRender />
   </SimpleErrorBoundary>
 );
 
 export const jsonParseError = () => (
-  <SimpleErrorBoundary>
+  <SimpleErrorBoundary printStack={typeof jest === 'undefined'}>
     <BadJsonParse />
   </SimpleErrorBoundary>
 );
 
 export const warningNotDanger = () => (
-  <SimpleErrorBoundary variant="warning">
+  <SimpleErrorBoundary
+    printStack={typeof jest === 'undefined'}
+    variant="warning"
+  >
     <BadJsonParse />
   </SimpleErrorBoundary>
 );
