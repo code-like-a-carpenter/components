@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots ErrorBoundaries/SimpleErrorBoundary Json Parse Error 1`] = `
+<div
+  className="fade alert alert-danger show"
+  role="alert"
+>
+  <details>
+    <summary>
+      SyntaxError: Unexpected token i in JSON at position 1
+    </summary>
+    <pre>
+      <code>
+        SyntaxError: Unexpected token i in JSON at position 1
+at JSON.parse (&lt;anonymous&gt;)
+at BadJsonParse (/Users/ian/projects/code-like-a-carpenter/components/src/simple-error-boundary/simple-error-boundary.stories.tsx:10:40)
+at renderWithHooks (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:5552:18)
+at mountIndeterminateComponent (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:7918:13)
+at beginWork (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:9019:16)
+at performUnitOfWork (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:12649:12)
+at workLoopSync (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:12622:22)
+at performSyncWorkOnRoot (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:12333:9)
+at /Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:1825:24
+at unstable_runWithPriority (/Users/ian/projects/code-like-a-carpenter/components/node_modules/scheduler/cjs/scheduler.development.js:653:12)
+at runWithPriority (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:1775:10)
+at flushSyncCallbackQueueImpl (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:1820:7)
+at flushSyncCallbackQueue (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:1808:3)
+at scheduleUpdateOnFiber (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:11776:9)
+at updateContainer (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:14747:3)
+at create (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:15455:5)
+at getRenderedTree (/Users/ian/projects/code-like-a-carpenter/components/node_modules/@storybook/addon-storyshots/dist/frameworks/react/renderTree.js:26:16)
+at /Users/ian/projects/code-like-a-carpenter/components/node_modules/@storybook/addon-storyshots/dist/test-bodies.js:11:22
+at /Users/ian/projects/code-like-a-carpenter/components/node_modules/@storybook/addon-storyshots/dist/test-bodies.js:41:52
+at Object.&lt;anonymous&gt; (/Users/ian/projects/code-like-a-carpenter/components/node_modules/@storybook/addon-storyshots/dist/api/snapshotsTestsTemplate.js:42:20)
+at Object.asyncJestTest (/Users/ian/projects/code-like-a-carpenter/components/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+at /Users/ian/projects/code-like-a-carpenter/components/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+at new Promise (&lt;anonymous&gt;)
+at mapper (/Users/ian/projects/code-like-a-carpenter/components/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+at /Users/ian/projects/code-like-a-carpenter/components/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+at processTicksAndRejections (internal/process/task_queues.js:97:5)
+      </code>
+    </pre>
+  </details>
+</div>
+`;
+
+exports[`Storyshots ErrorBoundaries/SimpleErrorBoundary No Stack 1`] = `
+<div
+  className="fade alert alert-info show"
+  role="alert"
+>
+  SyntaxError: Unexpected token i in JSON at position 1
+</div>
+`;
+
+exports[`Storyshots ErrorBoundaries/SimpleErrorBoundary Simple Error Boundary 1`] = `
+<div
+  className="fade alert alert-danger show"
+  role="alert"
+>
+  <details>
+    <summary>
+      Error: Something went wrong!
+    </summary>
+    <pre>
+      <code>
+        Error: Something went wrong!
+at ThrowOnRender (/Users/ian/projects/code-like-a-carpenter/components/src/simple-error-boundary/simple-error-boundary.stories.tsx:8:9)
+at renderWithHooks (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:5552:18)
+at mountIndeterminateComponent (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:7918:13)
+at beginWork (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:9019:16)
+at performUnitOfWork (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:12649:12)
+at workLoopSync (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:12622:22)
+at performSyncWorkOnRoot (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:12333:9)
+at /Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:1825:24
+at unstable_runWithPriority (/Users/ian/projects/code-like-a-carpenter/components/node_modules/scheduler/cjs/scheduler.development.js:653:12)
+at runWithPriority (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:1775:10)
+at flushSyncCallbackQueueImpl (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:1820:7)
+at flushSyncCallbackQueue (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:1808:3)
+at scheduleUpdateOnFiber (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:11776:9)
+at updateContainer (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:14747:3)
+at create (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:15455:5)
+at getRenderedTree (/Users/ian/projects/code-like-a-carpenter/components/node_modules/@storybook/addon-storyshots/dist/frameworks/react/renderTree.js:26:16)
+at /Users/ian/projects/code-like-a-carpenter/components/node_modules/@storybook/addon-storyshots/dist/test-bodies.js:11:22
+at /Users/ian/projects/code-like-a-carpenter/components/node_modules/@storybook/addon-storyshots/dist/test-bodies.js:41:52
+at Object.&lt;anonymous&gt; (/Users/ian/projects/code-like-a-carpenter/components/node_modules/@storybook/addon-storyshots/dist/api/snapshotsTestsTemplate.js:42:20)
+at Object.asyncJestTest (/Users/ian/projects/code-like-a-carpenter/components/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+at /Users/ian/projects/code-like-a-carpenter/components/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+at new Promise (&lt;anonymous&gt;)
+at mapper (/Users/ian/projects/code-like-a-carpenter/components/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+at /Users/ian/projects/code-like-a-carpenter/components/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+at processTicksAndRejections (internal/process/task_queues.js:97:5)
+      </code>
+    </pre>
+  </details>
+</div>
+`;
+
+exports[`Storyshots ErrorBoundaries/SimpleErrorBoundary Warning Not Danger 1`] = `
+<div
+  className="fade alert alert-warning show"
+  role="alert"
+>
+  <details>
+    <summary>
+      SyntaxError: Unexpected token i in JSON at position 1
+    </summary>
+    <pre>
+      <code>
+        SyntaxError: Unexpected token i in JSON at position 1
+at JSON.parse (&lt;anonymous&gt;)
+at BadJsonParse (/Users/ian/projects/code-like-a-carpenter/components/src/simple-error-boundary/simple-error-boundary.stories.tsx:10:40)
+at renderWithHooks (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:5552:18)
+at mountIndeterminateComponent (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:7918:13)
+at beginWork (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:9019:16)
+at performUnitOfWork (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:12649:12)
+at workLoopSync (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:12622:22)
+at performSyncWorkOnRoot (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:12333:9)
+at /Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:1825:24
+at unstable_runWithPriority (/Users/ian/projects/code-like-a-carpenter/components/node_modules/scheduler/cjs/scheduler.development.js:653:12)
+at runWithPriority (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:1775:10)
+at flushSyncCallbackQueueImpl (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:1820:7)
+at flushSyncCallbackQueue (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:1808:3)
+at scheduleUpdateOnFiber (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:11776:9)
+at updateContainer (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:14747:3)
+at create (/Users/ian/projects/code-like-a-carpenter/components/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:15455:5)
+at getRenderedTree (/Users/ian/projects/code-like-a-carpenter/components/node_modules/@storybook/addon-storyshots/dist/frameworks/react/renderTree.js:26:16)
+at /Users/ian/projects/code-like-a-carpenter/components/node_modules/@storybook/addon-storyshots/dist/test-bodies.js:11:22
+at /Users/ian/projects/code-like-a-carpenter/components/node_modules/@storybook/addon-storyshots/dist/test-bodies.js:41:52
+at Object.&lt;anonymous&gt; (/Users/ian/projects/code-like-a-carpenter/components/node_modules/@storybook/addon-storyshots/dist/api/snapshotsTestsTemplate.js:42:20)
+at Object.asyncJestTest (/Users/ian/projects/code-like-a-carpenter/components/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+at /Users/ian/projects/code-like-a-carpenter/components/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+at new Promise (&lt;anonymous&gt;)
+at mapper (/Users/ian/projects/code-like-a-carpenter/components/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+at /Users/ian/projects/code-like-a-carpenter/components/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+at processTicksAndRejections (internal/process/task_queues.js:97:5)
+      </code>
+    </pre>
+  </details>
+</div>
+`;
