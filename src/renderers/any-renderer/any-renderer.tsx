@@ -39,6 +39,10 @@ export const AnyRenderer = ({value, ...rest}: AnyRendererProps) => {
       return <DateRenderer value={value} {...date} />;
     }
 
+    if (React.isValidElement(value)) {
+      return <>{value}</>;
+    }
+
     return <ObjectRenderer value={value} />;
   }
 

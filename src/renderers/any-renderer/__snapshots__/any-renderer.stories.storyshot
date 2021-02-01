@@ -74,6 +74,12 @@ exports[`Storyshots Renderers/AnyRenderer Obj 1`] = `
 </pre>
 `;
 
+exports[`Storyshots Renderers/AnyRenderer React Node 1`] = `
+<p>
+  foo
+</p>
+`;
+
 exports[`Storyshots Renderers/AnyRenderer String 1`] = `"foo"`;
 
 exports[`Storyshots Renderers/AnyRenderer With Overrides 1`] = `

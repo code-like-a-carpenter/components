@@ -68,3 +68,47 @@ exports[`Storyshots Description/Description Multiple Descriptions 1`] = `
   </dd>
 </dl>
 `;
+
+exports[`Storyshots Description/Description With Date 1`] = `
+<dl
+  className="description-list"
+>
+  <dt
+    className="description-single-item"
+  >
+    Created At
+  </dt>
+  <dd
+    className="description-single-item"
+  >
+    <time
+      dateTime={"2021-01-01T00:00:00.000Z"}
+      title="2021-01-01T00:00:00+00:00"
+    >
+      January 1, 2021
+    </time>
+  </dd>
+</dl>
+`;
+
+exports[`Storyshots Description/Description With Date As Child 1`] = `
+<dl
+  className="description-list"
+>
+  <dt
+    className="description-single-item"
+  >
+    Created At
+  </dt>
+  <dd
+    className="description-single-item"
+  >
+    <time
+      dateTime={"2021-01-01T00:00:00.000Z"}
+      title="2021-01-01T00:00:00+00:00"
+    >
+      January 1, 2021
+    </time>
+  </dd>
+</dl>
+`;
