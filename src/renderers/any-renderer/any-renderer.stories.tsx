@@ -40,6 +40,7 @@ const overrides = {
     null: 'nothing to see here',
   },
 };
+export const reactNode = () => <AnyRenderer value={<p>foo</p>} />;
 
 export const withOverrides = () => (
   <table>

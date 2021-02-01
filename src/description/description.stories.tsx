@@ -27,3 +27,11 @@ export const children = () => (
     <div>Its second description</div>
   </Description>
 );
+
+export const withDate = () => (
+  <Description term="Created At" description={new Date('2021-01-01')} />
+);
+
+export const withDateAsChild = () => (
+  <Description term="Created At">{new Date('2021-01-01')}</Description>
+);
