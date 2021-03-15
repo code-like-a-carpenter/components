@@ -1,8 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components/Code Code 1`] = `
-<pre>
-  <code>
+<pre
+  className="code"
+>
+  <code
+    className="code"
+  >
     {
   "proof": true
 }
@@ -11,8 +15,12 @@ exports[`Storyshots Components/Code Code 1`] = `
 `;
 
 exports[`Storyshots Components/Code Indented 1`] = `
-<pre>
-  <code>
+<pre
+  className="code"
+>
+  <code
+    className="code"
+  >
     {
   "proof": true
 }
@@ -31,8 +39,12 @@ exports[`Storyshots Components/Code Inline 1`] = `
 `;
 
 exports[`Storyshots Components/Code Nested 1`] = `
-<pre>
-  <code>
+<pre
+  className="code"
+>
+  <code
+    className="code"
+  >
     foo
   </code>
 </pre>

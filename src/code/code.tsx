@@ -26,8 +26,8 @@ export const Code = ({
         <>{children}</>
       ) : (
         <CodeContext.Provider value={true}>
-          <pre>
-            <code>
+          <pre className="code">
+            <code className="code">
               {typeof children === 'string' && shouldDedent
                 ? dedent(children)
                 : children}

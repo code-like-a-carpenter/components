@@ -7,8 +7,12 @@ exports[`Storyshots Renderers/AnyRenderer Any Renderer 1`] = `
 `;
 
 exports[`Storyshots Renderers/AnyRenderer Array 1`] = `
-<pre>
-  <code>
+<pre
+  className="code"
+>
+  <code
+    className="code"
+  >
     [
   "foo",
   true,
@@ -56,8 +60,12 @@ exports[`Storyshots Renderers/AnyRenderer Date String 1`] = `
 exports[`Storyshots Renderers/AnyRenderer Number 1`] = `"5"`;
 
 exports[`Storyshots Renderers/AnyRenderer Obj 1`] = `
-<pre>
-  <code>
+<pre
+  className="code"
+>
+  <code
+    className="code"
+  >
     {
   "array": [
     "foo",
