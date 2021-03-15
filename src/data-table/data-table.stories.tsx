@@ -40,6 +40,30 @@ export const nestedDataTable = () => (
             <React.Fragment>
               <NameFieldRenderer label="First Name" name="first" />
               <NameFieldRenderer label="Last Name" name="last" />
+            </React.Fragment>
+          )}
+        />
+        <FieldRenderer name="age" />
+        <FieldRenderer name="signUpDate" />
+      </React.Fragment>
+    )}
+  />
+);
+
+/**
+ * Just here for testing TypeScript. Does not demonstrate anything interesting in storybook.
+ */
+export const nestedDataTableForTesting = () => (
+  <DataTable
+    data={complexData}
+    render={({FieldRenderer}) => (
+      <React.Fragment>
+        <FieldRenderer
+          name="name"
+          render={({FieldRenderer: NameFieldRenderer}) => (
+            <React.Fragment>
+              <NameFieldRenderer label="First Name" name="first" />
+              <NameFieldRenderer label="Last Name" name="last" />
               <NameFieldRenderer
                 // @ts-expect-error - this is here to prove we get an error if we use an invalid column
                 name="foo"
