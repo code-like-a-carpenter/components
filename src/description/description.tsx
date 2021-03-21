@@ -6,7 +6,13 @@ import {Renderer as RendererType} from '../support';
 
 import {DescriptionListContext, DescriptionList} from './description-list';
 
-export interface CommonProps extends React.HTMLProps<HTMLElement> {
+export interface CommonProps
+  extends Omit<React.HTMLProps<HTMLElement>, 'title'> {
+  /**
+   * Longer-form version of the "term" prop which explains more about what this
+   * item describes.
+   */
+  readonly descriptionLabel?: string;
   readonly term: React.ReactNode;
   readonly Renderer?: RendererType;
 }
@@ -23,6 +29,7 @@ export type Props = CommonProps & (ChildrenProps | DescriptionProps);
 
 export const Description = ({
   className,
+  descriptionLabel,
   Renderer = AnyRenderer,
   term,
   ...props
@@ -71,6 +78,7 @@ export const Description = ({
           className={cx(className, 'description-list__description')}
           Renderer={Renderer}
           term={term}
+          descriptionLabel={descriptionLabel}
           {...props}
         />
       </DescriptionList>
@@ -89,7 +97,7 @@ export const Description = ({
 
   return (
     <React.Fragment>
-      <dt className={dtClasses} {...props}>
+      <dt className={dtClasses} title={descriptionLabel} {...props}>
         {term}
       </dt>
       {React.Children.map(children, (child) => (
