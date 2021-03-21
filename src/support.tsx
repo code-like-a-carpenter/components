@@ -26,9 +26,10 @@ export function useContextWithDefaults<T>(
  */
 export type RendererDefault = React.ReactNode;
 
-export type RendererProps<T extends unknown = unknown, C = unknown> = Partial<
-  C
-> & {
+export type RendererProps<
+  T extends unknown = unknown,
+  C = unknown
+> = Partial<C> & {
   value: T;
 };
 
