@@ -5,12 +5,14 @@ exports[`Storyshots Description/DescriptionList Description List 1`] = `
   className="description-list"
 >
   <dt
-    className="description-single-item"
+    className="description-list__term description-list__term--single"
+    description="Its Description"
   >
     Term
   </dt>
   <dd
-    className="description-single-item"
+    className="description-list__description description-list__description--single"
+    description="Its Description"
   >
     Its Description
   </dd>
@@ -22,42 +24,50 @@ exports[`Storyshots Description/DescriptionList List 1`] = `
   className="description-list"
 >
   <dt
-    className="description-single-item"
+    className="description-list__term description-list__term--single"
+    description="Its Description"
   >
     Term 1
   </dt>
   <dd
-    className="description-single-item"
+    className="description-list__description description-list__description--single"
+    description="Its Description"
   >
     Its Description
   </dd>
   <dt
-    className="description-single-item"
+    className="description-list__term description-list__term--single"
+    description="Its Description"
   >
     Term 2
   </dt>
   <dd
-    className="description-single-item"
+    className="description-list__description description-list__description--single"
+    description="Its Description"
   >
     Its Description
   </dd>
   <dt
-    className="description-single-item"
+    className="description-list__term description-list__term--single"
+    description="Its Description"
   >
     Term 3
   </dt>
   <dd
-    className="description-single-item"
+    className="description-list__description description-list__description--single"
+    description="Its Description"
   >
     Its Description
   </dd>
   <dt
-    className="description-single-item"
+    className="description-list__term description-list__term--single"
+    description="Its Description"
   >
     Term 4
   </dt>
   <dd
-    className="description-single-item"
+    className="description-list__description description-list__description--single"
+    description="Its Description"
   >
     Its Description
   </dd>
@@ -69,51 +79,51 @@ exports[`Storyshots Description/DescriptionList List With Multiple Descriptions 
   className="description-list"
 >
   <dt
-    className="description-single-item"
+    className="description-list__term description-list__term--single"
   >
     Term 1
   </dt>
   <dd
-    className="description-single-item"
+    className="description-list__description description-list__description--single"
   >
     Its First Description
   </dd>
   <dt
-    className="description-single-item"
+    className="description-list__term description-list__term--single"
   >
     Term 2
   </dt>
   <dd
-    className="description-single-item"
+    className="description-list__description description-list__description--single"
   >
     Its First Description
   </dd>
   <dt
-    className="description-multi-item"
+    className="description-list__term description-list__term--multi"
   >
     Term 3
   </dt>
   <dd
-    className="description-multi-item"
+    className="description-list__description description-list__description--multi"
   >
     <div>
       Its First Description
     </div>
   </dd>
   <dd
-    className="description-multi-item"
+    className="description-list__description description-list__description--multi"
   >
     <div>
       Its Second Description
     </div>
   </dd>
   <dt
-    className="description-single-item"
+    className="description-list__term description-list__term--single"
   >
     Term 4
   </dt>
   <dd
-    className="description-single-item"
+    className="description-list__description description-list__description--single"
   >
     Its First Description
   </dd>

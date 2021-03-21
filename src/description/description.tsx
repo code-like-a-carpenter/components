@@ -6,10 +6,10 @@ import {Renderer as RendererType} from '../support';
 
 import {DescriptionListContext, DescriptionList} from './description-list';
 
-export type CommonProps = {
+export interface CommonProps extends React.HTMLProps<HTMLElement> {
   readonly term: React.ReactNode;
   readonly Renderer?: RendererType;
-};
+}
 
 export type ChildrenProps = {
   readonly children: React.ReactNode;
@@ -22,6 +22,7 @@ export interface DescriptionProps {
 export type Props = CommonProps & (ChildrenProps | DescriptionProps);
 
 export const Description = ({
+  className,
   Renderer = AnyRenderer,
   term,
   ...props
@@ -65,27 +66,34 @@ export const Description = ({
 
   if (!listType) {
     return (
-      <DescriptionList>
-        <Description Renderer={Renderer} term={term} {...props} />
+      <DescriptionList className="description-list--single">
+        <Description
+          className={cx(className, 'description-list__description')}
+          Renderer={Renderer}
+          term={term}
+          {...props}
+        />
       </DescriptionList>
     );
   }
 
+  const dtClasses = cx(className, 'description-list__term', {
+    'description-list__term--multi': count >= 2,
+    'description-list__term--single': count < 2,
+  });
+
+  const ddClasses = cx(className, 'description-list__description', {
+    'description-list__description--multi': count >= 2,
+    'description-list__description--single': count < 2,
+  });
+
   return (
     <React.Fragment>
-      <dt
-        className={cx(
-          count < 2 ? 'description-single-item' : 'description-multi-item'
-        )}
-      >
+      <dt className={dtClasses} {...props}>
         {term}
       </dt>
       {React.Children.map(children, (child) => (
-        <dd
-          className={cx(
-            count < 2 ? 'description-single-item' : 'description-multi-item'
-          )}
-        >
+        <dd className={ddClasses} {...props}>
           {child}
         </dd>
       ))}

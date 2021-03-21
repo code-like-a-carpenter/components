@@ -2,10 +2,10 @@
 
 exports[`Storyshots Components/Code Code 1`] = `
 <pre
-  className="code"
+  className="code code__pre"
 >
   <code
-    className="code"
+    className="code code--block"
   >
     {
   "proof": true
@@ -16,10 +16,10 @@ exports[`Storyshots Components/Code Code 1`] = `
 
 exports[`Storyshots Components/Code Indented 1`] = `
 <pre
-  className="code"
+  className="code code__pre"
 >
   <code
-    className="code"
+    className="code code--block"
   >
     {
   "proof": true
@@ -31,7 +31,9 @@ exports[`Storyshots Components/Code Indented 1`] = `
 exports[`Storyshots Components/Code Inline 1`] = `
 <p>
   There is 
-  <code>
+  <code
+    className="code code--inline"
+  >
     inline code
   </code>
    in this paragraph
@@ -40,10 +42,10 @@ exports[`Storyshots Components/Code Inline 1`] = `
 
 exports[`Storyshots Components/Code Nested 1`] = `
 <pre
-  className="code"
+  className="code code__pre"
 >
   <code
-    className="code"
+    className="code code--block"
   >
     foo
   </code>

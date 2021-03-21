@@ -2,10 +2,10 @@
 
 exports[`Storyshots Renderers/ObjectRenderer Object Renderer 1`] = `
 <pre
-  className="code"
+  className="code code__pre"
 >
   <code
-    className="code"
+    className="code code--block"
   >
     {
   "bar": "baz",
@@ -19,10 +19,10 @@ exports[`Storyshots Renderers/ObjectRenderer Object Renderer 1`] = `
 
 exports[`Storyshots Renderers/ObjectRenderer With Array 1`] = `
 <pre
-  className="code"
+  className="code code__pre"
 >
   <code
-    className="code"
+    className="code code--block"
   >
     [
   {

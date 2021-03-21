@@ -2,22 +2,22 @@
 
 exports[`Storyshots Description/Description Children 1`] = `
 <dl
-  className="description-list"
+  className="description-list--single description-list"
 >
   <dt
-    className="description-multi-item"
+    className="description-list__description description-list__term description-list__term--multi"
   >
     Term
   </dt>
   <dd
-    className="description-multi-item"
+    className="description-list__description description-list__description description-list__description--multi"
   >
     <div>
       Its description
     </div>
   </dd>
   <dd
-    className="description-multi-item"
+    className="description-list__description description-list__description description-list__description--multi"
   >
     <div>
       Its second description
@@ -28,15 +28,17 @@ exports[`Storyshots Description/Description Children 1`] = `
 
 exports[`Storyshots Description/Description Description 1`] = `
 <dl
-  className="description-list"
+  className="description-list--single description-list"
 >
   <dt
-    className="description-single-item"
+    className="description-list__description description-list__term description-list__term--single"
+    description="Its Description"
   >
     Term
   </dt>
   <dd
-    className="description-single-item"
+    className="description-list__description description-list__description description-list__description--single"
+    description="Its Description"
   >
     Its Description
   </dd>
@@ -45,22 +47,52 @@ exports[`Storyshots Description/Description Description 1`] = `
 
 exports[`Storyshots Description/Description Multiple Descriptions 1`] = `
 <dl
-  className="description-list"
+  className="description-list--single description-list"
 >
   <dt
-    className="description-multi-item"
+    className="description-list__description description-list__term description-list__term--multi"
+    description={
+      Array [
+        <div>
+          Its description
+        </div>,
+        <div>
+          Its second description
+        </div>,
+      ]
+    }
   >
     Term
   </dt>
   <dd
-    className="description-multi-item"
+    className="description-list__description description-list__description description-list__description--multi"
+    description={
+      Array [
+        <div>
+          Its description
+        </div>,
+        <div>
+          Its second description
+        </div>,
+      ]
+    }
   >
     <div>
       Its description
     </div>
   </dd>
   <dd
-    className="description-multi-item"
+    className="description-list__description description-list__description description-list__description--multi"
+    description={
+      Array [
+        <div>
+          Its description
+        </div>,
+        <div>
+          Its second description
+        </div>,
+      ]
+    }
   >
     <div>
       Its second description
@@ -71,15 +103,17 @@ exports[`Storyshots Description/Description Multiple Descriptions 1`] = `
 
 exports[`Storyshots Description/Description With Date 1`] = `
 <dl
-  className="description-list"
+  className="description-list--single description-list"
 >
   <dt
-    className="description-single-item"
+    className="description-list__description description-list__term description-list__term--single"
+    description={2021-01-01T00:00:00.000Z}
   >
     Created At
   </dt>
   <dd
-    className="description-single-item"
+    className="description-list__description description-list__description description-list__description--single"
+    description={2021-01-01T00:00:00.000Z}
   >
     <time
       dateTime={"2021-01-01T00:00:00.000Z"}
@@ -93,15 +127,15 @@ exports[`Storyshots Description/Description With Date 1`] = `
 
 exports[`Storyshots Description/Description With Date As Child 1`] = `
 <dl
-  className="description-list"
+  className="description-list--single description-list"
 >
   <dt
-    className="description-single-item"
+    className="description-list__description description-list__term description-list__term--single"
   >
     Created At
   </dt>
   <dd
-    className="description-single-item"
+    className="description-list__description description-list__description description-list__description--single"
   >
     <time
       dateTime={"2021-01-01T00:00:00.000Z"}
