@@ -22,15 +22,15 @@ export type DateRendererContextProps = {
   range?: boolean;
 };
 
-export const DateRendererContext = React.createContext<
-  DateRendererContextProps
->({
-  format: 'LL',
-  negativeIsNull: false,
-  range: false,
-  reference: new Date(),
-  relative: false,
-});
+export const DateRendererContext = React.createContext<DateRendererContextProps>(
+  {
+    format: 'LL',
+    negativeIsNull: false,
+    range: false,
+    reference: new Date(),
+    relative: false,
+  }
+);
 
 export type DateRendererProps = RendererProps<
   Date | string | number,
