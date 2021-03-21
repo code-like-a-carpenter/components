@@ -6,22 +6,30 @@ import {Renderer as RendererType} from '../support';
 
 import {DescriptionListContext, DescriptionList} from './description-list';
 
-export type CommonProps = {
-  term: React.ReactNode;
-  Renderer?: RendererType;
-};
+export interface CommonProps
+  extends Omit<React.HTMLProps<HTMLElement>, 'title'> {
+  /**
+   * Longer-form version of the "term" prop which explains more about what this
+   * item describes.
+   */
+  readonly descriptionLabel?: string;
+  readonly term: React.ReactNode;
+  readonly Renderer?: RendererType;
+}
 
 export type ChildrenProps = {
-  children: React.ReactNode;
+  readonly children: React.ReactNode;
 };
 
 export interface DescriptionProps {
-  description: React.ReactNode | React.ReactNodeArray;
+  readonly description: React.ReactNode | React.ReactNodeArray;
 }
 
 export type Props = CommonProps & (ChildrenProps | DescriptionProps);
 
 export const Description = ({
+  className,
+  descriptionLabel,
   Renderer = AnyRenderer,
   term,
   ...props
@@ -65,27 +73,35 @@ export const Description = ({
 
   if (!listType) {
     return (
-      <DescriptionList>
-        <Description Renderer={Renderer} term={term} {...props} />
+      <DescriptionList className="description-list--single">
+        <Description
+          className={cx(className, 'description-list__description')}
+          Renderer={Renderer}
+          term={term}
+          descriptionLabel={descriptionLabel}
+          {...props}
+        />
       </DescriptionList>
     );
   }
 
+  const dtClasses = cx(className, 'description-list__term', {
+    'description-list__term--multi': count >= 2,
+    'description-list__term--single': count < 2,
+  });
+
+  const ddClasses = cx(className, 'description-list__description', {
+    'description-list__description--multi': count >= 2,
+    'description-list__description--single': count < 2,
+  });
+
   return (
     <React.Fragment>
-      <dt
-        className={cx(
-          count < 2 ? 'description-single-item' : 'description-multi-item'
-        )}
-      >
+      <dt className={dtClasses} title={descriptionLabel} {...props}>
         {term}
       </dt>
       {React.Children.map(children, (child) => (
-        <dd
-          className={cx(
-            count < 2 ? 'description-single-item' : 'description-multi-item'
-          )}
-        >
+        <dd className={ddClasses} {...props}>
           {child}
         </dd>
       ))}

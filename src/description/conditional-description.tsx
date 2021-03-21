@@ -1,4 +1,5 @@
 import React from 'react';
+import cx from 'classnames';
 
 import {Renderer} from '../support';
 
@@ -8,14 +9,16 @@ import {Description} from './description';
 type MostlyFalsy = false | '' | null | undefined;
 type DescriptionType<T> = T | MostlyFalsy;
 
-export interface ConditionalDescriptionProps<T> {
-  condition?: boolean;
-  term: React.ReactNode;
-  description?: DescriptionType<T>;
-  Render?: Renderer<T>;
+export interface ConditionalDescriptionProps<T>
+  extends React.HTMLProps<HTMLElement> {
+  readonly condition?: boolean;
+  readonly term: React.ReactNode;
+  readonly description?: DescriptionType<T>;
+  readonly Render?: Renderer<T>;
 }
 
 export const ConditionalDescription = <T extends React.ReactNode>({
+  className,
   condition,
   description,
   Render,
@@ -38,8 +41,9 @@ export const ConditionalDescription = <T extends React.ReactNode>({
       }
       return null;
     }
+    const classes = cx(className, 'description-list__description--conitional');
     return (
-      <Description {...rest}>
+      <Description className={classes} {...rest}>
         <Render value={description} />
       </Description>
     );

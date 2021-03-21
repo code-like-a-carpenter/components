@@ -8,8 +8,8 @@ import {SectionHeadingProps} from './section-heading';
 export const HeadingContext = React.createContext(false);
 
 export type HeadingProps = {
-  outlineLevel: number;
-  styleLevel: number;
+  readonly outlineLevel: number;
+  readonly styleLevel: number;
 } & SectionHeadingProps;
 
 export const Heading = ({

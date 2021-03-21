@@ -6,7 +6,7 @@ import {SimplePager} from './simple-pager';
 import {PageInfo} from './types';
 
 export type PagerProps = {
-  pageInfo: PageInfo;
+  readonly pageInfo: PageInfo;
 };
 
 export const Pager = ({pageInfo}: PagerProps) => {

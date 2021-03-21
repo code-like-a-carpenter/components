@@ -6,7 +6,7 @@ export const LevelContext = React.createContext({
 });
 
 export interface SectionProps {
-  styleRoot?: boolean | number;
+  readonly styleRoot?: boolean | number;
 }
 
 export const Section = ({

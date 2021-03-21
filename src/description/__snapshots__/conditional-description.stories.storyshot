@@ -2,15 +2,17 @@
 
 exports[`Storyshots Description/ConditionalDescription Conditional Description 1`] = `
 <dl
-  className="description-list"
+  className="description-list--single description-list"
 >
   <dt
-    className="description-single-item"
+    className="description-list__description description-list__term description-list__term--single"
+    description="a value"
   >
     A label
   </dt>
   <dd
-    className="description-single-item"
+    className="description-list__description description-list__description description-list__description--single"
+    description="a value"
   >
     a value
   </dd>
@@ -19,15 +21,15 @@ exports[`Storyshots Description/ConditionalDescription Conditional Description 1
 
 exports[`Storyshots Description/ConditionalDescription With A Date 1`] = `
 <dl
-  className="description-list"
+  className="description-list--single description-list"
 >
   <dt
-    className="description-single-item"
+    className="description-list__description--conitional description-list__description description-list__term description-list__term--single"
   >
     A Date
   </dt>
   <dd
-    className="description-single-item"
+    className="description-list__description--conitional description-list__description description-list__description description-list__description--single"
   >
     <time
       dateTime={"2020-01-01T00:00:00.000Z"}
@@ -55,15 +57,17 @@ exports[`Storyshots Description/ConditionalDescription With Not A Time 1`] = `nu
 
 exports[`Storyshots Description/ConditionalDescription With True Condition 1`] = `
 <dl
-  className="description-list"
+  className="description-list--single description-list"
 >
   <dt
-    className="description-single-item"
+    className="description-list__description description-list__term description-list__term--single"
+    description="A value"
   >
     A label
   </dt>
   <dd
-    className="description-single-item"
+    className="description-list__description description-list__description description-list__description--single"
+    description="A value"
   >
     A value
   </dd>

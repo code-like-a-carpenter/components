@@ -8,9 +8,9 @@ import {NullRenderer, NullRendererContextType} from '../null-renderer';
 import {RendererProps, useContextWithDefaults} from '../../support';
 
 export type AnyRendererContextType = {
-  boolean?: BooleanRendererContextType;
-  date?: DateRendererContextProps;
-  null?: NullRendererContextType;
+  readonly boolean?: BooleanRendererContextType;
+  readonly date?: DateRendererContextProps;
+  readonly null?: NullRendererContextType;
 };
 
 export const AnyRendererContext = React.createContext<AnyRendererContextType>(

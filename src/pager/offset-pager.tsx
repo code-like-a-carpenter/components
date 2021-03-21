@@ -7,8 +7,8 @@ import {makeOffsetHref} from './hrefs';
 import {OffsetPageInfo} from './types';
 
 export type OffsetPagerProps = {
-  maxBeforeEllipsis?: number;
-  pageInfo: OffsetPageInfo;
+  readonly maxBeforeEllipsis?: number;
+  readonly pageInfo: OffsetPageInfo;
 };
 
 export const OffsetPager = ({

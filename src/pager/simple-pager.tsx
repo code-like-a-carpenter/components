@@ -7,8 +7,8 @@ import {makeSimpleHref} from './hrefs';
 import {SimplePageInfo} from './types';
 
 export type SimplePagerProps = {
-  maxBeforeEllipsis?: number;
-  pageInfo: SimplePageInfo;
+  readonly maxBeforeEllipsis?: number;
+  readonly pageInfo: SimplePageInfo;
 };
 
 export const SimplePager = ({

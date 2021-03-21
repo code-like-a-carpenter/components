@@ -3,14 +3,14 @@ import React from 'react';
 import {NullRenderer} from '../null-renderer';
 
 type ComponentProps<T extends unknown, P extends object> = Partial<P> & {
-  value: T;
+  readonly value: T;
 };
 
 export type MaybeRendererProps<T extends unknown, P extends object> = Partial<
   Omit<P, 'value'>
 > & {
-  value: undefined | null | T;
-  Component: React.ComponentType<ComponentProps<T, P>>;
+  readonly value: undefined | null | T;
+  readonly Component: React.ComponentType<ComponentProps<T, P>>;
 };
 
 export const MaybeRenderer = <T extends unknown, P extends object>({

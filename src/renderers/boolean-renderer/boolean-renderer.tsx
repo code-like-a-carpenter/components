@@ -7,8 +7,8 @@ import {
 } from '../../support';
 
 export type BooleanRendererContextType = {
-  no: RendererDefault;
-  yes: RendererDefault;
+  readonly no: RendererDefault;
+  readonly yes: RendererDefault;
 };
 
 export const BooleanRendererContext = React.createContext<BooleanRendererContextType>(

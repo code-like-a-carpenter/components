@@ -8,10 +8,10 @@ exports[`Storyshots Renderers/AnyRenderer Any Renderer 1`] = `
 
 exports[`Storyshots Renderers/AnyRenderer Array 1`] = `
 <pre
-  className="code"
+  className="code code__pre"
 >
   <code
-    className="code"
+    className="code code--block"
   >
     [
   "foo",
@@ -61,10 +61,10 @@ exports[`Storyshots Renderers/AnyRenderer Number 1`] = `"5"`;
 
 exports[`Storyshots Renderers/AnyRenderer Obj 1`] = `
 <pre
-  className="code"
+  className="code code__pre"
 >
   <code
-    className="code"
+    className="code code--block"
   >
     {
   "array": [

@@ -2,7 +2,7 @@ import {Context, useContext} from 'react';
 
 /**
  * Like useContext, but allows for prop-defined defaults. Useful for e.g. theme
- * provides where there may be a general them for the app, but a single
+ * providers where there may be a general theme for the app, but a single
  * component needs to render differently and adding a new Provider would be
  * overly verbose
  * @param context

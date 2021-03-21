@@ -15,7 +15,9 @@ exports[`Storyshots Components/Alert Danger 1`] = `
   role="alert"
 >
   A 
-  <code>
+  <code
+    className="code code--inline"
+  >
     danger
   </code>
    alert with 
@@ -38,7 +40,9 @@ exports[`Storyshots Components/Alert Dark 1`] = `
   role="alert"
 >
   A 
-  <code>
+  <code
+    className="code code--inline"
+  >
     dark
   </code>
    alert with 
@@ -61,7 +65,9 @@ exports[`Storyshots Components/Alert Info 1`] = `
   role="alert"
 >
   A 
-  <code>
+  <code
+    className="code code--inline"
+  >
     info
   </code>
    alert with 
@@ -84,7 +90,9 @@ exports[`Storyshots Components/Alert Light 1`] = `
   role="alert"
 >
   A 
-  <code>
+  <code
+    className="code code--inline"
+  >
     light
   </code>
    alert with 
@@ -107,7 +115,9 @@ exports[`Storyshots Components/Alert Primary 1`] = `
   role="alert"
 >
   A 
-  <code>
+  <code
+    className="code code--inline"
+  >
     primary
   </code>
    alert with 
@@ -130,7 +140,9 @@ exports[`Storyshots Components/Alert Secondary 1`] = `
   role="alert"
 >
   A 
-  <code>
+  <code
+    className="code code--inline"
+  >
     secondary
   </code>
    alert with 
@@ -153,7 +165,9 @@ exports[`Storyshots Components/Alert Success 1`] = `
   role="alert"
 >
   A 
-  <code>
+  <code
+    className="code code--inline"
+  >
     success
   </code>
    alert with 
@@ -176,7 +190,9 @@ exports[`Storyshots Components/Alert Warning 1`] = `
   role="alert"
 >
   A 
-  <code>
+  <code
+    className="code code--inline"
+  >
     warning
   </code>
    alert with 
