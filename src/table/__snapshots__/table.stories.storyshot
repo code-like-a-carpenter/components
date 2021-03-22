@@ -41,26 +41,26 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
       <td
         className="clc-table__body-cell"
       >
-        Destiney
+        Darrel
       </td>
       <td
         className="clc-table__body-cell"
       >
-        Schaden
+        Corkery
       </td>
       <td
         className="clc-table__body-cell"
       >
-        90
+        12
       </td>
       <td
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-11-16T06:01:56.359Z"}
-          title="2020-11-16T06:01:56+00:00"
+          dateTime={"2019-02-01T04:22:08.251Z"}
+          title="2019-02-01T04:22:08+00:00"
         >
-          November 16, 2020
+          February 1, 2019
         </time>
       </td>
     </tr>
@@ -70,1300 +70,24 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
       <td
         className="clc-table__body-cell"
       >
-        Garrick
+        Domenick
       </td>
       <td
         className="clc-table__body-cell"
       >
-        Bashirian
+        Wuckert
       </td>
       <td
         className="clc-table__body-cell"
       >
-        19
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-11-27T19:39:51.841Z"}
-          title="2020-11-27T19:39:51+00:00"
-        >
-          November 27, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Osbaldo
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Bartoletti
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        67
+        74
       </td>
       <td
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-02-14T19:35:04.750Z"}
-          title="2020-02-14T19:35:04+00:00"
-        >
-          February 14, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Izabella
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Beier
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        14
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-05-29T10:58:26.801Z"}
-          title="2019-05-29T10:58:26+00:00"
-        >
-          May 29, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Abe
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Ferry
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        58
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-12-27T18:44:50.032Z"}
-          title="2019-12-27T18:44:50+00:00"
-        >
-          December 27, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Carlos
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Schultz
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        10
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-03-28T07:47:31.604Z"}
-          title="2019-03-28T07:47:31+00:00"
-        >
-          March 28, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Santiago
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Pollich
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        34
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-06-11T05:42:03.447Z"}
-          title="2019-06-11T05:42:03+00:00"
-        >
-          June 11, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Kiana
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Hoppe
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        94
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-02-04T13:39:16.378Z"}
-          title="2019-02-04T13:39:16+00:00"
-        >
-          February 4, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Anita
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Russel
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        35
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-02-06T02:08:11.807Z"}
-          title="2019-02-06T02:08:11+00:00"
-        >
-          February 6, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Isabell
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Wilkinson
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        10
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-05-25T20:03:23.610Z"}
-          title="2019-05-25T20:03:23+00:00"
-        >
-          May 25, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Elva
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Kunze
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        99
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-05-08T05:15:53.193Z"}
-          title="2019-05-08T05:15:53+00:00"
-        >
-          May 8, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Benjamin
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Kunze
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        54
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-10-12T18:58:37.702Z"}
-          title="2020-10-12T18:58:37+00:00"
-        >
-          October 12, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Tianna
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Rippin
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        35
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-05-02T14:35:59.935Z"}
-          title="2019-05-02T14:35:59+00:00"
-        >
-          May 2, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Audie
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Pollich
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        89
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-10-10T00:47:20.986Z"}
-          title="2019-10-10T00:47:20+00:00"
-        >
-          October 10, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Garnett
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Daugherty
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        13
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-05-13T10:09:28.956Z"}
-          title="2020-05-13T10:09:28+00:00"
-        >
-          May 13, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Janie
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Miller
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        32
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-04-16T20:15:45.128Z"}
-          title="2020-04-16T20:15:45+00:00"
-        >
-          April 16, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Macy
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Haley
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        69
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-03-12T17:56:35.849Z"}
-          title="2019-03-12T17:56:35+00:00"
-        >
-          March 12, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Alice
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        McClure
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        60
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-07-07T07:09:53.803Z"}
-          title="2019-07-07T07:09:53+00:00"
-        >
-          July 7, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Ara
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Fritsch
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        65
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-05-20T00:08:06.085Z"}
-          title="2019-05-20T00:08:06+00:00"
-        >
-          May 20, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Leonora
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Bayer
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        68
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-03-26T10:22:53.934Z"}
-          title="2019-03-26T10:22:53+00:00"
-        >
-          March 26, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Corrine
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Beier
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        35
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-11-17T11:35:28.797Z"}
-          title="2020-11-17T11:35:28+00:00"
-        >
-          November 17, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Tyshawn
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Schneider
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        26
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-11-18T22:44:05.602Z"}
-          title="2020-11-18T22:44:05+00:00"
-        >
-          November 18, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Daron
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Greenholt
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        77
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-09-24T08:40:48.045Z"}
-          title="2020-09-24T08:40:48+00:00"
-        >
-          September 24, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Jaycee
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Zemlak
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        31
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-06-25T18:23:27.901Z"}
-          title="2019-06-25T18:23:27+00:00"
-        >
-          June 25, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Aryanna
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Zieme
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        88
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-03-26T07:05:01.026Z"}
-          title="2020-03-26T07:05:01+00:00"
-        >
-          March 26, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Lori
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Donnelly
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        20
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-04-25T20:08:53.608Z"}
-          title="2019-04-25T20:08:53+00:00"
-        >
-          April 25, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Kaley
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Wehner
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        63
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-08-01T08:22:39.739Z"}
-          title="2020-08-01T08:22:39+00:00"
-        >
-          August 1, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Jadyn
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Goodwin
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        75
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-06-24T16:56:30.607Z"}
-          title="2020-06-24T16:56:30+00:00"
-        >
-          June 24, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Lavinia
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Hayes
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        100
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-07-08T18:11:42.919Z"}
-          title="2020-07-08T18:11:42+00:00"
-        >
-          July 8, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Elfrieda
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Heller
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        13
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-11-12T08:41:45.341Z"}
-          title="2020-11-12T08:41:45+00:00"
-        >
-          November 12, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Harry
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Nienow
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        90
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-06-14T14:52:48.582Z"}
-          title="2020-06-14T14:52:48+00:00"
-        >
-          June 14, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Heaven
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Roberts
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        65
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-01-14T03:41:47.716Z"}
-          title="2019-01-14T03:41:47+00:00"
-        >
-          January 14, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Monserrat
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Quigley
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        11
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-06-27T14:56:15.878Z"}
-          title="2020-06-27T14:56:15+00:00"
-        >
-          June 27, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Ardella
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Green
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        95
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-11-18T03:07:37.125Z"}
-          title="2020-11-18T03:07:37+00:00"
-        >
-          November 18, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Brenna
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Zboncak
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        54
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-05-14T03:12:23.351Z"}
-          title="2019-05-14T03:12:23+00:00"
-        >
-          May 14, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Mike
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        O'Keefe
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        5
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-08-11T20:54:29.510Z"}
-          title="2019-08-11T20:54:29+00:00"
-        >
-          August 11, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Alvena
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Mohr
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        83
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-03-21T09:26:22.702Z"}
-          title="2020-03-21T09:26:22+00:00"
-        >
-          March 21, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Dariana
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Heaney
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        82
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-05-22T22:51:41.863Z"}
-          title="2019-05-22T22:51:41+00:00"
-        >
-          May 22, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Kailey
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        White
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        50
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-05-30T19:04:58.819Z"}
-          title="2020-05-30T19:04:58+00:00"
-        >
-          May 30, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Savanah
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Dibbert
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        81
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-10-01T02:08:27.583Z"}
-          title="2020-10-01T02:08:27+00:00"
-        >
-          October 1, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Estevan
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Pfannerstill
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        58
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-09-01T01:52:28.661Z"}
-          title="2019-09-01T01:52:28+00:00"
-        >
-          September 1, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Celestino
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Spinka
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        68
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-04-08T02:34:10.976Z"}
-          title="2019-04-08T02:34:10+00:00"
-        >
-          April 8, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Arjun
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Treutel
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        34
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-08-05T18:49:24.213Z"}
-          title="2019-08-05T18:49:24+00:00"
-        >
-          August 5, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Travon
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Yundt
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        79
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-11-01T14:31:14.834Z"}
-          title="2019-11-01T14:31:14+00:00"
-        >
-          November 1, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Matt
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Wunsch
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        4
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-03-31T04:12:04.011Z"}
-          title="2020-03-31T04:12:04+00:00"
-        >
-          March 31, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Haylie
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Johnson
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        1
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-01-18T01:44:02.063Z"}
-          title="2020-01-18T01:44:02+00:00"
+          dateTime={"2020-01-18T00:58:18.961Z"}
+          title="2020-01-18T00:58:18+00:00"
         >
           January 18, 2020
         </time>
@@ -1375,12 +99,99 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
       <td
         className="clc-table__body-cell"
       >
-        Prince
+        Antonetta
       </td>
       <td
         className="clc-table__body-cell"
       >
-        Reinger
+        Ondricka
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        11
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-01-01T09:08:50.249Z"}
+          title="2020-01-01T09:08:50+00:00"
+        >
+          January 1, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Brady
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Padberg
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        75
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-05-27T21:03:51.712Z"}
+          title="2019-05-27T21:03:51+00:00"
+        >
+          May 27, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Nayeli
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Wintheiser
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        88
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-07-13T11:17:00.886Z"}
+          title="2019-07-13T11:17:00+00:00"
+        >
+          July 13, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Erik
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Reichel
       </td>
       <td
         className="clc-table__body-cell"
@@ -1391,10 +202,10 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2021-01-05T14:54:22.171Z"}
-          title="2021-01-05T14:54:22+00:00"
+          dateTime={"2020-11-12T23:42:51.068Z"}
+          title="2020-11-12T23:42:51+00:00"
         >
-          January 5, 2021
+          November 12, 2020
         </time>
       </td>
     </tr>
@@ -1404,12 +215,1114 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
       <td
         className="clc-table__body-cell"
       >
-        Rollin
+        Brayan
       </td>
       <td
         className="clc-table__body-cell"
       >
-        Olson
+        Williamson
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        70
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-03-21T07:34:18.752Z"}
+          title="2019-03-21T07:34:18+00:00"
+        >
+          March 21, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Camren
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Rippin
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        41
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-08-06T07:54:03.762Z"}
+          title="2019-08-06T07:54:03+00:00"
+        >
+          August 6, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Estrella
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Stanton
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        28
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-10-02T11:53:54.551Z"}
+          title="2019-10-02T11:53:54+00:00"
+        >
+          October 2, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Barbara
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Murphy
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        12
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-03-31T06:33:42.290Z"}
+          title="2020-03-31T06:33:42+00:00"
+        >
+          March 31, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Nicklaus
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Medhurst
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        99
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-12-31T15:01:22.340Z"}
+          title="2019-12-31T15:01:22+00:00"
+        >
+          December 31, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Johathan
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Stiedemann
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        27
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-08-30T22:27:35.351Z"}
+          title="2020-08-30T22:27:35+00:00"
+        >
+          August 30, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Enrico
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Kozey
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        56
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-03-07T04:11:29.631Z"}
+          title="2019-03-07T04:11:29+00:00"
+        >
+          March 7, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Rosendo
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Gleason
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        10
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-05-26T12:55:47.089Z"}
+          title="2020-05-26T12:55:47+00:00"
+        >
+          May 26, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Domingo
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Runte
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        56
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-08-23T10:27:32.213Z"}
+          title="2019-08-23T10:27:32+00:00"
+        >
+          August 23, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Nelda
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Schneider
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        54
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-06-26T11:23:37.233Z"}
+          title="2019-06-26T11:23:37+00:00"
+        >
+          June 26, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Thaddeus
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Gottlieb
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        20
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-03-17T17:58:50.299Z"}
+          title="2020-03-17T17:58:50+00:00"
+        >
+          March 17, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Candido
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Balistreri
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        82
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-05-11T01:20:17.261Z"}
+          title="2020-05-11T01:20:17+00:00"
+        >
+          May 11, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Doyle
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Kuhic
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        37
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-06-16T13:43:57.181Z"}
+          title="2020-06-16T13:43:57+00:00"
+        >
+          June 16, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Mazie
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Aufderhar
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        82
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-10-14T07:18:59.698Z"}
+          title="2019-10-14T07:18:59+00:00"
+        >
+          October 14, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Marion
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Collier
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        59
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-11-18T10:06:00.999Z"}
+          title="2020-11-18T10:06:00+00:00"
+        >
+          November 18, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Alexys
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Bechtelar
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        46
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-11-17T23:17:46.130Z"}
+          title="2020-11-17T23:17:46+00:00"
+        >
+          November 17, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Kirk
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Schneider
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        74
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-05-13T07:45:39.853Z"}
+          title="2020-05-13T07:45:39+00:00"
+        >
+          May 13, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Waino
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Ritchie
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        3
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-07-18T19:32:08.105Z"}
+          title="2019-07-18T19:32:08+00:00"
+        >
+          July 18, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Jaylin
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Towne
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        75
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-12-14T03:39:51.438Z"}
+          title="2019-12-14T03:39:51+00:00"
+        >
+          December 14, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Ryder
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Dach
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        91
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-12-25T16:09:53.913Z"}
+          title="2020-12-25T16:09:53+00:00"
+        >
+          December 25, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Kaya
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Becker
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        48
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-05-29T02:53:52.820Z"}
+          title="2020-05-29T02:53:52+00:00"
+        >
+          May 29, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Joel
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Schoen
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        70
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-06-19T12:30:00.612Z"}
+          title="2020-06-19T12:30:00+00:00"
+        >
+          June 19, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Isobel
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Emmerich
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        84
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-01-01T17:48:33.991Z"}
+          title="2020-01-01T17:48:33+00:00"
+        >
+          January 1, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Selina
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Prohaska
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        96
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-02-24T02:13:39.195Z"}
+          title="2019-02-24T02:13:39+00:00"
+        >
+          February 24, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Griffin
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Reinger
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        6
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-07-28T19:35:06.357Z"}
+          title="2019-07-28T19:35:06+00:00"
+        >
+          July 28, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Jakob
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Okuneva
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        35
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-01-09T13:40:17.341Z"}
+          title="2019-01-09T13:40:17+00:00"
+        >
+          January 9, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Heather
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Mertz
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        37
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-05-26T06:34:48.004Z"}
+          title="2020-05-26T06:34:48+00:00"
+        >
+          May 26, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Annalise
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Erdman
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        70
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-12-26T08:15:33.257Z"}
+          title="2020-12-26T08:15:33+00:00"
+        >
+          December 26, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Dayton
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Fay
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        95
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-05-05T10:05:48.893Z"}
+          title="2020-05-05T10:05:48+00:00"
+        >
+          May 5, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Nelda
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Bechtelar
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        95
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-06-24T09:21:59.417Z"}
+          title="2020-06-24T09:21:59+00:00"
+        >
+          June 24, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Brisa
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Bartoletti
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        73
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-10-11T09:24:39.697Z"}
+          title="2020-10-11T09:24:39+00:00"
+        >
+          October 11, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Regan
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Ankunding
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        30
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-08-05T01:38:19.690Z"}
+          title="2020-08-05T01:38:19+00:00"
+        >
+          August 5, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Emelie
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Mayert
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        44
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2021-01-14T15:35:52.745Z"}
+          title="2021-01-14T15:35:52+00:00"
+        >
+          January 14, 2021
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Ebba
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Watsica
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        99
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-11-12T13:11:32.728Z"}
+          title="2019-11-12T13:11:32+00:00"
+        >
+          November 12, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Eve
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Konopelski
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        44
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-07-02T13:25:34.486Z"}
+          title="2020-07-02T13:25:34+00:00"
+        >
+          July 2, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Elsa
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Stehr
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        67
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-09-21T08:48:43.797Z"}
+          title="2020-09-21T08:48:43+00:00"
+        >
+          September 21, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Elissa
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Robel
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        1
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-11-15T15:54:30.409Z"}
+          title="2019-11-15T15:54:30+00:00"
+        >
+          November 15, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Demarcus
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Schneider
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        3
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-05-05T21:49:34.037Z"}
+          title="2019-05-05T21:49:34+00:00"
+        >
+          May 5, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Cassandre
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        McDermott
       </td>
       <td
         className="clc-table__body-cell"
@@ -1420,10 +1333,10 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-12-15T03:32:21.192Z"}
-          title="2019-12-15T03:32:21+00:00"
+          dateTime={"2019-01-01T20:44:15.723Z"}
+          title="2019-01-01T20:44:15+00:00"
         >
-          December 15, 2019
+          January 1, 2019
         </time>
       </td>
     </tr>
@@ -1433,26 +1346,26 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
       <td
         className="clc-table__body-cell"
       >
-        Nicole
+        Florencio
       </td>
       <td
         className="clc-table__body-cell"
       >
-        Grant
+        Fay
       </td>
       <td
         className="clc-table__body-cell"
       >
-        18
+        20
       </td>
       <td
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-03-22T11:29:37.737Z"}
-          title="2019-03-22T11:29:37+00:00"
+          dateTime={"2019-12-04T07:23:11.626Z"}
+          title="2019-12-04T07:23:11+00:00"
         >
-          March 22, 2019
+          December 4, 2019
         </time>
       </td>
     </tr>
@@ -1462,26 +1375,113 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
       <td
         className="clc-table__body-cell"
       >
-        Eileen
+        Cathy
       </td>
       <td
         className="clc-table__body-cell"
       >
-        Hauck
+        Langworth
       </td>
       <td
         className="clc-table__body-cell"
       >
-        34
+        75
       </td>
       <td
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-07-31T21:33:20.697Z"}
-          title="2020-07-31T21:33:20+00:00"
+          dateTime={"2019-06-16T23:15:24.227Z"}
+          title="2019-06-16T23:15:24+00:00"
         >
-          July 31, 2020
+          June 16, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Celia
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Morar
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        29
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-09-28T15:21:01.454Z"}
+          title="2020-09-28T15:21:01+00:00"
+        >
+          September 28, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Krista
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Schuster
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        3
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-05-12T05:03:42.945Z"}
+          title="2020-05-12T05:03:42+00:00"
+        >
+          May 12, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Rafaela
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Bashirian
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        31
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-11-25T08:52:44.886Z"}
+          title="2019-11-25T08:52:44+00:00"
+        >
+          November 25, 2019
         </time>
       </td>
     </tr>
@@ -1530,26 +1530,26 @@ exports[`Storyshots Components/Table Table 1`] = `
       <td
         className="clc-table__body-cell"
       >
-        Joshua
+        Demetris
       </td>
       <td
         className="clc-table__body-cell"
       >
-        Buckridge
+        Balistreri
       </td>
       <td
         className="clc-table__body-cell"
       >
-        9
+        74
       </td>
       <td
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-09-29T06:39:15.478Z"}
-          title="2020-09-29T06:39:15+00:00"
+          dateTime={"2019-06-02T18:45:55.989Z"}
+          title="2019-06-02T18:45:55+00:00"
         >
-          September 29, 2020
+          June 2, 2019
         </time>
       </td>
     </tr>
@@ -1559,26 +1559,26 @@ exports[`Storyshots Components/Table Table 1`] = `
       <td
         className="clc-table__body-cell"
       >
-        Justyn
+        Delmer
       </td>
       <td
         className="clc-table__body-cell"
       >
-        Kshlerin
+        Zulauf
       </td>
       <td
         className="clc-table__body-cell"
       >
-        52
+        83
       </td>
       <td
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-08-27T01:47:43.013Z"}
-          title="2020-08-27T01:47:43+00:00"
+          dateTime={"2019-01-21T01:55:23.892Z"}
+          title="2019-01-21T01:55:23+00:00"
         >
-          August 27, 2020
+          January 21, 2019
         </time>
       </td>
     </tr>
@@ -1588,26 +1588,26 @@ exports[`Storyshots Components/Table Table 1`] = `
       <td
         className="clc-table__body-cell"
       >
-        Jarred
+        Agustina
       </td>
       <td
         className="clc-table__body-cell"
       >
-        Simonis
+        Grady
       </td>
       <td
         className="clc-table__body-cell"
       >
-        88
+        68
       </td>
       <td
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2021-01-20T09:45:23.686Z"}
-          title="2021-01-20T09:45:23+00:00"
+          dateTime={"2019-02-25T13:12:38.147Z"}
+          title="2019-02-25T13:12:38+00:00"
         >
-          January 20, 2021
+          February 25, 2019
         </time>
       </td>
     </tr>
@@ -1617,26 +1617,26 @@ exports[`Storyshots Components/Table Table 1`] = `
       <td
         className="clc-table__body-cell"
       >
-        Darlene
+        Gianni
       </td>
       <td
         className="clc-table__body-cell"
       >
-        Bogisich
+        Dare
       </td>
       <td
         className="clc-table__body-cell"
       >
-        21
+        39
       </td>
       <td
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-04-15T07:09:51.147Z"}
-          title="2020-04-15T07:09:51+00:00"
+          dateTime={"2020-09-23T09:02:17.187Z"}
+          title="2020-09-23T09:02:17+00:00"
         >
-          April 15, 2020
+          September 23, 2020
         </time>
       </td>
     </tr>
@@ -1646,12 +1646,244 @@ exports[`Storyshots Components/Table Table 1`] = `
       <td
         className="clc-table__body-cell"
       >
-        Mose
+        Aniyah
       </td>
       <td
         className="clc-table__body-cell"
       >
-        Parker
+        Turcotte
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        85
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-05-20T11:47:03.899Z"}
+          title="2020-05-20T11:47:03+00:00"
+        >
+          May 20, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Nelle
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Johnston
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        24
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-07-25T00:30:37.085Z"}
+          title="2020-07-25T00:30:37+00:00"
+        >
+          July 25, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Dax
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Daniel
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        2
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-05-11T11:33:43.258Z"}
+          title="2020-05-11T11:33:43+00:00"
+        >
+          May 11, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Ken
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Hauck
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        41
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-02-27T05:22:16.611Z"}
+          title="2020-02-27T05:22:16+00:00"
+        >
+          February 27, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Evangeline
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Kling
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        39
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-03-21T03:02:26.699Z"}
+          title="2019-03-21T03:02:26+00:00"
+        >
+          March 21, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Brannon
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Bauch
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        41
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-03-20T21:51:55.498Z"}
+          title="2019-03-20T21:51:55+00:00"
+        >
+          March 20, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Litzy
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Dare
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        11
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2021-01-05T10:41:12.704Z"}
+          title="2021-01-05T10:41:12+00:00"
+        >
+          January 5, 2021
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Peter
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Hammes
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        11
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-11-08T14:18:44.397Z"}
+          title="2020-11-08T14:18:44+00:00"
+        >
+          November 8, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Dasia
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Koepp
       </td>
       <td
         className="clc-table__body-cell"
@@ -1662,10 +1894,10 @@ exports[`Storyshots Components/Table Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-11-19T16:05:25.388Z"}
-          title="2019-11-19T16:05:25+00:00"
+          dateTime={"2019-08-11T09:54:24.773Z"}
+          title="2019-08-11T09:54:24+00:00"
         >
-          November 19, 2019
+          August 11, 2019
         </time>
       </td>
     </tr>
@@ -1675,26 +1907,26 @@ exports[`Storyshots Components/Table Table 1`] = `
       <td
         className="clc-table__body-cell"
       >
-        Renee
+        Wilhelmine
       </td>
       <td
         className="clc-table__body-cell"
       >
-        Dach
+        Carroll
       </td>
       <td
         className="clc-table__body-cell"
       >
-        33
+        43
       </td>
       <td
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-09-13T15:40:38.366Z"}
-          title="2019-09-13T15:40:38+00:00"
+          dateTime={"2021-02-16T21:52:25.776Z"}
+          title="2021-02-16T21:52:25+00:00"
         >
-          September 13, 2019
+          February 16, 2021
         </time>
       </td>
     </tr>
@@ -1704,24 +1936,24 @@ exports[`Storyshots Components/Table Table 1`] = `
       <td
         className="clc-table__body-cell"
       >
-        Kaylee
+        Asha
       </td>
       <td
         className="clc-table__body-cell"
       >
-        Hodkiewicz
+        Hessel
       </td>
       <td
         className="clc-table__body-cell"
       >
-        33
+        47
       </td>
       <td
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-01-07T17:33:28.797Z"}
-          title="2020-01-07T17:33:28+00:00"
+          dateTime={"2020-01-07T12:51:11.518Z"}
+          title="2020-01-07T12:51:11+00:00"
         >
           January 7, 2020
         </time>
@@ -1733,26 +1965,26 @@ exports[`Storyshots Components/Table Table 1`] = `
       <td
         className="clc-table__body-cell"
       >
-        Celestine
+        Hilbert
       </td>
       <td
         className="clc-table__body-cell"
       >
-        Ankunding
+        Grimes
       </td>
       <td
         className="clc-table__body-cell"
       >
-        94
+        92
       </td>
       <td
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-10-11T15:19:06.363Z"}
-          title="2020-10-11T15:19:06+00:00"
+          dateTime={"2020-05-18T07:10:19.288Z"}
+          title="2020-05-18T07:10:19+00:00"
         >
-          October 11, 2020
+          May 18, 2020
         </time>
       </td>
     </tr>
@@ -1762,679 +1994,12 @@ exports[`Storyshots Components/Table Table 1`] = `
       <td
         className="clc-table__body-cell"
       >
-        Hannah
+        Destiney
       </td>
       <td
         className="clc-table__body-cell"
       >
-        Connelly
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        72
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-06-29T11:23:24.282Z"}
-          title="2020-06-29T11:23:24+00:00"
-        >
-          June 29, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Elwin
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Wilkinson
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        61
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-11-03T06:29:20.579Z"}
-          title="2019-11-03T06:29:20+00:00"
-        >
-          November 3, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Karley
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Olson
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        83
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-07-13T18:26:51.751Z"}
-          title="2020-07-13T18:26:51+00:00"
-        >
-          July 13, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Roger
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Emmerich
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        60
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-04-02T00:20:20.223Z"}
-          title="2019-04-02T00:20:20+00:00"
-        >
-          April 2, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Jude
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Rosenbaum
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        12
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-04-27T22:57:02.343Z"}
-          title="2020-04-27T22:57:02+00:00"
-        >
-          April 27, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Cody
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Kiehn
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        56
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-06-17T07:20:03.530Z"}
-          title="2020-06-17T07:20:03+00:00"
-        >
-          June 17, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Vivianne
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Kub
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        94
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2021-02-25T10:34:34.502Z"}
-          title="2021-02-25T10:34:34+00:00"
-        >
-          February 25, 2021
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Celestino
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Beahan
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        90
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-05-07T22:40:56.293Z"}
-          title="2019-05-07T22:40:56+00:00"
-        >
-          May 7, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Albert
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Hane
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        37
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-07-14T21:39:56.615Z"}
-          title="2020-07-14T21:39:56+00:00"
-        >
-          July 14, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Lucious
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        VonRueden
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        48
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-09-04T12:53:16.276Z"}
-          title="2020-09-04T12:53:16+00:00"
-        >
-          September 4, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Ike
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Hills
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        2
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-04-11T05:40:51.435Z"}
-          title="2020-04-11T05:40:51+00:00"
-        >
-          April 11, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Donnie
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Mosciski
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        98
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-07-01T04:49:26.057Z"}
-          title="2020-07-01T04:49:26+00:00"
-        >
-          July 1, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Herbert
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Strosin
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        66
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-03-27T04:37:10.953Z"}
-          title="2019-03-27T04:37:10+00:00"
-        >
-          March 27, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Gabrielle
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Robel
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        22
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-12-16T14:12:21.778Z"}
-          title="2019-12-16T14:12:21+00:00"
-        >
-          December 16, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Roselyn
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Rohan
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        4
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-09-05T19:43:39.114Z"}
-          title="2019-09-05T19:43:39+00:00"
-        >
-          September 5, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Solon
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Nienow
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        20
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-10-16T02:28:43.106Z"}
-          title="2020-10-16T02:28:43+00:00"
-        >
-          October 16, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Lambert
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Dickens
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        42
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-05-30T10:28:57.098Z"}
-          title="2019-05-30T10:28:57+00:00"
-        >
-          May 30, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Nickolas
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Erdman
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        4
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-06-06T01:29:38.998Z"}
-          title="2020-06-06T01:29:38+00:00"
-        >
-          June 6, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Emelia
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Bergstrom
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        8
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-07-19T05:45:55.342Z"}
-          title="2020-07-19T05:45:55+00:00"
-        >
-          July 19, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Kevon
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Stark
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        8
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-04-30T07:31:57.161Z"}
-          title="2019-04-30T07:31:57+00:00"
-        >
-          April 30, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Corine
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Yost
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        89
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-10-18T13:27:06.175Z"}
-          title="2019-10-18T13:27:06+00:00"
-        >
-          October 18, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Estel
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Welch
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        68
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-12-19T08:32:21.789Z"}
-          title="2020-12-19T08:32:21+00:00"
-        >
-          December 19, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Curtis
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        O'Keefe
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        87
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-12-03T00:57:58.831Z"}
-          title="2019-12-03T00:57:58+00:00"
-        >
-          December 3, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Myra
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Labadie
+        Langosh
       </td>
       <td
         className="clc-table__body-cell"
@@ -2445,10 +2010,10 @@ exports[`Storyshots Components/Table Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-11-27T14:43:41.936Z"}
-          title="2019-11-27T14:43:41+00:00"
+          dateTime={"2020-10-24T12:47:32.162Z"}
+          title="2020-10-24T12:47:32+00:00"
         >
-          November 27, 2019
+          October 24, 2020
         </time>
       </td>
     </tr>
@@ -2458,12 +2023,70 @@ exports[`Storyshots Components/Table Table 1`] = `
       <td
         className="clc-table__body-cell"
       >
-        Orin
+        Lolita
       </td>
       <td
         className="clc-table__body-cell"
       >
-        Zemlak
+        Bailey
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        35
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-01-18T00:15:37.476Z"}
+          title="2019-01-18T00:15:37+00:00"
+        >
+          January 18, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Linnea
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Auer
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        69
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-11-30T03:07:36.044Z"}
+          title="2019-11-30T03:07:36+00:00"
+        >
+          November 30, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Josephine
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Towne
       </td>
       <td
         className="clc-table__body-cell"
@@ -2474,10 +2097,10 @@ exports[`Storyshots Components/Table Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-11-14T18:17:14.250Z"}
-          title="2019-11-14T18:17:14+00:00"
+          dateTime={"2019-03-25T21:27:21.947Z"}
+          title="2019-03-25T21:27:21+00:00"
         >
-          November 14, 2019
+          March 25, 2019
         </time>
       </td>
     </tr>
@@ -2487,26 +2110,26 @@ exports[`Storyshots Components/Table Table 1`] = `
       <td
         className="clc-table__body-cell"
       >
-        Serenity
+        Jaiden
       </td>
       <td
         className="clc-table__body-cell"
       >
-        Labadie
+        Hauck
       </td>
       <td
         className="clc-table__body-cell"
       >
-        4
+        63
       </td>
       <td
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-08-25T06:54:25.876Z"}
-          title="2020-08-25T06:54:25+00:00"
+          dateTime={"2019-05-24T20:10:36.391Z"}
+          title="2019-05-24T20:10:36+00:00"
         >
-          August 25, 2020
+          May 24, 2019
         </time>
       </td>
     </tr>
@@ -2516,12 +2139,360 @@ exports[`Storyshots Components/Table Table 1`] = `
       <td
         className="clc-table__body-cell"
       >
-        Coty
+        Regan
       </td>
       <td
         className="clc-table__body-cell"
       >
-        Hamill
+        Goldner
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        23
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-11-30T22:28:37.146Z"}
+          title="2020-11-30T22:28:37+00:00"
+        >
+          November 30, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Tess
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Bartoletti
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        50
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-04-09T21:46:09.729Z"}
+          title="2019-04-09T21:46:09+00:00"
+        >
+          April 9, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Ettie
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Ruecker
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        88
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-08-05T03:09:48.206Z"}
+          title="2019-08-05T03:09:48+00:00"
+        >
+          August 5, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Eldred
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Bins
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        6
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-05-07T09:27:19.583Z"}
+          title="2020-05-07T09:27:19+00:00"
+        >
+          May 7, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Destiny
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Senger
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        9
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-08-12T03:17:35.087Z"}
+          title="2020-08-12T03:17:35+00:00"
+        >
+          August 12, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Wilma
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Renner
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        86
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-09-25T21:13:20.568Z"}
+          title="2019-09-25T21:13:20+00:00"
+        >
+          September 25, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Randall
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Mohr
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        33
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-12-02T04:16:41.599Z"}
+          title="2020-12-02T04:16:41+00:00"
+        >
+          December 2, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Merl
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Bailey
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        45
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-08-06T20:57:01.793Z"}
+          title="2019-08-06T20:57:01+00:00"
+        >
+          August 6, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Hilbert
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Quitzon
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        7
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-02-09T05:05:08.700Z"}
+          title="2020-02-09T05:05:08+00:00"
+        >
+          February 9, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Lamar
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Schowalter
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        70
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-01-29T08:49:49.755Z"}
+          title="2019-01-29T08:49:49+00:00"
+        >
+          January 29, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Leanne
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Weimann
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        92
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-04-04T00:47:49.251Z"}
+          title="2019-04-04T00:47:49+00:00"
+        >
+          April 4, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Roma
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Halvorson
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        7
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-09-07T14:36:31.253Z"}
+          title="2019-09-07T14:36:31+00:00"
+        >
+          September 7, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Marianna
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Becker
       </td>
       <td
         className="clc-table__body-cell"
@@ -2532,10 +2503,10 @@ exports[`Storyshots Components/Table Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-10-04T14:50:38.937Z"}
-          title="2020-10-04T14:50:38+00:00"
+          dateTime={"2020-07-23T18:07:53.692Z"}
+          title="2020-07-23T18:07:53+00:00"
         >
-          October 4, 2020
+          July 23, 2020
         </time>
       </td>
     </tr>
@@ -2545,26 +2516,26 @@ exports[`Storyshots Components/Table Table 1`] = `
       <td
         className="clc-table__body-cell"
       >
-        Foster
+        Jackie
       </td>
       <td
         className="clc-table__body-cell"
       >
-        Bauch
+        Blanda
       </td>
       <td
         className="clc-table__body-cell"
       >
-        83
+        10
       </td>
       <td
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-02-01T14:58:39.799Z"}
-          title="2020-02-01T14:58:39+00:00"
+          dateTime={"2019-11-21T06:34:57.835Z"}
+          title="2019-11-21T06:34:57+00:00"
         >
-          February 1, 2020
+          November 21, 2019
         </time>
       </td>
     </tr>
@@ -2574,26 +2545,26 @@ exports[`Storyshots Components/Table Table 1`] = `
       <td
         className="clc-table__body-cell"
       >
-        Mozelle
+        Roosevelt
       </td>
       <td
         className="clc-table__body-cell"
       >
-        Lowe
+        Cruickshank
       </td>
       <td
         className="clc-table__body-cell"
       >
-        87
+        90
       </td>
       <td
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-12-31T15:45:14.245Z"}
-          title="2019-12-31T15:45:14+00:00"
+          dateTime={"2020-10-23T06:05:25.977Z"}
+          title="2020-10-23T06:05:25+00:00"
         >
-          December 31, 2019
+          October 23, 2020
         </time>
       </td>
     </tr>
@@ -2603,26 +2574,26 @@ exports[`Storyshots Components/Table Table 1`] = `
       <td
         className="clc-table__body-cell"
       >
-        Tia
+        Tyra
       </td>
       <td
         className="clc-table__body-cell"
       >
-        McDermott
+        Reinger
       </td>
       <td
         className="clc-table__body-cell"
       >
-        24
+        13
       </td>
       <td
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-12-30T14:40:16.915Z"}
-          title="2020-12-30T14:40:16+00:00"
+          dateTime={"2021-02-12T16:42:02.042Z"}
+          title="2021-02-12T16:42:02+00:00"
         >
-          December 30, 2020
+          February 12, 2021
         </time>
       </td>
     </tr>
@@ -2632,26 +2603,26 @@ exports[`Storyshots Components/Table Table 1`] = `
       <td
         className="clc-table__body-cell"
       >
-        Lynn
+        Alda
       </td>
       <td
         className="clc-table__body-cell"
       >
-        Strosin
+        Waters
       </td>
       <td
         className="clc-table__body-cell"
       >
-        15
+        60
       </td>
       <td
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-04-03T05:44:40.460Z"}
-          title="2019-04-03T05:44:40+00:00"
+          dateTime={"2019-09-25T13:09:23.688Z"}
+          title="2019-09-25T13:09:23+00:00"
         >
-          April 3, 2019
+          September 25, 2019
         </time>
       </td>
     </tr>
@@ -2661,41 +2632,12 @@ exports[`Storyshots Components/Table Table 1`] = `
       <td
         className="clc-table__body-cell"
       >
-        Garrett
+        Esteban
       </td>
       <td
         className="clc-table__body-cell"
       >
-        Moore
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        81
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-07-26T09:11:10.666Z"}
-          title="2019-07-26T09:11:10+00:00"
-        >
-          July 26, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Effie
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Ruecker
+        Hyatt
       </td>
       <td
         className="clc-table__body-cell"
@@ -2706,10 +2648,10 @@ exports[`Storyshots Components/Table Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-04-02T17:38:02.820Z"}
-          title="2019-04-02T17:38:02+00:00"
+          dateTime={"2020-10-26T20:25:57.412Z"}
+          title="2020-10-26T20:25:57+00:00"
         >
-          April 2, 2019
+          October 26, 2020
         </time>
       </td>
     </tr>
@@ -2719,26 +2661,26 @@ exports[`Storyshots Components/Table Table 1`] = `
       <td
         className="clc-table__body-cell"
       >
-        Vernice
+        Stella
       </td>
       <td
         className="clc-table__body-cell"
       >
-        Dickinson
+        Von
       </td>
       <td
         className="clc-table__body-cell"
       >
-        99
+        78
       </td>
       <td
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2021-01-08T06:51:48.544Z"}
-          title="2021-01-08T06:51:48+00:00"
+          dateTime={"2020-11-16T05:58:30.127Z"}
+          title="2020-11-16T05:58:30+00:00"
         >
-          January 8, 2021
+          November 16, 2020
         </time>
       </td>
     </tr>
@@ -2748,26 +2690,26 @@ exports[`Storyshots Components/Table Table 1`] = `
       <td
         className="clc-table__body-cell"
       >
-        Bertram
+        Carmine
       </td>
       <td
         className="clc-table__body-cell"
       >
-        Kuphal
+        Stanton
       </td>
       <td
         className="clc-table__body-cell"
       >
-        25
+        32
       </td>
       <td
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-02-04T23:37:08.588Z"}
-          title="2019-02-04T23:37:08+00:00"
+          dateTime={"2019-06-13T03:30:51.699Z"}
+          title="2019-06-13T03:30:51+00:00"
         >
-          February 4, 2019
+          June 13, 2019
         </time>
       </td>
     </tr>
@@ -2777,171 +2719,26 @@ exports[`Storyshots Components/Table Table 1`] = `
       <td
         className="clc-table__body-cell"
       >
-        Oceane
+        Maria
       </td>
       <td
         className="clc-table__body-cell"
       >
-        Schowalter
+        Jerde
       </td>
       <td
         className="clc-table__body-cell"
       >
-        57
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-12-11T03:04:06.672Z"}
-          title="2020-12-11T03:04:06+00:00"
-        >
-          December 11, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Cedrick
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Hagenes
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        24
+        49
       </td>
       <td
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-03-28T15:24:55.254Z"}
-          title="2019-03-28T15:24:55+00:00"
+          dateTime={"2020-08-24T04:01:19.418Z"}
+          title="2020-08-24T04:01:19+00:00"
         >
-          March 28, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Kayley
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        O'Reilly
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        39
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-05-09T19:43:13.704Z"}
-          title="2019-05-09T19:43:13+00:00"
-        >
-          May 9, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Keshawn
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Roberts
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        38
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2019-01-26T13:27:33.379Z"}
-          title="2019-01-26T13:27:33+00:00"
-        >
-          January 26, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Frieda
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Satterfield
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        27
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-04-13T12:48:58.216Z"}
-          title="2020-04-13T12:48:58+00:00"
-        >
-          April 13, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-      >
-        Wilbert
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        Kunze
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        83
-      </td>
-      <td
-        className="clc-table__body-cell"
-      >
-        <time
-          dateTime={"2020-10-02T00:08:42.715Z"}
-          title="2020-10-02T00:08:42+00:00"
-        >
-          October 2, 2020
+          August 24, 2020
         </time>
       </td>
     </tr>
@@ -2956,7 +2753,7 @@ exports[`Storyshots Components/Table Table 1`] = `
       <td
         className="clc-table__body-cell"
       >
-        Lemke
+        Leannon
       </td>
       <td
         className="clc-table__body-cell"
@@ -2967,10 +2764,213 @@ exports[`Storyshots Components/Table Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-11-23T09:26:13.764Z"}
-          title="2020-11-23T09:26:13+00:00"
+          dateTime={"2019-08-12T22:25:12.654Z"}
+          title="2019-08-12T22:25:12+00:00"
         >
-          November 23, 2020
+          August 12, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Emely
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Goyette
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        4
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-01-23T07:59:22.865Z"}
+          title="2019-01-23T07:59:22+00:00"
+        >
+          January 23, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Cordia
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Dibbert
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        78
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-01-13T06:06:19.003Z"}
+          title="2019-01-13T06:06:19+00:00"
+        >
+          January 13, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Bradford
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Graham
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        64
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-10-16T00:19:16.039Z"}
+          title="2020-10-16T00:19:16+00:00"
+        >
+          October 16, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Esteban
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Hills
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        43
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-08-23T17:02:43.224Z"}
+          title="2019-08-23T17:02:43+00:00"
+        >
+          August 23, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Karolann
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Ebert
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        68
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2020-05-06T03:30:36.507Z"}
+          title="2020-05-06T03:30:36+00:00"
+        >
+          May 6, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Branson
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        Schamberger
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        20
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-02-22T06:40:33.762Z"}
+          title="2019-02-22T06:40:33+00:00"
+        >
+          February 22, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
+        Haskell
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        O'Hara
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        84
+      </td>
+      <td
+        className="clc-table__body-cell"
+      >
+        <time
+          dateTime={"2019-10-29T15:05:49.394Z"}
+          title="2019-10-29T15:05:49+00:00"
+        >
+          October 29, 2019
         </time>
       </td>
     </tr>
