@@ -2,36 +2,60 @@
 
 exports[`Storyshots Components/Table Complex Table 1`] = `
 <table
-  className="table"
+  className="clc-table table"
 >
-  <thead>
-    <tr>
-      <th>
+  <thead
+    className="clc-table__header"
+  >
+    <tr
+      className="clc-table__row"
+    >
+      <th
+        className="clc-table__header-cell"
+      >
         First Name
       </th>
-      <th>
+      <th
+        className="clc-table__header-cell"
+      >
         Last Name
       </th>
-      <th>
+      <th
+        className="clc-table__header-cell"
+      >
         Age
       </th>
-      <th>
+      <th
+        className="clc-table__header-cell"
+      >
         Sign Up Date
       </th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <td>
+  <tbody
+    className="clc-table__body"
+  >
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Destiney
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Schaden
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         90
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-11-16T06:01:56.359Z"}
           title="2020-11-16T06:01:56+00:00"
@@ -40,17 +64,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Garrick
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Bashirian
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         19
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-11-27T19:39:51.841Z"}
           title="2020-11-27T19:39:51+00:00"
@@ -59,17 +93,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Osbaldo
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Bartoletti
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         67
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-02-14T19:35:04.750Z"}
           title="2020-02-14T19:35:04+00:00"
@@ -78,17 +122,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Izabella
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Beier
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         14
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-05-29T10:58:26.801Z"}
           title="2019-05-29T10:58:26+00:00"
@@ -97,17 +151,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Abe
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Ferry
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         58
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-12-27T18:44:50.032Z"}
           title="2019-12-27T18:44:50+00:00"
@@ -116,17 +180,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Carlos
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Schultz
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         10
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-03-28T07:47:31.604Z"}
           title="2019-03-28T07:47:31+00:00"
@@ -135,17 +209,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Santiago
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Pollich
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         34
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-06-11T05:42:03.447Z"}
           title="2019-06-11T05:42:03+00:00"
@@ -154,17 +238,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Kiana
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Hoppe
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         94
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-02-04T13:39:16.378Z"}
           title="2019-02-04T13:39:16+00:00"
@@ -173,17 +267,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Anita
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Russel
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         35
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-02-06T02:08:11.807Z"}
           title="2019-02-06T02:08:11+00:00"
@@ -192,17 +296,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Isabell
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Wilkinson
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         10
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-05-25T20:03:23.610Z"}
           title="2019-05-25T20:03:23+00:00"
@@ -211,17 +325,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Elva
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Kunze
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         99
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-05-08T05:15:53.193Z"}
           title="2019-05-08T05:15:53+00:00"
@@ -230,17 +354,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Benjamin
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Kunze
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         54
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-10-12T18:58:37.702Z"}
           title="2020-10-12T18:58:37+00:00"
@@ -249,17 +383,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Tianna
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Rippin
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         35
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-05-02T14:35:59.935Z"}
           title="2019-05-02T14:35:59+00:00"
@@ -268,17 +412,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Audie
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Pollich
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         89
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-10-10T00:47:20.986Z"}
           title="2019-10-10T00:47:20+00:00"
@@ -287,17 +441,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Garnett
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Daugherty
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         13
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-05-13T10:09:28.956Z"}
           title="2020-05-13T10:09:28+00:00"
@@ -306,17 +470,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Janie
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Miller
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         32
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-04-16T20:15:45.128Z"}
           title="2020-04-16T20:15:45+00:00"
@@ -325,17 +499,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Macy
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Haley
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         69
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-03-12T17:56:35.849Z"}
           title="2019-03-12T17:56:35+00:00"
@@ -344,17 +528,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Alice
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         McClure
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         60
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-07-07T07:09:53.803Z"}
           title="2019-07-07T07:09:53+00:00"
@@ -363,17 +557,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Ara
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Fritsch
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         65
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-05-20T00:08:06.085Z"}
           title="2019-05-20T00:08:06+00:00"
@@ -382,17 +586,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Leonora
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Bayer
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         68
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-03-26T10:22:53.934Z"}
           title="2019-03-26T10:22:53+00:00"
@@ -401,17 +615,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Corrine
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Beier
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         35
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-11-17T11:35:28.797Z"}
           title="2020-11-17T11:35:28+00:00"
@@ -420,17 +644,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Tyshawn
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Schneider
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         26
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-11-18T22:44:05.602Z"}
           title="2020-11-18T22:44:05+00:00"
@@ -439,17 +673,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Daron
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Greenholt
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         77
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-09-24T08:40:48.045Z"}
           title="2020-09-24T08:40:48+00:00"
@@ -458,17 +702,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Jaycee
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Zemlak
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         31
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-06-25T18:23:27.901Z"}
           title="2019-06-25T18:23:27+00:00"
@@ -477,17 +731,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Aryanna
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Zieme
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         88
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-03-26T07:05:01.026Z"}
           title="2020-03-26T07:05:01+00:00"
@@ -496,17 +760,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Lori
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Donnelly
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         20
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-04-25T20:08:53.608Z"}
           title="2019-04-25T20:08:53+00:00"
@@ -515,17 +789,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Kaley
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Wehner
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         63
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-08-01T08:22:39.739Z"}
           title="2020-08-01T08:22:39+00:00"
@@ -534,17 +818,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Jadyn
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Goodwin
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         75
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-06-24T16:56:30.607Z"}
           title="2020-06-24T16:56:30+00:00"
@@ -553,17 +847,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Lavinia
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Hayes
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         100
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-07-08T18:11:42.919Z"}
           title="2020-07-08T18:11:42+00:00"
@@ -572,17 +876,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Elfrieda
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Heller
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         13
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-11-12T08:41:45.341Z"}
           title="2020-11-12T08:41:45+00:00"
@@ -591,17 +905,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Harry
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Nienow
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         90
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-06-14T14:52:48.582Z"}
           title="2020-06-14T14:52:48+00:00"
@@ -610,17 +934,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Heaven
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Roberts
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         65
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-01-14T03:41:47.716Z"}
           title="2019-01-14T03:41:47+00:00"
@@ -629,17 +963,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Monserrat
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Quigley
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         11
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-06-27T14:56:15.878Z"}
           title="2020-06-27T14:56:15+00:00"
@@ -648,17 +992,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Ardella
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Green
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         95
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-11-18T03:07:37.125Z"}
           title="2020-11-18T03:07:37+00:00"
@@ -667,17 +1021,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Brenna
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Zboncak
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         54
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-05-14T03:12:23.351Z"}
           title="2019-05-14T03:12:23+00:00"
@@ -686,17 +1050,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Mike
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         O'Keefe
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         5
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-08-11T20:54:29.510Z"}
           title="2019-08-11T20:54:29+00:00"
@@ -705,17 +1079,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Alvena
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Mohr
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         83
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-03-21T09:26:22.702Z"}
           title="2020-03-21T09:26:22+00:00"
@@ -724,17 +1108,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Dariana
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Heaney
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         82
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-05-22T22:51:41.863Z"}
           title="2019-05-22T22:51:41+00:00"
@@ -743,17 +1137,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Kailey
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         White
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         50
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-05-30T19:04:58.819Z"}
           title="2020-05-30T19:04:58+00:00"
@@ -762,17 +1166,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Savanah
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Dibbert
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         81
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-10-01T02:08:27.583Z"}
           title="2020-10-01T02:08:27+00:00"
@@ -781,17 +1195,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Estevan
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Pfannerstill
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         58
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-09-01T01:52:28.661Z"}
           title="2019-09-01T01:52:28+00:00"
@@ -800,17 +1224,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Celestino
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Spinka
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         68
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-04-08T02:34:10.976Z"}
           title="2019-04-08T02:34:10+00:00"
@@ -819,17 +1253,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Arjun
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Treutel
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         34
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-08-05T18:49:24.213Z"}
           title="2019-08-05T18:49:24+00:00"
@@ -838,17 +1282,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Travon
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Yundt
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         79
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-11-01T14:31:14.834Z"}
           title="2019-11-01T14:31:14+00:00"
@@ -857,17 +1311,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Matt
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Wunsch
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         4
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-03-31T04:12:04.011Z"}
           title="2020-03-31T04:12:04+00:00"
@@ -876,17 +1340,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Haylie
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Johnson
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         1
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-01-18T01:44:02.063Z"}
           title="2020-01-18T01:44:02+00:00"
@@ -895,17 +1369,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Prince
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Reinger
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         37
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2021-01-05T14:54:22.171Z"}
           title="2021-01-05T14:54:22+00:00"
@@ -914,17 +1398,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Rollin
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Olson
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         90
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-12-15T03:32:21.192Z"}
           title="2019-12-15T03:32:21+00:00"
@@ -933,17 +1427,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Nicole
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Grant
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         18
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-03-22T11:29:37.737Z"}
           title="2019-03-22T11:29:37+00:00"
@@ -952,17 +1456,27 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Eileen
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Hauck
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         34
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-07-31T21:33:20.697Z"}
           title="2020-07-31T21:33:20+00:00"
@@ -977,36 +1491,60 @@ exports[`Storyshots Components/Table Complex Table 1`] = `
 
 exports[`Storyshots Components/Table Table 1`] = `
 <table
-  className="table"
+  className="clc-table table"
 >
-  <thead>
-    <tr>
-      <th>
+  <thead
+    className="clc-table__header"
+  >
+    <tr
+      className="clc-table__row"
+    >
+      <th
+        className="clc-table__header-cell"
+      >
         First Name
       </th>
-      <th>
+      <th
+        className="clc-table__header-cell"
+      >
         Last Name
       </th>
-      <th>
+      <th
+        className="clc-table__header-cell"
+      >
         Age
       </th>
-      <th>
+      <th
+        className="clc-table__header-cell"
+      >
         Sign Up Date
       </th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <td>
+  <tbody
+    className="clc-table__body"
+  >
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Joshua
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Buckridge
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         9
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-09-29T06:39:15.478Z"}
           title="2020-09-29T06:39:15+00:00"
@@ -1015,17 +1553,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Justyn
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Kshlerin
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         52
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-08-27T01:47:43.013Z"}
           title="2020-08-27T01:47:43+00:00"
@@ -1034,17 +1582,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Jarred
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Simonis
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         88
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2021-01-20T09:45:23.686Z"}
           title="2021-01-20T09:45:23+00:00"
@@ -1053,17 +1611,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Darlene
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Bogisich
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         21
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-04-15T07:09:51.147Z"}
           title="2020-04-15T07:09:51+00:00"
@@ -1072,17 +1640,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Mose
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Parker
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         98
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-11-19T16:05:25.388Z"}
           title="2019-11-19T16:05:25+00:00"
@@ -1091,17 +1669,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Renee
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Dach
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         33
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-09-13T15:40:38.366Z"}
           title="2019-09-13T15:40:38+00:00"
@@ -1110,17 +1698,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Kaylee
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Hodkiewicz
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         33
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-01-07T17:33:28.797Z"}
           title="2020-01-07T17:33:28+00:00"
@@ -1129,17 +1727,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Celestine
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Ankunding
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         94
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-10-11T15:19:06.363Z"}
           title="2020-10-11T15:19:06+00:00"
@@ -1148,17 +1756,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Hannah
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Connelly
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         72
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-06-29T11:23:24.282Z"}
           title="2020-06-29T11:23:24+00:00"
@@ -1167,17 +1785,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Elwin
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Wilkinson
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         61
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-11-03T06:29:20.579Z"}
           title="2019-11-03T06:29:20+00:00"
@@ -1186,17 +1814,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Karley
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Olson
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         83
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-07-13T18:26:51.751Z"}
           title="2020-07-13T18:26:51+00:00"
@@ -1205,17 +1843,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Roger
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Emmerich
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         60
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-04-02T00:20:20.223Z"}
           title="2019-04-02T00:20:20+00:00"
@@ -1224,17 +1872,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Jude
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Rosenbaum
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         12
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-04-27T22:57:02.343Z"}
           title="2020-04-27T22:57:02+00:00"
@@ -1243,17 +1901,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Cody
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Kiehn
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         56
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-06-17T07:20:03.530Z"}
           title="2020-06-17T07:20:03+00:00"
@@ -1262,17 +1930,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Vivianne
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Kub
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         94
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2021-02-25T10:34:34.502Z"}
           title="2021-02-25T10:34:34+00:00"
@@ -1281,17 +1959,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Celestino
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Beahan
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         90
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-05-07T22:40:56.293Z"}
           title="2019-05-07T22:40:56+00:00"
@@ -1300,17 +1988,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Albert
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Hane
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         37
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-07-14T21:39:56.615Z"}
           title="2020-07-14T21:39:56+00:00"
@@ -1319,17 +2017,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Lucious
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         VonRueden
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         48
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-09-04T12:53:16.276Z"}
           title="2020-09-04T12:53:16+00:00"
@@ -1338,17 +2046,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Ike
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Hills
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         2
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-04-11T05:40:51.435Z"}
           title="2020-04-11T05:40:51+00:00"
@@ -1357,17 +2075,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Donnie
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Mosciski
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         98
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-07-01T04:49:26.057Z"}
           title="2020-07-01T04:49:26+00:00"
@@ -1376,17 +2104,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Herbert
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Strosin
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         66
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-03-27T04:37:10.953Z"}
           title="2019-03-27T04:37:10+00:00"
@@ -1395,17 +2133,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Gabrielle
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Robel
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         22
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-12-16T14:12:21.778Z"}
           title="2019-12-16T14:12:21+00:00"
@@ -1414,17 +2162,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Roselyn
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Rohan
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         4
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-09-05T19:43:39.114Z"}
           title="2019-09-05T19:43:39+00:00"
@@ -1433,17 +2191,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Solon
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Nienow
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         20
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-10-16T02:28:43.106Z"}
           title="2020-10-16T02:28:43+00:00"
@@ -1452,17 +2220,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Lambert
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Dickens
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         42
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-05-30T10:28:57.098Z"}
           title="2019-05-30T10:28:57+00:00"
@@ -1471,17 +2249,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Nickolas
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Erdman
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         4
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-06-06T01:29:38.998Z"}
           title="2020-06-06T01:29:38+00:00"
@@ -1490,17 +2278,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Emelia
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Bergstrom
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         8
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-07-19T05:45:55.342Z"}
           title="2020-07-19T05:45:55+00:00"
@@ -1509,17 +2307,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Kevon
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Stark
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         8
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-04-30T07:31:57.161Z"}
           title="2019-04-30T07:31:57+00:00"
@@ -1528,17 +2336,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Corine
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Yost
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         89
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-10-18T13:27:06.175Z"}
           title="2019-10-18T13:27:06+00:00"
@@ -1547,17 +2365,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Estel
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Welch
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         68
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-12-19T08:32:21.789Z"}
           title="2020-12-19T08:32:21+00:00"
@@ -1566,17 +2394,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Curtis
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         O'Keefe
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         87
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-12-03T00:57:58.831Z"}
           title="2019-12-03T00:57:58+00:00"
@@ -1585,17 +2423,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Myra
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Labadie
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         9
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-11-27T14:43:41.936Z"}
           title="2019-11-27T14:43:41+00:00"
@@ -1604,17 +2452,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Orin
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Zemlak
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         16
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-11-14T18:17:14.250Z"}
           title="2019-11-14T18:17:14+00:00"
@@ -1623,17 +2481,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Serenity
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Labadie
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         4
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-08-25T06:54:25.876Z"}
           title="2020-08-25T06:54:25+00:00"
@@ -1642,17 +2510,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Coty
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Hamill
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         100
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-10-04T14:50:38.937Z"}
           title="2020-10-04T14:50:38+00:00"
@@ -1661,17 +2539,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Foster
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Bauch
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         83
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-02-01T14:58:39.799Z"}
           title="2020-02-01T14:58:39+00:00"
@@ -1680,17 +2568,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Mozelle
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Lowe
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         87
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-12-31T15:45:14.245Z"}
           title="2019-12-31T15:45:14+00:00"
@@ -1699,17 +2597,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Tia
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         McDermott
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         24
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-12-30T14:40:16.915Z"}
           title="2020-12-30T14:40:16+00:00"
@@ -1718,17 +2626,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Lynn
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Strosin
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         15
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-04-03T05:44:40.460Z"}
           title="2019-04-03T05:44:40+00:00"
@@ -1737,17 +2655,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Garrett
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Moore
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         81
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-07-26T09:11:10.666Z"}
           title="2019-07-26T09:11:10+00:00"
@@ -1756,17 +2684,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Effie
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Ruecker
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         53
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-04-02T17:38:02.820Z"}
           title="2019-04-02T17:38:02+00:00"
@@ -1775,17 +2713,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Vernice
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Dickinson
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         99
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2021-01-08T06:51:48.544Z"}
           title="2021-01-08T06:51:48+00:00"
@@ -1794,17 +2742,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Bertram
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Kuphal
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         25
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-02-04T23:37:08.588Z"}
           title="2019-02-04T23:37:08+00:00"
@@ -1813,17 +2771,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Oceane
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Schowalter
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         57
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-12-11T03:04:06.672Z"}
           title="2020-12-11T03:04:06+00:00"
@@ -1832,17 +2800,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Cedrick
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Hagenes
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         24
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-03-28T15:24:55.254Z"}
           title="2019-03-28T15:24:55+00:00"
@@ -1851,17 +2829,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Kayley
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         O'Reilly
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         39
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-05-09T19:43:13.704Z"}
           title="2019-05-09T19:43:13+00:00"
@@ -1870,17 +2858,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Keshawn
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Roberts
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         38
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2019-01-26T13:27:33.379Z"}
           title="2019-01-26T13:27:33+00:00"
@@ -1889,17 +2887,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Frieda
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Satterfield
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         27
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-04-13T12:48:58.216Z"}
           title="2020-04-13T12:48:58+00:00"
@@ -1908,17 +2916,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Wilbert
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Kunze
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         83
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-10-02T00:08:42.715Z"}
           title="2020-10-02T00:08:42+00:00"
@@ -1927,17 +2945,27 @@ exports[`Storyshots Components/Table Table 1`] = `
         </time>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+      >
         Idell
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         Lemke
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         77
       </td>
-      <td>
+      <td
+        className="clc-table__body-cell"
+      >
         <time
           dateTime={"2020-11-23T09:26:13.764Z"}
           title="2020-11-23T09:26:13+00:00"
