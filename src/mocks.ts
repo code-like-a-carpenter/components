@@ -45,6 +45,7 @@ export function mockRelayPageInfo(
 
 export interface SimplePerson {
   age: number;
+  id: string;
   firstName: string;
   lastName: string;
   signUpDate: Date;
@@ -59,6 +60,7 @@ export function makeSimplePerson(
   return {
     age: faker.random.number({max: 100, min: 0}),
     firstName: faker.name.firstName(),
+    id: faker.random.uuid(),
     lastName: faker.name.lastName(),
     signUpDate: faker.date.between('2019-01-01', '2021-03-01'),
     ...override,
@@ -67,6 +69,7 @@ export function makeSimplePerson(
 
 export interface ComplexPerson {
   age: number;
+  id: string;
   name: {
     first: string;
     last: string;
@@ -90,6 +93,7 @@ export function makeComplexPerson({
 }: Partial<ComplexPerson> = {}): ComplexPerson {
   return {
     age: faker.random.number({max: 100, min: 0}),
+    id: faker.random.uuid(),
     name: {
       first: faker.name.firstName(),
       last: faker.name.lastName(),

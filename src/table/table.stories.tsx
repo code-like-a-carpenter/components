@@ -3,12 +3,14 @@ import React from 'react';
 import {AnyRenderer} from '..';
 import {makeComplexPeople, makeSimplePeople} from '../mocks';
 
-import {Table} from './table';
-import {TableHeader} from './table-header';
-import {TableBody} from './table-body';
-import {TableBodyCell} from './table-body-cell';
-import {TableRow} from './table-row';
-import {TableHeaderCell} from './table-header-cell';
+import {
+  Table,
+  TableHeader,
+  TableBody,
+  TableBodyCell,
+  TableRow,
+  TableHeaderCell,
+} from './table';
 
 export default {
   component: Table,

@@ -32,6 +32,10 @@ overrides:
         - classes: true
           functions: false
           variables: true
+  - files:
+      - '**/*.stories.*'
+    rules:
+      require-jsdoc: off
 
 parserOptions:
   sourceType: 'script'
