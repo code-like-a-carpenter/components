@@ -4,7 +4,7 @@ const CI = !!process.env.CI;
 
 module.exports = {
   clearMocks: true,
-  collectCoverage: true,
+  collectCoverage: false,
   coverageDirectory: 'reports/coverage',
   coverageProvider: 'v8',
   moduleNameMapper: {
