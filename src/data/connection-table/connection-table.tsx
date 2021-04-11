@@ -13,13 +13,13 @@ export interface ConnectionRendererProps<
   PI extends PageInfo = PageInfo,
   E extends Edge<N> = Edge<N>
 > {
-  configure: React.ComponentType<ConfigureProps<N>>;
-  data: Connection<N, PI, E>;
-  renderData: React.ComponentType<{
-    data: N[];
-    idField: IdType<N>;
+  readonly configure: React.ComponentType<ConfigureProps<N>>;
+  readonly data: Maybe<Connection<N, PI, E>>;
+  readonly renderData: React.ComponentType<{
+    readonly data: N[];
+    readonly idField: IdType<N>;
   }>;
-  Pager: React.ComponentType<{pageInfo: PI}>;
+  readonly Pager: React.ComponentType<{pageInfo: PI}>;
 }
 
 /**
@@ -27,7 +27,7 @@ export interface ConnectionRendererProps<
  * @param edges
  */
 export function useEdgeNodes<N extends Node = Node>(
-  edges?: Maybe<Maybe<Edge<N>>[]>
+  edges?: Maybe<readonly Maybe<Edge<N>>[]>
 ): N[] {
   return useMemo(
     () => (edges?.map((edge) => edge?.node).filter(Boolean) || []) as N[],
@@ -52,7 +52,7 @@ export const ConnectionRenderer = <
       {/* tsc can't seem to figure out that "id" is always on N since N is a node */}
       {/* @ts-expect-error */}
       <DataRenderer idField="id" data={nodes} />
-      <PagerRender pageInfo={data.pageInfo} />
+      {data?.pageInfo && <PagerRender pageInfo={data.pageInfo} />}
     </FieldConfigurationProvider>
   );
 };

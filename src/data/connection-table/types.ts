@@ -1,19 +1,19 @@
 export type Maybe<T> = T | null | undefined;
 
 export interface Node {
-  id: string;
+  readonly id: string;
 }
 
-export interface Edge<T extends Node> {
-  cursor: string;
-  node: T;
+export interface Edge<N extends Node> {
+  readonly cursor: string;
+  readonly node?: Maybe<N>;
 }
 
 export interface PageInfo {
-  endCursor: string;
-  hasNextPage: boolean;
-  hasPreviousPage: boolean;
-  startCursor: string;
+  readonly endCursor: string;
+  readonly hasNextPage: boolean;
+  readonly hasPreviousPage: boolean;
+  readonly startCursor: string;
 }
 
 export interface Connection<
@@ -21,18 +21,18 @@ export interface Connection<
   PI extends PageInfo = PageInfo,
   E extends Edge<N> = Edge<N>
 > {
-  pageInfo: PI;
-  edges?: E[];
+  readonly pageInfo: PI;
+  readonly edges?: Maybe<readonly Maybe<E>[]>;
 }
 
 export interface ForwardConnectionArgs {
-  after?: string;
-  first: number;
+  readonly after?: string;
+  readonly first: number;
 }
 
 export interface BackwardConnectionArgs {
-  before?: string;
-  last: number;
+  readonly before?: string;
+  readonly last: number;
 }
 
 export type ConnectionArgs = ForwardConnectionArgs | BackwardConnectionArgs;

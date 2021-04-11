@@ -4,7 +4,7 @@ import {makeSimplePeople, SimplePerson} from '../../mocks';
 import {RoutingContext} from '../../routing';
 
 import {ConnectionTable} from './connection-table';
-import {Connection, ConnectionArgs, Edge, Node} from './types';
+import {Connection, ConnectionArgs, Edge, Maybe, Node} from './types';
 
 export default {
   component: ConnectionTable,
@@ -56,7 +56,7 @@ const ConnectionTableWithData = () => {
   });
 
   const selected = select(edges, args);
-  const connection: Connection<SimplePerson> = {
+  const connection: Maybe<Connection<SimplePerson>> = {
     edges: selected,
     pageInfo: {
       endCursor: selected[selected.length - 1].cursor,
