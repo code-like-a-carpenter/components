@@ -58,9 +58,9 @@ export function makeSimplePerson(
   override: Partial<SimplePerson> = {}
 ): SimplePerson {
   return {
-    age: faker.random.number({max: 100, min: 0}),
+    age: faker.datatype.number({max: 100, min: 0}),
     firstName: faker.name.firstName(),
-    id: faker.random.uuid(),
+    id: faker.datatype.uuid(),
     lastName: faker.name.lastName(),
     signUpDate: faker.date.between('2019-01-01', '2021-03-01'),
     ...override,
@@ -92,8 +92,8 @@ export function makeComplexPerson({
   ...override
 }: Partial<ComplexPerson> = {}): ComplexPerson {
   return {
-    age: faker.random.number({max: 100, min: 0}),
-    id: faker.random.uuid(),
+    age: faker.datatype.number({max: 100, min: 0}),
+    id: faker.datatype.uuid(),
     name: {
       first: faker.name.firstName(),
       last: faker.name.lastName(),
