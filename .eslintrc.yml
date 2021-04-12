@@ -49,6 +49,7 @@ rules:
     - error
     - devDependencies: ['!src/**/*']
   no-restricted-syntax: off
+  import/no-deprecated: warn
   import/no-unresolved:
     - error
     - ignore:
