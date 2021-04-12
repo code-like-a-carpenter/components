@@ -35,19 +35,31 @@ export function getFieldData(rowData: unknown, keyPath: string): unknown {
   return rowData[keyPath];
 }
 
+/**
+ * @deprecated use the one in templates/configuration
+ */
 export type FieldConfiguration = {
   label: React.ReactNode;
   keyPath: string;
   renderer: Renderer;
 };
 
+/**
+ * @deprecated use the one in templates/configuration
+ */
 export type FieldConfigurationWithDefaults = Partial<FieldConfiguration>;
 
+/**
+ * @deprecated use the one in templates/configuration
+ */
 export type FieldConfigurationContextType = {
   configuration: Map<string, FieldConfiguration>;
   configure: ConfigureFunction;
 };
 
+/**
+ * @deprecated use the one in templates/configuration
+ */
 export const FieldConfigurationContext = React.createContext<FieldConfigurationContextType>(
   /* @ts-expect-error - no reasonable default */
   null
@@ -55,6 +67,7 @@ export const FieldConfigurationContext = React.createContext<FieldConfigurationC
 
 /**
  * Gets the configuration for the specified field
+ * @deprecated use the one in templates/configuration
  */
 export function useFieldConfiguration(name: string): FieldConfiguration {
   const {configuration} = useContext(FieldConfigurationContext);
@@ -72,6 +85,7 @@ export type ConfigureFunction = (
 
 /**
  * Gets the function for configuring a field
+ * @deprecated use the one in templates/configuration
  */
 export function useConfigureField(): ConfigureFunction {
   const {configure} = useContext(FieldConfigurationContext);
@@ -81,12 +95,16 @@ export function useConfigureField(): ConfigureFunction {
 /**
  * Returns the names of all of the configured fields so we can iterate over
  * them
+ * @deprecated use the one in templates/configuration
  */
 export function useConfiguredFieldIds<T extends object>(): IdType<T>[] {
   const {configuration} = useContext(FieldConfigurationContext);
   return Array.from(configuration.keys()) as IdType<T>[];
 }
 
+/**
+ * @deprecated use the one in templates/configuration
+ */
 export const FieldConfigurationProvider: React.FC<{name?: string}> = ({
   children,
   name: parentName,
