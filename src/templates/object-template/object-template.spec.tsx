@@ -17,15 +17,15 @@ describe('ObjectTemplate', () => {
         data={data}
         configure={({FieldConfigurer}) => (
           <>
-            <FieldConfigurer name="firstName" />
-            <FieldConfigurer name="lastName" />
-            <FieldConfigurer name="age" />
-            <FieldConfigurer name="signUpDate" />
+            <FieldConfigurer field="firstName" />
+            <FieldConfigurer field="lastName" />
+            <FieldConfigurer field="age" />
+            <FieldConfigurer field="signUpDate" />
             {/* @ts-expect-error */}
-            <FieldConfigurer name="invalid" />
+            <FieldConfigurer field="invalid" />
           </>
         )}
-        ItemWrapper={({key, value}) => (
+        ItemWrapper={({field: key, value}) => (
           <Description term={key} description={value} />
         )}
         Wrapper={({children}) => <DescriptionList>{children}</DescriptionList>}
@@ -43,21 +43,21 @@ describe('ObjectTemplate', () => {
         configure={({FieldConfigurer}) => (
           <>
             <FieldConfigurer
-              name="name"
+              field="name"
               configure={({FieldConfigurer: NameFieldConfigurer}) => (
                 <>
-                  <NameFieldConfigurer name="first" />
-                  <NameFieldConfigurer name="last" />
+                  <NameFieldConfigurer field="first" />
+                  <NameFieldConfigurer field="last" />
                 </>
               )}
             />
-            <FieldConfigurer name="signUpDate" />
-            <FieldConfigurer name="age" />
+            <FieldConfigurer field="signUpDate" />
+            <FieldConfigurer field="age" />
             {/* @ts-expect-error */}
-            <FieldConfigurer name="invalid" />
+            <FieldConfigurer field="invalid" />
           </>
         )}
-        ItemWrapper={({key, value}) => (
+        ItemWrapper={({field: key, value}) => (
           <Description term={key} description={value} />
         )}
         Wrapper={({children}) => <DescriptionList>{children}</DescriptionList>}
@@ -74,13 +74,13 @@ describe('ObjectTemplate', () => {
         data={data?.installation?.repositoryConnection?.edges?.[0]?.node}
         configure={({FieldConfigurer}) => (
           <>
-            <FieldConfigurer name="fullName" />
-            <FieldConfigurer name="publicId" />
+            <FieldConfigurer field="fullName" />
+            <FieldConfigurer field="publicId" />
             {/* @ts-expect-error */}
-            <FieldConfigurer name="invalid" />
+            <FieldConfigurer field="invalid" />
           </>
         )}
-        ItemWrapper={({key, value}) => (
+        ItemWrapper={({field: key, value}) => (
           <Description term={key} description={value} />
         )}
         Wrapper={({children}) => <DescriptionList>{children}</DescriptionList>}

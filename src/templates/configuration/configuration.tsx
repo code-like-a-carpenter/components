@@ -27,9 +27,9 @@ export const FieldConfigurationContext = React.createContext<FieldConfigurationC
   null
 );
 
-export const FieldConfigurationProvider: React.FC<{name?: string}> = ({
+export const FieldConfigurationProvider: React.FC<{field?: string}> = ({
   children,
-  name: parentName,
+  field: parentName,
 }) => {
   const parentContext = useContext(FieldConfigurationContext);
 

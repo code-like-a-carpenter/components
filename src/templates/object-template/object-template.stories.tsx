@@ -16,14 +16,16 @@ export const objectTemplate = () => (
     data={makeSimplePerson()}
     configure={({FieldConfigurer}) => (
       <>
-        <FieldConfigurer name="firstName" />
-        <FieldConfigurer name="lastName" />
-        <FieldConfigurer name="age" />
-        <FieldConfigurer name="signUpDate" />
+        <FieldConfigurer field="firstName" />
+        <FieldConfigurer field="lastName" />
+        <FieldConfigurer field="age" />
+        <FieldConfigurer field="signUpDate" />
       </>
     )}
-    ItemWrapper={({key, value}) => (
-      <Description term={key} description={value} />
+    ItemWrapper={({label, value, renderer: Renderer}) => (
+      <Description term={label}>
+        <Renderer value={value} />
+      </Description>
     )}
     Wrapper={({children}) => <DescriptionList>{children}</DescriptionList>}
   />
@@ -34,14 +36,16 @@ export const outOfOrder = () => (
     data={makeSimplePerson()}
     configure={({FieldConfigurer}) => (
       <>
-        <FieldConfigurer name="lastName" />
-        <FieldConfigurer name="firstName" />
-        <FieldConfigurer name="signUpDate" />
-        <FieldConfigurer name="age" />
+        <FieldConfigurer field="lastName" />
+        <FieldConfigurer field="firstName" />
+        <FieldConfigurer field="signUpDate" />
+        <FieldConfigurer field="age" />
       </>
     )}
-    ItemWrapper={({key, value}) => (
-      <Description term={key} description={value} />
+    ItemWrapper={({label, value, renderer: Renderer}) => (
+      <Description term={label}>
+        <Renderer value={value} />
+      </Description>
     )}
     Wrapper={({children}) => <DescriptionList>{children}</DescriptionList>}
   />
@@ -52,21 +56,23 @@ export const duplicateFields = () => (
     data={makeSimplePerson()}
     configure={({FieldConfigurer}) => (
       <>
-        <FieldConfigurer name="firstName" />
-        <FieldConfigurer name="lastName" />
-        <FieldConfigurer name="age" />
+        <FieldConfigurer field="firstName" />
+        <FieldConfigurer field="lastName" />
+        <FieldConfigurer field="age" />
+        <FieldConfigurer field="signUpDate" />
         <FieldConfigurer
-          name="signUpDate"
+          field="signUpDate"
           label="Seconds since signup"
-          render={({value}) => (
+          renderer={({value}) => (
             <>{Date.parse('2021-01-01') - value.getTime()}</>
           )}
         />
-        <FieldConfigurer name="signUpDate" />
       </>
     )}
-    ItemWrapper={({key, value}) => (
-      <Description term={key} description={value} />
+    ItemWrapper={({label, value, renderer: Renderer}) => (
+      <Description term={label}>
+        <Renderer value={value} />
+      </Description>
     )}
     Wrapper={({children}) => <DescriptionList>{children}</DescriptionList>}
   />
@@ -78,20 +84,22 @@ export const nestedData = () => (
     configure={({FieldConfigurer}) => (
       <>
         <FieldConfigurer
-          name="name"
+          field="name"
           configure={({FieldConfigurer: NameFieldConfigurer}) => (
             <>
-              <NameFieldConfigurer name="first" />
-              <NameFieldConfigurer name="last" />
+              <NameFieldConfigurer field="first" />
+              <NameFieldConfigurer field="last" />
             </>
           )}
         />
-        <FieldConfigurer name="signUpDate" />
-        <FieldConfigurer name="age" />
+        <FieldConfigurer field="signUpDate" />
+        <FieldConfigurer field="age" />
       </>
     )}
-    ItemWrapper={({key, value}) => (
-      <Description term={key} description={value} />
+    ItemWrapper={({label, value, renderer: Renderer}) => (
+      <Description term={label}>
+        <Renderer value={value} />
+      </Description>
     )}
     Wrapper={({children}) => <DescriptionList>{children}</DescriptionList>}
   />
