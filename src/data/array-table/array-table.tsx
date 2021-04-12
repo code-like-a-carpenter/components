@@ -3,7 +3,8 @@ import React from 'react';
 import {ConfigurableTable} from '../configurable-table';
 import {ColumnConfigurer} from '../configurable-renderer/column-configurer';
 import {FieldConfigurationProvider} from '../configurable-renderer/field-configuration';
-import {ConfigureProps, IdType} from '../configurable-renderer/types';
+import {ConfigureProps} from '../configurable-renderer/types';
+import {IdType} from '../..';
 
 export type ArrayTableProps<T extends object> = {
   configure: React.ComponentType<ConfigureProps<T>>;

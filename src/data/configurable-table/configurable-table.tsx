@@ -1,7 +1,7 @@
 import React from 'react';
 
+import {IdType} from '../..';
 import {useConfiguredFieldIds} from '../configurable-renderer/field-configuration';
-import {IdType} from '../configurable-renderer/types';
 
 import {
   DataTable,

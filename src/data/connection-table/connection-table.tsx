@@ -3,8 +3,9 @@ import React, {useMemo} from 'react';
 import {ColumnConfigurer} from '../configurable-renderer/column-configurer';
 import {FieldConfigurationProvider} from '../configurable-renderer/field-configuration';
 import {ConfigurableTable} from '../configurable-table';
-import {ConfigureProps, IdType} from '../configurable-renderer';
+import {ConfigureProps} from '../configurable-renderer';
 import {RelayPager} from '../../pager/relay-pager';
+import {IdType} from '../..';
 
 import {Connection, Edge, Maybe, Node, PageInfo} from './types';
 

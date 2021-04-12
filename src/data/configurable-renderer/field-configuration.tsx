@@ -1,10 +1,9 @@
 import {startCase} from 'lodash';
 import React, {useContext} from 'react';
 
+import {IdType} from '../..';
 import {AnyRenderer} from '../../renderers';
 import {Renderer} from '../../support';
-
-import {IdType} from './types';
 
 const pattern = /^(\w+)\.(.+)$/;
 

@@ -2,7 +2,9 @@ import assert from 'assert';
 
 import React from 'react';
 
-import {FieldConfigurerProps, IdType} from './types';
+import {IdType} from '../..';
+
+import {FieldConfigurerProps} from './types';
 import {
   FieldConfigurationProvider,
   useConfigureField,

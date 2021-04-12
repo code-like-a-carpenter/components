@@ -1,14 +1,12 @@
 import React from 'react';
 
+import {IdType} from '../..';
 import {RendererProps} from '../../support';
 
 // need to export something that's not just a type or interface so that this is
 // treated as a module by certain parts of the test suite.
 // eslint-disable-next-line camelcase
 export const __some_export_so_compile_does_not_break__ = 0;
-
-export type StringKey<D> = Extract<keyof D, string>;
-export type IdType<D> = StringKey<D>;
 
 export type FormatProps<T> = T;
 

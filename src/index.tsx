@@ -13,3 +13,4 @@ export * from './simple-error-boundary';
 export * from './spinner';
 export * from './stringify';
 export * from './table';
+export * from './types';
