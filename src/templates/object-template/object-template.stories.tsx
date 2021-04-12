@@ -1,10 +1,9 @@
 import React from 'react';
 
-import {Description} from '../..';
-import {DescriptionList} from '../../description';
 import {makeComplexPerson, makeSimplePerson} from '../../mocks';
 
 import {ObjectTemplate} from './object-template';
+import {ItemWrapper, Wrapper} from './support';
 
 export default {
   component: ObjectTemplate,
@@ -22,12 +21,8 @@ export const objectTemplate = () => (
         <FieldConfigurer field="signUpDate" />
       </>
     )}
-    ItemWrapper={({label, value, renderer: Renderer}) => (
-      <Description term={label}>
-        <Renderer value={value} />
-      </Description>
-    )}
-    Wrapper={({children}) => <DescriptionList>{children}</DescriptionList>}
+    ItemWrapper={ItemWrapper}
+    Wrapper={Wrapper}
   />
 );
 
@@ -42,12 +37,8 @@ export const outOfOrder = () => (
         <FieldConfigurer field="age" />
       </>
     )}
-    ItemWrapper={({label, value, renderer: Renderer}) => (
-      <Description term={label}>
-        <Renderer value={value} />
-      </Description>
-    )}
-    Wrapper={({children}) => <DescriptionList>{children}</DescriptionList>}
+    ItemWrapper={ItemWrapper}
+    Wrapper={Wrapper}
   />
 );
 
@@ -69,12 +60,8 @@ export const duplicateFields = () => (
         />
       </>
     )}
-    ItemWrapper={({label, value, renderer: Renderer}) => (
-      <Description term={label}>
-        <Renderer value={value} />
-      </Description>
-    )}
-    Wrapper={({children}) => <DescriptionList>{children}</DescriptionList>}
+    ItemWrapper={ItemWrapper}
+    Wrapper={Wrapper}
   />
 );
 
@@ -96,11 +83,7 @@ export const nestedData = () => (
         <FieldConfigurer field="age" />
       </>
     )}
-    ItemWrapper={({label, value, renderer: Renderer}) => (
-      <Description term={label}>
-        <Renderer value={value} />
-      </Description>
-    )}
-    Wrapper={({children}) => <DescriptionList>{children}</DescriptionList>}
+    ItemWrapper={ItemWrapper}
+    Wrapper={Wrapper}
   />
 );

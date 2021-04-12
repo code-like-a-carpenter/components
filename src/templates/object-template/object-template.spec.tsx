@@ -2,8 +2,9 @@ import {render} from '@testing-library/react';
 import React from 'react';
 
 import {ComplexPerson, SimplePerson} from '../../mocks';
-import {Description, DescriptionList} from '../..';
 import {InstallationPageQuery} from '../../sample-types';
+
+import {ItemWrapper, Wrapper} from './support';
 
 import {ObjectTemplate} from '.';
 
@@ -25,10 +26,8 @@ describe('ObjectTemplate', () => {
             <FieldConfigurer field="invalid" />
           </>
         )}
-        ItemWrapper={({field: key, value}) => (
-          <Description term={key} description={value} />
-        )}
-        Wrapper={({children}) => <DescriptionList>{children}</DescriptionList>}
+        ItemWrapper={ItemWrapper}
+        Wrapper={Wrapper}
       />
     );
   });
@@ -57,10 +56,8 @@ describe('ObjectTemplate', () => {
             <FieldConfigurer field="invalid" />
           </>
         )}
-        ItemWrapper={({field: key, value}) => (
-          <Description term={key} description={value} />
-        )}
-        Wrapper={({children}) => <DescriptionList>{children}</DescriptionList>}
+        ItemWrapper={ItemWrapper}
+        Wrapper={Wrapper}
       />
     );
   });
@@ -80,10 +77,8 @@ describe('ObjectTemplate', () => {
             <FieldConfigurer field="invalid" />
           </>
         )}
-        ItemWrapper={({field: key, value}) => (
-          <Description term={key} description={value} />
-        )}
-        Wrapper={({children}) => <DescriptionList>{children}</DescriptionList>}
+        ItemWrapper={ItemWrapper}
+        Wrapper={Wrapper}
       />
     );
   });
