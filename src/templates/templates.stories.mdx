@@ -1,0 +1,166 @@
+import {
+  Meta,
+  Story,
+  Canvas,
+  Source,
+  SourceState,
+  SourceContext,
+} from '@storybook/addon-docs/blocks';
+
+<Meta title="Templates/Templates" />
+
+# Templates
+
+Templates are generic components that make it easier to render structured data.
+Given an input variable, you'll be able to write a `configure` function that
+recieves helper components that are tightly scoped to the input type. These
+components were originally designed to make it easier to render Relay-like
+Connection objects into tables, but now handle all types of structured data.
+
+For example, you might want to render some of an objects fields into a
+description list.
+
+```tsx
+const myData = {
+  foo: 1,
+  bar: 2,
+  baz: 3,
+};
+
+<DescriptionList>
+  <Description term="foo" value={myData.foo} />
+  <Description term="bar" value={myData.bar} />
+  <Description term="baz" value={myData.baz} />
+</DescriptionList>;
+```
+
+Ok, not too bad here, but what if we want to render the first item in a relay
+connection?
+
+```tsx
+const data = {
+  node: {
+    myConnection: {
+      edges: [{
+        foo: 1,
+        bar: 2,
+        baz: 3
+      }]
+    }
+  }
+}
+
+
+<DescriptionList>
+  <Description term="foo" value={data?.node?.myConnection?.edges?.[0].foo}/>
+  <Description term="bar" value={data?.node?.myConnection?.edges?.[0].bar}/>
+  <Description term="baz" value={data?.node?.myConnection?.edges?.[0].baz}/>
+</DescriptionList>
+```
+
+Now, it's starting to look a little janky and all we've done is nest some data.
+Things might get way more complicted if we have more complex data, conditionals,
+etc and there's nothing reusable here. With Template, we can write generic way
+to render arbitrary data without repeating ourselves.
+
+```tsx
+
+const DescriptionListTemplate = ({fids}: ObjectTemplateProps) => {
+  return (
+    <DescriptionList>
+      {fids.map((fid) => <DescriptionTemplate key={fid} data={data} fid={fid} />)}
+    </DescriptionList>
+  );
+}
+
+const DescriptionTemplate = ({data, fid}: ObjectTemplateProps) => {
+  const config = useFieldConfig(fid);
+  return <Description term={fid} description={data[fid]}/>
+}
+
+const data = {
+  node: {
+    myConnection: {
+      edges: [{
+        foo: 1,
+        bar: 2,
+        baz: 3
+      }]
+    }
+  }
+}
+
+
+<ObjectTemplate
+  data={data?.node?.myConnection?.edges?.[0]}
+  configure={({FieldcConfigurer}) => (
+    <>
+      <FieldConfigurer name="foo"/>
+      <FieldConfigurer name="bar"/>
+      <FieldConfigurer name="baz"/>
+    </>
+  )}
+  Renderer={DescriptionListTemplate}
+  />
+```
+
+Of course, this seems a bit verbose at first, but this can all be packaged up so
+you can have a TemplatedDescriptionList like:
+
+```tsx
+const DescriptionListTemplate = ({fids}: ObjectTemplateProps) => {
+  return (
+    <DescriptionList>
+      {fids.map((fid) => (
+        <DescriptionTemplate key={fid} data={data} fid={fid} />
+      ))}
+    </DescriptionList>
+  );
+};
+
+const DescriptionTemplate = ({data, fid}: ObjectTemplateProps) => {
+  const config = useFieldConfig(fid);
+  return <Description term={fid} description={data[fid]} />;
+};
+
+export const TemplatedDescriptionList = (props: TemplatedDescriptionList) => {
+  <ObjectTemplate
+    data={data?.node?.myConnection?.edges?.[0]}
+    configure={({FieldcConfigurer}) => (
+      <>
+        <FieldConfigurer name="foo" />
+        <FieldConfigurer name="bar" />
+        <FieldConfigurer name="baz" />
+      </>
+    )}
+    Renderer={DescriptionListTemplate}
+  />;
+};
+```
+
+and then, your code is simply
+
+```tsx
+<TemplatedDescriptionList
+  data={data?.node?.myConnection?.edges?.[0]}
+  configure={({FieldcConfigurer}) => (
+    <>
+      <FieldConfigurer name="foo" />
+      <FieldConfigurer name="bar" />
+      <FieldConfigurer name="baz" />
+    </>
+  )}
+/>
+```
+
+These are fairly contrived examples, and there's a lot missing from the
+`TemplatedDescriptionList` (e.g., we should expect renderProps for transforming
+both the key and the value and it would probably better to wrap
+ConditionalDescription instead of Description). Further, the FieldConfigurer
+
+<!-- Notes -->
+
+interface FieldConfigurer { /\*\*
+
+- Renders the whole k/v pair. We might use this to replace the \*/ renderPair:
+  void; renderKey: void; renderValue: void }
