@@ -9,7 +9,7 @@ import {
   useFieldConfiguration,
 } from '../configuration';
 import {
-  FieldWrapperProps,
+  FieldWrapper as FieldWrapperType,
   ItemWrapper as ItemWrapperType,
   Wrapper as WrapperType,
 } from '../support';
@@ -21,15 +21,9 @@ export interface ArrayTemplateProps<
   data: Maybe<Maybe<T>[]>;
   idField: K;
   configure: ConfigureFunction<T>;
-  /** table */
   Wrapper: WrapperType<Maybe<T>[]>;
-  /** tr */
   ItemWrapper: ItemWrapperType<T>;
-
-  /** td */
-  FieldWrapper: <T2 extends T, K2 extends IdType<T2>>(
-    props: FieldWrapperProps<T2, K2>
-  ) => React.ReactElement | null;
+  FieldWrapper: FieldWrapperType<T>;
 }
 
 type WrapFieldProps<T extends object> = Omit<

@@ -9,15 +9,16 @@ import {
   useConfiguredFieldIds,
   useFieldConfiguration,
 } from '../configuration';
-import {FieldWrapperProps, Wrapper as WrapperType} from '../support';
+import {
+  FieldWrapper as FieldWrapperType,
+  Wrapper as WrapperType,
+} from '../support';
 
 export interface ObjectTemplateProps<T extends object> {
   data: Maybe<T>;
   configure: ConfigureFunction<T>;
   Wrapper: WrapperType<Maybe<T>>;
-  FieldWrapper: <T2 extends T, K2 extends IdType<T2>>(
-    props: FieldWrapperProps<T2, K2>
-  ) => React.ReactElement | null;
+  FieldWrapper: FieldWrapperType<T>;
 }
 
 type WrapObjectItemProps<T extends object> = Omit<

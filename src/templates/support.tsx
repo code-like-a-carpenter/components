@@ -29,3 +29,9 @@ export interface FieldWrapperProps<T extends object, K extends IdType<T>>
   value: T[K];
   data: T;
 }
+
+export interface FieldWrapper<T extends object> {
+  <T2 extends T, K2 extends IdType<T2>>(
+    props: FieldWrapperProps<T2, K2>
+  ): React.ReactElement | null;
+}
