@@ -12,6 +12,10 @@ export interface ConfigureFunctionProps<T extends object> {
   ) => React.ReactElement | null;
 }
 
+export interface ConfigureFunction<T extends object> {
+  (props: ConfigureFunctionProps<T>): React.ReactElement | null;
+}
+
 export interface ConfigurerProps<T extends object, K extends IdType<T>> {
   field: K;
   label?: React.ReactNode | Renderer<K>;

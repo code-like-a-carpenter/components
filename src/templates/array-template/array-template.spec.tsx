@@ -2,8 +2,9 @@ import {render} from '@testing-library/react';
 import React from 'react';
 
 import {ComplexPerson, SimplePerson} from '../../mocks';
+import {InstallationPageQuery} from '../../sample-types';
 
-import {ItemWrapper, Wrapper} from './support';
+import {FieldWrapper, ItemWrapper, LabelWrapper, Wrapper} from './support';
 
 import {ArrayTemplate} from '.';
 
@@ -27,6 +28,8 @@ describe('ArrayTemplate', () => {
         )}
         ItemWrapper={ItemWrapper}
         Wrapper={Wrapper}
+        FieldWrapper={FieldWrapper}
+        LabelWrapper={LabelWrapper}
       />
     );
   });
@@ -57,27 +60,38 @@ describe('ArrayTemplate', () => {
         )}
         ItemWrapper={ItemWrapper}
         Wrapper={Wrapper}
+        FieldWrapper={FieldWrapper}
+        LabelWrapper={LabelWrapper}
       />
     );
   });
 
   it('infers types for real-world examples', () => {
     // @ts-expect-error
-    const data = ((): RepositoryConnectionEdges => undefined)();
+    const data = ((): InstallationPageQuery => undefined)();
 
     render(
       <ArrayTemplate
         data={data?.installation?.repositoryConnection?.edges}
         configure={({FieldConfigurer}) => (
           <>
-            <FieldConfigurer field="fullName" />
-            <FieldConfigurer field="publicId" />
-            {/* @ts-expect-error */}
-            <FieldConfigurer field="invalid" />
+            <FieldConfigurer
+              field="node"
+              configure={({FieldConfigurer: NodeFieldConfigurer}) => (
+                <>
+                  <NodeFieldConfigurer field="fullName" />
+                  <NodeFieldConfigurer field="publicId" />
+                  {/* @ts-expect-error */}
+                  <NodeFieldConfigurer field="invalid" />
+                </>
+              )}
+            />
           </>
         )}
         ItemWrapper={ItemWrapper}
         Wrapper={Wrapper}
+        FieldWrapper={FieldWrapper}
+        LabelWrapper={LabelWrapper}
       />
     );
   });

@@ -26,7 +26,7 @@ describe('ObjectTemplate', () => {
             <FieldConfigurer field="invalid" />
           </>
         )}
-        ItemWrapper={ItemWrapper}
+        FieldWrapper={ItemWrapper}
         Wrapper={Wrapper}
       />
     );
@@ -56,7 +56,7 @@ describe('ObjectTemplate', () => {
             <FieldConfigurer field="invalid" />
           </>
         )}
-        ItemWrapper={ItemWrapper}
+        FieldWrapper={ItemWrapper}
         Wrapper={Wrapper}
       />
     );
@@ -77,7 +77,7 @@ describe('ObjectTemplate', () => {
             <FieldConfigurer field="invalid" />
           </>
         )}
-        ItemWrapper={ItemWrapper}
+        FieldWrapper={ItemWrapper}
         Wrapper={Wrapper}
       />
     );

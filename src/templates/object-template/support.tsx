@@ -1,14 +1,13 @@
 import React from 'react';
 
 import {Description, DescriptionList, IdType, Maybe} from '../..';
-
-import {ObjectTemplateItemWrapperProps} from './object-template';
+import {FieldWrapperProps} from '../support';
 
 export const ItemWrapper = <T extends object, K extends IdType<T>>({
   label,
   value,
   renderer: Renderer,
-}: ObjectTemplateItemWrapperProps<T, K>) => (
+}: FieldWrapperProps<T, K>) => (
   <Description term={label}>
     <Renderer value={value} />
   </Description>

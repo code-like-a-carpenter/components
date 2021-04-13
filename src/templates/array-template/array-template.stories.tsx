@@ -3,7 +3,7 @@ import React from 'react';
 import {makeComplexPeople, makeSimplePeople} from '../../mocks';
 
 import {ArrayTemplate} from './array-template';
-import {ItemWrapper, Wrapper} from './support';
+import {FieldWrapper, ItemWrapper, LabelWrapper, Wrapper} from './support';
 
 export default {
   component: ArrayTemplate,
@@ -23,6 +23,8 @@ export const arrayTemplate = () => (
     )}
     ItemWrapper={ItemWrapper}
     Wrapper={Wrapper}
+    FieldWrapper={FieldWrapper}
+    LabelWrapper={LabelWrapper}
   />
 );
 
@@ -39,6 +41,8 @@ export const outOfOrder = () => (
     )}
     ItemWrapper={ItemWrapper}
     Wrapper={Wrapper}
+    FieldWrapper={FieldWrapper}
+    LabelWrapper={LabelWrapper}
   />
 );
 
@@ -62,6 +66,8 @@ export const duplicateFields = () => (
     )}
     ItemWrapper={ItemWrapper}
     Wrapper={Wrapper}
+    FieldWrapper={FieldWrapper}
+    LabelWrapper={LabelWrapper}
   />
 );
 
@@ -85,5 +91,7 @@ export const nestedData = () => (
     )}
     ItemWrapper={ItemWrapper}
     Wrapper={Wrapper}
+    FieldWrapper={FieldWrapper}
+    LabelWrapper={LabelWrapper}
   />
 );

@@ -21,7 +21,7 @@ export const objectTemplate = () => (
         <FieldConfigurer field="signUpDate" />
       </>
     )}
-    ItemWrapper={ItemWrapper}
+    FieldWrapper={ItemWrapper}
     Wrapper={Wrapper}
   />
 );
@@ -37,7 +37,7 @@ export const outOfOrder = () => (
         <FieldConfigurer field="age" />
       </>
     )}
-    ItemWrapper={ItemWrapper}
+    FieldWrapper={ItemWrapper}
     Wrapper={Wrapper}
   />
 );
@@ -60,7 +60,7 @@ export const duplicateFields = () => (
         />
       </>
     )}
-    ItemWrapper={ItemWrapper}
+    FieldWrapper={ItemWrapper}
     Wrapper={Wrapper}
   />
 );
@@ -83,7 +83,7 @@ export const nestedData = () => (
         <FieldConfigurer field="age" />
       </>
     )}
-    ItemWrapper={ItemWrapper}
+    FieldWrapper={ItemWrapper}
     Wrapper={Wrapper}
   />
 );
