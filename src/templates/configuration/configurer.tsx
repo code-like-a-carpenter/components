@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {Renderer} from '../../support';
-import {IdType} from '../../types';
+import {Definitely, IdType, Maybe} from '../..';
 
 import {FieldConfigurationProvider} from './configuration';
 import {useConfigureField} from './hooks';
@@ -20,8 +20,8 @@ export interface ConfigurerProps<T extends object, K extends IdType<T>> {
   field: K;
   label?: React.ReactNode | Renderer<K>;
   renderer?: Renderer<T[K]>;
-  configure?: T[K] extends object
-    ? React.ComponentType<ConfigureFunctionProps<T[K]>>
+  configure?: T[K] extends Maybe<object>
+    ? React.ComponentType<ConfigureFunctionProps<Definitely<T[K]>>>
     : never;
 }
 

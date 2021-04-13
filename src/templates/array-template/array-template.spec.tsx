@@ -2,7 +2,7 @@ import {render} from '@testing-library/react';
 import React from 'react';
 
 import {ComplexPerson, SimplePerson} from '../../mocks';
-import {InstallationPageQuery} from '../../sample-types';
+import {InstallationPageQuery, Maybe} from '../../sample-types';
 
 import {FieldWrapper, ItemWrapper, LabelWrapper, Wrapper} from './support';
 
@@ -10,8 +10,7 @@ import {ArrayTemplate} from '.';
 
 describe('ArrayTemplate', () => {
   it('infers types for contrived objects', () => {
-    // @ts-expect-error
-    const data = ((): SimplePerson[] => undefined)();
+    const data = ((): SimplePerson[] => [])();
 
     render(
       <ArrayTemplate
@@ -35,8 +34,72 @@ describe('ArrayTemplate', () => {
   });
 
   it('descends and still infers types', () => {
-    // @ts-expect-error
-    const data = ((): ComplexPerson[] => undefined)();
+    const data = ((): ComplexPerson[] => [])();
+
+    render(
+      <ArrayTemplate
+        data={data}
+        configure={({FieldConfigurer}) => (
+          <>
+            <FieldConfigurer
+              field="name"
+              configure={({FieldConfigurer: NameFieldConfigurer}) => (
+                <>
+                  <NameFieldConfigurer field="first" />
+                  <NameFieldConfigurer field="last" />
+                </>
+              )}
+            />
+            <FieldConfigurer field="signUpDate" />
+            <FieldConfigurer field="age" />
+            {/* @ts-expect-error */}
+            <FieldConfigurer field="invalid" />
+          </>
+        )}
+        ItemWrapper={ItemWrapper}
+        Wrapper={Wrapper}
+        FieldWrapper={FieldWrapper}
+        LabelWrapper={LabelWrapper}
+      />
+    );
+  });
+
+  it('descends and still infers types when fields are optional', () => {
+    const data = ((): Partial<ComplexPerson>[] => [])();
+
+    render(
+      <ArrayTemplate
+        data={data}
+        configure={({FieldConfigurer}) => (
+          <>
+            <FieldConfigurer
+              field="name"
+              configure={({FieldConfigurer: NameFieldConfigurer}) => (
+                <>
+                  <NameFieldConfigurer field="first" />
+                  <NameFieldConfigurer field="last" />
+                </>
+              )}
+            />
+            <FieldConfigurer field="signUpDate" />
+            <FieldConfigurer field="age" />
+            {/* @ts-expect-error */}
+            <FieldConfigurer field="invalid" />
+          </>
+        )}
+        ItemWrapper={ItemWrapper}
+        Wrapper={Wrapper}
+        FieldWrapper={FieldWrapper}
+        LabelWrapper={LabelWrapper}
+      />
+    );
+  });
+
+  it('descends and still infers types when fields are maybed', () => {
+    type RecursiveMaybe<T> = {
+      [P in keyof T]: Maybe<T[P]>;
+    };
+    const data = ((): RecursiveMaybe<ComplexPerson>[] => [])();
 
     render(
       <ArrayTemplate
@@ -67,8 +130,7 @@ describe('ArrayTemplate', () => {
   });
 
   it('infers types for real-world examples', () => {
-    // @ts-expect-error
-    const data = ((): InstallationPageQuery => undefined)();
+    const data = ((): InstallationPageQuery => ({}))();
 
     render(
       <ArrayTemplate
