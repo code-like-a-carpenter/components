@@ -21,7 +21,7 @@ export interface ObjectTemplateProps<T extends object> {
 }
 
 type WrapObjectItemProps<T extends object> = Omit<
-  WrapObjectProps<T>,
+  WrapDataProps<T>,
   'Wrapper'
 > & {
   data: T;
@@ -36,6 +36,7 @@ const WrapObjectItem = <T extends object>({
   return (
     <FieldWrapper
       data={data}
+      fieldId={fieldId}
       field={config.keyPath as IdType<T>}
       value={_.get(data, config.keyPath)}
       {...config}
@@ -43,15 +44,15 @@ const WrapObjectItem = <T extends object>({
   );
 };
 
-type WrapObjectProps<T extends object> = Omit<
+type WrapDataProps<T extends object> = Omit<
   ObjectTemplateProps<T>,
   'configure'
 >;
-const WrapObject = <T extends object>({
+const WrapData = <T extends object>({
   data,
   Wrapper,
-  FieldWrapper: ItemWrapper,
-}: WrapObjectProps<T>) => {
+  FieldWrapper,
+}: WrapDataProps<T>) => {
   const fieldIds = useConfiguredFieldIds<T>();
   if (!data) {
     return null;
@@ -64,7 +65,7 @@ const WrapObject = <T extends object>({
           key={fieldId}
           data={data}
           fieldId={fieldId}
-          FieldWrapper={ItemWrapper}
+          FieldWrapper={FieldWrapper}
         />
       ))}
     </Wrapper>
@@ -74,13 +75,11 @@ const WrapObject = <T extends object>({
 export const ObjectTemplate = <T extends object>({
   configure: Configure,
   ...rest
-}: ObjectTemplateProps<T>) => {
-  return (
-    <>
-      <FieldConfigurationProvider>
-        <Configure FieldConfigurer={Configurer} />
-        <WrapObject {...rest} />
-      </FieldConfigurationProvider>
-    </>
-  );
-};
+}: ObjectTemplateProps<T>) => (
+  <>
+    <FieldConfigurationProvider>
+      <Configure FieldConfigurer={Configurer} />
+      <WrapData {...rest} />
+    </FieldConfigurationProvider>
+  </>
+);

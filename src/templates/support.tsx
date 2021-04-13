@@ -24,13 +24,8 @@ export type ItemWrapper<T extends object> = React.ComponentType<
 
 export interface FieldWrapperProps<T extends object, K extends IdType<T>>
   extends FieldConfiguration {
+  fieldId: string;
   field: K;
   value: T[K];
-  data: T;
-}
-
-export interface LabelWrapperProps<T extends object, K extends IdType<T>>
-  extends FieldConfiguration {
-  field: K;
   data: T;
 }

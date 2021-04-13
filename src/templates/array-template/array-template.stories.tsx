@@ -3,7 +3,7 @@ import React from 'react';
 import {makeComplexPeople, makeSimplePeople} from '../../mocks';
 
 import {ArrayTemplate} from './array-template';
-import {FieldWrapper, ItemWrapper, LabelWrapper, Wrapper} from './support';
+import {FieldWrapper, ItemWrapper, Wrapper} from './support';
 
 export default {
   component: ArrayTemplate,
@@ -12,6 +12,7 @@ export default {
 
 export const arrayTemplate = () => (
   <ArrayTemplate
+    idField="id"
     data={makeSimplePeople()}
     configure={({FieldConfigurer}) => (
       <>
@@ -24,12 +25,12 @@ export const arrayTemplate = () => (
     ItemWrapper={ItemWrapper}
     Wrapper={Wrapper}
     FieldWrapper={FieldWrapper}
-    LabelWrapper={LabelWrapper}
   />
 );
 
 export const outOfOrder = () => (
   <ArrayTemplate
+    idField="id"
     data={makeSimplePeople()}
     configure={({FieldConfigurer}) => (
       <>
@@ -42,12 +43,12 @@ export const outOfOrder = () => (
     ItemWrapper={ItemWrapper}
     Wrapper={Wrapper}
     FieldWrapper={FieldWrapper}
-    LabelWrapper={LabelWrapper}
   />
 );
 
 export const duplicateFields = () => (
   <ArrayTemplate
+    idField="id"
     data={makeSimplePeople()}
     configure={({FieldConfigurer}) => (
       <>
@@ -67,12 +68,12 @@ export const duplicateFields = () => (
     ItemWrapper={ItemWrapper}
     Wrapper={Wrapper}
     FieldWrapper={FieldWrapper}
-    LabelWrapper={LabelWrapper}
   />
 );
 
 export const nestedData = () => (
   <ArrayTemplate
+    idField="id"
     data={makeComplexPeople()}
     configure={({FieldConfigurer}) => (
       <>
@@ -92,6 +93,5 @@ export const nestedData = () => (
     ItemWrapper={ItemWrapper}
     Wrapper={Wrapper}
     FieldWrapper={FieldWrapper}
-    LabelWrapper={LabelWrapper}
   />
 );

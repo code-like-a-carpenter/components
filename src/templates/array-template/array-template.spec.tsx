@@ -4,7 +4,7 @@ import React from 'react';
 import {ComplexPerson, SimplePerson} from '../../mocks';
 import {InstallationPageQuery, Maybe} from '../../sample-types';
 
-import {FieldWrapper, ItemWrapper, LabelWrapper, Wrapper} from './support';
+import {FieldWrapper, ItemWrapper, Wrapper} from './support';
 
 import {ArrayTemplate} from '.';
 
@@ -14,6 +14,7 @@ describe('ArrayTemplate', () => {
 
     render(
       <ArrayTemplate
+        idField="id"
         data={data}
         configure={({FieldConfigurer}) => (
           <>
@@ -28,7 +29,6 @@ describe('ArrayTemplate', () => {
         ItemWrapper={ItemWrapper}
         Wrapper={Wrapper}
         FieldWrapper={FieldWrapper}
-        LabelWrapper={LabelWrapper}
       />
     );
   });
@@ -38,6 +38,7 @@ describe('ArrayTemplate', () => {
 
     render(
       <ArrayTemplate
+        idField="id"
         data={data}
         configure={({FieldConfigurer}) => (
           <>
@@ -59,7 +60,6 @@ describe('ArrayTemplate', () => {
         ItemWrapper={ItemWrapper}
         Wrapper={Wrapper}
         FieldWrapper={FieldWrapper}
-        LabelWrapper={LabelWrapper}
       />
     );
   });
@@ -69,6 +69,7 @@ describe('ArrayTemplate', () => {
 
     render(
       <ArrayTemplate
+        idField="id"
         data={data}
         configure={({FieldConfigurer}) => (
           <>
@@ -90,7 +91,6 @@ describe('ArrayTemplate', () => {
         ItemWrapper={ItemWrapper}
         Wrapper={Wrapper}
         FieldWrapper={FieldWrapper}
-        LabelWrapper={LabelWrapper}
       />
     );
   });
@@ -103,6 +103,7 @@ describe('ArrayTemplate', () => {
 
     render(
       <ArrayTemplate
+        idField="id"
         data={data}
         configure={({FieldConfigurer}) => (
           <>
@@ -124,7 +125,6 @@ describe('ArrayTemplate', () => {
         ItemWrapper={ItemWrapper}
         Wrapper={Wrapper}
         FieldWrapper={FieldWrapper}
-        LabelWrapper={LabelWrapper}
       />
     );
   });
@@ -134,6 +134,7 @@ describe('ArrayTemplate', () => {
 
     render(
       <ArrayTemplate
+        idField="cursor"
         data={data?.installation?.repositoryConnection?.edges}
         configure={({FieldConfigurer}) => (
           <>
@@ -153,7 +154,6 @@ describe('ArrayTemplate', () => {
         ItemWrapper={ItemWrapper}
         Wrapper={Wrapper}
         FieldWrapper={FieldWrapper}
-        LabelWrapper={LabelWrapper}
       />
     );
   });
