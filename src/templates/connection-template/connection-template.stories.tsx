@@ -12,7 +12,7 @@ export default {
 
 export const connectionTemplate = () => (
   <ConnectionTemplate
-    connection={toConnection(makeSimplePeople())}
+    connection={toConnection(makeSimplePeople(5))}
     configure={({FieldConfigurer}) => (
       <>
         <FieldConfigurer field="firstName" />
@@ -29,7 +29,7 @@ export const connectionTemplate = () => (
 
 export const outOfOrder = () => (
   <ConnectionTemplate
-    connection={toConnection(makeSimplePeople())}
+    connection={toConnection(makeSimplePeople(5))}
     configure={({FieldConfigurer}) => (
       <>
         <FieldConfigurer field="lastName" />
@@ -46,7 +46,7 @@ export const outOfOrder = () => (
 
 export const duplicateFields = () => (
   <ConnectionTemplate
-    connection={toConnection(makeSimplePeople())}
+    connection={toConnection(makeSimplePeople(5))}
     configure={({FieldConfigurer}) => (
       <>
         <FieldConfigurer field="firstName" />
@@ -70,7 +70,7 @@ export const duplicateFields = () => (
 
 export const nestedData = () => (
   <ConnectionTemplate
-    connection={toConnection(makeComplexPeople())}
+    connection={toConnection(makeComplexPeople(5))}
     configure={({FieldConfigurer}) => (
       <>
         <FieldConfigurer

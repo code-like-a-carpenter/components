@@ -13,7 +13,7 @@ export default {
 export const arrayTemplate = () => (
   <ArrayTemplate
     idField="id"
-    data={makeSimplePeople()}
+    data={makeSimplePeople(5)}
     configure={({FieldConfigurer}) => (
       <>
         <FieldConfigurer field="firstName" />
@@ -31,7 +31,7 @@ export const arrayTemplate = () => (
 export const outOfOrder = () => (
   <ArrayTemplate
     idField="id"
-    data={makeSimplePeople()}
+    data={makeSimplePeople(5)}
     configure={({FieldConfigurer}) => (
       <>
         <FieldConfigurer field="lastName" />
@@ -49,7 +49,7 @@ export const outOfOrder = () => (
 export const duplicateFields = () => (
   <ArrayTemplate
     idField="id"
-    data={makeSimplePeople()}
+    data={makeSimplePeople(5)}
     configure={({FieldConfigurer}) => (
       <>
         <FieldConfigurer field="firstName" />
@@ -74,7 +74,7 @@ export const duplicateFields = () => (
 export const nestedData = () => (
   <ArrayTemplate
     idField="id"
-    data={makeComplexPeople()}
+    data={makeComplexPeople(5)}
     configure={({FieldConfigurer}) => (
       <>
         <FieldConfigurer
