@@ -3,10 +3,10 @@ import React from 'react';
 
 import {ComplexPerson, SimplePerson} from '../../mocks';
 import {InstallationPageQuery, Maybe} from '../../sample-types';
+import {ConnectionLike} from '../..';
 
 import {FieldWrapper, ItemWrapper, Wrapper} from './support';
 import {ConnectionTemplate} from './connection-template';
-import {ConnectionLike} from './types';
 
 describe('ConnectionTemplate', () => {
   it('infers types for contrived objects', () => {

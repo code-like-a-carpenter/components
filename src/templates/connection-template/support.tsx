@@ -1,10 +1,8 @@
 import React from 'react';
 
-import {IdType, Maybe} from '../..';
+import {IdType, Maybe, NodeLike} from '../..';
 import {useFieldConfiguration} from '../configuration';
 import {FieldWrapperProps, ItemWrapperProps, WrapperProps} from '../support';
-
-import {NodeLike} from './types';
 
 export const ItemWrapper = <T extends object>({
   children,
