@@ -8,7 +8,7 @@ export interface WrapperOwnProps<T> {
 
 export type WrapperProps<T> = React.PropsWithChildren<WrapperOwnProps<T>>;
 
-export type Wrapper<T> = React.ComponentType<WrapperProps<T>>;
+export type Wrapper<T> = React.ElementType<WrapperProps<T>>;
 
 export interface ItemWrapperOwnProps<T extends object> {
   data: T;
@@ -18,7 +18,7 @@ export type ItemWrapperProps<T extends object> = React.PropsWithChildren<
   ItemWrapperOwnProps<T>
 >;
 
-export type ItemWrapper<T extends object> = React.ComponentType<
+export type ItemWrapper<T extends object> = React.ElementType<
   ItemWrapperProps<T>
 >;
 

@@ -27,7 +27,7 @@ export interface ArrayTemplateProps<
 }
 
 type WrapFieldProps<T extends object> = Omit<
-  WrapDataProps<T>,
+  UnboundArrayTemplateProps<T>,
   'Wrapper' | 'ItemWrapper'
 > & {
   data: Maybe<T>[];
@@ -35,7 +35,7 @@ type WrapFieldProps<T extends object> = Omit<
   fieldId: string;
 };
 
-export const WrapField = <T extends object>({
+const WrapField = <T extends object>({
   datum,
   fieldId,
   FieldWrapper,
@@ -55,51 +55,60 @@ export const WrapField = <T extends object>({
   );
 };
 
-export type WrapDataProps<T extends object> = Omit<
+export type UnboundArrayTemplateProps<T extends object> = Omit<
   ArrayTemplateProps<T>,
   'configure'
 >;
 
-export const WrapData = <T extends object>({
+export const UnboundArrayTemplate = <T extends object>({
   data,
   idField,
   Wrapper,
   ItemWrapper,
   FieldWrapper,
-}: WrapDataProps<T>) => {
+}: UnboundArrayTemplateProps<T>) => {
   const fieldIds = useConfiguredFieldIds<T>();
   if (!data) {
     return null;
   }
   return (
     <Wrapper data={data}>
-      {data.map((datum) => (
-        <>
-          {datum && (
-            <ItemWrapper key={String(datum[idField])} data={datum}>
-              {fieldIds.map((fieldId) => (
-                <WrapField
-                  idField={idField}
-                  key={fieldId}
-                  data={data}
-                  datum={datum}
-                  fieldId={fieldId}
-                  FieldWrapper={FieldWrapper}
-                />
-              ))}
-            </ItemWrapper>
-          )}
-        </>
-      ))}
+      {data.map((datum) => {
+        if (!datum) {
+          return null;
+        }
+
+        const children = fieldIds.map((fieldId) => (
+          <WrapField
+            idField={idField}
+            key={fieldId}
+            data={data}
+            datum={datum}
+            fieldId={fieldId}
+            FieldWrapper={FieldWrapper}
+          />
+        ));
+        if (typeof ItemWrapper === 'string') {
+          const Tag = ItemWrapper as keyof JSX.IntrinsicElements;
+          return <Tag key={String(datum[idField])}>{children}</Tag>;
+        }
+
+        return (
+          <ItemWrapper key={String(datum[idField])} data={datum}>
+            {children}
+          </ItemWrapper>
+        );
+      })}
     </Wrapper>
   );
 };
+
 export const ArrayTemplate = <T extends object>({
   configure: Configure,
   ...rest
 }: ArrayTemplateProps<T>) => (
   <FieldConfigurationProvider>
     <Configure FieldConfigurer={Configurer} />
-    <WrapData {...rest} />
+    <UnboundArrayTemplate {...rest} />
   </FieldConfigurationProvider>
 );

@@ -22,7 +22,7 @@ export interface ObjectTemplateProps<T extends object> {
 }
 
 type WrapObjectItemProps<T extends object> = Omit<
-  WrapDataProps<T>,
+  UnboundObjectTemplateProps<T>,
   'Wrapper'
 > & {
   data: T;
@@ -45,32 +45,36 @@ const WrapObjectItem = <T extends object>({
   );
 };
 
-type WrapDataProps<T extends object> = Omit<
+export type UnboundObjectTemplateProps<T extends object> = Omit<
   ObjectTemplateProps<T>,
   'configure'
 >;
-const WrapData = <T extends object>({
+
+export const UnboundObjectTemplate = <T extends object>({
   data,
   Wrapper,
   FieldWrapper,
-}: WrapDataProps<T>) => {
+}: UnboundObjectTemplateProps<T>) => {
   const fieldIds = useConfiguredFieldIds<T>();
   if (!data) {
     return null;
   }
 
-  return (
-    <Wrapper data={data}>
-      {fieldIds.map((fieldId) => (
-        <WrapObjectItem
-          key={fieldId}
-          data={data}
-          fieldId={fieldId}
-          FieldWrapper={FieldWrapper}
-        />
-      ))}
-    </Wrapper>
-  );
+  const children = fieldIds.map((fieldId) => (
+    <WrapObjectItem
+      key={fieldId}
+      data={data}
+      fieldId={fieldId}
+      FieldWrapper={FieldWrapper}
+    />
+  ));
+
+  if (typeof Wrapper === 'string') {
+    const Tag = Wrapper as keyof JSX.IntrinsicElements;
+    return <Tag>{children}</Tag>;
+  }
+
+  return <Wrapper data={data}>{children}</Wrapper>;
 };
 
 export const ObjectTemplate = <T extends object>({
@@ -80,7 +84,7 @@ export const ObjectTemplate = <T extends object>({
   <>
     <FieldConfigurationProvider>
       <Configure FieldConfigurer={Configurer} />
-      <WrapData {...rest} />
+      <UnboundObjectTemplate {...rest} />
     </FieldConfigurationProvider>
   </>
 );

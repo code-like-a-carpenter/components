@@ -21,7 +21,7 @@ export interface ConfigurerProps<T extends object, K extends IdType<T>> {
   label?: React.ReactNode | Renderer<K>;
   renderer?: Renderer<T[K]>;
   configure?: T[K] extends Maybe<object>
-    ? React.ComponentType<ConfigureFunctionProps<Definitely<T[K]>>>
+    ? React.ElementType<ConfigureFunctionProps<Definitely<T[K]>>>
     : never;
 }
 
