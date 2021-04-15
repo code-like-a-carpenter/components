@@ -1,0 +1,626 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Templates/ArrayTemplate Array Template 1`] = `
+<ul>
+  <li>
+    <ul>
+      <li>
+        First Name
+        : 
+        Alec
+      </li>
+      <li>
+        Last Name
+        : 
+        Roberts
+      </li>
+      <li>
+        Age
+        : 
+        74
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime={"2020-12-10T21:21:53.680Z"}
+          title="2020-12-10T21:21:53+00:00"
+        >
+          December 10, 2020
+        </time>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        First Name
+        : 
+        Alfredo
+      </li>
+      <li>
+        Last Name
+        : 
+        Maggio
+      </li>
+      <li>
+        Age
+        : 
+        24
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime={"2020-05-30T23:35:21.987Z"}
+          title="2020-05-30T23:35:21+00:00"
+        >
+          May 30, 2020
+        </time>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        First Name
+        : 
+        Jeremy
+      </li>
+      <li>
+        Last Name
+        : 
+        Ratke
+      </li>
+      <li>
+        Age
+        : 
+        35
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime={"2020-12-01T16:27:18.693Z"}
+          title="2020-12-01T16:27:18+00:00"
+        >
+          December 1, 2020
+        </time>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        First Name
+        : 
+        Addison
+      </li>
+      <li>
+        Last Name
+        : 
+        Denesik
+      </li>
+      <li>
+        Age
+        : 
+        90
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime={"2020-08-26T16:12:49.760Z"}
+          title="2020-08-26T16:12:49+00:00"
+        >
+          August 26, 2020
+        </time>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        First Name
+        : 
+        Evans
+      </li>
+      <li>
+        Last Name
+        : 
+        Anderson
+      </li>
+      <li>
+        Age
+        : 
+        68
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime={"2019-11-07T23:13:44.334Z"}
+          title="2019-11-07T23:13:44+00:00"
+        >
+          November 7, 2019
+        </time>
+      </li>
+    </ul>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots Templates/ArrayTemplate Duplicate Fields 1`] = `
+<ul>
+  <li>
+    <ul>
+      <li>
+        First Name
+        : 
+        Kenny
+      </li>
+      <li>
+        Last Name
+        : 
+        Dietrich
+      </li>
+      <li>
+        Age
+        : 
+        100
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime={"2019-05-20T19:36:07.398Z"}
+          title="2019-05-20T19:36:07+00:00"
+        >
+          May 20, 2019
+        </time>
+      </li>
+      <li>
+        Seconds since signup
+        : 
+        51078232602
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        First Name
+        : 
+        Mollie
+      </li>
+      <li>
+        Last Name
+        : 
+        Keebler
+      </li>
+      <li>
+        Age
+        : 
+        75
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime={"2019-08-25T06:08:48.091Z"}
+          title="2019-08-25T06:08:48+00:00"
+        >
+          August 25, 2019
+        </time>
+      </li>
+      <li>
+        Seconds since signup
+        : 
+        42745871909
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        First Name
+        : 
+        Maegan
+      </li>
+      <li>
+        Last Name
+        : 
+        Streich
+      </li>
+      <li>
+        Age
+        : 
+        82
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime={"2019-06-21T20:26:05.204Z"}
+          title="2019-06-21T20:26:05+00:00"
+        >
+          June 21, 2019
+        </time>
+      </li>
+      <li>
+        Seconds since signup
+        : 
+        48310434796
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        First Name
+        : 
+        Jamel
+      </li>
+      <li>
+        Last Name
+        : 
+        Bartell
+      </li>
+      <li>
+        Age
+        : 
+        28
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime={"2020-09-22T18:10:02.271Z"}
+          title="2020-09-22T18:10:02+00:00"
+        >
+          September 22, 2020
+        </time>
+      </li>
+      <li>
+        Seconds since signup
+        : 
+        8660997729
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        First Name
+        : 
+        Myrna
+      </li>
+      <li>
+        Last Name
+        : 
+        Runolfsdottir
+      </li>
+      <li>
+        Age
+        : 
+        41
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime={"2019-06-02T17:36:07.042Z"}
+          title="2019-06-02T17:36:07+00:00"
+        >
+          June 2, 2019
+        </time>
+      </li>
+      <li>
+        Seconds since signup
+        : 
+        49962232958
+      </li>
+    </ul>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots Templates/ArrayTemplate Nested Data 1`] = `
+<ul>
+  <li>
+    <ul>
+      <li>
+        Name First
+        : 
+        Carlo
+      </li>
+      <li>
+        Name Last
+        : 
+        Davis
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime={"2020-06-09T08:15:09.461Z"}
+          title="2020-06-09T08:15:09+00:00"
+        >
+          June 9, 2020
+        </time>
+      </li>
+      <li>
+        Age
+        : 
+        73
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        Name First
+        : 
+        Mona
+      </li>
+      <li>
+        Name Last
+        : 
+        Sanford
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime={"2020-10-13T09:58:58.439Z"}
+          title="2020-10-13T09:58:58+00:00"
+        >
+          October 13, 2020
+        </time>
+      </li>
+      <li>
+        Age
+        : 
+        75
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        Name First
+        : 
+        Xavier
+      </li>
+      <li>
+        Name Last
+        : 
+        Gusikowski
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime={"2020-02-21T12:02:44.555Z"}
+          title="2020-02-21T12:02:44+00:00"
+        >
+          February 21, 2020
+        </time>
+      </li>
+      <li>
+        Age
+        : 
+        77
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        Name First
+        : 
+        Ansley
+      </li>
+      <li>
+        Name Last
+        : 
+        Breitenberg
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime={"2021-01-22T18:42:37.292Z"}
+          title="2021-01-22T18:42:37+00:00"
+        >
+          January 22, 2021
+        </time>
+      </li>
+      <li>
+        Age
+        : 
+        30
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        Name First
+        : 
+        Margarita
+      </li>
+      <li>
+        Name Last
+        : 
+        Lynch
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime={"2019-11-04T08:40:21.323Z"}
+          title="2019-11-04T08:40:21+00:00"
+        >
+          November 4, 2019
+        </time>
+      </li>
+      <li>
+        Age
+        : 
+        76
+      </li>
+    </ul>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots Templates/ArrayTemplate Out Of Order 1`] = `
+<ul>
+  <li>
+    <ul>
+      <li>
+        Last Name
+        : 
+        Shields
+      </li>
+      <li>
+        First Name
+        : 
+        Michael
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime={"2020-03-29T03:00:39.328Z"}
+          title="2020-03-29T03:00:39+00:00"
+        >
+          March 29, 2020
+        </time>
+      </li>
+      <li>
+        Age
+        : 
+        65
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        Last Name
+        : 
+        Donnelly
+      </li>
+      <li>
+        First Name
+        : 
+        Millie
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime={"2021-01-28T23:12:26.534Z"}
+          title="2021-01-28T23:12:26+00:00"
+        >
+          January 28, 2021
+        </time>
+      </li>
+      <li>
+        Age
+        : 
+        4
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        Last Name
+        : 
+        Barrows
+      </li>
+      <li>
+        First Name
+        : 
+        Tyler
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime={"2020-07-19T02:36:39.936Z"}
+          title="2020-07-19T02:36:39+00:00"
+        >
+          July 19, 2020
+        </time>
+      </li>
+      <li>
+        Age
+        : 
+        86
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        Last Name
+        : 
+        Hirthe
+      </li>
+      <li>
+        First Name
+        : 
+        Oceane
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime={"2020-10-12T20:50:01.676Z"}
+          title="2020-10-12T20:50:01+00:00"
+        >
+          October 12, 2020
+        </time>
+      </li>
+      <li>
+        Age
+        : 
+        62
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        Last Name
+        : 
+        Yost
+      </li>
+      <li>
+        First Name
+        : 
+        Jana
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime={"2020-05-01T08:58:55.185Z"}
+          title="2020-05-01T08:58:55+00:00"
+        >
+          May 1, 2020
+        </time>
+      </li>
+      <li>
+        Age
+        : 
+        46
+      </li>
+    </ul>
+  </li>
+</ul>
+`;
