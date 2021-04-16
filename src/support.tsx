@@ -69,7 +69,7 @@ interface WrapWithClassOptions<As extends React.ElementType> {
 }
 
 // Can't use a WeakMap because ElementType could be string. Should be fine since
-// each key will persist for the life of the applciation.
+// each key will persist for the life of the application.
 const defaultClassNames = new Map<React.ElementType, string | undefined>();
 /**
  * Wraps a Component with class names, default props, and/or a custom
