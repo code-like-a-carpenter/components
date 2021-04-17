@@ -6,48 +6,6 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
   data={
     Array [
       Object {
-        "age": 74,
-        "firstName": "Demetris",
-        "id": "da143072-9e78-4c39-9026-1a9aad2ffa9f",
-        "lastName": "Balistreri",
-        "signUpDate": 2019-06-02T18:45:55.989Z,
-      },
-      Object {
-        "age": 83,
-        "firstName": "Delmer",
-        "id": "3aeba33b-54aa-4a97-a9bb-f91a7f49dce2",
-        "lastName": "Zulauf",
-        "signUpDate": 2019-01-21T01:55:23.892Z,
-      },
-      Object {
-        "age": 68,
-        "firstName": "Agustina",
-        "id": "87776a66-b95c-4174-a14b-123449e018b9",
-        "lastName": "Grady",
-        "signUpDate": 2019-02-25T13:12:38.147Z,
-      },
-      Object {
-        "age": 39,
-        "firstName": "Gianni",
-        "id": "5c27e297-1164-4362-9418-4967f93a6f6a",
-        "lastName": "Dare",
-        "signUpDate": 2020-09-23T09:02:17.187Z,
-      },
-      Object {
-        "age": 85,
-        "firstName": "Aniyah",
-        "id": "9f4bae03-84ab-4638-97db-19d3ea9f448b",
-        "lastName": "Turcotte",
-        "signUpDate": 2020-05-20T11:47:03.899Z,
-      },
-      Object {
-        "age": 24,
-        "firstName": "Nelle",
-        "id": "cb79f357-1a64-49fd-9793-47f6aded238a",
-        "lastName": "Johnston",
-        "signUpDate": 2020-07-25T00:30:37.085Z,
-      },
-      Object {
         "age": 2,
         "firstName": "Dax",
         "id": "2d8b85e3-0efb-4ba5-98ac-7c978a136729",
@@ -355,6 +313,48 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         "lastName": "O'Hara",
         "signUpDate": 2019-10-29T15:05:49.394Z,
       },
+      Object {
+        "age": 12,
+        "firstName": "Guiseppe",
+        "id": "9b064e7e-8699-41a5-ba38-18c069ed6103",
+        "lastName": "Corkery",
+        "signUpDate": 2019-02-01T04:22:08.251Z,
+      },
+      Object {
+        "age": 74,
+        "firstName": "Kristopher",
+        "id": "cbec55c6-a241-4d2e-a6f1-61eaa657d434",
+        "lastName": "Wuckert",
+        "signUpDate": 2020-01-18T00:58:18.961Z,
+      },
+      Object {
+        "age": 11,
+        "firstName": "Claudine",
+        "id": "6f5d9411-c308-440c-83cf-ad8462d5aaa1",
+        "lastName": "Ondricka",
+        "signUpDate": 2020-01-01T09:08:50.249Z,
+      },
+      Object {
+        "age": 75,
+        "firstName": "Mozell",
+        "id": "8e60dba8-aa4b-4840-8b29-6dbd957b1d01",
+        "lastName": "Padberg",
+        "signUpDate": 2019-05-27T21:03:51.712Z,
+      },
+      Object {
+        "age": 88,
+        "firstName": "Andreane",
+        "id": "773a9ad2-18bd-4b4e-acd1-ebb96b0e926b",
+        "lastName": "Wintheiser",
+        "signUpDate": 2019-07-13T11:17:00.886Z,
+      },
+      Object {
+        "age": 37,
+        "firstName": "Terrell",
+        "id": "2497eec6-f088-45c9-861d-cd45da012925",
+        "lastName": "Reichel",
+        "signUpDate": 2020-11-12T23:42:51.068Z,
+      },
     ]
   }
 >
@@ -401,204 +401,6 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
   <tbody
     className="clc-table__body"
   >
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Demetris
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Balistreri
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        74
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        <time
-          dateTime={"2019-06-02T18:45:55.989Z"}
-          title="2019-06-02T18:45:55+00:00"
-        >
-          June 2, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Delmer
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Zulauf
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        83
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        <time
-          dateTime={"2019-01-21T01:55:23.892Z"}
-          title="2019-01-21T01:55:23+00:00"
-        >
-          January 21, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Agustina
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Grady
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        68
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        <time
-          dateTime={"2019-02-25T13:12:38.147Z"}
-          title="2019-02-25T13:12:38+00:00"
-        >
-          February 25, 2019
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Gianni
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Dare
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        39
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        <time
-          dateTime={"2020-09-23T09:02:17.187Z"}
-          title="2020-09-23T09:02:17+00:00"
-        >
-          September 23, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Aniyah
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Turcotte
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        85
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        <time
-          dateTime={"2020-05-20T11:47:03.899Z"}
-          title="2020-05-20T11:47:03+00:00"
-        >
-          May 20, 2020
-        </time>
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Nelle
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Johnston
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        24
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        <time
-          dateTime={"2020-07-25T00:30:37.085Z"}
-          title="2020-07-25T00:30:37+00:00"
-        >
-          July 25, 2020
-        </time>
-      </td>
-    </tr>
     <tr
       className="clc-table__row"
     >
@@ -2051,6 +1853,204 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         </time>
       </td>
     </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Guiseppe
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Corkery
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        12
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        <time
+          dateTime={"2019-02-01T04:22:08.251Z"}
+          title="2019-02-01T04:22:08+00:00"
+        >
+          February 1, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Kristopher
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Wuckert
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        74
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        <time
+          dateTime={"2020-01-18T00:58:18.961Z"}
+          title="2020-01-18T00:58:18+00:00"
+        >
+          January 18, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Claudine
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Ondricka
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        11
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        <time
+          dateTime={"2020-01-01T09:08:50.249Z"}
+          title="2020-01-01T09:08:50+00:00"
+        >
+          January 1, 2020
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Mozell
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Padberg
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        75
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        <time
+          dateTime={"2019-05-27T21:03:51.712Z"}
+          title="2019-05-27T21:03:51+00:00"
+        >
+          May 27, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Andreane
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Wintheiser
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        88
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        <time
+          dateTime={"2019-07-13T11:17:00.886Z"}
+          title="2019-07-13T11:17:00+00:00"
+        >
+          July 13, 2019
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Terrell
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Reichel
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        37
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        <time
+          dateTime={"2020-11-12T23:42:51.068Z"}
+          title="2020-11-12T23:42:51+00:00"
+        >
+          November 12, 2020
+        </time>
+      </td>
+    </tr>
   </tbody>
 </table>
 `;
@@ -2060,48 +2060,6 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
   className="clc-table table"
   data={
     Array [
-      Object {
-        "age": 68,
-        "firstName": "Chance",
-        "id": "f916eba7-5221-4a08-97bc-ce20cecb6a81",
-        "lastName": "Lindgren",
-        "signUpDate": 2020-01-29T00:40:37.464Z,
-      },
-      Object {
-        "age": 72,
-        "firstName": "Kurtis",
-        "id": "ca4877b3-cd89-4151-bb64-7fdba63fd996",
-        "lastName": "Emard",
-        "signUpDate": 2020-10-29T14:13:05.350Z,
-      },
-      Object {
-        "age": 72,
-        "firstName": "Rahsaan",
-        "id": "ef9d7a3c-99b8-46c0-8385-578232481dea",
-        "lastName": "Kirlin",
-        "signUpDate": 2020-02-10T19:11:23.550Z,
-      },
-      Object {
-        "age": 59,
-        "firstName": "Christian",
-        "id": "02503a0d-f513-471b-84fe-01f96ac4b061",
-        "lastName": "West",
-        "signUpDate": 2019-01-23T02:51:25.769Z,
-      },
-      Object {
-        "age": 35,
-        "firstName": "Rocky",
-        "id": "f8a4ed02-b2d9-4624-be82-a6c182bd4488",
-        "lastName": "Johnson",
-        "signUpDate": 2020-04-21T13:11:30.653Z,
-      },
-      Object {
-        "age": 47,
-        "firstName": "Stone",
-        "id": "3d9a1625-83f5-4c1d-8470-40a9c6ab3b30",
-        "lastName": "Johnston",
-        "signUpDate": 2020-11-14T21:11:45.332Z,
-      },
       Object {
         "age": 64,
         "firstName": "Julia",
@@ -2410,6 +2368,48 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         "lastName": "Kub",
         "signUpDate": 2020-09-21T12:57:06.952Z,
       },
+      Object {
+        "age": 62,
+        "firstName": "Kurtis",
+        "id": "4179b3e6-a055-4b65-8d1b-45a82f911484",
+        "lastName": "Ondricka",
+        "signUpDate": 2020-11-05T09:29:21.725Z,
+      },
+      Object {
+        "age": 84,
+        "firstName": "Aurelio",
+        "id": "08d7e790-7b24-4be7-86f1-a67d486c4d95",
+        "lastName": "Stroman",
+        "signUpDate": 2021-02-09T04:51:15.327Z,
+      },
+      Object {
+        "age": 68,
+        "firstName": "Lysanne",
+        "id": "57783cc7-51e1-49c6-8bd2-82bc6ca0ad3f",
+        "lastName": "Willms",
+        "signUpDate": 2021-02-14T21:27:56.249Z,
+      },
+      Object {
+        "age": 59,
+        "firstName": "Bo",
+        "id": "d6353f48-1891-42f5-821a-f597afc851e1",
+        "lastName": "Funk",
+        "signUpDate": 2020-10-29T13:22:33.982Z,
+      },
+      Object {
+        "age": 91,
+        "firstName": "Ashlee",
+        "id": "0f23981a-fae4-4ffb-99ed-27b009490e4f",
+        "lastName": "Lakin",
+        "signUpDate": 2019-08-12T19:49:30.442Z,
+      },
+      Object {
+        "age": 9,
+        "firstName": "Geovany",
+        "id": "e8a6dedd-1b3c-4e90-97ec-5565ac753d9f",
+        "lastName": "Torphy",
+        "signUpDate": 2020-07-18T09:09:39.798Z,
+      },
     ]
   }
 >
@@ -2464,240 +2464,6 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
   <tbody
     className="clc-table__body"
   >
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Chance
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Lindgren
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        68
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        <time
-          dateTime={"2020-01-29T00:40:37.464Z"}
-          title="2020-01-29T00:40:37+00:00"
-        >
-          January 29, 2020
-        </time>
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        29200762536
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Kurtis
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Emard
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        72
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        <time
-          dateTime={"2020-10-29T14:13:05.350Z"}
-          title="2020-10-29T14:13:05+00:00"
-        >
-          October 29, 2020
-        </time>
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        5478414650
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Rahsaan
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Kirlin
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        72
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        <time
-          dateTime={"2020-02-10T19:11:23.550Z"}
-          title="2020-02-10T19:11:23+00:00"
-        >
-          February 10, 2020
-        </time>
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        28097316450
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Christian
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        West
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        59
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        <time
-          dateTime={"2019-01-23T02:51:25.769Z"}
-          title="2019-01-23T02:51:25+00:00"
-        >
-          January 23, 2019
-        </time>
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        61247314231
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Rocky
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Johnson
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        35
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        <time
-          dateTime={"2020-04-21T13:11:30.653Z"}
-          title="2020-04-21T13:11:30+00:00"
-        >
-          April 21, 2020
-        </time>
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        21984509347
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Stone
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Johnston
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        47
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        <time
-          dateTime={"2020-11-14T21:11:45.332Z"}
-          title="2020-11-14T21:11:45+00:00"
-        >
-          November 14, 2020
-        </time>
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        4070894668
-      </td>
-    </tr>
     <tr
       className="clc-table__row"
     >
@@ -4414,6 +4180,240 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         8766173048
       </td>
     </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Kurtis
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Ondricka
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        62
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        <time
+          dateTime={"2020-11-05T09:29:21.725Z"}
+          title="2020-11-05T09:29:21+00:00"
+        >
+          November 5, 2020
+        </time>
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        4890638275
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Aurelio
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Stroman
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        84
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        <time
+          dateTime={"2021-02-09T04:51:15.327Z"}
+          title="2021-02-09T04:51:15+00:00"
+        >
+          February 9, 2021
+        </time>
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        -3387075327
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Lysanne
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Willms
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        68
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        <time
+          dateTime={"2021-02-14T21:27:56.249Z"}
+          title="2021-02-14T21:27:56+00:00"
+        >
+          February 14, 2021
+        </time>
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        -3878876249
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Bo
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Funk
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        59
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        <time
+          dateTime={"2020-10-29T13:22:33.982Z"}
+          title="2020-10-29T13:22:33+00:00"
+        >
+          October 29, 2020
+        </time>
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        5481446018
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Ashlee
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Lakin
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        91
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        <time
+          dateTime={"2019-08-12T19:49:30.442Z"}
+          title="2019-08-12T19:49:30+00:00"
+        >
+          August 12, 2019
+        </time>
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        43819829558
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Geovany
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Torphy
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        9
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        <time
+          dateTime={"2020-07-18T09:09:39.798Z"}
+          title="2020-07-18T09:09:39+00:00"
+        >
+          July 18, 2020
+        </time>
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        14395820202
+      </td>
+    </tr>
   </tbody>
 </table>
 `;
@@ -4423,60 +4423,6 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
   className="clc-table table"
   data={
     Array [
-      Object {
-        "age": 62,
-        "id": "94179b3e-6a05-45b6-90d1-b45a82f91148",
-        "name": Object {
-          "first": "Domingo",
-          "last": "Ondricka",
-        },
-        "signUpDate": 2020-11-05T09:29:21.725Z,
-      },
-      Object {
-        "age": 84,
-        "id": "108d7e79-07b2-44be-b46f-1a67d486c4d9",
-        "name": Object {
-          "first": "Emelie",
-          "last": "Stroman",
-        },
-        "signUpDate": 2021-02-09T04:51:15.327Z,
-      },
-      Object {
-        "age": 68,
-        "id": "a57783cc-751e-419c-a0bd-282bc6ca0ad3",
-        "name": Object {
-          "first": "Treva",
-          "last": "Willms",
-        },
-        "signUpDate": 2021-02-14T21:27:56.249Z,
-      },
-      Object {
-        "age": 59,
-        "id": "1d6353f4-8189-412f-9021-af597afc851e",
-        "name": Object {
-          "first": "Angie",
-          "last": "Funk",
-        },
-        "signUpDate": 2020-10-29T13:22:33.982Z,
-      },
-      Object {
-        "age": 91,
-        "id": "10f23981-afae-44ff-b19e-d27b009490e4",
-        "name": Object {
-          "first": "Zachery",
-          "last": "Lakin",
-        },
-        "signUpDate": 2019-08-12T19:49:30.442Z,
-      },
-      Object {
-        "age": 9,
-        "id": "6e8a6ded-d1b3-4ce9-857e-c5565ac753d9",
-        "name": Object {
-          "first": "Willa",
-          "last": "Torphy",
-        },
-        "signUpDate": 2020-07-18T09:09:39.798Z,
-      },
       Object {
         "age": 15,
         "id": "c68309c3-0c7b-4c26-8165-690eb0f6c596",
@@ -4873,6 +4819,60 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         },
         "signUpDate": 2019-12-18T00:15:37.242Z,
       },
+      Object {
+        "age": 5,
+        "id": "8d280a0b-e10f-4ece-9e07-c4ee0649fa78",
+        "name": Object {
+          "first": "Alphonso",
+          "last": "Orn",
+        },
+        "signUpDate": 2019-12-29T10:11:06.819Z,
+      },
+      Object {
+        "age": 75,
+        "id": "73d6c255-0a85-4fc4-8920-472482267bf5",
+        "name": Object {
+          "first": "Rodrick",
+          "last": "Shields",
+        },
+        "signUpDate": 2019-02-02T18:27:50.887Z,
+      },
+      Object {
+        "age": 84,
+        "id": "1acf332c-17b3-40f8-9ee2-fe4d445f7dfd",
+        "name": Object {
+          "first": "Letitia",
+          "last": "Will",
+        },
+        "signUpDate": 2020-06-03T18:33:59.511Z,
+      },
+      Object {
+        "age": 80,
+        "id": "e937531c-fda1-4afc-acab-ff5c875a740d",
+        "name": Object {
+          "first": "Stella",
+          "last": "Trantow",
+        },
+        "signUpDate": 2020-07-05T18:08:50.131Z,
+      },
+      Object {
+        "age": 16,
+        "id": "1cfef950-939a-49a1-bfcd-2b3e74a0a294",
+        "name": Object {
+          "first": "Jayden",
+          "last": "Koepp",
+        },
+        "signUpDate": 2019-03-11T23:44:39.873Z,
+      },
+      Object {
+        "age": 30,
+        "id": "290e3ada-27b5-4768-b5b9-565d9f48d661",
+        "name": Object {
+          "first": "Clay",
+          "last": "Bahringer",
+        },
+        "signUpDate": 2019-07-01T08:35:17.695Z,
+      },
     ]
   }
 >
@@ -4919,204 +4919,6 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
   <tbody
     className="clc-table__body"
   >
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Domingo
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Ondricka
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        <time
-          dateTime={"2020-11-05T09:29:21.725Z"}
-          title="2020-11-05T09:29:21+00:00"
-        >
-          November 5, 2020
-        </time>
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        62
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Emelie
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Stroman
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        <time
-          dateTime={"2021-02-09T04:51:15.327Z"}
-          title="2021-02-09T04:51:15+00:00"
-        >
-          February 9, 2021
-        </time>
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        84
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Treva
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Willms
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        <time
-          dateTime={"2021-02-14T21:27:56.249Z"}
-          title="2021-02-14T21:27:56+00:00"
-        >
-          February 14, 2021
-        </time>
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        68
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Angie
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Funk
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        <time
-          dateTime={"2020-10-29T13:22:33.982Z"}
-          title="2020-10-29T13:22:33+00:00"
-        >
-          October 29, 2020
-        </time>
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        59
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Zachery
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Lakin
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        <time
-          dateTime={"2019-08-12T19:49:30.442Z"}
-          title="2019-08-12T19:49:30+00:00"
-        >
-          August 12, 2019
-        </time>
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        91
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Willa
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Torphy
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        <time
-          dateTime={"2020-07-18T09:09:39.798Z"}
-          title="2020-07-18T09:09:39+00:00"
-        >
-          July 18, 2020
-        </time>
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        9
-      </td>
-    </tr>
     <tr
       className="clc-table__row"
     >
@@ -6569,6 +6371,204 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         26
       </td>
     </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Alphonso
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Orn
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        <time
+          dateTime={"2019-12-29T10:11:06.819Z"}
+          title="2019-12-29T10:11:06+00:00"
+        >
+          December 29, 2019
+        </time>
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        5
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Rodrick
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Shields
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        <time
+          dateTime={"2019-02-02T18:27:50.887Z"}
+          title="2019-02-02T18:27:50+00:00"
+        >
+          February 2, 2019
+        </time>
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        75
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Letitia
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Will
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        <time
+          dateTime={"2020-06-03T18:33:59.511Z"}
+          title="2020-06-03T18:33:59+00:00"
+        >
+          June 3, 2020
+        </time>
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        84
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Stella
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Trantow
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        <time
+          dateTime={"2020-07-05T18:08:50.131Z"}
+          title="2020-07-05T18:08:50+00:00"
+        >
+          July 5, 2020
+        </time>
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        80
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Jayden
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Koepp
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        <time
+          dateTime={"2019-03-11T23:44:39.873Z"}
+          title="2019-03-11T23:44:39+00:00"
+        >
+          March 11, 2019
+        </time>
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        16
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Clay
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Bahringer
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        <time
+          dateTime={"2019-07-01T08:35:17.695Z"}
+          title="2019-07-01T08:35:17+00:00"
+        >
+          July 1, 2019
+        </time>
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        30
+      </td>
+    </tr>
   </tbody>
 </table>
 `;
@@ -6578,48 +6578,6 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
   className="clc-table table"
   data={
     Array [
-      Object {
-        "age": 12,
-        "firstName": "Guiseppe",
-        "id": "9b064e7e-8699-41a5-ba38-18c069ed6103",
-        "lastName": "Corkery",
-        "signUpDate": 2019-02-01T04:22:08.251Z,
-      },
-      Object {
-        "age": 74,
-        "firstName": "Kristopher",
-        "id": "cbec55c6-a241-4d2e-a6f1-61eaa657d434",
-        "lastName": "Wuckert",
-        "signUpDate": 2020-01-18T00:58:18.961Z,
-      },
-      Object {
-        "age": 11,
-        "firstName": "Claudine",
-        "id": "6f5d9411-c308-440c-83cf-ad8462d5aaa1",
-        "lastName": "Ondricka",
-        "signUpDate": 2020-01-01T09:08:50.249Z,
-      },
-      Object {
-        "age": 75,
-        "firstName": "Mozell",
-        "id": "8e60dba8-aa4b-4840-8b29-6dbd957b1d01",
-        "lastName": "Padberg",
-        "signUpDate": 2019-05-27T21:03:51.712Z,
-      },
-      Object {
-        "age": 88,
-        "firstName": "Andreane",
-        "id": "773a9ad2-18bd-4b4e-acd1-ebb96b0e926b",
-        "lastName": "Wintheiser",
-        "signUpDate": 2019-07-13T11:17:00.886Z,
-      },
-      Object {
-        "age": 37,
-        "firstName": "Terrell",
-        "id": "2497eec6-f088-45c9-861d-cd45da012925",
-        "lastName": "Reichel",
-        "signUpDate": 2020-11-12T23:42:51.068Z,
-      },
       Object {
         "age": 70,
         "firstName": "Matilde",
@@ -6928,6 +6886,48 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         "lastName": "Bashirian",
         "signUpDate": 2019-11-25T08:52:44.886Z,
       },
+      Object {
+        "age": 68,
+        "firstName": "Chance",
+        "id": "f916eba7-5221-4a08-97bc-ce20cecb6a81",
+        "lastName": "Lindgren",
+        "signUpDate": 2020-01-29T00:40:37.464Z,
+      },
+      Object {
+        "age": 72,
+        "firstName": "Kurtis",
+        "id": "ca4877b3-cd89-4151-bb64-7fdba63fd996",
+        "lastName": "Emard",
+        "signUpDate": 2020-10-29T14:13:05.350Z,
+      },
+      Object {
+        "age": 72,
+        "firstName": "Rahsaan",
+        "id": "ef9d7a3c-99b8-46c0-8385-578232481dea",
+        "lastName": "Kirlin",
+        "signUpDate": 2020-02-10T19:11:23.550Z,
+      },
+      Object {
+        "age": 59,
+        "firstName": "Christian",
+        "id": "02503a0d-f513-471b-84fe-01f96ac4b061",
+        "lastName": "West",
+        "signUpDate": 2019-01-23T02:51:25.769Z,
+      },
+      Object {
+        "age": 35,
+        "firstName": "Rocky",
+        "id": "f8a4ed02-b2d9-4624-be82-a6c182bd4488",
+        "lastName": "Johnson",
+        "signUpDate": 2020-04-21T13:11:30.653Z,
+      },
+      Object {
+        "age": 47,
+        "firstName": "Stone",
+        "id": "3d9a1625-83f5-4c1d-8470-40a9c6ab3b30",
+        "lastName": "Johnston",
+        "signUpDate": 2020-11-14T21:11:45.332Z,
+      },
     ]
   }
 >
@@ -6974,204 +6974,6 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
   <tbody
     className="clc-table__body"
   >
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Corkery
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Guiseppe
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        <time
-          dateTime={"2019-02-01T04:22:08.251Z"}
-          title="2019-02-01T04:22:08+00:00"
-        >
-          February 1, 2019
-        </time>
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        12
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Wuckert
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Kristopher
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        <time
-          dateTime={"2020-01-18T00:58:18.961Z"}
-          title="2020-01-18T00:58:18+00:00"
-        >
-          January 18, 2020
-        </time>
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        74
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Ondricka
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Claudine
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        <time
-          dateTime={"2020-01-01T09:08:50.249Z"}
-          title="2020-01-01T09:08:50+00:00"
-        >
-          January 1, 2020
-        </time>
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        11
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Padberg
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Mozell
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        <time
-          dateTime={"2019-05-27T21:03:51.712Z"}
-          title="2019-05-27T21:03:51+00:00"
-        >
-          May 27, 2019
-        </time>
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        75
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Wintheiser
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Andreane
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        <time
-          dateTime={"2019-07-13T11:17:00.886Z"}
-          title="2019-07-13T11:17:00+00:00"
-        >
-          July 13, 2019
-        </time>
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        88
-      </td>
-    </tr>
-    <tr
-      className="clc-table__row"
-    >
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Reichel
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        Terrell
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        <time
-          dateTime={"2020-11-12T23:42:51.068Z"}
-          title="2020-11-12T23:42:51+00:00"
-        >
-          November 12, 2020
-        </time>
-      </td>
-      <td
-        className="clc-table__body-cell"
-        idField="id"
-      >
-        37
-      </td>
-    </tr>
     <tr
       className="clc-table__row"
     >
@@ -8622,6 +8424,204 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         idField="id"
       >
         31
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Lindgren
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Chance
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        <time
+          dateTime={"2020-01-29T00:40:37.464Z"}
+          title="2020-01-29T00:40:37+00:00"
+        >
+          January 29, 2020
+        </time>
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        68
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Emard
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Kurtis
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        <time
+          dateTime={"2020-10-29T14:13:05.350Z"}
+          title="2020-10-29T14:13:05+00:00"
+        >
+          October 29, 2020
+        </time>
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        72
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Kirlin
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Rahsaan
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        <time
+          dateTime={"2020-02-10T19:11:23.550Z"}
+          title="2020-02-10T19:11:23+00:00"
+        >
+          February 10, 2020
+        </time>
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        72
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        West
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Christian
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        <time
+          dateTime={"2019-01-23T02:51:25.769Z"}
+          title="2019-01-23T02:51:25+00:00"
+        >
+          January 23, 2019
+        </time>
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        59
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Johnson
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Rocky
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        <time
+          dateTime={"2020-04-21T13:11:30.653Z"}
+          title="2020-04-21T13:11:30+00:00"
+        >
+          April 21, 2020
+        </time>
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        35
+      </td>
+    </tr>
+    <tr
+      className="clc-table__row"
+    >
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Johnston
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        Stone
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        <time
+          dateTime={"2020-11-14T21:11:45.332Z"}
+          title="2020-11-14T21:11:45+00:00"
+        >
+          November 14, 2020
+        </time>
+      </td>
+      <td
+        className="clc-table__body-cell"
+        idField="id"
+      >
+        47
       </td>
     </tr>
   </tbody>

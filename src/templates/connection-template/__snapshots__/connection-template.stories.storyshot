@@ -7,26 +7,26 @@ exports[`Storyshots Templates/ConnectionTemplate Connection Template 1`] = `
       <li>
         First Name
         : 
-        Laurence
+        Kaleb
       </li>
       <li>
         Last Name
         : 
-        Gibson
+        Wunsch
       </li>
       <li>
         Age
         : 
-        22
+        23
       </li>
       <li>
         Sign Up Date
         : 
         <time
-          dateTime={"2019-06-26T18:13:08.595Z"}
-          title="2019-06-26T18:13:08+00:00"
+          dateTime={"2021-02-12T23:09:03.418Z"}
+          title="2021-02-12T23:09:03+00:00"
         >
-          June 26, 2019
+          February 12, 2021
         </time>
       </li>
     </ul>
@@ -36,26 +36,26 @@ exports[`Storyshots Templates/ConnectionTemplate Connection Template 1`] = `
       <li>
         First Name
         : 
-        Ward
+        Olga
       </li>
       <li>
         Last Name
         : 
-        Reichert
+        Dickens
       </li>
       <li>
         Age
         : 
-        22
+        33
       </li>
       <li>
         Sign Up Date
         : 
         <time
-          dateTime={"2020-03-17T12:10:30.629Z"}
-          title="2020-03-17T12:10:30+00:00"
+          dateTime={"2019-10-28T01:04:03.438Z"}
+          title="2019-10-28T01:04:03+00:00"
         >
-          March 17, 2020
+          October 28, 2019
         </time>
       </li>
     </ul>
@@ -65,26 +65,26 @@ exports[`Storyshots Templates/ConnectionTemplate Connection Template 1`] = `
       <li>
         First Name
         : 
-        Glenna
+        Kane
       </li>
       <li>
         Last Name
         : 
-        Leffler
+        Beatty
       </li>
       <li>
         Age
         : 
-        32
+        37
       </li>
       <li>
         Sign Up Date
         : 
         <time
-          dateTime={"2020-12-26T10:41:39.031Z"}
-          title="2020-12-26T10:41:39+00:00"
+          dateTime={"2020-11-08T02:16:46.331Z"}
+          title="2020-11-08T02:16:46+00:00"
         >
-          December 26, 2020
+          November 8, 2020
         </time>
       </li>
     </ul>
@@ -94,64 +94,30 @@ exports[`Storyshots Templates/ConnectionTemplate Connection Template 1`] = `
       <li>
         First Name
         : 
-        Vivianne
+        Norma
       </li>
       <li>
         Last Name
         : 
-        Bednar
+        Collins
       </li>
       <li>
         Age
         : 
-        70
+        50
       </li>
       <li>
         Sign Up Date
         : 
         <time
-          dateTime={"2020-12-14T05:28:39.296Z"}
-          title="2020-12-14T05:28:39+00:00"
+          dateTime={"2019-05-14T05:23:22.450Z"}
+          title="2019-05-14T05:23:22+00:00"
         >
-          December 14, 2020
+          May 14, 2019
         </time>
       </li>
     </ul>
   </li>
-  <li>
-    <ul>
-      <li>
-        First Name
-        : 
-        Amparo
-      </li>
-      <li>
-        Last Name
-        : 
-        Deckow
-      </li>
-      <li>
-        Age
-        : 
-        74
-      </li>
-      <li>
-        Sign Up Date
-        : 
-        <time
-          dateTime={"2019-09-22T00:54:00.201Z"}
-          title="2019-09-22T00:54:00+00:00"
-        >
-          September 22, 2019
-        </time>
-      </li>
-    </ul>
-  </li>
-</ul>
-`;
-
-exports[`Storyshots Templates/ConnectionTemplate Duplicate Fields 1`] = `
-<ul>
   <li>
     <ul>
       <li>
@@ -179,10 +145,44 @@ exports[`Storyshots Templates/ConnectionTemplate Duplicate Fields 1`] = `
           May 22, 2020
         </time>
       </li>
+    </ul>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots Templates/ConnectionTemplate Duplicate Fields 1`] = `
+<ul>
+  <li>
+    <ul>
+      <li>
+        First Name
+        : 
+        Anika
+      </li>
+      <li>
+        Last Name
+        : 
+        Reichel
+      </li>
+      <li>
+        Age
+        : 
+        49
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime={"2021-02-25T17:25:50.132Z"}
+          title="2021-02-25T17:25:50+00:00"
+        >
+          February 25, 2021
+        </time>
+      </li>
       <li>
         Seconds since signup
         : 
-        19301693036
+        -4814750132
       </li>
     </ul>
   </li>
@@ -191,32 +191,32 @@ exports[`Storyshots Templates/ConnectionTemplate Duplicate Fields 1`] = `
       <li>
         First Name
         : 
-        Lewis
+        Wiley
       </li>
       <li>
         Last Name
         : 
-        Kutch
+        Treutel
       </li>
       <li>
         Age
         : 
-        85
+        0
       </li>
       <li>
         Sign Up Date
         : 
         <time
-          dateTime={"2020-02-12T03:33:10.595Z"}
-          title="2020-02-12T03:33:10+00:00"
+          dateTime={"2020-06-12T02:39:32.749Z"}
+          title="2020-06-12T02:39:32+00:00"
         >
-          February 12, 2020
+          June 12, 2020
         </time>
       </li>
       <li>
         Seconds since signup
         : 
-        27980809405
+        17529627251
       </li>
     </ul>
   </li>
@@ -225,32 +225,32 @@ exports[`Storyshots Templates/ConnectionTemplate Duplicate Fields 1`] = `
       <li>
         First Name
         : 
-        Kenya
+        Adela
       </li>
       <li>
         Last Name
         : 
-        O'Connell
+        Prohaska
       </li>
       <li>
         Age
         : 
-        64
+        87
       </li>
       <li>
         Sign Up Date
         : 
         <time
-          dateTime={"2021-01-06T13:41:06.826Z"}
-          title="2021-01-06T13:41:06+00:00"
+          dateTime={"2019-05-20T01:02:01.873Z"}
+          title="2019-05-20T01:02:01+00:00"
         >
-          January 6, 2021
+          May 20, 2019
         </time>
       </li>
       <li>
         Seconds since signup
         : 
-        -481266826
+        51145078127
       </li>
     </ul>
   </li>
@@ -259,32 +259,32 @@ exports[`Storyshots Templates/ConnectionTemplate Duplicate Fields 1`] = `
       <li>
         First Name
         : 
-        Eleonore
+        Cordell
       </li>
       <li>
         Last Name
         : 
-        Shanahan
+        Senger
       </li>
       <li>
         Age
         : 
-        70
+        1
       </li>
       <li>
         Sign Up Date
         : 
         <time
-          dateTime={"2019-02-17T13:24:45.428Z"}
-          title="2019-02-17T13:24:45+00:00"
+          dateTime={"2020-09-05T02:23:03.905Z"}
+          title="2020-09-05T02:23:03+00:00"
         >
-          February 17, 2019
+          September 5, 2020
         </time>
       </li>
       <li>
         Seconds since signup
         : 
-        59049314572
+        10186616095
       </li>
     </ul>
   </li>
@@ -293,32 +293,32 @@ exports[`Storyshots Templates/ConnectionTemplate Duplicate Fields 1`] = `
       <li>
         First Name
         : 
-        Jaydon
+        Freda
       </li>
       <li>
         Last Name
         : 
-        Blick
+        Kassulke
       </li>
       <li>
         Age
         : 
-        100
+        61
       </li>
       <li>
         Sign Up Date
         : 
         <time
-          dateTime={"2019-08-02T22:24:10.669Z"}
-          title="2019-08-02T22:24:10+00:00"
+          dateTime={"2019-10-10T21:52:17.087Z"}
+          title="2019-10-10T21:52:17+00:00"
         >
-          August 2, 2019
+          October 10, 2019
         </time>
       </li>
       <li>
         Seconds since signup
         : 
-        44674549331
+        38714862913
       </li>
     </ul>
   </li>
@@ -332,12 +332,278 @@ exports[`Storyshots Templates/ConnectionTemplate Nested Data 1`] = `
       <li>
         Name First
         : 
-        Sarah
+        Theo
       </li>
       <li>
         Name Last
         : 
+        Stanton
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime={"2019-04-22T19:39:48.599Z"}
+          title="2019-04-22T19:39:48+00:00"
+        >
+          April 22, 2019
+        </time>
+      </li>
+      <li>
+        Age
+        : 
+        23
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        Name First
+        : 
+        Faye
+      </li>
+      <li>
+        Name Last
+        : 
+        Hilll
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime={"2019-02-24T01:39:46.565Z"}
+          title="2019-02-24T01:39:46+00:00"
+        >
+          February 24, 2019
+        </time>
+      </li>
+      <li>
+        Age
+        : 
+        68
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        Name First
+        : 
+        Kennedy
+      </li>
+      <li>
+        Name Last
+        : 
+        Cremin
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime={"2021-02-09T06:07:39.113Z"}
+          title="2021-02-09T06:07:39+00:00"
+        >
+          February 9, 2021
+        </time>
+      </li>
+      <li>
+        Age
+        : 
+        45
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        Name First
+        : 
+        Reid
+      </li>
+      <li>
+        Name Last
+        : 
+        Keeling
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime={"2021-01-08T03:28:17.334Z"}
+          title="2021-01-08T03:28:17+00:00"
+        >
+          January 8, 2021
+        </time>
+      </li>
+      <li>
+        Age
+        : 
+        24
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        Name First
+        : 
+        Gardner
+      </li>
+      <li>
+        Name Last
+        : 
+        Cummings
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime={"2020-05-19T01:34:39.491Z"}
+          title="2020-05-19T01:34:39+00:00"
+        >
+          May 19, 2020
+        </time>
+      </li>
+      <li>
+        Age
+        : 
+        25
+      </li>
+    </ul>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots Templates/ConnectionTemplate Out Of Order 1`] = `
+<ul>
+  <li>
+    <ul>
+      <li>
+        Last Name
+        : 
+        Kutch
+      </li>
+      <li>
+        First Name
+        : 
+        Lewis
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime={"2020-02-12T03:33:10.595Z"}
+          title="2020-02-12T03:33:10+00:00"
+        >
+          February 12, 2020
+        </time>
+      </li>
+      <li>
+        Age
+        : 
+        85
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        Last Name
+        : 
+        O'Connell
+      </li>
+      <li>
+        First Name
+        : 
+        Kenya
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime={"2021-01-06T13:41:06.826Z"}
+          title="2021-01-06T13:41:06+00:00"
+        >
+          January 6, 2021
+        </time>
+      </li>
+      <li>
+        Age
+        : 
+        64
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        Last Name
+        : 
+        Shanahan
+      </li>
+      <li>
+        First Name
+        : 
+        Eleonore
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime={"2019-02-17T13:24:45.428Z"}
+          title="2019-02-17T13:24:45+00:00"
+        >
+          February 17, 2019
+        </time>
+      </li>
+      <li>
+        Age
+        : 
+        70
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        Last Name
+        : 
+        Blick
+      </li>
+      <li>
+        First Name
+        : 
+        Jaydon
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime={"2019-08-02T22:24:10.669Z"}
+          title="2019-08-02T22:24:10+00:00"
+        >
+          August 2, 2019
+        </time>
+      </li>
+      <li>
+        Age
+        : 
+        100
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        Last Name
+        : 
         Abbott
+      </li>
+      <li>
+        First Name
+        : 
+        Walton
       </li>
       <li>
         Sign Up Date
@@ -353,272 +619,6 @@ exports[`Storyshots Templates/ConnectionTemplate Nested Data 1`] = `
         Age
         : 
         60
-      </li>
-    </ul>
-  </li>
-  <li>
-    <ul>
-      <li>
-        Name First
-        : 
-        Antonia
-      </li>
-      <li>
-        Name Last
-        : 
-        Reichel
-      </li>
-      <li>
-        Sign Up Date
-        : 
-        <time
-          dateTime={"2021-02-25T17:25:50.132Z"}
-          title="2021-02-25T17:25:50+00:00"
-        >
-          February 25, 2021
-        </time>
-      </li>
-      <li>
-        Age
-        : 
-        49
-      </li>
-    </ul>
-  </li>
-  <li>
-    <ul>
-      <li>
-        Name First
-        : 
-        Mikayla
-      </li>
-      <li>
-        Name Last
-        : 
-        Treutel
-      </li>
-      <li>
-        Sign Up Date
-        : 
-        <time
-          dateTime={"2020-06-12T02:39:32.749Z"}
-          title="2020-06-12T02:39:32+00:00"
-        >
-          June 12, 2020
-        </time>
-      </li>
-      <li>
-        Age
-        : 
-        0
-      </li>
-    </ul>
-  </li>
-  <li>
-    <ul>
-      <li>
-        Name First
-        : 
-        Raymond
-      </li>
-      <li>
-        Name Last
-        : 
-        Prohaska
-      </li>
-      <li>
-        Sign Up Date
-        : 
-        <time
-          dateTime={"2019-05-20T01:02:01.873Z"}
-          title="2019-05-20T01:02:01+00:00"
-        >
-          May 20, 2019
-        </time>
-      </li>
-      <li>
-        Age
-        : 
-        87
-      </li>
-    </ul>
-  </li>
-  <li>
-    <ul>
-      <li>
-        Name First
-        : 
-        Stephen
-      </li>
-      <li>
-        Name Last
-        : 
-        Senger
-      </li>
-      <li>
-        Sign Up Date
-        : 
-        <time
-          dateTime={"2020-09-05T02:23:03.905Z"}
-          title="2020-09-05T02:23:03+00:00"
-        >
-          September 5, 2020
-        </time>
-      </li>
-      <li>
-        Age
-        : 
-        1
-      </li>
-    </ul>
-  </li>
-</ul>
-`;
-
-exports[`Storyshots Templates/ConnectionTemplate Out Of Order 1`] = `
-<ul>
-  <li>
-    <ul>
-      <li>
-        Last Name
-        : 
-        Kertzmann
-      </li>
-      <li>
-        First Name
-        : 
-        Elwin
-      </li>
-      <li>
-        Sign Up Date
-        : 
-        <time
-          dateTime={"2019-04-05T04:44:03.175Z"}
-          title="2019-04-05T04:44:03+00:00"
-        >
-          April 5, 2019
-        </time>
-      </li>
-      <li>
-        Age
-        : 
-        64
-      </li>
-    </ul>
-  </li>
-  <li>
-    <ul>
-      <li>
-        Last Name
-        : 
-        Wunsch
-      </li>
-      <li>
-        First Name
-        : 
-        Kaleb
-      </li>
-      <li>
-        Sign Up Date
-        : 
-        <time
-          dateTime={"2021-02-12T23:09:03.418Z"}
-          title="2021-02-12T23:09:03+00:00"
-        >
-          February 12, 2021
-        </time>
-      </li>
-      <li>
-        Age
-        : 
-        23
-      </li>
-    </ul>
-  </li>
-  <li>
-    <ul>
-      <li>
-        Last Name
-        : 
-        Dickens
-      </li>
-      <li>
-        First Name
-        : 
-        Olga
-      </li>
-      <li>
-        Sign Up Date
-        : 
-        <time
-          dateTime={"2019-10-28T01:04:03.438Z"}
-          title="2019-10-28T01:04:03+00:00"
-        >
-          October 28, 2019
-        </time>
-      </li>
-      <li>
-        Age
-        : 
-        33
-      </li>
-    </ul>
-  </li>
-  <li>
-    <ul>
-      <li>
-        Last Name
-        : 
-        Beatty
-      </li>
-      <li>
-        First Name
-        : 
-        Kane
-      </li>
-      <li>
-        Sign Up Date
-        : 
-        <time
-          dateTime={"2020-11-08T02:16:46.331Z"}
-          title="2020-11-08T02:16:46+00:00"
-        >
-          November 8, 2020
-        </time>
-      </li>
-      <li>
-        Age
-        : 
-        37
-      </li>
-    </ul>
-  </li>
-  <li>
-    <ul>
-      <li>
-        Last Name
-        : 
-        Collins
-      </li>
-      <li>
-        First Name
-        : 
-        Norma
-      </li>
-      <li>
-        Sign Up Date
-        : 
-        <time
-          dateTime={"2019-05-14T05:23:22.450Z"}
-          title="2019-05-14T05:23:22+00:00"
-        >
-          May 14, 2019
-        </time>
-      </li>
-      <li>
-        Age
-        : 
-        50
       </li>
     </ul>
   </li>

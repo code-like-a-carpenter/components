@@ -2,11 +2,11 @@ import React from 'react';
 
 import {makeComplexPeople, makeSimplePerson} from '../mocks';
 
-import {Stringify} from './stringify';
+import {FancyStringify} from './fancy-stringify';
 
 export default {
-  component: Stringify,
-  title: 'Components/Stringify',
+  component: FancyStringify,
+  title: 'Components/FancyStringify',
 };
 
 const data = {
@@ -16,4 +16,4 @@ const data = {
   },
 };
 
-export const stringify = () => <Stringify>{data}</Stringify>;
+export const fancyStringify = () => <FancyStringify>{data}</FancyStringify>;
