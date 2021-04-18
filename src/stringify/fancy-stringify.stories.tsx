@@ -6,7 +6,7 @@ import {FancyStringify} from './fancy-stringify';
 
 export default {
   component: FancyStringify,
-  title: 'Components/FancyStringify',
+  title: 'Components/Fancy Stringify',
 };
 
 const data = {

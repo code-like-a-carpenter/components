@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Templates/ArrayTemplate Array Template 1`] = `
+exports[`Storyshots Templates/Array Template Array Template 1`] = `
 <ul>
   <li>
     <ul>
@@ -150,7 +150,7 @@ exports[`Storyshots Templates/ArrayTemplate Array Template 1`] = `
 </ul>
 `;
 
-exports[`Storyshots Templates/ArrayTemplate Duplicate Fields 1`] = `
+exports[`Storyshots Templates/Array Template Duplicate Fields 1`] = `
 <ul>
   <li>
     <ul>
@@ -325,7 +325,7 @@ exports[`Storyshots Templates/ArrayTemplate Duplicate Fields 1`] = `
 </ul>
 `;
 
-exports[`Storyshots Templates/ArrayTemplate Nested Data 1`] = `
+exports[`Storyshots Templates/Array Template Nested Data 1`] = `
 <ul>
   <li>
     <ul>
@@ -475,7 +475,7 @@ exports[`Storyshots Templates/ArrayTemplate Nested Data 1`] = `
 </ul>
 `;
 
-exports[`Storyshots Templates/ArrayTemplate Out Of Order 1`] = `
+exports[`Storyshots Templates/Array Template Out Of Order 1`] = `
 <ul>
   <li>
     <ul>

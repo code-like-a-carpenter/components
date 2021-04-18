@@ -7,7 +7,7 @@ import {MaybeRenderer} from './maybe-renderer';
 
 export default {
   component: MaybeRenderer,
-  title: 'Renderers/MaybeRenderer',
+  title: 'Renderers/Maybe Renderer',
 };
 
 export const maybeRenderer = () => (

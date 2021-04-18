@@ -11,7 +11,7 @@ const BadJsonParse = () => <Code>{JSON.parse('{invalid')}</Code>;
 
 export default {
   component: SimpleErrorBoundary,
-  title: 'ErrorBoundaries/SimpleErrorBoundary',
+  title: 'Error Boundaries/Simple Error Boundary',
 };
 
 /*

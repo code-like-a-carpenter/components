@@ -5,7 +5,7 @@ import {SectionHeading} from './section-heading';
 
 export default {
   component: Section,
-  title: 'Outline/SectionHeading',
+  title: 'Outline/Section Heading',
 };
 
 export const withAHeading = () => (

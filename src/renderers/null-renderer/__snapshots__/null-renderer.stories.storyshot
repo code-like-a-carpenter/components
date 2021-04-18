@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Renderers/NullRenderer Null Renderer 1`] = `
+exports[`Storyshots Renderers/Null Renderer Null Renderer 1`] = `
 <span>
    - 
 </span>
 `;
 
-exports[`Storyshots Renderers/NullRenderer With Override 1`] = `"nada"`;
+exports[`Storyshots Renderers/Null Renderer With Override 1`] = `"nada"`;
 
-exports[`Storyshots Renderers/NullRenderer With Override From Context 1`] = `"bupkis"`;
+exports[`Storyshots Renderers/Null Renderer With Override From Context 1`] = `"bupkis"`;

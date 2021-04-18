@@ -7,7 +7,7 @@ import {ItemWrapper, Wrapper} from './support';
 
 export default {
   component: ObjectTemplate,
-  title: 'Templates/ObjectTemplate',
+  title: 'Templates/Object Template',
 };
 
 export const objectTemplate = () => (

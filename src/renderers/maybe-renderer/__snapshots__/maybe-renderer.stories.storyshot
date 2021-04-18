@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Renderers/MaybeRenderer Falsy 1`] = `
+exports[`Storyshots Renderers/Maybe Renderer Falsy 1`] = `
 <span
   className="magic-boolean"
 >
@@ -8,19 +8,19 @@ exports[`Storyshots Renderers/MaybeRenderer Falsy 1`] = `
 </span>
 `;
 
-exports[`Storyshots Renderers/MaybeRenderer Maybe Renderer 1`] = `
+exports[`Storyshots Renderers/Maybe Renderer Maybe Renderer 1`] = `
 <span>
    - 
 </span>
 `;
 
-exports[`Storyshots Renderers/MaybeRenderer Pass Through Props 1`] = `
+exports[`Storyshots Renderers/Maybe Renderer Pass Through Props 1`] = `
 <span>
    - 
 </span>
 `;
 
-exports[`Storyshots Renderers/MaybeRenderer Truthy 1`] = `
+exports[`Storyshots Renderers/Maybe Renderer Truthy 1`] = `
 <span
   className="magic-boolean"
 >

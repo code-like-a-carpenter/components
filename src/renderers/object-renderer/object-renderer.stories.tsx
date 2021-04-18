@@ -4,7 +4,7 @@ import {ObjectRenderer} from './object-renderer';
 
 export default {
   component: ObjectRenderer,
-  title: 'Renderers/ObjectRenderer',
+  title: 'Renderers/Object Renderer',
 };
 
 export const objectRenderer = () => (

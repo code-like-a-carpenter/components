@@ -6,7 +6,7 @@ import {ObjectDescription} from './object-description';
 
 export default {
   component: ObjectDescription,
-  title: 'Template Specialization/ObjectDescription',
+  title: 'Template Specialization/Object Description',
 };
 
 export const objectDescription = () => (

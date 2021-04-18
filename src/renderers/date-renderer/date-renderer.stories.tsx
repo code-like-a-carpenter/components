@@ -4,7 +4,7 @@ import {DateRenderer, DateRendererContext} from './date-renderer';
 
 export default {
   component: DateRenderer,
-  title: 'Renderers/DateRenderer',
+  title: 'Renderers/Date Renderer',
 };
 
 const dateString = '2020-06-01';

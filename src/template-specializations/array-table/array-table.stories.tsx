@@ -6,7 +6,7 @@ import {ArrayTable} from './array-table';
 
 export default {
   component: ArrayTable,
-  title: 'Template Specialization/ArrayTable',
+  title: 'Template Specialization/Array Table',
 };
 
 export const arrayTable = () => (

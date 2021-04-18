@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Templates/ObjectTemplate Duplicate Fields 1`] = `
+exports[`Storyshots Templates/Object Template Duplicate Fields 1`] = `
 <dl
   className="description-list"
 >
@@ -62,7 +62,7 @@ exports[`Storyshots Templates/ObjectTemplate Duplicate Fields 1`] = `
 </dl>
 `;
 
-exports[`Storyshots Templates/ObjectTemplate Nested Data 1`] = `
+exports[`Storyshots Templates/Object Template Nested Data 1`] = `
 <dl
   className="description-list"
 >
@@ -114,7 +114,7 @@ exports[`Storyshots Templates/ObjectTemplate Nested Data 1`] = `
 </dl>
 `;
 
-exports[`Storyshots Templates/ObjectTemplate Object Template 1`] = `
+exports[`Storyshots Templates/Object Template Object Template 1`] = `
 <dl
   className="description-list"
 >
@@ -166,7 +166,7 @@ exports[`Storyshots Templates/ObjectTemplate Object Template 1`] = `
 </dl>
 `;
 
-exports[`Storyshots Templates/ObjectTemplate Out Of Order 1`] = `
+exports[`Storyshots Templates/Object Template Out Of Order 1`] = `
 <dl
   className="description-list"
 >
