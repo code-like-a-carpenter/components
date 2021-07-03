@@ -32,10 +32,16 @@ overrides:
         - classes: true
           functions: false
           variables: true
+
   - files:
       - '**/*.stories.*'
     rules:
       require-jsdoc: off
+
+  - files:
+      - '**/*.md/**'
+    rules:
+      import/no-unresolved: off
 
 parserOptions:
   sourceType: 'script'
