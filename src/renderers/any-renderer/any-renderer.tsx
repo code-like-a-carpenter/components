@@ -21,10 +21,11 @@ export type AnyRendererProps = RendererProps<unknown, AnyRendererContextType>;
 
 // eslint-disable-next-line complexity
 export const AnyRenderer = ({value, ...rest}: AnyRendererProps) => {
-  const {boolean, date, null: nullDefaults} = useContextWithDefaults(
-    AnyRendererContext,
-    rest
-  );
+  const {
+    boolean,
+    date,
+    null: nullDefaults,
+  } = useContextWithDefaults(AnyRendererContext, rest);
 
   if (
     typeof value === 'object' ||

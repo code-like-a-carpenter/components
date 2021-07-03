@@ -7,5 +7,9 @@ module.exports = {
     '@storybook/preset-scss',
     "@storybook/addon-links",
     "@storybook/addon-essentials"
-  ]
+  ],
+    typescript: {
+    // We check typescript elsewhere; this should speed up builds
+    check: false
+  }
 }

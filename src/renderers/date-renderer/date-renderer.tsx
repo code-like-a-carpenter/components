@@ -22,15 +22,14 @@ export type DateRendererContextProps = {
   readonly range?: boolean;
 };
 
-export const DateRendererContext = React.createContext<DateRendererContextProps>(
-  {
+export const DateRendererContext =
+  React.createContext<DateRendererContextProps>({
     format: 'LL',
     negativeIsNull: false,
     range: false,
     reference: new Date(),
     relative: false,
-  }
-);
+  });
 
 export type DateRendererProps = RendererProps<
   Date | string | number,
@@ -38,13 +37,8 @@ export type DateRendererProps = RendererProps<
 >;
 
 export const DateRenderer = ({value, ...rest}: DateRendererProps) => {
-  const {
-    format,
-    negativeIsNull,
-    range,
-    reference,
-    relative,
-  } = useContextWithDefaults(DateRendererContext, rest);
+  const {format, negativeIsNull, range, reference, relative} =
+    useContextWithDefaults(DateRendererContext, rest);
 
   if (!moment(value).isValid()) {
     return <NullRenderer value={null} />;

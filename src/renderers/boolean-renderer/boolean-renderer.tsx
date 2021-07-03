@@ -11,12 +11,11 @@ export type BooleanRendererContextType = {
   readonly yes: RendererDefault;
 };
 
-export const BooleanRendererContext = React.createContext<BooleanRendererContextType>(
-  {
+export const BooleanRendererContext =
+  React.createContext<BooleanRendererContextType>({
     no: 'No',
     yes: 'Yes',
-  }
-);
+  });
 
 export type BooleanRendererProps = RendererProps<
   boolean,

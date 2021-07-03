@@ -76,7 +76,7 @@ export const withNotADate = () => (
 export const withNotATime = () => (
   <ConditionalDescription
     term="A Date"
-    description={(null as unknown) as Date | null}
+    description={null as unknown as Date | null}
     Render={DateRenderer}
   />
 );
