@@ -22,10 +22,11 @@ export type FieldConfigurationContextType = {
   configure: ConfigureFieldFunction;
 };
 
-export const FieldConfigurationContext = React.createContext<FieldConfigurationContextType>(
-  /* @ts-expect-error - no reasonable default */
-  null
-);
+export const FieldConfigurationContext =
+  React.createContext<FieldConfigurationContextType>(
+    /* @ts-expect-error - no reasonable default */
+    null
+  );
 
 export const FieldConfigurationProvider: React.FC<{field?: string}> = ({
   children,
@@ -36,10 +37,8 @@ export const FieldConfigurationProvider: React.FC<{field?: string}> = ({
   let configuration: Map<string, FieldConfiguration>,
     configure: ConfigureFieldFunction;
   if (parentContext) {
-    const {
-      configuration: parentConfiguration,
-      configure: configureParent,
-    } = parentContext;
+    const {configuration: parentConfiguration, configure: configureParent} =
+      parentContext;
     configuration = parentConfiguration;
     configure = (name: string, config: FieldConfigurationWithDefaults) => {
       configureParent(`${parentName}.${name}`, config);
