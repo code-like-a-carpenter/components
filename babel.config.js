@@ -8,10 +8,6 @@ module.exports = function (api) {
 
   const config = {
     comments: true,
-    plugins: [
-      '@babel/plugin-proposal-class-properties',
-      '@babel/plugin-proposal-optional-chaining',
-    ],
     presets: [
       '@babel/preset-typescript',
       [
