@@ -4,7 +4,7 @@ import {NullRenderer, NullRendererContext} from './null-renderer';
 
 export default {
   component: NullRenderer,
-  title: 'Renderers/NullRenderer',
+  title: 'Renderers/Null Renderer',
 };
 
 export const nullRenderer = () => <NullRenderer value={null} />;

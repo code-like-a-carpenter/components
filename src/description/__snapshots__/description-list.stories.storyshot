@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Description/DescriptionList Description List 1`] = `
+exports[`Storyshots Description/Description List Description List 1`] = `
 <dl
   className="description-list"
 >
@@ -19,7 +19,7 @@ exports[`Storyshots Description/DescriptionList Description List 1`] = `
 </dl>
 `;
 
-exports[`Storyshots Description/DescriptionList List 1`] = `
+exports[`Storyshots Description/Description List List 1`] = `
 <dl
   className="description-list"
 >
@@ -74,7 +74,7 @@ exports[`Storyshots Description/DescriptionList List 1`] = `
 </dl>
 `;
 
-exports[`Storyshots Description/DescriptionList List With Multiple Descriptions 1`] = `
+exports[`Storyshots Description/Description List List With Multiple Descriptions 1`] = `
 <dl
   className="description-list"
 >

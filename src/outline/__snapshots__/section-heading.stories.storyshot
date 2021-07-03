@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Outline/SectionHeading With A Heading 1`] = `
+exports[`Storyshots Outline/Section Heading With A Heading 1`] = `
 <h1
   className="h1"
   id="o:1s:1-level-1"
@@ -13,7 +13,7 @@ exports[`Storyshots Outline/SectionHeading With A Heading 1`] = `
 </h1>
 `;
 
-exports[`Storyshots Outline/SectionHeading With Style Roots 1`] = `
+exports[`Storyshots Outline/Section Heading With Style Roots 1`] = `
 Array [
   <h1
     className="h1"
@@ -50,7 +50,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Outline/SectionHeading With Three Levels Of Nesting 1`] = `
+exports[`Storyshots Outline/Section Heading With Three Levels Of Nesting 1`] = `
 Array [
   <h1
     className="h1"
@@ -85,7 +85,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Outline/SectionHeading With Two Sibling Headings 1`] = `
+exports[`Storyshots Outline/Section Heading With Two Sibling Headings 1`] = `
 Array [
   <h1
     className="h1"

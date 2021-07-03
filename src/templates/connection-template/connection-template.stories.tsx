@@ -7,7 +7,7 @@ import {FieldWrapper, ItemWrapper, toConnection, Wrapper} from './support';
 
 export default {
   component: ConnectionTemplate,
-  title: 'Templates/ConnectionTemplate',
+  title: 'Templates/Connection Template',
 };
 
 export const connectionTemplate = () => (

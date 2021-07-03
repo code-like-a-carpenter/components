@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Renderers/BooleanRenderer Boolean Renderer 1`] = `
+exports[`Storyshots Renderers/Boolean Renderer Boolean Renderer 1`] = `
 <span
   className="magic-boolean"
 >
@@ -8,7 +8,7 @@ exports[`Storyshots Renderers/BooleanRenderer Boolean Renderer 1`] = `
 </span>
 `;
 
-exports[`Storyshots Renderers/BooleanRenderer Falsy 1`] = `
+exports[`Storyshots Renderers/Boolean Renderer Falsy 1`] = `
 <span
   className="magic-boolean"
 >
@@ -16,7 +16,7 @@ exports[`Storyshots Renderers/BooleanRenderer Falsy 1`] = `
 </span>
 `;
 
-exports[`Storyshots Renderers/BooleanRenderer Truthy 1`] = `
+exports[`Storyshots Renderers/Boolean Renderer Truthy 1`] = `
 <span
   className="magic-boolean"
 >
@@ -24,7 +24,7 @@ exports[`Storyshots Renderers/BooleanRenderer Truthy 1`] = `
 </span>
 `;
 
-exports[`Storyshots Renderers/BooleanRenderer With Context Overrides 1`] = `
+exports[`Storyshots Renderers/Boolean Renderer With Context Overrides 1`] = `
 <span
   className="magic-boolean"
 >
@@ -32,7 +32,7 @@ exports[`Storyshots Renderers/BooleanRenderer With Context Overrides 1`] = `
 </span>
 `;
 
-exports[`Storyshots Renderers/BooleanRenderer With Overrides 1`] = `
+exports[`Storyshots Renderers/Boolean Renderer With Overrides 1`] = `
 <span
   className="magic-boolean"
 >

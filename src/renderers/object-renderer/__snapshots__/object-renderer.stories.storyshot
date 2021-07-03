@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Renderers/ObjectRenderer Object Renderer 1`] = `
+exports[`Storyshots Renderers/Object Renderer Object Renderer 1`] = `
 <pre
   className="code code__pre"
 >
@@ -17,7 +17,7 @@ exports[`Storyshots Renderers/ObjectRenderer Object Renderer 1`] = `
 </pre>
 `;
 
-exports[`Storyshots Renderers/ObjectRenderer With Array 1`] = `
+exports[`Storyshots Renderers/Object Renderer With Array 1`] = `
 <pre
   className="code code__pre"
 >

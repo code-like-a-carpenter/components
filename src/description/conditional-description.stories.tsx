@@ -6,7 +6,7 @@ import {ConditionalDescription} from './conditional-description';
 
 export default {
   component: ConditionalDescription,
-  title: 'Description/ConditionalDescription',
+  title: 'Description/Conditional Description',
 };
 
 export const conditionalDescription = () => (

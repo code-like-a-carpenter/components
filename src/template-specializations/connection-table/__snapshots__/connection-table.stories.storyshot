@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Template Specialization/ConnectionTable Connection Table 1`] = `
+exports[`Storyshots Template Specialization/Connection Table Connection Table 1`] = `
 <table
   className="clc-table table"
   connection={
@@ -2213,7 +2213,7 @@ exports[`Storyshots Template Specialization/ConnectionTable Connection Table 1`]
 </table>
 `;
 
-exports[`Storyshots Template Specialization/ConnectionTable Duplicate Fields 1`] = `
+exports[`Storyshots Template Specialization/Connection Table Duplicate Fields 1`] = `
 <table
   className="clc-table table"
   connection={
@@ -4734,7 +4734,7 @@ exports[`Storyshots Template Specialization/ConnectionTable Duplicate Fields 1`]
 </table>
 `;
 
-exports[`Storyshots Template Specialization/ConnectionTable Nested Data 1`] = `
+exports[`Storyshots Template Specialization/Connection Table Nested Data 1`] = `
 <table
   className="clc-table table"
   connection={
@@ -7047,7 +7047,7 @@ exports[`Storyshots Template Specialization/ConnectionTable Nested Data 1`] = `
 </table>
 `;
 
-exports[`Storyshots Template Specialization/ConnectionTable Out Of Order 1`] = `
+exports[`Storyshots Template Specialization/Connection Table Out Of Order 1`] = `
 <table
   className="clc-table table"
   connection={

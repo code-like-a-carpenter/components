@@ -4,7 +4,7 @@ import {BooleanRendererContext, BooleanRenderer} from './boolean-renderer';
 
 export default {
   component: BooleanRenderer,
-  title: 'Renderers/BooleanRenderer',
+  title: 'Renderers/Boolean Renderer',
 };
 
 export const booleanRenderer = () => <BooleanRenderer value={true} />;

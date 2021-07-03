@@ -4,7 +4,7 @@ import {AnyRenderer, AnyRendererContext} from './any-renderer';
 
 export default {
   component: AnyRenderer,
-  title: 'Renderers/AnyRenderer',
+  title: 'Renderers/Any Renderer',
 };
 
 export const anyRenderer = () => <AnyRenderer value={null} />;

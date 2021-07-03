@@ -7,7 +7,7 @@ import {ConnectionTable} from './connection-table';
 
 export default {
   component: ConnectionTable,
-  title: 'Template Specialization/ConnectionTable',
+  title: 'Template Specialization/Connection Table',
 };
 
 export const connectionTable = () => (

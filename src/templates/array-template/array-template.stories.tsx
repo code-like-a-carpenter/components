@@ -7,7 +7,7 @@ import {FieldWrapper, ItemWrapper, Wrapper} from './support';
 
 export default {
   component: ArrayTemplate,
-  title: 'Templates/ArrayTemplate',
+  title: 'Templates/Array Template',
 };
 
 export const arrayTemplate = () => (

@@ -5,7 +5,7 @@ import {Description} from './description';
 
 export default {
   component: DescriptionList,
-  title: 'Description/DescriptionList',
+  title: 'Description/Description List',
 };
 
 export const descriptionList = () => (

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
+exports[`Storyshots Template Specialization/Array Table Array Table 1`] = `
 <table
   className="clc-table table"
   data={
@@ -2055,7 +2055,7 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
 </table>
 `;
 
-exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
+exports[`Storyshots Template Specialization/Array Table Duplicate Fields 1`] = `
 <table
   className="clc-table table"
   data={
@@ -4418,7 +4418,7 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
 </table>
 `;
 
-exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
+exports[`Storyshots Template Specialization/Array Table Nested Data 1`] = `
 <table
   className="clc-table table"
   data={
@@ -6573,7 +6573,7 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
 </table>
 `;
 
-exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
+exports[`Storyshots Template Specialization/Array Table Out Of Order 1`] = `
 <table
   className="clc-table table"
   data={

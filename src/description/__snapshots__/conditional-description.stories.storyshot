@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Description/ConditionalDescription Conditional Description 1`] = `
+exports[`Storyshots Description/Conditional Description Conditional Description 1`] = `
 <dl
   className="description-list--single description-list"
 >
@@ -19,7 +19,7 @@ exports[`Storyshots Description/ConditionalDescription Conditional Description 1
 </dl>
 `;
 
-exports[`Storyshots Description/ConditionalDescription With A Date 1`] = `
+exports[`Storyshots Description/Conditional Description With A Date 1`] = `
 <dl
   className="description-list--single description-list"
 >
@@ -41,21 +41,21 @@ exports[`Storyshots Description/ConditionalDescription With A Date 1`] = `
 </dl>
 `;
 
-exports[`Storyshots Description/ConditionalDescription With False Condition 1`] = `null`;
+exports[`Storyshots Description/Conditional Description With False Condition 1`] = `null`;
 
-exports[`Storyshots Description/ConditionalDescription With Falsy Condition 1`] = `null`;
+exports[`Storyshots Description/Conditional Description With Falsy Condition 1`] = `null`;
 
-exports[`Storyshots Description/ConditionalDescription With Falsy Nested Value 1`] = `null`;
+exports[`Storyshots Description/Conditional Description With Falsy Nested Value 1`] = `null`;
 
-exports[`Storyshots Description/ConditionalDescription With Falsy Nested Value And Condition 1`] = `null`;
+exports[`Storyshots Description/Conditional Description With Falsy Nested Value And Condition 1`] = `null`;
 
-exports[`Storyshots Description/ConditionalDescription With Falsy Value 1`] = `null`;
+exports[`Storyshots Description/Conditional Description With Falsy Value 1`] = `null`;
 
-exports[`Storyshots Description/ConditionalDescription With Not A Date 1`] = `null`;
+exports[`Storyshots Description/Conditional Description With Not A Date 1`] = `null`;
 
-exports[`Storyshots Description/ConditionalDescription With Not A Time 1`] = `null`;
+exports[`Storyshots Description/Conditional Description With Not A Time 1`] = `null`;
 
-exports[`Storyshots Description/ConditionalDescription With True Condition 1`] = `
+exports[`Storyshots Description/Conditional Description With True Condition 1`] = `
 <dl
   className="description-list--single description-list"
 >
@@ -74,4 +74,4 @@ exports[`Storyshots Description/ConditionalDescription With True Condition 1`] =
 </dl>
 `;
 
-exports[`Storyshots Description/ConditionalDescription Without Value 1`] = `null`;
+exports[`Storyshots Description/Conditional Description Without Value 1`] = `null`;
