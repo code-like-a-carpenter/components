@@ -33,7 +33,7 @@
     "test": "TZ=UTC jest"
   },
   "engines": {
-    "node": ">=12.9.0"
+    "node": ">=14"
   },
   "keywords": [],
   "author": "Ian Remmel <1182361+ianwremmel@users.noreply.github.com>",
