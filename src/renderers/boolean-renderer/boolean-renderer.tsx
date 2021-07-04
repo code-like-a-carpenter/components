@@ -1,10 +1,7 @@
 import React from 'react';
 
-import {
-  RendererDefault,
-  RendererProps,
-  useContextWithDefaults,
-} from '../../support';
+import {useContextWithDefaults} from '../../support';
+import {RendererDefault, RendererProps} from '../types';
 
 export type BooleanRendererContextType = {
   readonly no: RendererDefault;

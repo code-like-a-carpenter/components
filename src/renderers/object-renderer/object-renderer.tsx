@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {Code} from '../..';
-import {RendererProps} from '../../support';
+import {RendererProps} from '../types';
 
 export type ObjectRendererProps = RendererProps<
   // eslint-disable-next-line @typescript-eslint/ban-types

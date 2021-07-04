@@ -1,7 +1,7 @@
 import React from 'react';
 import cx from 'classnames';
 
-import {Renderer} from '../support';
+import {Renderer} from '../renderers/types';
 
 import {Description} from './description';
 

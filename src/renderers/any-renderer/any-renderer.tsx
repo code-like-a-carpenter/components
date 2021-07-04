@@ -5,7 +5,8 @@ import {BooleanRenderer, BooleanRendererContextType} from '../boolean-renderer';
 import {DateRenderer, DateRendererContextProps} from '../date-renderer';
 import {ObjectRenderer} from '../object-renderer';
 import {NullRenderer, NullRendererContextType} from '../null-renderer';
-import {RendererProps, useContextWithDefaults} from '../../support';
+import {useContextWithDefaults} from '../../support';
+import {RendererProps} from '../types';
 
 export type AnyRendererContextType = {
   readonly boolean?: BooleanRendererContextType;

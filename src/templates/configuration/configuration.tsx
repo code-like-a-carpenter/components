@@ -2,7 +2,7 @@ import {startCase} from 'lodash';
 import React, {useContext} from 'react';
 
 import {AnyRenderer} from '../..';
-import {Renderer} from '../../support';
+import {Renderer} from '../../renderers';
 
 export type FieldConfiguration = {
   label: React.ReactNode;

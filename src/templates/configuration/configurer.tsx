@@ -1,7 +1,7 @@
 import React from 'react';
 
-import {Renderer} from '../../support';
 import {Definitely, IdType, Maybe} from '../..';
+import {Renderer} from '../../renderers/types';
 
 import {FieldConfigurationProvider} from './configuration';
 import {useConfigureField} from './hooks';
