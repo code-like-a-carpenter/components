@@ -3,7 +3,7 @@ import React from 'react';
 import {makeComplexPerson, makeSimplePerson} from '../../mocks';
 
 import {ObjectTemplate} from './object-template';
-import {ItemWrapper, Wrapper} from './support';
+import {FieldWrapper, TemplateWrapper} from './support';
 
 export default {
   component: ObjectTemplate,
@@ -21,8 +21,8 @@ export const objectTemplate = () => (
         <FieldConfigurer field="signUpDate" />
       </>
     )}
-    FieldWrapper={ItemWrapper}
-    TemplateWrapper={Wrapper}
+    FieldWrapper={FieldWrapper}
+    TemplateWrapper={TemplateWrapper}
   />
 );
 
@@ -37,8 +37,8 @@ export const outOfOrder = () => (
         <FieldConfigurer field="age" />
       </>
     )}
-    FieldWrapper={ItemWrapper}
-    TemplateWrapper={Wrapper}
+    FieldWrapper={FieldWrapper}
+    TemplateWrapper={TemplateWrapper}
   />
 );
 
@@ -53,15 +53,13 @@ export const duplicateFields = () => (
         <FieldConfigurer field="signUpDate" />
         <FieldConfigurer
           field="signUpDate"
-          label="Seconds since signup"
-          renderer={({value}) => (
-            <>{Date.parse('2021-01-01') - value.getTime()}</>
-          )}
+          label="Epoch Time"
+          renderer={({value}) => <>{value.getTime()}</>}
         />
       </>
     )}
-    FieldWrapper={ItemWrapper}
-    TemplateWrapper={Wrapper}
+    FieldWrapper={FieldWrapper}
+    TemplateWrapper={TemplateWrapper}
   />
 );
 duplicateFields.parameters = {
@@ -91,7 +89,7 @@ export const nestedData = () => (
         <FieldConfigurer field="age" />
       </>
     )}
-    FieldWrapper={ItemWrapper}
-    TemplateWrapper={Wrapper}
+    FieldWrapper={FieldWrapper}
+    TemplateWrapper={TemplateWrapper}
   />
 );

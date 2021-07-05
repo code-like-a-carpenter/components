@@ -41,17 +41,20 @@ const WrapField = <T extends object>({
   FieldWrapper,
   ...rest
 }: WrapFieldProps<T>) => {
-  const config = useFieldConfiguration(fieldId);
+  const {renderer: Renderer, ...config} = useFieldConfiguration(fieldId);
   const value = _.get(datum, config.keyPath);
   return (
     <FieldWrapper
       fieldId={fieldId}
       value={value}
       field={config.keyPath as IdType<T>}
+      renderer={Renderer}
       {...rest}
       {...config}
       data={datum}
-    />
+    >
+      <Renderer value={value} />
+    </FieldWrapper>
   );
 };
 

@@ -30,15 +30,19 @@ const WrapObjectItem = <T extends object>({
   FieldWrapper,
   data,
 }: WrapObjectItemProps<T>) => {
-  const config = useFieldConfiguration(fieldId);
+  const {renderer: Renderer, ...config} = useFieldConfiguration(fieldId);
+  const value = _.get(data, config.keyPath);
   return (
     <FieldWrapper
       data={data}
       fieldId={fieldId}
       field={config.keyPath as IdType<T>}
-      value={_.get(data, config.keyPath)}
+      value={value}
+      renderer={Renderer}
       {...config}
-    />
+    >
+      <Renderer value={value} />
+    </FieldWrapper>
   );
 };
 

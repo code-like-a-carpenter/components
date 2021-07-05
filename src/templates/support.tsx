@@ -14,15 +14,22 @@ export type ItemWrapperType<T extends object> = React.ElementType<
   ItemWrapperProps<T>
 >;
 
-export interface FieldWrapperProps<T extends object, K extends IdType<T>>
-  extends FieldConfiguration {
-  fieldId: string;
-  field: K;
-  value: T[K];
-  data: T;
-}
-export interface FieldWrapperType<T extends object> {
-  <T2 extends T, K2 extends IdType<T2>>(
-    props: FieldWrapperProps<T2, K2>
-  ): React.ReactElement | null;
-}
+export type FieldWrapperProps<
+  T extends object,
+  K extends IdType<T>
+> = React.PropsWithChildren<
+  FieldConfiguration & {
+    fieldId: string;
+    field: K;
+    value: T[K];
+    data: T;
+  }
+>;
+export type FieldWrapperType<T extends object> = <
+  T2 extends T,
+  K2 extends IdType<T2>
+>(
+  props: FieldWrapperProps<T2, K2>
+) => React.ReactElement | null;
+
+export const DefaultWrapper: React.FC = ({children}) => <>{children}</>;

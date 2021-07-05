@@ -22,14 +22,13 @@ export const Wrapper = <T extends unknown>({
 
 export const FieldWrapper = <T extends object, K extends IdType<T>>({
   fieldId,
-  value,
-  renderer: Renderer,
+  children,
 }: FieldWrapperProps<T, K>) => {
   const {label} = useFieldConfiguration(fieldId);
 
   return (
     <li>
-      {label}: <Renderer value={value} />
+      {label}: {children}
     </li>
   );
 };

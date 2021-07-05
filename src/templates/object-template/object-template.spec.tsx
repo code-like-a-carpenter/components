@@ -4,7 +4,7 @@ import React from 'react';
 import {ComplexPerson, SimplePerson} from '../../mocks';
 import {InstallationPageQuery} from '../../sample-types';
 
-import {ItemWrapper, Wrapper} from './support';
+import {FieldWrapper, TemplateWrapper} from './support';
 
 import {ObjectTemplate} from '.';
 
@@ -26,8 +26,8 @@ describe('ObjectTemplate', () => {
             <FieldConfigurer field="invalid" />
           </>
         )}
-        FieldWrapper={ItemWrapper}
-        TemplateWrapper={Wrapper}
+        FieldWrapper={FieldWrapper}
+        TemplateWrapper={TemplateWrapper}
       />
     );
   });
@@ -56,8 +56,8 @@ describe('ObjectTemplate', () => {
             <FieldConfigurer field="invalid" />
           </>
         )}
-        FieldWrapper={ItemWrapper}
-        TemplateWrapper={Wrapper}
+        FieldWrapper={FieldWrapper}
+        TemplateWrapper={TemplateWrapper}
       />
     );
   });
@@ -77,8 +77,8 @@ describe('ObjectTemplate', () => {
             <FieldConfigurer field="invalid" />
           </>
         )}
-        FieldWrapper={ItemWrapper}
-        TemplateWrapper={Wrapper}
+        FieldWrapper={FieldWrapper}
+        TemplateWrapper={TemplateWrapper}
       />
     );
   });

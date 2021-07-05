@@ -52,12 +52,12 @@ exports[`Storyshots Templates/ObjectTemplate Duplicate Fields 1`] = `
   <dt
     className="description-list__term description-list__term--single"
   >
-    Seconds since signup
+    Epoch Time
   </dt>
   <dd
     className="description-list__description description-list__description--single"
   >
-    53620521738
+    1555838678262
   </dd>
 </dl>
 `;
