@@ -27,7 +27,7 @@ describe('ArrayTemplate', () => {
           </>
         )}
         ItemWrapper={ItemWrapper}
-        Wrapper={Wrapper}
+        TemplateWrapper={Wrapper}
         FieldWrapper={FieldWrapper}
       />
     );
@@ -58,7 +58,7 @@ describe('ArrayTemplate', () => {
           </>
         )}
         ItemWrapper={ItemWrapper}
-        Wrapper={Wrapper}
+        TemplateWrapper={Wrapper}
         FieldWrapper={FieldWrapper}
       />
     );
@@ -89,7 +89,7 @@ describe('ArrayTemplate', () => {
           </>
         )}
         ItemWrapper={ItemWrapper}
-        Wrapper={Wrapper}
+        TemplateWrapper={Wrapper}
         FieldWrapper={FieldWrapper}
       />
     );
@@ -123,7 +123,7 @@ describe('ArrayTemplate', () => {
           </>
         )}
         ItemWrapper={ItemWrapper}
-        Wrapper={Wrapper}
+        TemplateWrapper={Wrapper}
         FieldWrapper={FieldWrapper}
       />
     );
@@ -152,7 +152,7 @@ describe('ArrayTemplate', () => {
           </>
         )}
         ItemWrapper={ItemWrapper}
-        Wrapper={Wrapper}
+        TemplateWrapper={Wrapper}
         FieldWrapper={FieldWrapper}
       />
     );

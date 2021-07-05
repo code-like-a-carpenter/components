@@ -96,7 +96,7 @@ const UnboundConnectionTable = <N extends NodeLike, PI>({
         connection={connection}
         FieldWrapper={TableBodyCell}
         ItemWrapper={TableBodyRow}
-        Wrapper={TableBody}
+        TemplateWrapper={TableBody}
       />
     </Table>
   );

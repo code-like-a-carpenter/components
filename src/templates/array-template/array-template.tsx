@@ -9,9 +9,9 @@ import {
   useFieldConfiguration,
 } from '../configuration';
 import {
-  FieldWrapper as FieldWrapperType,
-  ItemWrapper as ItemWrapperType,
-  Wrapper as WrapperType,
+  FieldWrapperType,
+  ItemWrapperType,
+  TemplateWrapperType,
 } from '../support';
 
 export interface ArrayTemplateProps<
@@ -21,14 +21,14 @@ export interface ArrayTemplateProps<
   data: Maybe<Maybe<T>[]>;
   idField: K;
   configure: ConfigureFunction<T>;
-  Wrapper: WrapperType<Maybe<T>[]>;
+  TemplateWrapper: TemplateWrapperType<Maybe<T>[]>;
   ItemWrapper: ItemWrapperType<T>;
   FieldWrapper: FieldWrapperType<T>;
 }
 
 type WrapFieldProps<T extends object> = Omit<
   UnboundArrayTemplateProps<T>,
-  'Wrapper' | 'ItemWrapper'
+  'TemplateWrapper' | 'ItemWrapper'
 > & {
   data: Maybe<T>[];
   datum: T;
@@ -63,7 +63,7 @@ export type UnboundArrayTemplateProps<T extends object> = Omit<
 export const UnboundArrayTemplate = <T extends object>({
   data,
   idField,
-  Wrapper,
+  TemplateWrapper,
   ItemWrapper,
   FieldWrapper,
 }: UnboundArrayTemplateProps<T>) => {
@@ -72,7 +72,7 @@ export const UnboundArrayTemplate = <T extends object>({
     return null;
   }
   return (
-    <Wrapper data={data}>
+    <TemplateWrapper data={data}>
       {data.map((datum) => {
         if (!datum) {
           return null;
@@ -99,7 +99,7 @@ export const UnboundArrayTemplate = <T extends object>({
           </ItemWrapper>
         );
       })}
-    </Wrapper>
+    </TemplateWrapper>
   );
 };
 

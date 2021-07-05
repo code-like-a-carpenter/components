@@ -2,7 +2,11 @@ import React from 'react';
 
 import {IdType, Maybe, NodeLike} from '../..';
 import {useFieldConfiguration} from '../configuration';
-import {FieldWrapperProps, ItemWrapperProps, WrapperProps} from '../support';
+import {
+  FieldWrapperProps,
+  ItemWrapperProps,
+  TemplateWrapperProps,
+} from '../support';
 
 export const ItemWrapper = <T extends object>({
   children,
@@ -14,7 +18,7 @@ export const ItemWrapper = <T extends object>({
 
 export const Wrapper = <T extends unknown>({
   children,
-}: WrapperProps<Maybe<T[]>>) => <ul>{children}</ul>;
+}: TemplateWrapperProps<Maybe<T[]>>) => <ul>{children}</ul>;
 
 export const FieldWrapper = <T extends object, K extends IdType<T>>({
   fieldId,

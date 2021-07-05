@@ -27,7 +27,7 @@ describe('ConnectionTemplate', () => {
           </>
         )}
         ItemWrapper={ItemWrapper}
-        Wrapper={Wrapper}
+        TemplateWrapper={Wrapper}
         FieldWrapper={FieldWrapper}
       />
     );
@@ -58,7 +58,7 @@ describe('ConnectionTemplate', () => {
           </>
         )}
         ItemWrapper={ItemWrapper}
-        Wrapper={Wrapper}
+        TemplateWrapper={Wrapper}
         FieldWrapper={FieldWrapper}
       />
     );
@@ -91,7 +91,7 @@ describe('ConnectionTemplate', () => {
           </>
         )}
         ItemWrapper={ItemWrapper}
-        Wrapper={Wrapper}
+        TemplateWrapper={Wrapper}
         FieldWrapper={FieldWrapper}
       />
     );
@@ -127,7 +127,7 @@ describe('ConnectionTemplate', () => {
           </>
         )}
         ItemWrapper={ItemWrapper}
-        Wrapper={Wrapper}
+        TemplateWrapper={Wrapper}
         FieldWrapper={FieldWrapper}
       />
     );
@@ -148,7 +148,7 @@ describe('ConnectionTemplate', () => {
           </>
         )}
         ItemWrapper={ItemWrapper}
-        Wrapper={Wrapper}
+        TemplateWrapper={Wrapper}
         FieldWrapper={FieldWrapper}
       />
     );

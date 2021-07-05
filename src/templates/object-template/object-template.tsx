@@ -9,21 +9,18 @@ import {
   useConfiguredFieldIds,
   useFieldConfiguration,
 } from '../configuration';
-import {
-  FieldWrapper as FieldWrapperType,
-  Wrapper as WrapperType,
-} from '../support';
+import {FieldWrapperType, TemplateWrapperType} from '../support';
 
 export interface ObjectTemplateProps<T extends object> {
   data: Maybe<T>;
   configure: ConfigureFunction<T>;
-  Wrapper: WrapperType<Maybe<T>>;
+  TemplateWrapper: TemplateWrapperType<Maybe<T>>;
   FieldWrapper: FieldWrapperType<T>;
 }
 
 type WrapObjectItemProps<T extends object> = Omit<
   UnboundObjectTemplateProps<T>,
-  'Wrapper'
+  'TemplateWrapper'
 > & {
   data: T;
   fieldId: string;
@@ -52,7 +49,7 @@ export type UnboundObjectTemplateProps<T extends object> = Omit<
 
 export const UnboundObjectTemplate = <T extends object>({
   data,
-  Wrapper,
+  TemplateWrapper,
   FieldWrapper,
 }: UnboundObjectTemplateProps<T>) => {
   const fieldIds = useConfiguredFieldIds<T>();
@@ -69,12 +66,12 @@ export const UnboundObjectTemplate = <T extends object>({
     />
   ));
 
-  if (typeof Wrapper === 'string') {
-    const Tag = Wrapper as keyof JSX.IntrinsicElements;
+  if (typeof TemplateWrapper === 'string') {
+    const Tag = TemplateWrapper as keyof JSX.IntrinsicElements;
     return <Tag>{children}</Tag>;
   }
 
-  return <Wrapper data={data}>{children}</Wrapper>;
+  return <TemplateWrapper data={data}>{children}</TemplateWrapper>;
 };
 
 export const ObjectTemplate = <T extends object>({

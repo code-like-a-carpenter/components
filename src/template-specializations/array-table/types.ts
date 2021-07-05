@@ -1,5 +1,5 @@
 import {Maybe, IdType, ItemWrapperProps, FieldWrapperProps} from '../..';
-import {WrapperProps} from '../../templates';
+import {TemplateWrapperProps} from '../../templates';
 
 export interface TableProps<T extends object> {
   data: Maybe<Maybe<T>[]>;
@@ -32,7 +32,7 @@ export type ITableHeaderCell<T extends object> = React.ElementType<
   TableHeaderCellProps<T>
 >;
 
-export type TableBodyProps<T extends object> = WrapperProps<Maybe<T>[]>;
+export type TableBodyProps<T extends object> = TemplateWrapperProps<Maybe<T>[]>;
 
 export type ITableBody<T extends object> = React.ElementType<TableBodyProps<T>>;
 

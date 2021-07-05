@@ -23,7 +23,7 @@ export const arrayTemplate = () => (
       </>
     )}
     ItemWrapper={ItemWrapper}
-    Wrapper={Wrapper}
+    TemplateWrapper={Wrapper}
     FieldWrapper={FieldWrapper}
   />
 );
@@ -41,7 +41,7 @@ export const outOfOrder = () => (
       </>
     )}
     ItemWrapper={ItemWrapper}
-    Wrapper={Wrapper}
+    TemplateWrapper={Wrapper}
     FieldWrapper={FieldWrapper}
   />
 );
@@ -66,7 +66,7 @@ export const duplicateFields = () => (
       </>
     )}
     ItemWrapper={ItemWrapper}
-    Wrapper={Wrapper}
+    TemplateWrapper={Wrapper}
     FieldWrapper={FieldWrapper}
   />
 );
@@ -91,7 +91,7 @@ export const nestedData = () => (
       </>
     )}
     ItemWrapper={ItemWrapper}
-    Wrapper={Wrapper}
+    TemplateWrapper={Wrapper}
     FieldWrapper={FieldWrapper}
   />
 );

@@ -101,7 +101,7 @@ const UnboundArrayTable = <T extends object>({
         idField={idField}
         FieldWrapper={TableBodyCell}
         ItemWrapper={TableBodyRow}
-        Wrapper={TableBody}
+        TemplateWrapper={TableBody}
       />
     </Table>
   );

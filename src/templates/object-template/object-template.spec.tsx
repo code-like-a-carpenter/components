@@ -27,7 +27,7 @@ describe('ObjectTemplate', () => {
           </>
         )}
         FieldWrapper={ItemWrapper}
-        Wrapper={Wrapper}
+        TemplateWrapper={Wrapper}
       />
     );
   });
@@ -57,7 +57,7 @@ describe('ObjectTemplate', () => {
           </>
         )}
         FieldWrapper={ItemWrapper}
-        Wrapper={Wrapper}
+        TemplateWrapper={Wrapper}
       />
     );
   });
@@ -78,7 +78,7 @@ describe('ObjectTemplate', () => {
           </>
         )}
         FieldWrapper={ItemWrapper}
-        Wrapper={Wrapper}
+        TemplateWrapper={Wrapper}
       />
     );
   });

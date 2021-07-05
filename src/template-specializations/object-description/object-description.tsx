@@ -32,7 +32,7 @@ export const UnboundObjectDescription = <T extends object>({
   <>
     <UnboundObjectTemplate
       data={data}
-      Wrapper={Wrapper}
+      TemplateWrapper={Wrapper}
       FieldWrapper={FieldWrapper}
     />
   </>

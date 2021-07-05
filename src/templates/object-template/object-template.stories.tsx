@@ -22,7 +22,7 @@ export const objectTemplate = () => (
       </>
     )}
     FieldWrapper={ItemWrapper}
-    Wrapper={Wrapper}
+    TemplateWrapper={Wrapper}
   />
 );
 
@@ -38,7 +38,7 @@ export const outOfOrder = () => (
       </>
     )}
     FieldWrapper={ItemWrapper}
-    Wrapper={Wrapper}
+    TemplateWrapper={Wrapper}
   />
 );
 
@@ -61,7 +61,7 @@ export const duplicateFields = () => (
       </>
     )}
     FieldWrapper={ItemWrapper}
-    Wrapper={Wrapper}
+    TemplateWrapper={Wrapper}
   />
 );
 
@@ -84,6 +84,6 @@ export const nestedData = () => (
       </>
     )}
     FieldWrapper={ItemWrapper}
-    Wrapper={Wrapper}
+    TemplateWrapper={Wrapper}
   />
 );

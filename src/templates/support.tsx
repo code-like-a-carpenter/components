@@ -1,24 +1,16 @@
+import React from 'react';
+
 import {IdType} from '..';
 
 import {FieldConfiguration} from './configuration';
 
-export interface WrapperOwnProps<T> {
+export type TemplateWrapperProps<T> = React.PropsWithChildren<{data: T}>;
+export type TemplateWrapperType<T> = React.ElementType<TemplateWrapperProps<T>>;
+
+export type ItemWrapperProps<T extends object> = React.PropsWithChildren<{
   data: T;
-}
-
-export type WrapperProps<T> = React.PropsWithChildren<WrapperOwnProps<T>>;
-
-export type Wrapper<T> = React.ElementType<WrapperProps<T>>;
-
-export interface ItemWrapperOwnProps<T extends object> {
-  data: T;
-}
-
-export type ItemWrapperProps<T extends object> = React.PropsWithChildren<
-  ItemWrapperOwnProps<T>
->;
-
-export type ItemWrapper<T extends object> = React.ElementType<
+}>;
+export type ItemWrapperType<T extends object> = React.ElementType<
   ItemWrapperProps<T>
 >;
 
@@ -29,8 +21,7 @@ export interface FieldWrapperProps<T extends object, K extends IdType<T>>
   value: T[K];
   data: T;
 }
-
-export interface FieldWrapper<T extends object> {
+export interface FieldWrapperType<T extends object> {
   <T2 extends T, K2 extends IdType<T2>>(
     props: FieldWrapperProps<T2, K2>
   ): React.ReactElement | null;
