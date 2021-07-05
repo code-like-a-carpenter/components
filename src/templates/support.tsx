@@ -5,7 +5,9 @@ import {IdType} from '..';
 import {FieldConfiguration} from './configuration';
 
 export type TemplateWrapperProps<T> = React.PropsWithChildren<{data: T}>;
-export type TemplateWrapperType<T> = React.ElementType<TemplateWrapperProps<T>>;
+export type TemplateWrapperType<T> =
+  | keyof JSX.IntrinsicElements
+  | React.ElementType<TemplateWrapperProps<T>>;
 
 export type ItemWrapperProps<T extends object> = React.PropsWithChildren<{
   item: T;

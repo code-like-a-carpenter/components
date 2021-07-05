@@ -3,7 +3,11 @@ import _ from 'lodash';
 
 import {IdType} from '../types';
 
-import {FieldWrapperType, ItemWrapperType} from './support';
+import {
+  FieldWrapperType,
+  ItemWrapperType,
+  TemplateWrapperType,
+} from './support';
 import {useConfiguredFieldIds, useFieldConfiguration} from './configuration';
 
 export const DefaultWrapper = <T extends object>({
@@ -72,4 +76,33 @@ export const RenderItem = <T extends object>({
   }
 
   return <ItemWrapper item={item}>{children}</ItemWrapper>;
+};
+
+export interface RenderTemplateProps<T extends unknown> {
+  /**
+   * Unlike the other Wrapper render components, the TemplateWrapper needs to
+   * have different behavior depending on if T is an object or array. That logic
+   * is handled in ArrayTemplate or ObjectTemplate and passed to RenderTemplate
+   * as `children`.
+   */
+  children: React.ReactNode;
+  data: T;
+  TemplateWrapper?: TemplateWrapperType<T>;
+}
+
+// I'd rather this was just <T>, but that doesn't work in jsx/tsx files.
+export const RenderTemplate = <T extends unknown>({
+  children,
+  data,
+  TemplateWrapper = DefaultWrapper,
+}: RenderTemplateProps<T>) => {
+  if (typeof TemplateWrapper === 'string') {
+    // It's not clear to me why tsc sees an error with TemplateWrapper here. As
+    // far as I can tell, everything is typed identically to RenderItem and
+    // RenderField.
+    // @ts-expect-error
+    return <TemplateWrapper>{children}</TemplateWrapper>;
+  }
+
+  return <TemplateWrapper data={data}>{children}</TemplateWrapper>;
 };

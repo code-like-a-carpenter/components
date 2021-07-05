@@ -676,47 +676,7 @@ exports[`Storyshots Templates/ArrayTemplate Out Of Order 1`] = `
 `;
 
 exports[`Storyshots Templates/ArrayTemplate Raw Html Wrappers 1`] = `
-<ul
-  data={
-    Array [
-      Object {
-        "age": 9,
-        "firstName": "Joshua",
-        "id": "1c887ce7-df33-419f-ba65-d255867e20db",
-        "lastName": "Jenkins",
-        "signUpDate": 2019-04-21T09:24:38.262Z,
-      },
-      Object {
-        "age": 69,
-        "firstName": "Lennie",
-        "id": "4f6d8ab9-d312-48c9-837a-ef7fe202505b",
-        "lastName": "Krajcik",
-        "signUpDate": 2020-05-21T20:24:48.713Z,
-      },
-      Object {
-        "age": 92,
-        "firstName": "Ophelia",
-        "id": "0759f49b-a6d1-435b-b0db-53ead69330c3",
-        "lastName": "Olson",
-        "signUpDate": 2019-03-05T01:04:28.401Z,
-      },
-      Object {
-        "age": 31,
-        "firstName": "Annabelle",
-        "id": "b19d2e3f-5a5f-4ed3-a61b-862cf60e8cf3",
-        "lastName": "Hamill",
-        "signUpDate": 2020-10-04T14:50:38.937Z,
-      },
-      Object {
-        "age": 83,
-        "firstName": "Foster",
-        "id": "08db873e-9e2a-4d1c-a948-4c1ff3e31709",
-        "lastName": "Runolfsson",
-        "signUpDate": 2020-09-30T22:08:33.801Z,
-      },
-    ]
-  }
->
+<ul>
   <li>
     <ul>
       <li>

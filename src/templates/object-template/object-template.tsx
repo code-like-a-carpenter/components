@@ -7,7 +7,7 @@ import {
   FieldConfigurationProvider,
 } from '../configuration';
 import {FieldWrapperType, TemplateWrapperType} from '../support';
-import {DefaultWrapper, RenderItem} from '../common';
+import {DefaultWrapper, RenderItem, RenderTemplate} from '../common';
 
 export interface ObjectTemplateProps<T extends object> {
   data: Maybe<T>;
@@ -32,20 +32,15 @@ export const UnboundObjectTemplate = <T extends object>({
     return null;
   }
 
-  const children = (
-    <RenderItem
-      item={data}
-      ItemWrapper={ItemWrapper}
-      FieldWrapper={FieldWrapper}
-    />
+  return (
+    <RenderTemplate data={data} TemplateWrapper={TemplateWrapper}>
+      <RenderItem
+        item={data}
+        ItemWrapper={ItemWrapper}
+        FieldWrapper={FieldWrapper}
+      />
+    </RenderTemplate>
   );
-
-  if (typeof TemplateWrapper === 'string') {
-    const Tag = TemplateWrapper as keyof JSX.IntrinsicElements;
-    return <Tag>{children}</Tag>;
-  }
-
-  return <TemplateWrapper data={data}>{children}</TemplateWrapper>;
 };
 
 export const ObjectTemplate = <T extends object>({

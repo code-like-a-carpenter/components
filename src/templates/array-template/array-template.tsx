@@ -7,7 +7,7 @@ import {
   ItemWrapperType,
   TemplateWrapperType,
 } from '../support';
-import {DefaultWrapper, RenderItem} from '../common';
+import {DefaultWrapper, RenderItem, RenderTemplate} from '../common';
 
 export interface ArrayTemplateProps<
   T extends object,
@@ -36,8 +36,9 @@ export const UnboundArrayTemplate = <T extends object>({
   if (!data) {
     return null;
   }
+
   return (
-    <TemplateWrapper data={data}>
+    <RenderTemplate data={data} TemplateWrapper={TemplateWrapper}>
       {data.map((item) => {
         if (!item) {
           return null;
@@ -51,7 +52,7 @@ export const UnboundArrayTemplate = <T extends object>({
           />
         );
       })}
-    </TemplateWrapper>
+    </RenderTemplate>
   );
 };
 
