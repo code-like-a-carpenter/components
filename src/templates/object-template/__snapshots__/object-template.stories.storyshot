@@ -12,7 +12,7 @@ exports[`Storyshots Templates/ObjectTemplate Duplicate Fields 1`] = `
   <dd
     className="description-list__description description-list__description--single"
   >
-    Grover
+    Joshua
   </dd>
   <dt
     className="description-list__term description-list__term--single"
@@ -22,7 +22,7 @@ exports[`Storyshots Templates/ObjectTemplate Duplicate Fields 1`] = `
   <dd
     className="description-list__description description-list__description--single"
   >
-    Dibbert
+    Jenkins
   </dd>
   <dt
     className="description-list__term description-list__term--single"
@@ -32,7 +32,7 @@ exports[`Storyshots Templates/ObjectTemplate Duplicate Fields 1`] = `
   <dd
     className="description-list__description description-list__description--single"
   >
-    1
+    9
   </dd>
   <dt
     className="description-list__term description-list__term--single"
@@ -43,10 +43,10 @@ exports[`Storyshots Templates/ObjectTemplate Duplicate Fields 1`] = `
     className="description-list__description description-list__description--single"
   >
     <time
-      dateTime={"2020-09-03T17:32:19.298Z"}
-      title="2020-09-03T17:32:19+00:00"
+      dateTime={"2019-04-21T09:24:38.262Z"}
+      title="2019-04-21T09:24:38+00:00"
     >
-      September 3, 2020
+      April 21, 2019
     </time>
   </dd>
   <dt
@@ -57,7 +57,7 @@ exports[`Storyshots Templates/ObjectTemplate Duplicate Fields 1`] = `
   <dd
     className="description-list__description description-list__description--single"
   >
-    10304860702
+    53620521738
   </dd>
 </dl>
 `;
@@ -74,7 +74,7 @@ exports[`Storyshots Templates/ObjectTemplate Nested Data 1`] = `
   <dd
     className="description-list__description description-list__description--single"
   >
-    Nadia
+    Milan
   </dd>
   <dt
     className="description-list__term description-list__term--single"
@@ -84,7 +84,7 @@ exports[`Storyshots Templates/ObjectTemplate Nested Data 1`] = `
   <dd
     className="description-list__description description-list__description--single"
   >
-    O'Hara
+    Jenkins
   </dd>
   <dt
     className="description-list__term description-list__term--single"
@@ -95,10 +95,10 @@ exports[`Storyshots Templates/ObjectTemplate Nested Data 1`] = `
     className="description-list__description description-list__description--single"
   >
     <time
-      dateTime={"2021-01-06T07:31:43.083Z"}
-      title="2021-01-06T07:31:43+00:00"
+      dateTime={"2019-04-21T09:24:38.262Z"}
+      title="2019-04-21T09:24:38+00:00"
     >
-      January 6, 2021
+      April 21, 2019
     </time>
   </dd>
   <dt
@@ -109,7 +109,7 @@ exports[`Storyshots Templates/ObjectTemplate Nested Data 1`] = `
   <dd
     className="description-list__description description-list__description--single"
   >
-    26
+    9
   </dd>
 </dl>
 `;
@@ -126,7 +126,7 @@ exports[`Storyshots Templates/ObjectTemplate Object Template 1`] = `
   <dd
     className="description-list__description description-list__description--single"
   >
-    Madie
+    Joshua
   </dd>
   <dt
     className="description-list__term description-list__term--single"
@@ -136,7 +136,7 @@ exports[`Storyshots Templates/ObjectTemplate Object Template 1`] = `
   <dd
     className="description-list__description description-list__description--single"
   >
-    Keeling
+    Jenkins
   </dd>
   <dt
     className="description-list__term description-list__term--single"
@@ -146,7 +146,7 @@ exports[`Storyshots Templates/ObjectTemplate Object Template 1`] = `
   <dd
     className="description-list__description description-list__description--single"
   >
-    52
+    9
   </dd>
   <dt
     className="description-list__term description-list__term--single"
@@ -157,10 +157,10 @@ exports[`Storyshots Templates/ObjectTemplate Object Template 1`] = `
     className="description-list__description description-list__description--single"
   >
     <time
-      dateTime={"2020-10-24T00:56:55.835Z"}
-      title="2020-10-24T00:56:55+00:00"
+      dateTime={"2019-04-21T09:24:38.262Z"}
+      title="2019-04-21T09:24:38+00:00"
     >
-      October 24, 2020
+      April 21, 2019
     </time>
   </dd>
 </dl>
@@ -178,7 +178,7 @@ exports[`Storyshots Templates/ObjectTemplate Out Of Order 1`] = `
   <dd
     className="description-list__description description-list__description--single"
   >
-    Leffler
+    Jenkins
   </dd>
   <dt
     className="description-list__term description-list__term--single"
@@ -188,7 +188,7 @@ exports[`Storyshots Templates/ObjectTemplate Out Of Order 1`] = `
   <dd
     className="description-list__description description-list__description--single"
   >
-    Susan
+    Joshua
   </dd>
   <dt
     className="description-list__term description-list__term--single"
@@ -199,10 +199,10 @@ exports[`Storyshots Templates/ObjectTemplate Out Of Order 1`] = `
     className="description-list__description description-list__description--single"
   >
     <time
-      dateTime={"2020-03-10T04:51:34.948Z"}
-      title="2020-03-10T04:51:34+00:00"
+      dateTime={"2019-04-21T09:24:38.262Z"}
+      title="2019-04-21T09:24:38+00:00"
     >
-      March 10, 2020
+      April 21, 2019
     </time>
   </dd>
   <dt
@@ -213,7 +213,7 @@ exports[`Storyshots Templates/ObjectTemplate Out Of Order 1`] = `
   <dd
     className="description-list__description description-list__description--single"
   >
-    74
+    9
   </dd>
 </dl>
 `;

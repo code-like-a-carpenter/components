@@ -2,8 +2,6 @@ import faker from 'faker';
 
 import {OffsetPageInfo, RelayPageInfo} from './pager/types';
 
-faker.seed(1701);
-
 /**
  * Generates a mathematically valid Offset Page Info
  */

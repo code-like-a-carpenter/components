@@ -29,6 +29,7 @@ module.exports = {
       },
     ],
   ].filter(Boolean),
+  setupFilesAfterEnv: ['<rootDir>/jest.d/setup-files-after-env/faker.ts'],
   testEnvironment: 'jsdom',
   testMatch: [
     '**/src/**/__tests__/**/*.[jt]s?(x)',
