@@ -13,7 +13,7 @@ import {
   ItemWrapperType,
   TemplateWrapperType,
 } from '../support';
-import {DefaultWrapper} from '../common';
+import {DefaultWrapper, RenderField} from '../common';
 
 export interface ArrayTemplateProps<
   T extends object,
@@ -26,38 +26,6 @@ export interface ArrayTemplateProps<
   ItemWrapper?: ItemWrapperType<T>;
   FieldWrapper?: FieldWrapperType<T>;
 }
-
-type WrapFieldProps<T extends object> = Omit<
-  UnboundArrayTemplateProps<T>,
-  'TemplateWrapper' | 'ItemWrapper'
-> & {
-  data: Maybe<T>[];
-  datum: T;
-  fieldId: string;
-};
-
-const WrapField = <T extends object>({
-  datum,
-  fieldId,
-  FieldWrapper = DefaultWrapper,
-  ...rest
-}: WrapFieldProps<T>) => {
-  const {renderer: Renderer, ...config} = useFieldConfiguration(fieldId);
-  const value = _.get(datum, config.keyPath);
-  return (
-    <FieldWrapper
-      fieldId={fieldId}
-      value={value}
-      field={config.keyPath as IdType<T>}
-      renderer={Renderer}
-      {...rest}
-      {...config}
-      item={datum}
-    >
-      <Renderer value={value} />
-    </FieldWrapper>
-  );
-};
 
 export type UnboundArrayTemplateProps<T extends object> = Omit<
   ArrayTemplateProps<T>,
@@ -83,11 +51,9 @@ export const UnboundArrayTemplate = <T extends object>({
         }
 
         const children = fieldIds.map((fieldId) => (
-          <WrapField
-            idField={idField}
+          <RenderField
             key={fieldId}
-            data={data}
-            datum={datum}
+            item={datum}
             fieldId={fieldId}
             FieldWrapper={FieldWrapper}
           />

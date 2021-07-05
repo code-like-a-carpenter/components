@@ -674,3 +674,153 @@ exports[`Storyshots Templates/ArrayTemplate Out Of Order 1`] = `
   </li>
 </ul>
 `;
+
+exports[`Storyshots Templates/ArrayTemplate Raw Html Wrappers 1`] = `
+<ul
+  data={
+    Array [
+      Object {
+        "age": 9,
+        "firstName": "Joshua",
+        "id": "1c887ce7-df33-419f-ba65-d255867e20db",
+        "lastName": "Jenkins",
+        "signUpDate": 2019-04-21T09:24:38.262Z,
+      },
+      Object {
+        "age": 69,
+        "firstName": "Lennie",
+        "id": "4f6d8ab9-d312-48c9-837a-ef7fe202505b",
+        "lastName": "Krajcik",
+        "signUpDate": 2020-05-21T20:24:48.713Z,
+      },
+      Object {
+        "age": 92,
+        "firstName": "Ophelia",
+        "id": "0759f49b-a6d1-435b-b0db-53ead69330c3",
+        "lastName": "Olson",
+        "signUpDate": 2019-03-05T01:04:28.401Z,
+      },
+      Object {
+        "age": 31,
+        "firstName": "Annabelle",
+        "id": "b19d2e3f-5a5f-4ed3-a61b-862cf60e8cf3",
+        "lastName": "Hamill",
+        "signUpDate": 2020-10-04T14:50:38.937Z,
+      },
+      Object {
+        "age": 83,
+        "firstName": "Foster",
+        "id": "08db873e-9e2a-4d1c-a948-4c1ff3e31709",
+        "lastName": "Runolfsson",
+        "signUpDate": 2020-09-30T22:08:33.801Z,
+      },
+    ]
+  }
+>
+  <li>
+    <ul>
+      <li>
+        Joshua
+      </li>
+      <li>
+        Jenkins
+      </li>
+      <li>
+        9
+      </li>
+      <li>
+        <time
+          dateTime={"2019-04-21T09:24:38.262Z"}
+          title="2019-04-21T09:24:38+00:00"
+        >
+          April 21, 2019
+        </time>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        Lennie
+      </li>
+      <li>
+        Krajcik
+      </li>
+      <li>
+        69
+      </li>
+      <li>
+        <time
+          dateTime={"2020-05-21T20:24:48.713Z"}
+          title="2020-05-21T20:24:48+00:00"
+        >
+          May 21, 2020
+        </time>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        Ophelia
+      </li>
+      <li>
+        Olson
+      </li>
+      <li>
+        92
+      </li>
+      <li>
+        <time
+          dateTime={"2019-03-05T01:04:28.401Z"}
+          title="2019-03-05T01:04:28+00:00"
+        >
+          March 5, 2019
+        </time>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        Annabelle
+      </li>
+      <li>
+        Hamill
+      </li>
+      <li>
+        31
+      </li>
+      <li>
+        <time
+          dateTime={"2020-10-04T14:50:38.937Z"}
+          title="2020-10-04T14:50:38+00:00"
+        >
+          October 4, 2020
+        </time>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        Foster
+      </li>
+      <li>
+        Runolfsson
+      </li>
+      <li>
+        83
+      </li>
+      <li>
+        <time
+          dateTime={"2020-09-30T22:08:33.801Z"}
+          title="2020-09-30T22:08:33+00:00"
+        >
+          September 30, 2020
+        </time>
+      </li>
+    </ul>
+  </li>
+</ul>
+`;

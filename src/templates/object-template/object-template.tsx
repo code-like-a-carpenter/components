@@ -1,51 +1,22 @@
-import _ from 'lodash';
 import React from 'react';
 
-import {IdType, Maybe} from '../..';
+import {ItemWrapperType, Maybe} from '../..';
 import {
   ConfigureFunction,
   Configurer,
   FieldConfigurationProvider,
   useConfiguredFieldIds,
-  useFieldConfiguration,
 } from '../configuration';
 import {FieldWrapperType, TemplateWrapperType} from '../support';
-import {DefaultWrapper} from '../common';
+import {DefaultWrapper, RenderField} from '../common';
 
 export interface ObjectTemplateProps<T extends object> {
   data: Maybe<T>;
   configure: ConfigureFunction<T>;
   TemplateWrapper?: TemplateWrapperType<Maybe<T>>;
+  ItemWrapper?: ItemWrapperType<T>;
   FieldWrapper?: FieldWrapperType<T>;
 }
-
-type WrapObjectItemProps<T extends object> = Omit<
-  UnboundObjectTemplateProps<T>,
-  'TemplateWrapper'
-> & {
-  data: T;
-  fieldId: string;
-};
-const WrapObjectItem = <T extends object>({
-  fieldId,
-  FieldWrapper = DefaultWrapper,
-  data,
-}: WrapObjectItemProps<T>) => {
-  const {renderer: Renderer, ...config} = useFieldConfiguration(fieldId);
-  const value = _.get(data, config.keyPath);
-  return (
-    <FieldWrapper
-      item={data}
-      fieldId={fieldId}
-      field={config.keyPath as IdType<T>}
-      value={value}
-      renderer={Renderer}
-      {...config}
-    >
-      <Renderer value={value} />
-    </FieldWrapper>
-  );
-};
 
 export type UnboundObjectTemplateProps<T extends object> = Omit<
   ObjectTemplateProps<T>,
@@ -55,6 +26,7 @@ export type UnboundObjectTemplateProps<T extends object> = Omit<
 export const UnboundObjectTemplate = <T extends object>({
   data,
   TemplateWrapper = DefaultWrapper,
+  ItemWrapper = DefaultWrapper,
   FieldWrapper,
 }: UnboundObjectTemplateProps<T>) => {
   const fieldIds = useConfiguredFieldIds<T>();
@@ -63,9 +35,9 @@ export const UnboundObjectTemplate = <T extends object>({
   }
 
   const children = fieldIds.map((fieldId) => (
-    <WrapObjectItem
+    <RenderField
       key={fieldId}
-      data={data}
+      item={data}
       fieldId={fieldId}
       FieldWrapper={FieldWrapper}
     />

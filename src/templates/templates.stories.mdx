@@ -143,7 +143,7 @@ and then, your code is simply
 ```tsx
 <TemplatedDescriptionList
   data={data?.node?.myConnection?.edges?.[0]}
-  configure={({FieldcConfigurer}) => (
+  configure={({FieldConfigurer}) => (
     <>
       <FieldConfigurer name="foo" />
       <FieldConfigurer name="bar" />
@@ -156,11 +156,18 @@ and then, your code is simply
 These are fairly contrived examples, and there's a lot missing from the
 `TemplatedDescriptionList` (e.g., we should expect renderProps for transforming
 both the key and the value and it would probably better to wrap
-ConditionalDescription instead of Description). Further, the FieldConfigurer
+ConditionalDescription instead of Description).
 
-<!-- Notes -->
+## Interfaces
 
-interface FieldConfigurer { /\*\*
+Each Template accepts three Wrappers. In general, Wrappers should take care to
+render their `children`, as that's where the next lower Wrapper will be
+rendered, however in custom cases, it may make sense to discard the lower-level
+Wrappers and do the whole thing at one shot.
 
-- Renders the whole k/v pair. We might use this to replace the \*/ renderPair:
-  void; renderKey: void; renderValue: void }
+- `TemplateWrapper` - Wraps the entire dataset.
+- `ItemWrapper` - Wraps a single item in the dataset. If the dataset is an
+   array, this wraps an item in the array. If the dataset is an object, this
+   wraps the entire object.
+- `FieldWrapper` - Wraps a single field.
+

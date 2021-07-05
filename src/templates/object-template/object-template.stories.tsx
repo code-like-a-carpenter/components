@@ -115,3 +115,24 @@ defaultNoOp.parameters = {
     },
   },
 };
+
+export const rawHtmlWrappers = () => (
+  <ObjectTemplate
+    data={makeSimplePerson()}
+    configure={({FieldConfigurer}) => (
+      <>
+        <FieldConfigurer field="firstName" />
+        <FieldConfigurer field="lastName" />
+        <FieldConfigurer field="age" />
+        <FieldConfigurer field="signUpDate" />
+      </>
+    )}
+    TemplateWrapper="ul"
+    ItemWrapper={({children}) => (
+      <li>
+        <ul>{children}</ul>
+      </li>
+    )}
+    FieldWrapper="li"
+  />
+);
