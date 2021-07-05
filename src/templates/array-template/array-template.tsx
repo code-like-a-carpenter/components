@@ -52,7 +52,7 @@ const WrapField = <T extends object>({
       renderer={Renderer}
       {...rest}
       {...config}
-      data={datum}
+      item={datum}
     >
       <Renderer value={value} />
     </FieldWrapper>
@@ -98,7 +98,7 @@ export const UnboundArrayTemplate = <T extends object>({
         }
 
         return (
-          <ItemWrapper key={String(datum[idField])} data={datum}>
+          <ItemWrapper key={String(datum[idField])} item={datum}>
             {children}
           </ItemWrapper>
         );

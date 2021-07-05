@@ -35,7 +35,7 @@ const WrapObjectItem = <T extends object>({
   const value = _.get(data, config.keyPath);
   return (
     <FieldWrapper
-      data={data}
+      item={data}
       fieldId={fieldId}
       field={config.keyPath as IdType<T>}
       value={value}

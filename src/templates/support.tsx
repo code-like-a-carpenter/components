@@ -8,7 +8,7 @@ export type TemplateWrapperProps<T> = React.PropsWithChildren<{data: T}>;
 export type TemplateWrapperType<T> = React.ElementType<TemplateWrapperProps<T>>;
 
 export type ItemWrapperProps<T extends object> = React.PropsWithChildren<{
-  data: T;
+  item: T;
 }>;
 export type ItemWrapperType<T extends object> = React.ElementType<
   ItemWrapperProps<T>
@@ -22,7 +22,7 @@ export type FieldWrapperProps<
     fieldId: string;
     field: K;
     value: T[K];
-    data: T;
+    item: T;
   }
 >;
 export type FieldWrapperType<T extends object> =
