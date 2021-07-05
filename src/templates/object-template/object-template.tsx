@@ -5,10 +5,9 @@ import {
   ConfigureFunction,
   Configurer,
   FieldConfigurationProvider,
-  useConfiguredFieldIds,
 } from '../configuration';
 import {FieldWrapperType, TemplateWrapperType} from '../support';
-import {DefaultWrapper, RenderField} from '../common';
+import {DefaultWrapper, RenderItem} from '../common';
 
 export interface ObjectTemplateProps<T extends object> {
   data: Maybe<T>;
@@ -27,21 +26,19 @@ export const UnboundObjectTemplate = <T extends object>({
   data,
   TemplateWrapper = DefaultWrapper,
   ItemWrapper = DefaultWrapper,
-  FieldWrapper,
+  FieldWrapper = DefaultWrapper,
 }: UnboundObjectTemplateProps<T>) => {
-  const fieldIds = useConfiguredFieldIds<T>();
   if (!data) {
     return null;
   }
 
-  const children = fieldIds.map((fieldId) => (
-    <RenderField
-      key={fieldId}
+  const children = (
+    <RenderItem
       item={data}
-      fieldId={fieldId}
+      ItemWrapper={ItemWrapper}
       FieldWrapper={FieldWrapper}
     />
-  ));
+  );
 
   if (typeof TemplateWrapper === 'string') {
     const Tag = TemplateWrapper as keyof JSX.IntrinsicElements;

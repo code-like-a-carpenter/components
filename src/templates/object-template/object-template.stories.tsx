@@ -136,3 +136,11 @@ export const rawHtmlWrappers = () => (
     FieldWrapper="li"
   />
 );
+rawHtmlWrappers.parameters = {
+  docs: {
+    description: {
+      story:
+        "> Note that the ItemWrapper here is kinda silly; it's here primarily to confirm that it works. For real-world use of ObjectTemplates, you'd probably omit the `ItemWrapper` and just include the `TemplateWrapper` and `FieldWrapper`.",
+    },
+  },
+};

@@ -235,21 +235,25 @@ exports[`Storyshots Templates/ObjectTemplate Out Of Order 1`] = `
 exports[`Storyshots Templates/ObjectTemplate Raw Html Wrappers 1`] = `
 <ul>
   <li>
-    Joshua
-  </li>
-  <li>
-    Jenkins
-  </li>
-  <li>
-    9
-  </li>
-  <li>
-    <time
-      dateTime={"2019-04-21T09:24:38.262Z"}
-      title="2019-04-21T09:24:38+00:00"
-    >
-      April 21, 2019
-    </time>
+    <ul>
+      <li>
+        Joshua
+      </li>
+      <li>
+        Jenkins
+      </li>
+      <li>
+        9
+      </li>
+      <li>
+        <time
+          dateTime={"2019-04-21T09:24:38.262Z"}
+          title="2019-04-21T09:24:38+00:00"
+        >
+          April 21, 2019
+        </time>
+      </li>
+    </ul>
   </li>
 </ul>
 `;

@@ -3,8 +3,8 @@ import _ from 'lodash';
 
 import {IdType} from '../types';
 
-import {FieldWrapperType} from './support';
-import {useFieldConfiguration} from './configuration';
+import {FieldWrapperType, ItemWrapperType} from './support';
+import {useConfiguredFieldIds, useFieldConfiguration} from './configuration';
 
 export const DefaultWrapper = <T extends object>({
   children,
@@ -43,4 +43,33 @@ export const RenderField = <T extends object>({
       <Renderer value={value} />
     </FieldWrapper>
   );
+};
+
+export interface RenderItemProps<T extends object> {
+  item: T;
+  ItemWrapper?: ItemWrapperType<T>;
+  FieldWrapper?: FieldWrapperType<T>;
+}
+
+export const RenderItem = <T extends object>({
+  item,
+  ItemWrapper = DefaultWrapper,
+  FieldWrapper = DefaultWrapper,
+}: RenderItemProps<T>) => {
+  const fieldIds = useConfiguredFieldIds<T>();
+
+  const children = fieldIds.map((fieldId) => (
+    <RenderField
+      key={fieldId}
+      item={item}
+      fieldId={fieldId}
+      FieldWrapper={FieldWrapper}
+    />
+  ));
+
+  if (typeof ItemWrapper === 'string') {
+    return <ItemWrapper>{children}</ItemWrapper>;
+  }
+
+  return <ItemWrapper item={item}>{children}</ItemWrapper>;
 };

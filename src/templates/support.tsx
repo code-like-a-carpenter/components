@@ -10,9 +10,9 @@ export type TemplateWrapperType<T> = React.ElementType<TemplateWrapperProps<T>>;
 export type ItemWrapperProps<T extends object> = React.PropsWithChildren<{
   item: T;
 }>;
-export type ItemWrapperType<T extends object> = React.ElementType<
-  ItemWrapperProps<T>
->;
+export type ItemWrapperType<T extends object> =
+  | keyof JSX.IntrinsicElements
+  | React.ElementType<ItemWrapperProps<T>>;
 
 export type FieldWrapperProps<
   T extends object,
