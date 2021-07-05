@@ -64,6 +64,14 @@ export const duplicateFields = () => (
     TemplateWrapper={Wrapper}
   />
 );
+duplicateFields.parameters = {
+  docs: {
+    description: {
+      story:
+        'In this example, we configure the `signUpDate` property twice. First, we simply render it as a date, but then we configure it again and render as a Unix Epoch.',
+    },
+  },
+};
 
 export const nestedData = () => (
   <ObjectTemplate
