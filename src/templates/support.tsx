@@ -25,11 +25,8 @@ export type FieldWrapperProps<
     data: T;
   }
 >;
-export type FieldWrapperType<T extends object> = <
-  T2 extends T,
-  K2 extends IdType<T2>
->(
-  props: FieldWrapperProps<T2, K2>
-) => React.ReactElement | null;
-
-export const DefaultWrapper: React.FC = ({children}) => <>{children}</>;
+export type FieldWrapperType<T extends object> =
+  | keyof JSX.IntrinsicElements
+  | (<T2 extends T, K2 extends IdType<T2>>(
+      props: FieldWrapperProps<T2, K2>
+    ) => React.ReactElement | null);

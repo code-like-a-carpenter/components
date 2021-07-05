@@ -1,5 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Templates/ObjectTemplate Default No Op 1`] = `
+Array [
+  "Joshua",
+  "Jenkins",
+  "9",
+  <time
+    dateTime={"2019-04-21T09:24:38.262Z"}
+    title="2019-04-21T09:24:38+00:00"
+  >
+    April 21, 2019
+  </time>,
+]
+`;
+
 exports[`Storyshots Templates/ObjectTemplate Duplicate Fields 1`] = `
 <dl
   className="description-list"

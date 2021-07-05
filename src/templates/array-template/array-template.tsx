@@ -13,6 +13,7 @@ import {
   ItemWrapperType,
   TemplateWrapperType,
 } from '../support';
+import {DefaultWrapper} from '../common';
 
 export interface ArrayTemplateProps<
   T extends object,
@@ -21,9 +22,9 @@ export interface ArrayTemplateProps<
   data: Maybe<Maybe<T>[]>;
   idField: K;
   configure: ConfigureFunction<T>;
-  TemplateWrapper: TemplateWrapperType<Maybe<T>[]>;
-  ItemWrapper: ItemWrapperType<T>;
-  FieldWrapper: FieldWrapperType<T>;
+  TemplateWrapper?: TemplateWrapperType<Maybe<T>[]>;
+  ItemWrapper?: ItemWrapperType<T>;
+  FieldWrapper?: FieldWrapperType<T>;
 }
 
 type WrapFieldProps<T extends object> = Omit<
@@ -38,7 +39,7 @@ type WrapFieldProps<T extends object> = Omit<
 const WrapField = <T extends object>({
   datum,
   fieldId,
-  FieldWrapper,
+  FieldWrapper = DefaultWrapper,
   ...rest
 }: WrapFieldProps<T>) => {
   const {renderer: Renderer, ...config} = useFieldConfiguration(fieldId);
@@ -66,8 +67,8 @@ export type UnboundArrayTemplateProps<T extends object> = Omit<
 export const UnboundArrayTemplate = <T extends object>({
   data,
   idField,
-  TemplateWrapper,
-  ItemWrapper,
+  TemplateWrapper = DefaultWrapper,
+  ItemWrapper = DefaultWrapper,
   FieldWrapper,
 }: UnboundArrayTemplateProps<T>) => {
   const fieldIds = useConfiguredFieldIds<T>();

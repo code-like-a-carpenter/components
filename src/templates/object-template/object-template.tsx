@@ -10,12 +10,13 @@ import {
   useFieldConfiguration,
 } from '../configuration';
 import {FieldWrapperType, TemplateWrapperType} from '../support';
+import {DefaultWrapper} from '../common';
 
 export interface ObjectTemplateProps<T extends object> {
   data: Maybe<T>;
   configure: ConfigureFunction<T>;
-  TemplateWrapper: TemplateWrapperType<Maybe<T>>;
-  FieldWrapper: FieldWrapperType<T>;
+  TemplateWrapper?: TemplateWrapperType<Maybe<T>>;
+  FieldWrapper?: FieldWrapperType<T>;
 }
 
 type WrapObjectItemProps<T extends object> = Omit<
@@ -27,7 +28,7 @@ type WrapObjectItemProps<T extends object> = Omit<
 };
 const WrapObjectItem = <T extends object>({
   fieldId,
-  FieldWrapper,
+  FieldWrapper = DefaultWrapper,
   data,
 }: WrapObjectItemProps<T>) => {
   const {renderer: Renderer, ...config} = useFieldConfiguration(fieldId);
@@ -53,7 +54,7 @@ export type UnboundObjectTemplateProps<T extends object> = Omit<
 
 export const UnboundObjectTemplate = <T extends object>({
   data,
-  TemplateWrapper,
+  TemplateWrapper = DefaultWrapper,
   FieldWrapper,
 }: UnboundObjectTemplateProps<T>) => {
   const fieldIds = useConfiguredFieldIds<T>();

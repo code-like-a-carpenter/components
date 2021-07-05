@@ -93,3 +93,25 @@ export const nestedData = () => (
     TemplateWrapper={TemplateWrapper}
   />
 );
+
+export const defaultNoOp = () => (
+  <ObjectTemplate
+    data={makeSimplePerson()}
+    configure={({FieldConfigurer}) => (
+      <>
+        <FieldConfigurer field="firstName" />
+        <FieldConfigurer field="lastName" />
+        <FieldConfigurer field="age" />
+        <FieldConfigurer field="signUpDate" />
+      </>
+    )}
+  />
+);
+defaultNoOp.parameters = {
+  docs: {
+    description: {
+      story:
+        "If Wrappers are not provided, the Template will still render _something_. It almost certainly won't be pretty, but after using Templates in the wild, it became clear that a lost of specialization might not need full customizations, so adding noop-rendering makes a lot of implementations much easier.",
+    },
+  },
+};
