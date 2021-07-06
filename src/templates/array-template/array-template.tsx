@@ -19,22 +19,21 @@ export interface ArrayTemplateProps<
   TemplateWrapper?: TemplateWrapperType<Maybe<T>[]>;
   ItemWrapper?: ItemWrapperType<T>;
   FieldWrapper?: FieldWrapperType<T>;
+  noDataSlot?: React.ReactElement;
 }
 
 export const ArrayTemplate = <T extends object>({
   data,
   configure: Configure,
   idField,
+  noDataSlot,
   TemplateWrapper = DefaultWrapper,
   ItemWrapper = DefaultWrapper,
   FieldWrapper = DefaultWrapper,
-}: ArrayTemplateProps<T>) => {
-  if (!data) {
-    return null;
-  }
-  return (
-    <FieldConfigurationProvider>
-      {Configure && <Configure FieldConfigurer={Configurer} />}
+}: ArrayTemplateProps<T>) => (
+  <FieldConfigurationProvider>
+    {Configure && <Configure FieldConfigurer={Configurer} />}
+    {data?.length ? (
       <RenderTemplate data={data} TemplateWrapper={TemplateWrapper}>
         {data.map((item) => {
           if (!item) {
@@ -50,6 +49,8 @@ export const ArrayTemplate = <T extends object>({
           );
         })}
       </RenderTemplate>
-    </FieldConfigurationProvider>
-  );
-};
+    ) : (
+      noDataSlot
+    )}
+  </FieldConfigurationProvider>
+);

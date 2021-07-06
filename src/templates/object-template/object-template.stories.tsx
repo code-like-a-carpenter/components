@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {makeComplexPerson, makeSimplePerson} from '../../mocks';
+import {makeComplexPerson, makeSimplePerson, SimplePerson} from '../../mocks';
 
 import {ObjectTemplate} from './object-template';
 import {FieldWrapper, TemplateWrapper} from './support';
@@ -144,3 +144,18 @@ rawHtmlWrappers.parameters = {
     },
   },
 };
+
+export const nullData = () => (
+  <ObjectTemplate<SimplePerson>
+    data={null}
+    configure={({FieldConfigurer}) => (
+      <>
+        <FieldConfigurer field="firstName" />
+        <FieldConfigurer field="lastName" />
+        <FieldConfigurer field="age" />
+        <FieldConfigurer field="signUpDate" />
+      </>
+    )}
+    noDataSlot={<>No data received</>}
+  />
+);

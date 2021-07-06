@@ -375,6 +375,8 @@ exports[`Storyshots Templates/ArrayTemplate Duplicate Fields 1`] = `
 </ul>
 `;
 
+exports[`Storyshots Templates/ArrayTemplate Empty Data 1`] = `"No data received"`;
+
 exports[`Storyshots Templates/ArrayTemplate Nested Data 1`] = `
 <ul>
   <li>
@@ -524,6 +526,8 @@ exports[`Storyshots Templates/ArrayTemplate Nested Data 1`] = `
   </li>
 </ul>
 `;
+
+exports[`Storyshots Templates/ArrayTemplate Null Data 1`] = `"No data received"`;
 
 exports[`Storyshots Templates/ArrayTemplate Out Of Order 1`] = `
 <ul>

@@ -15,30 +15,29 @@ export interface ObjectTemplateProps<T extends object> {
   TemplateWrapper?: TemplateWrapperType<Maybe<T>>;
   ItemWrapper?: ItemWrapperType<T>;
   FieldWrapper?: FieldWrapperType<T>;
+  noDataSlot?: React.ReactElement;
 }
 
 export const ObjectTemplate = <T extends object>({
   configure: Configure,
   data,
+  noDataSlot,
   TemplateWrapper = DefaultWrapper,
   ItemWrapper = DefaultWrapper,
   FieldWrapper = DefaultWrapper,
-}: ObjectTemplateProps<T>) => {
-  if (!data) {
-    return null;
-  }
-  return (
-    <>
-      <FieldConfigurationProvider>
-        {Configure && <Configure FieldConfigurer={Configurer} />}
-        <RenderTemplate data={data} TemplateWrapper={TemplateWrapper}>
-          <RenderItem
-            item={data}
-            ItemWrapper={ItemWrapper}
-            FieldWrapper={FieldWrapper}
-          />
-        </RenderTemplate>
-      </FieldConfigurationProvider>
-    </>
-  );
-};
+}: ObjectTemplateProps<T>) => (
+  <FieldConfigurationProvider>
+    {Configure && <Configure FieldConfigurer={Configurer} />}
+    {data ? (
+      <RenderTemplate data={data} TemplateWrapper={TemplateWrapper}>
+        <RenderItem
+          item={data}
+          ItemWrapper={ItemWrapper}
+          FieldWrapper={FieldWrapper}
+        />
+      </RenderTemplate>
+    ) : (
+      noDataSlot
+    )}
+  </FieldConfigurationProvider>
+);

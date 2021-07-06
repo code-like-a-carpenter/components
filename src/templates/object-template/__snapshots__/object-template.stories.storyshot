@@ -128,6 +128,8 @@ exports[`Storyshots Templates/ObjectTemplate Nested Data 1`] = `
 </dl>
 `;
 
+exports[`Storyshots Templates/ObjectTemplate Null Data 1`] = `"No data received"`;
+
 exports[`Storyshots Templates/ObjectTemplate Object Template 1`] = `
 <dl
   className="description-list"

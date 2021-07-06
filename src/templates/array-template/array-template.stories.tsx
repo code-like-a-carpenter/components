@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {makeComplexPeople, makeSimplePeople} from '../../mocks';
+import {makeComplexPeople, makeSimplePeople, SimplePerson} from '../../mocks';
 
 import {ArrayTemplate} from './array-template';
 import {FieldWrapper, ItemWrapper, Wrapper} from './support';
@@ -138,5 +138,37 @@ export const rawHtmlWrappers = () => (
       </li>
     )}
     FieldWrapper="li"
+  />
+);
+
+export const nullData = () => (
+  <ArrayTemplate<SimplePerson>
+    idField="id"
+    data={null}
+    configure={({FieldConfigurer}) => (
+      <>
+        <FieldConfigurer field="firstName" />
+        <FieldConfigurer field="lastName" />
+        <FieldConfigurer field="age" />
+        <FieldConfigurer field="signUpDate" />
+      </>
+    )}
+    noDataSlot={<>No data received</>}
+  />
+);
+
+export const emptyData = () => (
+  <ArrayTemplate<SimplePerson>
+    idField="id"
+    data={[]}
+    configure={({FieldConfigurer}) => (
+      <>
+        <FieldConfigurer field="firstName" />
+        <FieldConfigurer field="lastName" />
+        <FieldConfigurer field="age" />
+        <FieldConfigurer field="signUpDate" />
+      </>
+    )}
+    noDataSlot={<>No data received</>}
   />
 );

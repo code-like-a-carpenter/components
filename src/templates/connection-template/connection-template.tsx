@@ -15,6 +15,7 @@ export interface ConnectionTemplateProps<N extends NodeLike, PI> {
   TemplateWrapper?: TemplateWrapperType<Maybe<N>[]>;
   ItemWrapper?: ItemWrapperType<N>;
   FieldWrapper?: FieldWrapperType<N>;
+  noDataSlot?: React.ReactElement;
 }
 
 export const ConnectionTemplate = <N extends NodeLike, PI>({
