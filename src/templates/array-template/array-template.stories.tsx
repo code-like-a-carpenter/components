@@ -172,3 +172,26 @@ export const emptyData = () => (
     noDataSlot={<>No data received</>}
   />
 );
+
+export const customFieldWrapper = () => (
+  <ArrayTemplate
+    idField="id"
+    data={makeSimplePeople(5)}
+    configure={({FieldConfigurer}) => (
+      <>
+        <FieldConfigurer
+          field="firstName"
+          wrapper={({children}) => (
+            <div style={{textTransform: 'uppercase'}}>{children}</div>
+          )}
+        />
+        <FieldConfigurer field="lastName" />
+        <FieldConfigurer field="age" />
+        <FieldConfigurer field="signUpDate" />
+      </>
+    )}
+    ItemWrapper={ItemWrapper}
+    TemplateWrapper={Wrapper}
+    FieldWrapper={FieldWrapper}
+  />
+);

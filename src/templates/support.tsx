@@ -20,7 +20,7 @@ export type FieldWrapperProps<
   T extends object,
   K extends IdType<T>
 > = React.PropsWithChildren<
-  FieldConfiguration & {
+  Omit<FieldConfiguration, 'wrapper'> & {
     fieldId: string;
     field: K;
     value: T[K];

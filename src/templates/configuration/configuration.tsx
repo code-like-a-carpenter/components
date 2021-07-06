@@ -1,13 +1,14 @@
 import {startCase} from 'lodash';
 import React, {useContext} from 'react';
 
-import {AnyRenderer} from '../..';
+import {AnyRenderer, FieldWrapperType} from '../..';
 import {Renderer} from '../../renderers';
 
 export type FieldConfiguration = {
   label: React.ReactNode;
   keyPath: string;
   renderer: Renderer;
+  wrapper?: FieldWrapperType<object>;
 };
 
 export type FieldConfigurationWithDefaults = Partial<FieldConfiguration>;

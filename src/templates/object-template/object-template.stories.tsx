@@ -159,3 +159,22 @@ export const nullData = () => (
     noDataSlot={<>No data received</>}
   />
 );
+
+export const customFieldWrapper = () => (
+  <ObjectTemplate<SimplePerson>
+    data={makeSimplePerson()}
+    configure={({FieldConfigurer}) => (
+      <>
+        <FieldConfigurer
+          field="firstName"
+          wrapper={({children}) => (
+            <div style={{textTransform: 'uppercase'}}>{children}</div>
+          )}
+        />
+        <FieldConfigurer field="lastName" />
+        <FieldConfigurer field="age" />
+        <FieldConfigurer field="signUpDate" />
+      </>
+    )}
+  />
+);

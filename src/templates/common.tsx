@@ -25,18 +25,24 @@ export const RenderField = <T extends object>({
   FieldWrapper = DefaultWrapper,
   item,
 }: RenderFieldProps<T>) => {
-  const {renderer: Renderer, ...config} = useFieldConfiguration(fieldId);
+  const {
+    renderer: Renderer,
+    wrapper,
+    ...config
+  } = useFieldConfiguration(fieldId);
   const value = _.get(item, config.keyPath);
-  if (typeof FieldWrapper === 'string') {
+
+  const Wrapper = wrapper || FieldWrapper;
+  if (typeof Wrapper === 'string') {
     return (
-      <FieldWrapper>
+      <Wrapper>
         <Renderer value={value} />
-      </FieldWrapper>
+      </Wrapper>
     );
   }
 
   return (
-    <FieldWrapper
+    <Wrapper
       fieldId={fieldId}
       field={config.keyPath as IdType<T>}
       item={item}
@@ -45,7 +51,7 @@ export const RenderField = <T extends object>({
       {...config}
     >
       <Renderer value={value} />
-    </FieldWrapper>
+    </Wrapper>
   );
 };
 
