@@ -17,40 +17,28 @@ export interface ObjectTemplateProps<T extends object> {
   FieldWrapper?: FieldWrapperType<T>;
 }
 
-export type UnboundObjectTemplateProps<T extends object> = Omit<
-  ObjectTemplateProps<T>,
-  'configure'
->;
-
-export const UnboundObjectTemplate = <T extends object>({
+export const ObjectTemplate = <T extends object>({
+  configure: Configure,
   data,
   TemplateWrapper = DefaultWrapper,
   ItemWrapper = DefaultWrapper,
   FieldWrapper = DefaultWrapper,
-}: UnboundObjectTemplateProps<T>) => {
+}: ObjectTemplateProps<T>) => {
   if (!data) {
     return null;
   }
-
   return (
-    <RenderTemplate data={data} TemplateWrapper={TemplateWrapper}>
-      <RenderItem
-        item={data}
-        ItemWrapper={ItemWrapper}
-        FieldWrapper={FieldWrapper}
-      />
-    </RenderTemplate>
+    <>
+      <FieldConfigurationProvider>
+        <Configure FieldConfigurer={Configurer} />
+        <RenderTemplate data={data} TemplateWrapper={TemplateWrapper}>
+          <RenderItem
+            item={data}
+            ItemWrapper={ItemWrapper}
+            FieldWrapper={FieldWrapper}
+          />
+        </RenderTemplate>
+      </FieldConfigurationProvider>
+    </>
   );
 };
-
-export const ObjectTemplate = <T extends object>({
-  configure: Configure,
-  ...rest
-}: ObjectTemplateProps<T>) => (
-  <>
-    <FieldConfigurationProvider>
-      <Configure FieldConfigurer={Configurer} />
-      <UnboundObjectTemplate {...rest} />
-    </FieldConfigurationProvider>
-  </>
-);
