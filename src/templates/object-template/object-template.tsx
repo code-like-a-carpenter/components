@@ -11,7 +11,7 @@ import {DefaultWrapper, RenderItem, RenderTemplate} from '../common';
 
 export interface ObjectTemplateProps<T extends object> {
   data: Maybe<T>;
-  configure: ConfigureFunction<T>;
+  configure?: ConfigureFunction<T>;
   TemplateWrapper?: TemplateWrapperType<Maybe<T>>;
   ItemWrapper?: ItemWrapperType<T>;
   FieldWrapper?: FieldWrapperType<T>;
@@ -30,7 +30,7 @@ export const ObjectTemplate = <T extends object>({
   return (
     <>
       <FieldConfigurationProvider>
-        <Configure FieldConfigurer={Configurer} />
+        {Configure && <Configure FieldConfigurer={Configurer} />}
         <RenderTemplate data={data} TemplateWrapper={TemplateWrapper}>
           <RenderItem
             item={data}

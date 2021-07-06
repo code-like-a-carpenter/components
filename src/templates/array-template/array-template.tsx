@@ -15,7 +15,7 @@ export interface ArrayTemplateProps<
 > {
   data: Maybe<Maybe<T>[]>;
   idField: K;
-  configure: ConfigureFunction<T>;
+  configure?: ConfigureFunction<T>;
   TemplateWrapper?: TemplateWrapperType<Maybe<T>[]>;
   ItemWrapper?: ItemWrapperType<T>;
   FieldWrapper?: FieldWrapperType<T>;
@@ -34,7 +34,7 @@ export const ArrayTemplate = <T extends object>({
   }
   return (
     <FieldConfigurationProvider>
-      <Configure FieldConfigurer={Configurer} />
+      {Configure && <Configure FieldConfigurer={Configurer} />}
       <RenderTemplate data={data} TemplateWrapper={TemplateWrapper}>
         {data.map((item) => {
           if (!item) {
