@@ -1,5 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Templates/ObjectTemplate Custom Field Wrapper 1`] = `
+Array [
+  <div
+    style={
+      Object {
+        "textTransform": "uppercase",
+      }
+    }
+  >
+    Joshua
+  </div>,
+  "Jenkins",
+  "9",
+  <time
+    dateTime={"2019-04-21T09:24:38.262Z"}
+    title="2019-04-21T09:24:38+00:00"
+  >
+    April 21, 2019
+  </time>,
+]
+`;
+
+exports[`Storyshots Templates/ObjectTemplate Default No Op 1`] = `
+Array [
+  "Joshua",
+  "Jenkins",
+  "9",
+  <time
+    dateTime={"2019-04-21T09:24:38.262Z"}
+    title="2019-04-21T09:24:38+00:00"
+  >
+    April 21, 2019
+  </time>,
+]
+`;
+
 exports[`Storyshots Templates/ObjectTemplate Duplicate Fields 1`] = `
 <dl
   className="description-list"
@@ -52,12 +88,12 @@ exports[`Storyshots Templates/ObjectTemplate Duplicate Fields 1`] = `
   <dt
     className="description-list__term description-list__term--single"
   >
-    Seconds since signup
+    Epoch Time
   </dt>
   <dd
     className="description-list__description description-list__description--single"
   >
-    53620521738
+    1555838678262
   </dd>
 </dl>
 `;
@@ -113,6 +149,8 @@ exports[`Storyshots Templates/ObjectTemplate Nested Data 1`] = `
   </dd>
 </dl>
 `;
+
+exports[`Storyshots Templates/ObjectTemplate Null Data 1`] = `"No data received"`;
 
 exports[`Storyshots Templates/ObjectTemplate Object Template 1`] = `
 <dl
@@ -216,4 +254,30 @@ exports[`Storyshots Templates/ObjectTemplate Out Of Order 1`] = `
     9
   </dd>
 </dl>
+`;
+
+exports[`Storyshots Templates/ObjectTemplate Raw Html Wrappers 1`] = `
+<ul>
+  <li>
+    <ul>
+      <li>
+        Joshua
+      </li>
+      <li>
+        Jenkins
+      </li>
+      <li>
+        9
+      </li>
+      <li>
+        <time
+          dateTime={"2019-04-21T09:24:38.262Z"}
+          title="2019-04-21T09:24:38+00:00"
+        >
+          April 21, 2019
+        </time>
+      </li>
+    </ul>
+  </li>
+</ul>
 `;

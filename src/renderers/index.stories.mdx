@@ -19,7 +19,7 @@ table. Our CSV parser could recognize column headings, numbers, dates, and
 possibly even booleans, but if we don't know a field's type a priori, then we
 can't apply appropriate formatting.
 
-Renders are type-specific components that do close to the right thing when we
+Renderers are type-specific components that do close to the right thing when we
 can't know exactly what the data looks in advance.
 
 All renderers must accept a `value` prop. Renderers may accept additional
@@ -70,7 +70,7 @@ have no idea what data we might get? Enter the `AnyRenderer`
   </React.Fragment>
 </Canvas>
 
-Now, with the `AnyRenderer`, we put put any arbitrary data on a page and get
+Now, with the `AnyRenderer`, we can put any arbitrary data on a page and get
 something fairly reasonable. Most of its per-type renderers support
 customization, so if we have a partial understanding of our data, we can
 customize appropriately via the Context and programmatically drive our output.

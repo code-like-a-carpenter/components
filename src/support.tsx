@@ -21,24 +21,6 @@ export function useContextWithDefaults<T>(
 }
 
 /**
- * Placeholder. Eventually, this will also include React.ComponentType so that
- * we can make dynamic defaults (for example, perhaps we'd want to truncate
- * strings over a certain length).
- */
-export type RendererDefault = React.ReactNode;
-
-export type RendererProps<
-  T extends unknown = unknown,
-  C = unknown
-> = Partial<C> & {
-  value: T;
-};
-
-export type Renderer<T = unknown, C = unknown> = React.ComponentType<
-  RendererProps<T, C>
->;
-
-/**
  * helper type for all known valid JSX element constructors (class and function
  * based)
  *

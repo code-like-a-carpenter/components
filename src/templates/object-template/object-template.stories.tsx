@@ -1,9 +1,9 @@
 import React from 'react';
 
-import {makeComplexPerson, makeSimplePerson} from '../../mocks';
+import {makeComplexPerson, makeSimplePerson, SimplePerson} from '../../mocks';
 
 import {ObjectTemplate} from './object-template';
-import {ItemWrapper, Wrapper} from './support';
+import {FieldWrapper, TemplateWrapper} from './support';
 
 export default {
   component: ObjectTemplate,
@@ -21,8 +21,8 @@ export const objectTemplate = () => (
         <FieldConfigurer field="signUpDate" />
       </>
     )}
-    FieldWrapper={ItemWrapper}
-    Wrapper={Wrapper}
+    FieldWrapper={FieldWrapper}
+    TemplateWrapper={TemplateWrapper}
   />
 );
 
@@ -37,8 +37,8 @@ export const outOfOrder = () => (
         <FieldConfigurer field="age" />
       </>
     )}
-    FieldWrapper={ItemWrapper}
-    Wrapper={Wrapper}
+    FieldWrapper={FieldWrapper}
+    TemplateWrapper={TemplateWrapper}
   />
 );
 
@@ -53,17 +53,23 @@ export const duplicateFields = () => (
         <FieldConfigurer field="signUpDate" />
         <FieldConfigurer
           field="signUpDate"
-          label="Seconds since signup"
-          renderer={({value}) => (
-            <>{Date.parse('2021-01-01') - value.getTime()}</>
-          )}
+          label="Epoch Time"
+          renderer={({value}) => <>{value.getTime()}</>}
         />
       </>
     )}
-    FieldWrapper={ItemWrapper}
-    Wrapper={Wrapper}
+    FieldWrapper={FieldWrapper}
+    TemplateWrapper={TemplateWrapper}
   />
 );
+duplicateFields.parameters = {
+  docs: {
+    description: {
+      story:
+        'In this example, we configure the `signUpDate` property twice. First, we simply render it as a date, but then we configure it again and render as a Unix Epoch.',
+    },
+  },
+};
 
 export const nestedData = () => (
   <ObjectTemplate
@@ -83,7 +89,92 @@ export const nestedData = () => (
         <FieldConfigurer field="age" />
       </>
     )}
-    FieldWrapper={ItemWrapper}
-    Wrapper={Wrapper}
+    FieldWrapper={FieldWrapper}
+    TemplateWrapper={TemplateWrapper}
+  />
+);
+
+export const defaultNoOp = () => (
+  <ObjectTemplate
+    data={makeSimplePerson()}
+    configure={({FieldConfigurer}) => (
+      <>
+        <FieldConfigurer field="firstName" />
+        <FieldConfigurer field="lastName" />
+        <FieldConfigurer field="age" />
+        <FieldConfigurer field="signUpDate" />
+      </>
+    )}
+  />
+);
+defaultNoOp.parameters = {
+  docs: {
+    description: {
+      story:
+        "If Wrappers are not provided, the Template will still render _something_. It almost certainly won't be pretty, but after using Templates in the wild, it became clear that a lost of specialization might not need full customizations, so adding noop-rendering makes a lot of implementations much easier.",
+    },
+  },
+};
+
+export const rawHtmlWrappers = () => (
+  <ObjectTemplate
+    data={makeSimplePerson()}
+    configure={({FieldConfigurer}) => (
+      <>
+        <FieldConfigurer field="firstName" />
+        <FieldConfigurer field="lastName" />
+        <FieldConfigurer field="age" />
+        <FieldConfigurer field="signUpDate" />
+      </>
+    )}
+    TemplateWrapper="ul"
+    ItemWrapper={({children}) => (
+      <li>
+        <ul>{children}</ul>
+      </li>
+    )}
+    FieldWrapper="li"
+  />
+);
+rawHtmlWrappers.parameters = {
+  docs: {
+    description: {
+      story:
+        "> Note that the ItemWrapper here is kinda silly; it's here primarily to confirm that it works. For real-world use of ObjectTemplates, you'd probably omit the `ItemWrapper` and just include the `TemplateWrapper` and `FieldWrapper`.",
+    },
+  },
+};
+
+export const nullData = () => (
+  <ObjectTemplate<SimplePerson>
+    data={null}
+    configure={({FieldConfigurer}) => (
+      <>
+        <FieldConfigurer field="firstName" />
+        <FieldConfigurer field="lastName" />
+        <FieldConfigurer field="age" />
+        <FieldConfigurer field="signUpDate" />
+      </>
+    )}
+    noDataSlot={<>No data received</>}
+  />
+);
+
+export const customFieldWrapper = () => (
+  <ObjectTemplate<SimplePerson>
+    data={makeSimplePerson()}
+    configure={({FieldConfigurer}) => (
+      <>
+        <FieldConfigurer
+          field="firstName"
+          wrapper={({children}) => (
+            <div style={{textTransform: 'uppercase'}}>{children}</div>
+          )}
+        />
+        <FieldConfigurer field="lastName" />
+        <FieldConfigurer field="age" />
+        <FieldConfigurer field="signUpDate" />
+      </>
+    )}
   />
 );

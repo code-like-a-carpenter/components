@@ -47,7 +47,7 @@ export const ConnectionTableBody = <N extends NodeLike>({
 
 export const ConnectionTableBodyRow = <N extends NodeLike>({
   // connection,
-  data,
+  item,
   ...rest
 }: TableBodyRowProps<N>) => <TableBodyRow {...rest} />;
 
@@ -60,7 +60,7 @@ export const ConnectionTableBodyCell = <
   fieldId,
   field,
   value,
-  data,
+  item,
   label,
   keyPath,
   renderer: Renderer,

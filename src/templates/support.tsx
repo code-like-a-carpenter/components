@@ -1,37 +1,34 @@
+import React from 'react';
+
 import {IdType} from '..';
 
 import {FieldConfiguration} from './configuration';
 
-export interface WrapperOwnProps<T> {
-  data: T;
-}
+export type TemplateWrapperProps<T> = React.PropsWithChildren<{data: T}>;
+export type TemplateWrapperType<T> =
+  | keyof JSX.IntrinsicElements
+  | React.ElementType<TemplateWrapperProps<T>>;
 
-export type WrapperProps<T> = React.PropsWithChildren<WrapperOwnProps<T>>;
+export type ItemWrapperProps<T extends object> = React.PropsWithChildren<{
+  item: T;
+}>;
+export type ItemWrapperType<T extends object> =
+  | keyof JSX.IntrinsicElements
+  | React.ElementType<ItemWrapperProps<T>>;
 
-export type Wrapper<T> = React.ElementType<WrapperProps<T>>;
-
-export interface ItemWrapperOwnProps<T extends object> {
-  data: T;
-}
-
-export type ItemWrapperProps<T extends object> = React.PropsWithChildren<
-  ItemWrapperOwnProps<T>
+export type FieldWrapperProps<
+  T extends object,
+  K extends IdType<T>
+> = React.PropsWithChildren<
+  Omit<FieldConfiguration, 'wrapper'> & {
+    fieldId: string;
+    field: K;
+    value: T[K];
+    item: T;
+  }
 >;
-
-export type ItemWrapper<T extends object> = React.ElementType<
-  ItemWrapperProps<T>
->;
-
-export interface FieldWrapperProps<T extends object, K extends IdType<T>>
-  extends FieldConfiguration {
-  fieldId: string;
-  field: K;
-  value: T[K];
-  data: T;
-}
-
-export interface FieldWrapper<T extends object> {
-  <T2 extends T, K2 extends IdType<T2>>(
-    props: FieldWrapperProps<T2, K2>
-  ): React.ReactElement | null;
-}
+export type FieldWrapperType<T extends object> =
+  | keyof JSX.IntrinsicElements
+  | (<T2 extends T, K2 extends IdType<T2>>(
+      props: FieldWrapperProps<T2, K2>
+    ) => React.ReactElement | null);

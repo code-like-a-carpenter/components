@@ -6,7 +6,7 @@ import {
   ItemWrapperProps,
   FieldWrapperProps,
 } from '../..';
-import {WrapperProps} from '../../templates';
+import {TemplateWrapperProps} from '../../templates';
 
 export interface TableProps<N extends NodeLike, PI> {
   connection: Maybe<ConnectionLike<N, PI>>;
@@ -41,7 +41,9 @@ export type ITableHeaderCell<N extends NodeLike, PI> = React.ElementType<
   TableHeaderCellProps<N, PI>
 >;
 
-export type TableBodyProps<N extends NodeLike> = WrapperProps<Maybe<N>[]>;
+export type TableBodyProps<N extends NodeLike> = TemplateWrapperProps<
+  Maybe<N>[]
+>;
 
 export type ITableBody<N extends NodeLike> = React.ElementType<
   TableBodyProps<N>

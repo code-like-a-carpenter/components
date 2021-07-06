@@ -2,7 +2,7 @@ import React, {useContext, useMemo} from 'react';
 import cx from 'classnames';
 
 import {AnyRenderer} from '../renderers';
-import {Renderer as RendererType} from '../support';
+import {Renderer as RendererType} from '../renderers/types';
 
 import {DescriptionListContext, DescriptionList} from './description-list';
 

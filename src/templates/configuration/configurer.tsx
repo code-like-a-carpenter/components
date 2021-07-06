@@ -1,7 +1,7 @@
 import React from 'react';
 
-import {Renderer} from '../../support';
-import {Definitely, IdType, Maybe} from '../..';
+import {Definitely, FieldWrapperProps, IdType, Maybe} from '../..';
+import {Renderer} from '../../renderers';
 
 import {FieldConfigurationProvider} from './configuration';
 import {useConfigureField} from './hooks';
@@ -20,6 +20,7 @@ export interface ConfigurerProps<T extends object, K extends IdType<T>> {
   field: K;
   label?: React.ReactNode | Renderer<K>;
   renderer?: Renderer<T[K]>;
+  wrapper?: React.ElementType<FieldWrapperProps<T, K>>;
   configure?: T[K] extends Maybe<object>
     ? React.ElementType<ConfigureFunctionProps<Definitely<T[K]>>>
     : never;

@@ -22,7 +22,7 @@ export const connectionTemplate = () => (
       </>
     )}
     ItemWrapper={ItemWrapper}
-    Wrapper={Wrapper}
+    TemplateWrapper={Wrapper}
     FieldWrapper={FieldWrapper}
   />
 );
@@ -39,7 +39,7 @@ export const outOfOrder = () => (
       </>
     )}
     ItemWrapper={ItemWrapper}
-    Wrapper={Wrapper}
+    TemplateWrapper={Wrapper}
     FieldWrapper={FieldWrapper}
   />
 );
@@ -63,7 +63,7 @@ export const duplicateFields = () => (
       </>
     )}
     ItemWrapper={ItemWrapper}
-    Wrapper={Wrapper}
+    TemplateWrapper={Wrapper}
     FieldWrapper={FieldWrapper}
   />
 );
@@ -87,7 +87,29 @@ export const nestedData = () => (
       </>
     )}
     ItemWrapper={ItemWrapper}
-    Wrapper={Wrapper}
+    TemplateWrapper={Wrapper}
     FieldWrapper={FieldWrapper}
   />
 );
+
+export const defaultNoOp = () => (
+  <ConnectionTemplate
+    connection={toConnection(makeSimplePeople(5))}
+    configure={({FieldConfigurer}) => (
+      <>
+        <FieldConfigurer field="firstName" />
+        <FieldConfigurer field="lastName" />
+        <FieldConfigurer field="age" />
+        <FieldConfigurer field="signUpDate" />
+      </>
+    )}
+  />
+);
+defaultNoOp.parameters = {
+  docs: {
+    description: {
+      story:
+        "If Wrappers are not provided, the Template will still render _something_. It almost certainly won't be pretty, but after using Templates in the wild, it became clear that a lost of specialization might not need full customizations, so adding noop-rendering makes a lot of implementations much easier.",
+    },
+  },
+};

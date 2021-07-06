@@ -1,33 +1,31 @@
 import React from 'react';
 
 import {
-  Maybe,
+  ArrayTemplate,
   ConfigureFunction,
-  FieldConfigurationProvider,
+  IdType,
+  Maybe,
   Table as BaseTable,
-  Configurer,
   useConfiguredFieldIds,
   useFieldConfiguration,
-  UnboundArrayTemplate,
-  IdType,
 } from '../..';
 
 import {
-  ArrayTableHeader,
-  ArrayTableHeaderRow,
-  ArrayTableHeaderCell,
   ArrayTableBody,
-  ArrayTableBodyRow,
   ArrayTableBodyCell,
+  ArrayTableBodyRow,
+  ArrayTableHeader,
+  ArrayTableHeaderCell,
+  ArrayTableHeaderRow,
 } from './components';
 import {
   ITable,
-  ITableHeader,
-  ITableHeaderRow,
-  ITableHeaderCell,
   ITableBody,
-  ITableBodyRow,
   ITableBodyCell,
+  ITableBodyRow,
+  ITableHeader,
+  ITableHeaderCell,
+  ITableHeaderRow,
   TableHeaderCellProps,
 } from './types';
 
@@ -38,6 +36,7 @@ export interface ArrayTableProps<
   idField: K;
   data: Maybe<Maybe<T>[]>;
   configure: ConfigureFunction<T>;
+  noDataSlot?: React.ReactElement;
   Table?: ITable<T>;
   TableHeader?: ITableHeader<T>;
   TableHeaderRow?: ITableHeaderRow<T>;
@@ -61,14 +60,34 @@ const ApplyTableHeaderCell = <T extends object>({
   return <Component fieldId={fieldId} {...rest} {...config} />;
 };
 
-type UnboundArrayTableProps<T extends object> = Omit<
-  ArrayTableProps<T>,
-  'configure'
->;
-
-const UnboundArrayTable = <T extends object>({
+const Header = <T extends object>({
   data,
-  idField,
+  TableHeader = ArrayTableHeader,
+  TableHeaderRow = ArrayTableHeaderRow,
+  TableHeaderCell = ArrayTableHeaderCell,
+}: Pick<
+  ArrayTableProps<T>,
+  'data' | 'TableHeader' | 'TableHeaderRow' | 'TableHeaderCell'
+>) => {
+  const fieldIds = useConfiguredFieldIds<T>();
+
+  return (
+    <TableHeader data={data}>
+      <TableHeaderRow data={data}>
+        {fieldIds.map((fieldId) => (
+          <ApplyTableHeaderCell
+            data={data}
+            key={fieldId}
+            fieldId={fieldId}
+            Component={TableHeaderCell}
+          />
+        ))}
+      </TableHeaderRow>
+    </TableHeader>
+  );
+};
+
+export const ArrayTable = <T extends object>({
   Table = BaseTable,
   TableHeader = ArrayTableHeader,
   TableHeaderRow = ArrayTableHeaderRow,
@@ -76,43 +95,24 @@ const UnboundArrayTable = <T extends object>({
   TableBody = ArrayTableBody,
   TableBodyRow = ArrayTableBodyRow,
   TableBodyCell = ArrayTableBodyCell,
-}: UnboundArrayTableProps<T>) => {
-  const fieldIds = useConfiguredFieldIds<T>();
-  if (!data) {
-    return null;
-  }
-
+  ...rest
+}: ArrayTableProps<T>) => {
   return (
-    <Table data={data}>
-      <TableHeader data={data}>
-        <TableHeaderRow data={data}>
-          {fieldIds.map((fieldId) => (
-            <ApplyTableHeaderCell
-              data={data}
-              key={fieldId}
-              fieldId={fieldId}
-              Component={TableHeaderCell}
-            />
-          ))}
-        </TableHeaderRow>
-      </TableHeader>
-      <UnboundArrayTemplate
-        data={data}
-        idField={idField}
-        FieldWrapper={TableBodyCell}
-        ItemWrapper={TableBodyRow}
-        Wrapper={TableBody}
-      />
-    </Table>
+    <ArrayTemplate
+      FieldWrapper={TableBodyCell}
+      ItemWrapper={TableBodyRow}
+      TemplateWrapper={({children, data}) => (
+        <Table data={data}>
+          <Header
+            data={data}
+            TableHeader={TableHeader}
+            TableHeaderRow={TableHeaderRow}
+            TableHeaderCell={TableHeaderCell}
+          />
+          <TableBody data={data}>{children}</TableBody>
+        </Table>
+      )}
+      {...rest}
+    />
   );
 };
-
-export const ArrayTable = <T extends object>({
-  configure: Configure,
-  ...rest
-}: ArrayTableProps<T>) => (
-  <FieldConfigurationProvider>
-    <Configure FieldConfigurer={Configurer} />
-    <UnboundArrayTable {...rest} />
-  </FieldConfigurationProvider>
-);

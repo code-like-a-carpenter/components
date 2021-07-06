@@ -22,7 +22,7 @@
     "build:types": "tsc --emitDeclarationOnly ",
     "build-storybook": "build-storybook",
     "eslint": "eslint ${ESLINT_FORMAT_OPTIONS:-} --ignore --ignore-path .gitignore",
-    "lint": "npm-run-all lint:*",
+    "lint": "npm-run-all --continue-on-error --parallel lint:*",
     "lint:changelog": "commitlint --from origin/master --to HEAD",
     "lint:es": "npm run --silent eslint -- .",
     "prelint:types": "mkdirp reports/style",

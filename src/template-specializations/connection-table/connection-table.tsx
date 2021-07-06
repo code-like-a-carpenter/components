@@ -1,40 +1,39 @@
 import React from 'react';
 
 import {
-  ConnectionLike,
-  Maybe,
   ConfigureFunction,
+  ConnectionLike,
+  ConnectionTemplate,
+  Maybe,
   NodeLike,
-  FieldConfigurationProvider,
   Table as BaseTable,
-  Configurer,
-  UnboundConnectionTemplate,
   useConfiguredFieldIds,
   useFieldConfiguration,
 } from '../..';
 
 import {
-  ConnectionTableHeader,
-  ConnectionTableHeaderRow,
-  ConnectionTableHeaderCell,
   ConnectionTableBody,
-  ConnectionTableBodyRow,
   ConnectionTableBodyCell,
+  ConnectionTableBodyRow,
+  ConnectionTableHeader,
+  ConnectionTableHeaderCell,
+  ConnectionTableHeaderRow,
 } from './components';
 import {
   ITable,
-  ITableHeader,
-  ITableHeaderRow,
-  ITableHeaderCell,
   ITableBody,
-  ITableBodyRow,
   ITableBodyCell,
+  ITableBodyRow,
+  ITableHeader,
+  ITableHeaderCell,
+  ITableHeaderRow,
   TableHeaderCellProps,
 } from './types';
 
 export interface ConnectionTableProps<N extends NodeLike, PI> {
   connection: Maybe<ConnectionLike<N, PI>>;
   configure: ConfigureFunction<N>;
+  noDataSlot?: React.ReactElement;
   Table?: ITable<N, PI>;
   TableHeader?: ITableHeader<N, PI>;
   TableHeaderRow?: ITableHeaderRow<N, PI>;
@@ -58,12 +57,34 @@ const ApplyTableHeaderCell = <N extends NodeLike, PI>({
   return <Component fieldId={fieldId} {...rest} {...config} />;
 };
 
-type WrapDataProps<N extends NodeLike, PI> = Omit<
+const Header = <N extends NodeLike, PI>({
+  connection,
+  TableHeader = ConnectionTableHeader,
+  TableHeaderRow = ConnectionTableHeaderRow,
+  TableHeaderCell = ConnectionTableHeaderCell,
+}: Pick<
   ConnectionTableProps<N, PI>,
-  'configure'
->;
+  'connection' | 'TableHeader' | 'TableHeaderRow' | 'TableHeaderCell'
+>) => {
+  const fieldIds = useConfiguredFieldIds<N>();
 
-const UnboundConnectionTable = <N extends NodeLike, PI>({
+  return (
+    <TableHeader connection={connection}>
+      <TableHeaderRow connection={connection}>
+        {fieldIds.map((fieldId) => (
+          <ApplyTableHeaderCell
+            connection={connection}
+            key={fieldId}
+            fieldId={fieldId}
+            Component={TableHeaderCell}
+          />
+        ))}
+      </TableHeaderRow>
+    </TableHeader>
+  );
+};
+
+export const ConnectionTable = <N extends NodeLike, PI>({
   connection,
   Table = BaseTable,
   TableHeader = ConnectionTableHeader,
@@ -72,42 +93,23 @@ const UnboundConnectionTable = <N extends NodeLike, PI>({
   TableBody = ConnectionTableBody,
   TableBodyRow = ConnectionTableBodyRow,
   TableBodyCell = ConnectionTableBodyCell,
-}: WrapDataProps<N, PI>) => {
-  const fieldIds = useConfiguredFieldIds<N>();
-  if (!connection) {
-    return null;
-  }
-
-  return (
-    <Table connection={connection}>
-      <TableHeader connection={connection}>
-        <TableHeaderRow connection={connection}>
-          {fieldIds.map((fieldId) => (
-            <ApplyTableHeaderCell
-              connection={connection}
-              key={fieldId}
-              fieldId={fieldId}
-              Component={TableHeaderCell}
-            />
-          ))}
-        </TableHeaderRow>
-      </TableHeader>
-      <UnboundConnectionTemplate
-        connection={connection}
-        FieldWrapper={TableBodyCell}
-        ItemWrapper={TableBodyRow}
-        Wrapper={TableBody}
-      />
-    </Table>
-  );
-};
-
-export const ConnectionTable = <N extends NodeLike, PI>({
-  configure: Configure,
   ...rest
 }: ConnectionTableProps<N, PI>) => (
-  <FieldConfigurationProvider>
-    <Configure FieldConfigurer={Configurer} />
-    <UnboundConnectionTable {...rest} />
-  </FieldConfigurationProvider>
+  <ConnectionTemplate
+    connection={connection}
+    FieldWrapper={TableBodyCell}
+    ItemWrapper={TableBodyRow}
+    TemplateWrapper={({children, data}) => (
+      <Table connection={connection}>
+        <Header
+          connection={connection}
+          TableHeader={TableHeader}
+          TableHeaderRow={TableHeaderRow}
+          TableHeaderCell={TableHeaderCell}
+        />
+        <TableBody data={data}>{children}</TableBody>
+      </Table>
+    )}
+    {...rest}
+  />
 );

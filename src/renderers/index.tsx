@@ -4,3 +4,4 @@ export * from './date-renderer';
 export * from './maybe-renderer';
 export * from './object-renderer';
 export * from './null-renderer';
+export * from './types';
