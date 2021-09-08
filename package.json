@@ -42,7 +42,7 @@
     "url": "https://github.com/code-like-a-carpenter/components/issues"
   },
   "dependencies": {
-    "bootstrap": "^4.5.2",
+    "bootstrap": "^5.1.1",
     "classnames": "^2.2.6",
     "dedent": "^0.7.0",
     "lodash": "^4.17.21",
