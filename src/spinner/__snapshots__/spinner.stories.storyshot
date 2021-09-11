@@ -6,7 +6,7 @@ exports[`Storyshots Components/Spinner Spinner 1`] = `
   role="status"
 >
   <span
-    className="sr-only"
+    className="visually-hidden"
   >
     Loading...
   </span>

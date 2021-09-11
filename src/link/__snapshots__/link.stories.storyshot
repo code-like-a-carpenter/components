@@ -31,6 +31,7 @@ exports[`Storyshots Components/Link In An Alert 1`] = `
     onClick={[Function]}
     onKeyDown={[Function]}
     role="button"
+    tabIndex={0}
   >
     Link
   </a>

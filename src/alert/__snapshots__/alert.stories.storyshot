@@ -2,7 +2,7 @@
 
 exports[`Storyshots Components/Alert Alert 1`] = `
 <div
-  className="fade alert show"
+  className="fade alert alert-primary show"
   role="alert"
 >
   A simple alert
@@ -27,6 +27,7 @@ exports[`Storyshots Components/Alert Danger 1`] = `
     onClick={[Function]}
     onKeyDown={[Function]}
     role="button"
+    tabIndex={0}
   >
     a link
   </a>
@@ -52,6 +53,7 @@ exports[`Storyshots Components/Alert Dark 1`] = `
     onClick={[Function]}
     onKeyDown={[Function]}
     role="button"
+    tabIndex={0}
   >
     a link
   </a>
@@ -77,6 +79,7 @@ exports[`Storyshots Components/Alert Info 1`] = `
     onClick={[Function]}
     onKeyDown={[Function]}
     role="button"
+    tabIndex={0}
   >
     a link
   </a>
@@ -102,6 +105,7 @@ exports[`Storyshots Components/Alert Light 1`] = `
     onClick={[Function]}
     onKeyDown={[Function]}
     role="button"
+    tabIndex={0}
   >
     a link
   </a>
@@ -127,6 +131,7 @@ exports[`Storyshots Components/Alert Primary 1`] = `
     onClick={[Function]}
     onKeyDown={[Function]}
     role="button"
+    tabIndex={0}
   >
     a link
   </a>
@@ -152,6 +157,7 @@ exports[`Storyshots Components/Alert Secondary 1`] = `
     onClick={[Function]}
     onKeyDown={[Function]}
     role="button"
+    tabIndex={0}
   >
     a link
   </a>
@@ -177,6 +183,7 @@ exports[`Storyshots Components/Alert Success 1`] = `
     onClick={[Function]}
     onKeyDown={[Function]}
     role="button"
+    tabIndex={0}
   >
     a link
   </a>
@@ -202,6 +209,7 @@ exports[`Storyshots Components/Alert Warning 1`] = `
     onClick={[Function]}
     onKeyDown={[Function]}
     role="button"
+    tabIndex={0}
   >
     a link
   </a>
