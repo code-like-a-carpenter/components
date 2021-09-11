@@ -35,7 +35,7 @@ export interface ArrayTableProps<
 > {
   idField: K;
   data: Maybe<Maybe<T>[]>;
-  configure: ConfigureFunction<T>;
+  configure?: ConfigureFunction<T>;
   noDataSlot?: React.ReactElement;
   Table?: ITable<T>;
   TableHeader?: ITableHeader<T>;

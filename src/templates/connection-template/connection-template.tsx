@@ -11,7 +11,7 @@ import {
 
 export interface ConnectionTemplateProps<N extends NodeLike, PI> {
   connection: Maybe<ConnectionLike<N, PI>>;
-  configure: ConfigureFunction<N>;
+  configure?: ConfigureFunction<N>;
   TemplateWrapper?: TemplateWrapperType<Maybe<N>[]>;
   ItemWrapper?: ItemWrapperType<N>;
   FieldWrapper?: FieldWrapperType<N>;

@@ -14,7 +14,7 @@ import {
 
 export interface ObjectDescriptionProps<T extends object> {
   data: Maybe<T>;
-  configure: ConfigureFunction<T>;
+  configure?: ConfigureFunction<T>;
   noDataSlot?: React.ReactElement;
   TemplateWrapper?: IObjectDescriptionWrapper<T>;
   FieldWrapper?: IObjectDescriptionFieldWrapper<T>;
