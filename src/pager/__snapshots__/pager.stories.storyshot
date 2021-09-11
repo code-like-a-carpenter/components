@@ -18,12 +18,12 @@ exports[`Storyshots Components/Pager Offset Pager 1`] = `
         «
       </span>
       <span
-        className="sr-only"
+        className="visually-hidden"
       >
         First
       </span>
       <span
-        className="sr-only"
+        className="visually-hidden"
       >
         (current)
       </span>
@@ -43,7 +43,7 @@ exports[`Storyshots Components/Pager Offset Pager 1`] = `
         ‹
       </span>
       <span
-        className="sr-only"
+        className="visually-hidden"
       >
         Previous
       </span>
@@ -59,7 +59,7 @@ exports[`Storyshots Components/Pager Offset Pager 1`] = `
     >
       1
       <span
-        className="sr-only"
+        className="visually-hidden"
       >
         (current)
       </span>
@@ -70,9 +70,8 @@ exports[`Storyshots Components/Pager Offset Pager 1`] = `
   >
     <a
       className="page-link"
+      disabled={false}
       href="/?page=2"
-      onClick={[Function]}
-      onKeyDown={[Function]}
     >
       2
     </a>
@@ -82,9 +81,8 @@ exports[`Storyshots Components/Pager Offset Pager 1`] = `
   >
     <a
       className="page-link"
+      disabled={false}
       href="/?page=3"
-      onClick={[Function]}
-      onKeyDown={[Function]}
     >
       3
     </a>
@@ -94,9 +92,8 @@ exports[`Storyshots Components/Pager Offset Pager 1`] = `
   >
     <a
       className="page-link"
+      disabled={false}
       href="/?page=4"
-      onClick={[Function]}
-      onKeyDown={[Function]}
     >
       4
     </a>
@@ -106,9 +103,8 @@ exports[`Storyshots Components/Pager Offset Pager 1`] = `
   >
     <a
       className="page-link"
+      disabled={false}
       href="/?page=5"
-      onClick={[Function]}
-      onKeyDown={[Function]}
     >
       5
     </a>
@@ -118,9 +114,8 @@ exports[`Storyshots Components/Pager Offset Pager 1`] = `
   >
     <a
       className="page-link"
+      disabled={false}
       href="/?page=6"
-      onClick={[Function]}
-      onKeyDown={[Function]}
     >
       6
     </a>
@@ -130,10 +125,10 @@ exports[`Storyshots Components/Pager Offset Pager 1`] = `
   >
     <a
       className="page-link"
-      href="#"
       onClick={[Function]}
       onKeyDown={[Function]}
       role="button"
+      tabIndex={0}
     >
       <span
         aria-hidden="true"
@@ -141,7 +136,7 @@ exports[`Storyshots Components/Pager Offset Pager 1`] = `
         …
       </span>
       <span
-        className="sr-only"
+        className="visually-hidden"
       >
         More
       </span>
@@ -152,9 +147,8 @@ exports[`Storyshots Components/Pager Offset Pager 1`] = `
   >
     <a
       className="page-link"
+      disabled={false}
       href="/?page=10"
-      onClick={[Function]}
-      onKeyDown={[Function]}
     >
       10
     </a>
@@ -173,7 +167,7 @@ exports[`Storyshots Components/Pager Offset Pager 1`] = `
         ›
       </span>
       <span
-        className="sr-only"
+        className="visually-hidden"
       >
         Next
       </span>
@@ -184,9 +178,8 @@ exports[`Storyshots Components/Pager Offset Pager 1`] = `
   >
     <a
       className="page-link"
+      disabled={false}
       href="/?page=10"
-      onClick={[Function]}
-      onKeyDown={[Function]}
     >
       <span
         aria-hidden="true"
@@ -194,7 +187,7 @@ exports[`Storyshots Components/Pager Offset Pager 1`] = `
         »
       </span>
       <span
-        className="sr-only"
+        className="visually-hidden"
       >
         Last
       </span>
@@ -212,9 +205,8 @@ exports[`Storyshots Components/Pager Relay Pager 1`] = `
   >
     <a
       className="page-link"
+      disabled={false}
       href="/?before=bbb&last="
-      onClick={[Function]}
-      onKeyDown={[Function]}
     >
       <span
         aria-hidden="true"
@@ -222,7 +214,7 @@ exports[`Storyshots Components/Pager Relay Pager 1`] = `
         ‹
       </span>
       <span
-        className="sr-only"
+        className="visually-hidden"
       >
         Previous
       </span>
@@ -233,9 +225,8 @@ exports[`Storyshots Components/Pager Relay Pager 1`] = `
   >
     <a
       className="page-link"
+      disabled={false}
       href="/?after=ccc&first="
-      onClick={[Function]}
-      onKeyDown={[Function]}
     >
       <span
         aria-hidden="true"
@@ -243,7 +234,7 @@ exports[`Storyshots Components/Pager Relay Pager 1`] = `
         ›
       </span>
       <span
-        className="sr-only"
+        className="visually-hidden"
       >
         Next
       </span>
@@ -270,12 +261,12 @@ exports[`Storyshots Components/Pager Simple Page 1`] = `
         «
       </span>
       <span
-        className="sr-only"
+        className="visually-hidden"
       >
         First
       </span>
       <span
-        className="sr-only"
+        className="visually-hidden"
       >
         (current)
       </span>
@@ -295,7 +286,7 @@ exports[`Storyshots Components/Pager Simple Page 1`] = `
         ‹
       </span>
       <span
-        className="sr-only"
+        className="visually-hidden"
       >
         Previous
       </span>
@@ -311,7 +302,7 @@ exports[`Storyshots Components/Pager Simple Page 1`] = `
     >
       1
       <span
-        className="sr-only"
+        className="visually-hidden"
       >
         (current)
       </span>
@@ -322,9 +313,8 @@ exports[`Storyshots Components/Pager Simple Page 1`] = `
   >
     <a
       className="page-link"
+      disabled={false}
       href="/?page=2"
-      onClick={[Function]}
-      onKeyDown={[Function]}
     >
       2
     </a>
@@ -334,9 +324,8 @@ exports[`Storyshots Components/Pager Simple Page 1`] = `
   >
     <a
       className="page-link"
+      disabled={false}
       href="/?page=3"
-      onClick={[Function]}
-      onKeyDown={[Function]}
     >
       3
     </a>
@@ -346,9 +335,8 @@ exports[`Storyshots Components/Pager Simple Page 1`] = `
   >
     <a
       className="page-link"
+      disabled={false}
       href="/?page=4"
-      onClick={[Function]}
-      onKeyDown={[Function]}
     >
       4
     </a>
@@ -358,9 +346,8 @@ exports[`Storyshots Components/Pager Simple Page 1`] = `
   >
     <a
       className="page-link"
+      disabled={false}
       href="/?page=5"
-      onClick={[Function]}
-      onKeyDown={[Function]}
     >
       5
     </a>
@@ -370,9 +357,8 @@ exports[`Storyshots Components/Pager Simple Page 1`] = `
   >
     <a
       className="page-link"
+      disabled={false}
       href="/?page=6"
-      onClick={[Function]}
-      onKeyDown={[Function]}
     >
       6
     </a>
@@ -382,10 +368,10 @@ exports[`Storyshots Components/Pager Simple Page 1`] = `
   >
     <a
       className="page-link"
-      href="#"
       onClick={[Function]}
       onKeyDown={[Function]}
       role="button"
+      tabIndex={0}
     >
       <span
         aria-hidden="true"
@@ -393,7 +379,7 @@ exports[`Storyshots Components/Pager Simple Page 1`] = `
         …
       </span>
       <span
-        className="sr-only"
+        className="visually-hidden"
       >
         More
       </span>
@@ -404,9 +390,8 @@ exports[`Storyshots Components/Pager Simple Page 1`] = `
   >
     <a
       className="page-link"
+      disabled={false}
       href="/?page=10"
-      onClick={[Function]}
-      onKeyDown={[Function]}
     >
       10
     </a>
@@ -416,9 +401,8 @@ exports[`Storyshots Components/Pager Simple Page 1`] = `
   >
     <a
       className="page-link"
+      disabled={false}
       href="/?page=2"
-      onClick={[Function]}
-      onKeyDown={[Function]}
     >
       <span
         aria-hidden="true"
@@ -426,7 +410,7 @@ exports[`Storyshots Components/Pager Simple Page 1`] = `
         ›
       </span>
       <span
-        className="sr-only"
+        className="visually-hidden"
       >
         Next
       </span>
@@ -437,9 +421,8 @@ exports[`Storyshots Components/Pager Simple Page 1`] = `
   >
     <a
       className="page-link"
+      disabled={false}
       href="/?page=10"
-      onClick={[Function]}
-      onKeyDown={[Function]}
     >
       <span
         aria-hidden="true"
@@ -447,7 +430,7 @@ exports[`Storyshots Components/Pager Simple Page 1`] = `
         »
       </span>
       <span
-        className="sr-only"
+        className="visually-hidden"
       >
         Last
       </span>

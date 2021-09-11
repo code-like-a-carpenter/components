@@ -59,6 +59,7 @@ exports[`Storyshots Components/Card Card 1`] = `
       onClick={[Function]}
       onKeyDown={[Function]}
       role="button"
+      tabIndex={0}
     >
       Go somewhere
     </a>
@@ -103,6 +104,7 @@ exports[`Storyshots Components/Card Header 1`] = `
       onClick={[Function]}
       onKeyDown={[Function]}
       role="button"
+      tabIndex={0}
     >
       Go somewhere
     </a>
@@ -153,24 +155,21 @@ exports[`Storyshots Components/Card Kitchen Sink 1`] = `
   >
     <div
       className="list-group-item"
-      data-rb-event-key={null}
-      disabled={false}
+      data-rr-ui-event-key={null}
       onClick={[Function]}
     >
       Cras justo odio
     </div>
     <div
       className="list-group-item"
-      data-rb-event-key={null}
-      disabled={false}
+      data-rr-ui-event-key={null}
       onClick={[Function]}
     >
       Dapibus ac facilisis in
     </div>
     <div
       className="list-group-item"
-      data-rb-event-key={null}
-      disabled={false}
+      data-rr-ui-event-key={null}
       onClick={[Function]}
     >
       Vestibulum at eros
@@ -205,32 +204,28 @@ exports[`Storyshots Components/Card List Groups 1`] = `
   >
     <div
       className="list-group-item"
-      data-rb-event-key={null}
-      disabled={false}
+      data-rr-ui-event-key={null}
       onClick={[Function]}
     >
       Cras justo odio
     </div>
     <div
       className="list-group-item"
-      data-rb-event-key={null}
-      disabled={false}
+      data-rr-ui-event-key={null}
       onClick={[Function]}
     >
       Dapibus ac facilisis in
     </div>
     <div
       className="list-group-item"
-      data-rb-event-key={null}
-      disabled={false}
+      data-rr-ui-event-key={null}
       onClick={[Function]}
     >
       Morbi leo risus
     </div>
     <div
       className="list-group-item"
-      data-rb-event-key={null}
-      disabled={false}
+      data-rr-ui-event-key={null}
       onClick={[Function]}
     >
       Porta ac consectetur ac
@@ -263,32 +258,28 @@ exports[`Storyshots Components/Card List Groups With Heading 1`] = `
   >
     <div
       className="list-group-item"
-      data-rb-event-key={null}
-      disabled={false}
+      data-rr-ui-event-key={null}
       onClick={[Function]}
     >
       Cras justo odio
     </div>
     <div
       className="list-group-item"
-      data-rb-event-key={null}
-      disabled={false}
+      data-rr-ui-event-key={null}
       onClick={[Function]}
     >
       Dapibus ac facilisis in
     </div>
     <div
       className="list-group-item"
-      data-rb-event-key={null}
-      disabled={false}
+      data-rr-ui-event-key={null}
       onClick={[Function]}
     >
       Morbi leo risus
     </div>
     <div
       className="list-group-item"
-      data-rb-event-key={null}
-      disabled={false}
+      data-rr-ui-event-key={null}
       onClick={[Function]}
     >
       Porta ac consectetur ac

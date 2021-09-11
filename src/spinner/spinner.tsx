@@ -18,7 +18,7 @@ export const Spinner = ({
 }: SpinnerProps) => {
   return (
     <BootstrapSpinner animation={animation} role={role} {...rest}>
-      <span className="sr-only">{accessibilityLabel}</span>
+      <span className="visually-hidden">{accessibilityLabel}</span>
     </BootstrapSpinner>
   );
 };

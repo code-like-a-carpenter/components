@@ -45,7 +45,7 @@ const withSection = <P extends Object>(Component: React.ComponentType<P>) =>
     return <Component {...props} />;
   };
 
-const CardHeader: React.FC<PropsOf<BootstrapCard['Header']>> = ({
+const CardHeader: React.FC<PropsOf<typeof BootstrapCard['Header']>> = ({
   children,
   props,
 }) => {
