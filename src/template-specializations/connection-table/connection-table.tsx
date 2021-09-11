@@ -32,7 +32,7 @@ import {
 
 export interface ConnectionTableProps<N extends NodeLike, PI> {
   connection: Maybe<ConnectionLike<N, PI>>;
-  configure: ConfigureFunction<N>;
+  configure?: ConfigureFunction<N>;
   noDataSlot?: React.ReactElement;
   Table?: ITable<N, PI>;
   TableHeader?: ITableHeader<N, PI>;
