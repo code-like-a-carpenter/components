@@ -35,7 +35,11 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
       - run: npm ci
+        if: ${{ github.actor != 'dependabot[bot]' }}
       - run: npx --no-install chromatic --exit-zero-on-changes --project-token=${{ secrets.CHROMATIC_TOKEN }}
+        if: ${{ github.actor != 'dependabot[bot]' }}
+      - run: echo '::warning title=Please rerun this workflow::Dependabot cannot access secrets on its own.'
+        if: ${{ github.actor == 'dependabot[bot]' }}
 
   lint:
     runs-on: ubuntu-latest
