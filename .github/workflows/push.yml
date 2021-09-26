@@ -63,13 +63,13 @@ jobs:
         env:
           ESLINT_FORMAT_OPTIONS: '--format json-with-metadata --output-file reports/style/eslint.json'
           TSC_OPTIONS: '| tee reports/style/tsc.log'
-      - uses: check-run-reporter/action@v2.0.0
+      - uses: check-run-reporter/action@v2.6.0
         if: ${{ always() }}
         with:
           token: '62f20048-075b-4fef-b858-e16790015077'
           label: ESLint
           report: 'reports/style/eslint.json'
-      - uses: check-run-reporter/action@v2.0.0
+      - uses: check-run-reporter/action@v2.6.0
         if: ${{ always() }}
         with:
           token: '62f20048-075b-4fef-b858-e16790015077'
@@ -93,7 +93,7 @@ jobs:
             ${{ runner.os }}-
       - run: npm ci
       - run: npm test
-      - uses: check-run-reporter/action@v2.0.0
+      - uses: check-run-reporter/action@v2.6.0
         if: ${{ always() }}
         with:
           token: '62f20048-075b-4fef-b858-e16790015077'
