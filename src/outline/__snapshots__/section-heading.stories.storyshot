@@ -3,10 +3,10 @@
 exports[`Storyshots Outline/SectionHeading With A Heading 1`] = `
 <h1
   className="h1"
-  id="o:1s:1-level-1"
+  id="o-1s-1-level-1"
 >
   <a
-    href="#o:1s:1-level-1"
+    href="#o-1s-1-level-1"
   >
     Level 1
   </a>
@@ -17,20 +17,20 @@ exports[`Storyshots Outline/SectionHeading With Style Roots 1`] = `
 Array [
   <h1
     className="h1"
-    id="o:1s:1-level-1"
+    id="o-1s-1-level-1"
   >
     <a
-      href="#o:1s:1-level-1"
+      href="#o-1s-1-level-1"
     >
       Level 1
     </a>
   </h1>,
   <h2
     className="h2"
-    id="o:2s:2-level-2"
+    id="o-2s-2-level-2"
   >
     <a
-      href="#o:2s:2-level-2"
+      href="#o-2s-2-level-2"
     >
       Level 2
     </a>
@@ -38,10 +38,10 @@ Array [
   <aside>
     <h3
       className="h1"
-      id="o:3s:1-level-1"
+      id="o-3s-1-level-1"
     >
       <a
-        href="#o:3s:1-level-1"
+        href="#o-3s-1-level-1"
       >
         Level 1
       </a>
@@ -54,30 +54,30 @@ exports[`Storyshots Outline/SectionHeading With Three Levels Of Nesting 1`] = `
 Array [
   <h1
     className="h1"
-    id="o:1s:1-level-1"
+    id="o-1s-1-level-1"
   >
     <a
-      href="#o:1s:1-level-1"
+      href="#o-1s-1-level-1"
     >
       Level 1
     </a>
   </h1>,
   <h2
     className="h2"
-    id="o:2s:2-level-2"
+    id="o-2s-2-level-2"
   >
     <a
-      href="#o:2s:2-level-2"
+      href="#o-2s-2-level-2"
     >
       Level 2
     </a>
   </h2>,
   <h3
     className="h3"
-    id="o:3s:3-level-3"
+    id="o-3s-3-level-3"
   >
     <a
-      href="#o:3s:3-level-3"
+      href="#o-3s-3-level-3"
     >
       Level 3
     </a>
@@ -89,20 +89,20 @@ exports[`Storyshots Outline/SectionHeading With Two Sibling Headings 1`] = `
 Array [
   <h1
     className="h1"
-    id="o:1s:1-level-1"
+    id="o-1s-1-level-1"
   >
     <a
-      href="#o:1s:1-level-1"
+      href="#o-1s-1-level-1"
     >
       Level 1
     </a>
   </h1>,
   <h1
     className="h1"
-    id="o:1s:1-level-1"
+    id="o-1s-1-level-1"
   >
     <a
-      href="#o:1s:1-level-1"
+      href="#o-1s-1-level-1"
     >
       Level 1
     </a>

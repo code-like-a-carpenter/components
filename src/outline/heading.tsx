@@ -29,7 +29,7 @@ export const Heading = ({
   if (!id) {
     // reminder: ids must start with a letter, so if we have to autogenerate it,
     // we should put the deterministic part first.
-    id = `o:${outlineLevel}s:${styleLevel}-`;
+    id = `o-${outlineLevel}s-${styleLevel}-`;
 
     if (typeof children === 'string') {
       id += children?.toLowerCase().replace(/ /g, '-');

@@ -224,10 +224,10 @@ exports[`Storyshots Components/Alert With Additional Content 1`] = `
 >
   <h1
     className="h4 alert-heading"
-    id="o:1s:1-hey,-nice-to-see-you"
+    id="o-1s-1-hey,-nice-to-see-you"
   >
     <a
-      href="#o:1s:1-hey,-nice-to-see-you"
+      href="#o-1s-1-hey,-nice-to-see-you"
     >
       Hey, nice to see you
     </a>

@@ -3,10 +3,10 @@
 exports[`Storyshots Outline/Heading Heading 1`] = `
 <h1
   className="h1"
-  id="o:1s:1-foo"
+  id="o-1s-1-foo"
 >
   <a
-    href="#o:1s:1-foo"
+    href="#o-1s-1-foo"
   >
     Foo
   </a>
@@ -16,10 +16,10 @@ exports[`Storyshots Outline/Heading Heading 1`] = `
 exports[`Storyshots Outline/Heading Heading 2 1`] = `
 <h2
   className="h2"
-  id="o:2s:2-foo"
+  id="o-2s-2-foo"
 >
   <a
-    href="#o:2s:2-foo"
+    href="#o-2s-2-foo"
   >
     Foo
   </a>
@@ -29,10 +29,10 @@ exports[`Storyshots Outline/Heading Heading 2 1`] = `
 exports[`Storyshots Outline/Heading Heading 3 1`] = `
 <h3
   className="h3"
-  id="o:3s:3-foo"
+  id="o-3s-3-foo"
 >
   <a
-    href="#o:3s:3-foo"
+    href="#o-3s-3-foo"
   >
     Foo
   </a>
@@ -42,10 +42,10 @@ exports[`Storyshots Outline/Heading Heading 3 1`] = `
 exports[`Storyshots Outline/Heading Outline 1 Style 4 1`] = `
 <h1
   className="h4"
-  id="o:1s:4-foo"
+  id="o-1s-4-foo"
 >
   <a
-    href="#o:1s:4-foo"
+    href="#o-1s-4-foo"
   >
     Foo
   </a>
@@ -55,10 +55,10 @@ exports[`Storyshots Outline/Heading Outline 1 Style 4 1`] = `
 exports[`Storyshots Outline/Heading Outline 4 Style 1 1`] = `
 <h4
   className="h1"
-  id="o:4s:1-foo"
+  id="o-4s-1-foo"
 >
   <a
-    href="#o:4s:1-foo"
+    href="#o-4s-1-foo"
   >
     Foo
   </a>
