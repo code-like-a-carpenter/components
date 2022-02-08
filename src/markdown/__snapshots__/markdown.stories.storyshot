@@ -4,10 +4,10 @@ exports[`Storyshots Components/Markdown As Prop 1`] = `
 Array [
   <h1
     className="h1"
-    id="o:1s:1-"
+    id="o-1s-1-"
   >
     <a
-      href="#o:1s:1-"
+      href="#o-1s-1-"
     >
       This is a header
     </a>
@@ -22,20 +22,20 @@ exports[`Storyshots Components/Markdown In A Section 1`] = `
 Array [
   <h1
     className="h1"
-    id="o:1s:1-level-1"
+    id="o-1s-1-level-1"
   >
     <a
-      href="#o:1s:1-level-1"
+      href="#o-1s-1-level-1"
     >
       Level 1
     </a>
   </h1>,
   <h2
     className="h2"
-    id="o:2s:2-"
+    id="o-2s-2-"
   >
     <a
-      href="#o:2s:2-"
+      href="#o-2s-2-"
     >
       Level 2
     </a>
@@ -47,10 +47,10 @@ exports[`Storyshots Components/Markdown Markdown 1`] = `
 Array [
   <h1
     className="h1"
-    id="o:1s:1-"
+    id="o-1s-1-"
   >
     <a
-      href="#o:1s:1-"
+      href="#o-1s-1-"
     >
       This is a header
     </a>

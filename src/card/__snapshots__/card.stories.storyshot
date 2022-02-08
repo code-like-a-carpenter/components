@@ -76,10 +76,10 @@ exports[`Storyshots Components/Card Header 1`] = `
   >
     <h1
       className="h1"
-      id="o:1s:1-featured"
+      id="o-1s-1-featured"
     >
       <a
-        href="#o:1s:1-featured"
+        href="#o-1s-1-featured"
       >
         Featured
       </a>
@@ -121,10 +121,10 @@ exports[`Storyshots Components/Card Kitchen Sink 1`] = `
   >
     <h1
       className="h1"
-      id="o:1s:1-card-header"
+      id="o-1s-1-card-header"
     >
       <a
-        href="#o:1s:1-card-header"
+        href="#o-1s-1-card-header"
       >
         Card Header
       </a>
@@ -243,10 +243,10 @@ exports[`Storyshots Components/Card List Groups With Heading 1`] = `
   >
     <h1
       className="h1"
-      id="o:1s:1-featured"
+      id="o-1s-1-featured"
     >
       <a
-        href="#o:1s:1-featured"
+        href="#o-1s-1-featured"
       >
         Featured
       </a>
