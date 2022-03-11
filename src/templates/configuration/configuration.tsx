@@ -1,4 +1,4 @@
-import {startCase} from 'lodash';
+import startCase from 'lodash/startCase';
 import React, {useContext} from 'react';
 
 import {AnyRenderer, FieldWrapperType} from '../..';
