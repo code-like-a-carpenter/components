@@ -1,5 +1,5 @@
 import React, {PropsWithChildren} from 'react';
-import _ from 'lodash';
+import get from 'lodash/get';
 
 import {IdType} from '../types';
 
@@ -30,7 +30,7 @@ export const RenderField = <T extends object>({
     wrapper,
     ...config
   } = useFieldConfiguration(fieldId);
-  const value = _.get(item, config.keyPath);
+  const value = get(item, config.keyPath);
 
   const Wrapper = wrapper || FieldWrapper;
   if (typeof Wrapper === 'string') {
