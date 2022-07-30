@@ -43,8 +43,8 @@ exports[`Storyshots Template Specialization/ObjectDescription Duplicate Fields 1
     className="description-list__description description-list__description--single"
   >
     <time
-      dateTime={"2019-04-21T09:24:38.262Z"}
-      title="2019-04-21T09:24:38+00:00"
+      dateTime="2019-04-21T09:24:38.262+00:00"
+      title="April 21, 2019, 9:24:38 AM UTC"
     >
       April 21, 2019
     </time>
@@ -95,8 +95,8 @@ exports[`Storyshots Template Specialization/ObjectDescription Nested Data 1`] = 
     className="description-list__description description-list__description--single"
   >
     <time
-      dateTime={"2019-04-21T09:24:38.262Z"}
-      title="2019-04-21T09:24:38+00:00"
+      dateTime="2019-04-21T09:24:38.262+00:00"
+      title="April 21, 2019, 9:24:38 AM UTC"
     >
       April 21, 2019
     </time>
@@ -157,8 +157,8 @@ exports[`Storyshots Template Specialization/ObjectDescription Object Description
     className="description-list__description description-list__description--single"
   >
     <time
-      dateTime={"2019-04-21T09:24:38.262Z"}
-      title="2019-04-21T09:24:38+00:00"
+      dateTime="2019-04-21T09:24:38.262+00:00"
+      title="April 21, 2019, 9:24:38 AM UTC"
     >
       April 21, 2019
     </time>
@@ -199,8 +199,8 @@ exports[`Storyshots Template Specialization/ObjectDescription Out Of Order 1`] =
     className="description-list__description description-list__description--single"
   >
     <time
-      dateTime={"2019-04-21T09:24:38.262Z"}
-      title="2019-04-21T09:24:38+00:00"
+      dateTime="2019-04-21T09:24:38.262+00:00"
+      title="April 21, 2019, 9:24:38 AM UTC"
     >
       April 21, 2019
     </time>

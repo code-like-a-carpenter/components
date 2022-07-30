@@ -423,8 +423,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-04-21T09:24:38.262Z"}
-          title="2019-04-21T09:24:38+00:00"
+          dateTime="2019-04-21T09:24:38.262+00:00"
+          title="April 21, 2019, 9:24:38 AM UTC"
         >
           April 21, 2019
         </time>
@@ -452,8 +452,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-05-21T20:24:48.713Z"}
-          title="2020-05-21T20:24:48+00:00"
+          dateTime="2020-05-21T20:24:48.713+00:00"
+          title="May 21, 2020, 8:24:48 PM UTC"
         >
           May 21, 2020
         </time>
@@ -481,8 +481,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-03-05T01:04:28.401Z"}
-          title="2019-03-05T01:04:28+00:00"
+          dateTime="2019-03-05T01:04:28.401+00:00"
+          title="March 5, 2019, 1:04:28 AM UTC"
         >
           March 5, 2019
         </time>
@@ -510,8 +510,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-10-04T14:50:38.937Z"}
-          title="2020-10-04T14:50:38+00:00"
+          dateTime="2020-10-04T14:50:38.937+00:00"
+          title="October 4, 2020, 2:50:38 PM UTC"
         >
           October 4, 2020
         </time>
@@ -539,8 +539,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-09-30T22:08:33.801Z"}
-          title="2020-09-30T22:08:33+00:00"
+          dateTime="2020-09-30T22:08:33.801+00:00"
+          title="September 30, 2020, 10:08:33 PM UTC"
         >
           September 30, 2020
         </time>
@@ -568,8 +568,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-09-08T08:53:03.410Z"}
-          title="2020-09-08T08:53:03+00:00"
+          dateTime="2020-09-08T08:53:03.410+00:00"
+          title="September 8, 2020, 8:53:03 AM UTC"
         >
           September 8, 2020
         </time>
@@ -597,8 +597,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-03-03T07:23:58.735Z"}
-          title="2020-03-03T07:23:58+00:00"
+          dateTime="2020-03-03T07:23:58.735+00:00"
+          title="March 3, 2020, 7:23:58 AM UTC"
         >
           March 3, 2020
         </time>
@@ -626,8 +626,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-03-26T10:22:53.934Z"}
-          title="2019-03-26T10:22:53+00:00"
+          dateTime="2019-03-26T10:22:53.934+00:00"
+          title="March 26, 2019, 10:22:53 AM UTC"
         >
           March 26, 2019
         </time>
@@ -655,8 +655,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-09-26T10:55:45.296Z"}
-          title="2019-09-26T10:55:45+00:00"
+          dateTime="2019-09-26T10:55:45.296+00:00"
+          title="September 26, 2019, 10:55:45 AM UTC"
         >
           September 26, 2019
         </time>
@@ -684,8 +684,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-07-02T11:06:23.011Z"}
-          title="2019-07-02T11:06:23+00:00"
+          dateTime="2019-07-02T11:06:23.011+00:00"
+          title="July 2, 2019, 11:06:23 AM UTC"
         >
           July 2, 2019
         </time>
@@ -713,8 +713,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-10-18T19:07:03.671Z"}
-          title="2019-10-18T19:07:03+00:00"
+          dateTime="2019-10-18T19:07:03.671+00:00"
+          title="October 18, 2019, 7:07:03 PM UTC"
         >
           October 18, 2019
         </time>
@@ -742,8 +742,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-05-25T13:46:21.818Z"}
-          title="2020-05-25T13:46:21+00:00"
+          dateTime="2020-05-25T13:46:21.818+00:00"
+          title="May 25, 2020, 1:46:21 PM UTC"
         >
           May 25, 2020
         </time>
@@ -771,8 +771,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-10-06T20:55:24.609Z"}
-          title="2019-10-06T20:55:24+00:00"
+          dateTime="2019-10-06T20:55:24.609+00:00"
+          title="October 6, 2019, 8:55:24 PM UTC"
         >
           October 6, 2019
         </time>
@@ -800,8 +800,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-03-19T17:47:19.622Z"}
-          title="2019-03-19T17:47:19+00:00"
+          dateTime="2019-03-19T17:47:19.622+00:00"
+          title="March 19, 2019, 5:47:19 PM UTC"
         >
           March 19, 2019
         </time>
@@ -829,8 +829,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-09-24T22:06:01.401Z"}
-          title="2019-09-24T22:06:01+00:00"
+          dateTime="2019-09-24T22:06:01.401+00:00"
+          title="September 24, 2019, 10:06:01 PM UTC"
         >
           September 24, 2019
         </time>
@@ -858,8 +858,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-12-13T09:50:12.368Z"}
-          title="2019-12-13T09:50:12+00:00"
+          dateTime="2019-12-13T09:50:12.368+00:00"
+          title="December 13, 2019, 9:50:12 AM UTC"
         >
           December 13, 2019
         </time>
@@ -887,8 +887,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-11-02T20:46:49.847Z"}
-          title="2020-11-02T20:46:49+00:00"
+          dateTime="2020-11-02T20:46:49.847+00:00"
+          title="November 2, 2020, 8:46:49 PM UTC"
         >
           November 2, 2020
         </time>
@@ -916,8 +916,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-01-21T05:32:43.557Z"}
-          title="2019-01-21T05:32:43+00:00"
+          dateTime="2019-01-21T05:32:43.557+00:00"
+          title="January 21, 2019, 5:32:43 AM UTC"
         >
           January 21, 2019
         </time>
@@ -945,8 +945,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-10-18T01:05:35.725Z"}
-          title="2020-10-18T01:05:35+00:00"
+          dateTime="2020-10-18T01:05:35.725+00:00"
+          title="October 18, 2020, 1:05:35 AM UTC"
         >
           October 18, 2020
         </time>
@@ -974,8 +974,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2021-01-03T19:14:42.456Z"}
-          title="2021-01-03T19:14:42+00:00"
+          dateTime="2021-01-03T19:14:42.456+00:00"
+          title="January 3, 2021, 7:14:42 PM UTC"
         >
           January 3, 2021
         </time>
@@ -1003,8 +1003,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-12-11T23:26:48.223Z"}
-          title="2020-12-11T23:26:48+00:00"
+          dateTime="2020-12-11T23:26:48.223+00:00"
+          title="December 11, 2020, 11:26:48 PM UTC"
         >
           December 11, 2020
         </time>
@@ -1032,8 +1032,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-05-13T23:49:34.437Z"}
-          title="2020-05-13T23:49:34+00:00"
+          dateTime="2020-05-13T23:49:34.437+00:00"
+          title="May 13, 2020, 11:49:34 PM UTC"
         >
           May 13, 2020
         </time>
@@ -1061,8 +1061,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-09-12T01:31:04.904Z"}
-          title="2020-09-12T01:31:04+00:00"
+          dateTime="2020-09-12T01:31:04.904+00:00"
+          title="September 12, 2020, 1:31:04 AM UTC"
         >
           September 12, 2020
         </time>
@@ -1090,8 +1090,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-12-01T03:50:19.589Z"}
-          title="2019-12-01T03:50:19+00:00"
+          dateTime="2019-12-01T03:50:19.589+00:00"
+          title="December 1, 2019, 3:50:19 AM UTC"
         >
           December 1, 2019
         </time>
@@ -1119,8 +1119,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-12-25T13:06:11.376Z"}
-          title="2019-12-25T13:06:11+00:00"
+          dateTime="2019-12-25T13:06:11.376+00:00"
+          title="December 25, 2019, 1:06:11 PM UTC"
         >
           December 25, 2019
         </time>
@@ -1148,8 +1148,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-11-11T09:50:45.150Z"}
-          title="2019-11-11T09:50:45+00:00"
+          dateTime="2019-11-11T09:50:45.150+00:00"
+          title="November 11, 2019, 9:50:45 AM UTC"
         >
           November 11, 2019
         </time>
@@ -1177,8 +1177,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-01-19T11:25:25.523Z"}
-          title="2020-01-19T11:25:25+00:00"
+          dateTime="2020-01-19T11:25:25.523+00:00"
+          title="January 19, 2020, 11:25:25 AM UTC"
         >
           January 19, 2020
         </time>
@@ -1206,8 +1206,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-12-09T21:37:57.360Z"}
-          title="2019-12-09T21:37:57+00:00"
+          dateTime="2019-12-09T21:37:57.360+00:00"
+          title="December 9, 2019, 9:37:57 PM UTC"
         >
           December 9, 2019
         </time>
@@ -1235,8 +1235,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-04-22T09:59:45.171Z"}
-          title="2020-04-22T09:59:45+00:00"
+          dateTime="2020-04-22T09:59:45.171+00:00"
+          title="April 22, 2020, 9:59:45 AM UTC"
         >
           April 22, 2020
         </time>
@@ -1264,8 +1264,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-09-05T17:02:28.842Z"}
-          title="2019-09-05T17:02:28+00:00"
+          dateTime="2019-09-05T17:02:28.842+00:00"
+          title="September 5, 2019, 5:02:28 PM UTC"
         >
           September 5, 2019
         </time>
@@ -1293,8 +1293,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-03-21T19:15:40.723Z"}
-          title="2020-03-21T19:15:40+00:00"
+          dateTime="2020-03-21T19:15:40.723+00:00"
+          title="March 21, 2020, 7:15:40 PM UTC"
         >
           March 21, 2020
         </time>
@@ -1322,8 +1322,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2021-01-04T01:31:58.194Z"}
-          title="2021-01-04T01:31:58+00:00"
+          dateTime="2021-01-04T01:31:58.194+00:00"
+          title="January 4, 2021, 1:31:58 AM UTC"
         >
           January 4, 2021
         </time>
@@ -1351,8 +1351,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-07-19T04:24:09.772Z"}
-          title="2020-07-19T04:24:09+00:00"
+          dateTime="2020-07-19T04:24:09.772+00:00"
+          title="July 19, 2020, 4:24:09 AM UTC"
         >
           July 19, 2020
         </time>
@@ -1380,8 +1380,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-12-29T01:58:05.913Z"}
-          title="2020-12-29T01:58:05+00:00"
+          dateTime="2020-12-29T01:58:05.913+00:00"
+          title="December 29, 2020, 1:58:05 AM UTC"
         >
           December 29, 2020
         </time>
@@ -1409,8 +1409,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-05-03T15:09:10.943Z"}
-          title="2020-05-03T15:09:10+00:00"
+          dateTime="2020-05-03T15:09:10.943+00:00"
+          title="May 3, 2020, 3:09:10 PM UTC"
         >
           May 3, 2020
         </time>
@@ -1438,8 +1438,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-06-12T03:59:20.701Z"}
-          title="2020-06-12T03:59:20+00:00"
+          dateTime="2020-06-12T03:59:20.701+00:00"
+          title="June 12, 2020, 3:59:20 AM UTC"
         >
           June 12, 2020
         </time>
@@ -1467,8 +1467,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-07-24T03:47:22.753Z"}
-          title="2020-07-24T03:47:22+00:00"
+          dateTime="2020-07-24T03:47:22.753+00:00"
+          title="July 24, 2020, 3:47:22 AM UTC"
         >
           July 24, 2020
         </time>
@@ -1496,8 +1496,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-12-27T02:09:38.799Z"}
-          title="2019-12-27T02:09:38+00:00"
+          dateTime="2019-12-27T02:09:38.799+00:00"
+          title="December 27, 2019, 2:09:38 AM UTC"
         >
           December 27, 2019
         </time>
@@ -1525,8 +1525,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-07-21T01:41:25.229Z"}
-          title="2020-07-21T01:41:25+00:00"
+          dateTime="2020-07-21T01:41:25.229+00:00"
+          title="July 21, 2020, 1:41:25 AM UTC"
         >
           July 21, 2020
         </time>
@@ -1554,8 +1554,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-11-12T03:04:37.216Z"}
-          title="2019-11-12T03:04:37+00:00"
+          dateTime="2019-11-12T03:04:37.216+00:00"
+          title="November 12, 2019, 3:04:37 AM UTC"
         >
           November 12, 2019
         </time>
@@ -1583,8 +1583,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2021-02-26T13:40:28.643Z"}
-          title="2021-02-26T13:40:28+00:00"
+          dateTime="2021-02-26T13:40:28.643+00:00"
+          title="February 26, 2021, 1:40:28 PM UTC"
         >
           February 26, 2021
         </time>
@@ -1612,8 +1612,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-09-13T23:32:56.271Z"}
-          title="2020-09-13T23:32:56+00:00"
+          dateTime="2020-09-13T23:32:56.271+00:00"
+          title="September 13, 2020, 11:32:56 PM UTC"
         >
           September 13, 2020
         </time>
@@ -1641,8 +1641,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-11-23T13:30:19.412Z"}
-          title="2019-11-23T13:30:19+00:00"
+          dateTime="2019-11-23T13:30:19.412+00:00"
+          title="November 23, 2019, 1:30:19 PM UTC"
         >
           November 23, 2019
         </time>
@@ -1670,8 +1670,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-07-23T04:05:52.696Z"}
-          title="2020-07-23T04:05:52+00:00"
+          dateTime="2020-07-23T04:05:52.696+00:00"
+          title="July 23, 2020, 4:05:52 AM UTC"
         >
           July 23, 2020
         </time>
@@ -1699,8 +1699,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-04-12T07:23:10.017Z"}
-          title="2020-04-12T07:23:10+00:00"
+          dateTime="2020-04-12T07:23:10.017+00:00"
+          title="April 12, 2020, 7:23:10 AM UTC"
         >
           April 12, 2020
         </time>
@@ -1728,8 +1728,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-12-16T14:02:35.829Z"}
-          title="2020-12-16T14:02:35+00:00"
+          dateTime="2020-12-16T14:02:35.829+00:00"
+          title="December 16, 2020, 2:02:35 PM UTC"
         >
           December 16, 2020
         </time>
@@ -1757,8 +1757,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-08-29T01:42:14.303Z"}
-          title="2020-08-29T01:42:14+00:00"
+          dateTime="2020-08-29T01:42:14.303+00:00"
+          title="August 29, 2020, 1:42:14 AM UTC"
         >
           August 29, 2020
         </time>
@@ -1786,8 +1786,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-10-14T04:52:56.689Z"}
-          title="2019-10-14T04:52:56+00:00"
+          dateTime="2019-10-14T04:52:56.689+00:00"
+          title="October 14, 2019, 4:52:56 AM UTC"
         >
           October 14, 2019
         </time>
@@ -1815,8 +1815,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-11-07T02:17:13.386Z"}
-          title="2020-11-07T02:17:13+00:00"
+          dateTime="2020-11-07T02:17:13.386+00:00"
+          title="November 7, 2020, 2:17:13 AM UTC"
         >
           November 7, 2020
         </time>
@@ -1844,8 +1844,8 @@ exports[`Storyshots Template Specialization/ArrayTable Array Table 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-10-19T09:25:33.489Z"}
-          title="2019-10-19T09:25:33+00:00"
+          dateTime="2019-10-19T09:25:33.489+00:00"
+          title="October 19, 2019, 9:25:33 AM UTC"
         >
           October 19, 2019
         </time>
@@ -2286,8 +2286,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-04-21T09:24:38.262Z"}
-          title="2019-04-21T09:24:38+00:00"
+          dateTime="2019-04-21T09:24:38.262+00:00"
+          title="April 21, 2019, 9:24:38 AM UTC"
         >
           April 21, 2019
         </time>
@@ -2320,8 +2320,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-05-21T20:24:48.713Z"}
-          title="2020-05-21T20:24:48+00:00"
+          dateTime="2020-05-21T20:24:48.713+00:00"
+          title="May 21, 2020, 8:24:48 PM UTC"
         >
           May 21, 2020
         </time>
@@ -2354,8 +2354,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-03-05T01:04:28.401Z"}
-          title="2019-03-05T01:04:28+00:00"
+          dateTime="2019-03-05T01:04:28.401+00:00"
+          title="March 5, 2019, 1:04:28 AM UTC"
         >
           March 5, 2019
         </time>
@@ -2388,8 +2388,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-10-04T14:50:38.937Z"}
-          title="2020-10-04T14:50:38+00:00"
+          dateTime="2020-10-04T14:50:38.937+00:00"
+          title="October 4, 2020, 2:50:38 PM UTC"
         >
           October 4, 2020
         </time>
@@ -2422,8 +2422,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-09-30T22:08:33.801Z"}
-          title="2020-09-30T22:08:33+00:00"
+          dateTime="2020-09-30T22:08:33.801+00:00"
+          title="September 30, 2020, 10:08:33 PM UTC"
         >
           September 30, 2020
         </time>
@@ -2456,8 +2456,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-09-08T08:53:03.410Z"}
-          title="2020-09-08T08:53:03+00:00"
+          dateTime="2020-09-08T08:53:03.410+00:00"
+          title="September 8, 2020, 8:53:03 AM UTC"
         >
           September 8, 2020
         </time>
@@ -2490,8 +2490,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-03-03T07:23:58.735Z"}
-          title="2020-03-03T07:23:58+00:00"
+          dateTime="2020-03-03T07:23:58.735+00:00"
+          title="March 3, 2020, 7:23:58 AM UTC"
         >
           March 3, 2020
         </time>
@@ -2524,8 +2524,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-03-26T10:22:53.934Z"}
-          title="2019-03-26T10:22:53+00:00"
+          dateTime="2019-03-26T10:22:53.934+00:00"
+          title="March 26, 2019, 10:22:53 AM UTC"
         >
           March 26, 2019
         </time>
@@ -2558,8 +2558,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-09-26T10:55:45.296Z"}
-          title="2019-09-26T10:55:45+00:00"
+          dateTime="2019-09-26T10:55:45.296+00:00"
+          title="September 26, 2019, 10:55:45 AM UTC"
         >
           September 26, 2019
         </time>
@@ -2592,8 +2592,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-07-02T11:06:23.011Z"}
-          title="2019-07-02T11:06:23+00:00"
+          dateTime="2019-07-02T11:06:23.011+00:00"
+          title="July 2, 2019, 11:06:23 AM UTC"
         >
           July 2, 2019
         </time>
@@ -2626,8 +2626,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-10-18T19:07:03.671Z"}
-          title="2019-10-18T19:07:03+00:00"
+          dateTime="2019-10-18T19:07:03.671+00:00"
+          title="October 18, 2019, 7:07:03 PM UTC"
         >
           October 18, 2019
         </time>
@@ -2660,8 +2660,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-05-25T13:46:21.818Z"}
-          title="2020-05-25T13:46:21+00:00"
+          dateTime="2020-05-25T13:46:21.818+00:00"
+          title="May 25, 2020, 1:46:21 PM UTC"
         >
           May 25, 2020
         </time>
@@ -2694,8 +2694,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-10-06T20:55:24.609Z"}
-          title="2019-10-06T20:55:24+00:00"
+          dateTime="2019-10-06T20:55:24.609+00:00"
+          title="October 6, 2019, 8:55:24 PM UTC"
         >
           October 6, 2019
         </time>
@@ -2728,8 +2728,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-03-19T17:47:19.622Z"}
-          title="2019-03-19T17:47:19+00:00"
+          dateTime="2019-03-19T17:47:19.622+00:00"
+          title="March 19, 2019, 5:47:19 PM UTC"
         >
           March 19, 2019
         </time>
@@ -2762,8 +2762,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-09-24T22:06:01.401Z"}
-          title="2019-09-24T22:06:01+00:00"
+          dateTime="2019-09-24T22:06:01.401+00:00"
+          title="September 24, 2019, 10:06:01 PM UTC"
         >
           September 24, 2019
         </time>
@@ -2796,8 +2796,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-12-13T09:50:12.368Z"}
-          title="2019-12-13T09:50:12+00:00"
+          dateTime="2019-12-13T09:50:12.368+00:00"
+          title="December 13, 2019, 9:50:12 AM UTC"
         >
           December 13, 2019
         </time>
@@ -2830,8 +2830,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-11-02T20:46:49.847Z"}
-          title="2020-11-02T20:46:49+00:00"
+          dateTime="2020-11-02T20:46:49.847+00:00"
+          title="November 2, 2020, 8:46:49 PM UTC"
         >
           November 2, 2020
         </time>
@@ -2864,8 +2864,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-01-21T05:32:43.557Z"}
-          title="2019-01-21T05:32:43+00:00"
+          dateTime="2019-01-21T05:32:43.557+00:00"
+          title="January 21, 2019, 5:32:43 AM UTC"
         >
           January 21, 2019
         </time>
@@ -2898,8 +2898,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-10-18T01:05:35.725Z"}
-          title="2020-10-18T01:05:35+00:00"
+          dateTime="2020-10-18T01:05:35.725+00:00"
+          title="October 18, 2020, 1:05:35 AM UTC"
         >
           October 18, 2020
         </time>
@@ -2932,8 +2932,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2021-01-03T19:14:42.456Z"}
-          title="2021-01-03T19:14:42+00:00"
+          dateTime="2021-01-03T19:14:42.456+00:00"
+          title="January 3, 2021, 7:14:42 PM UTC"
         >
           January 3, 2021
         </time>
@@ -2966,8 +2966,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-12-11T23:26:48.223Z"}
-          title="2020-12-11T23:26:48+00:00"
+          dateTime="2020-12-11T23:26:48.223+00:00"
+          title="December 11, 2020, 11:26:48 PM UTC"
         >
           December 11, 2020
         </time>
@@ -3000,8 +3000,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-05-13T23:49:34.437Z"}
-          title="2020-05-13T23:49:34+00:00"
+          dateTime="2020-05-13T23:49:34.437+00:00"
+          title="May 13, 2020, 11:49:34 PM UTC"
         >
           May 13, 2020
         </time>
@@ -3034,8 +3034,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-09-12T01:31:04.904Z"}
-          title="2020-09-12T01:31:04+00:00"
+          dateTime="2020-09-12T01:31:04.904+00:00"
+          title="September 12, 2020, 1:31:04 AM UTC"
         >
           September 12, 2020
         </time>
@@ -3068,8 +3068,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-12-01T03:50:19.589Z"}
-          title="2019-12-01T03:50:19+00:00"
+          dateTime="2019-12-01T03:50:19.589+00:00"
+          title="December 1, 2019, 3:50:19 AM UTC"
         >
           December 1, 2019
         </time>
@@ -3102,8 +3102,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-12-25T13:06:11.376Z"}
-          title="2019-12-25T13:06:11+00:00"
+          dateTime="2019-12-25T13:06:11.376+00:00"
+          title="December 25, 2019, 1:06:11 PM UTC"
         >
           December 25, 2019
         </time>
@@ -3136,8 +3136,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-11-11T09:50:45.150Z"}
-          title="2019-11-11T09:50:45+00:00"
+          dateTime="2019-11-11T09:50:45.150+00:00"
+          title="November 11, 2019, 9:50:45 AM UTC"
         >
           November 11, 2019
         </time>
@@ -3170,8 +3170,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-01-19T11:25:25.523Z"}
-          title="2020-01-19T11:25:25+00:00"
+          dateTime="2020-01-19T11:25:25.523+00:00"
+          title="January 19, 2020, 11:25:25 AM UTC"
         >
           January 19, 2020
         </time>
@@ -3204,8 +3204,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-12-09T21:37:57.360Z"}
-          title="2019-12-09T21:37:57+00:00"
+          dateTime="2019-12-09T21:37:57.360+00:00"
+          title="December 9, 2019, 9:37:57 PM UTC"
         >
           December 9, 2019
         </time>
@@ -3238,8 +3238,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-04-22T09:59:45.171Z"}
-          title="2020-04-22T09:59:45+00:00"
+          dateTime="2020-04-22T09:59:45.171+00:00"
+          title="April 22, 2020, 9:59:45 AM UTC"
         >
           April 22, 2020
         </time>
@@ -3272,8 +3272,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-09-05T17:02:28.842Z"}
-          title="2019-09-05T17:02:28+00:00"
+          dateTime="2019-09-05T17:02:28.842+00:00"
+          title="September 5, 2019, 5:02:28 PM UTC"
         >
           September 5, 2019
         </time>
@@ -3306,8 +3306,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-03-21T19:15:40.723Z"}
-          title="2020-03-21T19:15:40+00:00"
+          dateTime="2020-03-21T19:15:40.723+00:00"
+          title="March 21, 2020, 7:15:40 PM UTC"
         >
           March 21, 2020
         </time>
@@ -3340,8 +3340,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2021-01-04T01:31:58.194Z"}
-          title="2021-01-04T01:31:58+00:00"
+          dateTime="2021-01-04T01:31:58.194+00:00"
+          title="January 4, 2021, 1:31:58 AM UTC"
         >
           January 4, 2021
         </time>
@@ -3374,8 +3374,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-07-19T04:24:09.772Z"}
-          title="2020-07-19T04:24:09+00:00"
+          dateTime="2020-07-19T04:24:09.772+00:00"
+          title="July 19, 2020, 4:24:09 AM UTC"
         >
           July 19, 2020
         </time>
@@ -3408,8 +3408,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-12-29T01:58:05.913Z"}
-          title="2020-12-29T01:58:05+00:00"
+          dateTime="2020-12-29T01:58:05.913+00:00"
+          title="December 29, 2020, 1:58:05 AM UTC"
         >
           December 29, 2020
         </time>
@@ -3442,8 +3442,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-05-03T15:09:10.943Z"}
-          title="2020-05-03T15:09:10+00:00"
+          dateTime="2020-05-03T15:09:10.943+00:00"
+          title="May 3, 2020, 3:09:10 PM UTC"
         >
           May 3, 2020
         </time>
@@ -3476,8 +3476,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-06-12T03:59:20.701Z"}
-          title="2020-06-12T03:59:20+00:00"
+          dateTime="2020-06-12T03:59:20.701+00:00"
+          title="June 12, 2020, 3:59:20 AM UTC"
         >
           June 12, 2020
         </time>
@@ -3510,8 +3510,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-07-24T03:47:22.753Z"}
-          title="2020-07-24T03:47:22+00:00"
+          dateTime="2020-07-24T03:47:22.753+00:00"
+          title="July 24, 2020, 3:47:22 AM UTC"
         >
           July 24, 2020
         </time>
@@ -3544,8 +3544,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-12-27T02:09:38.799Z"}
-          title="2019-12-27T02:09:38+00:00"
+          dateTime="2019-12-27T02:09:38.799+00:00"
+          title="December 27, 2019, 2:09:38 AM UTC"
         >
           December 27, 2019
         </time>
@@ -3578,8 +3578,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-07-21T01:41:25.229Z"}
-          title="2020-07-21T01:41:25+00:00"
+          dateTime="2020-07-21T01:41:25.229+00:00"
+          title="July 21, 2020, 1:41:25 AM UTC"
         >
           July 21, 2020
         </time>
@@ -3612,8 +3612,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-11-12T03:04:37.216Z"}
-          title="2019-11-12T03:04:37+00:00"
+          dateTime="2019-11-12T03:04:37.216+00:00"
+          title="November 12, 2019, 3:04:37 AM UTC"
         >
           November 12, 2019
         </time>
@@ -3646,8 +3646,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2021-02-26T13:40:28.643Z"}
-          title="2021-02-26T13:40:28+00:00"
+          dateTime="2021-02-26T13:40:28.643+00:00"
+          title="February 26, 2021, 1:40:28 PM UTC"
         >
           February 26, 2021
         </time>
@@ -3680,8 +3680,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-09-13T23:32:56.271Z"}
-          title="2020-09-13T23:32:56+00:00"
+          dateTime="2020-09-13T23:32:56.271+00:00"
+          title="September 13, 2020, 11:32:56 PM UTC"
         >
           September 13, 2020
         </time>
@@ -3714,8 +3714,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-11-23T13:30:19.412Z"}
-          title="2019-11-23T13:30:19+00:00"
+          dateTime="2019-11-23T13:30:19.412+00:00"
+          title="November 23, 2019, 1:30:19 PM UTC"
         >
           November 23, 2019
         </time>
@@ -3748,8 +3748,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-07-23T04:05:52.696Z"}
-          title="2020-07-23T04:05:52+00:00"
+          dateTime="2020-07-23T04:05:52.696+00:00"
+          title="July 23, 2020, 4:05:52 AM UTC"
         >
           July 23, 2020
         </time>
@@ -3782,8 +3782,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-04-12T07:23:10.017Z"}
-          title="2020-04-12T07:23:10+00:00"
+          dateTime="2020-04-12T07:23:10.017+00:00"
+          title="April 12, 2020, 7:23:10 AM UTC"
         >
           April 12, 2020
         </time>
@@ -3816,8 +3816,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-12-16T14:02:35.829Z"}
-          title="2020-12-16T14:02:35+00:00"
+          dateTime="2020-12-16T14:02:35.829+00:00"
+          title="December 16, 2020, 2:02:35 PM UTC"
         >
           December 16, 2020
         </time>
@@ -3850,8 +3850,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-08-29T01:42:14.303Z"}
-          title="2020-08-29T01:42:14+00:00"
+          dateTime="2020-08-29T01:42:14.303+00:00"
+          title="August 29, 2020, 1:42:14 AM UTC"
         >
           August 29, 2020
         </time>
@@ -3884,8 +3884,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-10-14T04:52:56.689Z"}
-          title="2019-10-14T04:52:56+00:00"
+          dateTime="2019-10-14T04:52:56.689+00:00"
+          title="October 14, 2019, 4:52:56 AM UTC"
         >
           October 14, 2019
         </time>
@@ -3918,8 +3918,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-11-07T02:17:13.386Z"}
-          title="2020-11-07T02:17:13+00:00"
+          dateTime="2020-11-07T02:17:13.386+00:00"
+          title="November 7, 2020, 2:17:13 AM UTC"
         >
           November 7, 2020
         </time>
@@ -3952,8 +3952,8 @@ exports[`Storyshots Template Specialization/ArrayTable Duplicate Fields 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-10-19T09:25:33.489Z"}
-          title="2019-10-19T09:25:33+00:00"
+          dateTime="2019-10-19T09:25:33.489+00:00"
+          title="October 19, 2019, 9:25:33 AM UTC"
         >
           October 19, 2019
         </time>
@@ -4486,8 +4486,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-04-21T09:24:38.262Z"}
-          title="2019-04-21T09:24:38+00:00"
+          dateTime="2019-04-21T09:24:38.262+00:00"
+          title="April 21, 2019, 9:24:38 AM UTC"
         >
           April 21, 2019
         </time>
@@ -4515,8 +4515,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-05-21T20:24:48.713Z"}
-          title="2020-05-21T20:24:48+00:00"
+          dateTime="2020-05-21T20:24:48.713+00:00"
+          title="May 21, 2020, 8:24:48 PM UTC"
         >
           May 21, 2020
         </time>
@@ -4544,8 +4544,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-03-05T01:04:28.401Z"}
-          title="2019-03-05T01:04:28+00:00"
+          dateTime="2019-03-05T01:04:28.401+00:00"
+          title="March 5, 2019, 1:04:28 AM UTC"
         >
           March 5, 2019
         </time>
@@ -4573,8 +4573,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-10-04T14:50:38.937Z"}
-          title="2020-10-04T14:50:38+00:00"
+          dateTime="2020-10-04T14:50:38.937+00:00"
+          title="October 4, 2020, 2:50:38 PM UTC"
         >
           October 4, 2020
         </time>
@@ -4602,8 +4602,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-09-30T22:08:33.801Z"}
-          title="2020-09-30T22:08:33+00:00"
+          dateTime="2020-09-30T22:08:33.801+00:00"
+          title="September 30, 2020, 10:08:33 PM UTC"
         >
           September 30, 2020
         </time>
@@ -4631,8 +4631,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-09-08T08:53:03.410Z"}
-          title="2020-09-08T08:53:03+00:00"
+          dateTime="2020-09-08T08:53:03.410+00:00"
+          title="September 8, 2020, 8:53:03 AM UTC"
         >
           September 8, 2020
         </time>
@@ -4660,8 +4660,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-03-03T07:23:58.735Z"}
-          title="2020-03-03T07:23:58+00:00"
+          dateTime="2020-03-03T07:23:58.735+00:00"
+          title="March 3, 2020, 7:23:58 AM UTC"
         >
           March 3, 2020
         </time>
@@ -4689,8 +4689,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-03-26T10:22:53.934Z"}
-          title="2019-03-26T10:22:53+00:00"
+          dateTime="2019-03-26T10:22:53.934+00:00"
+          title="March 26, 2019, 10:22:53 AM UTC"
         >
           March 26, 2019
         </time>
@@ -4718,8 +4718,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-09-26T10:55:45.296Z"}
-          title="2019-09-26T10:55:45+00:00"
+          dateTime="2019-09-26T10:55:45.296+00:00"
+          title="September 26, 2019, 10:55:45 AM UTC"
         >
           September 26, 2019
         </time>
@@ -4747,8 +4747,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-07-02T11:06:23.011Z"}
-          title="2019-07-02T11:06:23+00:00"
+          dateTime="2019-07-02T11:06:23.011+00:00"
+          title="July 2, 2019, 11:06:23 AM UTC"
         >
           July 2, 2019
         </time>
@@ -4776,8 +4776,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-10-18T19:07:03.671Z"}
-          title="2019-10-18T19:07:03+00:00"
+          dateTime="2019-10-18T19:07:03.671+00:00"
+          title="October 18, 2019, 7:07:03 PM UTC"
         >
           October 18, 2019
         </time>
@@ -4805,8 +4805,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-05-25T13:46:21.818Z"}
-          title="2020-05-25T13:46:21+00:00"
+          dateTime="2020-05-25T13:46:21.818+00:00"
+          title="May 25, 2020, 1:46:21 PM UTC"
         >
           May 25, 2020
         </time>
@@ -4834,8 +4834,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-10-06T20:55:24.609Z"}
-          title="2019-10-06T20:55:24+00:00"
+          dateTime="2019-10-06T20:55:24.609+00:00"
+          title="October 6, 2019, 8:55:24 PM UTC"
         >
           October 6, 2019
         </time>
@@ -4863,8 +4863,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-03-19T17:47:19.622Z"}
-          title="2019-03-19T17:47:19+00:00"
+          dateTime="2019-03-19T17:47:19.622+00:00"
+          title="March 19, 2019, 5:47:19 PM UTC"
         >
           March 19, 2019
         </time>
@@ -4892,8 +4892,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-09-24T22:06:01.401Z"}
-          title="2019-09-24T22:06:01+00:00"
+          dateTime="2019-09-24T22:06:01.401+00:00"
+          title="September 24, 2019, 10:06:01 PM UTC"
         >
           September 24, 2019
         </time>
@@ -4921,8 +4921,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-12-13T09:50:12.368Z"}
-          title="2019-12-13T09:50:12+00:00"
+          dateTime="2019-12-13T09:50:12.368+00:00"
+          title="December 13, 2019, 9:50:12 AM UTC"
         >
           December 13, 2019
         </time>
@@ -4950,8 +4950,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-11-02T20:46:49.847Z"}
-          title="2020-11-02T20:46:49+00:00"
+          dateTime="2020-11-02T20:46:49.847+00:00"
+          title="November 2, 2020, 8:46:49 PM UTC"
         >
           November 2, 2020
         </time>
@@ -4979,8 +4979,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-01-21T05:32:43.557Z"}
-          title="2019-01-21T05:32:43+00:00"
+          dateTime="2019-01-21T05:32:43.557+00:00"
+          title="January 21, 2019, 5:32:43 AM UTC"
         >
           January 21, 2019
         </time>
@@ -5008,8 +5008,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-10-18T01:05:35.725Z"}
-          title="2020-10-18T01:05:35+00:00"
+          dateTime="2020-10-18T01:05:35.725+00:00"
+          title="October 18, 2020, 1:05:35 AM UTC"
         >
           October 18, 2020
         </time>
@@ -5037,8 +5037,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2021-01-03T19:14:42.456Z"}
-          title="2021-01-03T19:14:42+00:00"
+          dateTime="2021-01-03T19:14:42.456+00:00"
+          title="January 3, 2021, 7:14:42 PM UTC"
         >
           January 3, 2021
         </time>
@@ -5066,8 +5066,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-12-11T23:26:48.223Z"}
-          title="2020-12-11T23:26:48+00:00"
+          dateTime="2020-12-11T23:26:48.223+00:00"
+          title="December 11, 2020, 11:26:48 PM UTC"
         >
           December 11, 2020
         </time>
@@ -5095,8 +5095,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-05-13T23:49:34.437Z"}
-          title="2020-05-13T23:49:34+00:00"
+          dateTime="2020-05-13T23:49:34.437+00:00"
+          title="May 13, 2020, 11:49:34 PM UTC"
         >
           May 13, 2020
         </time>
@@ -5124,8 +5124,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-09-12T01:31:04.904Z"}
-          title="2020-09-12T01:31:04+00:00"
+          dateTime="2020-09-12T01:31:04.904+00:00"
+          title="September 12, 2020, 1:31:04 AM UTC"
         >
           September 12, 2020
         </time>
@@ -5153,8 +5153,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-12-01T03:50:19.589Z"}
-          title="2019-12-01T03:50:19+00:00"
+          dateTime="2019-12-01T03:50:19.589+00:00"
+          title="December 1, 2019, 3:50:19 AM UTC"
         >
           December 1, 2019
         </time>
@@ -5182,8 +5182,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-12-25T13:06:11.376Z"}
-          title="2019-12-25T13:06:11+00:00"
+          dateTime="2019-12-25T13:06:11.376+00:00"
+          title="December 25, 2019, 1:06:11 PM UTC"
         >
           December 25, 2019
         </time>
@@ -5211,8 +5211,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-11-11T09:50:45.150Z"}
-          title="2019-11-11T09:50:45+00:00"
+          dateTime="2019-11-11T09:50:45.150+00:00"
+          title="November 11, 2019, 9:50:45 AM UTC"
         >
           November 11, 2019
         </time>
@@ -5240,8 +5240,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-01-19T11:25:25.523Z"}
-          title="2020-01-19T11:25:25+00:00"
+          dateTime="2020-01-19T11:25:25.523+00:00"
+          title="January 19, 2020, 11:25:25 AM UTC"
         >
           January 19, 2020
         </time>
@@ -5269,8 +5269,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-12-09T21:37:57.360Z"}
-          title="2019-12-09T21:37:57+00:00"
+          dateTime="2019-12-09T21:37:57.360+00:00"
+          title="December 9, 2019, 9:37:57 PM UTC"
         >
           December 9, 2019
         </time>
@@ -5298,8 +5298,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-04-22T09:59:45.171Z"}
-          title="2020-04-22T09:59:45+00:00"
+          dateTime="2020-04-22T09:59:45.171+00:00"
+          title="April 22, 2020, 9:59:45 AM UTC"
         >
           April 22, 2020
         </time>
@@ -5327,8 +5327,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-09-05T17:02:28.842Z"}
-          title="2019-09-05T17:02:28+00:00"
+          dateTime="2019-09-05T17:02:28.842+00:00"
+          title="September 5, 2019, 5:02:28 PM UTC"
         >
           September 5, 2019
         </time>
@@ -5356,8 +5356,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-03-21T19:15:40.723Z"}
-          title="2020-03-21T19:15:40+00:00"
+          dateTime="2020-03-21T19:15:40.723+00:00"
+          title="March 21, 2020, 7:15:40 PM UTC"
         >
           March 21, 2020
         </time>
@@ -5385,8 +5385,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2021-01-04T01:31:58.194Z"}
-          title="2021-01-04T01:31:58+00:00"
+          dateTime="2021-01-04T01:31:58.194+00:00"
+          title="January 4, 2021, 1:31:58 AM UTC"
         >
           January 4, 2021
         </time>
@@ -5414,8 +5414,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-07-19T04:24:09.772Z"}
-          title="2020-07-19T04:24:09+00:00"
+          dateTime="2020-07-19T04:24:09.772+00:00"
+          title="July 19, 2020, 4:24:09 AM UTC"
         >
           July 19, 2020
         </time>
@@ -5443,8 +5443,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-12-29T01:58:05.913Z"}
-          title="2020-12-29T01:58:05+00:00"
+          dateTime="2020-12-29T01:58:05.913+00:00"
+          title="December 29, 2020, 1:58:05 AM UTC"
         >
           December 29, 2020
         </time>
@@ -5472,8 +5472,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-05-03T15:09:10.943Z"}
-          title="2020-05-03T15:09:10+00:00"
+          dateTime="2020-05-03T15:09:10.943+00:00"
+          title="May 3, 2020, 3:09:10 PM UTC"
         >
           May 3, 2020
         </time>
@@ -5501,8 +5501,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-06-12T03:59:20.701Z"}
-          title="2020-06-12T03:59:20+00:00"
+          dateTime="2020-06-12T03:59:20.701+00:00"
+          title="June 12, 2020, 3:59:20 AM UTC"
         >
           June 12, 2020
         </time>
@@ -5530,8 +5530,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-07-24T03:47:22.753Z"}
-          title="2020-07-24T03:47:22+00:00"
+          dateTime="2020-07-24T03:47:22.753+00:00"
+          title="July 24, 2020, 3:47:22 AM UTC"
         >
           July 24, 2020
         </time>
@@ -5559,8 +5559,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-12-27T02:09:38.799Z"}
-          title="2019-12-27T02:09:38+00:00"
+          dateTime="2019-12-27T02:09:38.799+00:00"
+          title="December 27, 2019, 2:09:38 AM UTC"
         >
           December 27, 2019
         </time>
@@ -5588,8 +5588,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-07-21T01:41:25.229Z"}
-          title="2020-07-21T01:41:25+00:00"
+          dateTime="2020-07-21T01:41:25.229+00:00"
+          title="July 21, 2020, 1:41:25 AM UTC"
         >
           July 21, 2020
         </time>
@@ -5617,8 +5617,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-11-12T03:04:37.216Z"}
-          title="2019-11-12T03:04:37+00:00"
+          dateTime="2019-11-12T03:04:37.216+00:00"
+          title="November 12, 2019, 3:04:37 AM UTC"
         >
           November 12, 2019
         </time>
@@ -5646,8 +5646,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2021-02-26T13:40:28.643Z"}
-          title="2021-02-26T13:40:28+00:00"
+          dateTime="2021-02-26T13:40:28.643+00:00"
+          title="February 26, 2021, 1:40:28 PM UTC"
         >
           February 26, 2021
         </time>
@@ -5675,8 +5675,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-09-13T23:32:56.271Z"}
-          title="2020-09-13T23:32:56+00:00"
+          dateTime="2020-09-13T23:32:56.271+00:00"
+          title="September 13, 2020, 11:32:56 PM UTC"
         >
           September 13, 2020
         </time>
@@ -5704,8 +5704,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-11-23T13:30:19.412Z"}
-          title="2019-11-23T13:30:19+00:00"
+          dateTime="2019-11-23T13:30:19.412+00:00"
+          title="November 23, 2019, 1:30:19 PM UTC"
         >
           November 23, 2019
         </time>
@@ -5733,8 +5733,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-07-23T04:05:52.696Z"}
-          title="2020-07-23T04:05:52+00:00"
+          dateTime="2020-07-23T04:05:52.696+00:00"
+          title="July 23, 2020, 4:05:52 AM UTC"
         >
           July 23, 2020
         </time>
@@ -5762,8 +5762,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-04-12T07:23:10.017Z"}
-          title="2020-04-12T07:23:10+00:00"
+          dateTime="2020-04-12T07:23:10.017+00:00"
+          title="April 12, 2020, 7:23:10 AM UTC"
         >
           April 12, 2020
         </time>
@@ -5791,8 +5791,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-12-16T14:02:35.829Z"}
-          title="2020-12-16T14:02:35+00:00"
+          dateTime="2020-12-16T14:02:35.829+00:00"
+          title="December 16, 2020, 2:02:35 PM UTC"
         >
           December 16, 2020
         </time>
@@ -5820,8 +5820,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-08-29T01:42:14.303Z"}
-          title="2020-08-29T01:42:14+00:00"
+          dateTime="2020-08-29T01:42:14.303+00:00"
+          title="August 29, 2020, 1:42:14 AM UTC"
         >
           August 29, 2020
         </time>
@@ -5849,8 +5849,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-10-14T04:52:56.689Z"}
-          title="2019-10-14T04:52:56+00:00"
+          dateTime="2019-10-14T04:52:56.689+00:00"
+          title="October 14, 2019, 4:52:56 AM UTC"
         >
           October 14, 2019
         </time>
@@ -5878,8 +5878,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-11-07T02:17:13.386Z"}
-          title="2020-11-07T02:17:13+00:00"
+          dateTime="2020-11-07T02:17:13.386+00:00"
+          title="November 7, 2020, 2:17:13 AM UTC"
         >
           November 7, 2020
         </time>
@@ -5907,8 +5907,8 @@ exports[`Storyshots Template Specialization/ArrayTable Nested Data 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-10-19T09:25:33.489Z"}
-          title="2019-10-19T09:25:33+00:00"
+          dateTime="2019-10-19T09:25:33.489+00:00"
+          title="October 19, 2019, 9:25:33 AM UTC"
         >
           October 19, 2019
         </time>
@@ -6341,8 +6341,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-04-21T09:24:38.262Z"}
-          title="2019-04-21T09:24:38+00:00"
+          dateTime="2019-04-21T09:24:38.262+00:00"
+          title="April 21, 2019, 9:24:38 AM UTC"
         >
           April 21, 2019
         </time>
@@ -6370,8 +6370,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-05-21T20:24:48.713Z"}
-          title="2020-05-21T20:24:48+00:00"
+          dateTime="2020-05-21T20:24:48.713+00:00"
+          title="May 21, 2020, 8:24:48 PM UTC"
         >
           May 21, 2020
         </time>
@@ -6399,8 +6399,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-03-05T01:04:28.401Z"}
-          title="2019-03-05T01:04:28+00:00"
+          dateTime="2019-03-05T01:04:28.401+00:00"
+          title="March 5, 2019, 1:04:28 AM UTC"
         >
           March 5, 2019
         </time>
@@ -6428,8 +6428,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-10-04T14:50:38.937Z"}
-          title="2020-10-04T14:50:38+00:00"
+          dateTime="2020-10-04T14:50:38.937+00:00"
+          title="October 4, 2020, 2:50:38 PM UTC"
         >
           October 4, 2020
         </time>
@@ -6457,8 +6457,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-09-30T22:08:33.801Z"}
-          title="2020-09-30T22:08:33+00:00"
+          dateTime="2020-09-30T22:08:33.801+00:00"
+          title="September 30, 2020, 10:08:33 PM UTC"
         >
           September 30, 2020
         </time>
@@ -6486,8 +6486,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-09-08T08:53:03.410Z"}
-          title="2020-09-08T08:53:03+00:00"
+          dateTime="2020-09-08T08:53:03.410+00:00"
+          title="September 8, 2020, 8:53:03 AM UTC"
         >
           September 8, 2020
         </time>
@@ -6515,8 +6515,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-03-03T07:23:58.735Z"}
-          title="2020-03-03T07:23:58+00:00"
+          dateTime="2020-03-03T07:23:58.735+00:00"
+          title="March 3, 2020, 7:23:58 AM UTC"
         >
           March 3, 2020
         </time>
@@ -6544,8 +6544,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-03-26T10:22:53.934Z"}
-          title="2019-03-26T10:22:53+00:00"
+          dateTime="2019-03-26T10:22:53.934+00:00"
+          title="March 26, 2019, 10:22:53 AM UTC"
         >
           March 26, 2019
         </time>
@@ -6573,8 +6573,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-09-26T10:55:45.296Z"}
-          title="2019-09-26T10:55:45+00:00"
+          dateTime="2019-09-26T10:55:45.296+00:00"
+          title="September 26, 2019, 10:55:45 AM UTC"
         >
           September 26, 2019
         </time>
@@ -6602,8 +6602,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-07-02T11:06:23.011Z"}
-          title="2019-07-02T11:06:23+00:00"
+          dateTime="2019-07-02T11:06:23.011+00:00"
+          title="July 2, 2019, 11:06:23 AM UTC"
         >
           July 2, 2019
         </time>
@@ -6631,8 +6631,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-10-18T19:07:03.671Z"}
-          title="2019-10-18T19:07:03+00:00"
+          dateTime="2019-10-18T19:07:03.671+00:00"
+          title="October 18, 2019, 7:07:03 PM UTC"
         >
           October 18, 2019
         </time>
@@ -6660,8 +6660,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-05-25T13:46:21.818Z"}
-          title="2020-05-25T13:46:21+00:00"
+          dateTime="2020-05-25T13:46:21.818+00:00"
+          title="May 25, 2020, 1:46:21 PM UTC"
         >
           May 25, 2020
         </time>
@@ -6689,8 +6689,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-10-06T20:55:24.609Z"}
-          title="2019-10-06T20:55:24+00:00"
+          dateTime="2019-10-06T20:55:24.609+00:00"
+          title="October 6, 2019, 8:55:24 PM UTC"
         >
           October 6, 2019
         </time>
@@ -6718,8 +6718,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-03-19T17:47:19.622Z"}
-          title="2019-03-19T17:47:19+00:00"
+          dateTime="2019-03-19T17:47:19.622+00:00"
+          title="March 19, 2019, 5:47:19 PM UTC"
         >
           March 19, 2019
         </time>
@@ -6747,8 +6747,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-09-24T22:06:01.401Z"}
-          title="2019-09-24T22:06:01+00:00"
+          dateTime="2019-09-24T22:06:01.401+00:00"
+          title="September 24, 2019, 10:06:01 PM UTC"
         >
           September 24, 2019
         </time>
@@ -6776,8 +6776,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-12-13T09:50:12.368Z"}
-          title="2019-12-13T09:50:12+00:00"
+          dateTime="2019-12-13T09:50:12.368+00:00"
+          title="December 13, 2019, 9:50:12 AM UTC"
         >
           December 13, 2019
         </time>
@@ -6805,8 +6805,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-11-02T20:46:49.847Z"}
-          title="2020-11-02T20:46:49+00:00"
+          dateTime="2020-11-02T20:46:49.847+00:00"
+          title="November 2, 2020, 8:46:49 PM UTC"
         >
           November 2, 2020
         </time>
@@ -6834,8 +6834,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-01-21T05:32:43.557Z"}
-          title="2019-01-21T05:32:43+00:00"
+          dateTime="2019-01-21T05:32:43.557+00:00"
+          title="January 21, 2019, 5:32:43 AM UTC"
         >
           January 21, 2019
         </time>
@@ -6863,8 +6863,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-10-18T01:05:35.725Z"}
-          title="2020-10-18T01:05:35+00:00"
+          dateTime="2020-10-18T01:05:35.725+00:00"
+          title="October 18, 2020, 1:05:35 AM UTC"
         >
           October 18, 2020
         </time>
@@ -6892,8 +6892,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2021-01-03T19:14:42.456Z"}
-          title="2021-01-03T19:14:42+00:00"
+          dateTime="2021-01-03T19:14:42.456+00:00"
+          title="January 3, 2021, 7:14:42 PM UTC"
         >
           January 3, 2021
         </time>
@@ -6921,8 +6921,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-12-11T23:26:48.223Z"}
-          title="2020-12-11T23:26:48+00:00"
+          dateTime="2020-12-11T23:26:48.223+00:00"
+          title="December 11, 2020, 11:26:48 PM UTC"
         >
           December 11, 2020
         </time>
@@ -6950,8 +6950,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-05-13T23:49:34.437Z"}
-          title="2020-05-13T23:49:34+00:00"
+          dateTime="2020-05-13T23:49:34.437+00:00"
+          title="May 13, 2020, 11:49:34 PM UTC"
         >
           May 13, 2020
         </time>
@@ -6979,8 +6979,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-09-12T01:31:04.904Z"}
-          title="2020-09-12T01:31:04+00:00"
+          dateTime="2020-09-12T01:31:04.904+00:00"
+          title="September 12, 2020, 1:31:04 AM UTC"
         >
           September 12, 2020
         </time>
@@ -7008,8 +7008,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-12-01T03:50:19.589Z"}
-          title="2019-12-01T03:50:19+00:00"
+          dateTime="2019-12-01T03:50:19.589+00:00"
+          title="December 1, 2019, 3:50:19 AM UTC"
         >
           December 1, 2019
         </time>
@@ -7037,8 +7037,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-12-25T13:06:11.376Z"}
-          title="2019-12-25T13:06:11+00:00"
+          dateTime="2019-12-25T13:06:11.376+00:00"
+          title="December 25, 2019, 1:06:11 PM UTC"
         >
           December 25, 2019
         </time>
@@ -7066,8 +7066,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-11-11T09:50:45.150Z"}
-          title="2019-11-11T09:50:45+00:00"
+          dateTime="2019-11-11T09:50:45.150+00:00"
+          title="November 11, 2019, 9:50:45 AM UTC"
         >
           November 11, 2019
         </time>
@@ -7095,8 +7095,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-01-19T11:25:25.523Z"}
-          title="2020-01-19T11:25:25+00:00"
+          dateTime="2020-01-19T11:25:25.523+00:00"
+          title="January 19, 2020, 11:25:25 AM UTC"
         >
           January 19, 2020
         </time>
@@ -7124,8 +7124,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-12-09T21:37:57.360Z"}
-          title="2019-12-09T21:37:57+00:00"
+          dateTime="2019-12-09T21:37:57.360+00:00"
+          title="December 9, 2019, 9:37:57 PM UTC"
         >
           December 9, 2019
         </time>
@@ -7153,8 +7153,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-04-22T09:59:45.171Z"}
-          title="2020-04-22T09:59:45+00:00"
+          dateTime="2020-04-22T09:59:45.171+00:00"
+          title="April 22, 2020, 9:59:45 AM UTC"
         >
           April 22, 2020
         </time>
@@ -7182,8 +7182,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-09-05T17:02:28.842Z"}
-          title="2019-09-05T17:02:28+00:00"
+          dateTime="2019-09-05T17:02:28.842+00:00"
+          title="September 5, 2019, 5:02:28 PM UTC"
         >
           September 5, 2019
         </time>
@@ -7211,8 +7211,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-03-21T19:15:40.723Z"}
-          title="2020-03-21T19:15:40+00:00"
+          dateTime="2020-03-21T19:15:40.723+00:00"
+          title="March 21, 2020, 7:15:40 PM UTC"
         >
           March 21, 2020
         </time>
@@ -7240,8 +7240,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2021-01-04T01:31:58.194Z"}
-          title="2021-01-04T01:31:58+00:00"
+          dateTime="2021-01-04T01:31:58.194+00:00"
+          title="January 4, 2021, 1:31:58 AM UTC"
         >
           January 4, 2021
         </time>
@@ -7269,8 +7269,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-07-19T04:24:09.772Z"}
-          title="2020-07-19T04:24:09+00:00"
+          dateTime="2020-07-19T04:24:09.772+00:00"
+          title="July 19, 2020, 4:24:09 AM UTC"
         >
           July 19, 2020
         </time>
@@ -7298,8 +7298,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-12-29T01:58:05.913Z"}
-          title="2020-12-29T01:58:05+00:00"
+          dateTime="2020-12-29T01:58:05.913+00:00"
+          title="December 29, 2020, 1:58:05 AM UTC"
         >
           December 29, 2020
         </time>
@@ -7327,8 +7327,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-05-03T15:09:10.943Z"}
-          title="2020-05-03T15:09:10+00:00"
+          dateTime="2020-05-03T15:09:10.943+00:00"
+          title="May 3, 2020, 3:09:10 PM UTC"
         >
           May 3, 2020
         </time>
@@ -7356,8 +7356,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-06-12T03:59:20.701Z"}
-          title="2020-06-12T03:59:20+00:00"
+          dateTime="2020-06-12T03:59:20.701+00:00"
+          title="June 12, 2020, 3:59:20 AM UTC"
         >
           June 12, 2020
         </time>
@@ -7385,8 +7385,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-07-24T03:47:22.753Z"}
-          title="2020-07-24T03:47:22+00:00"
+          dateTime="2020-07-24T03:47:22.753+00:00"
+          title="July 24, 2020, 3:47:22 AM UTC"
         >
           July 24, 2020
         </time>
@@ -7414,8 +7414,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-12-27T02:09:38.799Z"}
-          title="2019-12-27T02:09:38+00:00"
+          dateTime="2019-12-27T02:09:38.799+00:00"
+          title="December 27, 2019, 2:09:38 AM UTC"
         >
           December 27, 2019
         </time>
@@ -7443,8 +7443,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-07-21T01:41:25.229Z"}
-          title="2020-07-21T01:41:25+00:00"
+          dateTime="2020-07-21T01:41:25.229+00:00"
+          title="July 21, 2020, 1:41:25 AM UTC"
         >
           July 21, 2020
         </time>
@@ -7472,8 +7472,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-11-12T03:04:37.216Z"}
-          title="2019-11-12T03:04:37+00:00"
+          dateTime="2019-11-12T03:04:37.216+00:00"
+          title="November 12, 2019, 3:04:37 AM UTC"
         >
           November 12, 2019
         </time>
@@ -7501,8 +7501,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2021-02-26T13:40:28.643Z"}
-          title="2021-02-26T13:40:28+00:00"
+          dateTime="2021-02-26T13:40:28.643+00:00"
+          title="February 26, 2021, 1:40:28 PM UTC"
         >
           February 26, 2021
         </time>
@@ -7530,8 +7530,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-09-13T23:32:56.271Z"}
-          title="2020-09-13T23:32:56+00:00"
+          dateTime="2020-09-13T23:32:56.271+00:00"
+          title="September 13, 2020, 11:32:56 PM UTC"
         >
           September 13, 2020
         </time>
@@ -7559,8 +7559,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-11-23T13:30:19.412Z"}
-          title="2019-11-23T13:30:19+00:00"
+          dateTime="2019-11-23T13:30:19.412+00:00"
+          title="November 23, 2019, 1:30:19 PM UTC"
         >
           November 23, 2019
         </time>
@@ -7588,8 +7588,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-07-23T04:05:52.696Z"}
-          title="2020-07-23T04:05:52+00:00"
+          dateTime="2020-07-23T04:05:52.696+00:00"
+          title="July 23, 2020, 4:05:52 AM UTC"
         >
           July 23, 2020
         </time>
@@ -7617,8 +7617,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-04-12T07:23:10.017Z"}
-          title="2020-04-12T07:23:10+00:00"
+          dateTime="2020-04-12T07:23:10.017+00:00"
+          title="April 12, 2020, 7:23:10 AM UTC"
         >
           April 12, 2020
         </time>
@@ -7646,8 +7646,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-12-16T14:02:35.829Z"}
-          title="2020-12-16T14:02:35+00:00"
+          dateTime="2020-12-16T14:02:35.829+00:00"
+          title="December 16, 2020, 2:02:35 PM UTC"
         >
           December 16, 2020
         </time>
@@ -7675,8 +7675,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-08-29T01:42:14.303Z"}
-          title="2020-08-29T01:42:14+00:00"
+          dateTime="2020-08-29T01:42:14.303+00:00"
+          title="August 29, 2020, 1:42:14 AM UTC"
         >
           August 29, 2020
         </time>
@@ -7704,8 +7704,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-10-14T04:52:56.689Z"}
-          title="2019-10-14T04:52:56+00:00"
+          dateTime="2019-10-14T04:52:56.689+00:00"
+          title="October 14, 2019, 4:52:56 AM UTC"
         >
           October 14, 2019
         </time>
@@ -7733,8 +7733,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2020-11-07T02:17:13.386Z"}
-          title="2020-11-07T02:17:13+00:00"
+          dateTime="2020-11-07T02:17:13.386+00:00"
+          title="November 7, 2020, 2:17:13 AM UTC"
         >
           November 7, 2020
         </time>
@@ -7762,8 +7762,8 @@ exports[`Storyshots Template Specialization/ArrayTable Out Of Order 1`] = `
         className="clc-table__body-cell"
       >
         <time
-          dateTime={"2019-10-19T09:25:33.489Z"}
-          title="2019-10-19T09:25:33+00:00"
+          dateTime="2019-10-19T09:25:33.489+00:00"
+          title="October 19, 2019, 9:25:33 AM UTC"
         >
           October 19, 2019
         </time>

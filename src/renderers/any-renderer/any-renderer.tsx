@@ -1,4 +1,4 @@
-import moment from 'moment';
+import {DateTime} from 'luxon';
 import React from 'react';
 
 import {useContextWithDefaults} from '../../support';
@@ -57,7 +57,10 @@ export const AnyRenderer = ({value, ...rest}: AnyRendererProps) => {
   }
 
   if (typeof value === 'string') {
-    if (moment(value).isValid()) {
+    if (
+      DateTime.fromISO(value).isValid ||
+      DateTime.fromMillis(Number(value)).isValid
+    ) {
       return <DateRenderer value={value} {...date} />;
     }
     return <>{value}</>;

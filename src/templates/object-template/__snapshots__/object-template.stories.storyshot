@@ -14,8 +14,8 @@ Array [
   "Jenkins",
   "9",
   <time
-    dateTime={"2019-04-21T09:24:38.262Z"}
-    title="2019-04-21T09:24:38+00:00"
+    dateTime="2019-04-21T09:24:38.262+00:00"
+    title="April 21, 2019, 9:24:38 AM UTC"
   >
     April 21, 2019
   </time>,
@@ -28,8 +28,8 @@ Array [
   "Jenkins",
   "9",
   <time
-    dateTime={"2019-04-21T09:24:38.262Z"}
-    title="2019-04-21T09:24:38+00:00"
+    dateTime="2019-04-21T09:24:38.262+00:00"
+    title="April 21, 2019, 9:24:38 AM UTC"
   >
     April 21, 2019
   </time>,
@@ -79,8 +79,8 @@ exports[`Storyshots Templates/ObjectTemplate Duplicate Fields 1`] = `
     className="description-list__description description-list__description--single"
   >
     <time
-      dateTime={"2019-04-21T09:24:38.262Z"}
-      title="2019-04-21T09:24:38+00:00"
+      dateTime="2019-04-21T09:24:38.262+00:00"
+      title="April 21, 2019, 9:24:38 AM UTC"
     >
       April 21, 2019
     </time>
@@ -131,8 +131,8 @@ exports[`Storyshots Templates/ObjectTemplate Nested Data 1`] = `
     className="description-list__description description-list__description--single"
   >
     <time
-      dateTime={"2019-04-21T09:24:38.262Z"}
-      title="2019-04-21T09:24:38+00:00"
+      dateTime="2019-04-21T09:24:38.262+00:00"
+      title="April 21, 2019, 9:24:38 AM UTC"
     >
       April 21, 2019
     </time>
@@ -195,8 +195,8 @@ exports[`Storyshots Templates/ObjectTemplate Object Template 1`] = `
     className="description-list__description description-list__description--single"
   >
     <time
-      dateTime={"2019-04-21T09:24:38.262Z"}
-      title="2019-04-21T09:24:38+00:00"
+      dateTime="2019-04-21T09:24:38.262+00:00"
+      title="April 21, 2019, 9:24:38 AM UTC"
     >
       April 21, 2019
     </time>
@@ -237,8 +237,8 @@ exports[`Storyshots Templates/ObjectTemplate Out Of Order 1`] = `
     className="description-list__description description-list__description--single"
   >
     <time
-      dateTime={"2019-04-21T09:24:38.262Z"}
-      title="2019-04-21T09:24:38+00:00"
+      dateTime="2019-04-21T09:24:38.262+00:00"
+      title="April 21, 2019, 9:24:38 AM UTC"
     >
       April 21, 2019
     </time>
@@ -271,8 +271,8 @@ exports[`Storyshots Templates/ObjectTemplate Raw Html Wrappers 1`] = `
       </li>
       <li>
         <time
-          dateTime={"2019-04-21T09:24:38.262Z"}
-          title="2019-04-21T09:24:38+00:00"
+          dateTime="2019-04-21T09:24:38.262+00:00"
+          title="April 21, 2019, 9:24:38 AM UTC"
         >
           April 21, 2019
         </time>

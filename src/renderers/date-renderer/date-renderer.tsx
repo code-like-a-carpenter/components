@@ -1,15 +1,14 @@
-import 'moment-timezone';
+import assert from 'assert';
 
-import moment from 'moment';
+import {DateTime, Duration} from 'luxon';
 import React from 'react';
-import Moment from 'react-moment';
 
 import {useContextWithDefaults} from '../../support';
 import {NullRenderer} from '../null-renderer';
 import {RendererProps} from '../types';
 
 export interface DateRendererContextProps {
-  readonly format?: string;
+  readonly format?: Intl.DateTimeFormatOptions;
   /** When rendering relative dates, treat negative numbers as nulls */
   readonly negativeIsNull?: boolean;
   /**
@@ -25,7 +24,7 @@ export interface DateRendererContextProps {
 
 export const DateRendererContext =
   React.createContext<DateRendererContextProps>({
-    format: 'LL',
+    format: DateTime.DATE_FULL,
     negativeIsNull: false,
     range: false,
     reference: new Date(),
@@ -41,15 +40,19 @@ export const DateRenderer = ({value, ...rest}: DateRendererProps) => {
   const {format, negativeIsNull, range, reference, relative} =
     useContextWithDefaults(DateRendererContext, rest);
 
-  if (!moment(value).isValid()) {
+  const dt = parseDate(value);
+
+  if (!dt.isValid) {
     return <NullRenderer value={null} />;
   }
   if (range) {
-    const [start, end] = [reference, value].sort();
+    assert(reference instanceof Date, 'range requires reference to be a Date');
+    const [start, end] = [parseDate(reference), dt].sort();
+    const diff = end.diff(start);
     return (
-      <Moment duration={start} local withTitle>
-        {end}
-      </Moment>
+      <time dateTime={diff.toISO()} title={diff.toLocaleString()}>
+        {toHuman(diff)}
+      </time>
     );
   }
 
@@ -58,15 +61,70 @@ export const DateRenderer = ({value, ...rest}: DateRendererProps) => {
       return <NullRenderer value={null} />;
     }
     return (
-      <Moment from={reference} local withTitle>
-        {value}
-      </Moment>
+      <time
+        dateTime={dt.toISO()}
+        title={dt.toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS)}
+      >
+        {reference
+          ? dt.toRelative({base: parseDate(reference)})
+          : dt.toRelative()}
+      </time>
     );
   }
 
   return (
-    <Moment format={format} local withTitle>
-      {value}
-    </Moment>
+    <time
+      dateTime={dt.toISO()}
+      title={dt.toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS)}
+    >
+      {dt.toLocaleString(format)}
+    </time>
   );
 };
+
+/**
+ * Determins which DateTime parser to use to parse an ambiguous date input into
+ * a DateTime.
+ */
+function parseDate(value: Date | string | number): DateTime {
+  if (value instanceof Date) {
+    return DateTime.fromJSDate(value);
+  }
+
+  if (typeof value === 'number') {
+    return DateTime.fromMillis(value);
+  }
+
+  const asNumber = Number(value);
+
+  if (Number.isNaN(asNumber)) {
+    return DateTime.fromISO(value, {setZone: true});
+  }
+
+  return DateTime.fromMillis(asNumber);
+}
+
+/**
+ * Accepts a Luxon Duration which may be in milliseconds rather than canonical
+ * form, canonicalizes it, and returns a human-readable string.
+ */
+function toHuman(diff: Duration) {
+  const obj = diff
+    .shiftTo(
+      'years',
+      'months',
+      // Skipping weeks because it's usually too much
+      // 'weeks',
+      'days',
+      'hours',
+      'minutes',
+      'seconds',
+      'milliseconds'
+    )
+    .toObject();
+  const withoutZeros = Object.fromEntries(
+    Object.entries(obj).filter(([, value]) => value > 0)
+  );
+  const newDiff = Duration.fromObject(withoutZeros);
+  return newDiff.toHuman();
+}

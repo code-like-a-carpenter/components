@@ -32,8 +32,8 @@ exports[`Storyshots Description/ConditionalDescription With A Date 1`] = `
     className="description-list__description--conitional description-list__description description-list__description description-list__description--single"
   >
     <time
-      dateTime={"2020-01-01T00:00:00.000Z"}
-      title="2020-01-01T00:00:00+00:00"
+      dateTime="2020-01-01T00:00:00.000+00:00"
+      title="January 1, 2020, 12:00:00 AM UTC"
     >
       January 1, 2020
     </time>

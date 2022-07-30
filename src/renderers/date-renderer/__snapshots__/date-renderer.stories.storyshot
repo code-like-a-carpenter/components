@@ -2,8 +2,8 @@
 
 exports[`Storyshots Renderers/DateRenderer Date Range 1`] = `
 <time
-  dateTime={"2020-06-10T00:00:00.000Z"}
-  title="2020-06-10T00:00:00+00:00"
+  dateTime="PT777600S"
+  title="PT777600S"
 >
   9 days
 </time>
@@ -11,8 +11,8 @@ exports[`Storyshots Renderers/DateRenderer Date Range 1`] = `
 
 exports[`Storyshots Renderers/DateRenderer Date Renderer 1`] = `
 <time
-  dateTime={"2020-06-01T00:00:00.000Z"}
-  title="2020-06-01T00:00:00+00:00"
+  dateTime="2020-06-01T00:00:00.000+00:00"
+  title="June 1, 2020, 12:00:00 AM UTC"
 >
   June 1, 2020
 </time>
@@ -26,8 +26,8 @@ exports[`Storyshots Renderers/DateRenderer Invalid Date String 1`] = `
 
 exports[`Storyshots Renderers/DateRenderer Relative 1`] = `
 <time
-  dateTime={"2020-06-01T00:00:00.000Z"}
-  title="2020-06-01T00:00:00+00:00"
+  dateTime="2020-06-01T00:00:00.000+00:00"
+  title="June 1, 2020, 12:00:00 AM UTC"
 >
   9 days ago
 </time>
@@ -35,8 +35,8 @@ exports[`Storyshots Renderers/DateRenderer Relative 1`] = `
 
 exports[`Storyshots Renderers/DateRenderer Relative Negative 1`] = `
 <time
-  dateTime={"2020-06-10T00:00:00.000Z"}
-  title="2020-06-10T00:00:00+00:00"
+  dateTime="2020-06-10T00:00:00.000+00:00"
+  title="June 10, 2020, 12:00:00 AM UTC"
 >
   in 9 days
 </time>
@@ -50,8 +50,8 @@ exports[`Storyshots Renderers/DateRenderer Relative Negative Is Null 1`] = `
 
 exports[`Storyshots Renderers/DateRenderer Time Since 1`] = `
 <time
-  dateTime={"2020-06-01T00:00:00.000Z"}
-  title="2020-06-01T00:00:00+00:00"
+  dateTime="2020-06-01T00:00:00.000+00:00"
+  title="June 1, 2020, 12:00:00 AM UTC"
 >
   9 days ago
 </time>
@@ -59,8 +59,8 @@ exports[`Storyshots Renderers/DateRenderer Time Since 1`] = `
 
 exports[`Storyshots Renderers/DateRenderer Using Date String 1`] = `
 <time
-  dateTime={"2020-06-01T00:00:00.000Z"}
-  title="2020-06-01T00:00:00+00:00"
+  dateTime="2020-06-01T00:00:00.000+00:00"
+  title="June 1, 2020, 12:00:00 AM UTC"
 >
   June 1, 2020
 </time>
@@ -68,8 +68,8 @@ exports[`Storyshots Renderers/DateRenderer Using Date String 1`] = `
 
 exports[`Storyshots Renderers/DateRenderer Using Epoch 1`] = `
 <time
-  dateTime={"2020-06-01T00:00:00.000Z"}
-  title="2020-06-01T00:00:00+00:00"
+  dateTime="2020-06-01T00:00:00.000+00:00"
+  title="June 1, 2020, 12:00:00 AM UTC"
 >
   June 1, 2020
 </time>
@@ -77,18 +77,18 @@ exports[`Storyshots Renderers/DateRenderer Using Epoch 1`] = `
 
 exports[`Storyshots Renderers/DateRenderer With Overrides 1`] = `
 <time
-  dateTime={"2020-06-01T00:00:00.000Z"}
-  title="2020-06-01T00:00:00+00:00"
+  dateTime="2020-06-01T00:00:00.000+00:00"
+  title="June 1, 2020, 12:00:00 AM UTC"
 >
-  06/01/2020
+  6/1/2020
 </time>
 `;
 
 exports[`Storyshots Renderers/DateRenderer With Overrides From Context 1`] = `
 <time
-  dateTime={"2020-06-01T00:00:00.000Z"}
-  title="2020-06-01T00:00:00+00:00"
+  dateTime="2020-06-01T00:00:00.000+00:00"
+  title="June 1, 2020, 12:00:00 AM UTC"
 >
-  Monday, June 1, 2020 12:00 AM
+  Monday, June 1, 2020, 12:00 AM Coordinated Universal Time
 </time>
 `;

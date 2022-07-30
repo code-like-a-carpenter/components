@@ -23,8 +23,8 @@ exports[`Storyshots Templates/ConnectionTemplate Connection Template 1`] = `
         Sign Up Date
         : 
         <time
-          dateTime={"2019-04-21T09:24:38.262Z"}
-          title="2019-04-21T09:24:38+00:00"
+          dateTime="2019-04-21T09:24:38.262+00:00"
+          title="April 21, 2019, 9:24:38 AM UTC"
         >
           April 21, 2019
         </time>
@@ -52,8 +52,8 @@ exports[`Storyshots Templates/ConnectionTemplate Connection Template 1`] = `
         Sign Up Date
         : 
         <time
-          dateTime={"2020-05-21T20:24:48.713Z"}
-          title="2020-05-21T20:24:48+00:00"
+          dateTime="2020-05-21T20:24:48.713+00:00"
+          title="May 21, 2020, 8:24:48 PM UTC"
         >
           May 21, 2020
         </time>
@@ -81,8 +81,8 @@ exports[`Storyshots Templates/ConnectionTemplate Connection Template 1`] = `
         Sign Up Date
         : 
         <time
-          dateTime={"2019-03-05T01:04:28.401Z"}
-          title="2019-03-05T01:04:28+00:00"
+          dateTime="2019-03-05T01:04:28.401+00:00"
+          title="March 5, 2019, 1:04:28 AM UTC"
         >
           March 5, 2019
         </time>
@@ -110,8 +110,8 @@ exports[`Storyshots Templates/ConnectionTemplate Connection Template 1`] = `
         Sign Up Date
         : 
         <time
-          dateTime={"2020-10-04T14:50:38.937Z"}
-          title="2020-10-04T14:50:38+00:00"
+          dateTime="2020-10-04T14:50:38.937+00:00"
+          title="October 4, 2020, 2:50:38 PM UTC"
         >
           October 4, 2020
         </time>
@@ -139,8 +139,8 @@ exports[`Storyshots Templates/ConnectionTemplate Connection Template 1`] = `
         Sign Up Date
         : 
         <time
-          dateTime={"2020-09-30T22:08:33.801Z"}
-          title="2020-09-30T22:08:33+00:00"
+          dateTime="2020-09-30T22:08:33.801+00:00"
+          title="September 30, 2020, 10:08:33 PM UTC"
         >
           September 30, 2020
         </time>
@@ -156,8 +156,8 @@ Array [
   "Jenkins",
   "9",
   <time
-    dateTime={"2019-04-21T09:24:38.262Z"}
-    title="2019-04-21T09:24:38+00:00"
+    dateTime="2019-04-21T09:24:38.262+00:00"
+    title="April 21, 2019, 9:24:38 AM UTC"
   >
     April 21, 2019
   </time>,
@@ -165,8 +165,8 @@ Array [
   "Krajcik",
   "69",
   <time
-    dateTime={"2020-05-21T20:24:48.713Z"}
-    title="2020-05-21T20:24:48+00:00"
+    dateTime="2020-05-21T20:24:48.713+00:00"
+    title="May 21, 2020, 8:24:48 PM UTC"
   >
     May 21, 2020
   </time>,
@@ -174,8 +174,8 @@ Array [
   "Olson",
   "92",
   <time
-    dateTime={"2019-03-05T01:04:28.401Z"}
-    title="2019-03-05T01:04:28+00:00"
+    dateTime="2019-03-05T01:04:28.401+00:00"
+    title="March 5, 2019, 1:04:28 AM UTC"
   >
     March 5, 2019
   </time>,
@@ -183,8 +183,8 @@ Array [
   "Halvorson",
   "31",
   <time
-    dateTime={"2020-10-04T14:50:38.937Z"}
-    title="2020-10-04T14:50:38+00:00"
+    dateTime="2020-10-04T14:50:38.937+00:00"
+    title="October 4, 2020, 2:50:38 PM UTC"
   >
     October 4, 2020
   </time>,
@@ -192,8 +192,8 @@ Array [
   "Runolfsson",
   "83",
   <time
-    dateTime={"2020-09-30T22:08:33.801Z"}
-    title="2020-09-30T22:08:33+00:00"
+    dateTime="2020-09-30T22:08:33.801+00:00"
+    title="September 30, 2020, 10:08:33 PM UTC"
   >
     September 30, 2020
   </time>,
@@ -223,8 +223,8 @@ exports[`Storyshots Templates/ConnectionTemplate Duplicate Fields 1`] = `
         Sign Up Date
         : 
         <time
-          dateTime={"2019-04-21T09:24:38.262Z"}
-          title="2019-04-21T09:24:38+00:00"
+          dateTime="2019-04-21T09:24:38.262+00:00"
+          title="April 21, 2019, 9:24:38 AM UTC"
         >
           April 21, 2019
         </time>
@@ -257,8 +257,8 @@ exports[`Storyshots Templates/ConnectionTemplate Duplicate Fields 1`] = `
         Sign Up Date
         : 
         <time
-          dateTime={"2020-05-21T20:24:48.713Z"}
-          title="2020-05-21T20:24:48+00:00"
+          dateTime="2020-05-21T20:24:48.713+00:00"
+          title="May 21, 2020, 8:24:48 PM UTC"
         >
           May 21, 2020
         </time>
@@ -291,8 +291,8 @@ exports[`Storyshots Templates/ConnectionTemplate Duplicate Fields 1`] = `
         Sign Up Date
         : 
         <time
-          dateTime={"2019-03-05T01:04:28.401Z"}
-          title="2019-03-05T01:04:28+00:00"
+          dateTime="2019-03-05T01:04:28.401+00:00"
+          title="March 5, 2019, 1:04:28 AM UTC"
         >
           March 5, 2019
         </time>
@@ -325,8 +325,8 @@ exports[`Storyshots Templates/ConnectionTemplate Duplicate Fields 1`] = `
         Sign Up Date
         : 
         <time
-          dateTime={"2020-10-04T14:50:38.937Z"}
-          title="2020-10-04T14:50:38+00:00"
+          dateTime="2020-10-04T14:50:38.937+00:00"
+          title="October 4, 2020, 2:50:38 PM UTC"
         >
           October 4, 2020
         </time>
@@ -359,8 +359,8 @@ exports[`Storyshots Templates/ConnectionTemplate Duplicate Fields 1`] = `
         Sign Up Date
         : 
         <time
-          dateTime={"2020-09-30T22:08:33.801Z"}
-          title="2020-09-30T22:08:33+00:00"
+          dateTime="2020-09-30T22:08:33.801+00:00"
+          title="September 30, 2020, 10:08:33 PM UTC"
         >
           September 30, 2020
         </time>
@@ -393,8 +393,8 @@ exports[`Storyshots Templates/ConnectionTemplate Nested Data 1`] = `
         Sign Up Date
         : 
         <time
-          dateTime={"2019-04-21T09:24:38.262Z"}
-          title="2019-04-21T09:24:38+00:00"
+          dateTime="2019-04-21T09:24:38.262+00:00"
+          title="April 21, 2019, 9:24:38 AM UTC"
         >
           April 21, 2019
         </time>
@@ -422,8 +422,8 @@ exports[`Storyshots Templates/ConnectionTemplate Nested Data 1`] = `
         Sign Up Date
         : 
         <time
-          dateTime={"2020-05-21T20:24:48.713Z"}
-          title="2020-05-21T20:24:48+00:00"
+          dateTime="2020-05-21T20:24:48.713+00:00"
+          title="May 21, 2020, 8:24:48 PM UTC"
         >
           May 21, 2020
         </time>
@@ -451,8 +451,8 @@ exports[`Storyshots Templates/ConnectionTemplate Nested Data 1`] = `
         Sign Up Date
         : 
         <time
-          dateTime={"2019-03-05T01:04:28.401Z"}
-          title="2019-03-05T01:04:28+00:00"
+          dateTime="2019-03-05T01:04:28.401+00:00"
+          title="March 5, 2019, 1:04:28 AM UTC"
         >
           March 5, 2019
         </time>
@@ -480,8 +480,8 @@ exports[`Storyshots Templates/ConnectionTemplate Nested Data 1`] = `
         Sign Up Date
         : 
         <time
-          dateTime={"2020-10-04T14:50:38.937Z"}
-          title="2020-10-04T14:50:38+00:00"
+          dateTime="2020-10-04T14:50:38.937+00:00"
+          title="October 4, 2020, 2:50:38 PM UTC"
         >
           October 4, 2020
         </time>
@@ -509,8 +509,8 @@ exports[`Storyshots Templates/ConnectionTemplate Nested Data 1`] = `
         Sign Up Date
         : 
         <time
-          dateTime={"2020-09-30T22:08:33.801Z"}
-          title="2020-09-30T22:08:33+00:00"
+          dateTime="2020-09-30T22:08:33.801+00:00"
+          title="September 30, 2020, 10:08:33 PM UTC"
         >
           September 30, 2020
         </time>
@@ -543,8 +543,8 @@ exports[`Storyshots Templates/ConnectionTemplate Out Of Order 1`] = `
         Sign Up Date
         : 
         <time
-          dateTime={"2019-04-21T09:24:38.262Z"}
-          title="2019-04-21T09:24:38+00:00"
+          dateTime="2019-04-21T09:24:38.262+00:00"
+          title="April 21, 2019, 9:24:38 AM UTC"
         >
           April 21, 2019
         </time>
@@ -572,8 +572,8 @@ exports[`Storyshots Templates/ConnectionTemplate Out Of Order 1`] = `
         Sign Up Date
         : 
         <time
-          dateTime={"2020-05-21T20:24:48.713Z"}
-          title="2020-05-21T20:24:48+00:00"
+          dateTime="2020-05-21T20:24:48.713+00:00"
+          title="May 21, 2020, 8:24:48 PM UTC"
         >
           May 21, 2020
         </time>
@@ -601,8 +601,8 @@ exports[`Storyshots Templates/ConnectionTemplate Out Of Order 1`] = `
         Sign Up Date
         : 
         <time
-          dateTime={"2019-03-05T01:04:28.401Z"}
-          title="2019-03-05T01:04:28+00:00"
+          dateTime="2019-03-05T01:04:28.401+00:00"
+          title="March 5, 2019, 1:04:28 AM UTC"
         >
           March 5, 2019
         </time>
@@ -630,8 +630,8 @@ exports[`Storyshots Templates/ConnectionTemplate Out Of Order 1`] = `
         Sign Up Date
         : 
         <time
-          dateTime={"2020-10-04T14:50:38.937Z"}
-          title="2020-10-04T14:50:38+00:00"
+          dateTime="2020-10-04T14:50:38.937+00:00"
+          title="October 4, 2020, 2:50:38 PM UTC"
         >
           October 4, 2020
         </time>
@@ -659,8 +659,8 @@ exports[`Storyshots Templates/ConnectionTemplate Out Of Order 1`] = `
         Sign Up Date
         : 
         <time
-          dateTime={"2020-09-30T22:08:33.801Z"}
-          title="2020-09-30T22:08:33+00:00"
+          dateTime="2020-09-30T22:08:33.801+00:00"
+          title="September 30, 2020, 10:08:33 PM UTC"
         >
           September 30, 2020
         </time>
