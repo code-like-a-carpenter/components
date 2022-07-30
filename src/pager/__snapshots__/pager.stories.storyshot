@@ -125,6 +125,7 @@ exports[`Storyshots Components/Pager Offset Pager 1`] = `
   >
     <a
       className="page-link"
+      href="#"
       onClick={[Function]}
       onKeyDown={[Function]}
       role="button"
@@ -368,6 +369,7 @@ exports[`Storyshots Components/Pager Simple Page 1`] = `
   >
     <a
       className="page-link"
+      href="#"
       onClick={[Function]}
       onKeyDown={[Function]}
       role="button"

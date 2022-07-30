@@ -55,6 +55,7 @@ exports[`Storyshots Components/Card Card 1`] = `
     </p>
     <a
       className="btn btn-primary"
+      disabled={false}
       href="#"
       onClick={[Function]}
       onKeyDown={[Function]}
@@ -100,6 +101,7 @@ exports[`Storyshots Components/Card Header 1`] = `
     </p>
     <a
       className="btn btn-primary"
+      disabled={false}
       href="#"
       onClick={[Function]}
       onKeyDown={[Function]}
