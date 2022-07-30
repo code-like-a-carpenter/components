@@ -36,10 +36,4 @@ module.exports = {
     '**/src/**/?(*.)+(spec|test).[tj]s?(x)',
   ],
   testPathIgnorePatterns: ['/node_modules/'],
-  transform: {
-    '^.+\\.stories\\.[tj]sx?$': '@storybook/addon-storyshots/injectFileName',
-    // babel-jest is loaded automatically when transform is null
-    // eslint-disable-next-line sort-keys
-    '^.+\\.[tj]sx?$': 'babel-jest',
-  },
 };
