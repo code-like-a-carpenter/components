@@ -1,7 +1,7 @@
 import React from 'react';
 
-import {DescriptionList} from './description-list';
 import {Description} from './description';
+import {DescriptionList} from './description-list';
 
 export default {
   component: DescriptionList,

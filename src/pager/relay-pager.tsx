@@ -6,9 +6,9 @@ import {useRoutingContext} from '..';
 import {makeRelayHref} from './hrefs';
 import {RelayPageInfo} from './types';
 
-export type RelayPagerProps = {
+export interface RelayPagerProps {
   readonly pageInfo: RelayPageInfo;
-};
+}
 
 export const RelayPager = ({pageInfo}: RelayPagerProps) => {
   const routingContext = useRoutingContext();

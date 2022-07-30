@@ -6,10 +6,10 @@ import {useRoutingContext} from '../routing';
 import {makeSimpleHref} from './hrefs';
 import {SimplePageInfo} from './types';
 
-export type SimplePagerProps = {
+export interface SimplePagerProps {
   readonly maxBeforeEllipsis?: number;
   readonly pageInfo: SimplePageInfo;
-};
+}
 
 export const SimplePager = ({
   maxBeforeEllipsis = 5,

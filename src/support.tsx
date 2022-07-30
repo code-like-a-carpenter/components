@@ -1,5 +1,5 @@
-import React, {Context, useContext} from 'react';
 import cx from 'classnames';
+import React, {Context, useContext} from 'react';
 
 /**
  * Like useContext, but allows for prop-defined defaults. Useful for e.g. theme

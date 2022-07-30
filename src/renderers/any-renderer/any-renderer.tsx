@@ -1,18 +1,18 @@
-import React from 'react';
 import moment from 'moment';
+import React from 'react';
 
+import {useContextWithDefaults} from '../../support';
 import {BooleanRenderer, BooleanRendererContextType} from '../boolean-renderer';
 import {DateRenderer, DateRendererContextProps} from '../date-renderer';
-import {ObjectRenderer} from '../object-renderer';
 import {NullRenderer, NullRendererContextType} from '../null-renderer';
-import {useContextWithDefaults} from '../../support';
+import {ObjectRenderer} from '../object-renderer';
 import {RendererProps} from '../types';
 
-export type AnyRendererContextType = {
+export interface AnyRendererContextType {
   readonly boolean?: BooleanRendererContextType;
   readonly date?: DateRendererContextProps;
   readonly null?: NullRendererContextType;
-};
+}
 
 export const AnyRendererContext = React.createContext<AnyRendererContextType>(
   {}

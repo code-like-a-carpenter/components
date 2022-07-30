@@ -7,9 +7,9 @@ import {RelayPager} from './relay-pager';
 import {SimplePager} from './simple-pager';
 import {PageInfo} from './types';
 
-export type PagerProps = {
+export interface PagerProps {
   readonly pageInfo: Maybe<PageInfo>;
-};
+}
 
 export const Pager = ({pageInfo}: PagerProps) => {
   if (!pageInfo) {

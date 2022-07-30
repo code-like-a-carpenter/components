@@ -1,8 +1,8 @@
 import React from 'react';
 
 import {ConnectionLike, IdType, Maybe, NodeLike, useEdgeNodes} from '../..';
-import {ConfigureFunction} from '../configuration';
 import {ArrayTemplate} from '../array-template';
+import {ConfigureFunction} from '../configuration';
 import {
   FieldWrapperType,
   ItemWrapperType,

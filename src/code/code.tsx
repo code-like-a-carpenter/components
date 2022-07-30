@@ -1,6 +1,6 @@
-import React, {useContext} from 'react';
-import dedent from 'dedent';
 import cx from 'classnames';
+import dedent from 'dedent';
+import React, {useContext} from 'react';
 
 const CodeContext = React.createContext(false);
 

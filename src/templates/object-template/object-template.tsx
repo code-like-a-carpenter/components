@@ -1,13 +1,13 @@
 import React from 'react';
 
 import {ItemWrapperType, Maybe} from '../..';
+import {DefaultWrapper, RenderItem, RenderTemplate} from '../common';
 import {
   ConfigureFunction,
   Configurer,
   FieldConfigurationProvider,
 } from '../configuration';
 import {FieldWrapperType, TemplateWrapperType} from '../support';
-import {DefaultWrapper, RenderItem, RenderTemplate} from '../common';
 
 export interface ObjectTemplateProps<T extends object> {
   data: Maybe<T>;

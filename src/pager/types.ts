@@ -1,4 +1,4 @@
-export type OffsetPageInfo = {
+export interface OffsetPageInfo {
   readonly hasNextPage: boolean;
   readonly hasPreviousPage: boolean;
   /** The current 1-based index of the page. Handy for putting in URLs */
@@ -8,19 +8,19 @@ export type OffsetPageInfo = {
   readonly skip: number;
   readonly take: number;
   readonly total: number;
-};
+}
 
-export type RelayPageInfo = {
+export interface RelayPageInfo {
   readonly endCursor: string;
   readonly hasNextPage: boolean;
   readonly hasPreviousPage: boolean;
   readonly startCursor: string;
-};
+}
 
-export type SimplePageInfo = {
+export interface SimplePageInfo {
   /** 1-based page index */
   readonly page: number;
   readonly pages: number;
-};
+}
 
 export type PageInfo = OffsetPageInfo | RelayPageInfo | SimplePageInfo;

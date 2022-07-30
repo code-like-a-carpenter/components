@@ -1,12 +1,12 @@
 import {render} from '@testing-library/react';
 import React from 'react';
 
+import {ConnectionLike} from '../..';
 import {ComplexPerson, SimplePerson} from '../../mocks';
 import {InstallationPageQuery, Maybe} from '../../sample-types';
-import {ConnectionLike} from '../..';
 
-import {FieldWrapper, ItemWrapper, Wrapper} from './support';
 import {ConnectionTemplate} from './connection-template';
+import {FieldWrapper, ItemWrapper, Wrapper} from './support';
 
 describe('ConnectionTemplate', () => {
   it('infers types for contrived objects', () => {

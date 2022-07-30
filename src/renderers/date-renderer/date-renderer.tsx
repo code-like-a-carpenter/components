@@ -1,14 +1,14 @@
 import 'moment-timezone';
 
+import moment from 'moment';
 import React from 'react';
 import Moment from 'react-moment';
-import moment from 'moment';
 
 import {useContextWithDefaults} from '../../support';
 import {NullRenderer} from '../null-renderer';
 import {RendererProps} from '../types';
 
-export type DateRendererContextProps = {
+export interface DateRendererContextProps {
   readonly format?: string;
   /** When rendering relative dates, treat negative numbers as nulls */
   readonly negativeIsNull?: boolean;
@@ -21,7 +21,7 @@ export type DateRendererContextProps = {
   readonly relative?: boolean;
   /** renders the date range between date and reference */
   readonly range?: boolean;
-};
+}
 
 export const DateRendererContext =
   React.createContext<DateRendererContextProps>({

@@ -1,5 +1,5 @@
-import React, {useContext, useMemo} from 'react';
 import cx from 'classnames';
+import React, {useContext, useMemo} from 'react';
 
 import {AnyRenderer} from '../renderers';
 import {Renderer as RendererType} from '../renderers/types';
@@ -17,9 +17,9 @@ export interface CommonProps
   readonly Renderer?: RendererType;
 }
 
-export type ChildrenProps = {
+export interface ChildrenProps {
   readonly children: React.ReactNode;
-};
+}
 
 export interface DescriptionProps {
   readonly description: React.ReactNode | React.ReactNodeArray;
