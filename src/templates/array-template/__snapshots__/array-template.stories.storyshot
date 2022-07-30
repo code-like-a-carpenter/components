@@ -99,7 +99,7 @@ exports[`Storyshots Templates/ArrayTemplate Array Template 1`] = `
       <li>
         Last Name
         : 
-        Hamill
+        Halvorson
       </li>
       <li>
         Age
@@ -265,7 +265,7 @@ exports[`Storyshots Templates/ArrayTemplate Custom Field Wrapper 1`] = `
       <li>
         Last Name
         : 
-        Hamill
+        Halvorson
       </li>
       <li>
         Age
@@ -350,7 +350,7 @@ Array [
     March 5, 2019
   </time>,
   "Annabelle",
-  "Hamill",
+  "Halvorson",
   "31",
   <time
     dateTime={"2020-10-04T14:50:38.937Z"}
@@ -484,7 +484,7 @@ exports[`Storyshots Templates/ArrayTemplate Duplicate Fields 1`] = `
       <li>
         Last Name
         : 
-        Hamill
+        Halvorson
       </li>
       <li>
         Age
@@ -646,7 +646,7 @@ exports[`Storyshots Templates/ArrayTemplate Nested Data 1`] = `
       <li>
         Name Last
         : 
-        Hamill
+        Halvorson
       </li>
       <li>
         Sign Up Date
@@ -793,7 +793,7 @@ exports[`Storyshots Templates/ArrayTemplate Out Of Order 1`] = `
       <li>
         Last Name
         : 
-        Hamill
+        Halvorson
       </li>
       <li>
         First Name
@@ -920,7 +920,7 @@ exports[`Storyshots Templates/ArrayTemplate Raw Html Wrappers 1`] = `
         Annabelle
       </li>
       <li>
-        Hamill
+        Halvorson
       </li>
       <li>
         31

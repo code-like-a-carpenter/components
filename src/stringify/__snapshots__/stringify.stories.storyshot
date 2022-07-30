@@ -8,7 +8,7 @@ exports[`Storyshots Components/Stringify Stringify 1`] = `
       "age": 31,
       "firstName": "Annabelle",
       "id": "b19d2e3f-5a5f-4ed3-a61b-862cf60e8cf3",
-      "lastName": "Hamill",
+      "lastName": "Halvorson",
       "signUpDate": "2020-10-04T14:50:38.937Z"
     },
     "employees": [

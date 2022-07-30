@@ -1,4 +1,4 @@
-import faker from 'faker';
+import {faker} from '@faker-js/faker';
 
 // Seed once for the mocks that are generated outside of test blocks. This
 // particularly applies to mocks that are generated in story files but not in
