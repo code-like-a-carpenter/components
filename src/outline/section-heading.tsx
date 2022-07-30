@@ -7,7 +7,7 @@ export type SectionHeadingProps = React.PropsWithChildren<
   HTMLProps<HTMLHeadingElement>
 >;
 
-export const SectionHeading: React.FC<SectionHeadingProps> = ({...rest}) => {
+export const SectionHeading = ({...rest}: SectionHeadingProps) => {
   const {styleLevel, outlineLevel} = useContext(LevelContext);
 
   if (outlineLevel < 1 || styleLevel < 1) {

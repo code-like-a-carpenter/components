@@ -1,10 +1,10 @@
+import cx from 'classnames';
 import React from 'react';
 import {
   Table as BootstrapTable,
   TableProps as BootstrapTableProps,
 } from 'react-bootstrap';
 import {ReplaceProps} from 'react-bootstrap/esm/helpers';
-import cx from 'classnames';
 
 import {wrapWithClass} from '../support';
 

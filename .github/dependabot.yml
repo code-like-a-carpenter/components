@@ -3,9 +3,9 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"
     ignore:
-      - dependency-name: "husky"
+      - dependency-name: "node"
         versions:
-          - "> 4"
+          - ">= 17"
     schedule:
       interval: "daily"
 

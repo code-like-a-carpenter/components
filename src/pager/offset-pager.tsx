@@ -6,10 +6,10 @@ import {useRoutingContext} from '..';
 import {makeOffsetHref} from './hrefs';
 import {OffsetPageInfo} from './types';
 
-export type OffsetPagerProps = {
+export interface OffsetPagerProps {
   readonly maxBeforeEllipsis?: number;
   readonly pageInfo: OffsetPageInfo;
-};
+}
 
 export const OffsetPager = ({
   maxBeforeEllipsis = 5,

@@ -1,5 +1,5 @@
-import React from 'react';
 import cx from 'classnames';
+import React from 'react';
 
 import {Renderer} from '../renderers/types';
 
@@ -17,7 +17,8 @@ export interface ConditionalDescriptionProps<T>
   readonly Render?: Renderer<T>;
 }
 
-export const ConditionalDescription = <T extends React.ReactNode>({
+// eslint-disable-next-line complexity
+export const ConditionalDescription = <T extends unknown>({
   className,
   condition,
   description,
@@ -49,5 +50,9 @@ export const ConditionalDescription = <T extends React.ReactNode>({
     );
   }
 
-  return <Description description={description} {...rest} />;
+  // This is a little goofy, but the automatic inferrence doesn't type
+  // Description correctly.
+  return (
+    <Description<typeof description> description={description} {...rest} />
+  );
 };

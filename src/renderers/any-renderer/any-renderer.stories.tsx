@@ -1,3 +1,4 @@
+import {DateTime} from 'luxon';
 import React from 'react';
 
 import {AnyRenderer, AnyRendererContext} from './any-renderer';
@@ -34,7 +35,7 @@ const overrides = {
     yes: 'you got it',
   },
   date: {
-    format: 'L',
+    format: DateTime.DATETIME_SHORT,
   },
   null: {
     null: 'nothing to see here',

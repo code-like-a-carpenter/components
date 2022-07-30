@@ -1,14 +1,14 @@
-import React, {PropsWithChildren} from 'react';
 import get from 'lodash/get';
+import React, {PropsWithChildren} from 'react';
 
 import {IdType} from '../types';
 
+import {useConfiguredFieldIds, useFieldConfiguration} from './configuration';
 import {
   FieldWrapperType,
   ItemWrapperType,
   TemplateWrapperType,
 } from './support';
-import {useConfiguredFieldIds, useFieldConfiguration} from './configuration';
 
 export const DefaultWrapper = <T extends object>({
   children,

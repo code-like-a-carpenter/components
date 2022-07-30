@@ -5,6 +5,7 @@ env:
 extends:
   - 'plugin:@ianwremmel/ianwremmel/modern'
   - 'plugin:@ianwremmel/ianwremmel/react'
+  - 'plugin:@ianwremmel/ianwremmel/typescript'
   - 'prettier'
 
 overrides:
@@ -20,32 +21,6 @@ overrides:
     env:
       browser: true
 
-  - files:
-      - '**/*.ts'
-      - '**/*.tsx'
-    extends:
-      - 'plugin:@ianwremmel/ianwremmel/typescript'
-    rules:
-      no-use-before-define: off
-      '@typescript-eslint/no-use-before-define':
-        - error
-        - classes: true
-          functions: false
-          variables: true
-
-  - files:
-      - '**/*.stories.*'
-    rules:
-      require-jsdoc: off
-
-  - files:
-      - '**/*.md/**'
-    rules:
-      import/no-unresolved: off
-
-parserOptions:
-  sourceType: 'script'
-
 settings:
   react:
     version: 'detect'
@@ -54,8 +29,6 @@ rules:
   import/no-extraneous-dependencies:
     - error
     - devDependencies: ['!src/**/*']
-  no-restricted-syntax: off
-  import/no-deprecated: warn
   import/no-unresolved:
     - error
     - ignore:

@@ -1,39 +1,40 @@
-import React, {useContext, useMemo} from 'react';
 import cx from 'classnames';
+import React, {useContext, useMemo} from 'react';
 
 import {AnyRenderer} from '../renderers';
 import {Renderer as RendererType} from '../renderers/types';
 
 import {DescriptionListContext, DescriptionList} from './description-list';
 
-export interface CommonProps
-  extends Omit<React.HTMLProps<HTMLElement>, 'title'> {
+export interface CommonProps<T extends unknown>
+  extends Omit<React.HTMLProps<HTMLElement>, 'children' | 'title'> {
   /**
    * Longer-form version of the "term" prop which explains more about what this
    * item describes.
    */
   readonly descriptionLabel?: string;
   readonly term: React.ReactNode;
-  readonly Renderer?: RendererType;
+  readonly Renderer?: RendererType<T>;
 }
 
-export type ChildrenProps = {
-  readonly children: React.ReactNode;
-};
-
-export interface DescriptionProps {
-  readonly description: React.ReactNode | React.ReactNodeArray;
+export interface ChildrenProps<T extends unknown> {
+  readonly children: T;
 }
 
-export type Props = CommonProps & (ChildrenProps | DescriptionProps);
+export interface DescriptionProps<T extends unknown> {
+  readonly description: T;
+}
 
-export const Description = ({
+export type Props<T extends unknown> = CommonProps<T> &
+  (ChildrenProps<T> | DescriptionProps<T>);
+
+export const Description = <T extends unknown>({
   className,
   descriptionLabel,
   Renderer = AnyRenderer,
   term,
   ...props
-}: Props) => {
+}: Props<T>) => {
   const listType = useContext(DescriptionListContext);
 
   const children = useMemo(() => {
@@ -74,7 +75,7 @@ export const Description = ({
   if (!listType) {
     return (
       <DescriptionList className="description-list--single">
-        <Description
+        <Description<T>
           className={cx(className, 'description-list__description')}
           Renderer={Renderer}
           term={term}
@@ -102,7 +103,7 @@ export const Description = ({
       </dt>
       {React.Children.map(children, (child) => (
         <dd className={ddClasses} {...props}>
-          {child}
+          <>{child}</>
         </dd>
       ))}
     </React.Fragment>

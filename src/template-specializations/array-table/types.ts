@@ -5,14 +5,16 @@ export interface TableProps<T extends object> {
   data: Maybe<Maybe<T>[]>;
 }
 
-export type ITable<T extends object> = React.ElementType<TableProps<T>>;
+export type ITable<T extends object> = React.ElementType<
+  React.PropsWithChildren<TableProps<T>>
+>;
 
 export interface TableHeaderProps<T extends object> {
   data: Maybe<Maybe<T>[]>;
 }
 
 export type ITableHeader<T extends object> = React.ElementType<
-  TableHeaderProps<T>
+  React.PropsWithChildren<TableHeaderProps<T>>
 >;
 
 export interface TableHeaderRowProps<T extends object> {
@@ -20,7 +22,7 @@ export interface TableHeaderRowProps<T extends object> {
 }
 
 export type ITableHeaderRow<T extends object> = React.ElementType<
-  TableHeaderRowProps<T>
+  React.PropsWithChildren<TableHeaderRowProps<T>>
 >;
 
 export interface TableHeaderCellProps<T extends object> {

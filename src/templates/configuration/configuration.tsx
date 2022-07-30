@@ -1,15 +1,15 @@
 import startCase from 'lodash/startCase';
-import React, {useContext} from 'react';
+import React, {PropsWithChildren, useContext} from 'react';
 
 import {AnyRenderer, FieldWrapperType} from '../..';
 import {Renderer} from '../../renderers';
 
-export type FieldConfiguration = {
+export interface FieldConfiguration {
   label: React.ReactNode;
   keyPath: string;
   renderer: Renderer;
   wrapper?: FieldWrapperType<object>;
-};
+}
 
 export type FieldConfigurationWithDefaults = Partial<FieldConfiguration>;
 
@@ -18,10 +18,10 @@ export type ConfigureFieldFunction = (
   config: FieldConfigurationWithDefaults
 ) => void;
 
-export type FieldConfigurationContextType = {
+export interface FieldConfigurationContextType {
   configuration: Map<string, FieldConfiguration>;
   configure: ConfigureFieldFunction;
-};
+}
 
 export const FieldConfigurationContext =
   React.createContext<FieldConfigurationContextType>(
@@ -29,10 +29,10 @@ export const FieldConfigurationContext =
     null
   );
 
-export const FieldConfigurationProvider: React.FC<{field?: string}> = ({
+export const FieldConfigurationProvider = ({
   children,
   field: parentName,
-}) => {
+}: PropsWithChildren<{field?: string}>) => {
   const parentContext = useContext(FieldConfigurationContext);
 
   let configuration: Map<string, FieldConfiguration>,

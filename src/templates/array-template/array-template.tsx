@@ -1,13 +1,13 @@
 import React from 'react';
 
 import {ConfigureFunction, IdType, Maybe} from '../..';
+import {DefaultWrapper, RenderItem, RenderTemplate} from '../common';
 import {Configurer, FieldConfigurationProvider} from '../configuration';
 import {
   FieldWrapperType,
   ItemWrapperType,
   TemplateWrapperType,
 } from '../support';
-import {DefaultWrapper, RenderItem, RenderTemplate} from '../common';
 
 export interface ArrayTemplateProps<
   T extends object,

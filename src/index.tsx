@@ -3,7 +3,6 @@ export * from './card';
 export * from './code';
 export * from './description';
 export * from './link';
-export * from './markdown';
 export * from './pager';
 export * from './outline';
 export * from './relay';

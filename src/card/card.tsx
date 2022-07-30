@@ -45,10 +45,10 @@ const withSection = <P extends Object>(Component: React.ComponentType<P>) =>
     return <Component {...props} />;
   };
 
-const CardHeader: React.FC<PropsOf<typeof BootstrapCard['Header']>> = ({
+const CardHeader = ({
   children,
   props,
-}) => {
+}: PropsOf<typeof BootstrapCard['Header']>) => {
   const [hasHeader, setHasHeader] = useContext(HasHeaderContext);
   useEffect(() => {
     if (!hasHeader) {

@@ -3,9 +3,9 @@ import React from 'react';
 import {useContextWithDefaults} from '../../support';
 import {RendererDefault, RendererProps} from '../types';
 
-export type NullRendererContextType = {
+export interface NullRendererContextType {
   readonly null: RendererDefault;
-};
+}
 
 export const NullRendererContext = React.createContext<NullRendererContextType>(
   {
@@ -15,7 +15,7 @@ export const NullRendererContext = React.createContext<NullRendererContextType>(
 
 export type NullRendererProps = RendererProps<null, NullRendererContextType>;
 
-export const NullRenderer: React.FC<NullRendererProps> = (props) => {
+export const NullRenderer = (props: NullRendererProps) => {
   const {null: content} = useContextWithDefaults(NullRendererContext, props);
   return <>{content}</>;
 };

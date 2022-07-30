@@ -1,7 +1,7 @@
+import {DateTime} from 'luxon';
 import React from 'react';
 
 import {DateRenderer, DateRendererContext} from './date-renderer';
-
 export default {
   component: DateRenderer,
   title: 'Renderers/DateRenderer',
@@ -36,9 +36,11 @@ export const relativeNegativeIsNull = () => (
   />
 );
 export const invalidDateString = () => <DateRenderer value="not a date" />;
-export const withOverrides = () => <DateRenderer value={date} format="L" />;
+export const withOverrides = () => (
+  <DateRenderer value={date} format={DateTime.DATE_SHORT} />
+);
 export const withOverridesFromContext = () => (
-  <DateRendererContext.Provider value={{format: 'LLLL'}}>
+  <DateRendererContext.Provider value={{format: DateTime.DATETIME_HUGE}}>
     <DateRenderer value={date} />
   </DateRendererContext.Provider>
 );

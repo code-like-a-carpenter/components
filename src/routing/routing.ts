@@ -2,10 +2,10 @@ import querystring, {ParsedUrlQuery} from 'querystring';
 
 import React, {useContext} from 'react';
 
-export type RoutingContextType = {
+export interface RoutingContextType {
   path: string;
   query: ParsedUrlQuery;
-};
+}
 
 export const RoutingContext = React.createContext<RoutingContextType | null>(
   null
