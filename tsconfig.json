@@ -16,7 +16,8 @@
     "strict": true,
     "target": "es2019", // node 12.9.0
     "types": [
-      "jest"
+      "jest",
+      "node"
     ]
   },
   "include": [
