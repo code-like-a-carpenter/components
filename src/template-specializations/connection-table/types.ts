@@ -13,7 +13,7 @@ export interface TableProps<N extends NodeLike, PI> {
 }
 
 export type ITable<N extends NodeLike, PI> = React.ElementType<
-  TableProps<N, PI>
+  React.PropsWithChildren<TableProps<N, PI>>
 >;
 
 export interface TableHeaderProps<N extends NodeLike, PI> {
@@ -21,7 +21,7 @@ export interface TableHeaderProps<N extends NodeLike, PI> {
 }
 
 export type ITableHeader<N extends NodeLike, PI> = React.ElementType<
-  TableHeaderProps<N, PI>
+  React.PropsWithChildren<TableHeaderProps<N, PI>>
 >;
 
 export interface TableHeaderRowProps<N extends NodeLike, PI> {
@@ -29,7 +29,7 @@ export interface TableHeaderRowProps<N extends NodeLike, PI> {
 }
 
 export type ITableHeaderRow<N extends NodeLike, PI> = React.ElementType<
-  TableHeaderRowProps<N, PI>
+  React.PropsWithChildren<TableHeaderRowProps<N, PI>>
 >;
 
 export interface TableHeaderCellProps<N extends NodeLike, PI> {

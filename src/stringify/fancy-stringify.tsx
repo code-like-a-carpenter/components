@@ -1,15 +1,16 @@
 import React from 'react';
 
-export interface FancyStringifyProps
-  extends React.HTMLProps<HTMLDetailsElement> {
+export interface FancyStringifyProps<T extends unknown>
+  extends Omit<React.HTMLProps<HTMLDetailsElement>, 'children'> {
   level?: number;
+  children: T;
 }
 
-export const FancyStringify: React.FC<FancyStringifyProps> = ({
+export const FancyStringify = <T extends unknown>({
   level = 0,
   children,
   ...rest
-}) => {
+}: FancyStringifyProps<T>) => {
   const Wrapper = level === 0 ? 'pre' : React.Fragment;
   const indent = Array(level * (Array.isArray(children) ? 2 : 2))
     .fill(' ')
@@ -19,6 +20,7 @@ export const FancyStringify: React.FC<FancyStringifyProps> = ({
     <Wrapper>
       {Array.isArray(children) && `${indent}[`}{' '}
       {children &&
+        // @ts-expect-error - this is fine. not great, but fine.
         Object.entries(children).map(([key, value], index, arr) => {
           if (value instanceof Date || typeof value !== 'object') {
             return `  ${indent}"${key}": ${JSON.stringify(value)}` + '\n';

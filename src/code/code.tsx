@@ -12,11 +12,7 @@ export interface BlockCodeProps extends React.HTMLProps<HTMLPreElement> {
   readonly inline?: false | never;
 }
 
-export const InlineCode: React.FC<InlineCodeProps> = ({
-  children,
-  className,
-  ...rest
-}) => {
+export const InlineCode = ({children, className, ...rest}: InlineCodeProps) => {
   const classes = cx(className, 'code code--inline');
   return (
     <code className={classes} {...rest}>
@@ -25,12 +21,12 @@ export const InlineCode: React.FC<InlineCodeProps> = ({
   );
 };
 
-export const BlockCode: React.FC<BlockCodeProps> = ({
+export const BlockCode = ({
   children,
   className,
   dedent: shouldDedent = true,
   ...rest
-}) => {
+}: BlockCodeProps) => {
   const classes = cx(className, 'code code__pre');
 
   return (

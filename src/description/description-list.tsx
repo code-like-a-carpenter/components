@@ -4,11 +4,11 @@ import React from 'react';
 export const DescriptionListContext = React.createContext(false);
 export type DescriptionListProps = React.HTMLProps<HTMLDListElement>;
 
-export const DescriptionList: React.FC<DescriptionListProps> = ({
+export const DescriptionList = ({
   children,
   className,
   ...rest
-}) => {
+}: DescriptionListProps) => {
   const classes = cx(className, 'description-list');
   return (
     <DescriptionListContext.Provider value={true}>

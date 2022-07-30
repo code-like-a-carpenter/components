@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, PropsWithChildren} from 'react';
 
 import {Alert, AlertProps} from '../alert';
 import {Code} from '../code';
@@ -17,7 +17,7 @@ interface SimpleErrorBoundaryState {
  * also prints the stack.
  */
 export class SimpleErrorBoundary extends Component<
-  SimpleErrorBoundaryProps,
+  PropsWithChildren<SimpleErrorBoundaryProps>,
   SimpleErrorBoundaryState
 > {
   static defaultProps = {

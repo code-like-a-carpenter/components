@@ -1,10 +1,16 @@
 import React from 'react';
 
-export type StringifyProps = React.HTMLProps<HTMLPreElement>;
+export interface StringifyProps<T extends unknown>
+  extends Omit<React.HTMLProps<HTMLPreElement>, 'children'> {
+  children: T;
+}
 
 /**
  * Utility component. Mostly for development.
  */
-export const Stringify: React.FC<StringifyProps> = ({children, ...rest}) => (
+export const Stringify = <T extends unknown>({
+  children,
+  ...rest
+}: StringifyProps<T>) => (
   <pre {...rest}>{JSON.stringify(children, null, 2)}</pre>
 );
