@@ -1,0 +1,219 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Template Specialization/ObjectDescription Duplicate Fields 1`] = `
+<dl
+  className="description-list"
+>
+  <dt
+    className="description-list__term description-list__term--single"
+  >
+    First Name
+  </dt>
+  <dd
+    className="description-list__description description-list__description--single"
+  >
+    Joshua
+  </dd>
+  <dt
+    className="description-list__term description-list__term--single"
+  >
+    Last Name
+  </dt>
+  <dd
+    className="description-list__description description-list__description--single"
+  >
+    Jenkins
+  </dd>
+  <dt
+    className="description-list__term description-list__term--single"
+  >
+    Age
+  </dt>
+  <dd
+    className="description-list__description description-list__description--single"
+  >
+    9
+  </dd>
+  <dt
+    className="description-list__term description-list__term--single"
+  >
+    Sign Up Date
+  </dt>
+  <dd
+    className="description-list__description description-list__description--single"
+  >
+    <time
+      dateTime="2019-04-21T09:24:38.262+00:00"
+      title="April 21, 2019, 9:24:38 AM UTC"
+    >
+      April 21, 2019
+    </time>
+  </dd>
+  <dt
+    className="description-list__term description-list__term--single"
+  >
+    Seconds since signup
+  </dt>
+  <dd
+    className="description-list__description description-list__description--single"
+  >
+    53620521738
+  </dd>
+</dl>
+`;
+
+exports[`Storyshots Template Specialization/ObjectDescription Nested Data 1`] = `
+<dl
+  className="description-list"
+>
+  <dt
+    className="description-list__term description-list__term--single"
+  >
+    Name First
+  </dt>
+  <dd
+    className="description-list__description description-list__description--single"
+  >
+    Milan
+  </dd>
+  <dt
+    className="description-list__term description-list__term--single"
+  >
+    Name Last
+  </dt>
+  <dd
+    className="description-list__description description-list__description--single"
+  >
+    Jenkins
+  </dd>
+  <dt
+    className="description-list__term description-list__term--single"
+  >
+    Sign Up Date
+  </dt>
+  <dd
+    className="description-list__description description-list__description--single"
+  >
+    <time
+      dateTime="2019-04-21T09:24:38.262+00:00"
+      title="April 21, 2019, 9:24:38 AM UTC"
+    >
+      April 21, 2019
+    </time>
+  </dd>
+  <dt
+    className="description-list__term description-list__term--single"
+  >
+    Age
+  </dt>
+  <dd
+    className="description-list__description description-list__description--single"
+  >
+    9
+  </dd>
+</dl>
+`;
+
+exports[`Storyshots Template Specialization/ObjectDescription Object Description 1`] = `
+<dl
+  className="description-list"
+>
+  <dt
+    className="description-list__term description-list__term--single"
+  >
+    First Name
+  </dt>
+  <dd
+    className="description-list__description description-list__description--single"
+  >
+    Joshua
+  </dd>
+  <dt
+    className="description-list__term description-list__term--single"
+  >
+    Last Name
+  </dt>
+  <dd
+    className="description-list__description description-list__description--single"
+  >
+    Jenkins
+  </dd>
+  <dt
+    className="description-list__term description-list__term--single"
+  >
+    Age
+  </dt>
+  <dd
+    className="description-list__description description-list__description--single"
+  >
+    9
+  </dd>
+  <dt
+    className="description-list__term description-list__term--single"
+  >
+    Sign Up Date
+  </dt>
+  <dd
+    className="description-list__description description-list__description--single"
+  >
+    <time
+      dateTime="2019-04-21T09:24:38.262+00:00"
+      title="April 21, 2019, 9:24:38 AM UTC"
+    >
+      April 21, 2019
+    </time>
+  </dd>
+</dl>
+`;
+
+exports[`Storyshots Template Specialization/ObjectDescription Out Of Order 1`] = `
+<dl
+  className="description-list"
+>
+  <dt
+    className="description-list__term description-list__term--single"
+  >
+    Last Name
+  </dt>
+  <dd
+    className="description-list__description description-list__description--single"
+  >
+    Jenkins
+  </dd>
+  <dt
+    className="description-list__term description-list__term--single"
+  >
+    First Name
+  </dt>
+  <dd
+    className="description-list__description description-list__description--single"
+  >
+    Joshua
+  </dd>
+  <dt
+    className="description-list__term description-list__term--single"
+  >
+    Sign Up Date
+  </dt>
+  <dd
+    className="description-list__description description-list__description--single"
+  >
+    <time
+      dateTime="2019-04-21T09:24:38.262+00:00"
+      title="April 21, 2019, 9:24:38 AM UTC"
+    >
+      April 21, 2019
+    </time>
+  </dd>
+  <dt
+    className="description-list__term description-list__term--single"
+  >
+    Age
+  </dt>
+  <dd
+    className="description-list__description description-list__description--single"
+  >
+    9
+  </dd>
+</dl>
+`;

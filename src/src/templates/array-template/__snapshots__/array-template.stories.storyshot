@@ -1,0 +1,960 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Templates/ArrayTemplate Array Template 1`] = `
+<ul>
+  <li>
+    <ul>
+      <li>
+        First Name
+        : 
+        Joshua
+      </li>
+      <li>
+        Last Name
+        : 
+        Jenkins
+      </li>
+      <li>
+        Age
+        : 
+        9
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime="2019-04-21T09:24:38.262+00:00"
+          title="April 21, 2019, 9:24:38 AM UTC"
+        >
+          April 21, 2019
+        </time>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        First Name
+        : 
+        Lennie
+      </li>
+      <li>
+        Last Name
+        : 
+        Krajcik
+      </li>
+      <li>
+        Age
+        : 
+        69
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime="2020-05-21T20:24:48.713+00:00"
+          title="May 21, 2020, 8:24:48 PM UTC"
+        >
+          May 21, 2020
+        </time>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        First Name
+        : 
+        Ophelia
+      </li>
+      <li>
+        Last Name
+        : 
+        Olson
+      </li>
+      <li>
+        Age
+        : 
+        92
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime="2019-03-05T01:04:28.401+00:00"
+          title="March 5, 2019, 1:04:28 AM UTC"
+        >
+          March 5, 2019
+        </time>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        First Name
+        : 
+        Annabelle
+      </li>
+      <li>
+        Last Name
+        : 
+        Halvorson
+      </li>
+      <li>
+        Age
+        : 
+        31
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime="2020-10-04T14:50:38.937+00:00"
+          title="October 4, 2020, 2:50:38 PM UTC"
+        >
+          October 4, 2020
+        </time>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        First Name
+        : 
+        Foster
+      </li>
+      <li>
+        Last Name
+        : 
+        Runolfsson
+      </li>
+      <li>
+        Age
+        : 
+        83
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime="2020-09-30T22:08:33.801+00:00"
+          title="September 30, 2020, 10:08:33 PM UTC"
+        >
+          September 30, 2020
+        </time>
+      </li>
+    </ul>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots Templates/ArrayTemplate Custom Field Wrapper 1`] = `
+<ul>
+  <li>
+    <ul>
+      <div
+        style={
+          Object {
+            "textTransform": "uppercase",
+          }
+        }
+      >
+        Joshua
+      </div>
+      <li>
+        Last Name
+        : 
+        Jenkins
+      </li>
+      <li>
+        Age
+        : 
+        9
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime="2019-04-21T09:24:38.262+00:00"
+          title="April 21, 2019, 9:24:38 AM UTC"
+        >
+          April 21, 2019
+        </time>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <div
+        style={
+          Object {
+            "textTransform": "uppercase",
+          }
+        }
+      >
+        Lennie
+      </div>
+      <li>
+        Last Name
+        : 
+        Krajcik
+      </li>
+      <li>
+        Age
+        : 
+        69
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime="2020-05-21T20:24:48.713+00:00"
+          title="May 21, 2020, 8:24:48 PM UTC"
+        >
+          May 21, 2020
+        </time>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <div
+        style={
+          Object {
+            "textTransform": "uppercase",
+          }
+        }
+      >
+        Ophelia
+      </div>
+      <li>
+        Last Name
+        : 
+        Olson
+      </li>
+      <li>
+        Age
+        : 
+        92
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime="2019-03-05T01:04:28.401+00:00"
+          title="March 5, 2019, 1:04:28 AM UTC"
+        >
+          March 5, 2019
+        </time>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <div
+        style={
+          Object {
+            "textTransform": "uppercase",
+          }
+        }
+      >
+        Annabelle
+      </div>
+      <li>
+        Last Name
+        : 
+        Halvorson
+      </li>
+      <li>
+        Age
+        : 
+        31
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime="2020-10-04T14:50:38.937+00:00"
+          title="October 4, 2020, 2:50:38 PM UTC"
+        >
+          October 4, 2020
+        </time>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <div
+        style={
+          Object {
+            "textTransform": "uppercase",
+          }
+        }
+      >
+        Foster
+      </div>
+      <li>
+        Last Name
+        : 
+        Runolfsson
+      </li>
+      <li>
+        Age
+        : 
+        83
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime="2020-09-30T22:08:33.801+00:00"
+          title="September 30, 2020, 10:08:33 PM UTC"
+        >
+          September 30, 2020
+        </time>
+      </li>
+    </ul>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots Templates/ArrayTemplate Default No Op 1`] = `
+Array [
+  "Joshua",
+  "Jenkins",
+  "9",
+  <time
+    dateTime="2019-04-21T09:24:38.262+00:00"
+    title="April 21, 2019, 9:24:38 AM UTC"
+  >
+    April 21, 2019
+  </time>,
+  "Lennie",
+  "Krajcik",
+  "69",
+  <time
+    dateTime="2020-05-21T20:24:48.713+00:00"
+    title="May 21, 2020, 8:24:48 PM UTC"
+  >
+    May 21, 2020
+  </time>,
+  "Ophelia",
+  "Olson",
+  "92",
+  <time
+    dateTime="2019-03-05T01:04:28.401+00:00"
+    title="March 5, 2019, 1:04:28 AM UTC"
+  >
+    March 5, 2019
+  </time>,
+  "Annabelle",
+  "Halvorson",
+  "31",
+  <time
+    dateTime="2020-10-04T14:50:38.937+00:00"
+    title="October 4, 2020, 2:50:38 PM UTC"
+  >
+    October 4, 2020
+  </time>,
+  "Foster",
+  "Runolfsson",
+  "83",
+  <time
+    dateTime="2020-09-30T22:08:33.801+00:00"
+    title="September 30, 2020, 10:08:33 PM UTC"
+  >
+    September 30, 2020
+  </time>,
+]
+`;
+
+exports[`Storyshots Templates/ArrayTemplate Duplicate Fields 1`] = `
+<ul>
+  <li>
+    <ul>
+      <li>
+        First Name
+        : 
+        Joshua
+      </li>
+      <li>
+        Last Name
+        : 
+        Jenkins
+      </li>
+      <li>
+        Age
+        : 
+        9
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime="2019-04-21T09:24:38.262+00:00"
+          title="April 21, 2019, 9:24:38 AM UTC"
+        >
+          April 21, 2019
+        </time>
+      </li>
+      <li>
+        Seconds since signup
+        : 
+        53620521738
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        First Name
+        : 
+        Lennie
+      </li>
+      <li>
+        Last Name
+        : 
+        Krajcik
+      </li>
+      <li>
+        Age
+        : 
+        69
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime="2020-05-21T20:24:48.713+00:00"
+          title="May 21, 2020, 8:24:48 PM UTC"
+        >
+          May 21, 2020
+        </time>
+      </li>
+      <li>
+        Seconds since signup
+        : 
+        19366511287
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        First Name
+        : 
+        Ophelia
+      </li>
+      <li>
+        Last Name
+        : 
+        Olson
+      </li>
+      <li>
+        Age
+        : 
+        92
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime="2019-03-05T01:04:28.401+00:00"
+          title="March 5, 2019, 1:04:28 AM UTC"
+        >
+          March 5, 2019
+        </time>
+      </li>
+      <li>
+        Seconds since signup
+        : 
+        57711331599
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        First Name
+        : 
+        Annabelle
+      </li>
+      <li>
+        Last Name
+        : 
+        Halvorson
+      </li>
+      <li>
+        Age
+        : 
+        31
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime="2020-10-04T14:50:38.937+00:00"
+          title="October 4, 2020, 2:50:38 PM UTC"
+        >
+          October 4, 2020
+        </time>
+      </li>
+      <li>
+        Seconds since signup
+        : 
+        7636161063
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        First Name
+        : 
+        Foster
+      </li>
+      <li>
+        Last Name
+        : 
+        Runolfsson
+      </li>
+      <li>
+        Age
+        : 
+        83
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime="2020-09-30T22:08:33.801+00:00"
+          title="September 30, 2020, 10:08:33 PM UTC"
+        >
+          September 30, 2020
+        </time>
+      </li>
+      <li>
+        Seconds since signup
+        : 
+        7955486199
+      </li>
+    </ul>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots Templates/ArrayTemplate Empty Data 1`] = `"No data received"`;
+
+exports[`Storyshots Templates/ArrayTemplate Nested Data 1`] = `
+<ul>
+  <li>
+    <ul>
+      <li>
+        Name First
+        : 
+        Milan
+      </li>
+      <li>
+        Name Last
+        : 
+        Jenkins
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime="2019-04-21T09:24:38.262+00:00"
+          title="April 21, 2019, 9:24:38 AM UTC"
+        >
+          April 21, 2019
+        </time>
+      </li>
+      <li>
+        Age
+        : 
+        9
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        Name First
+        : 
+        Melyna
+      </li>
+      <li>
+        Name Last
+        : 
+        Krajcik
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime="2020-05-21T20:24:48.713+00:00"
+          title="May 21, 2020, 8:24:48 PM UTC"
+        >
+          May 21, 2020
+        </time>
+      </li>
+      <li>
+        Age
+        : 
+        69
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        Name First
+        : 
+        Daisha
+      </li>
+      <li>
+        Name Last
+        : 
+        Olson
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime="2019-03-05T01:04:28.401+00:00"
+          title="March 5, 2019, 1:04:28 AM UTC"
+        >
+          March 5, 2019
+        </time>
+      </li>
+      <li>
+        Age
+        : 
+        92
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        Name First
+        : 
+        Coty
+      </li>
+      <li>
+        Name Last
+        : 
+        Halvorson
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime="2020-10-04T14:50:38.937+00:00"
+          title="October 4, 2020, 2:50:38 PM UTC"
+        >
+          October 4, 2020
+        </time>
+      </li>
+      <li>
+        Age
+        : 
+        31
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        Name First
+        : 
+        Kenna
+      </li>
+      <li>
+        Name Last
+        : 
+        Runolfsson
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime="2020-09-30T22:08:33.801+00:00"
+          title="September 30, 2020, 10:08:33 PM UTC"
+        >
+          September 30, 2020
+        </time>
+      </li>
+      <li>
+        Age
+        : 
+        83
+      </li>
+    </ul>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots Templates/ArrayTemplate Null Data 1`] = `"No data received"`;
+
+exports[`Storyshots Templates/ArrayTemplate Out Of Order 1`] = `
+<ul>
+  <li>
+    <ul>
+      <li>
+        Last Name
+        : 
+        Jenkins
+      </li>
+      <li>
+        First Name
+        : 
+        Joshua
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime="2019-04-21T09:24:38.262+00:00"
+          title="April 21, 2019, 9:24:38 AM UTC"
+        >
+          April 21, 2019
+        </time>
+      </li>
+      <li>
+        Age
+        : 
+        9
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        Last Name
+        : 
+        Krajcik
+      </li>
+      <li>
+        First Name
+        : 
+        Lennie
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime="2020-05-21T20:24:48.713+00:00"
+          title="May 21, 2020, 8:24:48 PM UTC"
+        >
+          May 21, 2020
+        </time>
+      </li>
+      <li>
+        Age
+        : 
+        69
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        Last Name
+        : 
+        Olson
+      </li>
+      <li>
+        First Name
+        : 
+        Ophelia
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime="2019-03-05T01:04:28.401+00:00"
+          title="March 5, 2019, 1:04:28 AM UTC"
+        >
+          March 5, 2019
+        </time>
+      </li>
+      <li>
+        Age
+        : 
+        92
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        Last Name
+        : 
+        Halvorson
+      </li>
+      <li>
+        First Name
+        : 
+        Annabelle
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime="2020-10-04T14:50:38.937+00:00"
+          title="October 4, 2020, 2:50:38 PM UTC"
+        >
+          October 4, 2020
+        </time>
+      </li>
+      <li>
+        Age
+        : 
+        31
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        Last Name
+        : 
+        Runolfsson
+      </li>
+      <li>
+        First Name
+        : 
+        Foster
+      </li>
+      <li>
+        Sign Up Date
+        : 
+        <time
+          dateTime="2020-09-30T22:08:33.801+00:00"
+          title="September 30, 2020, 10:08:33 PM UTC"
+        >
+          September 30, 2020
+        </time>
+      </li>
+      <li>
+        Age
+        : 
+        83
+      </li>
+    </ul>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots Templates/ArrayTemplate Raw Html Wrappers 1`] = `
+<ul>
+  <li>
+    <ul>
+      <li>
+        Joshua
+      </li>
+      <li>
+        Jenkins
+      </li>
+      <li>
+        9
+      </li>
+      <li>
+        <time
+          dateTime="2019-04-21T09:24:38.262+00:00"
+          title="April 21, 2019, 9:24:38 AM UTC"
+        >
+          April 21, 2019
+        </time>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        Lennie
+      </li>
+      <li>
+        Krajcik
+      </li>
+      <li>
+        69
+      </li>
+      <li>
+        <time
+          dateTime="2020-05-21T20:24:48.713+00:00"
+          title="May 21, 2020, 8:24:48 PM UTC"
+        >
+          May 21, 2020
+        </time>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        Ophelia
+      </li>
+      <li>
+        Olson
+      </li>
+      <li>
+        92
+      </li>
+      <li>
+        <time
+          dateTime="2019-03-05T01:04:28.401+00:00"
+          title="March 5, 2019, 1:04:28 AM UTC"
+        >
+          March 5, 2019
+        </time>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        Annabelle
+      </li>
+      <li>
+        Halvorson
+      </li>
+      <li>
+        31
+      </li>
+      <li>
+        <time
+          dateTime="2020-10-04T14:50:38.937+00:00"
+          title="October 4, 2020, 2:50:38 PM UTC"
+        >
+          October 4, 2020
+        </time>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        Foster
+      </li>
+      <li>
+        Runolfsson
+      </li>
+      <li>
+        83
+      </li>
+      <li>
+        <time
+          dateTime="2020-09-30T22:08:33.801+00:00"
+          title="September 30, 2020, 10:08:33 PM UTC"
+        >
+          September 30, 2020
+        </time>
+      </li>
+    </ul>
+  </li>
+</ul>
+`;
