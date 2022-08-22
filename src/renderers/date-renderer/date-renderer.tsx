@@ -63,7 +63,11 @@ export const DateRenderer = ({value, ...rest}: DateRendererProps) => {
     return (
       <time
         dateTime={dt.toISO()}
-        title={dt.toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS)}
+        // DATETIME_HUGE and DATETIME_FULL have a mismatch between client and
+        // server thanks to a recent change in ICU that is slightly out of sync
+        // between Node and browsers. (Browsers include "at" between the date
+        // and the time). This mismatch throws an error in React hydration.
+        title={dt.toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS)}
       >
         {reference
           ? dt.toRelative({base: parseDate(reference)})
@@ -75,7 +79,11 @@ export const DateRenderer = ({value, ...rest}: DateRendererProps) => {
   return (
     <time
       dateTime={dt.toISO()}
-      title={dt.toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS)}
+      // DATETIME_HUGE and DATETIME_FULL have a mismatch between client and
+      // server thanks to a recent change in ICU that is slightly out of sync
+      // between Node and browsers. (Browsers include "at" between the date and
+      // the time). This mismatch throws an error in React hydration.
+      title={dt.toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS)}
     >
       {dt.toLocaleString(format)}
     </time>
