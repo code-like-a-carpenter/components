@@ -1,0 +1,329 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Card Body 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="card-body"
+  >
+    <div
+      className="card-title h5"
+    >
+      Card title
+    </div>
+    <p
+      className="card-text"
+    >
+      This is some text within a card body.
+    </p>
+    <p>
+      This is a p-tag with no classes
+    </p>
+    <p
+      className="card-text"
+    >
+      This is a p-tag with the card-text class
+    </p>
+    <div
+      className="card-text"
+    >
+      <p>
+        This is a p-tag with in a div with the card-text class
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Card Card 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="card-body"
+  >
+    <div
+      className="card-title h5"
+    >
+      Card title
+    </div>
+    <p
+      className="card-text"
+    >
+      Some quick example text to build on the card title and make up the bulk of the card's content
+    </p>
+    <a
+      className="btn btn-primary"
+      disabled={false}
+      href="#"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      Go somewhere
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Card Header 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="card-header"
+  >
+    <h1
+      className="h1"
+      id="o-1s-1-featured"
+    >
+      <a
+        href="#o-1s-1-featured"
+      >
+        Featured
+      </a>
+    </h1>
+  </div>
+  <div
+    className="card-body"
+  >
+    <div
+      className="card-title h5"
+    >
+      Special title treatment
+    </div>
+    <p
+      className="card-text"
+    >
+      With supporting text below as a natural lead-in to additional content.
+    </p>
+    <a
+      className="btn btn-primary"
+      disabled={false}
+      href="#"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      Go somewhere
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Card Kitchen Sink 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="card-header"
+  >
+    <h1
+      className="h1"
+      id="o-1s-1-card-header"
+    >
+      <a
+        href="#o-1s-1-card-header"
+      >
+        Card Header
+      </a>
+    </h1>
+  </div>
+  <div
+    className="card-body"
+  >
+    <div
+      className="card-title h5"
+    >
+      Card title
+    </div>
+    <div
+      className="card-subtitle h6"
+    >
+      Card subtitle
+    </div>
+    <p
+      className="card-text"
+    >
+      Some quick example text to build on the card title and make up the bulk of the card's content
+    </p>
+  </div>
+  <div
+    className="list-group list-group-flush"
+    onKeyDown={[Function]}
+  >
+    <div
+      className="list-group-item"
+      data-rr-ui-event-key={null}
+      onClick={[Function]}
+    >
+      Cras justo odio
+    </div>
+    <div
+      className="list-group-item"
+      data-rr-ui-event-key={null}
+      onClick={[Function]}
+    >
+      Dapibus ac facilisis in
+    </div>
+    <div
+      className="list-group-item"
+      data-rr-ui-event-key={null}
+      onClick={[Function]}
+    >
+      Vestibulum at eros
+    </div>
+  </div>
+  <div
+    className="card-body"
+  >
+    <a
+      className="card-link"
+      href="#"
+    >
+      Card Link
+    </a>
+    <a
+      className="card-link"
+      href="#"
+    >
+      Another Link
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Card List Groups 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="list-group list-group-flush"
+    onKeyDown={[Function]}
+  >
+    <div
+      className="list-group-item"
+      data-rr-ui-event-key={null}
+      onClick={[Function]}
+    >
+      Cras justo odio
+    </div>
+    <div
+      className="list-group-item"
+      data-rr-ui-event-key={null}
+      onClick={[Function]}
+    >
+      Dapibus ac facilisis in
+    </div>
+    <div
+      className="list-group-item"
+      data-rr-ui-event-key={null}
+      onClick={[Function]}
+    >
+      Morbi leo risus
+    </div>
+    <div
+      className="list-group-item"
+      data-rr-ui-event-key={null}
+      onClick={[Function]}
+    >
+      Porta ac consectetur ac
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Card List Groups With Heading 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="card-header"
+  >
+    <h1
+      className="h1"
+      id="o-1s-1-featured"
+    >
+      <a
+        href="#o-1s-1-featured"
+      >
+        Featured
+      </a>
+    </h1>
+  </div>
+  <div
+    className="list-group list-group-flush"
+    onKeyDown={[Function]}
+  >
+    <div
+      className="list-group-item"
+      data-rr-ui-event-key={null}
+      onClick={[Function]}
+    >
+      Cras justo odio
+    </div>
+    <div
+      className="list-group-item"
+      data-rr-ui-event-key={null}
+      onClick={[Function]}
+    >
+      Dapibus ac facilisis in
+    </div>
+    <div
+      className="list-group-item"
+      data-rr-ui-event-key={null}
+      onClick={[Function]}
+    >
+      Morbi leo risus
+    </div>
+    <div
+      className="list-group-item"
+      data-rr-ui-event-key={null}
+      onClick={[Function]}
+    >
+      Porta ac consectetur ac
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Card Tiles Text And Links 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="card-body"
+  >
+    <div
+      className="card-title h5"
+    >
+      Card title
+    </div>
+    <div
+      className="card-subtitle h6"
+    >
+      Card subtitle
+    </div>
+    <p
+      className="card-text"
+    >
+      Some quick example text to build on the card title and make up the bulk of the card's content
+    </p>
+    <a
+      className="card-link"
+      href="#"
+    >
+      Card link
+    </a>
+    <a
+      className="card-link"
+      href="#"
+    >
+      Another link
+    </a>
+  </div>
+</div>
+`;

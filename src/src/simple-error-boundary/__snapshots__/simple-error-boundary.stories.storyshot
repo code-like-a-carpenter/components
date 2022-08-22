@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots ErrorBoundaries/SimpleErrorBoundary Json Parse Error 1`] = `
+<div
+  className="fade alert alert-danger show"
+  role="alert"
+>
+  SyntaxError: Unexpected token i in JSON at position 1
+</div>
+`;
+
+exports[`Storyshots ErrorBoundaries/SimpleErrorBoundary No Stack 1`] = `
+<div
+  className="fade alert alert-info show"
+  role="alert"
+>
+  SyntaxError: Unexpected token i in JSON at position 1
+</div>
+`;
+
+exports[`Storyshots ErrorBoundaries/SimpleErrorBoundary Simple Error Boundary 1`] = `
+<div
+  className="fade alert alert-danger show"
+  role="alert"
+>
+  Error: Something went wrong!
+</div>
+`;
+
+exports[`Storyshots ErrorBoundaries/SimpleErrorBoundary Warning Not Danger 1`] = `
+<div
+  className="fade alert alert-warning show"
+  role="alert"
+>
+  SyntaxError: Unexpected token i in JSON at position 1
+</div>
+`;

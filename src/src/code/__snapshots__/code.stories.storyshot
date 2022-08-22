@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Code Code 1`] = `
+<pre
+  className="code code__pre"
+>
+  <code
+    className="code code--block"
+  >
+    {
+  "proof": true
+}
+  </code>
+</pre>
+`;
+
+exports[`Storyshots Components/Code Indented 1`] = `
+<pre
+  className="code code__pre"
+>
+  <code
+    className="code code--block"
+  >
+    {
+  "proof": true
+}
+  </code>
+</pre>
+`;
+
+exports[`Storyshots Components/Code Inline 1`] = `
+<p>
+  There is 
+  <code
+    className="code code--inline"
+  >
+    inline code
+  </code>
+   in this paragraph
+</p>
+`;
+
+exports[`Storyshots Components/Code Nested 1`] = `
+<pre
+  className="code code__pre"
+>
+  <code
+    className="code code--block"
+  >
+    foo
+  </code>
+</pre>
+`;

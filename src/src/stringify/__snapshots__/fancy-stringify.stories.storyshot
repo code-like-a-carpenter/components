@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/FancyStringify Fancy Stringify 1`] = `
+<pre>
+   
+  <details
+    open={true}
+  >
+    <summary>
+      "manager"
+      : 
+      {
+    </summary>
+     
+    <details
+      open={true}
+    >
+      <summary>
+          "details"
+        : 
+        {
+      </summary>
+       
+            "age": 9
+
+            "firstName": "Joshua"
+
+            "id": "1c887ce7-df33-419f-ba65-d255867e20db"
+
+            "lastName": "Jenkins"
+
+            "signUpDate": "2019-04-21T09:24:38.262Z"
+
+          }
+      ,
+    </details>
+    <details
+      open={true}
+    >
+      <summary>
+          "employees"
+        : 
+      </summary>
+          [
+       
+      <details
+        open={true}
+      >
+        <summary>
+              "0"
+          : 
+          {
+        </summary>
+         
+                "age": 69
+
+                "id": "94f6d8ab-9d31-428c-9837-aef7fe202505"
+
+        <details
+          open={true}
+        >
+          <summary>
+                  "name"
+            : 
+            {
+          </summary>
+           
+                    "first": "Melyna"
+
+                    "last": "Krajcik"
+
+                  }
+          ,
+        </details>
+                "signUpDate": "2020-05-21T20:24:48.713Z"
+
+              }
+        ,
+      </details>
+      <details
+        open={true}
+      >
+        <summary>
+              "1"
+          : 
+          {
+        </summary>
+         
+                "age": 92
+
+                "id": "c0759f49-ba6d-4135-b70d-b53ead69330c"
+
+        <details
+          open={true}
+        >
+          <summary>
+                  "name"
+            : 
+            {
+          </summary>
+           
+                    "first": "Daisha"
+
+                    "last": "Olson"
+
+                  }
+          ,
+        </details>
+                "signUpDate": "2019-03-05T01:04:28.401Z"
+
+              }
+      </details>
+          ]
+    </details>
+      }
+  </details>
+</pre>
+`;

@@ -64,6 +64,7 @@
     "@storybook/addon-actions": "~6.5.9",
     "@storybook/addon-essentials": "~6.5.9",
     "@storybook/addon-links": "~6.5.9",
+    "@storybook/addon-storyshots": "~6.5.9",
     "@storybook/builder-webpack5": "~6.5",
     "@storybook/manager-webpack5": "~6.5",
     "@storybook/preset-scss": "~1.0.3",
@@ -117,5 +118,9 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "overrides": {
+    "react-element-to-jsx-string": "^15",
+    "react-test-renderer": "$react-test-renderer"
   }
 }
