@@ -54,7 +54,7 @@ export const SimplePager = ({
           >
             1
           </Pagination.Item>
-          {showStartEllipsis && <Pagination.Ellipsis />}
+          {showStartEllipsis && <Pagination.Ellipsis disabled />}
           {[...Array(maxBeforeEllipsis)].map((item, index) => {
             const page = ellipsisStart + index;
 
@@ -68,7 +68,7 @@ export const SimplePager = ({
               </Pagination.Item>
             );
           })}
-          {showEndEllipsis && <Pagination.Ellipsis />}
+          {showEndEllipsis && <Pagination.Ellipsis disabled />}
           <Pagination.Item
             active={pageInfo.page === pageInfo.pages}
             href={makeSimpleHref(routingContext, pageInfo, pageInfo.pages)}

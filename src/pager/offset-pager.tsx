@@ -55,7 +55,7 @@ export const OffsetPager = ({
           >
             1
           </Pagination.Item>
-          {showStartEllipsis && <Pagination.Ellipsis />}
+          {showStartEllipsis && <Pagination.Ellipsis disabled />}
           {[...Array(maxBeforeEllipsis)].map((item, index) => {
             const page = ellipsisStart + index;
 
@@ -69,7 +69,7 @@ export const OffsetPager = ({
               </Pagination.Item>
             );
           })}
-          {showEndEllipsis && <Pagination.Ellipsis />}
+          {showEndEllipsis && <Pagination.Ellipsis disabled />}
           <Pagination.Item
             active={pageInfo.page === pageInfo.pages}
             href={makeOffsetHref(routingContext, pageInfo, pageInfo.pages)}
