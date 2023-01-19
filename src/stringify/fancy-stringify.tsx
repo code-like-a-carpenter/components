@@ -20,7 +20,6 @@ export const FancyStringify = <T extends unknown>({
     <Wrapper>
       {Array.isArray(children) && `${indent}[`}{' '}
       {children &&
-        // @ts-expect-error - this is fine. not great, but fine.
         Object.entries(children).map(([key, value], index, arr) => {
           if (value instanceof Date || typeof value !== 'object') {
             return `  ${indent}"${key}": ${JSON.stringify(value)}` + '\n';
