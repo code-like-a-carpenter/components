@@ -3,9 +3,8 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"
     ignore:
-      - dependency-name: "node"
-        versions:
-          - ">= 17"
+      - dependency-name: '@types/node'
+        update-types: ['version-update:semver-major']
     schedule:
       interval: "daily"
 
