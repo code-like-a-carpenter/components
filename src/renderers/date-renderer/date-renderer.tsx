@@ -50,7 +50,7 @@ export const DateRenderer = ({value, ...rest}: DateRendererProps) => {
     const [start, end] = [parseDate(reference), dt].sort();
     const diff = end.diff(start);
     return (
-      <time dateTime={diff.toISO()} title={diff.toLocaleString()}>
+      <time dateTime={diff.toISO() ?? undefined} title={diff.toLocaleString()}>
         {toHuman(diff)}
       </time>
     );
@@ -62,7 +62,7 @@ export const DateRenderer = ({value, ...rest}: DateRendererProps) => {
     }
     return (
       <time
-        dateTime={dt.toISO()}
+        dateTime={dt.toISO() ?? undefined}
         // DATETIME_HUGE and DATETIME_FULL have a mismatch between client and
         // server thanks to a recent change in ICU that is slightly out of sync
         // between Node and browsers. (Browsers include "at" between the date
@@ -78,7 +78,7 @@ export const DateRenderer = ({value, ...rest}: DateRendererProps) => {
 
   return (
     <time
-      dateTime={dt.toISO()}
+      dateTime={dt.toISO() ?? undefined}
       // DATETIME_HUGE and DATETIME_FULL have a mismatch between client and
       // server thanks to a recent change in ICU that is slightly out of sync
       // between Node and browsers. (Browsers include "at" between the date and

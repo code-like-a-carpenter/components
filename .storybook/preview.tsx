@@ -1,4 +1,5 @@
-import React from 'react';
+import './styles.scss'
+
 import {faker} from '@faker-js/faker';
 
 export const decorators = [

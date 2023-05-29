@@ -6,6 +6,7 @@ extends:
   - 'plugin:@ianwremmel/ianwremmel/modern'
   - 'plugin:@ianwremmel/ianwremmel/react'
   - 'plugin:@ianwremmel/ianwremmel/typescript'
+  - 'plugin:storybook/recommended'
   - 'prettier'
 
 overrides:

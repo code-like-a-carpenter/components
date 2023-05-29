@@ -22,6 +22,7 @@ export const Card = (props: CardProps) => {
     <HasHeaderContext.Provider value={[hasHeader, setHasHeader]}>
       <CardContext.Provider value={true}>
         <Section>
+          {/* @ts-expect-error - there's something a little weird going on the the bootstrap types */}
           <BootstrapCard {...props} />
         </Section>
       </CardContext.Provider>
@@ -48,7 +49,7 @@ const withSection = <P extends Object>(Component: React.ComponentType<P>) =>
 const CardHeader = ({
   children,
   props,
-}: PropsOf<typeof BootstrapCard['Header']>) => {
+}: PropsOf<(typeof BootstrapCard)['Header']>) => {
   const [hasHeader, setHasHeader] = useContext(HasHeaderContext);
   useEffect(() => {
     if (!hasHeader) {
