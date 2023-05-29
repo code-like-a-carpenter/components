@@ -5,7 +5,7 @@ import {
   Source,
   SourceState,
   SourceContext,
-} from '@storybook/addon-docs/blocks';
+} from '@storybook/blocks';
 import {BooleanRenderer, BooleanRendererContext} from '.';
 import {AnyRenderer, AnyRendererContext} from '.';
 
@@ -43,7 +43,18 @@ Of course, these examples are just for booleans. What do we do when we truly
 have no idea what data we might get? Enter the `AnyRenderer`
 
 <Canvas withSource={SourceState.OPEN}>
-  <React.Fragment>
+  <AnyRenderer value={true} />
+  <br />
+  <AnyRenderer value={'2020-01-01'} />
+  <br />
+  <AnyRenderer value={5} />
+  <br />
+  <AnyRenderer value={null} />
+  <br />
+</Canvas>
+
+<Canvas withSource={SourceState.OPEN}>
+  <AnyRendererContext.Provider value={{boolean: {yes: 'it is the way'}}}>
     <AnyRenderer value={true} />
     <br />
     <AnyRenderer value={'2020-01-01'} />
@@ -52,22 +63,7 @@ have no idea what data we might get? Enter the `AnyRenderer`
     <br />
     <AnyRenderer value={null} />
     <br />
-  </React.Fragment>
-</Canvas>
-
-<Canvas withSource={SourceState.OPEN}>
-  <React.Fragment>
-    <AnyRendererContext.Provider value={{boolean: {yes: 'it is the way'}}}>
-      <AnyRenderer value={true} />
-      <br />
-      <AnyRenderer value={'2020-01-01'} />
-      <br />
-      <AnyRenderer value={5} />
-      <br />
-      <AnyRenderer value={null} />
-      <br />
-    </AnyRendererContext.Provider>
-  </React.Fragment>
+  </AnyRendererContext.Provider>
 </Canvas>
 
 Now, with the `AnyRenderer`, we can put any arbitrary data on a page and get
