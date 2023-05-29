@@ -22,6 +22,7 @@ export const Card = (props: CardProps) => {
     <HasHeaderContext.Provider value={[hasHeader, setHasHeader]}>
       <CardContext.Provider value={true}>
         <Section>
+          {/* @ts-expect-error - there's something a little weird going on the the bootstrap types */}
           <BootstrapCard {...props} />
         </Section>
       </CardContext.Provider>
