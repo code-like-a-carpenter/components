@@ -7,14 +7,14 @@
     "jsx": "react",
     "lib": [
       "dom",
-      "es2020"
+      "es2022"
     ],
     "module": "commonjs",
     "moduleResolution": "node",
     "outDir": "dist/types",
     "resolveJsonModule": true,
     "strict": true,
-    "target": "es2019", // node 12.9.0
+    "target": "es2022",
     "types": [
       "jest",
       "node"
