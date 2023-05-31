@@ -1,4 +1,4 @@
-import React from 'react';
+import {ComponentType} from 'react';
 
 import {NullRenderer} from '../null-renderer';
 
@@ -10,7 +10,7 @@ export type MaybeRendererProps<T, P extends object> = Partial<
   Omit<P, 'value'>
 > & {
   readonly value: undefined | null | T;
-  readonly Component: React.ComponentType<ComponentProps<T, P>>;
+  readonly Component: ComponentType<ComponentProps<T, P>>;
 };
 
 export const MaybeRenderer = <T, P extends object>({

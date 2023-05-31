@@ -1,7 +1,7 @@
 import assert from 'assert';
 
 import {DateTime, Duration} from 'luxon';
-import React from 'react';
+import {createContext} from 'react';
 
 import {useContextWithDefaults} from '../../support';
 import {NullRenderer} from '../null-renderer';
@@ -22,14 +22,13 @@ export interface DateRendererContextProps {
   readonly range?: boolean;
 }
 
-export const DateRendererContext =
-  React.createContext<DateRendererContextProps>({
-    format: DateTime.DATE_FULL,
-    negativeIsNull: false,
-    range: false,
-    reference: new Date(),
-    relative: false,
-  });
+export const DateRendererContext = createContext<DateRendererContextProps>({
+  format: DateTime.DATE_FULL,
+  negativeIsNull: false,
+  range: false,
+  reference: new Date(),
+  relative: false,
+});
 
 export type DateRendererProps = RendererProps<
   Date | string | number,

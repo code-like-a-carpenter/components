@@ -1,6 +1,6 @@
-import React, {PropsWithChildren, useContext} from 'react';
+import React, {createContext, PropsWithChildren, useContext} from 'react';
 
-export const LevelContext = React.createContext({
+export const LevelContext = createContext({
   outlineLevel: 0,
   styleLevel: 0,
 });

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {IdType, Maybe} from '../..';
 import {useFieldConfiguration} from '../configuration';
 import {

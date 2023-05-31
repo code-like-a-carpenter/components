@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {RoutingContext} from '../routing';
 
 import {SimplePager} from './simple-pager';

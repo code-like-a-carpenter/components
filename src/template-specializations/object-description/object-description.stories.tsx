@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {makeComplexPerson, makeSimplePerson} from '../../mocks';
 
 import {ObjectDescription} from './object-description';

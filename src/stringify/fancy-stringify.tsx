@@ -1,7 +1,7 @@
-import React from 'react';
+import {Fragment, HTMLProps} from 'react';
 
 export interface FancyStringifyProps<T extends unknown>
-  extends Omit<React.HTMLProps<HTMLDetailsElement>, 'children'> {
+  extends Omit<HTMLProps<HTMLDetailsElement>, 'children'> {
   level?: number;
   children: T;
 }
@@ -11,7 +11,7 @@ export const FancyStringify = <T extends unknown>({
   children,
   ...rest
 }: FancyStringifyProps<T>) => {
-  const Wrapper = level === 0 ? 'pre' : React.Fragment;
+  const Wrapper = level === 0 ? 'pre' : Fragment;
   const indent = Array(level * (Array.isArray(children) ? 2 : 2))
     .fill(' ')
     .join('');

@@ -1,5 +1,5 @@
 import get from 'lodash/get';
-import React, {PropsWithChildren} from 'react';
+import React, {PropsWithChildren, ReactNode} from 'react';
 
 import {IdType} from '../types';
 
@@ -91,7 +91,7 @@ export interface RenderTemplateProps<T extends unknown> {
    * is handled in ArrayTemplate or ObjectTemplate and passed to RenderTemplate
    * as `children`.
    */
-  children: React.ReactNode;
+  children: ReactNode;
   data: T;
   TemplateWrapper?: TemplateWrapperType<T>;
 }

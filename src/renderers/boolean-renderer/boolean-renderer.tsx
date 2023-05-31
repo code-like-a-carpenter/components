@@ -1,4 +1,4 @@
-import React from 'react';
+import {createContext} from 'react';
 
 import {useContextWithDefaults} from '../../support';
 import {RendererDefault, RendererProps} from '../types';
@@ -8,11 +8,12 @@ export interface BooleanRendererContextType {
   readonly yes: RendererDefault;
 }
 
-export const BooleanRendererContext =
-  React.createContext<BooleanRendererContextType>({
+export const BooleanRendererContext = createContext<BooleanRendererContextType>(
+  {
     no: 'No',
     yes: 'Yes',
-  });
+  }
+);
 
 export type BooleanRendererProps = RendererProps<
   boolean,

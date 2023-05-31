@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {Alert, Card} from '..';
 
 import {Link} from './link';

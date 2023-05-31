@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {Code, Link, SectionHeading} from '..';
 
 import {Alert} from '.';

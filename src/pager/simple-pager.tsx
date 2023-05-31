@@ -1,4 +1,3 @@
-import React from 'react';
 import {Pagination} from 'react-bootstrap';
 
 import {useRoutingContext} from '../routing';
@@ -47,7 +46,7 @@ export const SimplePager = ({
       />
 
       {pageInfo.pages > maxBeforeEllipsis ? (
-        <React.Fragment>
+        <>
           <Pagination.Item
             active={pageInfo.page === 1}
             href={makeSimpleHref(routingContext, pageInfo, 1)}
@@ -75,7 +74,7 @@ export const SimplePager = ({
           >
             {pageInfo.pages}
           </Pagination.Item>
-        </React.Fragment>
+        </>
       ) : (
         [...Array(pageInfo.pages)].map((item, index) => {
           const page = index + 1;

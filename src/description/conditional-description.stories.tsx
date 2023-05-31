@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {DateRenderer} from '..';
 
 import {ConditionalDescription} from './conditional-description';

@@ -1,4 +1,4 @@
-import React from 'react';
+import {ReactElement} from 'react';
 
 import {
   ConfigureFunction,
@@ -33,7 +33,7 @@ import {
 export interface ConnectionTableProps<N extends NodeLike, PI> {
   connection: Maybe<ConnectionLike<N, PI>>;
   configure?: ConfigureFunction<N>;
-  noDataSlot?: React.ReactElement;
+  noDataSlot?: ReactElement;
   Table?: ITable<N, PI>;
   TableHeader?: ITableHeader<N, PI>;
   TableHeaderRow?: ITableHeaderRow<N, PI>;

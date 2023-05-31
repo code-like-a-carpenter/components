@@ -1,4 +1,4 @@
-import React from 'react';
+import {ReactElement} from 'react';
 
 import {ItemWrapperType, Maybe} from '../..';
 import {DefaultWrapper, RenderItem, RenderTemplate} from '../common';
@@ -15,7 +15,7 @@ export interface ObjectTemplateProps<T extends object> {
   TemplateWrapper?: TemplateWrapperType<Maybe<T>>;
   ItemWrapper?: ItemWrapperType<T>;
   FieldWrapper?: FieldWrapperType<T>;
-  noDataSlot?: React.ReactElement;
+  noDataSlot?: ReactElement;
 }
 
 export const ObjectTemplate = <T extends object>({

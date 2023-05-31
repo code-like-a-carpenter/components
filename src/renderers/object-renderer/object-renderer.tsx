@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {Code} from '../..';
 import {RendererProps} from '../types';
 

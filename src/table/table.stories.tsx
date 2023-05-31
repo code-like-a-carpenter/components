@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {AnyRenderer} from '..';
 import {makeComplexPeople, makeSimplePeople} from '../mocks';
 

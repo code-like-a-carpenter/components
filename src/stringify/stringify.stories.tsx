@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {makeComplexPeople, makeSimplePerson} from '../mocks';
 
 import {Stringify} from './stringify';

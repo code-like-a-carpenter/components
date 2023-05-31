@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {makeComplexPeople, makeSimplePeople, SimplePerson} from '../../mocks';
 
 import {ArrayTemplate} from './array-template';

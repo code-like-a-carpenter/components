@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {NullRenderer, NullRendererContext} from './null-renderer';
 
 export default {

@@ -1,5 +1,4 @@
 import {DateTime} from 'luxon';
-import React from 'react';
 
 import {DateRenderer, DateRendererContext} from './date-renderer';
 export default {

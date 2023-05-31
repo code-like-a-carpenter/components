@@ -1,4 +1,4 @@
-import React from 'react';
+import {ReactElement} from 'react';
 
 import {ConfigureFunction, IdType, Maybe} from '../..';
 import {DefaultWrapper, RenderItem, RenderTemplate} from '../common';
@@ -19,7 +19,7 @@ export interface ArrayTemplateProps<
   TemplateWrapper?: TemplateWrapperType<Maybe<T>[]>;
   ItemWrapper?: ItemWrapperType<T>;
   FieldWrapper?: FieldWrapperType<T>;
-  noDataSlot?: React.ReactElement;
+  noDataSlot?: ReactElement;
 }
 
 export const ArrayTemplate = <T extends object>({

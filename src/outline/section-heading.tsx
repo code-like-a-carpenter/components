@@ -1,9 +1,9 @@
-import React, {HTMLProps, useContext} from 'react';
+import React, {HTMLProps, PropsWithChildren, useContext} from 'react';
 
 import {Heading} from './heading';
 import {LevelContext} from './section';
 
-export type SectionHeadingProps = React.PropsWithChildren<
+export type SectionHeadingProps = PropsWithChildren<
   HTMLProps<HTMLHeadingElement>
 >;
 

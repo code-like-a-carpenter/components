@@ -1,4 +1,4 @@
-import React from 'react';
+import {ElementType, ReactElement} from 'react';
 
 import {IdType, Maybe} from '../..';
 import {FieldWrapperProps, TemplateWrapperProps} from '../../templates';
@@ -6,7 +6,7 @@ import {FieldWrapperProps, TemplateWrapperProps} from '../../templates';
 export type ObjectDescriptionWrapperProps<T extends object> =
   TemplateWrapperProps<Maybe<T>>;
 
-export type IObjectDescriptionWrapper<T extends object> = React.ElementType<
+export type IObjectDescriptionWrapper<T extends object> = ElementType<
   ObjectDescriptionWrapperProps<T>
 >;
 
@@ -18,5 +18,5 @@ export type ObjectDescriptionFieldWrapperProps<
 export interface IObjectDescriptionFieldWrapper<T extends object> {
   <T2 extends T, K2 extends IdType<T2>>(
     props: ObjectDescriptionFieldWrapperProps<T2, K2>
-  ): React.ReactElement | null;
+  ): ReactElement | null;
 }

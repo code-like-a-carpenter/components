@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {Description, DescriptionList, IdType} from '../..';
 
 import {

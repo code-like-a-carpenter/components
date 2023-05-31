@@ -1,4 +1,4 @@
-import React from 'react';
+import {ReactElement} from 'react';
 
 import {Maybe} from '../..';
 import {ConfigureFunction, ObjectTemplate} from '../../templates';
@@ -15,7 +15,7 @@ import {
 export interface ObjectDescriptionProps<T extends object> {
   data: Maybe<T>;
   configure?: ConfigureFunction<T>;
-  noDataSlot?: React.ReactElement;
+  noDataSlot?: ReactElement;
   TemplateWrapper?: IObjectDescriptionWrapper<T>;
   FieldWrapper?: IObjectDescriptionFieldWrapper<T>;
 }

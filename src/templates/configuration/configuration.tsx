@@ -1,11 +1,16 @@
 import startCase from 'lodash/startCase';
-import React, {PropsWithChildren, useContext} from 'react';
+import React, {
+  createContext,
+  PropsWithChildren,
+  ReactNode,
+  useContext,
+} from 'react';
 
 import {AnyRenderer, FieldWrapperType} from '../..';
 import {Renderer} from '../../renderers';
 
 export interface FieldConfiguration {
-  label: React.ReactNode;
+  label: ReactNode;
   keyPath: string;
   renderer: Renderer;
   wrapper?: FieldWrapperType<object>;
@@ -24,7 +29,7 @@ export interface FieldConfigurationContextType {
 }
 
 export const FieldConfigurationContext =
-  React.createContext<FieldConfigurationContextType>(
+  createContext<FieldConfigurationContextType>(
     /* @ts-expect-error - no reasonable default */
     null
   );

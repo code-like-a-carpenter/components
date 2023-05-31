@@ -1,25 +1,25 @@
-import React from 'react';
+import {ElementType, PropsWithChildren, ReactElement} from 'react';
 
 import {IdType} from '..';
 
 import {FieldConfiguration} from './configuration';
 
-export type TemplateWrapperProps<T> = React.PropsWithChildren<{data: T}>;
+export type TemplateWrapperProps<T> = PropsWithChildren<{data: T}>;
 export type TemplateWrapperType<T> =
   | keyof JSX.IntrinsicElements
-  | React.ElementType<TemplateWrapperProps<T>>;
+  | ElementType<TemplateWrapperProps<T>>;
 
-export type ItemWrapperProps<T extends object> = React.PropsWithChildren<{
+export type ItemWrapperProps<T extends object> = PropsWithChildren<{
   item: T;
 }>;
 export type ItemWrapperType<T extends object> =
   | keyof JSX.IntrinsicElements
-  | React.ElementType<ItemWrapperProps<T>>;
+  | ElementType<ItemWrapperProps<T>>;
 
 export type FieldWrapperProps<
   T extends object,
   K extends IdType<T>
-> = React.PropsWithChildren<
+> = PropsWithChildren<
   Omit<FieldConfiguration, 'wrapper'> & {
     fieldId: string;
     field: K;
@@ -31,4 +31,4 @@ export type FieldWrapperType<T extends object> =
   | keyof JSX.IntrinsicElements
   | (<T2 extends T, K2 extends IdType<T2>>(
       props: FieldWrapperProps<T2, K2>
-    ) => React.ReactElement | null);
+    ) => ReactElement | null);

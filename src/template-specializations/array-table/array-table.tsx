@@ -1,4 +1,4 @@
-import React from 'react';
+import {ReactElement} from 'react';
 
 import {
   ArrayTemplate,
@@ -36,7 +36,7 @@ export interface ArrayTableProps<
   idField: K;
   data: Maybe<Maybe<T>[]>;
   configure?: ConfigureFunction<T>;
-  noDataSlot?: React.ReactElement;
+  noDataSlot?: ReactElement;
   Table?: ITable<T>;
   TableHeader?: ITableHeader<T>;
   TableHeaderRow?: ITableHeaderRow<T>;
