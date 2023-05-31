@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {Section} from './section';
 import {SectionHeading} from './section-heading';
 

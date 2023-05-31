@@ -1,4 +1,11 @@
-import React, {useEffect, useContext, useState} from 'react';
+import React, {
+  useEffect,
+  useContext,
+  useState,
+  createContext,
+  PropsWithChildren,
+  ComponentType,
+} from 'react';
 import {
   Card as BootstrapCard,
   CardProps as BootstrapCardProps,
@@ -7,13 +14,14 @@ import {
 import {Section, SectionHeading} from '..';
 import {PropsOf} from '../support';
 
-export const CardContext = React.createContext(false);
+export const CardContext = createContext(false);
 
-export type CardProps = React.PropsWithChildren<BootstrapCardProps>;
+export type CardProps = PropsWithChildren<BootstrapCardProps>;
 
-const HasHeaderContext = React.createContext<
-  [boolean, (newValue: boolean) => void]
->([false, () => undefined]);
+const HasHeaderContext = createContext<[boolean, (newValue: boolean) => void]>([
+  false,
+  () => undefined,
+]);
 
 export const Card = (props: CardProps) => {
   const [hasHeader, setHasHeader] = useState(false);
@@ -31,7 +39,7 @@ export const Card = (props: CardProps) => {
 };
 
 // eslint-disable-next-line @typescript-eslint/ban-types
-const withSection = <P extends Object>(Component: React.ComponentType<P>) =>
+const withSection = <P extends Object>(Component: ComponentType<P>) =>
   function WithSection(props: P) {
     const [hasHeader] = useContext(HasHeaderContext);
 

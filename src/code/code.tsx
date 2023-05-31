@@ -1,12 +1,17 @@
 import cx from 'classnames';
 import dedent from 'dedent';
-import React, {useContext} from 'react';
+import React, {
+  createContext,
+  HTMLProps,
+  PropsWithChildren,
+  useContext,
+} from 'react';
 
-const CodeContext = React.createContext(false);
+const CodeContext = createContext(false);
 
-export type InlineCodeProps = React.HTMLProps<HTMLElement>;
+export type InlineCodeProps = HTMLProps<HTMLElement>;
 
-export interface BlockCodeProps extends React.HTMLProps<HTMLPreElement> {
+export interface BlockCodeProps extends HTMLProps<HTMLPreElement> {
   /* set to false to disable dedent */
   readonly dedent?: boolean;
   readonly inline?: false | never;
@@ -50,7 +55,7 @@ type InlineProps = {
 
 type CodeProps = BlockProps | InlineProps;
 
-export const Code = (props: React.PropsWithChildren<CodeProps>) => {
+export const Code = (props: PropsWithChildren<CodeProps>) => {
   const inCodeBlock = useContext(CodeContext);
   if (inCodeBlock) {
     return <>{props.children}</>;

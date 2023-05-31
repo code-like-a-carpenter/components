@@ -1,4 +1,4 @@
-import React from 'react';
+import {ReactElement} from 'react';
 
 import {ConnectionLike, IdType, Maybe, NodeLike, useEdgeNodes} from '../..';
 import {ArrayTemplate} from '../array-template';
@@ -15,7 +15,7 @@ export interface ConnectionTemplateProps<N extends NodeLike, PI> {
   TemplateWrapper?: TemplateWrapperType<Maybe<N>[]>;
   ItemWrapper?: ItemWrapperType<N>;
   FieldWrapper?: FieldWrapperType<N>;
-  noDataSlot?: React.ReactElement;
+  noDataSlot?: ReactElement;
 }
 
 export const ConnectionTemplate = <N extends NodeLike, PI>({

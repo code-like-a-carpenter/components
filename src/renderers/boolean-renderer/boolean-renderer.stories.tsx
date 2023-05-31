@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {BooleanRendererContext, BooleanRenderer} from './boolean-renderer';
 
 export default {

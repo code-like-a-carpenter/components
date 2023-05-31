@@ -1,4 +1,4 @@
-import React from 'react';
+import {createContext} from 'react';
 import {
   Alert as BootstrapAlert,
   AlertProps as BootstrapAlertProps,
@@ -6,7 +6,7 @@ import {
 
 import {Section} from '../outline';
 
-export const AlertContext = React.createContext(false);
+export const AlertContext = createContext(false);
 
 export type AlertProps = BootstrapAlertProps;
 

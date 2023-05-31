@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {ObjectRenderer} from './object-renderer';
 
 export default {

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {Description} from './description';
 
 export default {

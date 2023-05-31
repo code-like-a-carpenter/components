@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {RoutingContext} from '..';
 import {mockRelayPageInfo} from '../mocks';
 

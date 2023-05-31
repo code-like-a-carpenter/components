@@ -1,5 +1,4 @@
 import cx from 'classnames';
-import React from 'react';
 import {
   Table as BootstrapTable,
   TableProps as BootstrapTableProps,

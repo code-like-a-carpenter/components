@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {Code} from '../code';
 
 import {SimpleErrorBoundary} from './simple-error-boundary';

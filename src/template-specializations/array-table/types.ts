@@ -1,3 +1,5 @@
+import {ElementType, PropsWithChildren, ReactElement} from 'react';
+
 import {Maybe, IdType, ItemWrapperProps, FieldWrapperProps} from '../..';
 import {TemplateWrapperProps} from '../../templates';
 
@@ -5,24 +7,24 @@ export interface TableProps<T extends object> {
   data: Maybe<Maybe<T>[]>;
 }
 
-export type ITable<T extends object> = React.ElementType<
-  React.PropsWithChildren<TableProps<T>>
+export type ITable<T extends object> = ElementType<
+  PropsWithChildren<TableProps<T>>
 >;
 
 export interface TableHeaderProps<T extends object> {
   data: Maybe<Maybe<T>[]>;
 }
 
-export type ITableHeader<T extends object> = React.ElementType<
-  React.PropsWithChildren<TableHeaderProps<T>>
+export type ITableHeader<T extends object> = ElementType<
+  PropsWithChildren<TableHeaderProps<T>>
 >;
 
 export interface TableHeaderRowProps<T extends object> {
   data: Maybe<Maybe<T>[]>;
 }
 
-export type ITableHeaderRow<T extends object> = React.ElementType<
-  React.PropsWithChildren<TableHeaderRowProps<T>>
+export type ITableHeaderRow<T extends object> = ElementType<
+  PropsWithChildren<TableHeaderRowProps<T>>
 >;
 
 export interface TableHeaderCellProps<T extends object> {
@@ -30,19 +32,17 @@ export interface TableHeaderCellProps<T extends object> {
   fieldId: string;
 }
 
-export type ITableHeaderCell<T extends object> = React.ElementType<
+export type ITableHeaderCell<T extends object> = ElementType<
   TableHeaderCellProps<T>
 >;
 
 export type TableBodyProps<T extends object> = TemplateWrapperProps<Maybe<T>[]>;
 
-export type ITableBody<T extends object> = React.ElementType<TableBodyProps<T>>;
+export type ITableBody<T extends object> = ElementType<TableBodyProps<T>>;
 
 export type TableBodyRowProps<T extends object> = ItemWrapperProps<T>;
 
-export type ITableBodyRow<T extends object> = React.ElementType<
-  TableBodyRowProps<T>
->;
+export type ITableBodyRow<T extends object> = ElementType<TableBodyRowProps<T>>;
 
 export type TableBodyCellProps<
   T extends object,
@@ -52,5 +52,5 @@ export type TableBodyCellProps<
 export interface ITableBodyCell<T extends object> {
   <T2 extends T, K2 extends IdType<T2>>(
     props: TableBodyCellProps<T2, K2>
-  ): React.ReactElement | null;
+  ): ReactElement | null;
 }

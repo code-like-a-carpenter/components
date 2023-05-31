@@ -1,9 +1,9 @@
-import React, {HTMLProps, useContext} from 'react';
+import React, {HTMLProps, PropsWithChildren, useContext} from 'react';
 
 import {Alert, AlertContext} from '../alert';
 import {Card, CardContext} from '../card';
 
-export type LinkProps = React.PropsWithChildren<
+export type LinkProps = PropsWithChildren<
   Omit<HTMLProps<HTMLAnchorElement>, 'as'>
 >;
 

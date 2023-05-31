@@ -16,6 +16,7 @@ module.exports = function (api) {
           development:
             process.env.BABEL_ENV === 'development' ||
             process.env.NODE_ENV === 'development',
+          runtime: 'automatic',
         },
       ],
       [

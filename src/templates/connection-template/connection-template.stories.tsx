@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {makeComplexPeople, makeSimplePeople} from '../../mocks';
 
 import {ConnectionTemplate} from './connection-template';

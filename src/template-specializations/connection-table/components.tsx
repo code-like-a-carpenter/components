@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {
   TableHeader,
   TableRow as TableHeaderRow,

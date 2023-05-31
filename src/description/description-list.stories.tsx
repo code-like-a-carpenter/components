@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {Description} from './description';
 import {DescriptionList} from './description-list';
 

@@ -1,5 +1,5 @@
 import cx from 'classnames';
-import React from 'react';
+import {HTMLProps, ReactNode} from 'react';
 
 import {Renderer} from '../renderers/types';
 
@@ -9,10 +9,9 @@ import {Description} from './description';
 type MostlyFalsy = false | '' | null | undefined;
 type DescriptionType<T> = T | MostlyFalsy;
 
-export interface ConditionalDescriptionProps<T>
-  extends React.HTMLProps<HTMLElement> {
+export interface ConditionalDescriptionProps<T> extends HTMLProps<HTMLElement> {
   readonly condition?: boolean;
-  readonly term: React.ReactNode;
+  readonly term: ReactNode;
   readonly description?: DescriptionType<T>;
   readonly Render?: Renderer<T>;
 }

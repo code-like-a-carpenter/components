@@ -1,10 +1,10 @@
-import React from 'react';
+import {ComponentType, ReactNode} from 'react';
 
 /**
  * Placeholder. Ideally, this would be Renderer, but the generics are
  * troublesome and I haven't had time to work it out yet.
  */
-export type RendererDefault = React.ReactNode;
+export type RendererDefault = ReactNode;
 
 export type RendererProps<
   T extends unknown = unknown,
@@ -13,6 +13,6 @@ export type RendererProps<
   value: T;
 };
 
-export type Renderer<T = unknown, C = unknown> = React.ComponentType<
+export type Renderer<T = unknown, C = unknown> = ComponentType<
   RendererProps<T, C>
 >;

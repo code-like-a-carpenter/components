@@ -1,5 +1,14 @@
 import cx from 'classnames';
-import React, {Context, useContext} from 'react';
+import React, {
+  Component as ReactComponent,
+  ComponentProps,
+  Context,
+  ElementType,
+  HTMLProps,
+  ReactElement,
+  forwardRef,
+  useContext,
+} from 'react';
 
 /**
  * Like useContext, but allows for prop-defined defaults. Useful for e.g. theme
@@ -27,8 +36,8 @@ export function useContextWithDefaults<T>(
  * @see https://github.com/typescript-cheatsheets/react-typescript-cheatsheet/issues/63
  */
 export type ElementConstructor<P> =
-  | ((props: P) => React.ReactElement<unknown> | null)
-  | (new (props: P) => React.Component<P, unknown, unknown>);
+  | ((props: P) => ReactElement<unknown> | null)
+  | (new (props: P) => ReactComponent<P, unknown, unknown>);
 
 /**
  * gets the internal props of a component
@@ -44,20 +53,20 @@ export type PropsOf<C> = C extends ElementConstructor<infer P>
   ? JSX.IntrinsicElements[C]
   : unknown;
 
-interface WrapWithClassOptions<As extends React.ElementType> {
+interface WrapWithClassOptions<As extends ElementType> {
   displayName?: string;
   className?: string;
-  defaultProps?: Partial<React.ComponentProps<As>>;
+  defaultProps?: Partial<ComponentProps<As>>;
 }
 
 // Can't use a WeakMap because ElementType could be string. Should be fine since
 // each key will persist for the life of the application.
-const defaultClassNames = new Map<React.ElementType, string | undefined>();
+const defaultClassNames = new Map<ElementType, string | undefined>();
 /**
  * Wraps a Component with class names, default props, and/or a custom
  * displayName.
  */
-export function wrapWithClass<As extends React.ElementType>(
+export function wrapWithClass<As extends ElementType>(
   Component: As,
   {
     displayName,
@@ -65,19 +74,18 @@ export function wrapWithClass<As extends React.ElementType>(
     defaultProps,
   }: WrapWithClassOptions<As> = {}
 ) {
-  const Tag: React.ElementType = Component;
+  const Tag: ElementType = Component;
 
-  const WrappedComponent = React.forwardRef<
-    unknown,
-    React.HTMLProps<HTMLElement>
-  >((props, ref) => {
-    const classes = cx(
-      'className' in props ? props.className : null,
-      defaultClassName,
-      defaultClassNames.get(Component)
-    );
-    return <Tag ref={ref} className={classes} {...props} />;
-  });
+  const WrappedComponent = forwardRef<unknown, HTMLProps<HTMLElement>>(
+    (props, ref) => {
+      const classes = cx(
+        'className' in props ? props.className : null,
+        defaultClassName,
+        defaultClassNames.get(Component)
+      );
+      return <Tag ref={ref} className={classes} {...props} />;
+    }
+  );
   WrappedComponent.defaultProps = defaultProps;
   WrappedComponent.displayName = displayName;
   defaultClassNames.set(WrappedComponent, defaultClassName);

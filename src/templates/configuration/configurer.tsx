@@ -1,4 +1,4 @@
-import React from 'react';
+import {ElementType, ReactElement, ReactNode} from 'react';
 
 import {Definitely, FieldWrapperProps, IdType, Maybe} from '../..';
 import {Renderer} from '../../renderers';
@@ -9,20 +9,20 @@ import {useConfigureField} from './hooks';
 export interface ConfigureFunctionProps<T extends object> {
   FieldConfigurer: <T2 extends T, K2 extends IdType<T2>>(
     props: ConfigurerProps<T2, K2>
-  ) => React.ReactElement | null;
+  ) => ReactElement | null;
 }
 
 export interface ConfigureFunction<T extends object> {
-  (props: ConfigureFunctionProps<T>): React.ReactElement | null;
+  (props: ConfigureFunctionProps<T>): ReactElement | null;
 }
 
 export interface ConfigurerProps<T extends object, K extends IdType<T>> {
   field: K;
-  label?: React.ReactNode | Renderer<K>;
+  label?: ReactNode | Renderer<K>;
   renderer?: Renderer<T[K]>;
-  wrapper?: React.ElementType<FieldWrapperProps<T, K>>;
+  wrapper?: ElementType<FieldWrapperProps<T, K>>;
   configure?: T[K] extends Maybe<object>
-    ? React.ElementType<ConfigureFunctionProps<Definitely<T[K]>>>
+    ? ElementType<ConfigureFunctionProps<Definitely<T[K]>>>
     : never;
 }
 

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {BooleanRenderer} from '../boolean-renderer';
 import {DateRenderer} from '../date-renderer';
 

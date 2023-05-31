@@ -4,7 +4,7 @@
     "checkJs": true,
     "declaration": true,
     "esModuleInterop": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "lib": [
       "dom",
       "es2022"

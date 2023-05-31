@@ -1,5 +1,4 @@
 import {render} from '@testing-library/react';
-import React from 'react';
 
 import {ComplexPerson, SimplePerson} from '../../mocks';
 import {InstallationPageQuery, Maybe} from '../../sample-types';

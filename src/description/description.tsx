@@ -1,5 +1,11 @@
 import cx from 'classnames';
-import React, {useContext, useMemo} from 'react';
+import React, {
+  Children,
+  HTMLProps,
+  ReactNode,
+  useContext,
+  useMemo,
+} from 'react';
 
 import {AnyRenderer} from '../renderers';
 import {Renderer as RendererType} from '../renderers/types';
@@ -7,13 +13,13 @@ import {Renderer as RendererType} from '../renderers/types';
 import {DescriptionListContext, DescriptionList} from './description-list';
 
 export interface CommonProps<T extends unknown>
-  extends Omit<React.HTMLProps<HTMLElement>, 'children' | 'title'> {
+  extends Omit<HTMLProps<HTMLElement>, 'children' | 'title'> {
   /**
    * Longer-form version of the "term" prop which explains more about what this
    * item describes.
    */
   readonly descriptionLabel?: string;
-  readonly term: React.ReactNode;
+  readonly term: ReactNode;
   readonly Renderer?: RendererType<T>;
 }
 
@@ -51,7 +57,7 @@ export const Description = <T extends unknown>({
     // `children` is a homgeneous array of ReactNodes or if it contains e.g.
     // a Date object.
     try {
-      React.Children.count(props.children);
+      Children.count(props.children);
       return props.children;
     } catch {
       return <Renderer value={props.children} />;
@@ -66,7 +72,7 @@ export const Description = <T extends unknown>({
       return 1;
     }
     try {
-      return React.Children.count(props.children);
+      return Children.count(props.children);
     } catch {
       return 1;
     }
@@ -97,15 +103,15 @@ export const Description = <T extends unknown>({
   });
 
   return (
-    <React.Fragment>
+    <>
       <dt className={dtClasses} title={descriptionLabel} {...props}>
         {term}
       </dt>
-      {React.Children.map(children, (child) => (
+      {Children.map(children, (child) => (
         <dd className={ddClasses} {...props}>
           <>{child}</>
         </dd>
       ))}
-    </React.Fragment>
+    </>
   );
 };

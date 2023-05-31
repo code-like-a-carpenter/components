@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {Maybe} from '..';
 
 import {OffsetPager} from './offset-pager';

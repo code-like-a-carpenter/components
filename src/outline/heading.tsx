@@ -1,11 +1,11 @@
 import cx from 'classnames';
-import React, {useContext} from 'react';
+import React, {createContext, useContext} from 'react';
 
 import {AlertContext} from '../alert';
 
 import {SectionHeadingProps} from './section-heading';
 
-export const HeadingContext = React.createContext(false);
+export const HeadingContext = createContext(false);
 
 export type HeadingProps = {
   readonly outlineLevel: number;

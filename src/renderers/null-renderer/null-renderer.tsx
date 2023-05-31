@@ -1,4 +1,4 @@
-import React from 'react';
+import {createContext} from 'react';
 
 import {useContextWithDefaults} from '../../support';
 import {RendererDefault, RendererProps} from '../types';
@@ -7,11 +7,9 @@ export interface NullRendererContextType {
   readonly null: RendererDefault;
 }
 
-export const NullRendererContext = React.createContext<NullRendererContextType>(
-  {
-    null: <span> - </span>,
-  }
-);
+export const NullRendererContext = createContext<NullRendererContextType>({
+  null: <span> - </span>,
+});
 
 export type NullRendererProps = RendererProps<null, NullRendererContextType>;
 

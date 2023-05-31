@@ -1,7 +1,7 @@
-import React from 'react';
+import {HTMLProps} from 'react';
 
 export interface StringifyProps<T extends unknown>
-  extends Omit<React.HTMLProps<HTMLPreElement>, 'children'> {
+  extends Omit<HTMLProps<HTMLPreElement>, 'children'> {
   children: T;
 }
 
