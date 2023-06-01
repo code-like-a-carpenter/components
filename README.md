@@ -46,13 +46,25 @@ import {Card} from '@code-like-a-carpenter/components';
 
 ### Styles
 
-Import the styles into your project. This _should_ just work for most tools; the
-styles are exported using both the `sass` and `style` keys, which apparently
-most tools support. (Styles are pure css and only exported via the `sass` key in
-order to potentially broaden tool support).
+Import the styles into your project. `package.json` contains keys for both
+`sass` and `css`.
+
+For higher-level tools, you should be able to import this module directly:
 
 ```sass
 @import '@code-like-a-carpenter/components'
+```
+
+If you're using the `sass` CLI, there are a few quirks that might make importing
+a bit more difficult. First, the CLI doesn't deal with node modules, so you'll
+need to specify both `--load-path node_modules` as well as the full path to the
+file to import. You'll also need to import the sass source rather than the built
+css because `@import` does not inline files ending in `.css` (it assume those
+should be imported as a css import at runtime rather than a sass import at
+compile time).
+
+```sass
+@import '@code-like-a-carpenter/components/src/style.scss'
 ```
 
 Note that you'll separately need to import bootstrap styles using whatever
