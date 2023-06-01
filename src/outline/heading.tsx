@@ -39,16 +39,25 @@ export const Heading = ({
   const H = `h${outlineLevel}` as 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
   className = cx(
     className,
+    'heading',
     `h${isAlert ? 4 : styleLevel}`,
     isAlert && 'alert-heading'
   );
 
   return (
     <H className={className} id={id} {...rest}>
-      <a href={`#${id}`}>
-        <HeadingContext.Provider value={true}>
-          {children}
-        </HeadingContext.Provider>
+      {/* This styling has a high risk of being very redundant. It's probably ok
+          for now since most pages won't have many headings, but this will need
+          to evolve
+      */}
+      <HeadingContext.Provider value={true}>{children}</HeadingContext.Provider>
+      <a
+        className="heading__anchor"
+        href={`#${id}`}
+        aria-label={`Direct link to this section`}
+        title={'Direct link'}
+      >
+        <span className="visually-hidden">Direct link to this section</span>
       </a>
     </H>
   );
