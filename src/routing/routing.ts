@@ -1,6 +1,6 @@
 import querystring, {ParsedUrlQuery} from 'querystring';
 
-import React, {createContext, useContext} from 'react';
+import {createContext, useContext} from 'react';
 
 export interface RoutingContextType {
   path: string;

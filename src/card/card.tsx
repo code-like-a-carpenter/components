@@ -1,5 +1,4 @@
 import React, {
-  useEffect,
   useContext,
   useState,
   createContext,
@@ -30,7 +29,7 @@ export const Card = (props: CardProps) => {
     <HasHeaderContext.Provider value={[hasHeader, setHasHeader]}>
       <CardContext.Provider value={true}>
         <Section>
-          {/* @ts-expect-error - there's something a little weird going on the the bootstrap types */}
+          {/* @ts-expect-error - there's something a little weird going on the bootstrap types */}
           <BootstrapCard {...props} />
         </Section>
       </CardContext.Provider>
@@ -59,11 +58,10 @@ const CardHeader = ({
   props,
 }: PropsOf<(typeof BootstrapCard)['Header']>) => {
   const [hasHeader, setHasHeader] = useContext(HasHeaderContext);
-  useEffect(() => {
-    if (!hasHeader) {
-      setHasHeader(true);
-    }
-  });
+
+  if (!hasHeader) {
+    setHasHeader(true);
+  }
 
   return (
     <BootstrapCard.Header {...props}>

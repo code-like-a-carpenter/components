@@ -18,19 +18,19 @@ export default {
  * which will vary between CI and developer machines.
  */
 
-export const simpleErrorBoundary = () => (
+export const Default = () => (
   <SimpleErrorBoundary printStack={typeof jest === 'undefined'}>
     <ThrowOnRender />
   </SimpleErrorBoundary>
 );
 
-export const jsonParseError = () => (
+export const JsonParseError = () => (
   <SimpleErrorBoundary printStack={typeof jest === 'undefined'}>
     <BadJsonParse />
   </SimpleErrorBoundary>
 );
 
-export const warningNotDanger = () => (
+export const WarningNotDanger = () => (
   <SimpleErrorBoundary
     printStack={typeof jest === 'undefined'}
     variant="warning"
@@ -39,7 +39,7 @@ export const warningNotDanger = () => (
   </SimpleErrorBoundary>
 );
 
-export const noStack = () => (
+export const NoStack = () => (
   <SimpleErrorBoundary printStack={false} variant={'info'}>
     <BadJsonParse />
   </SimpleErrorBoundary>

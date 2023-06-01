@@ -44,8 +44,42 @@ Import the components into your project.
 import {Card} from '@code-like-a-carpenter/components';
 ```
 
+### Styles
+
+Import the styles into your project. This _should_ just work for most tools; the
+styles are exported using both the `sass` and `style` keys, which apparently
+most tools support. (Styles are pure css and only exported via the `sass` key in
+order to potentially broaden tool support).
+
+```sass
+@import '@code-like-a-carpenter/components'
+```
+
 Note that you'll separately need to import bootstrap styles using whatever
-technique makes the most sense for your build process.
+technique makes the most sense for your build process. There are many ways to
+customize Bootstrap, too numerous to discuss here.
+
+#### Customizing Styles
+
+This library only recently started export styles and so they'll likely evolve.
+Styles are still considered unstable so breaking changes _will not_ constitute a
+major version bump.
+
+Originally, the plan had been to avoid exporting styles at all and leave styling
+to the consumer. Unfortunately, even simple components often needs some set of
+styles to reach their baseline functionality.
+
+As styles evolve, expect the following:
+
+-   You'll use CSS variables to control built-in behaviors of components that
+    might work one of several ways (i.e., if you find you need to add or remove
+    class names from a component dynamically, that's probably a bug)
+-   For behaviors that can't yet be controlled by CSS variables (because
+    container style queries aren't a thing yet), the component will accept props
+    that add/remove class names for you.
+-   You'll override classes in your stylesheets to customize aesthetics.
+-   Components will leverage Bootstrap variables whenever possible and so should
+    update with the rest of your theme.
 
 ## Maintainer
 

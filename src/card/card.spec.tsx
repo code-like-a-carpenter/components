@@ -22,7 +22,7 @@ describe('Card', () => {
       </Section>
     );
     expect(screen.getByText('foo')).toBeInTheDocument();
-    expect(screen.getByText('foo')).toBe(container.querySelector('h2 a'));
+    expect(screen.getByText('foo')).toBe(container.querySelector('h2'));
   });
 
   it('wraps body in a second section when a header is provided', () => {
@@ -35,10 +35,10 @@ describe('Card', () => {
       </Card>
     );
     expect(screen.getByText('foo')).toBeInTheDocument();
-    expect(screen.getByText('foo')).toBe(container.querySelector('h1 a'));
+    expect(screen.getByText('foo')).toBe(container.querySelector('h1'));
 
     expect(screen.getByText('bar')).toBeInTheDocument();
-    expect(screen.getByText('bar')).toBe(container.querySelector('h2 a'));
+    expect(screen.getByText('bar')).toBe(container.querySelector('h2'));
   });
 });
 
@@ -53,6 +53,6 @@ describe('Card.Header', () => {
       </Card>
     );
     expect(screen.getByText('foo')).toBeInTheDocument();
-    expect(screen.getByText('foo')).toBe(container.querySelector('h1 a'));
+    expect(screen.getByText('foo')).toBe(container.querySelector('h1'));
   });
 });

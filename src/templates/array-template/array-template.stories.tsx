@@ -8,7 +8,7 @@ export default {
   title: 'Templates/ArrayTemplate',
 };
 
-export const arrayTemplate = () => (
+export const Default = () => (
   <ArrayTemplate
     idField="id"
     data={makeSimplePeople(5)}
@@ -26,7 +26,7 @@ export const arrayTemplate = () => (
   />
 );
 
-export const outOfOrder = () => (
+export const OutOfOrder = () => (
   <ArrayTemplate
     idField="id"
     data={makeSimplePeople(5)}
@@ -44,7 +44,7 @@ export const outOfOrder = () => (
   />
 );
 
-export const duplicateFields = () => (
+export const DuplicateFields = () => (
   <ArrayTemplate
     idField="id"
     data={makeSimplePeople(5)}
@@ -69,7 +69,7 @@ export const duplicateFields = () => (
   />
 );
 
-export const nestedData = () => (
+export const NestedData = () => (
   <ArrayTemplate
     idField="id"
     data={makeComplexPeople(5)}
@@ -94,7 +94,7 @@ export const nestedData = () => (
   />
 );
 
-export const defaultNoOp = () => (
+export const DefaultNoOp = () => (
   <ArrayTemplate
     idField="id"
     data={makeSimplePeople(5)}
@@ -108,7 +108,7 @@ export const defaultNoOp = () => (
     )}
   />
 );
-defaultNoOp.parameters = {
+DefaultNoOp.parameters = {
   docs: {
     description: {
       story:
@@ -117,7 +117,7 @@ defaultNoOp.parameters = {
   },
 };
 
-export const rawHtmlWrappers = () => (
+export const RawHtmlWrappers = () => (
   <ArrayTemplate
     idField="id"
     data={makeSimplePeople(5)}
@@ -139,7 +139,7 @@ export const rawHtmlWrappers = () => (
   />
 );
 
-export const nullData = () => (
+export const NullData = () => (
   <ArrayTemplate<SimplePerson>
     idField="id"
     data={null}
@@ -155,7 +155,7 @@ export const nullData = () => (
   />
 );
 
-export const emptyData = () => (
+export const EmptyData = () => (
   <ArrayTemplate<SimplePerson>
     idField="id"
     data={[]}
@@ -171,7 +171,7 @@ export const emptyData = () => (
   />
 );
 
-export const customFieldWrapper = () => (
+export const CustomFieldWrapper = () => (
   <ArrayTemplate
     idField="id"
     data={makeSimplePeople(5)}

@@ -51,7 +51,6 @@ export const ConnectionTableBodyRow = <N extends NodeLike>({
 
 export const ConnectionTableBodyCell = <
   N extends NodeLike,
-  PI,
   K extends IdType<N>
 >({
   // connection,

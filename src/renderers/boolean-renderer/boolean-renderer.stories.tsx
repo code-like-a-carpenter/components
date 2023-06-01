@@ -5,13 +5,13 @@ export default {
   title: 'Renderers/BooleanRenderer',
 };
 
-export const booleanRenderer = () => <BooleanRenderer value={true} />;
-export const truthy = () => <BooleanRenderer value={true} />;
-export const falsy = () => <BooleanRenderer value={false} />;
-export const withOverrides = () => (
+export const Default = () => <BooleanRenderer value={true} />;
+export const Truthy = () => <BooleanRenderer value={true} />;
+export const Falsy = () => <BooleanRenderer value={false} />;
+export const WithOverrides = () => (
   <BooleanRenderer value={false} yes="Yep" no="Nope" />
 );
-export const withContextOverrides = () => (
+export const WithContextOverrides = () => (
   <BooleanRendererContext.Provider value={{no: 'i think not', yes: 'indeed'}}>
     <BooleanRenderer value={false} />
   </BooleanRendererContext.Provider>

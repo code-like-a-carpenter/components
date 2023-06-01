@@ -7,7 +7,7 @@ export default {
   title: 'Template Specialization/ArrayTable',
 };
 
-export const arrayTable = () => (
+export const Default = () => (
   <ArrayTable
     idField="id"
     data={makeSimplePeople()}
@@ -22,7 +22,7 @@ export const arrayTable = () => (
   />
 );
 
-export const outOfOrder = () => (
+export const OutOfOrder = () => (
   <ArrayTable
     idField="id"
     data={makeSimplePeople()}
@@ -37,7 +37,7 @@ export const outOfOrder = () => (
   />
 );
 
-export const duplicateFields = () => (
+export const DuplicateFields = () => (
   <ArrayTable
     idField="id"
     data={makeSimplePeople()}
@@ -59,7 +59,7 @@ export const duplicateFields = () => (
   />
 );
 
-export const nestedData = () => (
+export const NestedData = () => (
   <ArrayTable
     idField="id"
     data={makeComplexPeople()}

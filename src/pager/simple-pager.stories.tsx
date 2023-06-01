@@ -20,13 +20,13 @@ export default {
   title: 'Components/Pager/Simple',
 };
 
-export const simplePager = () => <SimplePager pageInfo={{page: 1, pages: 5}} />;
+export const Default = () => <SimplePager pageInfo={{page: 1, pages: 5}} />;
 
-export const simplePagerOnMiddlePage = () => (
+export const SimplePagerOnMiddlePage = () => (
   <SimplePager pageInfo={{page: 5, pages: 5}} />
 );
 
-export const simplePagerWithTooManyPages = () => (
+export const SimplePagerWithTooManyPages = () => (
   <>
     <SimplePager pageInfo={{page: 1, pages: 15}} />
     <SimplePager pageInfo={{page: 2, pages: 15}} />

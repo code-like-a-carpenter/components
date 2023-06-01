@@ -7,13 +7,13 @@ export default {
   title: 'Description/ConditionalDescription',
 };
 
-export const conditionalDescription = () => (
+export const Default = () => (
   <ConditionalDescription term="A label" description="a value" />
 );
 
-export const withoutValue = () => <ConditionalDescription term="A label" />;
+export const WithoutValue = () => <ConditionalDescription term="A label" />;
 
-export const withTrueCondition = () => (
+export const WithTrueCondition = () => (
   <ConditionalDescription
     term="A label"
     condition={true}
@@ -21,7 +21,7 @@ export const withTrueCondition = () => (
   />
 );
 
-export const withFalseCondition = () => (
+export const WithFalseCondition = () => (
   <ConditionalDescription
     term="A label"
     condition={false}
@@ -29,7 +29,7 @@ export const withFalseCondition = () => (
   />
 );
 
-export const withFalsyCondition = () => (
+export const WithFalsyCondition = () => (
   <ConditionalDescription
     term="A label"
     condition={!!null}
@@ -37,17 +37,17 @@ export const withFalsyCondition = () => (
   />
 );
 
-export const withFalsyValue = () => (
+export const WithFalsyValue = () => (
   <ConditionalDescription term="A label" description={null} />
 );
 
 const x: Partial<{a: {b: {c: 'foo'}}}> = {};
 
-export const withFalsyNestedValue = () => (
+export const WithFalsyNestedValue = () => (
   <ConditionalDescription term="A label" description={x.a?.b.c} />
 );
 
-export const withFalsyNestedValueAndCondition = () => (
+export const WithFalsyNestedValueAndCondition = () => (
   <ConditionalDescription
     term="A label"
     condition={!!x.a?.b.c}
@@ -55,7 +55,7 @@ export const withFalsyNestedValueAndCondition = () => (
   />
 );
 
-export const withADate = () => (
+export const WithADate = () => (
   <ConditionalDescription
     term="A Date"
     description={new Date('2020-01-01')}
@@ -63,7 +63,7 @@ export const withADate = () => (
   />
 );
 
-export const withNotADate = () => (
+export const WithNotADate = () => (
   <ConditionalDescription
     term="A Date"
     description={null}
@@ -71,7 +71,7 @@ export const withNotADate = () => (
   />
 );
 
-export const withNotATime = () => (
+export const WithNotATime = () => (
   <ConditionalDescription
     term="A Date"
     description={null as unknown as Date | null}

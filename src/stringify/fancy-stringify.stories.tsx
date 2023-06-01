@@ -1,9 +1,9 @@
 import {makeComplexPeople, makeSimplePerson} from '../mocks';
 
-import {FancyStringify} from './fancy-stringify';
+import {FancyStringify as FancyStringifyComponent} from './fancy-stringify';
 
 export default {
-  component: FancyStringify,
+  component: FancyStringifyComponent,
   title: 'Components/FancyStringify',
 };
 
@@ -14,4 +14,6 @@ const data = {
   },
 };
 
-export const fancyStringify = () => <FancyStringify>{data}</FancyStringify>;
+export const FancyStringify = () => (
+  <FancyStringifyComponent>{data}</FancyStringifyComponent>
+);

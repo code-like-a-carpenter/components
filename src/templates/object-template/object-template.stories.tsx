@@ -8,7 +8,7 @@ export default {
   title: 'Templates/ObjectTemplate',
 };
 
-export const objectTemplate = () => (
+export const Default = () => (
   <ObjectTemplate
     data={makeSimplePerson()}
     configure={({FieldConfigurer}) => (
@@ -24,7 +24,7 @@ export const objectTemplate = () => (
   />
 );
 
-export const outOfOrder = () => (
+export const OutOfOrder = () => (
   <ObjectTemplate
     data={makeSimplePerson()}
     configure={({FieldConfigurer}) => (
@@ -40,7 +40,7 @@ export const outOfOrder = () => (
   />
 );
 
-export const duplicateFields = () => (
+export const DuplicateFields = () => (
   <ObjectTemplate
     data={makeSimplePerson()}
     configure={({FieldConfigurer}) => (
@@ -60,7 +60,7 @@ export const duplicateFields = () => (
     TemplateWrapper={TemplateWrapper}
   />
 );
-duplicateFields.parameters = {
+DuplicateFields.parameters = {
   docs: {
     description: {
       story:
@@ -69,7 +69,7 @@ duplicateFields.parameters = {
   },
 };
 
-export const nestedData = () => (
+export const NestedData = () => (
   <ObjectTemplate
     data={makeComplexPerson()}
     configure={({FieldConfigurer}) => (
@@ -92,7 +92,7 @@ export const nestedData = () => (
   />
 );
 
-export const defaultNoOp = () => (
+export const DefaultNoOp = () => (
   <ObjectTemplate
     data={makeSimplePerson()}
     configure={({FieldConfigurer}) => (
@@ -105,7 +105,7 @@ export const defaultNoOp = () => (
     )}
   />
 );
-defaultNoOp.parameters = {
+DefaultNoOp.parameters = {
   docs: {
     description: {
       story:
@@ -114,7 +114,7 @@ defaultNoOp.parameters = {
   },
 };
 
-export const rawHtmlWrappers = () => (
+export const RawHtmlWrappers = () => (
   <ObjectTemplate
     data={makeSimplePerson()}
     configure={({FieldConfigurer}) => (
@@ -134,7 +134,7 @@ export const rawHtmlWrappers = () => (
     FieldWrapper="li"
   />
 );
-rawHtmlWrappers.parameters = {
+RawHtmlWrappers.parameters = {
   docs: {
     description: {
       story:
@@ -143,7 +143,7 @@ rawHtmlWrappers.parameters = {
   },
 };
 
-export const nullData = () => (
+export const NullData = () => (
   <ObjectTemplate<SimplePerson>
     data={null}
     configure={({FieldConfigurer}) => (
@@ -158,7 +158,7 @@ export const nullData = () => (
   />
 );
 
-export const customFieldWrapper = () => (
+export const CustomFieldWrapper = () => (
   <ObjectTemplate<SimplePerson>
     data={makeSimplePerson()}
     configure={({FieldConfigurer}) => (

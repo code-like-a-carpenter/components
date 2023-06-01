@@ -5,7 +5,7 @@ export default {
   title: 'Components/Code',
 };
 
-export const code = () => (
+export const Default = () => (
   <Code>
     {`{
         "proof": true
@@ -13,7 +13,7 @@ export const code = () => (
   </Code>
 );
 
-export const inline = () => (
+export const Inline = () => (
   <p>
     There is <Code inline>inline code</Code> in this paragraph
   </p>
@@ -24,7 +24,7 @@ export const inline = () => (
  * a code block. `<Code/>` takes care of that by ensuring not more than one
  * `<pre><code></code></pre>` happens.
  */
-export const nested = () => (
+export const Nested = () => (
   <Code>
     <Code>foo</Code>
   </Code>
@@ -35,7 +35,7 @@ export const nested = () => (
  * a code block. `<Code/>` takes care of that by ensuring not more than one
  * `<pre><code></code></pre>` happens.
  */
-export const indented = () => (
+export const Indented = () => (
   <Code>{`
   {
     "proof": true
