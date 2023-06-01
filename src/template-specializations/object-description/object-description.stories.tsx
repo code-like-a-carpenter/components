@@ -7,7 +7,7 @@ export default {
   title: 'Template Specialization/ObjectDescription',
 };
 
-export const objectDescription = () => (
+export const Default = () => (
   <ObjectDescription
     data={makeSimplePerson()}
     configure={({FieldConfigurer}) => (
@@ -21,7 +21,7 @@ export const objectDescription = () => (
   />
 );
 
-export const outOfOrder = () => (
+export const OutOfOrder = () => (
   <ObjectDescription
     data={makeSimplePerson()}
     configure={({FieldConfigurer}) => (
@@ -35,7 +35,7 @@ export const outOfOrder = () => (
   />
 );
 
-export const duplicateFields = () => (
+export const DuplicateFields = () => (
   <ObjectDescription
     data={makeSimplePerson()}
     configure={({FieldConfigurer}) => (
@@ -56,7 +56,7 @@ export const duplicateFields = () => (
   />
 );
 
-export const nestedData = () => (
+export const NestedData = () => (
   <ObjectDescription
     data={makeComplexPerson()}
     configure={({FieldConfigurer}) => (

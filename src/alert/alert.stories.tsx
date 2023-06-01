@@ -7,56 +7,56 @@ export default {
   title: 'Components/Alert',
 };
 
-export const alert = () => <Alert>A simple alert</Alert>;
+export const Default = () => <Alert>A simple alert</Alert>;
 
-export const primary = () => (
+export const Primary = () => (
   <Alert variant="primary">
     A <Code inline>primary</Code> alert with <Link href="#">a link</Link>.
   </Alert>
 );
-export const secondary = () => (
+export const Secondary = () => (
   <Alert variant="secondary">
     A <Code inline>secondary</Code> alert with <Link href="#">a link</Link>.
   </Alert>
 );
 
-export const success = () => (
+export const Success = () => (
   <Alert variant="success">
     A <Code inline>success</Code> alert with <Link href="#">a link</Link>.
   </Alert>
 );
 
-export const danger = () => (
+export const Danger = () => (
   <Alert variant="danger">
     A <Code inline>danger</Code> alert with <Link href="#">a link</Link>.
   </Alert>
 );
 
-export const warning = () => (
+export const Warning = () => (
   <Alert variant="warning">
     A <Code inline>warning</Code> alert with <Link href="#">a link</Link>.
   </Alert>
 );
 
-export const info = () => (
+export const Info = () => (
   <Alert variant="info">
     A <Code inline>info</Code> alert with <Link href="#">a link</Link>.
   </Alert>
 );
 
-export const dark = () => (
+export const Dark = () => (
   <Alert variant="dark">
     A <Code inline>dark</Code> alert with <Link href="#">a link</Link>.
   </Alert>
 );
 
-export const light = () => (
+export const Light = () => (
   <Alert variant="light">
     A <Code inline>light</Code> alert with <Link href="#">a link</Link>.
   </Alert>
 );
 
-export const withAdditionalContent = () => (
+export const WithAdditionalContent = () => (
   <Alert variant="success">
     <SectionHeading>Hey, nice to see you</SectionHeading>
     <p>

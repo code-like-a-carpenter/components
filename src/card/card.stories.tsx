@@ -9,7 +9,7 @@ export default {
   title: 'Components/Card',
 };
 
-export const card = () => (
+export const Default = () => (
   <Card>
     <Card.Body>
       <Card.Title>Card title</Card.Title>
@@ -24,7 +24,7 @@ export const card = () => (
   </Card>
 );
 
-export const body = () => (
+export const Body = () => (
   <Card body>
     <Card.Title>Card title</Card.Title>
     <Card.Text>This is some text within a card body.</Card.Text>
@@ -36,7 +36,7 @@ export const body = () => (
   </Card>
 );
 
-export const tilesTextAndLinks = () => (
+export const TilesTextAndLinks = () => (
   <Card>
     <Card.Body>
       <Card.Title>Card title</Card.Title>
@@ -51,7 +51,7 @@ export const tilesTextAndLinks = () => (
   </Card>
 );
 
-export const listGroups = () => (
+export const ListGroups = () => (
   <Card>
     <ListGroup variant="flush">
       <ListGroup.Item>Cras justo odio</ListGroup.Item>
@@ -62,7 +62,7 @@ export const listGroups = () => (
   </Card>
 );
 
-export const listGroupsWithHeading = () => (
+export const ListGroupsWithHeading = () => (
   <Card>
     <Card.Header>Featured</Card.Header>
     <ListGroup variant="flush">
@@ -74,7 +74,7 @@ export const listGroupsWithHeading = () => (
   </Card>
 );
 
-export const header = () => (
+export const Header = () => (
   <Card>
     <Card.Header>Featured</Card.Header>
     <Card.Body>
@@ -87,7 +87,7 @@ export const header = () => (
   </Card>
 );
 
-export const kitchenSink = () => (
+export const KitchenSink = () => (
   <Card>
     <Card.Header>Card Header</Card.Header>
     <Card.Body>

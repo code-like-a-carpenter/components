@@ -7,19 +7,19 @@ export default {
   title: 'Components/Link',
 };
 
-export const link = () => (
+export const Default = () => (
   <>
     A <Link href="#">Link</Link>
   </>
 );
 
-export const inAnAlert = () => (
+export const InAnAlert = () => (
   <Alert variant="primary">
     A <Link href="#">Link</Link> in an Alert
   </Alert>
 );
 
-export const inACard = () => (
+export const InACard = () => (
   <Card>
     <Card.Body>
       A <Link href="#">Link</Link> in an Alert

@@ -6,13 +6,13 @@ export default {
   title: 'Description/DescriptionList',
 };
 
-export const descriptionList = () => (
+export const Default = () => (
   <DescriptionList>
     <Description term="Term" description="Its Description" />
   </DescriptionList>
 );
 
-export const list = () => (
+export const List = () => (
   <DescriptionList>
     <Description term="Term 1" description="Its Description" />
     <Description term="Term 2" description="Its Description" />
@@ -21,7 +21,7 @@ export const list = () => (
   </DescriptionList>
 );
 
-export const listWithMultipleDescriptions = () => (
+export const ListWithMultipleDescriptions = () => (
   <DescriptionList>
     <Description term="Term 1">Its First Description</Description>
     <Description term="Term 2">Its First Description</Description>

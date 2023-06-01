@@ -21,12 +21,12 @@ export default {
   title: 'Components/Pager/Relay',
 };
 
-export const relayPager = () => <RelayPager pageInfo={mockRelayPageInfo()} />;
+export const Default = () => <RelayPager pageInfo={mockRelayPageInfo()} />;
 
-export const relayPagerNoPrevious = () => (
+export const RelayPagerNoPrevious = () => (
   <RelayPager pageInfo={mockRelayPageInfo({hasPreviousPage: false})} />
 );
 
-export const relayPagerNoNext = () => (
+export const RelayPagerNoNext = () => (
   <RelayPager pageInfo={mockRelayPageInfo({hasNextPage: false})} />
 );

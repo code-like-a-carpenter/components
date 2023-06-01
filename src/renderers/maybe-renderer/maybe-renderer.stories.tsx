@@ -8,19 +8,19 @@ export default {
   title: 'Renderers/MaybeRenderer',
 };
 
-export const maybeRenderer = () => (
+export const Default = () => (
   <MaybeRenderer value={null} Component={BooleanRenderer} />
 );
 
-export const truthy = () => (
+export const Truthy = () => (
   <MaybeRenderer value={true} Component={BooleanRenderer} />
 );
 
-export const falsy = () => (
+export const Falsy = () => (
   <MaybeRenderer value={false} Component={BooleanRenderer} />
 );
 
-export const passThroughProps = () => (
+export const PassThroughProps = () => (
   <MaybeRenderer
     Component={DateRenderer}
     value={null}

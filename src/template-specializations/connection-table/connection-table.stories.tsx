@@ -8,7 +8,7 @@ export default {
   title: 'Template Specialization/ConnectionTable',
 };
 
-export const connectionTable = () => (
+export const Default = () => (
   <ConnectionTable
     connection={toConnection(makeSimplePeople())}
     configure={({FieldConfigurer}) => (
@@ -22,7 +22,7 @@ export const connectionTable = () => (
   />
 );
 
-export const outOfOrder = () => (
+export const OutOfOrder = () => (
   <ConnectionTable
     connection={toConnection(makeSimplePeople())}
     configure={({FieldConfigurer}) => (
@@ -36,7 +36,7 @@ export const outOfOrder = () => (
   />
 );
 
-export const duplicateFields = () => (
+export const DuplicateFields = () => (
   <ConnectionTable
     connection={toConnection(makeSimplePeople())}
     configure={({FieldConfigurer}) => (
@@ -57,7 +57,7 @@ export const duplicateFields = () => (
   />
 );
 
-export const nestedData = () => (
+export const NestedData = () => (
   <ConnectionTable
     connection={toConnection(makeComplexPeople())}
     configure={({FieldConfigurer}) => (

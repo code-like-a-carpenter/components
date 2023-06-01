@@ -6,22 +6,22 @@ export default {
   title: 'Outline/Section',
 };
 
-export const section = () => <Section />;
+export const Default = () => <Section />;
 
-export const withAHeading = () => (
+export const WithAHeading = () => (
   <Section>
     <SectionHeading>Level 1</SectionHeading>
   </Section>
 );
 
-export const withTwoSiblingHeadings = () => (
+export const WithTwoSiblingHeadings = () => (
   <Section>
     <SectionHeading>Level 1</SectionHeading>
     <SectionHeading>Level 1</SectionHeading>
   </Section>
 );
 
-export const withThreeLevelsOfNesting = () => (
+export const WithThreeLevelsOfNesting = () => (
   <Section>
     <SectionHeading>Level 1</SectionHeading>
     <Section>
@@ -33,7 +33,7 @@ export const withThreeLevelsOfNesting = () => (
   </Section>
 );
 
-export const withStyleRoots = () => (
+export const WithStyleRoots = () => (
   <Section>
     <SectionHeading>Level 1</SectionHeading>
     <Section>

@@ -5,11 +5,11 @@ export default {
   title: 'Description/Description',
 };
 
-export const description = () => (
+export const Default = () => (
   <Description term="Term" description="Its Description" />
 );
 
-export const multipleDescriptions = () => (
+export const MultipleDescriptions = () => (
   <Description
     term="Term"
     description={[
@@ -19,17 +19,17 @@ export const multipleDescriptions = () => (
   />
 );
 
-export const children = () => (
+export const Children = () => (
   <Description term="Term">
     <div>Its description</div>
     <div>Its second description</div>
   </Description>
 );
 
-export const withDate = () => (
+export const WithDate = () => (
   <Description term="Created At" description={new Date('2021-01-01')} />
 );
 
-export const withDateAsChild = () => (
+export const WithDateAsChild = () => (
   <Description term="Created At">{new Date('2021-01-01')}</Description>
 );

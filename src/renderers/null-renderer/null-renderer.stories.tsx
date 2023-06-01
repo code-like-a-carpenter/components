@@ -5,9 +5,9 @@ export default {
   title: 'Renderers/NullRenderer',
 };
 
-export const nullRenderer = () => <NullRenderer value={null} />;
-export const withOverride = () => <NullRenderer value={null} null="nada" />;
-export const withOverrideFromContext = () => (
+export const Default = () => <NullRenderer value={null} />;
+export const WithOverride = () => <NullRenderer value={null} null="nada" />;
+export const WithOverrideFromContext = () => (
   <NullRendererContext.Provider value={{null: <>bupkis</>}}>
     <NullRenderer value={null} />
   </NullRendererContext.Provider>

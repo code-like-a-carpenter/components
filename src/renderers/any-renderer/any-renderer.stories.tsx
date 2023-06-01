@@ -7,17 +7,17 @@ export default {
   title: 'Renderers/AnyRenderer',
 };
 
-export const anyRenderer = () => <AnyRenderer value={null} />;
-export const string = () => <AnyRenderer value={'foo'} />;
-export const booleanTrue = () => <AnyRenderer value={true} />;
-export const booleanFalse = () => <AnyRenderer value={false} />;
-export const date = () => <AnyRenderer value={new Date('2020-01-01')} />;
-export const dateString = () => <AnyRenderer value="2020-01-01" />;
-export const number = () => <AnyRenderer value={5} />;
-export const array = () => (
+export const Default = () => <AnyRenderer value={null} />;
+export const String = () => <AnyRenderer value={'foo'} />;
+export const BooleanTrue = () => <AnyRenderer value={true} />;
+export const BooleanFalse = () => <AnyRenderer value={false} />;
+export const DateObject = () => <AnyRenderer value={new Date('2020-01-01')} />;
+export const DateString = () => <AnyRenderer value="2020-01-01" />;
+export const Number = () => <AnyRenderer value={5} />;
+export const Array = () => (
   <AnyRenderer value={['foo', true, false, new Date('2020-01-01')]} />
 );
-export const obj = () => (
+export const Obj = () => (
   <AnyRenderer
     value={{
       array: ['foo', true, false, new Date('2020-01-01')],
@@ -40,9 +40,9 @@ const overrides = {
     null: 'nothing to see here',
   },
 };
-export const reactNode = () => <AnyRenderer value={<p>foo</p>} />;
+export const ReactNode = () => <AnyRenderer value={<p>foo</p>} />;
 
-export const withOverrides = () => (
+export const WithOverrides = () => (
   <table>
     <tr>
       <th>string</th>
@@ -77,7 +77,7 @@ export const withOverrides = () => (
   </table>
 );
 
-export const withOverridesFromContext = () => (
+export const WithOverridesFromContext = () => (
   <AnyRendererContext.Provider value={overrides}>
     <table>
       <tr>

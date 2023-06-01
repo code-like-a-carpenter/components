@@ -1,8 +1,8 @@
-import {Spinner} from './spinner';
+import {Spinner as SpinnerComponent} from './spinner';
 
 export default {
-  component: Spinner,
+  component: SpinnerComponent,
   title: 'Components/Spinner',
 };
 
-export const spinner = () => <Spinner />;
+export const Spinner = () => <SpinnerComponent />;

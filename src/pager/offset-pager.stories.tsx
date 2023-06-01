@@ -21,15 +21,15 @@ export default {
   title: 'Components/Pager/Offset',
 };
 
-export const offsetPager = () => (
+export const Default = () => (
   <OffsetPager pageInfo={mockOffsetPageInfo({total: 50})} />
 );
 
-export const offsetPagerOnMiddlePage = () => (
+export const OffsetPagerOnMiddlePage = () => (
   <OffsetPager pageInfo={mockOffsetPageInfo({page: 7, take: 10, total: 150})} />
 );
 
-export const offsetPagerWithTooManyPages = () => (
+export const OffsetPagerWithTooManyPages = () => (
   <>
     <OffsetPager
       pageInfo={mockOffsetPageInfo({page: 1, take: 10, total: 150})}

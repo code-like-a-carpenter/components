@@ -21,6 +21,6 @@ export default {
   title: 'Components/Pager',
 };
 
-export const offsetPager = () => <Pager pageInfo={mockOffsetPageInfo()} />;
-export const relayPager = () => <Pager pageInfo={mockRelayPageInfo()} />;
-export const simplePage = () => <Pager pageInfo={{page: 1, pages: 10}} />;
+export const OffsetPager = () => <Pager pageInfo={mockOffsetPageInfo()} />;
+export const RelayPager = () => <Pager pageInfo={mockRelayPageInfo()} />;
+export const SimplePage = () => <Pager pageInfo={{page: 1, pages: 10}} />;

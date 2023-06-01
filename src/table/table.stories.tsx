@@ -17,7 +17,7 @@ export default {
 
 const simpleData = makeSimplePeople();
 
-export const table = () => (
+export const Default = () => (
   <Table>
     <TableHeader>
       <TableRow>
@@ -44,7 +44,7 @@ export const table = () => (
 
 const complexData = makeComplexPeople();
 
-export const complexTable = () => (
+export const ComplexTable = () => (
   <Table>
     <TableHeader>
       <TableRow>

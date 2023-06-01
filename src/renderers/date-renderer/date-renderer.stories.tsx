@@ -11,22 +11,22 @@ const date = new Date(dateString);
 
 const relativeReference = new Date('2020-06-10');
 
-export const dateRenderer = () => <DateRenderer value={date} />;
-export const usingDateString = () => <DateRenderer value={dateString} />;
-export const usingEpoch = () => <DateRenderer value={date.getTime()} />;
-export const timeSince = () => (
+export const Default = () => <DateRenderer value={date} />;
+export const UsingDateString = () => <DateRenderer value={dateString} />;
+export const UsingEpoch = () => <DateRenderer value={date.getTime()} />;
+export const TimeSince = () => (
   <DateRenderer value={date} reference={relativeReference} relative />
 );
-export const dateRange = () => (
+export const DateRange = () => (
   <DateRenderer value={date} reference={relativeReference} range />
 );
-export const relative = () => (
+export const Relative = () => (
   <DateRenderer value={date} reference={relativeReference} relative />
 );
-export const relativeNegative = () => (
+export const RelativeNegative = () => (
   <DateRenderer value={relativeReference} reference={date} relative />
 );
-export const relativeNegativeIsNull = () => (
+export const RelativeNegativeIsNull = () => (
   <DateRenderer
     value={relativeReference}
     reference={date}
@@ -34,11 +34,11 @@ export const relativeNegativeIsNull = () => (
     negativeIsNull
   />
 );
-export const invalidDateString = () => <DateRenderer value="not a date" />;
-export const withOverrides = () => (
+export const InvalidDateString = () => <DateRenderer value="not a date" />;
+export const WithOverrides = () => (
   <DateRenderer value={date} format={DateTime.DATE_SHORT} />
 );
-export const withOverridesFromContext = () => (
+export const WithOverridesFromContext = () => (
   <DateRendererContext.Provider value={{format: DateTime.DATETIME_HUGE}}>
     <DateRenderer value={date} />
   </DateRendererContext.Provider>

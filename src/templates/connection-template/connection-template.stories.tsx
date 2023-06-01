@@ -8,7 +8,7 @@ export default {
   title: 'Templates/ConnectionTemplate',
 };
 
-export const connectionTemplate = () => (
+export const Default = () => (
   <ConnectionTemplate
     connection={toConnection(makeSimplePeople(5))}
     configure={({FieldConfigurer}) => (
@@ -25,7 +25,7 @@ export const connectionTemplate = () => (
   />
 );
 
-export const outOfOrder = () => (
+export const OutOfOrder = () => (
   <ConnectionTemplate
     connection={toConnection(makeSimplePeople(5))}
     configure={({FieldConfigurer}) => (
@@ -42,7 +42,7 @@ export const outOfOrder = () => (
   />
 );
 
-export const duplicateFields = () => (
+export const DuplicateFields = () => (
   <ConnectionTemplate
     connection={toConnection(makeSimplePeople(5))}
     configure={({FieldConfigurer}) => (
@@ -66,7 +66,7 @@ export const duplicateFields = () => (
   />
 );
 
-export const nestedData = () => (
+export const NestedData = () => (
   <ConnectionTemplate
     connection={toConnection(makeComplexPeople(5))}
     configure={({FieldConfigurer}) => (
@@ -90,7 +90,7 @@ export const nestedData = () => (
   />
 );
 
-export const defaultNoOp = () => (
+export const DefaultNoOp = () => (
   <ConnectionTemplate
     connection={toConnection(makeSimplePeople(5))}
     configure={({FieldConfigurer}) => (
@@ -103,7 +103,7 @@ export const defaultNoOp = () => (
     )}
   />
 );
-defaultNoOp.parameters = {
+DefaultNoOp.parameters = {
   docs: {
     description: {
       story:
