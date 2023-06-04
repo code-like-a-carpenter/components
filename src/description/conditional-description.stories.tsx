@@ -1,4 +1,4 @@
-import {DateRenderer} from '..';
+import {CurrencyRenderer, DateRenderer} from '..';
 
 import {ConditionalDescription} from './conditional-description';
 
@@ -9,6 +9,15 @@ export default {
 
 export const Default = () => (
   <ConditionalDescription term="A label" description="a value" />
+);
+
+export const WithCustomizedRenderer = () => (
+  <ConditionalDescription
+    term="Household Income"
+    Renderer={CurrencyRenderer}
+    currency="GBP"
+    description={100000}
+  />
 );
 
 export const WithoutValue = () => <ConditionalDescription term="A label" />;
@@ -59,7 +68,7 @@ export const WithADate = () => (
   <ConditionalDescription
     term="A Date"
     description={new Date('2020-01-01')}
-    Render={DateRenderer}
+    Renderer={DateRenderer}
   />
 );
 
@@ -67,7 +76,7 @@ export const WithNotADate = () => (
   <ConditionalDescription
     term="A Date"
     description={null}
-    Render={DateRenderer}
+    Renderer={DateRenderer}
   />
 );
 
@@ -75,6 +84,6 @@ export const WithNotATime = () => (
   <ConditionalDescription
     term="A Date"
     description={null as unknown as Date | null}
-    Render={DateRenderer}
+    Renderer={DateRenderer}
   />
 );

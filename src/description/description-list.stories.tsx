@@ -1,3 +1,6 @@
+import {makeSimplePerson} from '../mocks';
+import {CurrencyRenderer} from '../renderers';
+
 import {Description} from './description';
 import {DescriptionList} from './description-list';
 
@@ -21,14 +24,18 @@ export const List = () => (
   </DescriptionList>
 );
 
-export const ListWithMultipleDescriptions = () => (
-  <DescriptionList>
-    <Description term="Term 1">Its First Description</Description>
-    <Description term="Term 2">Its First Description</Description>
-    <Description term="Term 3">
-      <div>Its First Description</div>
-      <div>Its Second Description</div>
-    </Description>
-    <Description term="Term 4">Its First Description</Description>
-  </DescriptionList>
-);
+export const ListWithCustomizedRenderer = () => {
+  const person = makeSimplePerson();
+  return (
+    <DescriptionList>
+      <Description term="First Name" description={person.firstName} />
+      <Description term="Last Name" description={person.lastName} />
+      <Description
+        term="Household Income"
+        Renderer={CurrencyRenderer}
+        currency="GBP"
+        description={person.householdIncome}
+      ></Description>
+    </DescriptionList>
+  );
+};

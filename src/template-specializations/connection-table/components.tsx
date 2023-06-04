@@ -53,7 +53,7 @@ export const ConnectionTableBodyCell = <
   N extends NodeLike,
   K extends IdType<N>
 >({
-  // connection,
+  children,
   fieldId,
   field,
   value,
@@ -63,7 +63,5 @@ export const ConnectionTableBodyCell = <
   renderer: Renderer,
   ...rest
 }: TableBodyCellProps<N, K>) => (
-  <TableBodyCell {...rest}>
-    <Renderer value={value} />
-  </TableBodyCell>
+  <TableBodyCell {...rest}>{children}</TableBodyCell>
 );
