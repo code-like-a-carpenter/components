@@ -3,6 +3,7 @@ import {HTMLProps} from 'react';
 export interface StringifyProps<T extends unknown>
   extends Omit<HTMLProps<HTMLPreElement>, 'children'> {
   children: T;
+  depth?: number;
 }
 
 /**
@@ -10,7 +11,8 @@ export interface StringifyProps<T extends unknown>
  */
 export const Stringify = <T extends unknown>({
   children,
+  depth = 2,
   ...rest
 }: StringifyProps<T>) => (
-  <pre {...rest}>{JSON.stringify(children, null, 2)}</pre>
+  <pre {...rest}>{JSON.stringify(children, null, depth)}</pre>
 );
