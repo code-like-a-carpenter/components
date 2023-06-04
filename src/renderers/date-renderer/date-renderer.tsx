@@ -3,7 +3,7 @@ import assert from 'assert';
 import {DateTime, Duration} from 'luxon';
 import {createContext} from 'react';
 
-import {useContextWithDefaults} from '../../support';
+import {useContextWithPropOverrides} from '../../support';
 import {NullRenderer} from '../null-renderer';
 import {RendererProps} from '../types';
 
@@ -37,7 +37,7 @@ export type DateRendererProps = RendererProps<
 
 export const DateRenderer = ({value, ...rest}: DateRendererProps) => {
   const {format, negativeIsNull, range, reference, relative} =
-    useContextWithDefaults(DateRendererContext, rest);
+    useContextWithPropOverrides(DateRendererContext, rest);
 
   const dt = parseDate(value);
 

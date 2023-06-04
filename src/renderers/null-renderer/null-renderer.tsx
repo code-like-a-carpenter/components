@@ -1,6 +1,6 @@
 import {createContext} from 'react';
 
-import {useContextWithDefaults} from '../../support';
+import {useContextWithPropOverrides} from '../../support';
 import {RendererDefault, RendererProps} from '../types';
 
 export interface NullRendererContextType {
@@ -14,6 +14,9 @@ export const NullRendererContext = createContext<NullRendererContextType>({
 export type NullRendererProps = RendererProps<null, NullRendererContextType>;
 
 export const NullRenderer = (props: NullRendererProps) => {
-  const {null: content} = useContextWithDefaults(NullRendererContext, props);
+  const {null: content} = useContextWithPropOverrides(
+    NullRendererContext,
+    props
+  );
   return <>{content}</>;
 };

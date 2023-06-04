@@ -1,6 +1,6 @@
 import {createContext} from 'react';
 
-import {useContextWithDefaults} from '../../support';
+import {useContextWithPropOverrides} from '../../support';
 import {RendererDefault, RendererProps} from '../types';
 
 export interface BooleanRendererContextType {
@@ -21,7 +21,7 @@ export type BooleanRendererProps = RendererProps<
 >;
 
 export const BooleanRenderer = ({value, ...rest}: BooleanRendererProps) => {
-  const {no, yes} = useContextWithDefaults(BooleanRendererContext, rest);
+  const {no, yes} = useContextWithPropOverrides(BooleanRendererContext, rest);
 
   return <span className="magic-boolean">{value ? yes : no}</span>;
 };
