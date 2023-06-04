@@ -18,7 +18,7 @@ export const FancyStringify = <T extends unknown>({
 
   return (
     <Wrapper>
-      {Array.isArray(children) && `${indent}[`}{' '}
+      {Array.isArray(children) && `${indent}[`}
       {children &&
         Object.entries(children).map(([key, value], index, arr) => {
           if (value instanceof Date || typeof value !== 'object') {
