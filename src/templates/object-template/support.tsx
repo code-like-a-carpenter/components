@@ -7,7 +7,7 @@ export const FieldWrapper = <T extends object, K extends IdType<T>>({
   label,
   children,
 }: FieldWrapperProps<T, K>) => (
-  <Description term={label}>{children}</Description>
+  <Description term={label} description={children} />
 );
 
 export const TemplateWrapper = <T extends object>({

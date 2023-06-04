@@ -1,91 +1,76 @@
 import cx from 'classnames';
 import React, {
   Children,
+  ComponentProps,
   HTMLProps,
   ReactNode,
   useContext,
   useMemo,
 } from 'react';
 
-import {AnyRenderer} from '../renderers';
-import {Renderer as RendererType} from '../renderers/types';
+import {AnyRenderer, Renderer} from '../renderers';
 
-import {DescriptionListContext, DescriptionList} from './description-list';
+import {DescriptionList, DescriptionListContext} from './description-list';
 
-export interface CommonProps<T extends unknown>
-  extends Omit<HTMLProps<HTMLElement>, 'children' | 'title'> {
-  /**
-   * Longer-form version of the "term" prop which explains more about what this
-   * item describes.
-   */
-  readonly descriptionLabel?: string;
-  readonly term: ReactNode;
-  readonly Renderer?: RendererType<T>;
-}
+export type DescriptionProps<
+  T extends unknown,
+  C extends unknown,
+  R extends Renderer<T, C>
+> = Omit<HTMLProps<HTMLElement>, 'children' | 'title'> &
+  Omit<ComponentProps<R>, 'value'> & {
+    readonly description: T;
+    /**
+     * Longer-form version of the "term" prop which explains more about what this
+     * item describes.
+     */
+    readonly descriptionLabel?: string;
+    readonly term: ReactNode;
+    readonly Renderer?: R;
+  };
 
-export interface ChildrenProps<T extends unknown> {
-  readonly children: T;
-}
-
-export interface DescriptionProps<T extends unknown> {
-  readonly description: T;
-}
-
-export type Props<T extends unknown> = CommonProps<T> &
-  (ChildrenProps<T> | DescriptionProps<T>);
-
-export const Description = <T extends unknown>({
+export const Description = <
+  T extends unknown,
+  C extends unknown,
+  R extends Renderer<T, C>
+>({
   className,
+  description,
   descriptionLabel,
-  Renderer = AnyRenderer,
+  // @ts-expect-error
+  Renderer: Component = AnyRenderer,
   term,
   ...props
-}: Props<T>) => {
+}: DescriptionProps<T, C, R>) => {
   const listType = useContext(DescriptionListContext);
 
   const children = useMemo(() => {
-    if ('description' in props) {
-      if (Array.isArray(props.description)) {
-        return props.description.map((child, index) => (
-          <Renderer key={index} value={child} />
-        ));
-      }
-      return <Renderer value={props.description} />;
+    if (Array.isArray(description)) {
+      return description.map((child, index) => (
+        // @ts-expect-error
+        <Component key={index} value={child} {...props} />
+      ));
     }
-
-    // This is terrible, but I haven't found another way to determine if
-    // `children` is a homgeneous array of ReactNodes or if it contains e.g.
-    // a Date object.
-    try {
-      Children.count(props.children);
-      return props.children;
-    } catch {
-      return <Renderer value={props.children} />;
-    }
-  }, [Renderer, props]);
+    // @ts-expect-error
+    return <Component value={description} {...props} />;
+  }, [Component, description, props]);
 
   const count = useMemo(() => {
-    if ('description' in props) {
-      if (Array.isArray(props.description)) {
-        return props.description.length;
-      }
-      return 1;
+    if (Array.isArray(description)) {
+      return description.length;
     }
-    try {
-      return Children.count(props.children);
-    } catch {
-      return 1;
-    }
-  }, [props]);
+    return 1;
+  }, [description]);
 
   if (!listType) {
     return (
       <DescriptionList className="description-list--single">
-        <Description<T>
+        {/* @ts-expect-error it's not clear to me why TSC is struggling here */}
+        <Description<T, C, R>
           className={cx(className, 'description-list__description')}
-          Renderer={Renderer}
-          term={term}
+          description={description}
           descriptionLabel={descriptionLabel}
+          Renderer={Component}
+          term={term}
           {...props}
         />
       </DescriptionList>

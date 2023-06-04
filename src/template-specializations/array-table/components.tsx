@@ -48,7 +48,7 @@ export const ArrayTableBodyRow = <T extends object>({
 }: TableBodyRowProps<T>) => <TableBodyRow {...rest} />;
 
 export const ArrayTableBodyCell = <T extends object, K extends IdType<T>>({
-  // connection,
+  children,
   fieldId,
   field,
   value,
@@ -58,7 +58,5 @@ export const ArrayTableBodyCell = <T extends object, K extends IdType<T>>({
   renderer: Renderer,
   ...rest
 }: TableBodyCellProps<T, K>) => (
-  <TableBodyCell {...rest}>
-    <Renderer value={value} />
-  </TableBodyCell>
+  <TableBodyCell {...rest}>{children}</TableBodyCell>
 );
