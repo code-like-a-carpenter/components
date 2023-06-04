@@ -23,5 +23,5 @@ export type BooleanRendererProps = RendererProps<
 export const BooleanRenderer = ({value, ...rest}: BooleanRendererProps) => {
   const {no, yes} = useContextWithPropOverrides(BooleanRendererContext, rest);
 
-  return <span className="magic-boolean">{value ? yes : no}</span>;
+  return <>{value ? yes : no}</>;
 };
