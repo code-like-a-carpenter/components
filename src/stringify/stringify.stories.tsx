@@ -1,9 +1,9 @@
 import {makeComplexPeople, makeSimplePerson} from '../mocks';
 
-import {Stringify as StringifyComponent} from './stringify';
+import {Stringify} from './stringify';
 
 export default {
-  component: StringifyComponent,
+  component: Stringify,
   title: 'Components/Stringify',
 };
 
@@ -14,4 +14,6 @@ const data = {
   },
 };
 
-export const Stringify = () => <StringifyComponent>{data}</StringifyComponent>;
+export const DefaultDepth = () => <Stringify>{data}</Stringify>;
+
+export const ControlledDepth = () => <Stringify depth={3}>{data}</Stringify>;
