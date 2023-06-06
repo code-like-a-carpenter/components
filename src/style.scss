@@ -1,25 +1,13 @@
-:root {
-  --heading-anchor-icon: '#';
-}
-
-.heading__anchor {
-  padding: 0 .175rem;
-  font-weight: 400;
-  color: rgba(var(--bs-link-color), 0.5);
-  text-decoration: none;
-  opacity: 0;
-  transition: color 0.15s ease-in-out,opacity 0.15s ease-in-out;
-}
-
-.heading__anchor::after {
-  content: var(--heading-anchor-icon);
-}
-
-.heading__anchor:focus,
-.heading__anchor:hover,
-.heading:hover .heading__anchor,
-.heading:target .heading__anchor {
-  color: var(--bs-link-color);
-  text-decoration: none;
-  opacity: 1;
-}
+// This is kind of a goofy hack. So far, there's no compelling reason to write
+// scss for this project, however, node-sass's default behavior is _not_ to
+// inline `*.css` files that are imported via `@import`. This makes a lot of
+// sense in the general case. If you're trying to `@import` a css file, it's
+// likely you want to do so at runtime and not compile time. Unfortunately, if
+// we're distributing styles via npm, we _do_ want them inlined.
+//
+// Of course, we could just stick to writing css in this file and be fine,
+// right? Well, no. A lot of the functions we want to use at runtime end up
+// being run at buildtime if they live in a sass file, so they need to 1. live
+// in a css file and 2. be imported via `@use` rather than `@import` so they get
+// inlined.
+@use 'style.css';
