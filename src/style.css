@@ -33,3 +33,7 @@
   justify-items: center;
   align-items: center;
 }
+
+.line_chart__legend--active {
+  font-weight: bold;
+}
