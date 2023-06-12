@@ -11,14 +11,14 @@ import React, {
 } from 'react';
 
 /**
- * Like useContext, but allows for prop-defined defaults. Useful for e.g. theme
+ * Like useContext, but allows for prop-defined overrides. Useful for e.g. theme
  * providers where there may be a general theme for the app, but a single
  * component needs to render differently and adding a new Provider would be
  * overly verbose
  * @param context
  * @param propValues
  */
-export function useContextWithDefaults<T>(
+export function useContextWithPropOverrides<T>(
   context: Context<T>,
   propValues: Partial<T>
 ): T {

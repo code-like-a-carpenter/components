@@ -1,7 +1,7 @@
 import {DateTime} from 'luxon';
 import {createContext, isValidElement} from 'react';
 
-import {useContextWithDefaults} from '../../support';
+import {useContextWithPropOverrides} from '../../support';
 import {BooleanRenderer, BooleanRendererContextType} from '../boolean-renderer';
 import {DateRenderer, DateRendererContextProps} from '../date-renderer';
 import {NullRenderer, NullRendererContextType} from '../null-renderer';
@@ -24,7 +24,7 @@ export const AnyRenderer = ({value, ...rest}: AnyRendererProps) => {
     boolean,
     date,
     null: nullDefaults,
-  } = useContextWithDefaults(AnyRendererContext, rest);
+  } = useContextWithPropOverrides(AnyRendererContext, rest);
 
   if (
     typeof value === 'object' ||

@@ -1,9 +1,9 @@
 import {makeComplexPeople, makeSimplePerson} from '../mocks';
 
-import {FancyStringify as FancyStringifyComponent} from './fancy-stringify';
+import {FancyStringify} from './fancy-stringify';
 
 export default {
-  component: FancyStringifyComponent,
+  component: FancyStringify,
   title: 'Components/FancyStringify',
 };
 
@@ -14,6 +14,8 @@ const data = {
   },
 };
 
-export const FancyStringify = () => (
-  <FancyStringifyComponent>{data}</FancyStringifyComponent>
+export const DefaultDepth = () => <FancyStringify>{data}</FancyStringify>;
+
+export const ControlledDepth = () => (
+  <FancyStringify depth={3}>{data}</FancyStringify>
 );

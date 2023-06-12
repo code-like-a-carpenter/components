@@ -1,0 +1,25 @@
+:root {
+  --heading-anchor-icon: '#';
+}
+
+.heading__anchor {
+  padding: 0 .175rem;
+  font-weight: 400;
+  color: rgba(var(--bs-link-color), 0.5);
+  text-decoration: none;
+  opacity: 0;
+  transition: color 0.15s ease-in-out,opacity 0.15s ease-in-out;
+}
+
+.heading__anchor::after {
+  content: var(--heading-anchor-icon);
+}
+
+.heading__anchor:focus,
+.heading__anchor:hover,
+.heading:hover .heading__anchor,
+.heading:target .heading__anchor {
+  color: var(--bs-link-color);
+  text-decoration: none;
+  opacity: 1;
+}
