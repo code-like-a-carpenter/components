@@ -9,13 +9,10 @@ export const ObjectDescriptionFieldWrapper = <
   T extends object,
   K extends IdType<T>
 >({
+  children,
   label,
-  value,
-  renderer: Renderer,
 }: ObjectDescriptionFieldWrapperProps<T, K>) => (
-  <Description term={label}>
-    <Renderer value={value} />
-  </Description>
+  <Description term={label} description={children} />
 );
 
 export const ObjectDescriptionWrapper = <T extends object>({

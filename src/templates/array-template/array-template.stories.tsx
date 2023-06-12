@@ -1,4 +1,5 @@
 import {makeComplexPeople, makeSimplePeople, SimplePerson} from '../../mocks';
+import {CurrencyRenderer} from '../../renderers';
 
 import {ArrayTemplate} from './array-template';
 import {FieldWrapper, ItemWrapper, Wrapper} from './support';
@@ -16,6 +17,11 @@ export const Default = () => (
       <>
         <FieldConfigurer field="firstName" />
         <FieldConfigurer field="lastName" />
+        <FieldConfigurer
+          field="householdIncome"
+          renderer={CurrencyRenderer}
+          currency="GBP"
+        />
         <FieldConfigurer field="age" />
         <FieldConfigurer field="signUpDate" />
       </>
@@ -33,6 +39,11 @@ export const OutOfOrder = () => (
     configure={({FieldConfigurer}) => (
       <>
         <FieldConfigurer field="lastName" />
+        <FieldConfigurer
+          field="householdIncome"
+          renderer={CurrencyRenderer}
+          currency="GBP"
+        />
         <FieldConfigurer field="firstName" />
         <FieldConfigurer field="signUpDate" />
         <FieldConfigurer field="age" />
@@ -52,6 +63,11 @@ export const DuplicateFields = () => (
       <>
         <FieldConfigurer field="firstName" />
         <FieldConfigurer field="lastName" />
+        <FieldConfigurer
+          field="householdIncome"
+          renderer={CurrencyRenderer}
+          currency="GBP"
+        />
         <FieldConfigurer field="age" />
         <FieldConfigurer field="signUpDate" />
         <FieldConfigurer
@@ -102,6 +118,11 @@ export const DefaultNoOp = () => (
       <>
         <FieldConfigurer field="firstName" />
         <FieldConfigurer field="lastName" />
+        <FieldConfigurer
+          field="householdIncome"
+          renderer={CurrencyRenderer}
+          currency="GBP"
+        />
         <FieldConfigurer field="age" />
         <FieldConfigurer field="signUpDate" />
       </>
@@ -125,6 +146,11 @@ export const RawHtmlWrappers = () => (
       <>
         <FieldConfigurer field="firstName" />
         <FieldConfigurer field="lastName" />
+        <FieldConfigurer
+          field="householdIncome"
+          renderer={CurrencyRenderer}
+          currency="GBP"
+        />
         <FieldConfigurer field="age" />
         <FieldConfigurer field="signUpDate" />
       </>
@@ -147,6 +173,11 @@ export const NullData = () => (
       <>
         <FieldConfigurer field="firstName" />
         <FieldConfigurer field="lastName" />
+        <FieldConfigurer
+          field="householdIncome"
+          renderer={CurrencyRenderer}
+          currency="GBP"
+        />
         <FieldConfigurer field="age" />
         <FieldConfigurer field="signUpDate" />
       </>
@@ -163,6 +194,11 @@ export const EmptyData = () => (
       <>
         <FieldConfigurer field="firstName" />
         <FieldConfigurer field="lastName" />
+        <FieldConfigurer
+          field="householdIncome"
+          renderer={CurrencyRenderer}
+          currency="GBP"
+        />
         <FieldConfigurer field="age" />
         <FieldConfigurer field="signUpDate" />
       </>
@@ -184,6 +220,11 @@ export const CustomFieldWrapper = () => (
           )}
         />
         <FieldConfigurer field="lastName" />
+        <FieldConfigurer
+          field="householdIncome"
+          renderer={CurrencyRenderer}
+          currency="GBP"
+        />
         <FieldConfigurer field="age" />
         <FieldConfigurer field="signUpDate" />
       </>

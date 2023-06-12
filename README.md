@@ -33,6 +33,16 @@ unify the typescript design of my UI components across many projects.
 npm install @code-like-a-carpenter/components
 ```
 
+### Dependencies
+
+This project assumes you're using Bootstrap 5.3 or later. While it _does_ have a
+dependency as such, depending on how you're importing Bootstrap, you may or may
+not get the right version if you've separate installed it.
+
+You _must_ import Bootstrap in a way that's compatible with your build process;
+due to all the different ways you may have chosen to bundle styles, this library
+cannot import Bootstrap for you.
+
 ## Usage
 
 > See [storybook](https://master--5f6f88dd0d66390022e01139.chromatic.com) for

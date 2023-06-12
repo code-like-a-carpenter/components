@@ -6,8 +6,14 @@ import {
   SourceState,
   SourceContext,
 } from '@storybook/blocks';
-import {BooleanRenderer, BooleanRendererContext} from '.';
-import {AnyRenderer, AnyRendererContext} from '.';
+
+import {
+  AnyRenderer,
+  AnyRendererContext,
+  BooleanRenderer,
+  BooleanRendererContext,
+  Render,
+} from '.';
 
 <Meta title="Renderers/Renderers" />
 
@@ -72,3 +78,29 @@ customization, so if we have a partial understanding of our data, we can
 customize appropriately via the Context and programmatically drive our output.
 
 This opens a lot of interesting possibilities for data-driven tables.
+
+As a simple example, the `<Render/>` component shows how to write an arbitrary
+component pulls a generic Renderer from the context, but can be customized on a
+per-instance basis with both an alternate, typesafe Renderer _and_ props for
+that Renderer.
+
+Here we see a data value rendered "generically" three different ways.
+
+First, it's just passed to the `Renderer` on the context, in this case,
+`AnyRenderer`.
+
+<Canvas withSource={SourceState.OPEN}>
+   <Render value={true} />
+</Canvas>
+
+Then, we instead render it as explicitly as a `Boolean`.
+
+<Canvas withSource={SourceState.OPEN}>
+  <Render value={true} Renderer={BooleanRenderer} />
+</Canvas>
+
+Finally, we explicitly renderer it as a `Boolean`, but change the labels.
+
+<Canvas withSource={SourceState.OPEN}>
+  <Render value={true} Renderer={BooleanRenderer} yes="Yep!" no="Nope!" />
+</Canvas>

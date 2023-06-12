@@ -5,6 +5,7 @@ import {useContextWithPropOverrides} from '../../support';
 import {BooleanRenderer, BooleanRendererContextType} from '../boolean-renderer';
 import {DateRenderer, DateRendererContextProps} from '../date-renderer';
 import {NullRenderer, NullRendererContextType} from '../null-renderer';
+import {NumberRenderer} from '../number-renderer';
 import {ObjectRenderer} from '../object-renderer';
 import {RendererProps} from '../types';
 
@@ -50,7 +51,11 @@ export const AnyRenderer = ({value, ...rest}: AnyRendererProps) => {
     return <NullRenderer value={null} {...nullDefaults} />;
   }
 
-  if (typeof value === 'number' || typeof value === 'bigint') {
+  if (typeof value === 'number') {
+    return <NumberRenderer value={value}></NumberRenderer>;
+  }
+
+  if (typeof value === 'bigint') {
     return <>{value}</>;
   }
 

@@ -1,4 +1,5 @@
 import {makeComplexPerson, makeSimplePerson} from '../../mocks';
+import {CurrencyRenderer} from '../../renderers';
 
 import {ObjectDescription} from './object-description';
 
@@ -14,6 +15,11 @@ export const Default = () => (
       <>
         <FieldConfigurer field="firstName" />
         <FieldConfigurer field="lastName" />
+        <FieldConfigurer
+          field="householdIncome"
+          renderer={CurrencyRenderer}
+          currency="GBP"
+        />
         <FieldConfigurer field="age" />
         <FieldConfigurer field="signUpDate" />
       </>
@@ -27,6 +33,11 @@ export const OutOfOrder = () => (
     configure={({FieldConfigurer}) => (
       <>
         <FieldConfigurer field="lastName" />
+        <FieldConfigurer
+          field="householdIncome"
+          renderer={CurrencyRenderer}
+          currency="GBP"
+        />
         <FieldConfigurer field="firstName" />
         <FieldConfigurer field="signUpDate" />
         <FieldConfigurer field="age" />
@@ -42,6 +53,11 @@ export const DuplicateFields = () => (
       <>
         <FieldConfigurer field="firstName" />
         <FieldConfigurer field="lastName" />
+        <FieldConfigurer
+          field="householdIncome"
+          renderer={CurrencyRenderer}
+          currency="GBP"
+        />
         <FieldConfigurer field="age" />
         <FieldConfigurer field="signUpDate" />
         <FieldConfigurer

@@ -43,6 +43,7 @@ export function mockRelayPageInfo(
 
 export interface SimplePerson {
   age: number;
+  householdIncome: number;
   id: string;
   firstName: string;
   lastName: string;
@@ -56,17 +57,19 @@ export function makeSimplePerson(
   override: Partial<SimplePerson> = {}
 ): SimplePerson {
   return {
-    age: faker.datatype.number({max: 100, min: 0}),
-    firstName: faker.name.firstName(),
-    id: faker.datatype.uuid(),
-    lastName: faker.name.lastName(),
-    signUpDate: faker.date.between('2019-01-01', '2021-03-01'),
+    age: faker.number.int({max: 100, min: 0}),
+    firstName: faker.person.firstName(),
+    householdIncome: faker.number.int({max: 100000, min: 0}),
+    id: faker.string.uuid(),
+    lastName: faker.person.lastName(),
+    signUpDate: faker.date.between({from: '2019-01-01', to: '2021-03-01'}),
     ...override,
   };
 }
 
 export interface ComplexPerson {
   age: number;
+  householdIncome: number;
   id: string;
   name: {
     first: string;
@@ -90,14 +93,15 @@ export function makeComplexPerson({
   ...override
 }: Partial<ComplexPerson> = {}): ComplexPerson {
   return {
-    age: faker.datatype.number({max: 100, min: 0}),
-    id: faker.datatype.uuid(),
+    age: faker.number.int({max: 100, min: 0}),
+    householdIncome: faker.number.int({max: 100000, min: 0}),
+    id: faker.string.uuid(),
     name: {
-      first: faker.name.firstName(),
-      last: faker.name.lastName(),
+      first: faker.person.firstName(),
+      last: faker.person.lastName(),
       ...name,
     },
-    signUpDate: faker.date.between('2019-01-01', '2021-03-01'),
+    signUpDate: faker.date.between({from: '2019-01-01', to: '2021-03-01'}),
     ...override,
   };
 }

@@ -1,5 +1,5 @@
 import cx from 'classnames';
-import {HTMLProps, ReactNode} from 'react';
+import {ComponentProps, HTMLProps, ReactNode} from 'react';
 
 import {Renderer} from '../renderers/types';
 
@@ -9,21 +9,33 @@ import {Description} from './description';
 type MostlyFalsy = false | '' | null | undefined;
 type DescriptionType<T> = T | MostlyFalsy;
 
-export interface ConditionalDescriptionProps<T> extends HTMLProps<HTMLElement> {
-  readonly condition?: boolean;
-  readonly term: ReactNode;
-  readonly description?: DescriptionType<T>;
-  readonly Render?: Renderer<T>;
-}
+export type ConditionalDescriptionProps<
+  T extends unknown,
+  C extends unknown,
+  R extends Renderer<Exclude<T, MostlyFalsy>, C>
+> = HTMLProps<HTMLElement> &
+  Omit<ComponentProps<R>, 'value'> & {
+    readonly condition?: boolean;
+    readonly term: ReactNode;
+    readonly description?: DescriptionType<T>;
+    readonly Renderer?: R;
+  };
 
 // eslint-disable-next-line complexity
-export const ConditionalDescription = <T extends unknown>({
-  className,
-  condition,
-  description,
-  Render,
-  ...rest
-}: ConditionalDescriptionProps<T>) => {
+export const ConditionalDescription = <
+  T extends unknown,
+  C extends unknown,
+  R extends Renderer<Exclude<T, MostlyFalsy>, C>
+>(
+  props: ConditionalDescriptionProps<T, C, R>
+) => {
+  const {
+    className,
+    condition,
+    description,
+    Renderer: Component,
+    ...rest
+  } = props;
   if (typeof condition === 'boolean' && !condition) {
     return null;
   }
@@ -31,7 +43,7 @@ export const ConditionalDescription = <T extends unknown>({
   if (typeof description === 'undefined' || description === null) {
     return null;
   }
-  if (Render) {
+  if (Component) {
     if (description === false || description === 0 || description === '') {
       if (process.env.NODE_ENV === 'development)') {
         // eslint-disable-next-line no-console
@@ -41,17 +53,10 @@ export const ConditionalDescription = <T extends unknown>({
       }
       return null;
     }
-    const classes = cx(className, 'description-list__description--conitional');
-    return (
-      <Description className={classes} {...rest}>
-        <Render value={description} />
-      </Description>
-    );
+    const classes = cx(className, 'description-list__description--conditional');
+    // @ts-expect-error
+    return <Description {...props} className={classes} />;
   }
 
-  // This is a little goofy, but the automatic inferrence doesn't type
-  // Description correctly.
-  return (
-    <Description<typeof description> description={description} {...rest} />
-  );
+  return <Description description={description} {...rest} />;
 };

@@ -36,7 +36,7 @@ export const RenderField = <T extends object>({
   if (typeof Wrapper === 'string') {
     return (
       <Wrapper>
-        <Renderer value={value} />
+        <Renderer value={value} {...config} />
       </Wrapper>
     );
   }
@@ -50,7 +50,7 @@ export const RenderField = <T extends object>({
       value={value}
       {...config}
     >
-      <Renderer value={value} />
+      <Renderer value={value} {...config} />
     </Wrapper>
   );
 };

@@ -1,6 +1,7 @@
 export * from './alert';
 export * from './card';
 export * from './code';
+export * from './core';
 export * from './description';
 export * from './link';
 export * from './pager';
