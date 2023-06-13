@@ -23,7 +23,7 @@ export const AnyRendererContext = createContext<AnyRendererContextType>({});
 export type AnyRendererProps = RendererProps<unknown, AnyRendererContextType>;
 
 // eslint-disable-next-line complexity
-export const AnyRenderer = ({value, ...rest}: AnyRendererProps) => {
+export function AnyRenderer({value, ...rest}: AnyRendererProps) {
   const {
     boolean,
     date,
@@ -77,4 +77,4 @@ export const AnyRenderer = ({value, ...rest}: AnyRendererProps) => {
   }
 
   return <NullRenderer value={null} {...nullDefaults} />;
-};
+}

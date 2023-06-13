@@ -1,7 +1,7 @@
 import {createContext} from 'react';
 
 import type {Renderer as RendererType} from '../../renderers';
-import {AnyRenderer} from '../../renderers';
+import {AnyRenderer} from '../../renderers/any-renderer/any-renderer';
 
 import {FactCard} from './fact-card';
 import type {FactContainer} from './types';
