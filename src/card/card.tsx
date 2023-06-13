@@ -1,17 +1,10 @@
-import React, {
-  useContext,
-  useState,
-  createContext,
-  PropsWithChildren,
-  ComponentType,
-} from 'react';
-import {
-  Card as BootstrapCard,
-  CardProps as BootstrapCardProps,
-} from 'react-bootstrap';
+import type {PropsWithChildren, ComponentType} from 'react';
+import React, {useContext, useState, createContext} from 'react';
+import type {CardProps as BootstrapCardProps} from 'react-bootstrap';
+import {Card as BootstrapCard} from 'react-bootstrap';
 
 import {Section, SectionHeading} from '..';
-import {PropsOf} from '../support';
+import type {PropsOf} from '../support';
 
 export const CardContext = createContext(false);
 

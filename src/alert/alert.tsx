@@ -1,8 +1,6 @@
 import {createContext} from 'react';
-import {
-  Alert as BootstrapAlert,
-  AlertProps as BootstrapAlertProps,
-} from 'react-bootstrap';
+import type {AlertProps as BootstrapAlertProps} from 'react-bootstrap';
+import {Alert as BootstrapAlert} from 'react-bootstrap';
 
 import {Section} from '../outline';
 

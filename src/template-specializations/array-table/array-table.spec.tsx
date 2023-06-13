@@ -1,7 +1,7 @@
 import {render} from '@testing-library/react';
 
-import {ComplexPerson, SimplePerson} from '../../mocks';
-import {InstallationPageQuery, Maybe} from '../../sample-types';
+import type {ComplexPerson, SimplePerson} from '../../mocks';
+import type {InstallationPageQuery, Maybe} from '../../sample-types';
 
 import {ArrayTable} from './array-table';
 

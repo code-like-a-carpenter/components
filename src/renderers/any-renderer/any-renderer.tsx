@@ -2,12 +2,15 @@ import {DateTime} from 'luxon';
 import {createContext, isValidElement} from 'react';
 
 import {useContextWithPropOverrides} from '../../support';
-import {BooleanRenderer, BooleanRendererContextType} from '../boolean-renderer';
-import {DateRenderer, DateRendererContextProps} from '../date-renderer';
-import {NullRenderer, NullRendererContextType} from '../null-renderer';
+import type {BooleanRendererContextType} from '../boolean-renderer';
+import {BooleanRenderer} from '../boolean-renderer';
+import type {DateRendererContextProps} from '../date-renderer';
+import {DateRenderer} from '../date-renderer';
+import type {NullRendererContextType} from '../null-renderer';
+import {NullRenderer} from '../null-renderer';
 import {NumberRenderer} from '../number-renderer';
 import {ObjectRenderer} from '../object-renderer';
-import {RendererProps} from '../types';
+import type {RendererProps} from '../types';
 
 export interface AnyRendererContextType {
   readonly boolean?: BooleanRendererContextType;

@@ -1,5 +1,6 @@
 import cx from 'classnames';
-import {createContext, HTMLProps} from 'react';
+import type {HTMLProps} from 'react';
+import {createContext} from 'react';
 
 export const DescriptionListContext = createContext(false);
 export type DescriptionListProps = HTMLProps<HTMLDListElement>;

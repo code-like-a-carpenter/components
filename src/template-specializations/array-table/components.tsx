@@ -1,3 +1,4 @@
+import type {IdType} from '../..';
 import {
   TableHeader,
   TableRow as TableHeaderRow,
@@ -5,11 +6,10 @@ import {
   TableBody,
   TableRow as TableBodyRow,
   TableBodyCell,
-  IdType,
 } from '../..';
 import {useFieldConfiguration} from '../../templates';
 
-import {
+import type {
   TableHeaderProps,
   TableHeaderRowProps,
   TableHeaderCellProps,

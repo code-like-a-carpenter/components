@@ -1,6 +1,6 @@
 import {Card} from 'react-bootstrap';
 
-import {FactContainer} from './types';
+import type {FactContainer} from './types';
 
 /**
  * Default container for the Fact component

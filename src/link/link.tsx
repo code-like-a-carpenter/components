@@ -1,4 +1,5 @@
-import React, {HTMLProps, PropsWithChildren, useContext} from 'react';
+import type {HTMLProps, PropsWithChildren} from 'react';
+import React, {useContext} from 'react';
 
 import {Alert, AlertContext} from '../alert';
 import {Card, CardContext} from '../card';

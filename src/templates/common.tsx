@@ -1,10 +1,11 @@
 import get from 'lodash/get';
-import React, {PropsWithChildren, ReactNode} from 'react';
+import type {PropsWithChildren, ReactNode} from 'react';
+import React from 'react';
 
-import {IdType} from '../types';
+import type {IdType} from '../types';
 
 import {useConfiguredFieldIds, useFieldConfiguration} from './configuration';
-import {
+import type {
   FieldWrapperType,
   ItemWrapperType,
   TemplateWrapperType,

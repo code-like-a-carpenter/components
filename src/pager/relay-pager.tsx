@@ -3,7 +3,7 @@ import {Pagination} from 'react-bootstrap';
 import {useRoutingContext} from '..';
 
 import {makeRelayHref} from './hrefs';
-import {RelayPageInfo} from './types';
+import type {RelayPageInfo} from './types';
 
 export interface RelayPagerProps {
   readonly pageInfo: RelayPageInfo;

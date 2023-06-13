@@ -1,4 +1,5 @@
-import {makeComplexPerson, makeSimplePerson, SimplePerson} from '../../mocks';
+import type {SimplePerson} from '../../mocks';
+import {makeComplexPerson, makeSimplePerson} from '../../mocks';
 import {CurrencyRenderer} from '../../renderers';
 
 import {ObjectTemplate} from './object-template';

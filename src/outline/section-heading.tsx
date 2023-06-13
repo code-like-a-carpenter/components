@@ -1,4 +1,5 @@
-import React, {HTMLProps, PropsWithChildren, useContext} from 'react';
+import type {HTMLProps, PropsWithChildren} from 'react';
+import React, {useContext} from 'react';
 
 import {Heading} from './heading';
 import {LevelContext} from './section';

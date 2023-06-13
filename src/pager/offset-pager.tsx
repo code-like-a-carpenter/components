@@ -3,7 +3,7 @@ import {Pagination} from 'react-bootstrap';
 import {useRoutingContext} from '..';
 
 import {makeOffsetHref} from './hrefs';
-import {OffsetPageInfo} from './types';
+import type {OffsetPageInfo} from './types';
 
 export interface OffsetPagerProps {
   readonly maxBeforeEllipsis?: number;

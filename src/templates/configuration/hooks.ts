@@ -2,13 +2,10 @@ import assert from 'assert';
 
 import {useContext} from 'react';
 
-import {IdType} from '../..';
+import type {IdType} from '../..';
 
-import {
-  ConfigureFieldFunction,
-  FieldConfiguration,
-  FieldConfigurationContext,
-} from './configuration';
+import type {ConfigureFieldFunction, FieldConfiguration} from './configuration';
+import {FieldConfigurationContext} from './configuration';
 
 /**
  * Gets the configuration for the specified field

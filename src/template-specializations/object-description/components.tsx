@@ -1,6 +1,7 @@
-import {Description, DescriptionList, IdType} from '../..';
+import type {IdType} from '../..';
+import {Description, DescriptionList} from '../..';
 
-import {
+import type {
   ObjectDescriptionFieldWrapperProps,
   ObjectDescriptionWrapperProps,
 } from './types';

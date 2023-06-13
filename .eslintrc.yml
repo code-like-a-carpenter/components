@@ -42,6 +42,9 @@ rules:
     - ignore:
         - \.(scss|less|css)$
   no-unused-vars: off
+  '@typescript-eslint/consistent-type-imports': error
   '@typescript-eslint/no-unused-vars':
     - warn
     - ignoreRestSiblings: true
+  no-duplicate-imports: off
+  import/no-duplicates: error

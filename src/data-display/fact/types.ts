@@ -1,6 +1,6 @@
-import {ComponentType, ReactNode} from 'react';
+import type {ComponentType, ReactNode} from 'react';
 
-import {Graphable} from '../line-chart/types';
+import type {Graphable} from '../line-chart/types';
 
 export interface FactContainerProps {
   label: ReactNode;

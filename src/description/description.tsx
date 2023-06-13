@@ -1,14 +1,9 @@
 import cx from 'classnames';
-import React, {
-  Children,
-  ComponentProps,
-  HTMLProps,
-  ReactNode,
-  useContext,
-  useMemo,
-} from 'react';
+import type {ComponentProps, HTMLProps, ReactNode} from 'react';
+import React, {Children, useContext, useMemo} from 'react';
 
-import {AnyRenderer, Renderer} from '../renderers';
+import type {Renderer} from '../renderers';
+import {AnyRenderer} from '../renderers';
 
 import {DescriptionList, DescriptionListContext} from './description-list';
 

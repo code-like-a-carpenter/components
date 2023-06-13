@@ -1,6 +1,7 @@
 import assert from 'assert';
 
-import {Fragment, HTMLProps} from 'react';
+import type {HTMLProps} from 'react';
+import {Fragment} from 'react';
 
 export interface FancyStringifyProps<T extends unknown>
   extends Omit<HTMLProps<HTMLDetailsElement>, 'children'> {

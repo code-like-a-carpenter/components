@@ -1,6 +1,8 @@
-import React, {Component, PropsWithChildren} from 'react';
+import type {PropsWithChildren} from 'react';
+import React, {Component} from 'react';
 
-import {Alert, AlertProps} from '../alert';
+import type {AlertProps} from '../alert';
+import {Alert} from '../alert';
 import {Code} from '../code';
 
 interface SimpleErrorBoundaryProps {

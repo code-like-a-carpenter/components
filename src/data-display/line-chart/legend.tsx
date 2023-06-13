@@ -6,9 +6,9 @@ import {
 } from '@visx/legend';
 import {valueOrIdentityString} from '@visx/legend/lib/util/valueOrIdentity';
 import cx from 'classnames';
-import {ScaleOrdinal} from 'd3-scale';
+import type {ScaleOrdinal} from 'd3-scale';
 
-import {TooltipData} from '../fact/types';
+import type {TooltipData} from '../fact/types';
 
 export interface LegendProps {
   readonly scale: ScaleOrdinal<string, string, never>;

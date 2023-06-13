@@ -1,11 +1,7 @@
 import cx from 'classnames';
 import dedent from 'dedent';
-import React, {
-  createContext,
-  HTMLProps,
-  PropsWithChildren,
-  useContext,
-} from 'react';
+import type {HTMLProps, PropsWithChildren} from 'react';
+import React, {createContext, useContext} from 'react';
 
 const CodeContext = createContext(false);
 

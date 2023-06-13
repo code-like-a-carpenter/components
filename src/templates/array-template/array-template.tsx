@@ -1,9 +1,9 @@
-import {ReactElement} from 'react';
+import type {ReactElement} from 'react';
 
-import {ConfigureFunction, IdType, Maybe} from '../..';
+import type {ConfigureFunction, IdType, Maybe} from '../..';
 import {DefaultWrapper, RenderItem, RenderTemplate} from '../common';
 import {Configurer, FieldConfigurationProvider} from '../configuration';
-import {
+import type {
   FieldWrapperType,
   ItemWrapperType,
   TemplateWrapperType,

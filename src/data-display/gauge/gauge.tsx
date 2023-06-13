@@ -2,12 +2,12 @@ import {scaleLinear} from '@visx/scale';
 import {Arc} from '@visx/shape';
 import {useMemo} from 'react';
 
-import {
-  NumberRenderer,
+import type {
   NumberRendererProps,
   Renderer,
   RendererProps,
 } from '../../renderers';
+import {NumberRenderer} from '../../renderers';
 
 export type GaugeProps<
   R extends Renderer<number> = typeof NumberRenderer,

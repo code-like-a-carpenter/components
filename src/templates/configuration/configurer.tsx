@@ -1,7 +1,7 @@
-import {ComponentProps, ElementType, ReactElement, ReactNode} from 'react';
+import type {ComponentProps, ElementType, ReactElement, ReactNode} from 'react';
 
-import {Definitely, FieldWrapperProps, IdType, Maybe} from '../..';
-import {Renderer} from '../../renderers';
+import type {Definitely, FieldWrapperProps, IdType, Maybe} from '../..';
+import type {Renderer} from '../../renderers';
 
 import {FieldConfigurationProvider} from './configuration';
 import {useConfigureField} from './hooks';

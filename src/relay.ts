@@ -1,6 +1,6 @@
 import {useMemo} from 'react';
 
-import {Maybe} from '.';
+import type {Maybe} from '.';
 
 export interface NodeLike {
   readonly id: string;

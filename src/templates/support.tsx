@@ -1,8 +1,8 @@
-import {ElementType, PropsWithChildren, ReactElement} from 'react';
+import type {ElementType, PropsWithChildren, ReactElement} from 'react';
 
-import {IdType} from '..';
+import type {IdType} from '..';
 
-import {FieldConfiguration} from './configuration';
+import type {FieldConfiguration} from './configuration';
 
 export type TemplateWrapperProps<T> = PropsWithChildren<{data: T}>;
 export type TemplateWrapperType<T> =

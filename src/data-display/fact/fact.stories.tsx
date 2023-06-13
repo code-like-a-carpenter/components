@@ -5,11 +5,12 @@ import {useContext} from 'react';
 import {Card} from 'react-bootstrap';
 
 import {ByteRenderer, CurrencyRenderer, DateRenderer} from '../../renderers';
-import {Gauge, GaugeProps} from '../gauge/gauge';
+import type {GaugeProps} from '../gauge/gauge';
+import {Gauge} from '../gauge/gauge';
 
 import {FactContext} from './context';
 import {Fact} from './fact';
-import {FactContainer} from './types';
+import type {FactContainer} from './types';
 
 export default {
   component: Fact,

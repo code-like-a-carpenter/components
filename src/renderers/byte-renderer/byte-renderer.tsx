@@ -2,7 +2,7 @@ import React, {createContext, useMemo} from 'react';
 
 import {useLocale} from '../../core/locale';
 import {useContextWithPropOverrides} from '../../support';
-import {RendererProps} from '../types';
+import type {RendererProps} from '../types';
 
 export type ByteRendererContextType = Omit<
   Intl.NumberFormatOptions,

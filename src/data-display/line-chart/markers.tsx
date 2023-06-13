@@ -1,11 +1,12 @@
 import {Group} from '@visx/group';
 import {Line} from '@visx/shape';
-import {TooltipInPortalProps} from '@visx/tooltip/lib/hooks/useTooltipInPortal';
-import {ScaleLinear, ScaleOrdinal, ScaleTime} from 'd3-scale';
-import {ComponentType, Fragment} from 'react';
+import type {TooltipInPortalProps} from '@visx/tooltip/lib/hooks/useTooltipInPortal';
+import type {ScaleLinear, ScaleOrdinal, ScaleTime} from 'd3-scale';
+import type {ComponentType} from 'react';
+import {Fragment} from 'react';
 
 import {DateRenderer, NumberRenderer} from '../../renderers';
-import {TooltipData} from '../fact/types';
+import type {TooltipData} from '../fact/types';
 
 export interface MarkersProps {
   data: TooltipData;

@@ -5,22 +5,21 @@ import {curveMonotoneX} from '@visx/curve';
 import {localPoint} from '@visx/event';
 import {Grid} from '@visx/grid';
 import {Group} from '@visx/group';
-import {
-  ContinuousDomain,
-  scaleLinear,
-  scaleOrdinal,
-  scaleTime,
-} from '@visx/scale';
+import type {ContinuousDomain} from '@visx/scale';
+import {scaleLinear, scaleOrdinal, scaleTime} from '@visx/scale';
 import {Bar, LinePath} from '@visx/shape';
 import {useTooltip, useTooltipInPortal} from '@visx/tooltip';
 import {bisector, extent} from 'd3-array';
-import {ComponentType, MouseEvent, useMemo} from 'react';
+import type {ComponentType, MouseEvent} from 'react';
+import {useMemo} from 'react';
 
-import {TooltipData} from '../fact/types';
+import type {TooltipData} from '../fact/types';
 
-import {Legend, LegendProps} from './legend';
-import {Markers, MarkersProps} from './markers';
-import {Datum, Graphable, LineSeries} from './types';
+import type {LegendProps} from './legend';
+import {Legend} from './legend';
+import type {MarkersProps} from './markers';
+import {Markers} from './markers';
+import type {Datum, Graphable, LineSeries} from './types';
 
 export interface LineChartProps {
   readonly xMin?: number;

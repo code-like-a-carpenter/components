@@ -1,7 +1,7 @@
 import cx from 'classnames';
-import {ComponentProps, HTMLProps, ReactNode} from 'react';
+import type {ComponentProps, HTMLProps, ReactNode} from 'react';
 
-import {Renderer} from '../renderers/types';
+import type {Renderer} from '../renderers/types';
 
 import {Description} from './description';
 

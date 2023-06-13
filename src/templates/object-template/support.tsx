@@ -1,7 +1,8 @@
-import {PropsWithChildren} from 'react';
+import type {PropsWithChildren} from 'react';
 
-import {Description, DescriptionList, IdType, Maybe} from '../..';
-import {FieldWrapperProps} from '../support';
+import type {IdType, Maybe} from '../..';
+import {Description, DescriptionList} from '../..';
+import type {FieldWrapperProps} from '../support';
 
 export const FieldWrapper = <T extends object, K extends IdType<T>>({
   label,

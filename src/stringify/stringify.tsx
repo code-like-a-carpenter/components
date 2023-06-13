@@ -1,4 +1,5 @@
-import {HTMLProps, useMemo} from 'react';
+import type {HTMLProps} from 'react';
+import {useMemo} from 'react';
 
 export interface StringifyProps<T extends unknown>
   extends Omit<HTMLProps<HTMLPreElement>, 'children'> {
