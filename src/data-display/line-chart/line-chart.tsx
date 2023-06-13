@@ -13,13 +13,13 @@ import {bisector, extent} from 'd3-array';
 import type {ComponentType, MouseEvent} from 'react';
 import {useMemo} from 'react';
 
-import type {TooltipData} from '../fact/types';
+import type {Graphable, TooltipData} from '../types';
 
 import type {LegendProps} from './legend';
 import {Legend} from './legend';
 import type {MarkersProps} from './markers';
 import {Markers} from './markers';
-import type {Datum, Graphable, LineSeries} from './types';
+import type {Datum, LineSeries} from './types';
 
 export interface LineChartProps {
   readonly xMin?: number;

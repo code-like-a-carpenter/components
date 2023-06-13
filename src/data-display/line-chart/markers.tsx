@@ -6,7 +6,7 @@ import type {ComponentType} from 'react';
 import {Fragment} from 'react';
 
 import {DateRenderer, NumberRenderer} from '../../renderers';
-import type {TooltipData} from '../fact/types';
+import type {TooltipData} from '../types';
 
 export interface MarkersProps {
   data: TooltipData;

@@ -1,4 +1,4 @@
-export type Graphable = number | Date;
+import type {Graphable} from '../types';
 
 export interface Datum<
   X extends Graphable = Graphable,
