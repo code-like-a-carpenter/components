@@ -2,6 +2,7 @@ export * from './alert';
 export * from './card';
 export * from './code';
 export * from './core';
+export * from './data-display';
 export * from './description';
 export * from './link';
 export * from './pager';
