@@ -1,10 +1,15 @@
 import assert from 'assert';
 
 import {faker} from '@faker-js/faker';
-import {useContext} from 'react';
+import {useCallback, useContext} from 'react';
 import {Card} from 'react-bootstrap';
 
-import {ByteRenderer, CurrencyRenderer, DateRenderer} from '../../renderers';
+import {
+  ByteRenderer,
+  CurrencyRenderer,
+  DateRenderer,
+  formatBytes,
+} from '../../renderers';
 import type {GaugeProps} from '../gauge/gauge';
 import {Gauge} from '../gauge/gauge';
 
@@ -111,6 +116,15 @@ export const CheckRunReporterAccountPage = () => {
     return <Gauge max={max} min={min} {...rest} />;
   };
 
+  const bytesFormatter = useCallback((value: number) => {
+    const {unit, val} = formatBytes(value);
+    const nf = new Intl.NumberFormat('en', {
+      style: 'unit',
+      unit,
+    });
+    return nf.format(val);
+  }, []);
+
   return (
     <>
       <style>
@@ -164,7 +178,8 @@ export const CheckRunReporterAccountPage = () => {
           min={0}
           max={1024 * 1024 * 1024}
           Renderer={GaugeAdapter}
-          valueRendererProps={{style: 'unit', unit: 'megabyte'}}
+          labelFormatter={bytesFormatter}
+          valueFormatter={bytesFormatter}
         />
         <Fact label="All Time Submissions" value={accountPageData.count} />
         <Fact
@@ -252,6 +267,15 @@ export const AsGauge = () => {
     return <Gauge max={max} min={min} {...rest} />;
   };
 
+  const bytesFormatter = useCallback((value: number) => {
+    const {unit, val} = formatBytes(value);
+    const nf = new Intl.NumberFormat('en', {
+      style: 'unit',
+      unit,
+    });
+    return nf.format(val);
+  }, []);
+
   return (
     <>
       <Fact
@@ -260,7 +284,8 @@ export const AsGauge = () => {
         min={0}
         max={100}
         value={75}
-        valueRendererProps={{style: 'unit', unit: 'kilobyte'}}
+        labelFormatter={bytesFormatter}
+        valueFormatter={bytesFormatter}
       />
       {/*This next chunk is just here to illustrate the type error*/}
       <div style={{display: 'none'}}>

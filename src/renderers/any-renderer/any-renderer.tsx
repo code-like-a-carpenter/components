@@ -22,7 +22,8 @@ export const AnyRendererContext = createContext<AnyRendererContextType>({});
 
 export type AnyRendererProps = RendererProps<unknown, AnyRendererContextType>;
 
-// eslint-disable-next-line complexity
+/* eslint-disable complexity */
+/** Renderers any value, as best as it can */
 export function AnyRenderer({value, ...rest}: AnyRendererProps) {
   const {
     boolean,
@@ -78,3 +79,4 @@ export function AnyRenderer({value, ...rest}: AnyRendererProps) {
 
   return <NullRenderer value={null} {...nullDefaults} />;
 }
+/* eslint-enable complexity */
