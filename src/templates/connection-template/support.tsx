@@ -1,6 +1,6 @@
-import {IdType, Maybe, NodeLike} from '../..';
+import type {IdType, Maybe, NodeLike} from '../..';
 import {useFieldConfiguration} from '../configuration';
-import {
+import type {
   FieldWrapperProps,
   ItemWrapperProps,
   TemplateWrapperProps,

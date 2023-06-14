@@ -1,6 +1,6 @@
-import {ElementType, PropsWithChildren, ReactElement} from 'react';
+import type {ElementType, PropsWithChildren, ReactElement} from 'react';
 
-import {
+import type {
   NodeLike,
   Maybe,
   ConnectionLike,
@@ -8,7 +8,7 @@ import {
   ItemWrapperProps,
   FieldWrapperProps,
 } from '../..';
-import {TemplateWrapperProps} from '../../templates';
+import type {TemplateWrapperProps} from '../../templates';
 
 export interface TableProps<N extends NodeLike, PI> {
   connection: Maybe<ConnectionLike<N, PI>>;

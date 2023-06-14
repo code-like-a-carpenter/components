@@ -1,7 +1,7 @@
 import {createContext} from 'react';
 
 import {useContextWithPropOverrides} from '../../support';
-import {RendererDefault, RendererProps} from '../types';
+import type {RendererDefault, RendererProps} from '../types';
 
 export interface BooleanRendererContextType {
   readonly no: RendererDefault;

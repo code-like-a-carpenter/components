@@ -1,8 +1,8 @@
 import {render} from '@testing-library/react';
 
-import {ConnectionLike} from '../..';
-import {ComplexPerson, SimplePerson} from '../../mocks';
-import {InstallationPageQuery, Maybe} from '../../sample-types';
+import type {ConnectionLike} from '../..';
+import type {ComplexPerson, SimplePerson} from '../../mocks';
+import type {InstallationPageQuery, Maybe} from '../../sample-types';
 
 import {ConnectionTemplate} from './connection-template';
 import {FieldWrapper, ItemWrapper, Wrapper} from './support';

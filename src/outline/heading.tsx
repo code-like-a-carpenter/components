@@ -3,7 +3,7 @@ import React, {createContext, useContext} from 'react';
 
 import {AlertContext} from '../alert';
 
-import {SectionHeadingProps} from './section-heading';
+import type {SectionHeadingProps} from './section-heading';
 
 export const HeadingContext = createContext(false);
 

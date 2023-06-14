@@ -1,4 +1,5 @@
-import {createContext, ReactNode, useContext} from 'react';
+import type {ReactNode} from 'react';
+import {createContext, useContext} from 'react';
 
 // default value is provided for storybook. Otherwise, this should always be set
 // explicitly in the root component.

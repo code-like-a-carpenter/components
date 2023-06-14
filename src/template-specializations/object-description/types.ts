@@ -1,7 +1,7 @@
-import {ElementType, ReactElement} from 'react';
+import type {ElementType, ReactElement} from 'react';
 
-import {IdType, Maybe} from '../..';
-import {FieldWrapperProps, TemplateWrapperProps} from '../../templates';
+import type {IdType, Maybe} from '../..';
+import type {FieldWrapperProps, TemplateWrapperProps} from '../../templates';
 
 export type ObjectDescriptionWrapperProps<T extends object> =
   TemplateWrapperProps<Maybe<T>>;

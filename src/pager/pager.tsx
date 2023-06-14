@@ -1,9 +1,9 @@
-import {Maybe} from '..';
+import type {Maybe} from '..';
 
 import {OffsetPager} from './offset-pager';
 import {RelayPager} from './relay-pager';
 import {SimplePager} from './simple-pager';
-import {PageInfo} from './types';
+import type {PageInfo} from './types';
 
 export interface PagerProps {
   readonly pageInfo: Maybe<PageInfo>;

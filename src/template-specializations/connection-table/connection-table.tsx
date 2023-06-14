@@ -1,11 +1,8 @@
-import {ReactElement} from 'react';
+import type {ReactElement} from 'react';
 
+import type {ConfigureFunction, ConnectionLike, Maybe, NodeLike} from '../..';
 import {
-  ConfigureFunction,
-  ConnectionLike,
   ConnectionTemplate,
-  Maybe,
-  NodeLike,
   Table as BaseTable,
   useConfiguredFieldIds,
   useFieldConfiguration,
@@ -19,7 +16,7 @@ import {
   ConnectionTableHeaderCell,
   ConnectionTableHeaderRow,
 } from './components';
-import {
+import type {
   ITable,
   ITableBody,
   ITableBodyCell,

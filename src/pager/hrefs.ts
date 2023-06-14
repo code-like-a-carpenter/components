@@ -1,8 +1,8 @@
 import url from 'url';
 
-import {RoutingContextType} from '../routing';
+import type {RoutingContextType} from '../routing';
 
-import {OffsetPageInfo, RelayPageInfo, SimplePageInfo} from './types';
+import type {OffsetPageInfo, RelayPageInfo, SimplePageInfo} from './types';
 
 /**
  * Generates an href for an offset paginator

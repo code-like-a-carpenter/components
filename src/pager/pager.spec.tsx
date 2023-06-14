@@ -1,6 +1,6 @@
 import {render} from '@testing-library/react';
 
-import {InstallationPageQuery} from '../sample-types';
+import type {InstallationPageQuery} from '../sample-types';
 
 import {Pager} from '.';
 

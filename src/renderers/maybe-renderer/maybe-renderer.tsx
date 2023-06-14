@@ -1,4 +1,5 @@
-import {useMemo, ComponentType} from 'react';
+import type {ComponentType} from 'react';
+import {useMemo} from 'react';
 
 import {NullRenderer} from '../null-renderer';
 

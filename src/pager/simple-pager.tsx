@@ -3,7 +3,7 @@ import {Pagination} from 'react-bootstrap';
 import {useRoutingContext} from '../routing';
 
 import {makeSimpleHref} from './hrefs';
-import {SimplePageInfo} from './types';
+import type {SimplePageInfo} from './types';
 
 export interface SimplePagerProps {
   readonly maxBeforeEllipsis?: number;

@@ -1,13 +1,14 @@
-import {ReactElement} from 'react';
+import type {ReactElement} from 'react';
 
-import {Maybe} from '../..';
-import {ConfigureFunction, ObjectTemplate} from '../../templates';
+import type {Maybe} from '../..';
+import type {ConfigureFunction} from '../../templates';
+import {ObjectTemplate} from '../../templates';
 
 import {
   ObjectDescriptionFieldWrapper,
   ObjectDescriptionWrapper,
 } from './components';
-import {
+import type {
   IObjectDescriptionFieldWrapper,
   IObjectDescriptionWrapper,
 } from './types';

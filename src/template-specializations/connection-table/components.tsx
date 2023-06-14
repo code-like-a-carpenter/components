@@ -1,3 +1,4 @@
+import type {NodeLike, IdType} from '../..';
 import {
   TableHeader,
   TableRow as TableHeaderRow,
@@ -5,12 +6,10 @@ import {
   TableBody,
   TableRow as TableBodyRow,
   TableBodyCell,
-  NodeLike,
-  IdType,
 } from '../..';
 import {useFieldConfiguration} from '../../templates';
 
-import {
+import type {
   TableHeaderProps,
   TableHeaderRowProps,
   TableHeaderCellProps,

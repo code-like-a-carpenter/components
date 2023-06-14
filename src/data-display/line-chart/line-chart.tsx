@@ -1,264 +1,107 @@
 import assert from 'assert';
 
-import {AxisBottom, AxisLeft} from '@visx/axis';
-import {curveMonotoneX} from '@visx/curve';
-import {localPoint} from '@visx/event';
-import {Grid} from '@visx/grid';
-import {Group} from '@visx/group';
+import {useMemo} from 'react';
 import {
-  ContinuousDomain,
-  scaleLinear,
-  scaleOrdinal,
-  scaleTime,
-} from '@visx/scale';
-import {Bar, LinePath} from '@visx/shape';
-import {useTooltip, useTooltipInPortal} from '@visx/tooltip';
-import {bisector, extent} from 'd3-array';
-import {ComponentType, MouseEvent, useMemo} from 'react';
+  CartesianGrid,
+  Legend,
+  Line,
+  LineChart as RechartsLineChart,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from 'recharts';
 
-import {TooltipData} from '../fact/types';
+import {useLocale} from '../../core';
+import {DateRenderer, NumberRenderer} from '../../renderers';
+import {Stringify} from '../../stringify';
+import type {Graphable} from '../types';
 
-import {Legend, LegendProps} from './legend';
-import {Markers, MarkersProps} from './markers';
-import {Datum, Graphable, LineSeries} from './types';
+import type {LineSeries} from './types';
 
 export interface LineChartProps {
+  animate?: boolean;
   readonly xMin?: number;
   readonly xMax?: number;
   readonly yMin?: number;
   readonly yMax?: number;
   readonly series: LineSeries[];
-  MarkersComponent?: ComponentType<MarkersProps>;
-  LegendComponent?: ComponentType<LegendProps>;
-}
-
-/** @internal */
-function getX({x}: Datum) {
-  return x instanceof Date ? x.getTime() : x;
-}
-
-/** @internal */
-function getY({y}: Datum) {
-  return y instanceof Date ? y.getTime() : y;
 }
 
 /**
  * @experimental This component gets the job done, but it's kinda ugly (both
  * visually and its API). It will likely change between major releases.
  */
-export const LineChart = ({
-  xMin,
-  xMax,
-  yMax,
-  yMin,
-  series,
-  LegendComponent = Legend,
-  MarkersComponent = Markers,
-}: LineChartProps) => {
-  const allData = useMemo(
-    () => series.reduce((acc, {data}) => acc.concat(data), [] as Datum[]),
-    [series]
-  );
+export const LineChart = ({animate = true, series}: LineChartProps) => {
+  const consolidated = useMemo(() => {
+    // maps each x value to its set of y values
+    const intermediate = new Map<number, Record<string, Graphable>>();
 
-  const xIsDates = useMemo(
-    () => allData.every(({x}) => x instanceof Date),
-    [allData]
-  );
-  const yIsDates = useMemo(
-    () => allData.every(({y}) => y instanceof Date),
-    [allData]
-  );
+    let xIsDate = false;
+    const xMap = new Map<number, Graphable>();
+    for (const {data, label} of series) {
+      for (const {x, y} of data) {
+        let rawX = x;
+        if (x instanceof Date) {
+          xIsDate = true;
+          rawX = x.getTime();
+          xMap.set(rawX, x);
+        }
+        assert(typeof rawX === 'number');
+        const datum = intermediate.get(rawX) ?? {};
+        intermediate.set(rawX, {
+          ...datum,
+          [label]: y,
+        });
+      }
+    }
 
-  const width = 500;
-  const height = width / 2;
-  const padding = 0.1 * width;
-
-  const boxHeight = height - padding;
-  const boxWidth = width - padding;
-
-  const halfPadding = padding / 2;
-
-  const xDomain = useMemo(
-    () => extent(allData, getX) as ContinuousDomain,
-    [allData]
-  );
-  const yDomain = useMemo(
-    () => extent(allData, getY) as ContinuousDomain,
-    [allData]
-  );
-
-  const xScale = useMemo(
-    () =>
-      (xIsDates ? scaleTime : scaleLinear)({
-        domain: [xMin ?? xDomain[0], xMax ?? xDomain[1]],
-        range: [halfPadding, boxWidth],
-      }),
-    [boxWidth, halfPadding, xDomain, xIsDates, xMax, xMin]
-  );
-
-  const yScale = useMemo(
-    () =>
-      (yIsDates ? scaleTime : scaleLinear)({
-        domain: [yMin ?? yDomain[0], yMax ?? yDomain[1]],
-        nice: true,
-        range: [boxHeight, halfPadding],
-      }),
-    [boxHeight, halfPadding, yDomain, yIsDates, yMax, yMin]
-  );
-
-  assert(
-    series.length < 9,
-    "We didn't expect more than 9 series for this component. Please open an issue so we can add more colors"
-  );
-  const legendScale = useMemo(
-    () =>
-      scaleOrdinal({
-        domain: series.map(({label}) => label),
-        // These are the standard bootstrap colors
-        range: [
-          'blue',
-          'indigo',
-          // purple and indigo look really close, so we'll skip one
-          // 'purple',
-          'pink',
-          'red',
-          'orange',
-          'yellow',
-          'green',
-          'teal',
-          'cyan',
-        ],
-      }),
-    [series]
-  );
-
-  const bisect = useMemo(() => bisector<Datum, Graphable>((d) => d.x).left, []);
-
-  const numTicksColumns = 6;
-  const numTicksRows = undefined;
-
-  const {
-    tooltipData,
-    tooltipLeft = 0,
-    tooltipTop = 0,
-    tooltipOpen,
-    showTooltip,
-    hideTooltip,
-  } = useTooltip<TooltipData>();
-
-  const {containerRef, TooltipInPortal} = useTooltipInPortal({
-    detectBounds: true,
-    scroll: true,
-  });
-
-  const handleMouseOver = (
-    event: MouseEvent<SVGRectElement | SVGPathElement>
-  ) => {
-    const coordinates = localPoint(event);
-
-    // eslint-disable-next-line prefer-destructuring
-    // The react typedefs clobber the dom typedefs here, so we have to force it.
-    const target: SVGGeometryElement =
-      event.target as unknown as SVGGeometryElement;
-
-    if (coordinates) {
-      const xValue = xScale.invert(coordinates.x);
-
-      showTooltip({
-        tooltipData: {
-          coordinates,
-          seriesName: target.dataset.series,
-          values: Object.fromEntries(
-            series.map(({label, data}) => {
-              const index = bisect(data, xValue, 1);
-              return [label, data[index].y];
-            })
-          ),
-          xValue,
-        },
-        tooltipLeft: coordinates.x,
-        tooltipTop: coordinates.y,
+    const raw = [];
+    for (const [x, datum] of intermediate.entries()) {
+      raw.push({
+        ...datum,
+        x: xIsDate ? xMap.get(x) : x,
       });
     }
-  };
+    return raw;
+  }, [series]);
+
+  const locale = useLocale();
+  const df = new Intl.DateTimeFormat(locale.language, {dateStyle: 'medium'});
 
   return (
     <>
-      <div className="d-flex flex-column justify-content-center align-items-center">
-        <svg
-          ref={containerRef}
-          viewBox={`0 0 ${width} ${height}`}
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <Grid
-            xScale={xScale}
-            yScale={yScale}
-            width={boxWidth}
-            height={boxHeight}
-            numTicksColumns={numTicksColumns}
-            numTicksRows={numTicksRows}
-            stroke="var(--bs-secondary-bg)"
+      <ResponsiveContainer width="100%" height="100%">
+        <RechartsLineChart data={consolidated}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis
+            dataKey="x"
+            tickFormatter={(value) =>
+              value instanceof Date ? df.format(value) : value
+            }
+          />
+          <YAxis />
+          <Tooltip
+            labelFormatter={(value) =>
+              value instanceof Date ? (
+                <DateRenderer value={value} />
+              ) : (
+                <NumberRenderer value={value} />
+              )
+            }
           />
 
-          <AxisBottom
-            numTicks={numTicksColumns}
-            scale={xScale}
-            stroke={'var(--bs-secondary-color)'}
-            top={boxHeight}
-          />
-          <AxisLeft
-            left={halfPadding}
-            numTicks={numTicksRows}
-            scale={yScale}
-            stroke={'var(--bs-secondary-color)'}
-          />
-
-          <Bar
-            x={halfPadding}
-            y={0}
-            fill={'transparent'}
-            width={boxWidth - halfPadding}
-            height={height}
-            onMouseMove={handleMouseOver}
-            onMouseOut={hideTooltip}
-          />
-
-          {series.map(({data, label}, index) => (
-            <Group key={index}>
-              <LinePath
-                data={data}
-                data-series={label}
-                x={({x}) => xScale(x)}
-                y={({y}) => yScale(y)}
-                stroke={legendScale(label)}
-                strokeWidth={1}
-                curve={curveMonotoneX}
-                onMouseMove={handleMouseOver}
-                onMouseOut={hideTooltip}
-              />
-            </Group>
-          ))}
-
-          {tooltipOpen && tooltipData && (
-            <MarkersComponent
-              top={tooltipTop}
-              left={tooltipLeft}
-              data={tooltipData}
-              PortaledTooltip={TooltipInPortal}
-              xScale={xScale}
-              yScale={yScale}
-              legendScale={legendScale}
-              padding={padding}
-              boxHeight={boxHeight}
-              boxWidth={boxWidth}
+          {series.length > 1 && <Legend />}
+          {series.map((s) => (
+            <Line
+              isAnimationActive={animate}
+              dataKey={s.label}
+              name={s.label}
+              key={s.label}
             />
-          )}
-        </svg>
-
-        {series.length > 1 && (
-          <LegendComponent scale={legendScale} tooltipData={tooltipData} />
-        )}
-      </div>
+          ))}
+        </RechartsLineChart>
+      </ResponsiveContainer>
     </>
   );
 };

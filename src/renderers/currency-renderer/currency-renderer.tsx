@@ -2,7 +2,7 @@ import React, {createContext, useMemo} from 'react';
 
 import {useLocale} from '../../core';
 import {useContextWithPropOverrides} from '../../support';
-import {RendererProps} from '../types';
+import type {RendererProps} from '../types';
 
 export type CurrencyRendererContextType = Omit<
   Intl.NumberFormatOptions,

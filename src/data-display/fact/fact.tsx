@@ -1,9 +1,10 @@
-import {ComponentProps, ReactNode} from 'react';
+import type {ComponentProps, ReactNode} from 'react';
 
-import {Renderer} from '../../renderers';
+import type {Renderer} from '../../renderers';
 import {useContextWithPropOverrides} from '../../support';
 
-import {FactContext, FactContextProps} from './context';
+import type {FactContextProps} from './context';
+import {FactContext} from './context';
 
 export type FactProps<
   T extends unknown,

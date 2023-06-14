@@ -1,242 +1,156 @@
-import {scaleLinear} from '@visx/scale';
-import {Arc} from '@visx/shape';
 import {useMemo} from 'react';
+import {Label, LabelList, Pie, PieChart, ResponsiveContainer} from 'recharts';
 
-import {
-  NumberRenderer,
-  NumberRendererProps,
-  Renderer,
-  RendererProps,
-} from '../../renderers';
+import {useLocale} from '../../core';
+import type {RendererProps} from '../../renderers';
 
-export type GaugeProps<
-  R extends Renderer<number> = typeof NumberRenderer,
-  P extends Omit<RendererProps<number>, 'value'> = Omit<
-    NumberRendererProps,
-    'value'
-  >
-> = RendererProps<number> & {
+export interface GaugeProps extends RendererProps<number> {
+  animate?: boolean;
   max: number;
   min: number;
-  ValueRenderer?: R;
-  valueRendererProps?: P;
-};
-
-/** @internal */
-function polarToCartesian({radius, angle}: {radius: number; angle: number}) {
-  return {
-    x: radius * Math.cos(angle),
-    y: radius * Math.sin(angle),
-  };
+  labelFormatter?: (value: number) => string;
+  valueFormatter?: (value: number) => string;
 }
-
-interface TickProps<
-  R extends Renderer<number> = typeof NumberRenderer,
-  P extends Omit<RendererProps<number>, 'value'> = Omit<
-    NumberRendererProps,
-    'value'
-  >
-> {
-  angle: number;
-  fill: string;
-  label: number;
-  radius: number;
-  ValueRenderer: R;
-  valueRendererProps?: P;
-}
-
-const Tick = ({
-  angle: rawAngle,
-  fill,
-  label,
-  radius,
-  ValueRenderer,
-  valueRendererProps,
-}: TickProps) => {
-  const angleValue = rawAngle - Math.PI * 0.5;
-  const tickLength = 8;
-  const tickFrom = polarToCartesian({angle: angleValue, radius});
-  const tickTo = polarToCartesian({
-    angle: angleValue,
-    radius: radius + tickLength,
-  });
-
-  const textAnchor =
-    Math.abs(rawAngle) < 0.25 ? 'middle' : rawAngle < 0 ? 'end' : 'start';
-
-  const point = polarToCartesian({
-    angle: angleValue,
-    radius: radius + tickLength + 4,
-  });
-
-  return (
-    <>
-      <line
-        stroke={'black'}
-        strokeWidth={1}
-        x1={tickFrom.x}
-        x2={tickTo.x}
-        y1={tickFrom.y}
-        y2={tickTo.y}
-        fill={fill}
-      />
-      <text
-        x={point.x}
-        y={point.y}
-        textAnchor={textAnchor}
-        dy={'0.25em'}
-        fill={fill}
-      >
-        <ValueRenderer value={label} {...valueRendererProps} />
-      </text>
-    </>
-  );
-};
 
 export const Gauge = ({
+  animate = true,
   max,
   min,
   value,
-  ValueRenderer = NumberRenderer,
-  valueRendererProps,
+  labelFormatter,
+  valueFormatter,
 }: GaugeProps) => {
-  const colorVar = useMemo(() => {
-    if (value < min) {
-      return '--bs-danger';
-    }
-
-    if (value > max) {
-      return '--bs-danger';
-    }
-
-    return '--bs-success';
-  }, [max, min, value]);
+  const locale = useLocale();
+  const nf = useMemo(() => new Intl.NumberFormat(locale.language), [locale]);
+  labelFormatter = useMemo(
+    () => labelFormatter ?? nf.format.bind(nf),
+    [labelFormatter, nf]
+  );
+  valueFormatter = useMemo(
+    () => valueFormatter ?? nf.format.bind(nf),
+    [nf, valueFormatter]
+  );
 
   let low = min;
   let high = max;
 
+  const range = Math.abs(max - min);
   if (value < min) {
-    const range = Math.abs(max - min);
     low = min;
     min = value - Math.round(0.3 * range);
   }
 
   if (value > max) {
-    const range = Math.abs(max - min);
     high = max;
     max = value + Math.round(0.3 * range);
   }
 
-  const width = 500;
-  const height = width;
+  const colorVar = useMemo(() => {
+    if (value < low) {
+      return 'danger';
+    }
 
-  const padding = width * 0.12;
+    if (value > high) {
+      return 'danger';
+    }
 
-  const startAngle = useMemo(() => (-Math.PI / 2) * 1.1, []);
-  const maxLength = useMemo(() => Math.PI * 1.1, []);
-  const endAngle = startAngle + maxLength;
+    return 'success';
+  }, [high, low, value]);
 
-  const scale = scaleLinear({
-    domain: [min, max],
-    range: [startAngle, endAngle],
-  });
+  const rangeData = useMemo(
+    () => [
+      {label: min, value: 0},
+      {fill: 'var(--bs-danger)', value: Math.abs(low - min) / range},
+      {label: low, value: 0},
+      {fill: 'var(--bs-success)', value: Math.abs(high - low) / range},
+      {label: high, value: 0},
+      {fill: 'var(--bs-danger)', value: Math.abs(max - high) / range},
+      {label: max, value: 0},
+    ],
+    [high, low, max, min, range]
+  );
 
-  const axisRadius = width / 2 - padding;
-  const axisWidth = 3;
-  const axisOuterRadius = axisRadius + axisWidth;
+  const valueData = useMemo(() => {
+    if (value < low) {
+      return [
+        {
+          value: Math.abs(value - min) / range,
+        },
+        {
+          fill: `var(--bs-${colorVar})`,
+          stroke: `var(--bs-${colorVar}-border-subtle)`,
+          value: Math.abs(low - value) / range,
+        },
+        {
+          value: Math.abs(max - low) / range,
+        },
+      ];
+    }
+    return [
+      {
+        fill: `var(--bs-${colorVar})`,
+        stroke: `var(--bs-${colorVar}-border-subtle)`,
+        value: Math.abs(value - min) / range,
+      },
+      {
+        value: Math.abs(max - value) / range,
+      },
+    ];
+  }, [colorVar, low, max, min, range, value]);
 
-  const gaugeGap = axisWidth / 2;
-
-  const gaugeWidth = axisWidth * 5;
-  const gaugeRadius = axisRadius - gaugeGap - gaugeWidth;
-  const gaugeOuterRadius = axisRadius - gaugeGap;
-
-  const cos = Math.abs(Math.cos(startAngle)) * axisRadius;
-  const cosWithPadding = cos + padding;
-
-  const boxHeight = height / 2 + cosWithPadding;
+  const rangeOuterRadius = 60;
+  const rangeInnerRadius = rangeOuterRadius - 5;
+  const valueOuterRadius = rangeInnerRadius - 1;
+  const valueInnerRadius = valueOuterRadius - 14;
 
   return (
     <>
-      <svg
-        viewBox={`-${width / 2} -${(boxHeight / 3) * 2} ${width} ${boxHeight}`}
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <Arc
-          innerRadius={axisRadius}
-          outerRadius={axisOuterRadius}
-          startAngle={scale(min)}
-          endAngle={scale(low)}
-          fill={`var(--bs-danger)`}
-        />
-        <Arc
-          innerRadius={axisRadius}
-          outerRadius={axisOuterRadius}
-          startAngle={scale(low)}
-          endAngle={scale(high)}
-          fill={`var(--bs-success)`}
-        />
-        <Arc
-          innerRadius={axisRadius}
-          outerRadius={axisOuterRadius}
-          startAngle={scale(high)}
-          endAngle={scale(max)}
-          fill={`var(--bs-danger)`}
-        />
-
-        <Arc
-          innerRadius={gaugeRadius}
-          outerRadius={gaugeOuterRadius}
-          startAngle={scale(low)}
-          endAngle={value > 0 ? scale(max) : scale(min)}
-          opacity={0.05}
-          fill={`var(${colorVar})`}
-        />
-        <Arc
-          innerRadius={gaugeRadius}
-          outerRadius={gaugeOuterRadius}
-          startAngle={scale(low)}
-          endAngle={scale(value)}
-          fill={`var(${colorVar})`}
-        />
-
-        <Tick
-          label={min}
-          radius={axisRadius}
-          angle={scale(min)}
-          fill="var(--bs-secondary)"
-          ValueRenderer={ValueRenderer}
-          valueRendererProps={valueRendererProps}
-        />
-        <Tick
-          label={low}
-          radius={axisRadius}
-          angle={scale(low)}
-          fill="var(--bs-secondary)"
-          ValueRenderer={ValueRenderer}
-          valueRendererProps={valueRendererProps}
-        />
-        <Tick
-          label={high}
-          radius={axisRadius}
-          angle={scale(high)}
-          fill="var(--bs-secondary)"
-          ValueRenderer={ValueRenderer}
-          valueRendererProps={valueRendererProps}
-        />
-        <Tick
-          label={max}
-          radius={axisRadius}
-          angle={scale(max)}
-          fill="var(--bs-secondary)"
-          ValueRenderer={ValueRenderer}
-          valueRendererProps={valueRendererProps}
-        />
-
-        <text dominantBaseline={'middle'} textAnchor={'middle'} fontSize="300%">
-          <ValueRenderer value={value} {...valueRendererProps} />
-        </text>
-      </svg>
+      <ResponsiveContainer>
+        <PieChart>
+          <Pie
+            isAnimationActive={animate}
+            data={valueData}
+            dataKey="value"
+            nameKey="label"
+            cx="50%"
+            cy="50%"
+            fill="transparent"
+            stroke="transparent"
+            innerRadius={`${valueInnerRadius}%`}
+            outerRadius={`${valueOuterRadius}%`}
+            startAngle={210}
+            endAngle={-30}
+          >
+            <Label
+              fill={`var(--bs-${colorVar}`}
+              stroke={`var(--bs-${colorVar}`}
+              position={'center'}
+            >
+              {valueFormatter(value)}
+            </Label>
+          </Pie>
+          <Pie
+            isAnimationActive={animate}
+            data={rangeData}
+            dataKey="value"
+            nameKey="label"
+            cx="50%"
+            cy="50%"
+            innerRadius={`${rangeInnerRadius}%`}
+            outerRadius={`${rangeOuterRadius}%`}
+            startAngle={210}
+            endAngle={-30}
+          >
+            <LabelList
+              fill={`var(--bs-${colorVar}`}
+              stroke="transparent"
+              dataKey={'label'}
+              position={'outside'}
+              formatter={labelFormatter}
+            />
+          </Pie>
+        </PieChart>
+      </ResponsiveContainer>
     </>
   );
 };

@@ -1,9 +1,10 @@
-import {ReactElement} from 'react';
+import type {ReactElement} from 'react';
 
-import {ConnectionLike, IdType, Maybe, NodeLike, useEdgeNodes} from '../..';
+import type {ConnectionLike, IdType, Maybe, NodeLike} from '../..';
+import {useEdgeNodes} from '../..';
 import {ArrayTemplate} from '../array-template';
-import {ConfigureFunction} from '../configuration';
-import {
+import type {ConfigureFunction} from '../configuration';
+import type {
   FieldWrapperType,
   ItemWrapperType,
   TemplateWrapperType,

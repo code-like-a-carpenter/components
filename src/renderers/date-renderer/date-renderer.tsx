@@ -5,7 +5,7 @@ import {createContext} from 'react';
 
 import {useContextWithPropOverrides} from '../../support';
 import {NullRenderer} from '../null-renderer';
-import {RendererProps} from '../types';
+import type {RendererProps} from '../types';
 
 export interface DateRendererContextProps {
   readonly format?: Intl.DateTimeFormatOptions;

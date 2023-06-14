@@ -1,10 +1,8 @@
-import {ReactElement} from 'react';
+import type {ReactElement} from 'react';
 
+import type {ConfigureFunction, IdType, Maybe} from '../..';
 import {
   ArrayTemplate,
-  ConfigureFunction,
-  IdType,
-  Maybe,
   Table as BaseTable,
   useConfiguredFieldIds,
   useFieldConfiguration,
@@ -18,7 +16,7 @@ import {
   ArrayTableHeaderCell,
   ArrayTableHeaderRow,
 } from './components';
-import {
+import type {
   ITable,
   ITableBody,
   ITableBodyCell,

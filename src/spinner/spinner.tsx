@@ -1,7 +1,5 @@
-import {
-  Spinner as BootstrapSpinner,
-  SpinnerProps as BootstrapSpinnerProps,
-} from 'react-bootstrap';
+import type {SpinnerProps as BootstrapSpinnerProps} from 'react-bootstrap';
+import {Spinner as BootstrapSpinner} from 'react-bootstrap';
 
 export type SpinnerProps = Omit<BootstrapSpinnerProps, 'animation'> &
   Partial<Pick<BootstrapSpinnerProps, 'animation'>> & {

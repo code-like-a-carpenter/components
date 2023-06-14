@@ -1,13 +1,10 @@
 import startCase from 'lodash/startCase';
-import React, {
-  createContext,
-  PropsWithChildren,
-  ReactNode,
-  useContext,
-} from 'react';
+import type {PropsWithChildren, ReactNode} from 'react';
+import React, {createContext, useContext} from 'react';
 
-import {AnyRenderer, FieldWrapperType} from '../..';
-import {Renderer} from '../../renderers';
+import type {FieldWrapperType} from '../..';
+import {AnyRenderer} from '../..';
+import type {Renderer} from '../../renderers';
 
 export interface FieldConfiguration {
   label: ReactNode;

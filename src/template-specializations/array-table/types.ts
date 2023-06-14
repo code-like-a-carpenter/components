@@ -1,7 +1,7 @@
-import {ElementType, PropsWithChildren, ReactElement} from 'react';
+import type {ElementType, PropsWithChildren, ReactElement} from 'react';
 
-import {Maybe, IdType, ItemWrapperProps, FieldWrapperProps} from '../..';
-import {TemplateWrapperProps} from '../../templates';
+import type {Maybe, IdType, ItemWrapperProps, FieldWrapperProps} from '../..';
+import type {TemplateWrapperProps} from '../../templates';
 
 export interface TableProps<T extends object> {
   data: Maybe<Maybe<T>[]>;

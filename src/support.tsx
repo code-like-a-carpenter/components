@@ -1,14 +1,13 @@
 import cx from 'classnames';
-import React, {
+import type {
   Component as ReactComponent,
   ComponentProps,
   Context,
   ElementType,
   HTMLProps,
   ReactElement,
-  forwardRef,
-  useContext,
 } from 'react';
+import React, {forwardRef, useContext} from 'react';
 
 /**
  * Like useContext, but allows for prop-defined overrides. Useful for e.g. theme

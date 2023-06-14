@@ -1,7 +1,7 @@
 import {render} from '@testing-library/react';
 
-import {ComplexPerson, SimplePerson} from '../../mocks';
-import {InstallationPageQuery} from '../../sample-types';
+import type {ComplexPerson, SimplePerson} from '../../mocks';
+import type {InstallationPageQuery} from '../../sample-types';
 
 import {ObjectDescription} from '.';
 

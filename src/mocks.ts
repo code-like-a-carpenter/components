@@ -1,6 +1,6 @@
 import {faker} from '@faker-js/faker';
 
-import {OffsetPageInfo, RelayPageInfo} from './pager/types';
+import type {OffsetPageInfo, RelayPageInfo} from './pager/types';
 
 /**
  * Generates a mathematically valid Offset Page Info

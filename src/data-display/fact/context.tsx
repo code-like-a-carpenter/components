@@ -1,9 +1,10 @@
 import {createContext} from 'react';
 
-import {AnyRenderer, Renderer as RendererType} from '../../renderers';
+import type {Renderer as RendererType} from '../../renderers';
+import {AnyRenderer} from '../../renderers/any-renderer/any-renderer';
 
 import {FactCard} from './fact-card';
-import {FactContainer} from './types';
+import type {FactContainer} from './types';
 
 export interface FactContextProps {
   Container: FactContainer;

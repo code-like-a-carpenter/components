@@ -1,4 +1,5 @@
-import {makeComplexPeople, makeSimplePeople, SimplePerson} from '../../mocks';
+import type {SimplePerson} from '../../mocks';
+import {makeComplexPeople, makeSimplePeople} from '../../mocks';
 import {CurrencyRenderer} from '../../renderers';
 
 import {ArrayTemplate} from './array-template';

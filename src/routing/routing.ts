@@ -1,4 +1,5 @@
-import querystring, {ParsedUrlQuery} from 'querystring';
+import type {ParsedUrlQuery} from 'querystring';
+import querystring from 'querystring';
 
 import {createContext, useContext} from 'react';
 

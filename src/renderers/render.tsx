@@ -1,9 +1,10 @@
-import {ComponentProps, createContext} from 'react';
+import type {ComponentProps} from 'react';
+import {createContext} from 'react';
 
 import {useContextWithPropOverrides} from '../support';
 
 import {AnyRenderer} from './any-renderer';
-import {Renderer} from './types';
+import type {Renderer} from './types';
 
 export interface RenderContextProps {
   readonly Renderer?: Renderer;
