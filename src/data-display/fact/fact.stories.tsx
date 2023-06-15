@@ -1,9 +1,11 @@
 import assert from 'assert';
 
 import {faker} from '@faker-js/faker';
+import type {Meta} from '@storybook/react';
 import {useCallback, useContext} from 'react';
-import {Card} from 'react-bootstrap';
 
+import {Card} from '../../card';
+import {Section} from '../../outline';
 import {
   ByteRenderer,
   CurrencyRenderer,
@@ -17,10 +19,21 @@ import {FactContext} from './context';
 import {Fact} from './fact';
 import type {FactContainer} from './types';
 
-export default {
+const meta: Meta<typeof Fact> = {
   component: Fact,
+  decorators: [
+    (Story) => (
+      <Section>
+        <Section>
+          <Story />
+        </Section>
+      </Section>
+    ),
+  ],
   title: 'Data Display/Fact',
 };
+
+export default meta;
 
 /**
  * Here's what a Check Run Reporter account page might look like rendered using
