@@ -7,7 +7,7 @@ import type {
   HTMLProps,
   ReactElement,
 } from 'react';
-import React, {forwardRef, useContext} from 'react';
+import {forwardRef, useContext} from 'react';
 
 /**
  * Like useContext, but allows for prop-defined overrides. Useful for e.g. theme

@@ -1,6 +1,6 @@
 import cx from 'classnames';
 import type {ComponentProps, HTMLProps, ReactNode} from 'react';
-import React, {Children, useContext, useMemo} from 'react';
+import {Children, useContext, useMemo} from 'react';
 
 import type {Renderer} from '../renderers';
 import {AnyRenderer} from '../renderers';

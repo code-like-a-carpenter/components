@@ -1,5 +1,5 @@
 import type {PropsWithChildren} from 'react';
-import React, {createContext, useContext} from 'react';
+import {createContext, useContext} from 'react';
 
 export const LevelContext = createContext({
   outlineLevel: 0,

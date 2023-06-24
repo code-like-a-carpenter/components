@@ -1,6 +1,6 @@
 import startCase from 'lodash/startCase';
 import type {PropsWithChildren, ReactNode} from 'react';
-import React, {createContext, useContext} from 'react';
+import {createContext, useContext} from 'react';
 
 import type {FieldWrapperType} from '../..';
 import {AnyRenderer} from '../..';

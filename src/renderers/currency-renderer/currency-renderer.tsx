@@ -1,4 +1,4 @@
-import React, {createContext, useMemo} from 'react';
+import {createContext, useMemo} from 'react';
 
 import {useLocale} from '../../core';
 import {useContextWithPropOverrides} from '../../support';

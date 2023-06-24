@@ -1,5 +1,5 @@
 import type {PropsWithChildren, ComponentType} from 'react';
-import React, {useContext, useState, createContext} from 'react';
+import {useContext, useState, createContext} from 'react';
 import type {CardProps as BootstrapCardProps} from 'react-bootstrap';
 import {Card as BootstrapCard} from 'react-bootstrap';
 
