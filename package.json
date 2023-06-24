@@ -3,8 +3,13 @@
   "version": "0.0.0-development",
   "description": "A collection of components I can use accross projects",
   "bin": {},
-  "main": "./dist/cjs/index.js",
-  "module": "./dist/esm/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    },
+    "./package.json": "./package.json"
+  },
   "types": "./dist/types/index.d.ts",
   "sass": "src/style.scss",
   "style": "dist/style.css",
@@ -15,10 +20,11 @@
   "scripts": {
     "build": "npm-run-all build:*",
     "prebuild:cjs": "rimraf dist/cjs",
-    "build:cjs": "BUILD_TARGET=cjs babel --source-maps --extensions '.js,.ts,.tsx' -d dist/cjs src",
+    "find-files-to-build": "find ./src -name '*.stories.tsx' -prune -o -name '*.spec.*' -prune -o -name '*.tsx' -print -o -name '*.ts' -print",
+    "build:cjs": "esbuild $(npm run --silent find-files-to-build) --format=cjs --outdir=dist/cjs --platform=node --sourcemap=external",
     "postbuild:cjs": "rimraf 'dist/**/*.stories.*' 'dist/**/*.spec.*'",
     "prebuild:esm": "rimraf dist/esm",
-    "build:esm": "BUILD_TARGET=esm babel --source-maps --extensions '.js,.ts,.tsx' -d dist/esm src",
+    "build:esm": "esbuild $(npm run --silent find-files-to-build) --format=esm --outdir=dist/esm --platform=node --sourcemap=external",
     "postbuild:esm": "rimraf 'dist/**/*.stories.*' 'dist/**/*.spec.*'",
     "build:readme": "markdown-toc -i --bullets='-' --maxdepth=3  README.md  && prettier --write README.md",
     "build:styles": "sass src/style.scss dist/style.css",
@@ -88,6 +94,7 @@
     "@typescript-eslint/parser": "^5.59.7",
     "@visx/mock-data": "^3.0.0",
     "chromatic": "^6.17.4",
+    "esbuild": "^0.18.9",
     "eslint": "^8.41.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-babel": "^5.3.1",
