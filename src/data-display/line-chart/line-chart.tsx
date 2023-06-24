@@ -14,7 +14,6 @@ import {
 
 import {useLocale} from '../../core';
 import {DateRenderer, NumberRenderer} from '../../renderers';
-import {Stringify} from '../../stringify';
 import type {Graphable} from '../types';
 
 import type {LineSeries} from './types';
