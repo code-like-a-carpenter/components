@@ -7,7 +7,7 @@ import type {
   HTMLProps,
   ReactElement,
 } from 'react';
-import {forwardRef, useContext} from 'react';
+import {forwardRef, useContext, useMemo} from 'react';
 
 /**
  * Like useContext, but allows for prop-defined overrides. Useful for e.g. theme
@@ -22,10 +22,13 @@ export function useContextWithPropOverrides<T>(
   propValues: Partial<T>
 ): T {
   const contextValues = useContext(context);
-  return {
-    ...contextValues,
-    ...propValues,
-  };
+  return useMemo(
+    () => ({
+      ...contextValues,
+      ...propValues,
+    }),
+    [contextValues, propValues]
+  );
 }
 
 /**
