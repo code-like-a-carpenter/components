@@ -1,35 +1,43 @@
-import {useMemo} from 'react';
+import {createContext, useMemo} from 'react';
 import {Label, LabelList, Pie, PieChart, ResponsiveContainer} from 'recharts';
 
 import {useLocale} from '../../core';
-import type {RendererProps} from '../../renderers';
+import type {Renderer, RendererProps} from '../../renderers';
+import {useContextWithPropOverrides} from '../../support';
 
-export interface GaugeProps extends RendererProps<number> {
-  animate?: boolean;
-  max: number;
-  min: number;
-  labelFormatter?: (value: number) => string;
-  valueFormatter?: (value: number) => string;
+export interface GaugeContextType {
+  readonly animate: boolean;
+  readonly labelFormatter?: (value: number) => string;
+  readonly valueFormatter?: (value: number) => string;
 }
 
-export const Gauge = ({
-  animate = true,
-  max,
+export const GaugeContext = createContext<GaugeContextType>({
+  animate: true,
+});
+
+export type GaugeProps = RendererProps<
+  number,
+  GaugeContextType,
+  Partial<GaugeContextType> & {
+    max: number;
+    min: number;
+  }
+>;
+
+export const Gauge: Renderer<number, GaugeContextType, GaugeProps> = ({
   min,
+  max,
   value,
-  labelFormatter,
-  valueFormatter,
+  ...rest
 }: GaugeProps) => {
   const locale = useLocale();
   const nf = useMemo(() => new Intl.NumberFormat(locale.language), [locale]);
-  labelFormatter = useMemo(
-    () => labelFormatter ?? nf.format.bind(nf),
-    [labelFormatter, nf]
-  );
-  valueFormatter = useMemo(
-    () => valueFormatter ?? nf.format.bind(nf),
-    [nf, valueFormatter]
-  );
+
+  const {
+    animate,
+    labelFormatter = nf.format,
+    valueFormatter = nf.format,
+  } = useContextWithPropOverrides(GaugeContext, rest);
 
   let low = min;
   let high = max;

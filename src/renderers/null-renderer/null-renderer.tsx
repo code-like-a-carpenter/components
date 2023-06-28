@@ -1,10 +1,11 @@
+import type {ReactNode} from 'react';
 import {createContext} from 'react';
 
 import {useContextWithPropOverrides} from '../../support';
-import type {RendererDefault, RendererProps} from '../types';
+import type {RendererProps} from '../types';
 
 export interface NullRendererContextType {
-  readonly null: RendererDefault;
+  readonly null: ReactNode;
 }
 
 export const NullRendererContext = createContext<NullRendererContextType>({

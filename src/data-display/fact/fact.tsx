@@ -1,21 +1,17 @@
-import type {ComponentProps, ReactNode} from 'react';
+import type {ReactNode} from 'react';
 
-import type {Renderer} from '../../renderers';
+import type {Renderer, RendererProps} from '../../renderers';
 import {useContextWithPropOverrides} from '../../support';
 
 import type {FactContextProps} from './context';
 import {FactContext} from './context';
 
-export type FactProps<
-  T extends unknown,
-  C extends unknown,
-  R extends Renderer<T, C>
-> = {
+export type FactProps<T extends unknown, R> = {
   label: ReactNode;
   value: T;
   Renderer?: R;
-} & ComponentProps<R> &
-  Partial<FactContextProps>;
+} & Partial<FactContextProps> &
+  (R extends Renderer<T, infer C, infer P> ? RendererProps<T, C, P> : unknown);
 
 /**
  * Fact doesn't do much on its own (though it comes with defaults that do some
@@ -30,15 +26,11 @@ export type FactProps<
  * @param rest
  * @constructor
  */
-export const Fact = <
-  T extends unknown,
-  C extends unknown,
-  R extends Renderer<T, C>
->({
+export const Fact = <T extends unknown, R>({
   label,
   value,
   ...rest
-}: FactProps<T, C, R>) => {
+}: FactProps<T, R>) => {
   const {
     Container,
     Renderer: Component,

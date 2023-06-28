@@ -1,11 +1,12 @@
+import type {ReactNode} from 'react';
 import {createContext} from 'react';
 
 import {useContextWithPropOverrides} from '../../support';
-import type {RendererDefault, RendererProps} from '../types';
+import type {RendererProps} from '../types';
 
 export interface BooleanRendererContextType {
-  readonly no: RendererDefault;
-  readonly yes: RendererDefault;
+  readonly no: ReactNode;
+  readonly yes: ReactNode;
 }
 
 export const BooleanRendererContext = createContext<BooleanRendererContextType>(
