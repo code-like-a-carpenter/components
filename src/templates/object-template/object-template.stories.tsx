@@ -19,7 +19,7 @@ export const Default = () => (
         <FieldConfigurer field="lastName" />
         <FieldConfigurer
           field="householdIncome"
-          renderer={CurrencyRenderer}
+          Renderer={CurrencyRenderer}
           currency="GBP"
         />
         <FieldConfigurer field="age" />
@@ -40,7 +40,7 @@ export const OutOfOrder = () => (
         <FieldConfigurer field="firstName" />
         <FieldConfigurer
           field="householdIncome"
-          renderer={CurrencyRenderer}
+          Renderer={CurrencyRenderer}
           currency="GBP"
         />
         <FieldConfigurer field="signUpDate" />
@@ -61,6 +61,12 @@ export const DuplicateFields = () => (
         <FieldConfigurer field="lastName" />
         <FieldConfigurer
           field="householdIncome"
+          Renderer={CurrencyRenderer}
+          currency="GBP"
+        />
+        <FieldConfigurer
+          field="householdIncome"
+          label="Household Income Duplicate"
           renderer={CurrencyRenderer}
           currency="GBP"
         />
@@ -69,7 +75,7 @@ export const DuplicateFields = () => (
         <FieldConfigurer
           field="signUpDate"
           label="Epoch Time"
-          renderer={({value}) => <>{value.getTime()}</>}
+          Renderer={({value}) => <>{value.getTime()}</>}
         />
       </>
     )}
@@ -102,7 +108,7 @@ export const NestedData = () => (
         />
         <FieldConfigurer
           field="householdIncome"
-          renderer={CurrencyRenderer}
+          Renderer={CurrencyRenderer}
           currency="GBP"
         />
         <FieldConfigurer field="signUpDate" />
@@ -123,7 +129,7 @@ export const NestedDataWithFlatFields = () => (
         <FieldConfigurer field="name.last" />
         <FieldConfigurer
           field="householdIncome"
-          renderer={CurrencyRenderer}
+          Renderer={CurrencyRenderer}
           currency="GBP"
         />
         <FieldConfigurer field="signUpDate" />
@@ -144,7 +150,7 @@ export const DefaultNoOp = () => (
         <FieldConfigurer field="lastName" />
         <FieldConfigurer
           field="householdIncome"
-          renderer={CurrencyRenderer}
+          Renderer={CurrencyRenderer}
           currency="GBP"
         />
         <FieldConfigurer field="age" />
@@ -171,7 +177,7 @@ export const RawHtmlWrappers = () => (
         <FieldConfigurer field="lastName" />
         <FieldConfigurer
           field="householdIncome"
-          renderer={CurrencyRenderer}
+          Renderer={CurrencyRenderer}
           currency="GBP"
         />
         <FieldConfigurer field="age" />
@@ -205,7 +211,7 @@ export const NullData = () => (
         <FieldConfigurer field="lastName" />
         <FieldConfigurer
           field="householdIncome"
-          renderer={CurrencyRenderer}
+          Renderer={CurrencyRenderer}
           currency="GBP"
         />
         <FieldConfigurer field="age" />
@@ -230,7 +236,7 @@ export const CustomFieldWrapper = () => (
         <FieldConfigurer field="lastName" />
         <FieldConfigurer
           field="householdIncome"
-          renderer={CurrencyRenderer}
+          Renderer={CurrencyRenderer}
           currency="GBP"
         />
         <FieldConfigurer field="age" />

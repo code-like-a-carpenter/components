@@ -9,11 +9,14 @@ import type {Renderer} from '../../renderers';
 export interface FieldConfiguration {
   label: ReactNode;
   keyPath: string;
-  renderer: Renderer;
+  Renderer: Renderer;
   wrapper?: FieldWrapperType<object>;
 }
 
-export type FieldConfigurationWithDefaults = Partial<FieldConfiguration>;
+export type FieldConfigurationWithDefaults = Partial<FieldConfiguration> & {
+  /** @deprecated Please use Renderer */
+  renderer: Renderer;
+};
 
 export type ConfigureFieldFunction = (
   fid: string,
@@ -53,13 +56,14 @@ export const FieldConfigurationProvider = ({
       {
         label = startCase(keyPath),
         renderer = AnyRenderer,
+        Renderer = renderer,
         ...config
       }: FieldConfigurationWithDefaults
     ) => {
       configuration.set(keyPath + label, {
+        Renderer,
         keyPath,
         label,
-        renderer,
         ...config,
       });
     };

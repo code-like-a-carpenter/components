@@ -26,11 +26,7 @@ export const RenderField = <T extends object>({
   FieldWrapper = DefaultWrapper,
   item,
 }: RenderFieldProps<T>) => {
-  const {
-    renderer: Renderer,
-    wrapper,
-    ...config
-  } = useFieldConfiguration(fieldId);
+  const {Renderer, wrapper, ...config} = useFieldConfiguration(fieldId);
   const value = get(item, config.keyPath);
 
   const Wrapper = wrapper || FieldWrapper;
@@ -47,7 +43,7 @@ export const RenderField = <T extends object>({
       fieldId={fieldId}
       field={config.keyPath as IdType<T>}
       item={item}
-      renderer={Renderer}
+      Renderer={Renderer}
       value={value}
       {...config}
     >

@@ -20,7 +20,21 @@ export type Renderer<
  * value, which is handled elsewhere.
  */
 export type RendererProxy<R> = R extends ComponentType<infer P>
-  ? {renderer?: R} & Omit<P, 'value'>
-  : {renderer?: R};
-
-// TODO capitizize the R
+  ? (
+      | {
+          /** @deprecated Please uses Renderer */
+          renderer?: R;
+        }
+      | {
+          Renderer?: R;
+        }
+    ) &
+      Omit<P, 'value'>
+  :
+      | {
+          /** @deprecated Please uses Renderer */
+          renderer?: R;
+        }
+      | {
+          Renderer?: R;
+        };
