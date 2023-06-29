@@ -1,7 +1,6 @@
 import type {ReactElement} from 'react';
 
-import type {Maybe} from '../..';
-import type {ConfigureFunction} from '../../templates';
+import type {Configurable, Maybe} from '../..';
 import {ObjectTemplate} from '../../templates';
 
 import {
@@ -13,9 +12,9 @@ import type {
   IObjectDescriptionWrapper,
 } from './types';
 
-export interface ObjectDescriptionProps<T extends object> {
+export interface ObjectDescriptionProps<T extends object>
+  extends Configurable<T> {
   data: Maybe<T>;
-  configure?: ConfigureFunction<T>;
   noDataSlot?: ReactElement;
   TemplateWrapper?: IObjectDescriptionWrapper<T>;
   FieldWrapper?: IObjectDescriptionFieldWrapper<T>;

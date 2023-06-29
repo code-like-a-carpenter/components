@@ -13,3 +13,14 @@ export type Renderer<
   C = unknown,
   P extends Partial<C> = Partial<C>
 > = ComponentType<RendererProps<T, C, P>>;
+
+/**
+ * A RendererProxy accepts a Renderer and the Renderers props in order to
+ * configure how that Renderer will be used, but doesn't accept the Renderer's
+ * value, which is handled elsewhere.
+ */
+export type RendererProxy<R> = R extends ComponentType<infer P>
+  ? {renderer?: R} & Omit<P, 'value'>
+  : {renderer?: R};
+
+// TODO capitizize the R

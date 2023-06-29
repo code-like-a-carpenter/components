@@ -114,6 +114,27 @@ export const NestedData = () => (
   />
 );
 
+export const NestedDataWithFlatFields = () => (
+  <ObjectTemplate
+    data={makeComplexPerson()}
+    configure={({FieldConfigurer}) => (
+      <>
+        <FieldConfigurer field="name.first" />
+        <FieldConfigurer field="name.last" />
+        <FieldConfigurer
+          field="householdIncome"
+          renderer={CurrencyRenderer}
+          currency="GBP"
+        />
+        <FieldConfigurer field="signUpDate" />
+        <FieldConfigurer field="age" />
+      </>
+    )}
+    FieldWrapper={FieldWrapper}
+    TemplateWrapper={TemplateWrapper}
+  />
+);
+
 export const DefaultNoOp = () => (
   <ObjectTemplate
     data={makeSimplePerson()}

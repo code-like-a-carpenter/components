@@ -1,18 +1,23 @@
 import type {ReactElement} from 'react';
 
-import type {ConnectionLike, IdType, Maybe, NodeLike} from '../..';
+import type {
+  Configurable,
+  ConnectionLike,
+  IdType,
+  Maybe,
+  NodeLike,
+} from '../..';
 import {useEdgeNodes} from '../..';
 import {ArrayTemplate} from '../array-template';
-import type {ConfigureFunction} from '../configuration';
 import type {
   FieldWrapperType,
   ItemWrapperType,
   TemplateWrapperType,
 } from '../support';
 
-export interface ConnectionTemplateProps<N extends NodeLike, PI> {
+export interface ConnectionTemplateProps<N extends NodeLike, PI>
+  extends Configurable<N> {
   connection: Maybe<ConnectionLike<N, PI>>;
-  configure?: ConfigureFunction<N>;
   TemplateWrapper?: TemplateWrapperType<Maybe<N>[]>;
   ItemWrapper?: ItemWrapperType<N>;
   FieldWrapper?: FieldWrapperType<N>;

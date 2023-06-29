@@ -1,6 +1,6 @@
 import type {ReactElement} from 'react';
 
-import type {ConfigureFunction, IdType, Maybe} from '../..';
+import type {Configurable, IdType, Maybe} from '../..';
 import {DefaultWrapper, RenderItem, RenderTemplate} from '../common';
 import {Configurer, FieldConfigurationProvider} from '../configuration';
 import type {
@@ -12,10 +12,9 @@ import type {
 export interface ArrayTemplateProps<
   T extends object,
   K extends IdType<T> = IdType<T>
-> {
+> extends Configurable<T> {
   data: Maybe<Maybe<T>[]>;
   idField: K;
-  configure?: ConfigureFunction<T>;
   TemplateWrapper?: TemplateWrapperType<Maybe<T>[]>;
   ItemWrapper?: ItemWrapperType<T>;
   FieldWrapper?: FieldWrapperType<T>;
