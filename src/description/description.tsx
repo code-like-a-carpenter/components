@@ -1,5 +1,5 @@
 import cx from 'classnames';
-import type {ComponentProps, HTMLProps, ReactNode} from 'react';
+import type {HTMLProps, ReactNode} from 'react';
 import {Children, useContext, useMemo} from 'react';
 
 import type {Renderer, RendererProxy} from '../renderers';
@@ -7,10 +7,11 @@ import {AnyRenderer} from '../renderers';
 
 import {DescriptionList, DescriptionListContext} from './description-list';
 
-export type DescriptionProps<T extends unknown, R extends Renderer<T>> = Omit<
-  HTMLProps<HTMLElement>,
-  'children' | 'title'
-> & {
+export type DescriptionProps<
+  T extends unknown,
+  P extends unknown,
+  R extends Renderer<T, P>
+> = Omit<HTMLProps<HTMLElement>, 'children' | 'title'> & {
   readonly description: T;
   /**
    * Longer-form version of the "term" prop which explains more about what this
@@ -20,15 +21,22 @@ export type DescriptionProps<T extends unknown, R extends Renderer<T>> = Omit<
   readonly term: ReactNode;
 } & RendererProxy<R>;
 
-export const Description = <T extends unknown, R extends Renderer<T>>({
-  className,
-  description,
-  descriptionLabel,
-  // @ts-expect-error
-  Renderer: Component = AnyRenderer,
-  term,
-  ...props
-}: DescriptionProps<T, R>) => {
+export const Description = <
+  T extends unknown,
+  P extends unknown,
+  R extends Renderer<T, P>
+>(
+  props: DescriptionProps<T, P, R>
+) => {
+  const {className, description, descriptionLabel, term} = props;
+
+  const Component: Renderer =
+    'Renderer' in props && props.Renderer
+      ? (props.Renderer as Renderer)
+      : 'renderer' in props && props.renderer
+      ? (props.renderer as Renderer)
+      : (AnyRenderer as Renderer);
+
   const listType = useContext(DescriptionListContext);
 
   const children = useMemo(() => {
@@ -50,14 +58,13 @@ export const Description = <T extends unknown, R extends Renderer<T>>({
   if (!listType) {
     return (
       <DescriptionList className="description-list--single">
-        {/* @ts-expect-error it's not clear to me why TSC is struggling here */}
-        <Description<T, C, R>
+        <Description<T, P, R>
+          {...props}
           className={cx(className, 'description-list__description')}
           description={description}
           descriptionLabel={descriptionLabel}
           Renderer={Component}
           term={term}
-          {...props}
         />
       </DescriptionList>
     );

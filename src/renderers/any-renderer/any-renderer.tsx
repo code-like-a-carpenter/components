@@ -13,11 +13,11 @@ import {DateRenderer} from '../date-renderer';
 import {NullRenderer} from '../null-renderer';
 import {NumberRenderer} from '../number-renderer';
 import {ObjectRenderer} from '../object-renderer';
-import type {Renderer} from '../types';
+import type {RendererWithContext} from '../types';
 
 /* eslint-disable complexity */
 /** Renderers any value, as best as it can */
-export const AnyRenderer: Renderer<
+export const AnyRenderer: RendererWithContext<
   unknown,
   BooleanFormatterContextProps &
     DateFormatterContextProps &

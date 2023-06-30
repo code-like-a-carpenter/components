@@ -11,7 +11,7 @@ export type FactProps<T extends unknown, R> = {
   value: T;
   Renderer?: R;
 } & Partial<FactContextProps> &
-  (R extends Renderer<T, infer C, infer P> ? RendererProps<T, C, P> : unknown);
+  (R extends Renderer<T, infer P> ? RendererProps<T, P> : unknown);
 
 /**
  * Fact doesn't do much on its own (though it comes with defaults that do some

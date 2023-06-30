@@ -6,7 +6,7 @@ import type {RendererPropsFromContext} from '../types';
 export const ObjectRenderer = ({
   value,
   ...rest
-}: RendererProps<any, ObjectFormatterContextProps>) => {
+}: RendererPropsFromContext<any, ObjectFormatterContextProps>) => {
   const formatter = useObjectFormatter(rest);
   return <Code dedent={false}>{formatter(value)}</Code>;
 };

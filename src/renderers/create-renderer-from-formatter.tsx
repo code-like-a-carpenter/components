@@ -1,6 +1,6 @@
 import type {FormatterHook} from '../formatters/types';
 
-import type {Renderer} from './types';
+import type {RendererWithContext} from './types';
 
 /**
  * Creates a formatter component from a formatter hook.
@@ -9,7 +9,7 @@ export function createRendererFromFormatter<
   T,
   C,
   P extends Partial<C> = Partial<C>
->(useFormatter: FormatterHook<T, C, P>): Renderer<T, C, P> {
+>(useFormatter: FormatterHook<T, C, P>): RendererWithContext<T, C, P> {
   /** @internal */
   function Formatter(props: P & {value: T}) {
     const {value} = props;

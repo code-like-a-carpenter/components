@@ -11,8 +11,8 @@ type DescriptionType<T> = T | MostlyFalsy;
 
 export type ConditionalDescriptionProps<
   T extends unknown,
-  C extends unknown,
-  R extends Renderer<Exclude<T, MostlyFalsy>, C>
+  P extends unknown,
+  R extends Renderer<Exclude<T, MostlyFalsy>, P>
 > = HTMLProps<HTMLElement> &
   Omit<ComponentProps<R>, 'value'> & {
     readonly condition?: boolean;
@@ -24,10 +24,10 @@ export type ConditionalDescriptionProps<
 // eslint-disable-next-line complexity
 export const ConditionalDescription = <
   T extends unknown,
-  C extends unknown,
-  R extends Renderer<Exclude<T, MostlyFalsy>, C>
+  P extends unknown,
+  R extends Renderer<Exclude<T, MostlyFalsy>, P>
 >(
-  props: ConditionalDescriptionProps<T, C, R>
+  props: ConditionalDescriptionProps<T, P, R>
 ) => {
   const {
     className,

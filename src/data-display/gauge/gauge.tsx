@@ -2,7 +2,10 @@ import {createContext, useMemo} from 'react';
 import {Label, LabelList, Pie, PieChart, ResponsiveContainer} from 'recharts';
 
 import {useLocale} from '../../core';
-import type {Renderer, RendererProps} from '../../renderers';
+import type {
+  RendererWithContext,
+  RendererPropsFromContext,
+} from '../../renderers';
 import {useContextWithPropOverrides} from '../../support';
 
 export interface GaugeContextType {
@@ -15,7 +18,7 @@ export const GaugeContext = createContext<GaugeContextType>({
   animate: true,
 });
 
-export type GaugeProps = RendererProps<
+export type GaugeProps = RendererPropsFromContext<
   number,
   GaugeContextType,
   Partial<GaugeContextType> & {
@@ -24,12 +27,11 @@ export type GaugeProps = RendererProps<
   }
 >;
 
-export const Gauge: Renderer<number, GaugeContextType, GaugeProps> = ({
-  min,
-  max,
-  value,
-  ...rest
-}: GaugeProps) => {
+export const Gauge: RendererWithContext<
+  number,
+  GaugeContextType,
+  GaugeProps
+> = ({min, max, value, ...rest}: GaugeProps) => {
   const locale = useLocale();
   const nf = useMemo(() => new Intl.NumberFormat(locale.language), [locale]);
 

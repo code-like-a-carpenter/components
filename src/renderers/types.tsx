@@ -1,25 +1,34 @@
 import type {ComponentType} from 'react';
 
-export type RendererProps<
-  T extends unknown = unknown,
-  C = unknown,
-  P extends Partial<C> = Partial<C>
-> = P & {
+export type RendererProps<T = unknown, P = unknown> = P & {
   value: T;
 };
 
-export type Renderer<
+export type Renderer<T = unknown, P = unknown> = ComponentType<
+  RendererProps<T, P>
+>;
+
+/** @internal */
+export type RendererPropsFromContext<
+  T extends unknown = unknown,
+  C = unknown,
+  P extends Partial<C> = Partial<C>
+> = RendererProps<T, P>;
+
+/** @internal */
+export type RendererWithContext<
   T = unknown,
   C = unknown,
   P extends Partial<C> = Partial<C>
-> = ComponentType<RendererProps<T, C, P>>;
+> = Renderer<T, P>;
 
 /**
  * A RendererProxy accepts a Renderer and the Renderers props in order to
  * configure how that Renderer will be used, but doesn't accept the Renderer's
  * value, which is handled elsewhere.
  */
-export type RendererProxy<R> = R extends ComponentType<infer P>
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export type RendererProxy<R> = R extends Renderer<infer T, infer P>
   ? (
       | {
           /** @deprecated Please uses Renderer */
