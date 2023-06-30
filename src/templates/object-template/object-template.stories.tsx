@@ -1,6 +1,6 @@
 import type {SimplePerson} from '../../mocks';
 import {makeComplexPerson, makeSimplePerson} from '../../mocks';
-import {CurrencyRenderer} from '../../renderers';
+import {CurrencyRenderer, maybeRender} from '../../renderers';
 
 import {ObjectTemplate} from './object-template';
 import {FieldWrapper, TemplateWrapper} from './support';
@@ -243,5 +243,21 @@ export const CustomFieldWrapper = () => (
         <FieldConfigurer field="signUpDate" />
       </>
     )}
+  />
+);
+export const CustomRenderersWithOptionalValues = () => (
+  <ObjectTemplate
+    data={makeSimplePerson() as Partial<SimplePerson>}
+    configure={({FieldConfigurer}) => (
+      <>
+        <FieldConfigurer
+          field="householdIncome"
+          Renderer={maybeRender(CurrencyRenderer)}
+          currency="GBP"
+        />
+      </>
+    )}
+    FieldWrapper={FieldWrapper}
+    TemplateWrapper={TemplateWrapper}
   />
 );

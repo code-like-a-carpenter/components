@@ -41,7 +41,7 @@ export const MaybeRenderer = <T, P extends object>({
  */
 export function maybeRender<T, P extends object>(
   Component: ComponentType<ComponentProps<T, P>>
-) {
+): ComponentType<ComponentProps<T | undefined | null, P>> {
   /** Wrapped version of Component which allows for undefined/null values */
   function wrapped(props: MaybeComponentProps<T, P>) {
     return <MaybeRenderer Component={Component} {...props} />;
@@ -56,6 +56,6 @@ export function maybeRender<T, P extends object>(
  */
 export function useMaybeRender<T, P extends object>(
   Component: ComponentType<ComponentProps<T, P>>
-) {
+): ComponentType<ComponentProps<T | undefined | null, P>> {
   return useMemo(() => maybeRender(Component), [Component]);
 }
