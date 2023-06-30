@@ -1,4 +1,6 @@
-import {NullRenderer, NullRendererContext} from './null-renderer';
+import {NullFormatterContext} from '../../formatters';
+
+import {NullRenderer} from './null-renderer';
 
 export default {
   component: NullRenderer,
@@ -8,7 +10,7 @@ export default {
 export const Default = () => <NullRenderer value={null} />;
 export const WithOverride = () => <NullRenderer value={null} null="nada" />;
 export const WithOverrideFromContext = () => (
-  <NullRendererContext.Provider value={{null: <>bupkis</>}}>
+  <NullFormatterContext.Provider value={{null: 'bupkis'}}>
     <NullRenderer value={null} />
-  </NullRendererContext.Provider>
+  </NullFormatterContext.Provider>
 );

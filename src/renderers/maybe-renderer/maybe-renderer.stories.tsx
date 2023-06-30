@@ -1,5 +1,6 @@
 import {Description, DescriptionList} from '../../description';
 import {BooleanRenderer} from '../boolean-renderer';
+import {CurrencyRenderer} from '../currency-renderer';
 import {DateRenderer} from '../date-renderer';
 
 import {maybeRender, MaybeRenderer, useMaybeRender} from './maybe-renderer';
@@ -22,12 +23,7 @@ export const Falsy = () => (
 );
 
 export const PassThroughProps = () => (
-  <MaybeRenderer
-    Component={DateRenderer}
-    value={null}
-    relative
-    negativeIsNull
-  />
+  <MaybeRenderer Component={CurrencyRenderer} value={17} currency="GBP" />
 );
 
 const MaybeDate = maybeRender(DateRenderer);

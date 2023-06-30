@@ -1,35 +1,31 @@
 import {DateTime} from 'luxon';
-import {createContext, isValidElement} from 'react';
+import {isValidElement} from 'react';
 
-import {useContextWithPropOverrides} from '../../support';
-import type {BooleanRendererContextType} from '../boolean-renderer';
+import type {
+  BooleanFormatterContextProps,
+  DateFormatterContextProps,
+  NullFormatterContextProps,
+  NumberFormatterContextProps,
+  ObjectFormatterContextProps,
+} from '../../formatters';
 import {BooleanRenderer} from '../boolean-renderer';
-import type {DateRendererContextProps} from '../date-renderer';
 import {DateRenderer} from '../date-renderer';
-import type {NullRendererContextType} from '../null-renderer';
 import {NullRenderer} from '../null-renderer';
 import {NumberRenderer} from '../number-renderer';
 import {ObjectRenderer} from '../object-renderer';
-import type {RendererProps} from '../types';
-
-export interface AnyRendererContextType {
-  readonly boolean?: BooleanRendererContextType;
-  readonly date?: DateRendererContextProps;
-  readonly null?: NullRendererContextType;
-}
-
-export const AnyRendererContext = createContext<AnyRendererContextType>({});
-
-export type AnyRendererProps = RendererProps<unknown, AnyRendererContextType>;
+import type {Renderer} from '../types';
 
 /* eslint-disable complexity */
 /** Renderers any value, as best as it can */
-export function AnyRenderer({value, ...rest}: AnyRendererProps) {
-  const {
-    boolean,
-    date,
-    null: nullDefaults,
-  } = useContextWithPropOverrides(AnyRendererContext, rest);
+export const AnyRenderer: Renderer<
+  unknown,
+  BooleanFormatterContextProps &
+    DateFormatterContextProps &
+    NullFormatterContextProps &
+    NumberFormatterContextProps &
+    ObjectFormatterContextProps
+> = (props) => {
+  const {value} = props;
 
   if (
     typeof value === 'object' ||
@@ -37,26 +33,26 @@ export function AnyRenderer({value, ...rest}: AnyRendererProps) {
     typeof value === 'symbol'
   ) {
     if (value === null) {
-      return <NullRenderer value={value} {...nullDefaults} />;
+      return <NullRenderer {...props} value={value} />;
     }
 
     if (value instanceof Date) {
-      return <DateRenderer value={value} {...date} />;
+      return <DateRenderer {...props} value={value} />;
     }
 
     if (isValidElement(value)) {
       return <>{value}</>;
     }
 
-    return <ObjectRenderer value={value} />;
+    return <ObjectRenderer {...props} value={value} />;
   }
 
   if (typeof value === 'undefined') {
-    return <NullRenderer value={null} {...nullDefaults} />;
+    return <NullRenderer {...props} value={null} />;
   }
 
   if (typeof value === 'number') {
-    return <NumberRenderer value={value}></NumberRenderer>;
+    return <NumberRenderer {...props} value={value} />;
   }
 
   if (typeof value === 'bigint') {
@@ -64,19 +60,17 @@ export function AnyRenderer({value, ...rest}: AnyRendererProps) {
   }
 
   if (typeof value === 'string') {
-    if (
-      DateTime.fromISO(value).isValid ||
-      DateTime.fromMillis(Number(value)).isValid
-    ) {
-      return <DateRenderer value={value} {...date} />;
+    if (DateTime.fromISO(value).isValid) {
+      return <DateRenderer {...props} value={value} />;
     }
     return <>{value}</>;
   }
 
   if (typeof value === 'boolean') {
-    return <BooleanRenderer value={value} {...boolean} />;
+    return <BooleanRenderer {...props} value={value} />;
   }
 
-  return <NullRenderer value={null} {...nullDefaults} />;
-}
+  return <NullRenderer {...props} value={null} />;
+};
+
 /* eslint-enable complexity */

@@ -67,7 +67,7 @@ export const WithFalsyNestedValueAndCondition = () => (
 export const WithADate = () => (
   <ConditionalDescription
     term="A Date"
-    description={new Date('2020-01-01')}
+    description={new Date('2020-01-01') as Date | string | number}
     Renderer={DateRenderer}
   />
 );
@@ -75,7 +75,7 @@ export const WithADate = () => (
 export const WithNotADate = () => (
   <ConditionalDescription
     term="A Date"
-    description={null}
+    description={null as null | Date | string | number}
     Renderer={DateRenderer}
   />
 );
@@ -83,7 +83,7 @@ export const WithNotADate = () => (
 export const WithNotATime = () => (
   <ConditionalDescription
     term="A Date"
-    description={null as unknown as Date | null}
+    description={null as Date | string | number | null}
     Renderer={DateRenderer}
   />
 );

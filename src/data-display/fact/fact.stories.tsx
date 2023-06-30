@@ -3,13 +3,10 @@ import type {Meta} from '@storybook/react';
 import {useCallback, useContext} from 'react';
 
 import {Card} from '../../card';
+import {formatBytes} from '../../formatters';
 import {Section} from '../../outline';
-import {
-  ByteRenderer,
-  CurrencyRenderer,
-  DateRenderer,
-  formatBytes,
-} from '../../renderers';
+import {ByteRenderer, CurrencyRenderer} from '../../renderers';
+import {RelativeDateRenderer} from '../../renderers/relative-date-renderer';
 import {Gauge} from '../gauge/gauge';
 
 import {FactContext} from './context';
@@ -188,8 +185,7 @@ export const CheckRunReporterAccountPage = () => {
         <Fact
           label="Last Submission Received"
           value={accountPageData.lastSubmissionDate}
-          Renderer={DateRenderer}
-          relative
+          Renderer={RelativeDateRenderer}
         />
         <Fact label="Token" value={accountPageData.token} />
       </div>

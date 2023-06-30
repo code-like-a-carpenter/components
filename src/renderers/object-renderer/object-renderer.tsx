@@ -1,11 +1,12 @@
-import {Code} from '../..';
-import type {RendererProps} from '../types';
+import {Code} from '../../code';
+import type {ObjectFormatterContextProps} from '../../formatters';
+import {useObjectFormatter} from '../../formatters';
+import type {RendererPropsFromContext} from '../types';
 
-export type ObjectRendererProps = RendererProps<
-  // eslint-disable-next-line @typescript-eslint/ban-types
-  object | object[] | symbol | Function
->;
-
-export const ObjectRenderer = ({value}: ObjectRendererProps) => (
-  <Code dedent={false}>{JSON.stringify(value, null, 2)}</Code>
-);
+export const ObjectRenderer = ({
+  value,
+  ...rest
+}: RendererProps<any, ObjectFormatterContextProps>) => {
+  const formatter = useObjectFormatter(rest);
+  return <Code dedent={false}>{formatter(value)}</Code>;
+};

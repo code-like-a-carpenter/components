@@ -1,4 +1,6 @@
-import {BooleanRendererContext, BooleanRenderer} from './boolean-renderer';
+import {BooleanFormatterContext} from '../../formatters';
+
+import {BooleanRenderer} from './boolean-renderer';
 
 export default {
   component: BooleanRenderer,
@@ -12,7 +14,7 @@ export const WithOverrides = () => (
   <BooleanRenderer value={false} yes="Yep" no="Nope" />
 );
 export const WithContextOverrides = () => (
-  <BooleanRendererContext.Provider value={{no: 'i think not', yes: 'indeed'}}>
+  <BooleanFormatterContext.Provider value={{no: 'i think not', yes: 'indeed'}}>
     <BooleanRenderer value={false} />
-  </BooleanRendererContext.Provider>
+  </BooleanFormatterContext.Provider>
 );
