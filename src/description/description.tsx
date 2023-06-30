@@ -2,32 +2,25 @@ import cx from 'classnames';
 import type {ComponentProps, HTMLProps, ReactNode} from 'react';
 import {Children, useContext, useMemo} from 'react';
 
-import type {Renderer} from '../renderers';
+import type {Renderer, RendererProxy} from '../renderers';
 import {AnyRenderer} from '../renderers';
 
 import {DescriptionList, DescriptionListContext} from './description-list';
 
-export type DescriptionProps<
-  T extends unknown,
-  C extends unknown,
-  R extends Renderer<T, C>
-> = Omit<HTMLProps<HTMLElement>, 'children' | 'title'> &
-  Omit<ComponentProps<R>, 'value'> & {
-    readonly description: T;
-    /**
-     * Longer-form version of the "term" prop which explains more about what this
-     * item describes.
-     */
-    readonly descriptionLabel?: string;
-    readonly term: ReactNode;
-    readonly Renderer?: R;
-  };
+export type DescriptionProps<T extends unknown, R extends Renderer<T>> = Omit<
+  HTMLProps<HTMLElement>,
+  'children' | 'title'
+> & {
+  readonly description: T;
+  /**
+   * Longer-form version of the "term" prop which explains more about what this
+   * item describes.
+   */
+  readonly descriptionLabel?: string;
+  readonly term: ReactNode;
+} & RendererProxy<R>;
 
-export const Description = <
-  T extends unknown,
-  C extends unknown,
-  R extends Renderer<T, C>
->({
+export const Description = <T extends unknown, R extends Renderer<T>>({
   className,
   description,
   descriptionLabel,
@@ -35,17 +28,15 @@ export const Description = <
   Renderer: Component = AnyRenderer,
   term,
   ...props
-}: DescriptionProps<T, C, R>) => {
+}: DescriptionProps<T, R>) => {
   const listType = useContext(DescriptionListContext);
 
   const children = useMemo(() => {
     if (Array.isArray(description)) {
       return description.map((child, index) => (
-        // @ts-expect-error
-        <Component key={index} value={child} {...props} />
+        <Component key={index} {...props} value={child} />
       ));
     }
-    // @ts-expect-error
     return <Component value={description} {...props} />;
   }, [Component, description, props]);
 
