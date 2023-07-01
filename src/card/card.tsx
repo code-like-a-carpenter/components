@@ -1,10 +1,9 @@
-import type {PropsWithChildren, ComponentType} from 'react';
-import {useContext, useState, createContext} from 'react';
+import type {ComponentProps, ComponentType, PropsWithChildren} from 'react';
+import {createContext, useContext, useState} from 'react';
 import type {CardProps as BootstrapCardProps} from 'react-bootstrap';
 import {Card as BootstrapCard} from 'react-bootstrap';
 
 import {Section, SectionHeading} from '..';
-import type {PropsOf} from '../support';
 
 export const CardContext = createContext(false);
 
@@ -49,7 +48,7 @@ const withSection = <P extends Object>(Component: ComponentType<P>) =>
 const CardHeader = ({
   children,
   props,
-}: PropsOf<(typeof BootstrapCard)['Header']>) => {
+}: ComponentProps<(typeof BootstrapCard)['Header']>) => {
   const [hasHeader, setHasHeader] = useContext(HasHeaderContext);
 
   if (!hasHeader) {
