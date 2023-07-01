@@ -11,12 +11,10 @@ export type MaybeRendererProps<T, P> = RendererProps<Maybe<T>, P> & {
 export const MaybeRenderer = <T, P>(props: MaybeRendererProps<T, P>) => {
   const {Component, value} = props;
   if (typeof value === 'undefined' || value === null) {
-    return <NullRenderer value={null} />;
+    return <NullRenderer className={'renderer-maybe'} value={null} />;
   }
 
-  // As far as I can tell, I need the "as" here because tsc can't tell that
-  // `rest` has already had everything that's not ComponentProps removed.
-  return <Component {...props} value={value} />;
+  return <Component className={'renderer-maybe'} {...props} value={value} />;
 };
 
 /**
