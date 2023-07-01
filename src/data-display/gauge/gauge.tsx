@@ -113,9 +113,11 @@ export const Gauge: RendererWithContext<
   const valueOuterRadius = rangeInnerRadius - 1;
   const valueInnerRadius = valueOuterRadius - 14;
 
+  // An aspect ratio is required for ResponsiveContainer to work properly inside
+  // flexbox and grid. This bug does not manifest in Storybook.
   return (
     <>
-      <ResponsiveContainer>
+      <ResponsiveContainer aspect={1}>
         <PieChart>
           <Pie
             isAnimationActive={animate}
