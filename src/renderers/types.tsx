@@ -1,10 +1,14 @@
-import type {ComponentType} from 'react';
+import type {FunctionComponent} from 'react';
 
 export type RendererProps<T = unknown, P = unknown> = P & {
   value: T;
 };
 
-export type Renderer<T = unknown, P = unknown> = ComponentType<
+// Ideally, this would be `ComponentType` rather than FunctionComponent, but so
+// far, I've been unable to find a configuration where TypeScript can handle
+// the compound nature of FunctionComponent | ComponentClass. If you really need
+// to use a ComponentClass, wrap it in a FunctionComponent (or use ts-ignore
+export type Renderer<T = unknown, P = unknown> = FunctionComponent<
   RendererProps<T, P>
 >;
 
@@ -47,3 +51,12 @@ export type RendererProxy<R> = R extends Renderer<infer T, infer P>
       | {
           Renderer?: R;
         };
+
+export type InferringRendererProxy<T, R, COMMONPROPS> = R extends Renderer<
+  infer RT,
+  infer RP
+>
+  ? T extends RT
+    ? RendererProxy<R> & Omit<RP, 'value'> & COMMONPROPS
+    : COMMONPROPS
+  : COMMONPROPS;

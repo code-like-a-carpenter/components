@@ -1,12 +1,11 @@
-import type {ComponentType} from 'react';
 import {useMemo} from 'react';
 
 import type {Maybe} from '../../types';
 import {NullRenderer} from '../null-renderer';
-import type {RendererProps, Renderer} from '../types';
+import type {Renderer, RendererProps} from '../types';
 
 export type MaybeRendererProps<T, P> = RendererProps<Maybe<T>, P> & {
-  readonly Component: ComponentType<RendererProps<T, P>>;
+  readonly Component: Renderer<T, P>;
 };
 
 export const MaybeRenderer = <T, P>(props: MaybeRendererProps<T, P>) => {
@@ -23,7 +22,10 @@ export const MaybeRenderer = <T, P>(props: MaybeRendererProps<T, P>) => {
 /**
  * Binds a regular renderer into a MaybeRenderer so it can be used via e.g. the
  * render prop of a <FieldConfigurer />
- * @param Component
+ *
+ * This function should not be used inside a React component, as it will create
+ * a new component on every render. Instead, use useMaybeRender, which is
+ * memoized.
  */
 export function maybeRender<T, P>(
   Component: Renderer<T, P>

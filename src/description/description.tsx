@@ -2,16 +2,15 @@ import cx from 'classnames';
 import type {HTMLProps, ReactNode} from 'react';
 import {Children, useContext, useMemo} from 'react';
 
-import type {Renderer, RendererProxy} from '../renderers';
+import type {InferringRendererProxy, Renderer} from '../renderers';
 import {AnyRenderer} from '../renderers';
 
 import {DescriptionList, DescriptionListContext} from './description-list';
 
-export type DescriptionProps<
-  T extends unknown,
-  P extends unknown,
-  R extends Renderer<T, P>
-> = Omit<HTMLProps<HTMLElement>, 'children' | 'title'> & {
+export type DescriptionCommonProps<T> = Omit<
+  HTMLProps<HTMLElement>,
+  'children' | 'title'
+> & {
   readonly description: T;
   /**
    * Longer-form version of the "term" prop which explains more about what this
@@ -19,15 +18,15 @@ export type DescriptionProps<
    */
   readonly descriptionLabel?: string;
   readonly term: ReactNode;
-} & RendererProxy<R>;
+};
 
-export const Description = <
-  T extends unknown,
-  P extends unknown,
-  R extends Renderer<T, P>
->(
-  props: DescriptionProps<T, P, R>
-) => {
+export type DescriptionProps<T, R> = InferringRendererProxy<
+  T,
+  R,
+  DescriptionCommonProps<T>
+>;
+
+export const Description = <T, R>(props: DescriptionProps<T, R>) => {
   const {className, description, descriptionLabel, term} = props;
 
   const Component: Renderer =
@@ -58,7 +57,7 @@ export const Description = <
   if (!listType) {
     return (
       <DescriptionList className="description-list--single">
-        <Description<T, P, R>
+        <Description<T, R>
           {...props}
           className={cx(className, 'description-list__description')}
           description={description}

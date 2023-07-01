@@ -1,6 +1,6 @@
 import type {SimplePerson} from '../../mocks';
 import {makeComplexPerson, makeSimplePerson} from '../../mocks';
-import {CurrencyRenderer, maybeRender} from '../../renderers';
+import {CurrencyRenderer, DateRenderer, useMaybeRender} from '../../renderers';
 
 import {ObjectTemplate} from './object-template';
 import {FieldWrapper, TemplateWrapper} from './support';
@@ -75,7 +75,7 @@ export const DuplicateFields = () => (
         <FieldConfigurer
           field="signUpDate"
           label="Epoch Time"
-          Renderer={({value}) => <>{value.getTime()}</>}
+          Renderer={({value}: {value: Date}) => <>{value.getTime()}</>}
         />
       </>
     )}
@@ -245,19 +245,44 @@ export const CustomFieldWrapper = () => (
     )}
   />
 );
-export const CustomRenderersWithOptionalValues = () => (
+
+export const CustomRenderersWithWiderTypes = () => (
   <ObjectTemplate
-    data={makeSimplePerson() as Partial<SimplePerson>}
+    data={makeSimplePerson()}
     configure={({FieldConfigurer}) => (
       <>
         <FieldConfigurer
           field="householdIncome"
-          Renderer={maybeRender(CurrencyRenderer)}
+          Renderer={CurrencyRenderer}
           currency="GBP"
         />
+        <FieldConfigurer field="signUpDate" Renderer={DateRenderer} />
       </>
     )}
     FieldWrapper={FieldWrapper}
     TemplateWrapper={TemplateWrapper}
   />
 );
+
+export const CustomRenderersWithOptionalValues = () => {
+  const MaybeCurrencyRenderer = useMaybeRender(CurrencyRenderer);
+  const MaybeDateRenderer = useMaybeRender(DateRenderer);
+
+  return (
+    <ObjectTemplate
+      data={makeSimplePerson() as Partial<SimplePerson>}
+      configure={({FieldConfigurer}) => (
+        <>
+          <FieldConfigurer
+            field="householdIncome"
+            Renderer={MaybeCurrencyRenderer}
+            currency="GBP"
+          />
+          <FieldConfigurer field="signUpDate" Renderer={MaybeDateRenderer} />
+        </>
+      )}
+      FieldWrapper={FieldWrapper}
+      TemplateWrapper={TemplateWrapper}
+    />
+  );
+};

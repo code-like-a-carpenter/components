@@ -1,7 +1,7 @@
 import cx from 'classnames';
-import type {ComponentProps, HTMLProps, ReactNode} from 'react';
+import type {HTMLProps, ReactNode} from 'react';
 
-import type {Renderer} from '../renderers/types';
+import type {InferringRendererProxy, Renderer} from '../renderers/types';
 
 import {Description} from './description';
 
@@ -9,33 +9,31 @@ import {Description} from './description';
 type MostlyFalsy = false | '' | null | undefined;
 type DescriptionType<T> = T | MostlyFalsy;
 
-export type ConditionalDescriptionProps<
-  T extends unknown,
-  P extends unknown,
-  R extends Renderer<Exclude<T, MostlyFalsy>, P>
-> = HTMLProps<HTMLElement> &
-  Omit<ComponentProps<R>, 'value'> & {
-    readonly condition?: boolean;
-    readonly term: ReactNode;
-    readonly description?: DescriptionType<T>;
-    readonly Renderer?: R;
-  };
+export type ConditionalDescriptionCommonProps<T> = HTMLProps<HTMLElement> & {
+  readonly condition?: boolean;
+  readonly term: ReactNode;
+  readonly description?: DescriptionType<T>;
+};
+
+export type ConditionalDescriptionProps<T, R> = InferringRendererProxy<
+  T,
+  R,
+  ConditionalDescriptionCommonProps<T>
+>;
 
 // eslint-disable-next-line complexity
-export const ConditionalDescription = <
-  T extends unknown,
-  P extends unknown,
-  R extends Renderer<Exclude<T, MostlyFalsy>, P>
->(
-  props: ConditionalDescriptionProps<T, P, R>
+export const ConditionalDescription = <T, R>(
+  props: ConditionalDescriptionProps<T, R>
 ) => {
-  const {
-    className,
-    condition,
-    description,
-    Renderer: Component,
-    ...rest
-  } = props;
+  const {className, condition, description, ...rest} = props;
+
+  const Component: Renderer | undefined =
+    'Renderer' in props && props.Renderer
+      ? (props.Renderer as Renderer)
+      : 'renderer' in props && props.renderer
+      ? (props.renderer as Renderer)
+      : undefined;
+
   if (typeof condition === 'boolean' && !condition) {
     return null;
   }

@@ -1,3 +1,4 @@
+import type {Maybe} from '..';
 import {CurrencyRenderer, DateRenderer} from '..';
 
 import {ConditionalDescription} from './conditional-description';
@@ -67,7 +68,7 @@ export const WithFalsyNestedValueAndCondition = () => (
 export const WithADate = () => (
   <ConditionalDescription
     term="A Date"
-    description={new Date('2020-01-01') as Date | string | number}
+    description={new Date('2020-01-01')}
     Renderer={DateRenderer}
   />
 );
@@ -75,7 +76,7 @@ export const WithADate = () => (
 export const WithNotADate = () => (
   <ConditionalDescription
     term="A Date"
-    description={null as null | Date | string | number}
+    description={null as Maybe<Date>}
     Renderer={DateRenderer}
   />
 );
@@ -83,7 +84,7 @@ export const WithNotADate = () => (
 export const WithNotATime = () => (
   <ConditionalDescription
     term="A Date"
-    description={null as Date | string | number | null}
+    description={null as Maybe<Date>}
     Renderer={DateRenderer}
   />
 );

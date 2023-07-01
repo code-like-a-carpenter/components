@@ -64,7 +64,7 @@ export const DuplicateFields = () => (
         <FieldConfigurer
           field="signUpDate"
           label="Seconds since signup"
-          renderer={({value}) => (
+          renderer={({value}: {value: Date}) => (
             <>{Date.parse('2021-01-01') - value.getTime()}</>
           )}
         />

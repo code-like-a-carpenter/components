@@ -1,30 +1,35 @@
 import type {ElementType, ReactElement, ReactNode} from 'react';
 
-import type {Renderer, RendererProxy} from '../../renderers';
+import type {InferringRendererProxy, Renderer} from '../../renderers';
 import type {Choose, Definitely, Maybe, Path} from '../../types';
 import type {FieldWrapperProps} from '../support';
 
-export type ConfigureComponentProps<
+export interface ConfigureComponentCommonProps<
   T extends Record<string | number, any>,
-  K extends Path<T>,
-  R extends Renderer<Choose<T, K>>
-> = {
+  K extends Path<T>
+> {
   field: K;
   label?: ReactNode | Renderer<K>;
   wrapper?: ElementType<FieldWrapperProps<T, K>>;
   configure?: T[K] extends Maybe<object>
     ? ElementType<ConfigureFunctionProps<Definitely<T[K]>>>
     : never;
-} & RendererProxy<R>;
+}
+
+export type ConfigureComponentProps<
+  T extends Record<string | number, any>,
+  K extends Path<T>,
+  R
+> = InferringRendererProxy<
+  Choose<T, K>,
+  R,
+  ConfigureComponentCommonProps<T, K>
+>;
 
 export interface ConfigureFunctionProps<
   T extends Record<string | number, any>
 > {
-  FieldConfigurer: <
-    T2 extends T,
-    K2 extends Path<T2>,
-    R extends Renderer<Choose<T2, K2>>
-  >(
+  FieldConfigurer: <T2 extends T, K2 extends Path<T2>, R>(
     props: ConfigureComponentProps<T2, K2, R>
   ) => ReactElement | null;
 }
