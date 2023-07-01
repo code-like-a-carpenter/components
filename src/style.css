@@ -28,12 +28,8 @@
   white-space: nowrap;
 }
 
-.fact_container__output {
+.fact-card__output {
   display: grid;
   justify-items: center;
   align-items: center;
-}
-
-.line_chart__legend--active {
-  font-weight: bold;
 }
