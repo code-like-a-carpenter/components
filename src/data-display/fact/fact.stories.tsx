@@ -1,8 +1,8 @@
 import {faker} from '@faker-js/faker';
 import type {Meta} from '@storybook/react';
 import {useCallback, useContext} from 'react';
+import {Card} from 'react-bootstrap';
 
-import {Card} from '../../card';
 import {formatBytes} from '../../formatters';
 import {Section} from '../../outline';
 import {ByteRenderer, CurrencyRenderer} from '../../renderers';

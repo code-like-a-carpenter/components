@@ -21,8 +21,6 @@ export const InAnAlert = () => (
 
 export const InACard = () => (
   <Card>
-    <Card.Body>
-      A <Link href="#">Link</Link> in an Alert
-    </Card.Body>
+    A <Link href="#">Link</Link> in an Alert
   </Card>
 );

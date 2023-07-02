@@ -1,8 +1,9 @@
 import type {HTMLProps, PropsWithChildren} from 'react';
 import {useContext} from 'react';
+import {Card} from 'react-bootstrap';
 
 import {Alert, AlertContext} from '../alert';
-import {Card, CardContext} from '../card';
+import {CardContext} from '../card';
 
 export type LinkProps = PropsWithChildren<
   Omit<HTMLProps<HTMLAnchorElement>, 'as'>

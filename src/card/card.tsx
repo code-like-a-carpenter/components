@@ -1,5 +1,7 @@
-import type {ComponentProps, ComponentType, PropsWithChildren} from 'react';
-import {createContext, useContext, useState} from 'react';
+import assert from 'assert';
+
+import type {ComponentType, PropsWithChildren, ReactNode} from 'react';
+import {Children, createContext, Fragment} from 'react';
 import type {CardProps as BootstrapCardProps} from 'react-bootstrap';
 import {Card as BootstrapCard} from 'react-bootstrap';
 
@@ -7,67 +9,102 @@ import {Section, SectionHeading} from '..';
 
 export const CardContext = createContext(false);
 
-export type CardProps = PropsWithChildren<BootstrapCardProps>;
+export interface CardProps extends PropsWithChildren<BootstrapCardProps> {
+  children: ReactNode;
+  footerSlot?: ReactNode;
+  headerSlot?: ReactNode;
+  topImgSlot?: ReactNode;
+  bottomImgSlot?: ReactNode;
+  titleSlot?: ReactNode;
+  subtitleSlot?: ReactNode;
+}
 
-const HasHeaderContext = createContext<[boolean, (newValue: boolean) => void]>([
-  false,
-  () => undefined,
-]);
-
-export const Card = (props: CardProps) => {
-  const [hasHeader, setHasHeader] = useState(false);
-
-  return (
-    <HasHeaderContext.Provider value={[hasHeader, setHasHeader]}>
-      <CardContext.Provider value={true}>
-        <Section>
-          {/* @ts-expect-error - there's something a little weird going on the bootstrap types */}
-          <BootstrapCard {...props} />
-        </Section>
-      </CardContext.Provider>
-    </HasHeaderContext.Provider>
-  );
-};
-
-// eslint-disable-next-line @typescript-eslint/ban-types
-const withSection = <P extends Object>(Component: ComponentType<P>) =>
-  function WithSection(props: P) {
-    const [hasHeader] = useContext(HasHeaderContext);
-
-    if (hasHeader) {
-      return (
-        <Section>
-          <Component {...props} />
-        </Section>
-      );
-    }
-
-    return <Component {...props} />;
-  };
-
-const CardHeader = ({
+export const Card: ComponentType<CardProps> = ({
   children,
-  props,
-}: ComponentProps<(typeof BootstrapCard)['Header']>) => {
-  const [hasHeader, setHasHeader] = useContext(HasHeaderContext);
+  footerSlot,
+  headerSlot,
+  topImgSlot,
+  bottomImgSlot,
+  titleSlot,
+  subtitleSlot,
+  ...rest
+}: CardProps) => {
+  const hasHeader = !!headerSlot;
 
-  if (!hasHeader) {
-    setHasHeader(true);
-  }
+  const chunks: (ReactNode[] | ReactNode)[] = [
+    [
+      titleSlot && <BootstrapCard.Title>{titleSlot}</BootstrapCard.Title>,
+      subtitleSlot && (
+        <BootstrapCard.Subtitle>{subtitleSlot}</BootstrapCard.Subtitle>
+      ),
+    ].filter(Boolean),
+  ];
+
+  Children.toArray(children).forEach((child) => {
+    assert(Array.isArray(chunks[0]));
+    // @ts-expect-error - there's no good way to convice tsc that
+    // child.type.displayName exists sometimes.
+    if (child?.type?.displayName === 'ListGroup') {
+      chunks.unshift(child);
+      chunks.unshift([]);
+    } else {
+      chunks[0].push(child);
+    }
+  });
+
+  chunks.reverse();
+
+  const MaybeSection = hasHeader ? Section : Fragment;
 
   return (
-    <BootstrapCard.Header {...props}>
-      <SectionHeading>{children}</SectionHeading>
-    </BootstrapCard.Header>
+    <CardContext.Provider value={true}>
+      <Section>
+        <BootstrapCard {...rest}>
+          {topImgSlot && <BootstrapCard.Img variant="top" src="topImgSlot" />}
+          {headerSlot && (
+            <BootstrapCard.Header>
+              <SectionHeading>{headerSlot}</SectionHeading>
+            </BootstrapCard.Header>
+          )}
+          {chunks.map((chunk, index) => {
+            if (Array.isArray(chunk)) {
+              if (chunk.length === 0) {
+                return null;
+              }
+              return (
+                <BootstrapCard.Body key={index}>
+                  <MaybeSection>
+                    {chunk.map((child, i) => (
+                      <Fragment
+                        key={
+                          typeof child === 'object' &&
+                          child !== null &&
+                          'key' in child
+                            ? child.key ?? i
+                            : i
+                        }
+                      >
+                        {child}
+                      </Fragment>
+                    ))}
+                  </MaybeSection>
+                </BootstrapCard.Body>
+              );
+            }
+
+            return chunk;
+          })}
+
+          {footerSlot && (
+            <BootstrapCard.Footer>
+              <MaybeSection>{footerSlot}</MaybeSection>
+            </BootstrapCard.Footer>
+          )}
+          {bottomImgSlot && (
+            <BootstrapCard.Img variant="bottom" src="topImgSlot" />
+          )}
+        </BootstrapCard>
+      </Section>
+    </CardContext.Provider>
   );
 };
-
-Card.Img = BootstrapCard.Img;
-Card.Title = BootstrapCard.Title;
-Card.Subtitle = BootstrapCard.Subtitle;
-Card.Body = withSection(BootstrapCard.Body);
-Card.Text = withSection(BootstrapCard.Text);
-Card.Header = CardHeader;
-Card.Footer = withSection(BootstrapCard.Footer);
-Card.ImgOverlay = BootstrapCard.ImgOverlay;
-Card.Link = BootstrapCard.Link;

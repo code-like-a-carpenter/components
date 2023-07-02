@@ -1,4 +1,4 @@
-import {Card} from '../../card';
+import {Card} from 'react-bootstrap';
 
 import type {FactContainer} from './types';
 
