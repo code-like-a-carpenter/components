@@ -33,3 +33,23 @@
   justify-items: center;
   align-items: center;
 }
+
+:root {
+  --fact-min-width: 15rem;
+  --fact-grid-cols: 12;
+  --fact-grid-col-span: 1;
+  --fact-grid-row-span: 1
+}
+
+.fact-grid {
+  display: grid;
+  grid-gap: 1em;
+
+  grid-auto-rows: 1fr;
+  grid-auto-columns: 1fr;
+  grid-template-columns: repeat(var(--fact-grid-cols), minmax(var(--fact-min-width), 1fr));
+}
+
+.fact-grid .fact-container {
+  grid-area: span var(--fact-grid-row-span) / span var(--fact-grid-col-span);
+}

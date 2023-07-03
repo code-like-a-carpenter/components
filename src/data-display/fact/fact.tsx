@@ -9,18 +9,21 @@ import {FactContext} from './context';
 export interface FactWithChildrenProps extends Partial<FactContextProps> {
   children: ReactNode;
   label: ReactNode;
+  colSpan?: number;
+  rowSpan?: number;
 }
 
 export const FactWithChildren = ({
   children,
   label,
+  rowSpan = 2,
   ...rest
 }: FactWithChildrenProps) => {
   const {Container} = useContextWithPropOverrides(FactContext, rest);
 
   return (
     <>
-      <Container label={label} output={children} />
+      <Container label={label} output={children} rowSpan={rowSpan} {...rest} />
     </>
   );
 };
@@ -28,12 +31,16 @@ export const FactWithChildren = ({
 export type FactWithValueProps<T extends unknown, R> = {
   label: ReactNode;
   value: T;
+  colSpan?: number;
+  rowSpan?: number;
 } & Partial<FactContextProps> &
   RendererProxy<R>;
 
 export const FactWithValue = <T extends unknown, R>({
   label,
   value,
+  colSpan,
+  rowSpan,
   ...rest
 }: FactWithValueProps<T, R>) => {
   const {
@@ -47,6 +54,8 @@ export const FactWithValue = <T extends unknown, R>({
       <Container
         label={label}
         output={<Component value={value} {...rendererProps} />}
+        colSpan={colSpan}
+        rowSpan={rowSpan}
       />
     </>
   );
@@ -64,10 +73,6 @@ export type FactProps<T extends unknown, R> =
  * component with lots of styling markup. Instead, Fact provides two slots
  * (label and value) which you must provide and which fact will then render
  * using a separately provided Container (from context or supplied as a prop).
- * @param label
- * @param value
- * @param rest
- * @constructor
  */
 export const Fact = <T extends unknown, R>(props: FactProps<T, R>) =>
   'value' in props ? (
