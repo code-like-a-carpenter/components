@@ -8,5 +8,6 @@ export * from './null-renderer';
 export * from './number-renderer';
 export * from './object-renderer';
 export * from './percent-renderer';
+export * from './relative-date-renderer';
 export * from './render';
 export * from './types';
