@@ -117,7 +117,7 @@ export const Gauge: RendererWithContext<
   // flexbox and grid. This bug does not manifest in Storybook.
   return (
     <>
-      <ResponsiveContainer aspect={1}>
+      <ResponsiveContainer aspect={1} className="data-display-gauge">
         <PieChart>
           <Pie
             isAnimationActive={animate}
