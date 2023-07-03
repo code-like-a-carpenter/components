@@ -1,6 +1,6 @@
 import type {ReactNode} from 'react';
 
-import type {Renderer, RendererProps} from '../../renderers';
+import type {RendererProxy} from '../../renderers';
 import {useContextWithPropOverrides} from '../../support';
 
 import type {FactContextProps} from './context';
@@ -9,9 +9,8 @@ import {FactContext} from './context';
 export type FactProps<T extends unknown, R> = {
   label: ReactNode;
   value: T;
-  Renderer?: R;
 } & Partial<FactContextProps> &
-  (R extends Renderer<T, infer P> ? RendererProps<T, P> : unknown);
+  RendererProxy<R>;
 
 /**
  * Fact doesn't do much on its own (though it comes with defaults that do some
@@ -35,7 +34,6 @@ export const Fact = <T extends unknown, R>({
     Container,
     Renderer: Component,
     ...rendererProps
-    // @ts-expect-error
   } = useContextWithPropOverrides(FactContext, rest);
 
   return (
