@@ -156,22 +156,18 @@ export const CheckRunReporterAccountPage = () => {
       `}
       </style>
       <div className={'account-page-grid'}>
-        <Fact
-          label="Submissions This Month"
-          value={accountPageData.countThisMonth}
-          min={0}
-          max={50000}
-          Renderer={Gauge}
-        />
-        <Fact
-          label="Bytes This Month"
-          value={accountPageData.bytesThisMonth}
-          min={0}
-          max={1024 * 1024 * 1024}
-          Renderer={Gauge}
-          labelFormatter={bytesFormatter}
-          valueFormatter={bytesFormatter}
-        />
+        <Fact label="Submissions This Month">
+          <Gauge value={accountPageData.countThisMonth} min={0} max={50000} />
+        </Fact>
+        <Fact label="Bytes This Month">
+          <Gauge
+            value={accountPageData.bytesThisMonth}
+            min={0}
+            max={1024 * 1024 * 1024}
+            labelFormatter={bytesFormatter}
+            valueFormatter={bytesFormatter}
+          />
+        </Fact>
         <Fact label="All Time Submissions" value={accountPageData.count} />
         <Fact
           label="All Time Bytes"
