@@ -1,4 +1,4 @@
-import {Card} from '../../card';
+import {Card} from 'react-bootstrap';
 
 import type {FactContainer} from './types';
 
@@ -9,12 +9,26 @@ import type {FactContainer} from './types';
  * The local wrapper does things with headings that may or may not be
  * appropriate at this time.
  */
-export const FactCard: FactContainer = ({label, output}) => (
-  <Card className="fact_container fact-card">
-    <Card.Header className="fact_container__label fact-card__label">
+export const FactCard: FactContainer = ({
+  label,
+  output,
+  colSpan,
+  rowSpan,
+  ...rest
+}) => (
+  <Card
+    className="fact-container fact-card"
+    {...rest}
+    style={{
+      // @ts-expect-error
+      '--fact-grid-col-span': colSpan,
+      '--fact-grid-row-span': rowSpan,
+    }}
+  >
+    <Card.Header className="fact-container__label fact-card__label">
       {label}
     </Card.Header>
-    <Card.Body className="fact_container__output fact-card__output">
+    <Card.Body className="fact-container__output fact-card__output">
       {output}
     </Card.Body>
   </Card>

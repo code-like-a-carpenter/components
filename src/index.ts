@@ -4,6 +4,7 @@ export * from './code';
 export * from './core';
 export * from './data-display';
 export * from './description';
+export * from './formatters';
 export * from './link';
 export * from './pager';
 export * from './outline';

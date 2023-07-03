@@ -1,48 +1,19 @@
-import type {ComponentProps, ElementType, ReactElement, ReactNode} from 'react';
-
-import type {Definitely, FieldWrapperProps, IdType, Maybe} from '../..';
+import type {Choose, Path} from '../..';
 import type {Renderer} from '../../renderers';
 
+import type {ConfigureComponentProps} from './configurable';
 import {FieldConfigurationProvider} from './configuration';
 import {useConfigureField} from './hooks';
 
-export interface ConfigureFunctionProps<T extends object> {
-  FieldConfigurer: <
-    T2 extends T,
-    K2 extends IdType<T2>,
-    R extends Renderer<T2[K2]>
-  >(
-    props: ConfigurerProps<T2, K2, R>
-  ) => ReactElement | null;
-}
-
-export interface ConfigureFunction<T extends object> {
-  (props: ConfigureFunctionProps<T>): ReactElement | null;
-}
-
-export type ConfigurerProps<
-  T extends object,
-  K extends IdType<T>,
-  R extends Renderer<T[K]>
-> = {
-  field: K;
-  label?: ReactNode | Renderer<K>;
-  renderer?: R;
-  wrapper?: ElementType<FieldWrapperProps<T, K>>;
-  configure?: T[K] extends Maybe<object>
-    ? ElementType<ConfigureFunctionProps<Definitely<T[K]>>>
-    : never;
-} & Omit<ComponentProps<R>, 'value'>;
-
 export const Configurer = <
-  T extends object,
-  K extends IdType<T>,
-  R extends Renderer<T[K]>
+  T extends Record<string | number, any>,
+  K extends Path<T>,
+  R extends Renderer<Choose<T, K>>
 >({
   field,
   configure: Configure,
   ...rest
-}: ConfigurerProps<T, K, R>) => {
+}: ConfigureComponentProps<T, K, R>) => {
   const configure = useConfigureField();
 
   if (Configure) {

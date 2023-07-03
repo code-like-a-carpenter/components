@@ -1,6 +1,6 @@
 import type {Meta, StoryObj} from '@storybook/react';
 
-import {formatBytes} from '../../renderers';
+import {formatBytes} from '../../formatters';
 
 import {Gauge} from './gauge';
 

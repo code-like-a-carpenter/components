@@ -1,3 +1,4 @@
+import type {Maybe} from '..';
 import {CurrencyRenderer, DateRenderer} from '..';
 
 import {ConditionalDescription} from './conditional-description';
@@ -75,7 +76,7 @@ export const WithADate = () => (
 export const WithNotADate = () => (
   <ConditionalDescription
     term="A Date"
-    description={null}
+    description={null as Maybe<Date>}
     Renderer={DateRenderer}
   />
 );
@@ -83,7 +84,7 @@ export const WithNotADate = () => (
 export const WithNotATime = () => (
   <ConditionalDescription
     term="A Date"
-    description={null as unknown as Date | null}
+    description={null as Maybe<Date>}
     Renderer={DateRenderer}
   />
 );

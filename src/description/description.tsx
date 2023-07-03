@@ -1,51 +1,49 @@
 import cx from 'classnames';
-import type {ComponentProps, HTMLProps, ReactNode} from 'react';
-import React, {Children, useContext, useMemo} from 'react';
+import type {HTMLProps, ReactNode} from 'react';
+import {Children, useContext, useMemo} from 'react';
 
-import type {Renderer} from '../renderers';
+import type {InferringRendererProxy, Renderer} from '../renderers';
 import {AnyRenderer} from '../renderers';
 
 import {DescriptionList, DescriptionListContext} from './description-list';
 
-export type DescriptionProps<
-  T extends unknown,
-  C extends unknown,
-  R extends Renderer<T, C>
-> = Omit<HTMLProps<HTMLElement>, 'children' | 'title'> &
-  Omit<ComponentProps<R>, 'value'> & {
-    readonly description: T;
-    /**
-     * Longer-form version of the "term" prop which explains more about what this
-     * item describes.
-     */
-    readonly descriptionLabel?: string;
-    readonly term: ReactNode;
-    readonly Renderer?: R;
-  };
+export type DescriptionCommonProps<T> = Omit<
+  HTMLProps<HTMLElement>,
+  'children' | 'title'
+> & {
+  readonly description: T;
+  /**
+   * Longer-form version of the "term" prop which explains more about what this
+   * item describes.
+   */
+  readonly descriptionLabel?: string;
+  readonly term: ReactNode;
+};
 
-export const Description = <
-  T extends unknown,
-  C extends unknown,
-  R extends Renderer<T, C>
->({
-  className,
-  description,
-  descriptionLabel,
-  // @ts-expect-error
-  Renderer: Component = AnyRenderer,
-  term,
-  ...props
-}: DescriptionProps<T, C, R>) => {
+export type DescriptionProps<T, R> = InferringRendererProxy<
+  T,
+  R,
+  DescriptionCommonProps<T>
+>;
+
+export const Description = <T, R>(props: DescriptionProps<T, R>) => {
+  const {className, description, descriptionLabel, term} = props;
+
+  const Component: Renderer =
+    'Renderer' in props && props.Renderer
+      ? (props.Renderer as Renderer)
+      : 'renderer' in props && props.renderer
+      ? (props.renderer as Renderer)
+      : (AnyRenderer as Renderer);
+
   const listType = useContext(DescriptionListContext);
 
   const children = useMemo(() => {
     if (Array.isArray(description)) {
       return description.map((child, index) => (
-        // @ts-expect-error
-        <Component key={index} value={child} {...props} />
+        <Component key={index} {...props} value={child} />
       ));
     }
-    // @ts-expect-error
     return <Component value={description} {...props} />;
   }, [Component, description, props]);
 
@@ -59,14 +57,13 @@ export const Description = <
   if (!listType) {
     return (
       <DescriptionList className="description-list--single">
-        {/* @ts-expect-error it's not clear to me why TSC is struggling here */}
-        <Description<T, C, R>
+        <Description<T, R>
+          {...props}
           className={cx(className, 'description-list__description')}
           description={description}
           descriptionLabel={descriptionLabel}
           Renderer={Component}
           term={term}
-          {...props}
         />
       </DescriptionList>
     );

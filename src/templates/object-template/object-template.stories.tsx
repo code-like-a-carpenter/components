@@ -1,6 +1,6 @@
 import type {SimplePerson} from '../../mocks';
 import {makeComplexPerson, makeSimplePerson} from '../../mocks';
-import {CurrencyRenderer} from '../../renderers';
+import {CurrencyRenderer, DateRenderer, useMaybeRender} from '../../renderers';
 
 import {ObjectTemplate} from './object-template';
 import {FieldWrapper, TemplateWrapper} from './support';
@@ -19,7 +19,7 @@ export const Default = () => (
         <FieldConfigurer field="lastName" />
         <FieldConfigurer
           field="householdIncome"
-          renderer={CurrencyRenderer}
+          Renderer={CurrencyRenderer}
           currency="GBP"
         />
         <FieldConfigurer field="age" />
@@ -40,7 +40,7 @@ export const OutOfOrder = () => (
         <FieldConfigurer field="firstName" />
         <FieldConfigurer
           field="householdIncome"
-          renderer={CurrencyRenderer}
+          Renderer={CurrencyRenderer}
           currency="GBP"
         />
         <FieldConfigurer field="signUpDate" />
@@ -61,6 +61,12 @@ export const DuplicateFields = () => (
         <FieldConfigurer field="lastName" />
         <FieldConfigurer
           field="householdIncome"
+          Renderer={CurrencyRenderer}
+          currency="GBP"
+        />
+        <FieldConfigurer
+          field="householdIncome"
+          label="Household Income Duplicate"
           renderer={CurrencyRenderer}
           currency="GBP"
         />
@@ -69,7 +75,7 @@ export const DuplicateFields = () => (
         <FieldConfigurer
           field="signUpDate"
           label="Epoch Time"
-          renderer={({value}) => <>{value.getTime()}</>}
+          Renderer={({value}: {value: Date}) => <>{value.getTime()}</>}
         />
       </>
     )}
@@ -102,7 +108,28 @@ export const NestedData = () => (
         />
         <FieldConfigurer
           field="householdIncome"
-          renderer={CurrencyRenderer}
+          Renderer={CurrencyRenderer}
+          currency="GBP"
+        />
+        <FieldConfigurer field="signUpDate" />
+        <FieldConfigurer field="age" />
+      </>
+    )}
+    FieldWrapper={FieldWrapper}
+    TemplateWrapper={TemplateWrapper}
+  />
+);
+
+export const NestedDataWithFlatFields = () => (
+  <ObjectTemplate
+    data={makeComplexPerson()}
+    configure={({FieldConfigurer}) => (
+      <>
+        <FieldConfigurer field="name.first" />
+        <FieldConfigurer field="name.last" />
+        <FieldConfigurer
+          field="householdIncome"
+          Renderer={CurrencyRenderer}
           currency="GBP"
         />
         <FieldConfigurer field="signUpDate" />
@@ -123,7 +150,7 @@ export const DefaultNoOp = () => (
         <FieldConfigurer field="lastName" />
         <FieldConfigurer
           field="householdIncome"
-          renderer={CurrencyRenderer}
+          Renderer={CurrencyRenderer}
           currency="GBP"
         />
         <FieldConfigurer field="age" />
@@ -150,7 +177,7 @@ export const RawHtmlWrappers = () => (
         <FieldConfigurer field="lastName" />
         <FieldConfigurer
           field="householdIncome"
-          renderer={CurrencyRenderer}
+          Renderer={CurrencyRenderer}
           currency="GBP"
         />
         <FieldConfigurer field="age" />
@@ -184,7 +211,7 @@ export const NullData = () => (
         <FieldConfigurer field="lastName" />
         <FieldConfigurer
           field="householdIncome"
-          renderer={CurrencyRenderer}
+          Renderer={CurrencyRenderer}
           currency="GBP"
         />
         <FieldConfigurer field="age" />
@@ -209,7 +236,7 @@ export const CustomFieldWrapper = () => (
         <FieldConfigurer field="lastName" />
         <FieldConfigurer
           field="householdIncome"
-          renderer={CurrencyRenderer}
+          Renderer={CurrencyRenderer}
           currency="GBP"
         />
         <FieldConfigurer field="age" />
@@ -218,3 +245,44 @@ export const CustomFieldWrapper = () => (
     )}
   />
 );
+
+export const CustomRenderersWithWiderTypes = () => (
+  <ObjectTemplate
+    data={makeSimplePerson()}
+    configure={({FieldConfigurer}) => (
+      <>
+        <FieldConfigurer
+          field="householdIncome"
+          Renderer={CurrencyRenderer}
+          currency="GBP"
+        />
+        <FieldConfigurer field="signUpDate" Renderer={DateRenderer} />
+      </>
+    )}
+    FieldWrapper={FieldWrapper}
+    TemplateWrapper={TemplateWrapper}
+  />
+);
+
+export const CustomRenderersWithOptionalValues = () => {
+  const MaybeCurrencyRenderer = useMaybeRender(CurrencyRenderer);
+  const MaybeDateRenderer = useMaybeRender(DateRenderer);
+
+  return (
+    <ObjectTemplate
+      data={makeSimplePerson() as Partial<SimplePerson>}
+      configure={({FieldConfigurer}) => (
+        <>
+          <FieldConfigurer
+            field="householdIncome"
+            Renderer={MaybeCurrencyRenderer}
+            currency="GBP"
+          />
+          <FieldConfigurer field="signUpDate" Renderer={MaybeDateRenderer} />
+        </>
+      )}
+      FieldWrapper={FieldWrapper}
+      TemplateWrapper={TemplateWrapper}
+    />
+  );
+};

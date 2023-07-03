@@ -59,7 +59,7 @@ export const ConnectionTableBodyCell = <
   item,
   label,
   keyPath,
-  renderer: Renderer,
+  Renderer,
   ...rest
 }: TableBodyCellProps<N, K>) => (
   <TableBodyCell {...rest}>{children}</TableBodyCell>

@@ -1,5 +1,5 @@
 import type {PropsWithChildren} from 'react';
-import React, {Component} from 'react';
+import {Component} from 'react';
 
 import type {AlertProps} from '../alert';
 import {Alert} from '../alert';

@@ -1,35 +1,40 @@
+import cx from 'classnames';
 import {DateTime} from 'luxon';
-import {createContext, isValidElement} from 'react';
+import {isValidElement} from 'react';
 
-import {useContextWithPropOverrides} from '../../support';
-import type {BooleanRendererContextType} from '../boolean-renderer';
+import type {
+  BooleanFormatterContextProps,
+  DateFormatterContextProps,
+  NullFormatterContextProps,
+  NumberFormatterContextProps,
+  ObjectFormatterContextProps,
+} from '../../formatters';
 import {BooleanRenderer} from '../boolean-renderer';
-import type {DateRendererContextProps} from '../date-renderer';
 import {DateRenderer} from '../date-renderer';
-import type {NullRendererContextType} from '../null-renderer';
 import {NullRenderer} from '../null-renderer';
 import {NumberRenderer} from '../number-renderer';
 import {ObjectRenderer} from '../object-renderer';
-import type {RendererProps} from '../types';
+import type {RendererWithContext} from '../types';
 
-export interface AnyRendererContextType {
-  readonly boolean?: BooleanRendererContextType;
-  readonly date?: DateRendererContextProps;
-  readonly null?: NullRendererContextType;
-}
+export type AnyRendererContextProps = BooleanFormatterContextProps &
+  DateFormatterContextProps &
+  NullFormatterContextProps &
+  NumberFormatterContextProps &
+  ObjectFormatterContextProps;
 
-export const AnyRendererContext = createContext<AnyRendererContextType>({});
-
-export type AnyRendererProps = RendererProps<unknown, AnyRendererContextType>;
+export type AnyRendererProps = Partial<AnyRendererContextProps> & {
+  className?: string;
+};
 
 /* eslint-disable complexity */
 /** Renderers any value, as best as it can */
-export function AnyRenderer({value, ...rest}: AnyRendererProps) {
-  const {
-    boolean,
-    date,
-    null: nullDefaults,
-  } = useContextWithPropOverrides(AnyRendererContext, rest);
+export const AnyRenderer: RendererWithContext<
+  unknown,
+  AnyRendererContextProps,
+  AnyRendererProps
+> = (props) => {
+  const {className, value} = props;
+  const classNames = cx(className, 'renderer', 'renderer-any');
 
   if (
     typeof value === 'object' ||
@@ -37,46 +42,44 @@ export function AnyRenderer({value, ...rest}: AnyRendererProps) {
     typeof value === 'symbol'
   ) {
     if (value === null) {
-      return <NullRenderer value={value} {...nullDefaults} />;
+      return <NullRenderer {...props} className={classNames} value={value} />;
     }
 
     if (value instanceof Date) {
-      return <DateRenderer value={value} {...date} />;
+      return <DateRenderer {...props} className={classNames} value={value} />;
     }
 
     if (isValidElement(value)) {
-      return <>{value}</>;
+      return <span className={classNames}>{value}</span>;
     }
 
-    return <ObjectRenderer value={value} />;
+    return <ObjectRenderer {...props} className={classNames} value={value} />;
   }
 
   if (typeof value === 'undefined') {
-    return <NullRenderer value={null} {...nullDefaults} />;
+    return <NullRenderer {...props} className={classNames} value={null} />;
   }
 
   if (typeof value === 'number') {
-    return <NumberRenderer value={value}></NumberRenderer>;
+    return <NumberRenderer {...props} className={classNames} value={value} />;
   }
 
   if (typeof value === 'bigint') {
-    return <>{value}</>;
+    return <span className={classNames}>{value.toLocaleString()}</span>;
   }
 
   if (typeof value === 'string') {
-    if (
-      DateTime.fromISO(value).isValid ||
-      DateTime.fromMillis(Number(value)).isValid
-    ) {
-      return <DateRenderer value={value} {...date} />;
+    if (DateTime.fromISO(value).isValid) {
+      return <DateRenderer {...props} className={classNames} value={value} />;
     }
-    return <>{value}</>;
+    return <span className={classNames}>{value}</span>;
   }
 
   if (typeof value === 'boolean') {
-    return <BooleanRenderer value={value} {...boolean} />;
+    return <BooleanRenderer {...props} className={classNames} value={value} />;
   }
 
-  return <NullRenderer value={null} {...nullDefaults} />;
-}
+  return <NullRenderer {...props} className={classNames} value={null} />;
+};
+
 /* eslint-enable complexity */

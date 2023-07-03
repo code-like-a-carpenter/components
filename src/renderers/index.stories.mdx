@@ -1,19 +1,7 @@
-import {
-  Meta,
-  Story,
-  Canvas,
-  Source,
-  SourceState,
-  SourceContext,
-} from '@storybook/blocks';
+import {Canvas, Meta, SourceState} from "@storybook/blocks";
 
-import {
-  AnyRenderer,
-  AnyRendererContext,
-  BooleanRenderer,
-  BooleanRendererContext,
-  Render,
-} from '.';
+import {AnyRenderer, BooleanRenderer, Render} from ".";
+import {BooleanFormatterContext} from "../formatters";
 
 <Meta title="Renderers/Renderers" />
 
@@ -40,9 +28,9 @@ programmatically, all formatting props must also be accepted via a context.
 </Canvas>
 
 <Canvas withSource={SourceState.OPEN}>
-  <BooleanRendererContext.Provider value={{yes: 'it is the way'}}>
+  <BooleanFormatterContext.Provider value={{yes: 'it is the way'}}>
     <BooleanRenderer value={true} />
-  </BooleanRendererContext.Provider>
+  </BooleanFormatterContext.Provider>
 </Canvas>
 
 Of course, these examples are just for booleans. What do we do when we truly
@@ -60,7 +48,7 @@ have no idea what data we might get? Enter the `AnyRenderer`
 </Canvas>
 
 <Canvas withSource={SourceState.OPEN}>
-  <AnyRendererContext.Provider value={{boolean: {yes: 'it is the way'}}}>
+  <BooleanFormatterContext.Provider value={{yes: 'it is the way'}}>
     <AnyRenderer value={true} />
     <br />
     <AnyRenderer value={'2020-01-01'} />
@@ -69,7 +57,7 @@ have no idea what data we might get? Enter the `AnyRenderer`
     <br />
     <AnyRenderer value={null} />
     <br />
-  </AnyRendererContext.Provider>
+  </BooleanFormatterContext.Provider>
 </Canvas>
 
 Now, with the `AnyRenderer`, we can put any arbitrary data on a page and get
@@ -90,7 +78,7 @@ First, it's just passed to the `Renderer` on the context, in this case,
 `AnyRenderer`.
 
 <Canvas withSource={SourceState.OPEN}>
-   <Render value={true} />
+  <Render value={true} />
 </Canvas>
 
 Then, we instead render it as explicitly as a `Boolean`.

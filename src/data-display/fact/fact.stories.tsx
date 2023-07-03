@@ -1,18 +1,12 @@
-import assert from 'assert';
-
 import {faker} from '@faker-js/faker';
 import type {Meta} from '@storybook/react';
 import {useCallback, useContext} from 'react';
+import {Card} from 'react-bootstrap';
 
-import {Card} from '../../card';
+import {formatBytes} from '../../formatters';
 import {Section} from '../../outline';
-import {
-  ByteRenderer,
-  CurrencyRenderer,
-  DateRenderer,
-  formatBytes,
-} from '../../renderers';
-import type {GaugeProps} from '../gauge/gauge';
+import {ByteRenderer, CurrencyRenderer} from '../../renderers';
+import {RelativeDateRenderer} from '../../renderers/relative-date-renderer';
 import {Gauge} from '../gauge/gauge';
 
 import {FactContext} from './context';
@@ -113,22 +107,6 @@ export const CheckRunReporterAccountPage = () => {
     token: faker.string.uuid(),
   };
 
-  interface GaugeAdapterProps extends Partial<GaugeProps> {
-    value: number;
-  }
-
-  const GaugeAdapter = ({max, min, ...rest}: GaugeAdapterProps) => {
-    assert(
-      typeof max === 'number',
-      "If you're seeing this, it's typescript didn't warn you that `max` is actually required. For reasons I have yet to work out, making `max` required completely breaks its integration with the Fact component"
-    );
-    assert(
-      typeof min === 'number',
-      "If you're seeing this, it's typescript didn't warn you that `min` is actually required. For reasons I have yet to work out, making `min` required completely breaks its integration with the Fact component"
-    );
-    return <Gauge max={max} min={min} {...rest} />;
-  };
-
   const bytesFormatter = useCallback((value: number) => {
     const {unit, val} = formatBytes(value);
     const nf = new Intl.NumberFormat('en', {
@@ -178,22 +156,18 @@ export const CheckRunReporterAccountPage = () => {
       `}
       </style>
       <div className={'account-page-grid'}>
-        <Fact
-          label="Submissions This Month"
-          value={accountPageData.countThisMonth}
-          min={0}
-          max={50000}
-          Renderer={GaugeAdapter}
-        />
-        <Fact
-          label="Bytes This Month"
-          value={accountPageData.bytesThisMonth}
-          min={0}
-          max={1024 * 1024 * 1024}
-          Renderer={GaugeAdapter}
-          labelFormatter={bytesFormatter}
-          valueFormatter={bytesFormatter}
-        />
+        <Fact label="Submissions This Month">
+          <Gauge value={accountPageData.countThisMonth} min={0} max={50000} />
+        </Fact>
+        <Fact label="Bytes This Month">
+          <Gauge
+            value={accountPageData.bytesThisMonth}
+            min={0}
+            max={1024 * 1024 * 1024}
+            labelFormatter={bytesFormatter}
+            valueFormatter={bytesFormatter}
+          />
+        </Fact>
         <Fact label="All Time Submissions" value={accountPageData.count} />
         <Fact
           label="All Time Bytes"
@@ -207,8 +181,7 @@ export const CheckRunReporterAccountPage = () => {
         <Fact
           label="Last Submission Received"
           value={accountPageData.lastSubmissionDate}
-          Renderer={DateRenderer}
-          relative
+          Renderer={RelativeDateRenderer}
         />
         <Fact label="Token" value={accountPageData.token} />
       </div>
@@ -249,62 +222,5 @@ export const AlternateContainer = () => {
         currency="GBP"
       />
     </FactContext.Provider>
-  );
-};
-
-/**
- * Take a look at the code for this story, because it's a bit more complicated
- * than you would expect. For some reason, the type-checker falls apart if the
- * Renderer has required props (if all props except `value` are optional, it
- * behaves as expected; if any are required, it expects exactly a
- * ComponentType<RendererProps<T>> and can't tell that, in this case, min and
- * max have been provided.
- *
- * The adapter in the story code demonstrates one way to get close, but let's
- * face it, you're just going to use @ts-expect-error.
- */
-export const AsGauge = () => {
-  interface GaugeAdapterProps extends Partial<GaugeProps> {
-    value: number;
-  }
-
-  const GaugeAdapter = ({max, min, ...rest}: GaugeAdapterProps) => {
-    assert(
-      typeof max === 'number',
-      "If you're seeing this, it's typescript didn't warn you that `max` is actually required. For reasons I have yet to work out, making `max` required completely breaks its integration with the Fact component"
-    );
-    assert(
-      typeof min === 'number',
-      "If you're seeing this, it's typescript didn't warn you that `min` is actually required. For reasons I have yet to work out, making `min` required completely breaks its integration with the Fact component"
-    );
-    return <Gauge max={max} min={min} {...rest} />;
-  };
-
-  const bytesFormatter = useCallback((value: number) => {
-    const {unit, val} = formatBytes(value);
-    const nf = new Intl.NumberFormat('en', {
-      style: 'unit',
-      unit,
-    });
-    return nf.format(val);
-  }, []);
-
-  return (
-    <>
-      <Fact
-        label="Usage"
-        Renderer={GaugeAdapter}
-        min={0}
-        max={100}
-        value={75}
-        labelFormatter={bytesFormatter}
-        valueFormatter={bytesFormatter}
-      />
-      {/*This next chunk is just here to illustrate the type error*/}
-      <div style={{display: 'none'}}>
-        {/* @ts-expect-error */}
-        <Fact label="Usage" Renderer={Gauge} min={0} max={100} value={75} />
-      </div>
-    </>
   );
 };

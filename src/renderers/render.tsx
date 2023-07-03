@@ -16,8 +16,8 @@ export const RenderContext = createContext<RenderContextProps>({
 
 export type RenderProps<
   T extends unknown,
-  C extends unknown,
-  R extends Renderer<T, C>
+  P extends unknown,
+  R extends Renderer<T, P>
 > = {
   value: T;
   Renderer?: R;
@@ -30,9 +30,9 @@ export type RenderProps<
  */
 export function Render<
   T extends unknown,
-  C extends unknown,
-  R extends Renderer<T, C> = Renderer<T, C>
->({value, ...props}: RenderProps<T, C, R>) {
+  P extends unknown,
+  R extends Renderer<T, P> = Renderer<T, P>
+>({value, ...props}: RenderProps<T, P, R>) {
   const {Renderer: Component, ...rest} = useContextWithPropOverrides(
     RenderContext,
     // @ts-expect-error props is specialized to T, so it's not necessarily

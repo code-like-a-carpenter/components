@@ -1,51 +1,38 @@
-import type {ComponentType} from 'react';
 import {useMemo} from 'react';
 
+import type {Maybe} from '../../types';
 import {NullRenderer} from '../null-renderer';
+import type {Renderer, RendererProps} from '../types';
 
-export type ComponentProps<T, P extends object> = Partial<P> & {
-  readonly value: T;
+export type MaybeRendererProps<T, P> = RendererProps<Maybe<T>, P> & {
+  readonly Component: Renderer<T, P>;
 };
 
-export type MaybeComponentProps<T, P extends object> = Partial<
-  Omit<P, 'value'>
-> & {
-  readonly value: undefined | null | T;
-};
-
-export type MaybeRendererProps<T, P extends object> = Partial<
-  Omit<P, 'value'>
-> & {
-  readonly value: undefined | null | T;
-  readonly Component: ComponentType<ComponentProps<T, P>>;
-};
-
-export const MaybeRenderer = <T, P extends object>({
-  Component,
-  value,
-  ...rest
-}: MaybeRendererProps<T, P>) => {
+export const MaybeRenderer = <T, P>(props: MaybeRendererProps<T, P>) => {
+  const {Component, value} = props;
   if (typeof value === 'undefined' || value === null) {
-    return <NullRenderer value={null} />;
+    return <NullRenderer className={'renderer-maybe'} value={null} />;
   }
 
-  // As far as I can tell, I need the "as" here because tsc can't tell that
-  // `rest` has already had everything that's not ComponentProps removed.
-  return <Component {...(rest as ComponentProps<T, P>)} value={value} />;
+  return <Component className={'renderer-maybe'} {...props} value={value} />;
 };
 
 /**
  * Binds a regular renderer into a MaybeRenderer so it can be used via e.g. the
  * render prop of a <FieldConfigurer />
- * @param Component
+ *
+ * This function should not be used inside a React component, as it will create
+ * a new component on every render. Instead, use useMaybeRender, which is
+ * memoized.
  */
-export function maybeRender<T, P extends object>(
-  Component: ComponentType<ComponentProps<T, P>>
-) {
+export function maybeRender<T, P>(
+  Component: Renderer<T, P>
+): Renderer<Maybe<T>, P> {
   /** Wrapped version of Component which allows for undefined/null values */
-  function wrapped(props: MaybeComponentProps<T, P>) {
+  function wrapped(props: RendererProps<Maybe<T>, P>) {
     return <MaybeRenderer Component={Component} {...props} />;
   }
+
   wrapped.displayName = `Maybe${Component.displayName ?? Component.name}`;
   return wrapped;
 }
@@ -54,8 +41,8 @@ export function maybeRender<T, P extends object>(
  * Returns a memoized version of Component bound to a MaybeRenderer
  * @param Component
  */
-export function useMaybeRender<T, P extends object>(
-  Component: ComponentType<ComponentProps<T, P>>
-) {
+export function useMaybeRender<T, P>(
+  Component: Renderer<T, P>
+): Renderer<Maybe<T>, P> {
   return useMemo(() => maybeRender(Component), [Component]);
 }

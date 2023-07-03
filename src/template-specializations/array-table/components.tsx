@@ -55,7 +55,7 @@ export const ArrayTableBodyCell = <T extends object, K extends IdType<T>>({
   item,
   label,
   keyPath,
-  renderer: Renderer,
+  Renderer,
   ...rest
 }: TableBodyCellProps<T, K>) => (
   <TableBodyCell {...rest}>{children}</TableBodyCell>

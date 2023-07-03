@@ -27,11 +27,8 @@ describe('Card', () => {
 
   it('wraps body in a second section when a header is provided', () => {
     const {container} = render(
-      <Card>
-        <Card.Header>foo</Card.Header>
-        <Card.Body>
-          <SectionHeading>bar</SectionHeading>
-        </Card.Body>
+      <Card headerSlot="foo">
+        <SectionHeading>bar</SectionHeading>
       </Card>
     );
     expect(screen.getByText('foo')).toBeInTheDocument();
@@ -45,11 +42,8 @@ describe('Card', () => {
 describe('Card.Header', () => {
   it('is automatically a heading', () => {
     const {container} = render(
-      <Card>
-        <Card.Header>foo</Card.Header>
-        <Card.Body>
-          <SectionHeading>bar</SectionHeading>
-        </Card.Body>
+      <Card headerSlot="foo">
+        <SectionHeading>bar</SectionHeading>
       </Card>
     );
     expect(screen.getByText('foo')).toBeInTheDocument();

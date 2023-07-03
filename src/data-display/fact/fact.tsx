@@ -1,21 +1,69 @@
-import type {ComponentProps, ReactNode} from 'react';
+import type {ReactNode} from 'react';
 
-import type {Renderer} from '../../renderers';
+import type {RendererProxy} from '../../renderers';
 import {useContextWithPropOverrides} from '../../support';
 
 import type {FactContextProps} from './context';
 import {FactContext} from './context';
 
-export type FactProps<
-  T extends unknown,
-  C extends unknown,
-  R extends Renderer<T, C>
-> = {
+export interface FactWithChildrenProps extends Partial<FactContextProps> {
+  children: ReactNode;
+  label: ReactNode;
+  colSpan?: number;
+  rowSpan?: number;
+}
+
+export const FactWithChildren = ({
+  children,
+  label,
+  rowSpan = 2,
+  ...rest
+}: FactWithChildrenProps) => {
+  const {Container} = useContextWithPropOverrides(FactContext, rest);
+
+  return (
+    <>
+      <Container label={label} output={children} rowSpan={rowSpan} {...rest} />
+    </>
+  );
+};
+
+export type FactWithValueProps<T extends unknown, R> = {
   label: ReactNode;
   value: T;
-  Renderer?: R;
-} & ComponentProps<R> &
-  Partial<FactContextProps>;
+  colSpan?: number;
+  rowSpan?: number;
+} & Partial<FactContextProps> &
+  RendererProxy<R>;
+
+export const FactWithValue = <T extends unknown, R>({
+  label,
+  value,
+  colSpan,
+  rowSpan,
+  ...rest
+}: FactWithValueProps<T, R>) => {
+  const {
+    Container,
+    Renderer: Component,
+    ...rendererProps
+  } = useContextWithPropOverrides(FactContext, rest);
+
+  return (
+    <>
+      <Container
+        label={label}
+        output={<Component value={value} {...rendererProps} />}
+        colSpan={colSpan}
+        rowSpan={rowSpan}
+      />
+    </>
+  );
+};
+
+export type FactProps<T extends unknown, R> =
+  | FactWithChildrenProps
+  | FactWithValueProps<T, R>;
 
 /**
  * Fact doesn't do much on its own (though it comes with defaults that do some
@@ -25,33 +73,10 @@ export type FactProps<
  * component with lots of styling markup. Instead, Fact provides two slots
  * (label and value) which you must provide and which fact will then render
  * using a separately provided Container (from context or supplied as a prop).
- * @param label
- * @param value
- * @param rest
- * @constructor
  */
-export const Fact = <
-  T extends unknown,
-  C extends unknown,
-  R extends Renderer<T, C>
->({
-  label,
-  value,
-  ...rest
-}: FactProps<T, C, R>) => {
-  const {
-    Container,
-    Renderer: Component,
-    ...rendererProps
-    // @ts-expect-error
-  } = useContextWithPropOverrides(FactContext, rest);
-
-  return (
-    <>
-      <Container
-        label={label}
-        output={<Component value={value} {...rendererProps} />}
-      />
-    </>
+export const Fact = <T extends unknown, R>(props: FactProps<T, R>) =>
+  'value' in props ? (
+    <FactWithValue {...props} />
+  ) : (
+    <FactWithChildren {...props} />
   );
-};

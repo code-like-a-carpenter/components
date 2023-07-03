@@ -1,6 +1,6 @@
 import type {ReactElement} from 'react';
 
-import type {ConfigureFunction, ConnectionLike, Maybe, NodeLike} from '../..';
+import type {Configurable, ConnectionLike, Maybe, NodeLike} from '../..';
 import {
   ConnectionTemplate,
   Table as BaseTable,
@@ -27,9 +27,9 @@ import type {
   TableHeaderCellProps,
 } from './types';
 
-export interface ConnectionTableProps<N extends NodeLike, PI> {
+export interface ConnectionTableProps<N extends NodeLike, PI>
+  extends Configurable<N> {
   connection: Maybe<ConnectionLike<N, PI>>;
-  configure?: ConfigureFunction<N>;
   noDataSlot?: ReactElement;
   Table?: ITable<N, PI>;
   TableHeader?: ITableHeader<N, PI>;

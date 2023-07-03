@@ -1,6 +1,6 @@
 import type {ReactElement} from 'react';
 
-import type {ConfigureFunction, IdType, Maybe} from '../..';
+import type {IdType, Maybe, Configurable} from '../..';
 import {
   ArrayTemplate,
   Table as BaseTable,
@@ -30,10 +30,9 @@ import type {
 export interface ArrayTableProps<
   T extends object,
   K extends IdType<T> = IdType<T>
-> {
+> extends Configurable<T> {
   idField: K;
   data: Maybe<Maybe<T>[]>;
-  configure?: ConfigureFunction<T>;
   noDataSlot?: ReactElement;
   Table?: ITable<T>;
   TableHeader?: ITableHeader<T>;
