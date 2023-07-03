@@ -10,7 +10,6 @@ import {Section, SectionHeading} from '..';
 export const CardContext = createContext(false);
 
 export interface CardProps extends PropsWithChildren<BootstrapCardProps> {
-  children: ReactNode;
   footerSlot?: ReactNode;
   headerSlot?: ReactNode;
   topImgSlot?: ReactNode;

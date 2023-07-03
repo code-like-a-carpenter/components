@@ -33,24 +33,10 @@ export type RendererWithContext<
  */
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export type RendererProxy<R> = R extends Renderer<infer T, infer P>
-  ? (
-      | {
-          /** @deprecated Please uses Renderer */
-          renderer?: R;
-        }
-      | {
-          Renderer?: R;
-        }
-    ) &
-      Omit<P, 'value'>
-  :
-      | {
-          /** @deprecated Please uses Renderer */
-          renderer?: R;
-        }
-      | {
-          Renderer?: R;
-        };
+  ? {
+      Renderer?: R;
+    } & Omit<P, 'value'>
+  : unknown;
 
 export type InferringRendererProxy<T, R, COMMONPROPS> = R extends Renderer<
   infer RT,

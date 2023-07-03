@@ -32,8 +32,6 @@ export const Description = <T, R>(props: DescriptionProps<T, R>) => {
   const Component: Renderer =
     'Renderer' in props && props.Renderer
       ? (props.Renderer as Renderer)
-      : 'renderer' in props && props.renderer
-      ? (props.renderer as Renderer)
       : (AnyRenderer as Renderer);
 
   const listType = useContext(DescriptionListContext);
