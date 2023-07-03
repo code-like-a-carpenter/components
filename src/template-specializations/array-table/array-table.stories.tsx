@@ -18,7 +18,7 @@ export const Default = () => (
         <FieldConfigurer field="lastName" />
         <FieldConfigurer
           field="householdIncome"
-          renderer={CurrencyRenderer}
+          Renderer={CurrencyRenderer}
           currency="GBP"
         />
         <FieldConfigurer field="age" />
@@ -37,7 +37,7 @@ export const OutOfOrder = () => (
         <FieldConfigurer field="lastName" />
         <FieldConfigurer
           field="householdIncome"
-          renderer={CurrencyRenderer}
+          Renderer={CurrencyRenderer}
           currency="GBP"
         />
         <FieldConfigurer field="firstName" />
@@ -58,7 +58,7 @@ export const DuplicateFields = () => (
         <FieldConfigurer field="lastName" />
         <FieldConfigurer
           field="householdIncome"
-          renderer={CurrencyRenderer}
+          Renderer={CurrencyRenderer}
           currency="GBP"
         />
         <FieldConfigurer field="age" />
@@ -66,7 +66,7 @@ export const DuplicateFields = () => (
         <FieldConfigurer
           field="signUpDate"
           label="Seconds since signup"
-          renderer={({value}: {value: Date}) => (
+          Renderer={({value}: {value: Date}) => (
             <>{Date.parse('2021-01-01') - value.getTime()}</>
           )}
         />

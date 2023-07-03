@@ -67,7 +67,7 @@ export const DuplicateFields = () => (
         <FieldConfigurer
           field="householdIncome"
           label="Household Income Duplicate"
-          renderer={CurrencyRenderer}
+          Renderer={CurrencyRenderer}
           currency="GBP"
         />
         <FieldConfigurer field="age" />

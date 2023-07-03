@@ -30,8 +30,6 @@ export const ConditionalDescription = <T, R>(
   const Component: Renderer | undefined =
     'Renderer' in props && props.Renderer
       ? (props.Renderer as Renderer)
-      : 'renderer' in props && props.renderer
-      ? (props.renderer as Renderer)
       : undefined;
 
   if (typeof condition === 'boolean' && !condition) {
