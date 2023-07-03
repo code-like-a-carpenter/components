@@ -20,7 +20,9 @@ unify the typescript design of my UI components across many projects.
 <!-- toc -->
 
 -   [Install](#install)
+    -   [Dependencies](#dependencies)
 -   [Usage](#usage)
+    -   [Styles](#styles)
 -   [Maintainer](#maintainer)
 -   [Contribute](#contribute)
 -   [License](#license)
