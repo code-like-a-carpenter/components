@@ -53,3 +53,10 @@
 .fact-grid .fact-container {
   grid-area: span var(--fact-grid-row-span) / span var(--fact-grid-col-span);
 }
+
+/**
+ * Force all p tags in cards to behave like card-text
+ */
+.card-body p:last-child {
+  margin-bottom: 0;
+}

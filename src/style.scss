@@ -11,11 +11,3 @@
 // in a css file and 2. be imported via `@use` rather than `@import` so they get
 // inlined.
 @use 'style.css';
-
-/**
- * Force all p tags in cards to behave like card-text which, in particular,
- * addresses a problematic margin issue when there are multiple bodies or a
- * footer. */
-.card-body p {
-  @extend .card-text;
-}
