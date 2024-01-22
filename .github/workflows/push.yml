@@ -1,21 +1,21 @@
 on: push
 name: Validate
 jobs:
-  # fixup:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v2
-  #       with:
-  #         fetch-depth: 0
-  #     - uses: ianwremmel/prevent-fixup-commits@v1.0.2
+  fixup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: ianwremmel/prevent-fixup-commits@v1.0.5
 
-  # nopush:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v2
-  #       with:
-  #         fetch-depth: 0
-  #     - uses: ianwremmel/prevent-nopush-commits@v1.0.3
+  nopush:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: ianwremmel/prevent-nopush-commits@v1.0.5
 
   chromatic:
     runs-on: ubuntu-latest
@@ -112,9 +112,9 @@ jobs:
   release:
     needs:
       - chromatic
-      # - fixup
+      - fixup
       - lint
-      # - nopush
+      - nopush
       - test
     runs-on: ubuntu-latest
     steps:
