@@ -1,32 +1,32 @@
 on: push
 name: Validate
 jobs:
-  # fixup:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v2
-  #       with:
-  #         fetch-depth: 0
-  #     - uses: ianwremmel/prevent-fixup-commits@v1.0.2
+  fixup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: ianwremmel/prevent-fixup-commits@v1.0.5
 
-  # nopush:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v2
-  #       with:
-  #         fetch-depth: 0
-  #     - uses: ianwremmel/prevent-nopush-commits@v1.0.3
+  nopush:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: ianwremmel/prevent-nopush-commits@v1.0.5
 
   chromatic:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: 18
-      - uses: actions/cache@v2.1.4
+      - uses: actions/cache@v4
         env:
           cache-name: cache-node-modules
         with:
@@ -47,13 +47,13 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: 18
-      - uses: actions/cache@v2.1.4
+      - uses: actions/cache@v4
         env:
           cache-name: cache-node-modules
         with:
@@ -85,11 +85,11 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 18
-      - uses: actions/cache@v2.1.4
+      - uses: actions/cache@v4
         env:
           cache-name: cache-node-modules
         with:
@@ -112,17 +112,17 @@ jobs:
   release:
     needs:
       - chromatic
-      # - fixup
+      - fixup
       - lint
-      # - nopush
+      - nopush
       - test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 18
-      - uses: actions/cache@v2.1.4
+      - uses: actions/cache@v4
         env:
           cache-name: cache-node-modules
         with:
